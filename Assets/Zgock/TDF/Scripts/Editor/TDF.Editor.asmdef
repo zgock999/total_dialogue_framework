@@ -1,0 +1,16 @@
+{
+    "name": "TDF.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:de060b736a0187446aedbc5eba630e3d"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

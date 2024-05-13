@@ -1,0 +1,488 @@
+{
+  "source_base_path": "D:/Unity/TDFDictionary/Docfx/ja",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TotalDialogue.Core.Collections.ITDFList-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TotalDialogue.Core.Collections.ITDFList-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TotalDialogue.Core.Collections.TDFDictionary-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TotalDialogue.Core.Collections.TDFDictionary-2.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TotalDialogue.Core.Collections.TDFKeyValuePair-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TotalDialogue.Core.Collections.TDFKeyValuePair-2.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TotalDialogue.Core.Collections.TDFKeyValuePairs-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TotalDialogue.Core.Collections.TDFKeyValuePairs-2.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TotalDialogue.Core.Collections.TDFList-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TotalDialogue.Core.Collections.TDFList-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TotalDialogue.Core.Collections.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TotalDialogue.Core.Collections.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TotalDialogue.ITDFList-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TotalDialogue.ITDFList-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TotalDialogue.TDFDictionary-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TotalDialogue.TDFDictionary-2.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TotalDialogue.TDFKeyValuePair-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TotalDialogue.TDFKeyValuePair-2.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TotalDialogue.TDFKeyValuePairs-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TotalDialogue.TDFKeyValuePairs-2.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TotalDialogue.TDFList-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TotalDialogue.TDFList-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TotalDialogue.Tests.ObservableListPlayTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TotalDialogue.Tests.ObservableListPlayTests.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TotalDialogue.Tests.TDFListEditorTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TotalDialogue.Tests.TDFListEditorTests.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TotalDialogue.Tests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TotalDialogue.Tests.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TotalDialogue.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TotalDialogue.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/Blocks.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/Blocks.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/BoolVar.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/BoolVar.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/Choice.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/Choice.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/Dialogue.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/Dialogue.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/Dump.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/Dump.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/FloatVar.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/FloatVar.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/HelloWorld.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/HelloWorld.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/HowTo.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/HowTo.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/HowTo_Choice.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/HowTo_Choice.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/Howto_Animate.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/Howto_Animate.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/Howto_Dialoge.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/Howto_Dialoge.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/IntVar.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/IntVar.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/QuickStart.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/QuickStart.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/SUMMARY.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/SUMMARY.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/StringVar.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/StringVar.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/TDFDriver.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/TDFDriver.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/TDFVariables.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/TDFVariables.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/TDFView.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/TDFView.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/Tutorial.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/Tutorial.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/Usage.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/Usage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/UsageBx.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/UsageBx.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/UsageForth.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/UsageForth.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/UsageGeneral.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/UsageGeneral.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/getting-started.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/introduction.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/introduction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "docs/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/toc.html"
+        },
+        ".json": {
+          "relative_path": "docs/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/blocks.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/blocks.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

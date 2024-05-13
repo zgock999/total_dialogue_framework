@@ -1,0 +1,4115 @@
+### YamlMime:ManagedReference
+items:
+- uid: TotalDialogue.Core.Collections.TDFList`1
+  commentId: T:TotalDialogue.Core.Collections.TDFList`1
+  id: TDFList`1
+  parent: TotalDialogue.Core.Collections
+  children:
+  - TotalDialogue.Core.Collections.TDFList`1.#ctor
+  - TotalDialogue.Core.Collections.TDFList`1.#ctor(System.Collections.Generic.List{`0})
+  - TotalDialogue.Core.Collections.TDFList`1.Add(`0)
+  - TotalDialogue.Core.Collections.TDFList`1.AddRange(System.Collections.Generic.IEnumerable{`0})
+  - TotalDialogue.Core.Collections.TDFList`1.AddRange(TotalDialogue.Core.Collections.TDFList{`0})
+  - TotalDialogue.Core.Collections.TDFList`1.BeginLock
+  - TotalDialogue.Core.Collections.TDFList`1.Clear
+  - TotalDialogue.Core.Collections.TDFList`1.Contains(`0)
+  - TotalDialogue.Core.Collections.TDFList`1.CopyTo(`0[],System.Int32)
+  - TotalDialogue.Core.Collections.TDFList`1.Count
+  - TotalDialogue.Core.Collections.TDFList`1.EndLock
+  - TotalDialogue.Core.Collections.TDFList`1.Find(System.Predicate{`0})
+  - TotalDialogue.Core.Collections.TDFList`1.FindAll(System.Predicate{`0})
+  - TotalDialogue.Core.Collections.TDFList`1.FindIndex(System.Int32,System.Int32,System.Predicate{`0})
+  - TotalDialogue.Core.Collections.TDFList`1.FindIndex(System.Int32,System.Predicate{`0})
+  - TotalDialogue.Core.Collections.TDFList`1.FindIndex(System.Predicate{`0})
+  - TotalDialogue.Core.Collections.TDFList`1.FindLast(System.Predicate{`0})
+  - TotalDialogue.Core.Collections.TDFList`1.FindLastIndex(System.Int32,System.Int32,System.Predicate{`0})
+  - TotalDialogue.Core.Collections.TDFList`1.FindLastIndex(System.Int32,System.Predicate{`0})
+  - TotalDialogue.Core.Collections.TDFList`1.FindLastIndex(System.Predicate{`0})
+  - TotalDialogue.Core.Collections.TDFList`1.ForEach(System.Action{`0},System.Boolean)
+  - TotalDialogue.Core.Collections.TDFList`1.GetEnumerator
+  - TotalDialogue.Core.Collections.TDFList`1.GetItemType
+  - TotalDialogue.Core.Collections.TDFList`1.GetRange(System.Int32,System.Int32)
+  - TotalDialogue.Core.Collections.TDFList`1.IndexOf(`0)
+  - TotalDialogue.Core.Collections.TDFList`1.Insert(System.Int32,`0)
+  - TotalDialogue.Core.Collections.TDFList`1.InvokeOnAdd(System.Int32,`0)
+  - TotalDialogue.Core.Collections.TDFList`1.InvokeOnChange
+  - TotalDialogue.Core.Collections.TDFList`1.InvokeOnChangeItem(System.Int32,`0)
+  - TotalDialogue.Core.Collections.TDFList`1.InvokeOnRemove(System.Int32,`0)
+  - TotalDialogue.Core.Collections.TDFList`1.Item(System.Int32)
+  - TotalDialogue.Core.Collections.TDFList`1.LastIndexOf(`0)
+  - TotalDialogue.Core.Collections.TDFList`1.OnAdd
+  - TotalDialogue.Core.Collections.TDFList`1.OnAfterDeserialize
+  - TotalDialogue.Core.Collections.TDFList`1.OnBeforeSerialize
+  - TotalDialogue.Core.Collections.TDFList`1.OnChange
+  - TotalDialogue.Core.Collections.TDFList`1.OnChangeItem
+  - TotalDialogue.Core.Collections.TDFList`1.OnRemove
+  - TotalDialogue.Core.Collections.TDFList`1.Remove(`0)
+  - TotalDialogue.Core.Collections.TDFList`1.RemoveAll(System.Predicate{`0})
+  - TotalDialogue.Core.Collections.TDFList`1.RemoveAt(System.Int32)
+  - TotalDialogue.Core.Collections.TDFList`1.RemoveRange(System.Int32,System.Int32)
+  - TotalDialogue.Core.Collections.TDFList`1.RemoveRange(TotalDialogue.Core.Collections.TDFList{`0})
+  - TotalDialogue.Core.Collections.TDFList`1.Reverse
+  - TotalDialogue.Core.Collections.TDFList`1.Reverse(System.Int32,System.Int32)
+  - TotalDialogue.Core.Collections.TDFList`1.Serializing
+  - TotalDialogue.Core.Collections.TDFList`1.Sort(System.Collections.Generic.IComparer{`0})
+  - TotalDialogue.Core.Collections.TDFList`1.Sort(System.Comparison{`0})
+  - TotalDialogue.Core.Collections.TDFList`1.Sort(System.Int32,System.Int32,System.Collections.Generic.IComparer{`0})
+  - TotalDialogue.Core.Collections.TDFList`1.ToArray
+  - TotalDialogue.Core.Collections.TDFList`1.TrimExcess
+  - TotalDialogue.Core.Collections.TDFList`1.TrueForAll(System.Predicate{`0})
+  - TotalDialogue.Core.Collections.TDFList`1.UpdateDuplicates
+  - TotalDialogue.Core.Collections.TDFList`1.Validate
+  - TotalDialogue.Core.Collections.TDFList`1.isLocked
+  - TotalDialogue.Core.Collections.TDFList`1.list
+  - TotalDialogue.Core.Collections.TDFList`1.lockObject
+  - TotalDialogue.Core.Collections.TDFList`1.lockedThreadId
+  - TotalDialogue.Core.Collections.TDFList`1.m_serializing
+  langs:
+  - csharp
+  - vb
+  name: TDFList<T>
+  nameWithType: TDFList<T>
+  fullName: TotalDialogue.Core.Collections.TDFList<T>
+  type: Class
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+      branch: master
+      repo: git@github.com:zgock999/TotalDialogueFramework.git
+    id: TDFList
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+    startLine: 80
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Collections
+  summary: >-
+    TDFListは、スレッドセーフなリストを提供します。
+
+    シリアライズとデシリアライズのサポートも含まれています。
+
+    リストの内容が変更されたときにイベントを発生させることができます。
+  example: []
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class TDFList<T> : ITDFList<T>, IEnumerable<T>, IEnumerable, ISerializationCallbackReceiver
+    typeParameters:
+    - id: T
+    content.vb: >-
+      <Serializable>
+
+      Public Class TDFList(Of T) Implements ITDFList(Of T), IEnumerable(Of T), IEnumerable, ISerializationCallbackReceiver
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - TotalDialogue.Core.Collections.TDFKeyValuePairs`2
+  implements:
+  - TotalDialogue.Core.Collections.ITDFList{{T}}
+  - System.Collections.Generic.IEnumerable{{T}}
+  - System.Collections.IEnumerable
+  - UnityEngine.ISerializationCallbackReceiver
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+  nameWithType.vb: TDFList(Of T)
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T)
+  name.vb: TDFList(Of T)
+- uid: TotalDialogue.Core.Collections.TDFList`1.list
+  commentId: F:TotalDialogue.Core.Collections.TDFList`1.list
+  id: list
+  parent: TotalDialogue.Core.Collections.TDFList`1
+  langs:
+  - csharp
+  - vb
+  name: list
+  nameWithType: TDFList<T>.list
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.list
+  type: Field
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+      branch: master
+      repo: git@github.com:zgock999/TotalDialogueFramework.git
+    id: list
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+    startLine: 87
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Collections
+  summary: リスト本体、protectedだが、インスペクタによって内容が変更されることがある
+  example: []
+  syntax:
+    content: >-
+      [SerializeField]
+
+      protected List<T> list
+    return:
+      type: System.Collections.Generic.List{{T}}
+    content.vb: >-
+      <SerializeField>
+
+      Protected list As List(Of T)
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+  nameWithType.vb: TDFList(Of T).list
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).list
+- uid: TotalDialogue.Core.Collections.TDFList`1.lockObject
+  commentId: F:TotalDialogue.Core.Collections.TDFList`1.lockObject
+  id: lockObject
+  parent: TotalDialogue.Core.Collections.TDFList`1
+  langs:
+  - csharp
+  - vb
+  name: lockObject
+  nameWithType: TDFList<T>.lockObject
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.lockObject
+  type: Field
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+      branch: master
+      repo: git@github.com:zgock999/TotalDialogueFramework.git
+    id: lockObject
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+    startLine: 91
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Collections
+  summary: ロックオブジェクト。
+  example: []
+  syntax:
+    content: protected readonly object lockObject
+    return:
+      type: System.Object
+    content.vb: Protected ReadOnly lockObject As Object
+  nameWithType.vb: TDFList(Of T).lockObject
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).lockObject
+- uid: TotalDialogue.Core.Collections.TDFList`1.isLocked
+  commentId: F:TotalDialogue.Core.Collections.TDFList`1.isLocked
+  id: isLocked
+  parent: TotalDialogue.Core.Collections.TDFList`1
+  langs:
+  - csharp
+  - vb
+  name: isLocked
+  nameWithType: TDFList<T>.isLocked
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.isLocked
+  type: Field
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+      branch: master
+      repo: git@github.com:zgock999/TotalDialogueFramework.git
+    id: isLocked
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+    startLine: 96
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Collections
+  summary: リストがロックされているかどうかを示す値。
+  example: []
+  syntax:
+    content: protected bool isLocked
+    return:
+      type: System.Boolean
+    content.vb: Protected isLocked As Boolean
+  nameWithType.vb: TDFList(Of T).isLocked
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).isLocked
+- uid: TotalDialogue.Core.Collections.TDFList`1.lockedThreadId
+  commentId: F:TotalDialogue.Core.Collections.TDFList`1.lockedThreadId
+  id: lockedThreadId
+  parent: TotalDialogue.Core.Collections.TDFList`1
+  langs:
+  - csharp
+  - vb
+  name: lockedThreadId
+  nameWithType: TDFList<T>.lockedThreadId
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.lockedThreadId
+  type: Field
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+      branch: master
+      repo: git@github.com:zgock999/TotalDialogueFramework.git
+    id: lockedThreadId
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+    startLine: 101
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Collections
+  summary: ロックを保持しているスレッドのID。
+  example: []
+  syntax:
+    content: protected int lockedThreadId
+    return:
+      type: System.Int32
+    content.vb: Protected lockedThreadId As Integer
+  nameWithType.vb: TDFList(Of T).lockedThreadId
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).lockedThreadId
+- uid: TotalDialogue.Core.Collections.TDFList`1.m_serializing
+  commentId: F:TotalDialogue.Core.Collections.TDFList`1.m_serializing
+  id: m_serializing
+  parent: TotalDialogue.Core.Collections.TDFList`1
+  langs:
+  - csharp
+  - vb
+  name: m_serializing
+  nameWithType: TDFList<T>.m_serializing
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.m_serializing
+  type: Field
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+      branch: master
+      repo: git@github.com:zgock999/TotalDialogueFramework.git
+    id: m_serializing
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+    startLine: 106
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Collections
+  summary: シリアライズ中かどうかを示す値。
+  example: []
+  syntax:
+    content: protected bool m_serializing
+    return:
+      type: System.Boolean
+    content.vb: Protected m_serializing As Boolean
+  nameWithType.vb: TDFList(Of T).m_serializing
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).m_serializing
+- uid: TotalDialogue.Core.Collections.TDFList`1.Serializing
+  commentId: P:TotalDialogue.Core.Collections.TDFList`1.Serializing
+  id: Serializing
+  parent: TotalDialogue.Core.Collections.TDFList`1
+  langs:
+  - csharp
+  - vb
+  name: Serializing
+  nameWithType: TDFList<T>.Serializing
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.Serializing
+  type: Property
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+      branch: master
+      repo: git@github.com:zgock999/TotalDialogueFramework.git
+    id: Serializing
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+    startLine: 110
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Collections
+  summary: シリアライズ中かどうかを示す値を取得します。
+  example: []
+  syntax:
+    content: public bool Serializing { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property Serializing As Boolean
+  overload: TotalDialogue.Core.Collections.TDFList`1.Serializing*
+  implements:
+  - TotalDialogue.Core.Collections.ITDFList{{T}}.Serializing
+  nameWithType.vb: TDFList(Of T).Serializing
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).Serializing
+- uid: TotalDialogue.Core.Collections.TDFList`1.BeginLock
+  commentId: M:TotalDialogue.Core.Collections.TDFList`1.BeginLock
+  id: BeginLock
+  parent: TotalDialogue.Core.Collections.TDFList`1
+  langs:
+  - csharp
+  - vb
+  name: BeginLock()
+  nameWithType: TDFList<T>.BeginLock()
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.BeginLock()
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+      branch: master
+      repo: git@github.com:zgock999/TotalDialogueFramework.git
+    id: BeginLock
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+    startLine: 114
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Collections
+  summary: ロックを開始します。ロックが取得できるまで待機します。
+  example: []
+  syntax:
+    content: public void BeginLock()
+    content.vb: Public Sub BeginLock()
+  overload: TotalDialogue.Core.Collections.TDFList`1.BeginLock*
+  nameWithType.vb: TDFList(Of T).BeginLock()
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).BeginLock()
+- uid: TotalDialogue.Core.Collections.TDFList`1.EndLock
+  commentId: M:TotalDialogue.Core.Collections.TDFList`1.EndLock
+  id: EndLock
+  parent: TotalDialogue.Core.Collections.TDFList`1
+  langs:
+  - csharp
+  - vb
+  name: EndLock()
+  nameWithType: TDFList<T>.EndLock()
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.EndLock()
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+      branch: master
+      repo: git@github.com:zgock999/TotalDialogueFramework.git
+    id: EndLock
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+    startLine: 138
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Collections
+  summary: ロックを終了します。ロックを保持しているスレッドのIDをリセットし、ロックオブジェクトのロックを解除します。
+  example: []
+  syntax:
+    content: public void EndLock()
+    content.vb: Public Sub EndLock()
+  overload: TotalDialogue.Core.Collections.TDFList`1.EndLock*
+  nameWithType.vb: TDFList(Of T).EndLock()
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).EndLock()
+- uid: TotalDialogue.Core.Collections.TDFList`1.OnChange
+  commentId: E:TotalDialogue.Core.Collections.TDFList`1.OnChange
+  id: OnChange
+  parent: TotalDialogue.Core.Collections.TDFList`1
+  langs:
+  - csharp
+  - vb
+  name: OnChange
+  nameWithType: TDFList<T>.OnChange
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.OnChange
+  type: Event
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+      branch: master
+      repo: git@github.com:zgock999/TotalDialogueFramework.git
+    id: OnChange
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+    startLine: 153
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Collections
+  summary: リストが変更されたときに発生するイベント。
+  example: []
+  syntax:
+    content: public event Action OnChange
+    return:
+      type: System.Action
+    content.vb: Public Event OnChange As Action
+  implements:
+  - TotalDialogue.Core.Collections.ITDFList{{T}}.OnChange
+  nameWithType.vb: TDFList(Of T).OnChange
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).OnChange
+- uid: TotalDialogue.Core.Collections.TDFList`1.OnAdd
+  commentId: E:TotalDialogue.Core.Collections.TDFList`1.OnAdd
+  id: OnAdd
+  parent: TotalDialogue.Core.Collections.TDFList`1
+  langs:
+  - csharp
+  - vb
+  name: OnAdd
+  nameWithType: TDFList<T>.OnAdd
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.OnAdd
+  type: Event
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+      branch: master
+      repo: git@github.com:zgock999/TotalDialogueFramework.git
+    id: OnAdd
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+    startLine: 158
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Collections
+  summary: アイテムが追加されたときに発生するイベント。
+  example: []
+  syntax:
+    content: public event Action<int, T> OnAdd
+    return:
+      type: System.Action{System.Int32,{T}}
+    content.vb: Public Event OnAdd As Action(Of Integer, T)
+  implements:
+  - TotalDialogue.Core.Collections.ITDFList{{T}}.OnAdd
+  nameWithType.vb: TDFList(Of T).OnAdd
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).OnAdd
+- uid: TotalDialogue.Core.Collections.TDFList`1.OnRemove
+  commentId: E:TotalDialogue.Core.Collections.TDFList`1.OnRemove
+  id: OnRemove
+  parent: TotalDialogue.Core.Collections.TDFList`1
+  langs:
+  - csharp
+  - vb
+  name: OnRemove
+  nameWithType: TDFList<T>.OnRemove
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.OnRemove
+  type: Event
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+      branch: master
+      repo: git@github.com:zgock999/TotalDialogueFramework.git
+    id: OnRemove
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+    startLine: 163
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Collections
+  summary: アイテムが削除されたときに発生するイベント。
+  example: []
+  syntax:
+    content: public event Action<int, T> OnRemove
+    return:
+      type: System.Action{System.Int32,{T}}
+    content.vb: Public Event OnRemove As Action(Of Integer, T)
+  implements:
+  - TotalDialogue.Core.Collections.ITDFList{{T}}.OnRemove
+  nameWithType.vb: TDFList(Of T).OnRemove
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).OnRemove
+- uid: TotalDialogue.Core.Collections.TDFList`1.OnChangeItem
+  commentId: E:TotalDialogue.Core.Collections.TDFList`1.OnChangeItem
+  id: OnChangeItem
+  parent: TotalDialogue.Core.Collections.TDFList`1
+  langs:
+  - csharp
+  - vb
+  name: OnChangeItem
+  nameWithType: TDFList<T>.OnChangeItem
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.OnChangeItem
+  type: Event
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+      branch: master
+      repo: git@github.com:zgock999/TotalDialogueFramework.git
+    id: OnChangeItem
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+    startLine: 168
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Collections
+  summary: アイテムが変更されたときに発生するイベント。
+  example: []
+  syntax:
+    content: public event Action<int, T> OnChangeItem
+    return:
+      type: System.Action{System.Int32,{T}}
+    content.vb: Public Event OnChangeItem As Action(Of Integer, T)
+  implements:
+  - TotalDialogue.Core.Collections.ITDFList{{T}}.OnChangeItem
+  nameWithType.vb: TDFList(Of T).OnChangeItem
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).OnChangeItem
+- uid: TotalDialogue.Core.Collections.TDFList`1.Validate
+  commentId: P:TotalDialogue.Core.Collections.TDFList`1.Validate
+  id: Validate
+  parent: TotalDialogue.Core.Collections.TDFList`1
+  langs:
+  - csharp
+  - vb
+  name: Validate
+  nameWithType: TDFList<T>.Validate
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.Validate
+  type: Property
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+      branch: master
+      repo: git@github.com:zgock999/TotalDialogueFramework.git
+    id: Validate
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+    startLine: 175
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Collections
+  summary: アイテムの設定時に呼び出されるバリデーションメソッド。
+  example: []
+  syntax:
+    content: public Func<T, T, T> Validate { get; set; }
+    parameters: []
+    return:
+      type: System.Func{{T},{T},{T}}
+      description: 設定を許可する場合は引数1を、許可しない場合はnullを返す
+    content.vb: Public Property Validate As Func(Of T, T, T)
+  overload: TotalDialogue.Core.Collections.TDFList`1.Validate*
+  nameWithType.vb: TDFList(Of T).Validate
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).Validate
+- uid: TotalDialogue.Core.Collections.TDFList`1.#ctor
+  commentId: M:TotalDialogue.Core.Collections.TDFList`1.#ctor
+  id: '#ctor'
+  parent: TotalDialogue.Core.Collections.TDFList`1
+  langs:
+  - csharp
+  - vb
+  name: TDFList()
+  nameWithType: TDFList<T>.TDFList()
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.TDFList()
+  type: Constructor
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+      branch: master
+      repo: git@github.com:zgock999/TotalDialogueFramework.git
+    id: .ctor
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+    startLine: 179
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Collections
+  summary: リストを初期化します。
+  example: []
+  syntax:
+    content: public TDFList()
+    content.vb: Public Sub New()
+  overload: TotalDialogue.Core.Collections.TDFList`1.#ctor*
+  nameWithType.vb: TDFList(Of T).New()
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).New()
+  name.vb: New()
+- uid: TotalDialogue.Core.Collections.TDFList`1.#ctor(System.Collections.Generic.List{`0})
+  commentId: M:TotalDialogue.Core.Collections.TDFList`1.#ctor(System.Collections.Generic.List{`0})
+  id: '#ctor(System.Collections.Generic.List{`0})'
+  parent: TotalDialogue.Core.Collections.TDFList`1
+  langs:
+  - csharp
+  - vb
+  name: TDFList(List<T>)
+  nameWithType: TDFList<T>.TDFList(List<T>)
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.TDFList(System.Collections.Generic.List<T>)
+  type: Constructor
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+      branch: master
+      repo: git@github.com:zgock999/TotalDialogueFramework.git
+    id: .ctor
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+    startLine: 187
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Collections
+  summary: >-
+    リストを初期化します。
+      引数1:リスト
+  example: []
+  syntax:
+    content: public TDFList(List<T> list)
+    parameters:
+    - id: list
+      type: System.Collections.Generic.List{{T}}
+    content.vb: Public Sub New(list As List(Of T))
+  overload: TotalDialogue.Core.Collections.TDFList`1.#ctor*
+  nameWithType.vb: TDFList(Of T).New(List(Of T))
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).New(System.Collections.Generic.List(Of T))
+  name.vb: New(List(Of T))
+- uid: TotalDialogue.Core.Collections.TDFList`1.Add(`0)
+  commentId: M:TotalDialogue.Core.Collections.TDFList`1.Add(`0)
+  id: Add(`0)
+  parent: TotalDialogue.Core.Collections.TDFList`1
+  langs:
+  - csharp
+  - vb
+  name: Add(T)
+  nameWithType: TDFList<T>.Add(T)
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.Add(T)
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+      branch: master
+      repo: git@github.com:zgock999/TotalDialogueFramework.git
+    id: Add
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+    startLine: 202
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Collections
+  summary: アイテムをリストに追加します。
+  remarks: >-
+    バリデーションメソッドが設定されている場合、バリデーションメソッドを呼び出してから追加します。
+
+    ロックされている場合、ロックが解除されるまで待機します。
+
+    アイテムが追加されたときにOnAddイベントを発生させます。
+
+    リストが変更されたときにOnChangeイベントを発生させます。
+
+    リストが変更されたときにInvokeOnChangeメソッドを呼び出します。
+  example: []
+  syntax:
+    content: public virtual void Add(T item)
+    parameters:
+    - id: item
+      type: '{T}'
+      description: 追加するアイテム
+    content.vb: Public Overridable Sub Add(item As T)
+  overload: TotalDialogue.Core.Collections.TDFList`1.Add*
+  implements:
+  - TotalDialogue.Core.Collections.ITDFList{{T}}.Add({T})
+  nameWithType.vb: TDFList(Of T).Add(T)
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).Add(T)
+- uid: TotalDialogue.Core.Collections.TDFList`1.Remove(`0)
+  commentId: M:TotalDialogue.Core.Collections.TDFList`1.Remove(`0)
+  id: Remove(`0)
+  parent: TotalDialogue.Core.Collections.TDFList`1
+  langs:
+  - csharp
+  - vb
+  name: Remove(T)
+  nameWithType: TDFList<T>.Remove(T)
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.Remove(T)
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+      branch: master
+      repo: git@github.com:zgock999/TotalDialogueFramework.git
+    id: Remove
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+    startLine: 231
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Collections
+  summary: アイテムをリストから削除します。
+  remarks: >-
+    ロックされている場合、ロックが解除されるまで待機します。
+
+    アイテムがリストに存在しない場合は削除しません。
+
+    アイテムが削除されたときにOnRemoveイベントを発生させます。
+
+    リストが変更されたときにOnChangeイベントを発生させます。
+
+    リストが変更されたときにInvokeOnChangeメソッドを呼び出します。
+  example: []
+  syntax:
+    content: public virtual void Remove(T item)
+    parameters:
+    - id: item
+      type: '{T}'
+      description: 削除するアイテム
+    content.vb: Public Overridable Sub Remove(item As T)
+  overload: TotalDialogue.Core.Collections.TDFList`1.Remove*
+  implements:
+  - TotalDialogue.Core.Collections.ITDFList{{T}}.Remove({T})
+  nameWithType.vb: TDFList(Of T).Remove(T)
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).Remove(T)
+- uid: TotalDialogue.Core.Collections.TDFList`1.RemoveAt(System.Int32)
+  commentId: M:TotalDialogue.Core.Collections.TDFList`1.RemoveAt(System.Int32)
+  id: RemoveAt(System.Int32)
+  parent: TotalDialogue.Core.Collections.TDFList`1
+  langs:
+  - csharp
+  - vb
+  name: RemoveAt(int)
+  nameWithType: TDFList<T>.RemoveAt(int)
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.RemoveAt(int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+      branch: master
+      repo: git@github.com:zgock999/TotalDialogueFramework.git
+    id: RemoveAt
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+    startLine: 261
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Collections
+  summary: 指定したインデックスのアイテムを削除します。
+  remarks: >-
+    ロックされている場合、ロックが解除されるまで待機します。
+
+    インデックスが範囲外の場合は削除しません。
+
+    アイテムが削除されたときにOnRemoveイベントを発生させます。
+
+    リストが変更されたときにOnChangeイベントを発生させます。
+
+    リストが変更されたときにInvokeOnChangeメソッドを呼び出します。
+  example: []
+  syntax:
+    content: public virtual void RemoveAt(int index)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: 削除するアイテムのインデックス
+    content.vb: Public Overridable Sub RemoveAt(index As Integer)
+  overload: TotalDialogue.Core.Collections.TDFList`1.RemoveAt*
+  implements:
+  - TotalDialogue.Core.Collections.ITDFList{{T}}.RemoveAt(System.Int32)
+  nameWithType.vb: TDFList(Of T).RemoveAt(Integer)
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).RemoveAt(Integer)
+  name.vb: RemoveAt(Integer)
+- uid: TotalDialogue.Core.Collections.TDFList`1.Count
+  commentId: P:TotalDialogue.Core.Collections.TDFList`1.Count
+  id: Count
+  parent: TotalDialogue.Core.Collections.TDFList`1
+  langs:
+  - csharp
+  - vb
+  name: Count
+  nameWithType: TDFList<T>.Count
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.Count
+  type: Property
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+      branch: master
+      repo: git@github.com:zgock999/TotalDialogueFramework.git
+    id: Count
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+    startLine: 287
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Collections
+  summary: リスト内のアイテム数を取得します。
+  remarks: ロックされている場合、ロックが解除されるまで待機します。
+  example: []
+  syntax:
+    content: public virtual int Count { get; }
+    parameters: []
+    return:
+      type: System.Int32
+      description: リスト内のアイテム数
+    content.vb: Public Overridable ReadOnly Property Count As Integer
+  overload: TotalDialogue.Core.Collections.TDFList`1.Count*
+  implements:
+  - TotalDialogue.Core.Collections.ITDFList{{T}}.Count
+  nameWithType.vb: TDFList(Of T).Count
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).Count
+- uid: TotalDialogue.Core.Collections.TDFList`1.Item(System.Int32)
+  commentId: P:TotalDialogue.Core.Collections.TDFList`1.Item(System.Int32)
+  id: Item(System.Int32)
+  parent: TotalDialogue.Core.Collections.TDFList`1
+  langs:
+  - csharp
+  - vb
+  name: this[int]
+  nameWithType: TDFList<T>.this[int]
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.this[int]
+  type: Property
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+      branch: master
+      repo: git@github.com:zgock999/TotalDialogueFramework.git
+    id: this[]
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+    startLine: 313
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Collections
+  summary: 指定したインデックスのアイテムを取得または設定します。
+  remarks: >-
+    バリデーションメソッドが設定されている場合、バリデーションメソッドを呼び出してから設定します。
+
+    ロックされている場合、ロックが解除されるまで待機します。
+
+    アイテムが設定されたときにOnChangeItemイベントを発生させます。
+
+    リストが変更されたときにOnChangeイベントを発生させます。
+
+    リストが変更されたときにInvokeOnChangeメソッドを呼び出します。
+  example: []
+  syntax:
+    content: public virtual T this[int index] { get; set; }
+    parameters:
+    - id: index
+      type: System.Int32
+      description: アイテムのインデックス
+    return:
+      type: '{T}'
+      description: 指定したインデックスのアイテム
+    content.vb: Public Overridable Default Property this[](index As Integer) As T
+  overload: TotalDialogue.Core.Collections.TDFList`1.Item*
+  implements:
+  - TotalDialogue.Core.Collections.ITDFList{{T}}.Item(System.Int32)
+  nameWithType.vb: TDFList(Of T).this[](Integer)
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).this[](Integer)
+  name.vb: this[](Integer)
+- uid: TotalDialogue.Core.Collections.TDFList`1.Clear
+  commentId: M:TotalDialogue.Core.Collections.TDFList`1.Clear
+  id: Clear
+  parent: TotalDialogue.Core.Collections.TDFList`1
+  langs:
+  - csharp
+  - vb
+  name: Clear()
+  nameWithType: TDFList<T>.Clear()
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.Clear()
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+      branch: master
+      repo: git@github.com:zgock999/TotalDialogueFramework.git
+    id: Clear
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+    startLine: 353
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Collections
+  summary: リストをクリアします。
+  remarks: >-
+    ロックされている場合、ロックが解除されるまで待機します。
+
+    リストがクリアされたときにOnChangeイベントを発生させます。
+
+    リストが変更されたときにInvokeOnChangeメソッドを呼び出します。
+  example: []
+  syntax:
+    content: public virtual void Clear()
+    content.vb: Public Overridable Sub Clear()
+  overload: TotalDialogue.Core.Collections.TDFList`1.Clear*
+  nameWithType.vb: TDFList(Of T).Clear()
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).Clear()
+- uid: TotalDialogue.Core.Collections.TDFList`1.Insert(System.Int32,`0)
+  commentId: M:TotalDialogue.Core.Collections.TDFList`1.Insert(System.Int32,`0)
+  id: Insert(System.Int32,`0)
+  parent: TotalDialogue.Core.Collections.TDFList`1
+  langs:
+  - csharp
+  - vb
+  name: Insert(int, T)
+  nameWithType: TDFList<T>.Insert(int, T)
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.Insert(int, T)
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+      branch: master
+      repo: git@github.com:zgock999/TotalDialogueFramework.git
+    id: Insert
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+    startLine: 378
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Collections
+  summary: リストにアイテムを挿入します。
+  remarks: >-
+    バリデーションメソッドが設定されている場合、バリデーションメソッドを呼び出してから挿入します。
+
+    ロックされている場合、ロックが解除されるまで待機します。
+
+    アイテムが挿入されたときにOnAddイベントを発生させます。
+
+    リストが変更されたときにOnChangeイベントを発生させます。
+
+    リストが変更されたときにInvokeOnChangeメソッドを呼び出します。
+  example: []
+  syntax:
+    content: public virtual void Insert(int index, T item)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: 挿入するインデックス
+    - id: item
+      type: '{T}'
+      description: 挿入するアイテム
+    content.vb: Public Overridable Sub Insert(index As Integer, item As T)
+  overload: TotalDialogue.Core.Collections.TDFList`1.Insert*
+  nameWithType.vb: TDFList(Of T).Insert(Integer, T)
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).Insert(Integer, T)
+  name.vb: Insert(Integer, T)
+- uid: TotalDialogue.Core.Collections.TDFList`1.AddRange(System.Collections.Generic.IEnumerable{`0})
+  commentId: M:TotalDialogue.Core.Collections.TDFList`1.AddRange(System.Collections.Generic.IEnumerable{`0})
+  id: AddRange(System.Collections.Generic.IEnumerable{`0})
+  parent: TotalDialogue.Core.Collections.TDFList`1
+  langs:
+  - csharp
+  - vb
+  name: AddRange(IEnumerable<T>)
+  nameWithType: TDFList<T>.AddRange(IEnumerable<T>)
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.AddRange(System.Collections.Generic.IEnumerable<T>)
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+      branch: master
+      repo: git@github.com:zgock999/TotalDialogueFramework.git
+    id: AddRange
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+    startLine: 407
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Collections
+  summary: リストにアイテムを複数挿入します。
+  remarks: >-
+    ロックされている場合、ロックが解除されるまで待機します。
+
+    バリデーションメソッドが設定されている場合、バリデーションメソッドを呼び出してから追加します。
+
+    アイテムが追加されたときにOnAddイベントを発生させます。
+
+    リストが変更されたときにOnChangeイベントを発生させます。
+
+    リストが変更されたときにInvokeOnChangeメソッドを呼び出します。
+  example: []
+  syntax:
+    content: public virtual void AddRange(IEnumerable<T> collection)
+    parameters:
+    - id: collection
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: 挿入するアイテム(複数)
+    content.vb: Public Overridable Sub AddRange(collection As IEnumerable(Of T))
+  overload: TotalDialogue.Core.Collections.TDFList`1.AddRange*
+  nameWithType.vb: TDFList(Of T).AddRange(IEnumerable(Of T))
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).AddRange(System.Collections.Generic.IEnumerable(Of T))
+  name.vb: AddRange(IEnumerable(Of T))
+- uid: TotalDialogue.Core.Collections.TDFList`1.RemoveRange(System.Int32,System.Int32)
+  commentId: M:TotalDialogue.Core.Collections.TDFList`1.RemoveRange(System.Int32,System.Int32)
+  id: RemoveRange(System.Int32,System.Int32)
+  parent: TotalDialogue.Core.Collections.TDFList`1
+  langs:
+  - csharp
+  - vb
+  name: RemoveRange(int, int)
+  nameWithType: TDFList<T>.RemoveRange(int, int)
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.RemoveRange(int, int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+      branch: master
+      repo: git@github.com:zgock999/TotalDialogueFramework.git
+    id: RemoveRange
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+    startLine: 435
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Collections
+  summary: リストから数を指定してアイテムを削除します。
+  remarks: >-
+    ロックされている場合、ロックが解除されるまで待機します。
+
+    インデックスが範囲外の場合は削除しません。
+
+    アイテムが削除されたときにOnRemoveイベントを発生させます。
+
+    リストが変更されたときにOnChangeイベントを発生させます。
+
+    リストが変更されたときにInvokeOnChangeメソッドを呼び出します。
+  example: []
+  syntax:
+    content: public virtual void RemoveRange(int index, int count)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: 削除するインデックス
+    - id: count
+      type: System.Int32
+      description: 削除するアイテム数
+    content.vb: Public Overridable Sub RemoveRange(index As Integer, count As Integer)
+  overload: TotalDialogue.Core.Collections.TDFList`1.RemoveRange*
+  nameWithType.vb: TDFList(Of T).RemoveRange(Integer, Integer)
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).RemoveRange(Integer, Integer)
+  name.vb: RemoveRange(Integer, Integer)
+- uid: TotalDialogue.Core.Collections.TDFList`1.Sort(System.Comparison{`0})
+  commentId: M:TotalDialogue.Core.Collections.TDFList`1.Sort(System.Comparison{`0})
+  id: Sort(System.Comparison{`0})
+  parent: TotalDialogue.Core.Collections.TDFList`1
+  langs:
+  - csharp
+  - vb
+  name: Sort(Comparison<T>)
+  nameWithType: TDFList<T>.Sort(Comparison<T>)
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.Sort(System.Comparison<T>)
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+      branch: master
+      repo: git@github.com:zgock999/TotalDialogueFramework.git
+    id: Sort
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+    startLine: 457
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Collections
+  summary: リスト内のアイテムをソートします。
+  remarks: >-
+    ロックされている場合、ロックが解除されるまで待機します。
+
+    リストがソートされたときにOnChangeイベントを発生させます。
+
+    リストがソートされたときにInvokeOnChangeメソッドを呼び出します。
+  example: []
+  syntax:
+    content: public virtual void Sort(Comparison<T> comparison)
+    parameters:
+    - id: comparison
+      type: System.Comparison{{T}}
+      description: 比較メソッド
+    content.vb: Public Overridable Sub Sort(comparison As Comparison(Of T))
+  overload: TotalDialogue.Core.Collections.TDFList`1.Sort*
+  nameWithType.vb: TDFList(Of T).Sort(Comparison(Of T))
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).Sort(System.Comparison(Of T))
+  name.vb: Sort(Comparison(Of T))
+- uid: TotalDialogue.Core.Collections.TDFList`1.Sort(System.Collections.Generic.IComparer{`0})
+  commentId: M:TotalDialogue.Core.Collections.TDFList`1.Sort(System.Collections.Generic.IComparer{`0})
+  id: Sort(System.Collections.Generic.IComparer{`0})
+  parent: TotalDialogue.Core.Collections.TDFList`1
+  langs:
+  - csharp
+  - vb
+  name: Sort(IComparer<T>)
+  nameWithType: TDFList<T>.Sort(IComparer<T>)
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.Sort(System.Collections.Generic.IComparer<T>)
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+      branch: master
+      repo: git@github.com:zgock999/TotalDialogueFramework.git
+    id: Sort
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+    startLine: 479
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Collections
+  summary: リスト内のアイテムをソートします。
+  remarks: >-
+    ロックされている場合、ロックが解除されるまで待機します。
+
+    リストがソートされたときにOnChangeイベントを発生させます。
+
+    リストがソートされたときにInvokeOnChangeメソッドを呼び出します。
+  example: []
+  syntax:
+    content: public virtual void Sort(IComparer<T> comparer)
+    parameters:
+    - id: comparer
+      type: System.Collections.Generic.IComparer{{T}}
+      description: 比較メソッド
+    content.vb: Public Overridable Sub Sort(comparer As IComparer(Of T))
+  overload: TotalDialogue.Core.Collections.TDFList`1.Sort*
+  nameWithType.vb: TDFList(Of T).Sort(IComparer(Of T))
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).Sort(System.Collections.Generic.IComparer(Of T))
+  name.vb: Sort(IComparer(Of T))
+- uid: TotalDialogue.Core.Collections.TDFList`1.Sort(System.Int32,System.Int32,System.Collections.Generic.IComparer{`0})
+  commentId: M:TotalDialogue.Core.Collections.TDFList`1.Sort(System.Int32,System.Int32,System.Collections.Generic.IComparer{`0})
+  id: Sort(System.Int32,System.Int32,System.Collections.Generic.IComparer{`0})
+  parent: TotalDialogue.Core.Collections.TDFList`1
+  langs:
+  - csharp
+  - vb
+  name: Sort(int, int, IComparer<T>)
+  nameWithType: TDFList<T>.Sort(int, int, IComparer<T>)
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.Sort(int, int, System.Collections.Generic.IComparer<T>)
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+      branch: master
+      repo: git@github.com:zgock999/TotalDialogueFramework.git
+    id: Sort
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+    startLine: 503
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Collections
+  summary: リスト内のアイテムを範囲指定でソートします。
+  remarks: >-
+    ロックされている場合、ロックが解除されるまで待機します。
+
+    リストがソートされたときにOnChangeイベントを発生させます。
+
+    リストがソートされたときにInvokeOnChangeメソッドを呼び出します。
+  example: []
+  syntax:
+    content: public virtual void Sort(int index, int count, IComparer<T> comparer)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: ソートする開始インデックス
+    - id: count
+      type: System.Int32
+      description: ソートするアイテム数
+    - id: comparer
+      type: System.Collections.Generic.IComparer{{T}}
+      description: 比較メソッド
+    content.vb: Public Overridable Sub Sort(index As Integer, count As Integer, comparer As IComparer(Of T))
+  overload: TotalDialogue.Core.Collections.TDFList`1.Sort*
+  nameWithType.vb: TDFList(Of T).Sort(Integer, Integer, IComparer(Of T))
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).Sort(Integer, Integer, System.Collections.Generic.IComparer(Of T))
+  name.vb: Sort(Integer, Integer, IComparer(Of T))
+- uid: TotalDialogue.Core.Collections.TDFList`1.Reverse
+  commentId: M:TotalDialogue.Core.Collections.TDFList`1.Reverse
+  id: Reverse
+  parent: TotalDialogue.Core.Collections.TDFList`1
+  langs:
+  - csharp
+  - vb
+  name: Reverse()
+  nameWithType: TDFList<T>.Reverse()
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.Reverse()
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+      branch: master
+      repo: git@github.com:zgock999/TotalDialogueFramework.git
+    id: Reverse
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+    startLine: 524
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Collections
+  summary: リスト内のアイテムを逆順にします。
+  remarks: >-
+    ロックされている場合、ロックが解除されるまで待機します。
+
+    リストが逆順になったときにOnChangeイベントを発生させます。
+
+    リストが逆順になったときにInvokeOnChangeメソッドを呼び出します。
+  example: []
+  syntax:
+    content: public virtual void Reverse()
+    content.vb: Public Overridable Sub Reverse()
+  overload: TotalDialogue.Core.Collections.TDFList`1.Reverse*
+  nameWithType.vb: TDFList(Of T).Reverse()
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).Reverse()
+- uid: TotalDialogue.Core.Collections.TDFList`1.Reverse(System.Int32,System.Int32)
+  commentId: M:TotalDialogue.Core.Collections.TDFList`1.Reverse(System.Int32,System.Int32)
+  id: Reverse(System.Int32,System.Int32)
+  parent: TotalDialogue.Core.Collections.TDFList`1
+  langs:
+  - csharp
+  - vb
+  name: Reverse(int, int)
+  nameWithType: TDFList<T>.Reverse(int, int)
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.Reverse(int, int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+      branch: master
+      repo: git@github.com:zgock999/TotalDialogueFramework.git
+    id: Reverse
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+    startLine: 547
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Collections
+  summary: リスト内のアイテムを範囲指定で逆順にします。
+  remarks: >-
+    ロックされている場合、ロックが解除されるまで待機します。
+
+    リストが逆順になったときにOnChangeイベントを発生させます。
+
+    リストが逆順になったときにInvokeOnChangeメソッドを呼び出します。
+  example: []
+  syntax:
+    content: public virtual void Reverse(int index, int count)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: 逆順にする開始インデックス
+    - id: count
+      type: System.Int32
+      description: 逆順にするアイテム数
+    content.vb: Public Overridable Sub Reverse(index As Integer, count As Integer)
+  overload: TotalDialogue.Core.Collections.TDFList`1.Reverse*
+  nameWithType.vb: TDFList(Of T).Reverse(Integer, Integer)
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).Reverse(Integer, Integer)
+  name.vb: Reverse(Integer, Integer)
+- uid: TotalDialogue.Core.Collections.TDFList`1.CopyTo(`0[],System.Int32)
+  commentId: M:TotalDialogue.Core.Collections.TDFList`1.CopyTo(`0[],System.Int32)
+  id: CopyTo(`0[],System.Int32)
+  parent: TotalDialogue.Core.Collections.TDFList`1
+  langs:
+  - csharp
+  - vb
+  name: CopyTo(T[], int)
+  nameWithType: TDFList<T>.CopyTo(T[], int)
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.CopyTo(T[], int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+      branch: master
+      repo: git@github.com:zgock999/TotalDialogueFramework.git
+    id: CopyTo
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+    startLine: 568
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Collections
+  summary: リスト内のアイテムをコピーします。
+  remarks: ロックされている場合、ロックが解除されるまで待機します。
+  example: []
+  syntax:
+    content: public virtual void CopyTo(T[] array, int arrayIndex)
+    parameters:
+    - id: array
+      type: '{T}[]'
+      description: コピー先の配列
+    - id: arrayIndex
+      type: System.Int32
+      description: コピー開始インデックス
+    content.vb: Public Overridable Sub CopyTo(array As T(), arrayIndex As Integer)
+  overload: TotalDialogue.Core.Collections.TDFList`1.CopyTo*
+  nameWithType.vb: TDFList(Of T).CopyTo(T(), Integer)
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).CopyTo(T(), Integer)
+  name.vb: CopyTo(T(), Integer)
+- uid: TotalDialogue.Core.Collections.TDFList`1.ForEach(System.Action{`0},System.Boolean)
+  commentId: M:TotalDialogue.Core.Collections.TDFList`1.ForEach(System.Action{`0},System.Boolean)
+  id: ForEach(System.Action{`0},System.Boolean)
+  parent: TotalDialogue.Core.Collections.TDFList`1
+  langs:
+  - csharp
+  - vb
+  name: ForEach(Action<T>, bool)
+  nameWithType: TDFList<T>.ForEach(Action<T>, bool)
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.ForEach(System.Action<T>, bool)
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+      branch: master
+      repo: git@github.com:zgock999/TotalDialogueFramework.git
+    id: ForEach
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+    startLine: 588
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Collections
+  summary: リスト内の各要素に対してActionを実行します。
+  remarks: >-
+    ロックされている場合、ロックが解除されるまで待機します。
+
+    処理が完了したときにOnChangeイベントを発生させるかどうかを指定します。
+  example: []
+  syntax:
+    content: public virtual void ForEach(Action<T> action, bool invoveOnChange = false)
+    parameters:
+    - id: action
+      type: System.Action{{T}}
+      description: 実行するAction
+    - id: invoveOnChange
+      type: System.Boolean
+      description: 'OnChangeイベントを発生させるかどうか (デフォルト: false)'
+    content.vb: Public Overridable Sub ForEach(action As Action(Of T), invoveOnChange As Boolean = False)
+  overload: TotalDialogue.Core.Collections.TDFList`1.ForEach*
+  nameWithType.vb: TDFList(Of T).ForEach(Action(Of T), Boolean)
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).ForEach(System.Action(Of T), Boolean)
+  name.vb: ForEach(Action(Of T), Boolean)
+- uid: TotalDialogue.Core.Collections.TDFList`1.GetEnumerator
+  commentId: M:TotalDialogue.Core.Collections.TDFList`1.GetEnumerator
+  id: GetEnumerator
+  parent: TotalDialogue.Core.Collections.TDFList`1
+  langs:
+  - csharp
+  - vb
+  name: GetEnumerator()
+  nameWithType: TDFList<T>.GetEnumerator()
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.GetEnumerator()
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+      branch: master
+      repo: git@github.com:zgock999/TotalDialogueFramework.git
+    id: GetEnumerator
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+    startLine: 614
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Collections
+  summary: リストのEnumeratorを返します。
+  remarks: ロックされている場合、ロックが解除されるまで待機します。
+  example: []
+  syntax:
+    content: public virtual List<T>.Enumerator GetEnumerator()
+    return:
+      type: System.Collections.Generic.List{{T}}.Enumerator
+      description: リストのEnumerator
+    content.vb: Public Overridable Function GetEnumerator() As List(Of T).Enumerator
+  overload: TotalDialogue.Core.Collections.TDFList`1.GetEnumerator*
+  nameWithType.vb: TDFList(Of T).GetEnumerator()
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).GetEnumerator()
+- uid: TotalDialogue.Core.Collections.TDFList`1.GetRange(System.Int32,System.Int32)
+  commentId: M:TotalDialogue.Core.Collections.TDFList`1.GetRange(System.Int32,System.Int32)
+  id: GetRange(System.Int32,System.Int32)
+  parent: TotalDialogue.Core.Collections.TDFList`1
+  langs:
+  - csharp
+  - vb
+  name: GetRange(int, int)
+  nameWithType: TDFList<T>.GetRange(int, int)
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.GetRange(int, int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+      branch: master
+      repo: git@github.com:zgock999/TotalDialogueFramework.git
+    id: GetRange
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+    startLine: 634
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Collections
+  summary: リスト内のアイテムを範囲指定で取得します。
+  remarks: ロックされている場合、ロックが解除されるまで待機します。
+  example: []
+  syntax:
+    content: public List<T> GetRange(int index, int count)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: 取得する開始インデックス
+    - id: count
+      type: System.Int32
+      description: 取得するアイテム数
+    return:
+      type: System.Collections.Generic.List{{T}}
+      description: 取得したアイテム
+    content.vb: Public Function GetRange(index As Integer, count As Integer) As List(Of T)
+  overload: TotalDialogue.Core.Collections.TDFList`1.GetRange*
+  nameWithType.vb: TDFList(Of T).GetRange(Integer, Integer)
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).GetRange(Integer, Integer)
+  name.vb: GetRange(Integer, Integer)
+- uid: TotalDialogue.Core.Collections.TDFList`1.IndexOf(`0)
+  commentId: M:TotalDialogue.Core.Collections.TDFList`1.IndexOf(`0)
+  id: IndexOf(`0)
+  parent: TotalDialogue.Core.Collections.TDFList`1
+  langs:
+  - csharp
+  - vb
+  name: IndexOf(T)
+  nameWithType: TDFList<T>.IndexOf(T)
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.IndexOf(T)
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+      branch: master
+      repo: git@github.com:zgock999/TotalDialogueFramework.git
+    id: IndexOf
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+    startLine: 653
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Collections
+  summary: リスト内のアイテムを検索します。
+  remarks: ロックされている場合、ロックが解除されるまで待機します。
+  example: []
+  syntax:
+    content: public int IndexOf(T item)
+    parameters:
+    - id: item
+      type: '{T}'
+      description: 検索するアイテム
+    return:
+      type: System.Int32
+      description: 検索したアイテムのインデックス
+    content.vb: Public Function IndexOf(item As T) As Integer
+  overload: TotalDialogue.Core.Collections.TDFList`1.IndexOf*
+  nameWithType.vb: TDFList(Of T).IndexOf(T)
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).IndexOf(T)
+- uid: TotalDialogue.Core.Collections.TDFList`1.LastIndexOf(`0)
+  commentId: M:TotalDialogue.Core.Collections.TDFList`1.LastIndexOf(`0)
+  id: LastIndexOf(`0)
+  parent: TotalDialogue.Core.Collections.TDFList`1
+  langs:
+  - csharp
+  - vb
+  name: LastIndexOf(T)
+  nameWithType: TDFList<T>.LastIndexOf(T)
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.LastIndexOf(T)
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+      branch: master
+      repo: git@github.com:zgock999/TotalDialogueFramework.git
+    id: LastIndexOf
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+    startLine: 672
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Collections
+  summary: リスト内のアイテムを逆順に検索します。
+  remarks: ロックされている場合、ロックが解除されるまで待機します。
+  example: []
+  syntax:
+    content: public int LastIndexOf(T item)
+    parameters:
+    - id: item
+      type: '{T}'
+      description: 検索するアイテム
+    return:
+      type: System.Int32
+      description: 検索したアイテムのインデックス
+    content.vb: Public Function LastIndexOf(item As T) As Integer
+  overload: TotalDialogue.Core.Collections.TDFList`1.LastIndexOf*
+  nameWithType.vb: TDFList(Of T).LastIndexOf(T)
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).LastIndexOf(T)
+- uid: TotalDialogue.Core.Collections.TDFList`1.Contains(`0)
+  commentId: M:TotalDialogue.Core.Collections.TDFList`1.Contains(`0)
+  id: Contains(`0)
+  parent: TotalDialogue.Core.Collections.TDFList`1
+  langs:
+  - csharp
+  - vb
+  name: Contains(T)
+  nameWithType: TDFList<T>.Contains(T)
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.Contains(T)
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+      branch: master
+      repo: git@github.com:zgock999/TotalDialogueFramework.git
+    id: Contains
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+    startLine: 691
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Collections
+  summary: リスト内に指定したアイテムが含まれているかどうかを取得します。
+  remarks: ロックされている場合、ロックが解除されるまで待機します。
+  example: []
+  syntax:
+    content: public bool Contains(T item)
+    parameters:
+    - id: item
+      type: '{T}'
+      description: 検索するアイテム
+    return:
+      type: System.Boolean
+      description: 含まれているかどうか
+    content.vb: Public Function Contains(item As T) As Boolean
+  overload: TotalDialogue.Core.Collections.TDFList`1.Contains*
+  nameWithType.vb: TDFList(Of T).Contains(T)
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).Contains(T)
+- uid: TotalDialogue.Core.Collections.TDFList`1.Find(System.Predicate{`0})
+  commentId: M:TotalDialogue.Core.Collections.TDFList`1.Find(System.Predicate{`0})
+  id: Find(System.Predicate{`0})
+  parent: TotalDialogue.Core.Collections.TDFList`1
+  langs:
+  - csharp
+  - vb
+  name: Find(Predicate<T>)
+  nameWithType: TDFList<T>.Find(Predicate<T>)
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.Find(System.Predicate<T>)
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+      branch: master
+      repo: git@github.com:zgock999/TotalDialogueFramework.git
+    id: Find
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+    startLine: 710
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Collections
+  summary: リスト内のアイテムを検索します。
+  remarks: ロックされている場合、ロックが解除されるまで待機します。
+  example: []
+  syntax:
+    content: public T Find(Predicate<T> match)
+    parameters:
+    - id: match
+      type: System.Predicate{{T}}
+      description: 検索条件
+    return:
+      type: '{T}'
+      description: 検索したアイテム
+    content.vb: Public Function Find(match As Predicate(Of T)) As T
+  overload: TotalDialogue.Core.Collections.TDFList`1.Find*
+  nameWithType.vb: TDFList(Of T).Find(Predicate(Of T))
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).Find(System.Predicate(Of T))
+  name.vb: Find(Predicate(Of T))
+- uid: TotalDialogue.Core.Collections.TDFList`1.FindAll(System.Predicate{`0})
+  commentId: M:TotalDialogue.Core.Collections.TDFList`1.FindAll(System.Predicate{`0})
+  id: FindAll(System.Predicate{`0})
+  parent: TotalDialogue.Core.Collections.TDFList`1
+  langs:
+  - csharp
+  - vb
+  name: FindAll(Predicate<T>)
+  nameWithType: TDFList<T>.FindAll(Predicate<T>)
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.FindAll(System.Predicate<T>)
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+      branch: master
+      repo: git@github.com:zgock999/TotalDialogueFramework.git
+    id: FindAll
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+    startLine: 729
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Collections
+  summary: リスト内のアイテムを検索します。
+  remarks: ロックされている場合、ロックが解除されるまで待機します。
+  example: []
+  syntax:
+    content: public List<T> FindAll(Predicate<T> match)
+    parameters:
+    - id: match
+      type: System.Predicate{{T}}
+      description: 検索条件
+    return:
+      type: System.Collections.Generic.List{{T}}
+      description: 検索したアイテム（複数）
+    content.vb: Public Function FindAll(match As Predicate(Of T)) As List(Of T)
+  overload: TotalDialogue.Core.Collections.TDFList`1.FindAll*
+  nameWithType.vb: TDFList(Of T).FindAll(Predicate(Of T))
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).FindAll(System.Predicate(Of T))
+  name.vb: FindAll(Predicate(Of T))
+- uid: TotalDialogue.Core.Collections.TDFList`1.FindIndex(System.Predicate{`0})
+  commentId: M:TotalDialogue.Core.Collections.TDFList`1.FindIndex(System.Predicate{`0})
+  id: FindIndex(System.Predicate{`0})
+  parent: TotalDialogue.Core.Collections.TDFList`1
+  langs:
+  - csharp
+  - vb
+  name: FindIndex(Predicate<T>)
+  nameWithType: TDFList<T>.FindIndex(Predicate<T>)
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.FindIndex(System.Predicate<T>)
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+      branch: master
+      repo: git@github.com:zgock999/TotalDialogueFramework.git
+    id: FindIndex
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+    startLine: 748
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Collections
+  summary: リスト内のアイテムのインデックスを検索します。
+  remarks: ロックされている場合、ロックが解除されるまで待機します。
+  example: []
+  syntax:
+    content: public int FindIndex(Predicate<T> match)
+    parameters:
+    - id: match
+      type: System.Predicate{{T}}
+      description: 検索条件
+    return:
+      type: System.Int32
+      description: 検索したアイテムのインデックス
+    content.vb: Public Function FindIndex(match As Predicate(Of T)) As Integer
+  overload: TotalDialogue.Core.Collections.TDFList`1.FindIndex*
+  nameWithType.vb: TDFList(Of T).FindIndex(Predicate(Of T))
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).FindIndex(System.Predicate(Of T))
+  name.vb: FindIndex(Predicate(Of T))
+- uid: TotalDialogue.Core.Collections.TDFList`1.FindIndex(System.Int32,System.Predicate{`0})
+  commentId: M:TotalDialogue.Core.Collections.TDFList`1.FindIndex(System.Int32,System.Predicate{`0})
+  id: FindIndex(System.Int32,System.Predicate{`0})
+  parent: TotalDialogue.Core.Collections.TDFList`1
+  langs:
+  - csharp
+  - vb
+  name: FindIndex(int, Predicate<T>)
+  nameWithType: TDFList<T>.FindIndex(int, Predicate<T>)
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.FindIndex(int, System.Predicate<T>)
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+      branch: master
+      repo: git@github.com:zgock999/TotalDialogueFramework.git
+    id: FindIndex
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+    startLine: 768
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Collections
+  summary: リスト内のアイテムのインデックスを検索します。
+  remarks: ロックされている場合、ロックが解除されるまで待機します。
+  example: []
+  syntax:
+    content: public int FindIndex(int startIndex, Predicate<T> match)
+    parameters:
+    - id: startIndex
+      type: System.Int32
+      description: 検索開始インデックス
+    - id: match
+      type: System.Predicate{{T}}
+      description: 検索条件
+    return:
+      type: System.Int32
+      description: 検索したアイテムのインデックス
+    content.vb: Public Function FindIndex(startIndex As Integer, match As Predicate(Of T)) As Integer
+  overload: TotalDialogue.Core.Collections.TDFList`1.FindIndex*
+  nameWithType.vb: TDFList(Of T).FindIndex(Integer, Predicate(Of T))
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).FindIndex(Integer, System.Predicate(Of T))
+  name.vb: FindIndex(Integer, Predicate(Of T))
+- uid: TotalDialogue.Core.Collections.TDFList`1.FindIndex(System.Int32,System.Int32,System.Predicate{`0})
+  commentId: M:TotalDialogue.Core.Collections.TDFList`1.FindIndex(System.Int32,System.Int32,System.Predicate{`0})
+  id: FindIndex(System.Int32,System.Int32,System.Predicate{`0})
+  parent: TotalDialogue.Core.Collections.TDFList`1
+  langs:
+  - csharp
+  - vb
+  name: FindIndex(int, int, Predicate<T>)
+  nameWithType: TDFList<T>.FindIndex(int, int, Predicate<T>)
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.FindIndex(int, int, System.Predicate<T>)
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+      branch: master
+      repo: git@github.com:zgock999/TotalDialogueFramework.git
+    id: FindIndex
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+    startLine: 789
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Collections
+  summary: リスト内のアイテムのインデックスを検索します。
+  remarks: ロックされている場合、ロックが解除されるまで待機します。
+  example: []
+  syntax:
+    content: public int FindIndex(int startIndex, int count, Predicate<T> match)
+    parameters:
+    - id: startIndex
+      type: System.Int32
+      description: 検索開始インデックス
+    - id: count
+      type: System.Int32
+      description: 検索するアイテム数
+    - id: match
+      type: System.Predicate{{T}}
+      description: 検索条件
+    return:
+      type: System.Int32
+      description: 検索したアイテムのインデックス
+    content.vb: Public Function FindIndex(startIndex As Integer, count As Integer, match As Predicate(Of T)) As Integer
+  overload: TotalDialogue.Core.Collections.TDFList`1.FindIndex*
+  nameWithType.vb: TDFList(Of T).FindIndex(Integer, Integer, Predicate(Of T))
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).FindIndex(Integer, Integer, System.Predicate(Of T))
+  name.vb: FindIndex(Integer, Integer, Predicate(Of T))
+- uid: TotalDialogue.Core.Collections.TDFList`1.FindLast(System.Predicate{`0})
+  commentId: M:TotalDialogue.Core.Collections.TDFList`1.FindLast(System.Predicate{`0})
+  id: FindLast(System.Predicate{`0})
+  parent: TotalDialogue.Core.Collections.TDFList`1
+  langs:
+  - csharp
+  - vb
+  name: FindLast(Predicate<T>)
+  nameWithType: TDFList<T>.FindLast(Predicate<T>)
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.FindLast(System.Predicate<T>)
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+      branch: master
+      repo: git@github.com:zgock999/TotalDialogueFramework.git
+    id: FindLast
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+    startLine: 808
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Collections
+  summary: リスト内のアイテムを逆順で検索します。
+  remarks: ロックされている場合、ロックが解除されるまで待機します。
+  example: []
+  syntax:
+    content: public T FindLast(Predicate<T> match)
+    parameters:
+    - id: match
+      type: System.Predicate{{T}}
+      description: 検索条件
+    return:
+      type: '{T}'
+      description: 検索したアイテム
+    content.vb: Public Function FindLast(match As Predicate(Of T)) As T
+  overload: TotalDialogue.Core.Collections.TDFList`1.FindLast*
+  nameWithType.vb: TDFList(Of T).FindLast(Predicate(Of T))
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).FindLast(System.Predicate(Of T))
+  name.vb: FindLast(Predicate(Of T))
+- uid: TotalDialogue.Core.Collections.TDFList`1.FindLastIndex(System.Predicate{`0})
+  commentId: M:TotalDialogue.Core.Collections.TDFList`1.FindLastIndex(System.Predicate{`0})
+  id: FindLastIndex(System.Predicate{`0})
+  parent: TotalDialogue.Core.Collections.TDFList`1
+  langs:
+  - csharp
+  - vb
+  name: FindLastIndex(Predicate<T>)
+  nameWithType: TDFList<T>.FindLastIndex(Predicate<T>)
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.FindLastIndex(System.Predicate<T>)
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+      branch: master
+      repo: git@github.com:zgock999/TotalDialogueFramework.git
+    id: FindLastIndex
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+    startLine: 827
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Collections
+  summary: リスト内のアイテムのインデックスを逆順で検索します。
+  remarks: ロックされている場合、ロックが解除されるまで待機します。
+  example: []
+  syntax:
+    content: public int FindLastIndex(Predicate<T> match)
+    parameters:
+    - id: match
+      type: System.Predicate{{T}}
+      description: 検索条件
+    return:
+      type: System.Int32
+      description: 検索したアイテムのインデックス
+    content.vb: Public Function FindLastIndex(match As Predicate(Of T)) As Integer
+  overload: TotalDialogue.Core.Collections.TDFList`1.FindLastIndex*
+  nameWithType.vb: TDFList(Of T).FindLastIndex(Predicate(Of T))
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).FindLastIndex(System.Predicate(Of T))
+  name.vb: FindLastIndex(Predicate(Of T))
+- uid: TotalDialogue.Core.Collections.TDFList`1.FindLastIndex(System.Int32,System.Predicate{`0})
+  commentId: M:TotalDialogue.Core.Collections.TDFList`1.FindLastIndex(System.Int32,System.Predicate{`0})
+  id: FindLastIndex(System.Int32,System.Predicate{`0})
+  parent: TotalDialogue.Core.Collections.TDFList`1
+  langs:
+  - csharp
+  - vb
+  name: FindLastIndex(int, Predicate<T>)
+  nameWithType: TDFList<T>.FindLastIndex(int, Predicate<T>)
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.FindLastIndex(int, System.Predicate<T>)
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+      branch: master
+      repo: git@github.com:zgock999/TotalDialogueFramework.git
+    id: FindLastIndex
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+    startLine: 847
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Collections
+  summary: リスト内のアイテムのインデックスを逆順で検索します。
+  remarks: ロックされている場合、ロックが解除されるまで待機します。
+  example: []
+  syntax:
+    content: public int FindLastIndex(int startIndex, Predicate<T> match)
+    parameters:
+    - id: startIndex
+      type: System.Int32
+      description: 検索開始インデックス
+    - id: match
+      type: System.Predicate{{T}}
+      description: 検索条件
+    return:
+      type: System.Int32
+      description: 検索したアイテムのインデックス
+    content.vb: Public Function FindLastIndex(startIndex As Integer, match As Predicate(Of T)) As Integer
+  overload: TotalDialogue.Core.Collections.TDFList`1.FindLastIndex*
+  nameWithType.vb: TDFList(Of T).FindLastIndex(Integer, Predicate(Of T))
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).FindLastIndex(Integer, System.Predicate(Of T))
+  name.vb: FindLastIndex(Integer, Predicate(Of T))
+- uid: TotalDialogue.Core.Collections.TDFList`1.FindLastIndex(System.Int32,System.Int32,System.Predicate{`0})
+  commentId: M:TotalDialogue.Core.Collections.TDFList`1.FindLastIndex(System.Int32,System.Int32,System.Predicate{`0})
+  id: FindLastIndex(System.Int32,System.Int32,System.Predicate{`0})
+  parent: TotalDialogue.Core.Collections.TDFList`1
+  langs:
+  - csharp
+  - vb
+  name: FindLastIndex(int, int, Predicate<T>)
+  nameWithType: TDFList<T>.FindLastIndex(int, int, Predicate<T>)
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.FindLastIndex(int, int, System.Predicate<T>)
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+      branch: master
+      repo: git@github.com:zgock999/TotalDialogueFramework.git
+    id: FindLastIndex
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+    startLine: 868
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Collections
+  summary: リスト内のアイテムのインデックスを逆順で検索します。
+  remarks: ロックされている場合、ロックが解除されるまで待機します。
+  example: []
+  syntax:
+    content: public int FindLastIndex(int startIndex, int count, Predicate<T> match)
+    parameters:
+    - id: startIndex
+      type: System.Int32
+      description: 検索開始インデックス
+    - id: count
+      type: System.Int32
+      description: 検索するアイテム数
+    - id: match
+      type: System.Predicate{{T}}
+      description: 検索条件
+    return:
+      type: System.Int32
+      description: 検索したアイテムのインデックス
+    content.vb: Public Function FindLastIndex(startIndex As Integer, count As Integer, match As Predicate(Of T)) As Integer
+  overload: TotalDialogue.Core.Collections.TDFList`1.FindLastIndex*
+  nameWithType.vb: TDFList(Of T).FindLastIndex(Integer, Integer, Predicate(Of T))
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).FindLastIndex(Integer, Integer, System.Predicate(Of T))
+  name.vb: FindLastIndex(Integer, Integer, Predicate(Of T))
+- uid: TotalDialogue.Core.Collections.TDFList`1.RemoveAll(System.Predicate{`0})
+  commentId: M:TotalDialogue.Core.Collections.TDFList`1.RemoveAll(System.Predicate{`0})
+  id: RemoveAll(System.Predicate{`0})
+  parent: TotalDialogue.Core.Collections.TDFList`1
+  langs:
+  - csharp
+  - vb
+  name: RemoveAll(Predicate<T>)
+  nameWithType: TDFList<T>.RemoveAll(Predicate<T>)
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.RemoveAll(System.Predicate<T>)
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+      branch: master
+      repo: git@github.com:zgock999/TotalDialogueFramework.git
+    id: RemoveAll
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+    startLine: 889
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Collections
+  summary: リストから一致するすべてのアイテムを削除します。
+  remarks: >-
+    ロックされている場合、ロックが解除されるまで待機します。
+
+    削除が発生したときにOnChangeイベントを発生させます。
+
+    削除が発生したときにInvokeOnChangeメソッドを呼び出します。
+  example: []
+  syntax:
+    content: public virtual int RemoveAll(Predicate<T> match)
+    parameters:
+    - id: match
+      type: System.Predicate{{T}}
+      description: 削除条件
+    return:
+      type: System.Int32
+      description: 削除したアイテム数
+    content.vb: Public Overridable Function RemoveAll(match As Predicate(Of T)) As Integer
+  overload: TotalDialogue.Core.Collections.TDFList`1.RemoveAll*
+  nameWithType.vb: TDFList(Of T).RemoveAll(Predicate(Of T))
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).RemoveAll(System.Predicate(Of T))
+  name.vb: RemoveAll(Predicate(Of T))
+- uid: TotalDialogue.Core.Collections.TDFList`1.ToArray
+  commentId: M:TotalDialogue.Core.Collections.TDFList`1.ToArray
+  id: ToArray
+  parent: TotalDialogue.Core.Collections.TDFList`1
+  langs:
+  - csharp
+  - vb
+  name: ToArray()
+  nameWithType: TDFList<T>.ToArray()
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.ToArray()
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+      branch: master
+      repo: git@github.com:zgock999/TotalDialogueFramework.git
+    id: ToArray
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+    startLine: 910
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Collections
+  summary: リストの要素を新しい配列にコピーします。
+  remarks: ロックされている場合、ロックが解除されるまで待機します。
+  example: []
+  syntax:
+    content: public T[] ToArray()
+    return:
+      type: '{T}[]'
+      description: 新しい配列
+    content.vb: Public Function ToArray() As T()
+  overload: TotalDialogue.Core.Collections.TDFList`1.ToArray*
+  nameWithType.vb: TDFList(Of T).ToArray()
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).ToArray()
+- uid: TotalDialogue.Core.Collections.TDFList`1.TrimExcess
+  commentId: M:TotalDialogue.Core.Collections.TDFList`1.TrimExcess
+  id: TrimExcess
+  parent: TotalDialogue.Core.Collections.TDFList`1
+  langs:
+  - csharp
+  - vb
+  name: TrimExcess()
+  nameWithType: TDFList<T>.TrimExcess()
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.TrimExcess()
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+      branch: master
+      repo: git@github.com:zgock999/TotalDialogueFramework.git
+    id: TrimExcess
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+    startLine: 930
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Collections
+  summary: リストの容量を、実際の要素数に合わせて最小限にします。
+  remarks: >-
+    ロックされている場合、ロックが解除されるまで待機します。
+
+    Trimによって要素数が変化したときにOnChangeイベントを発生させます。
+
+    Trimによって要素数が変化したときにInvokeOnChangeメソッドを呼び出します。
+  example: []
+  syntax:
+    content: public void TrimExcess()
+    content.vb: Public Sub TrimExcess()
+  overload: TotalDialogue.Core.Collections.TDFList`1.TrimExcess*
+  nameWithType.vb: TDFList(Of T).TrimExcess()
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).TrimExcess()
+- uid: TotalDialogue.Core.Collections.TDFList`1.TrueForAll(System.Predicate{`0})
+  commentId: M:TotalDialogue.Core.Collections.TDFList`1.TrueForAll(System.Predicate{`0})
+  id: TrueForAll(System.Predicate{`0})
+  parent: TotalDialogue.Core.Collections.TDFList`1
+  langs:
+  - csharp
+  - vb
+  name: TrueForAll(Predicate<T>)
+  nameWithType: TDFList<T>.TrueForAll(Predicate<T>)
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.TrueForAll(System.Predicate<T>)
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+      branch: master
+      repo: git@github.com:zgock999/TotalDialogueFramework.git
+    id: TrueForAll
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+    startLine: 954
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Collections
+  summary: リストのすべての要素が指定した述語によって定義される条件を満たすかどうかを判断します。
+  remarks: ロックされている場合、ロックが解除されるまで待機します。
+  example: []
+  syntax:
+    content: public bool TrueForAll(Predicate<T> match)
+    parameters:
+    - id: match
+      type: System.Predicate{{T}}
+      description: 判断条件
+    return:
+      type: System.Boolean
+      description: すべての要素が条件を満たす場合は true。それ以外の場合は false。
+    content.vb: Public Function TrueForAll(match As Predicate(Of T)) As Boolean
+  overload: TotalDialogue.Core.Collections.TDFList`1.TrueForAll*
+  nameWithType.vb: TDFList(Of T).TrueForAll(Predicate(Of T))
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).TrueForAll(System.Predicate(Of T))
+  name.vb: TrueForAll(Predicate(Of T))
+- uid: TotalDialogue.Core.Collections.TDFList`1.AddRange(TotalDialogue.Core.Collections.TDFList{`0})
+  commentId: M:TotalDialogue.Core.Collections.TDFList`1.AddRange(TotalDialogue.Core.Collections.TDFList{`0})
+  id: AddRange(TotalDialogue.Core.Collections.TDFList{`0})
+  parent: TotalDialogue.Core.Collections.TDFList`1
+  langs:
+  - csharp
+  - vb
+  name: AddRange(TDFList<T>)
+  nameWithType: TDFList<T>.AddRange(TDFList<T>)
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.AddRange(TotalDialogue.Core.Collections.TDFList<T>)
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+      branch: master
+      repo: git@github.com:zgock999/TotalDialogueFramework.git
+    id: AddRange
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+    startLine: 1008
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Collections
+  summary: リストに指定したコレクションの要素を追加します。
+  remarks: ロックされている場合、ロックが解除されるまで待機します。
+  example: []
+  syntax:
+    content: public virtual void AddRange(TDFList<T> collection)
+    parameters:
+    - id: collection
+      type: TotalDialogue.Core.Collections.TDFList`1
+      description: 追加する要素のコレクション
+    content.vb: Public Overridable Sub AddRange(collection As TDFList(Of T))
+  overload: TotalDialogue.Core.Collections.TDFList`1.AddRange*
+  nameWithType.vb: TDFList(Of T).AddRange(TDFList(Of T))
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).AddRange(TotalDialogue.Core.Collections.TDFList(Of T))
+  name.vb: AddRange(TDFList(Of T))
+- uid: TotalDialogue.Core.Collections.TDFList`1.RemoveRange(TotalDialogue.Core.Collections.TDFList{`0})
+  commentId: M:TotalDialogue.Core.Collections.TDFList`1.RemoveRange(TotalDialogue.Core.Collections.TDFList{`0})
+  id: RemoveRange(TotalDialogue.Core.Collections.TDFList{`0})
+  parent: TotalDialogue.Core.Collections.TDFList`1
+  langs:
+  - csharp
+  - vb
+  name: RemoveRange(TDFList<T>)
+  nameWithType: TDFList<T>.RemoveRange(TDFList<T>)
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.RemoveRange(TotalDialogue.Core.Collections.TDFList<T>)
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+      branch: master
+      repo: git@github.com:zgock999/TotalDialogueFramework.git
+    id: RemoveRange
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+    startLine: 1028
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Collections
+  summary: リストから指定したコレクションの要素をすべて削除します。
+  remarks: ロックされている場合、ロックが解除されるまで待機します。
+  example: []
+  syntax:
+    content: public virtual void RemoveRange(TDFList<T> collection)
+    parameters:
+    - id: collection
+      type: TotalDialogue.Core.Collections.TDFList`1
+      description: 削除する要素のコレクション
+    content.vb: Public Overridable Sub RemoveRange(collection As TDFList(Of T))
+  overload: TotalDialogue.Core.Collections.TDFList`1.RemoveRange*
+  nameWithType.vb: TDFList(Of T).RemoveRange(TDFList(Of T))
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).RemoveRange(TotalDialogue.Core.Collections.TDFList(Of T))
+  name.vb: RemoveRange(TDFList(Of T))
+- uid: TotalDialogue.Core.Collections.TDFList`1.GetItemType
+  commentId: M:TotalDialogue.Core.Collections.TDFList`1.GetItemType
+  id: GetItemType
+  parent: TotalDialogue.Core.Collections.TDFList`1
+  langs:
+  - csharp
+  - vb
+  name: GetItemType()
+  nameWithType: TDFList<T>.GetItemType()
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.GetItemType()
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+      branch: master
+      repo: git@github.com:zgock999/TotalDialogueFramework.git
+    id: GetItemType
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+    startLine: 1048
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Collections
+  summary: リストの要素の型を取得します。
+  example: []
+  syntax:
+    content: public Type GetItemType()
+    return:
+      type: System.Type
+      description: リストの要素の型
+    content.vb: Public Function GetItemType() As Type
+  overload: TotalDialogue.Core.Collections.TDFList`1.GetItemType*
+  nameWithType.vb: TDFList(Of T).GetItemType()
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).GetItemType()
+- uid: TotalDialogue.Core.Collections.TDFList`1.UpdateDuplicates
+  commentId: M:TotalDialogue.Core.Collections.TDFList`1.UpdateDuplicates
+  id: UpdateDuplicates
+  parent: TotalDialogue.Core.Collections.TDFList`1
+  langs:
+  - csharp
+  - vb
+  name: UpdateDuplicates()
+  nameWithType: TDFList<T>.UpdateDuplicates()
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.UpdateDuplicates()
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+      branch: master
+      repo: git@github.com:zgock999/TotalDialogueFramework.git
+    id: UpdateDuplicates
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+    startLine: 1060
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Collections
+  summary: リスト内の重複要素の処理を行います
+  remarks: >-
+    サブクラスのためのスタブメソッドであり、オーバーライドして使用します。
+
+    リスト内に重複要素がある場合、重複要素を処理します。
+
+    要素の位置関係が変更されている可能性があるときに呼びだすことを推奨します。
+  example: []
+  syntax:
+    content: public virtual void UpdateDuplicates()
+    content.vb: Public Overridable Sub UpdateDuplicates()
+  overload: TotalDialogue.Core.Collections.TDFList`1.UpdateDuplicates*
+  nameWithType.vb: TDFList(Of T).UpdateDuplicates()
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).UpdateDuplicates()
+- uid: TotalDialogue.Core.Collections.TDFList`1.OnBeforeSerialize
+  commentId: M:TotalDialogue.Core.Collections.TDFList`1.OnBeforeSerialize
+  id: OnBeforeSerialize
+  parent: TotalDialogue.Core.Collections.TDFList`1
+  langs:
+  - csharp
+  - vb
+  name: OnBeforeSerialize()
+  nameWithType: TDFList<T>.OnBeforeSerialize()
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.OnBeforeSerialize()
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+      branch: master
+      repo: git@github.com:zgock999/TotalDialogueFramework.git
+    id: OnBeforeSerialize
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+    startLine: 1066
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Collections
+  summary: シリアライズ前の処理を行います。
+  example: []
+  syntax:
+    content: public virtual void OnBeforeSerialize()
+    content.vb: Public Overridable Sub OnBeforeSerialize()
+  overload: TotalDialogue.Core.Collections.TDFList`1.OnBeforeSerialize*
+  implements:
+  - UnityEngine.ISerializationCallbackReceiver.OnBeforeSerialize
+  nameWithType.vb: TDFList(Of T).OnBeforeSerialize()
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).OnBeforeSerialize()
+- uid: TotalDialogue.Core.Collections.TDFList`1.OnAfterDeserialize
+  commentId: M:TotalDialogue.Core.Collections.TDFList`1.OnAfterDeserialize
+  id: OnAfterDeserialize
+  parent: TotalDialogue.Core.Collections.TDFList`1
+  langs:
+  - csharp
+  - vb
+  name: OnAfterDeserialize()
+  nameWithType: TDFList<T>.OnAfterDeserialize()
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.OnAfterDeserialize()
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+      branch: master
+      repo: git@github.com:zgock999/TotalDialogueFramework.git
+    id: OnAfterDeserialize
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+    startLine: 1075
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Collections
+  summary: デシリアライズ後の処理を行います。
+  example: []
+  syntax:
+    content: public virtual void OnAfterDeserialize()
+    content.vb: Public Overridable Sub OnAfterDeserialize()
+  overload: TotalDialogue.Core.Collections.TDFList`1.OnAfterDeserialize*
+  implements:
+  - UnityEngine.ISerializationCallbackReceiver.OnAfterDeserialize
+  nameWithType.vb: TDFList(Of T).OnAfterDeserialize()
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).OnAfterDeserialize()
+- uid: TotalDialogue.Core.Collections.TDFList`1.InvokeOnChange
+  commentId: M:TotalDialogue.Core.Collections.TDFList`1.InvokeOnChange
+  id: InvokeOnChange
+  parent: TotalDialogue.Core.Collections.TDFList`1
+  langs:
+  - csharp
+  - vb
+  name: InvokeOnChange()
+  nameWithType: TDFList<T>.InvokeOnChange()
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.InvokeOnChange()
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+      branch: master
+      repo: git@github.com:zgock999/TotalDialogueFramework.git
+    id: InvokeOnChange
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+    startLine: 1084
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Collections
+  summary: OnChangeイベントを発生させます。
+  example: []
+  syntax:
+    content: public void InvokeOnChange()
+    content.vb: Public Sub InvokeOnChange()
+  overload: TotalDialogue.Core.Collections.TDFList`1.InvokeOnChange*
+  nameWithType.vb: TDFList(Of T).InvokeOnChange()
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).InvokeOnChange()
+- uid: TotalDialogue.Core.Collections.TDFList`1.InvokeOnChangeItem(System.Int32,`0)
+  commentId: M:TotalDialogue.Core.Collections.TDFList`1.InvokeOnChangeItem(System.Int32,`0)
+  id: InvokeOnChangeItem(System.Int32,`0)
+  parent: TotalDialogue.Core.Collections.TDFList`1
+  langs:
+  - csharp
+  - vb
+  name: InvokeOnChangeItem(int, T)
+  nameWithType: TDFList<T>.InvokeOnChangeItem(int, T)
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.InvokeOnChangeItem(int, T)
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+      branch: master
+      repo: git@github.com:zgock999/TotalDialogueFramework.git
+    id: InvokeOnChangeItem
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+    startLine: 1092
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Collections
+  summary: OnChangeItemイベントを発生させます。
+  example: []
+  syntax:
+    content: protected void InvokeOnChangeItem(int index, T item)
+    parameters:
+    - id: index
+      type: System.Int32
+    - id: item
+      type: '{T}'
+    content.vb: Protected Sub InvokeOnChangeItem(index As Integer, item As T)
+  overload: TotalDialogue.Core.Collections.TDFList`1.InvokeOnChangeItem*
+  nameWithType.vb: TDFList(Of T).InvokeOnChangeItem(Integer, T)
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).InvokeOnChangeItem(Integer, T)
+  name.vb: InvokeOnChangeItem(Integer, T)
+- uid: TotalDialogue.Core.Collections.TDFList`1.InvokeOnAdd(System.Int32,`0)
+  commentId: M:TotalDialogue.Core.Collections.TDFList`1.InvokeOnAdd(System.Int32,`0)
+  id: InvokeOnAdd(System.Int32,`0)
+  parent: TotalDialogue.Core.Collections.TDFList`1
+  langs:
+  - csharp
+  - vb
+  name: InvokeOnAdd(int, T)
+  nameWithType: TDFList<T>.InvokeOnAdd(int, T)
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.InvokeOnAdd(int, T)
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+      branch: master
+      repo: git@github.com:zgock999/TotalDialogueFramework.git
+    id: InvokeOnAdd
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+    startLine: 1099
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Collections
+  summary: OnAddイベントを発生させます。
+  example: []
+  syntax:
+    content: protected void InvokeOnAdd(int index, T item)
+    parameters:
+    - id: index
+      type: System.Int32
+    - id: item
+      type: '{T}'
+    content.vb: Protected Sub InvokeOnAdd(index As Integer, item As T)
+  overload: TotalDialogue.Core.Collections.TDFList`1.InvokeOnAdd*
+  nameWithType.vb: TDFList(Of T).InvokeOnAdd(Integer, T)
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).InvokeOnAdd(Integer, T)
+  name.vb: InvokeOnAdd(Integer, T)
+- uid: TotalDialogue.Core.Collections.TDFList`1.InvokeOnRemove(System.Int32,`0)
+  commentId: M:TotalDialogue.Core.Collections.TDFList`1.InvokeOnRemove(System.Int32,`0)
+  id: InvokeOnRemove(System.Int32,`0)
+  parent: TotalDialogue.Core.Collections.TDFList`1
+  langs:
+  - csharp
+  - vb
+  name: InvokeOnRemove(int, T)
+  nameWithType: TDFList<T>.InvokeOnRemove(int, T)
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.InvokeOnRemove(int, T)
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+      branch: master
+      repo: git@github.com:zgock999/TotalDialogueFramework.git
+    id: InvokeOnRemove
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+    startLine: 1106
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Collections
+  summary: OnRemoveイベントを発生させます。
+  example: []
+  syntax:
+    content: protected void InvokeOnRemove(int index, T item)
+    parameters:
+    - id: index
+      type: System.Int32
+    - id: item
+      type: '{T}'
+    content.vb: Protected Sub InvokeOnRemove(index As Integer, item As T)
+  overload: TotalDialogue.Core.Collections.TDFList`1.InvokeOnRemove*
+  nameWithType.vb: TDFList(Of T).InvokeOnRemove(Integer, T)
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).InvokeOnRemove(Integer, T)
+  name.vb: InvokeOnRemove(Integer, T)
+references:
+- uid: TotalDialogue.Core.Collections
+  commentId: N:TotalDialogue.Core.Collections
+  href: TotalDialogue.html
+  name: TotalDialogue.Core.Collections
+  nameWithType: TotalDialogue.Core.Collections
+  fullName: TotalDialogue.Core.Collections
+  spec.csharp:
+  - uid: TotalDialogue
+    name: TotalDialogue
+    href: TotalDialogue.html
+  - name: .
+  - uid: TotalDialogue.Core
+    name: Core
+    href: TotalDialogue.Core.html
+  - name: .
+  - uid: TotalDialogue.Core.Collections
+    name: Collections
+    href: TotalDialogue.Core.Collections.html
+  spec.vb:
+  - uid: TotalDialogue
+    name: TotalDialogue
+    href: TotalDialogue.html
+  - name: .
+  - uid: TotalDialogue.Core
+    name: Core
+    href: TotalDialogue.Core.html
+  - name: .
+  - uid: TotalDialogue.Core.Collections
+    name: Collections
+    href: TotalDialogue.Core.Collections.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: TotalDialogue.Core.Collections.ITDFList{{T}}
+  commentId: T:TotalDialogue.Core.Collections.ITDFList{`0}
+  parent: TotalDialogue.Core.Collections
+  definition: TotalDialogue.Core.Collections.ITDFList`1
+  href: TotalDialogue.Core.Collections.ITDFList-1.html
+  name: ITDFList<T>
+  nameWithType: ITDFList<T>
+  fullName: TotalDialogue.Core.Collections.ITDFList<T>
+  nameWithType.vb: ITDFList(Of T)
+  fullName.vb: TotalDialogue.Core.Collections.ITDFList(Of T)
+  name.vb: ITDFList(Of T)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Collections.ITDFList`1
+    name: ITDFList
+    href: TotalDialogue.Core.Collections.ITDFList-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: TotalDialogue.Core.Collections.ITDFList`1
+    name: ITDFList
+    href: TotalDialogue.Core.Collections.ITDFList-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic.IEnumerable{{T}}
+  commentId: T:System.Collections.Generic.IEnumerable{`0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.IEnumerable
+  commentId: T:System.Collections.IEnumerable
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable
+  name: IEnumerable
+  nameWithType: IEnumerable
+  fullName: System.Collections.IEnumerable
+- uid: UnityEngine.ISerializationCallbackReceiver
+  commentId: T:UnityEngine.ISerializationCallbackReceiver
+  parent: UnityEngine
+  isExternal: true
+  name: ISerializationCallbackReceiver
+  nameWithType: ISerializationCallbackReceiver
+  fullName: UnityEngine.ISerializationCallbackReceiver
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: TotalDialogue.Core.Collections.ITDFList`1
+  commentId: T:TotalDialogue.Core.Collections.ITDFList`1
+  href: TotalDialogue.Core.Collections.ITDFList-1.html
+  name: ITDFList<T>
+  nameWithType: ITDFList<T>
+  fullName: TotalDialogue.Core.Collections.ITDFList<T>
+  nameWithType.vb: ITDFList(Of T)
+  fullName.vb: TotalDialogue.Core.Collections.ITDFList(Of T)
+  name.vb: ITDFList(Of T)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Collections.ITDFList`1
+    name: ITDFList
+    href: TotalDialogue.Core.Collections.ITDFList-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: TotalDialogue.Core.Collections.ITDFList`1
+    name: ITDFList
+    href: TotalDialogue.Core.Collections.ITDFList-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: System.Collections.Generic.List{{T}}
+  commentId: T:System.Collections.Generic.List{`0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: TotalDialogue.Core.Collections.TDFList`1.Serializing*
+  commentId: Overload:TotalDialogue.Core.Collections.TDFList`1.Serializing
+  href: TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_Serializing
+  name: Serializing
+  nameWithType: TDFList<T>.Serializing
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.Serializing
+  nameWithType.vb: TDFList(Of T).Serializing
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).Serializing
+- uid: TotalDialogue.Core.Collections.ITDFList{{T}}.Serializing
+  commentId: P:TotalDialogue.Core.Collections.ITDFList{`0}.Serializing
+  parent: TotalDialogue.Core.Collections.ITDFList{{T}}
+  definition: TotalDialogue.Core.Collections.ITDFList`1.Serializing
+  href: TotalDialogue.Core.Collections.ITDFList-1.html#TotalDialogue_Core_Collections_ITDFList_1_Serializing
+  name: Serializing
+  nameWithType: ITDFList<T>.Serializing
+  fullName: TotalDialogue.Core.Collections.ITDFList<T>.Serializing
+  nameWithType.vb: ITDFList(Of T).Serializing
+  fullName.vb: TotalDialogue.Core.Collections.ITDFList(Of T).Serializing
+- uid: TotalDialogue.Core.Collections.ITDFList`1.Serializing
+  commentId: P:TotalDialogue.Core.Collections.ITDFList`1.Serializing
+  href: TotalDialogue.Core.Collections.ITDFList-1.html#TotalDialogue_Core_Collections_ITDFList_1_Serializing
+  name: Serializing
+  nameWithType: ITDFList<T>.Serializing
+  fullName: TotalDialogue.Core.Collections.ITDFList<T>.Serializing
+  nameWithType.vb: ITDFList(Of T).Serializing
+  fullName.vb: TotalDialogue.Core.Collections.ITDFList(Of T).Serializing
+- uid: TotalDialogue.Core.Collections.TDFList`1.BeginLock*
+  commentId: Overload:TotalDialogue.Core.Collections.TDFList`1.BeginLock
+  href: TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_BeginLock
+  name: BeginLock
+  nameWithType: TDFList<T>.BeginLock
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.BeginLock
+  nameWithType.vb: TDFList(Of T).BeginLock
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).BeginLock
+- uid: TotalDialogue.Core.Collections.TDFList`1.EndLock*
+  commentId: Overload:TotalDialogue.Core.Collections.TDFList`1.EndLock
+  href: TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_EndLock
+  name: EndLock
+  nameWithType: TDFList<T>.EndLock
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.EndLock
+  nameWithType.vb: TDFList(Of T).EndLock
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).EndLock
+- uid: TotalDialogue.Core.Collections.ITDFList{{T}}.OnChange
+  commentId: E:TotalDialogue.Core.Collections.ITDFList{`0}.OnChange
+  parent: TotalDialogue.Core.Collections.ITDFList{{T}}
+  definition: TotalDialogue.Core.Collections.ITDFList`1.OnChange
+  href: TotalDialogue.Core.Collections.ITDFList-1.html#TotalDialogue_Core_Collections_ITDFList_1_OnChange
+  name: OnChange
+  nameWithType: ITDFList<T>.OnChange
+  fullName: TotalDialogue.Core.Collections.ITDFList<T>.OnChange
+  nameWithType.vb: ITDFList(Of T).OnChange
+  fullName.vb: TotalDialogue.Core.Collections.ITDFList(Of T).OnChange
+- uid: System.Action
+  commentId: T:System.Action
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action
+  name: Action
+  nameWithType: Action
+  fullName: System.Action
+- uid: TotalDialogue.Core.Collections.ITDFList`1.OnChange
+  commentId: E:TotalDialogue.Core.Collections.ITDFList`1.OnChange
+  href: TotalDialogue.Core.Collections.ITDFList-1.html#TotalDialogue_Core_Collections_ITDFList_1_OnChange
+  name: OnChange
+  nameWithType: ITDFList<T>.OnChange
+  fullName: TotalDialogue.Core.Collections.ITDFList<T>.OnChange
+  nameWithType.vb: ITDFList(Of T).OnChange
+  fullName.vb: TotalDialogue.Core.Collections.ITDFList(Of T).OnChange
+- uid: TotalDialogue.Core.Collections.ITDFList{{T}}.OnAdd
+  commentId: E:TotalDialogue.Core.Collections.ITDFList{`0}.OnAdd
+  parent: TotalDialogue.Core.Collections.ITDFList{{T}}
+  definition: TotalDialogue.Core.Collections.ITDFList`1.OnAdd
+  href: TotalDialogue.Core.Collections.ITDFList-1.html#TotalDialogue_Core_Collections_ITDFList_1_OnAdd
+  name: OnAdd
+  nameWithType: ITDFList<T>.OnAdd
+  fullName: TotalDialogue.Core.Collections.ITDFList<T>.OnAdd
+  nameWithType.vb: ITDFList(Of T).OnAdd
+  fullName.vb: TotalDialogue.Core.Collections.ITDFList(Of T).OnAdd
+- uid: System.Action{System.Int32,{T}}
+  commentId: T:System.Action{System.Int32,`0}
+  parent: System
+  definition: System.Action`2
+  href: https://learn.microsoft.com/dotnet/api/system.action-2
+  name: Action<int, T>
+  nameWithType: Action<int, T>
+  fullName: System.Action<int, T>
+  nameWithType.vb: Action(Of Integer, T)
+  fullName.vb: System.Action(Of Integer, T)
+  name.vb: Action(Of Integer, T)
+  spec.csharp:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: TotalDialogue.Core.Collections.ITDFList`1.OnAdd
+  commentId: E:TotalDialogue.Core.Collections.ITDFList`1.OnAdd
+  href: TotalDialogue.Core.Collections.ITDFList-1.html#TotalDialogue_Core_Collections_ITDFList_1_OnAdd
+  name: OnAdd
+  nameWithType: ITDFList<T>.OnAdd
+  fullName: TotalDialogue.Core.Collections.ITDFList<T>.OnAdd
+  nameWithType.vb: ITDFList(Of T).OnAdd
+  fullName.vb: TotalDialogue.Core.Collections.ITDFList(Of T).OnAdd
+- uid: System.Action`2
+  commentId: T:System.Action`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-2
+  name: Action<T1, T2>
+  nameWithType: Action<T1, T2>
+  fullName: System.Action<T1, T2>
+  nameWithType.vb: Action(Of T1, T2)
+  fullName.vb: System.Action(Of T1, T2)
+  name.vb: Action(Of T1, T2)
+  spec.csharp:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+- uid: TotalDialogue.Core.Collections.ITDFList{{T}}.OnRemove
+  commentId: E:TotalDialogue.Core.Collections.ITDFList{`0}.OnRemove
+  parent: TotalDialogue.Core.Collections.ITDFList{{T}}
+  definition: TotalDialogue.Core.Collections.ITDFList`1.OnRemove
+  href: TotalDialogue.Core.Collections.ITDFList-1.html#TotalDialogue_Core_Collections_ITDFList_1_OnRemove
+  name: OnRemove
+  nameWithType: ITDFList<T>.OnRemove
+  fullName: TotalDialogue.Core.Collections.ITDFList<T>.OnRemove
+  nameWithType.vb: ITDFList(Of T).OnRemove
+  fullName.vb: TotalDialogue.Core.Collections.ITDFList(Of T).OnRemove
+- uid: TotalDialogue.Core.Collections.ITDFList`1.OnRemove
+  commentId: E:TotalDialogue.Core.Collections.ITDFList`1.OnRemove
+  href: TotalDialogue.Core.Collections.ITDFList-1.html#TotalDialogue_Core_Collections_ITDFList_1_OnRemove
+  name: OnRemove
+  nameWithType: ITDFList<T>.OnRemove
+  fullName: TotalDialogue.Core.Collections.ITDFList<T>.OnRemove
+  nameWithType.vb: ITDFList(Of T).OnRemove
+  fullName.vb: TotalDialogue.Core.Collections.ITDFList(Of T).OnRemove
+- uid: TotalDialogue.Core.Collections.ITDFList{{T}}.OnChangeItem
+  commentId: E:TotalDialogue.Core.Collections.ITDFList{`0}.OnChangeItem
+  parent: TotalDialogue.Core.Collections.ITDFList{{T}}
+  definition: TotalDialogue.Core.Collections.ITDFList`1.OnChangeItem
+  href: TotalDialogue.Core.Collections.ITDFList-1.html#TotalDialogue_Core_Collections_ITDFList_1_OnChangeItem
+  name: OnChangeItem
+  nameWithType: ITDFList<T>.OnChangeItem
+  fullName: TotalDialogue.Core.Collections.ITDFList<T>.OnChangeItem
+  nameWithType.vb: ITDFList(Of T).OnChangeItem
+  fullName.vb: TotalDialogue.Core.Collections.ITDFList(Of T).OnChangeItem
+- uid: TotalDialogue.Core.Collections.ITDFList`1.OnChangeItem
+  commentId: E:TotalDialogue.Core.Collections.ITDFList`1.OnChangeItem
+  href: TotalDialogue.Core.Collections.ITDFList-1.html#TotalDialogue_Core_Collections_ITDFList_1_OnChangeItem
+  name: OnChangeItem
+  nameWithType: ITDFList<T>.OnChangeItem
+  fullName: TotalDialogue.Core.Collections.ITDFList<T>.OnChangeItem
+  nameWithType.vb: ITDFList(Of T).OnChangeItem
+  fullName.vb: TotalDialogue.Core.Collections.ITDFList(Of T).OnChangeItem
+- uid: TotalDialogue.Core.Collections.TDFList`1.Validate*
+  commentId: Overload:TotalDialogue.Core.Collections.TDFList`1.Validate
+  href: TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_Validate
+  name: Validate
+  nameWithType: TDFList<T>.Validate
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.Validate
+  nameWithType.vb: TDFList(Of T).Validate
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).Validate
+- uid: System.Func{{T},{T},{T}}
+  commentId: T:System.Func{`0,`0,`0}
+  parent: System
+  definition: System.Func`3
+  href: https://learn.microsoft.com/dotnet/api/system.func-3
+  name: Func<T, T, T>
+  nameWithType: Func<T, T, T>
+  fullName: System.Func<T, T, T>
+  nameWithType.vb: Func(Of T, T, T)
+  fullName.vb: System.Func(Of T, T, T)
+  name.vb: Func(Of T, T, T)
+  spec.csharp:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Func`3
+  commentId: T:System.Func`3
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-3
+  name: Func<T1, T2, TResult>
+  nameWithType: Func<T1, T2, TResult>
+  fullName: System.Func<T1, T2, TResult>
+  nameWithType.vb: Func(Of T1, T2, TResult)
+  fullName.vb: System.Func(Of T1, T2, TResult)
+  name.vb: Func(Of T1, T2, TResult)
+  spec.csharp:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: TotalDialogue.Core.Collections.TDFList`1.#ctor*
+  commentId: Overload:TotalDialogue.Core.Collections.TDFList`1.#ctor
+  href: TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1__ctor
+  name: TDFList
+  nameWithType: TDFList<T>.TDFList
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.TDFList
+  nameWithType.vb: TDFList(Of T).New
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).New
+  name.vb: New
+- uid: TotalDialogue.Core.Collections.TDFList`1.Add*
+  commentId: Overload:TotalDialogue.Core.Collections.TDFList`1.Add
+  href: TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_Add__0_
+  name: Add
+  nameWithType: TDFList<T>.Add
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.Add
+  nameWithType.vb: TDFList(Of T).Add
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).Add
+- uid: TotalDialogue.Core.Collections.ITDFList{{T}}.Add({T})
+  commentId: M:TotalDialogue.Core.Collections.ITDFList{`0}.Add(`0)
+  parent: TotalDialogue.Core.Collections.ITDFList{{T}}
+  definition: TotalDialogue.Core.Collections.ITDFList`1.Add(`0)
+  href: TotalDialogue.Core.Collections.ITDFList-1.html#TotalDialogue_Core_Collections_ITDFList_1_Add__0_
+  name: Add(T)
+  nameWithType: ITDFList<T>.Add(T)
+  fullName: TotalDialogue.Core.Collections.ITDFList<T>.Add(T)
+  nameWithType.vb: ITDFList(Of T).Add(T)
+  fullName.vb: TotalDialogue.Core.Collections.ITDFList(Of T).Add(T)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Collections.ITDFList{`0}.Add(`0)
+    name: Add
+    href: TotalDialogue.Core.Collections.ITDFList-1.html#TotalDialogue_Core_Collections_ITDFList_1_Add__0_
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Collections.ITDFList{`0}.Add(`0)
+    name: Add
+    href: TotalDialogue.Core.Collections.ITDFList-1.html#TotalDialogue_Core_Collections_ITDFList_1_Add__0_
+  - name: (
+  - name: T
+  - name: )
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: TotalDialogue.Core.Collections.ITDFList`1.Add(`0)
+  commentId: M:TotalDialogue.Core.Collections.ITDFList`1.Add(`0)
+  href: TotalDialogue.Core.Collections.ITDFList-1.html#TotalDialogue_Core_Collections_ITDFList_1_Add__0_
+  name: Add(T)
+  nameWithType: ITDFList<T>.Add(T)
+  fullName: TotalDialogue.Core.Collections.ITDFList<T>.Add(T)
+  nameWithType.vb: ITDFList(Of T).Add(T)
+  fullName.vb: TotalDialogue.Core.Collections.ITDFList(Of T).Add(T)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Collections.ITDFList`1.Add(`0)
+    name: Add
+    href: TotalDialogue.Core.Collections.ITDFList-1.html#TotalDialogue_Core_Collections_ITDFList_1_Add__0_
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Collections.ITDFList`1.Add(`0)
+    name: Add
+    href: TotalDialogue.Core.Collections.ITDFList-1.html#TotalDialogue_Core_Collections_ITDFList_1_Add__0_
+  - name: (
+  - name: T
+  - name: )
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: TotalDialogue.Core.Collections.TDFList`1.Remove*
+  commentId: Overload:TotalDialogue.Core.Collections.TDFList`1.Remove
+  href: TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_Remove__0_
+  name: Remove
+  nameWithType: TDFList<T>.Remove
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.Remove
+  nameWithType.vb: TDFList(Of T).Remove
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).Remove
+- uid: TotalDialogue.Core.Collections.ITDFList{{T}}.Remove({T})
+  commentId: M:TotalDialogue.Core.Collections.ITDFList{`0}.Remove(`0)
+  parent: TotalDialogue.Core.Collections.ITDFList{{T}}
+  definition: TotalDialogue.Core.Collections.ITDFList`1.Remove(`0)
+  href: TotalDialogue.Core.Collections.ITDFList-1.html#TotalDialogue_Core_Collections_ITDFList_1_Remove__0_
+  name: Remove(T)
+  nameWithType: ITDFList<T>.Remove(T)
+  fullName: TotalDialogue.Core.Collections.ITDFList<T>.Remove(T)
+  nameWithType.vb: ITDFList(Of T).Remove(T)
+  fullName.vb: TotalDialogue.Core.Collections.ITDFList(Of T).Remove(T)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Collections.ITDFList{`0}.Remove(`0)
+    name: Remove
+    href: TotalDialogue.Core.Collections.ITDFList-1.html#TotalDialogue_Core_Collections_ITDFList_1_Remove__0_
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Collections.ITDFList{`0}.Remove(`0)
+    name: Remove
+    href: TotalDialogue.Core.Collections.ITDFList-1.html#TotalDialogue_Core_Collections_ITDFList_1_Remove__0_
+  - name: (
+  - name: T
+  - name: )
+- uid: TotalDialogue.Core.Collections.ITDFList`1.Remove(`0)
+  commentId: M:TotalDialogue.Core.Collections.ITDFList`1.Remove(`0)
+  href: TotalDialogue.Core.Collections.ITDFList-1.html#TotalDialogue_Core_Collections_ITDFList_1_Remove__0_
+  name: Remove(T)
+  nameWithType: ITDFList<T>.Remove(T)
+  fullName: TotalDialogue.Core.Collections.ITDFList<T>.Remove(T)
+  nameWithType.vb: ITDFList(Of T).Remove(T)
+  fullName.vb: TotalDialogue.Core.Collections.ITDFList(Of T).Remove(T)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Collections.ITDFList`1.Remove(`0)
+    name: Remove
+    href: TotalDialogue.Core.Collections.ITDFList-1.html#TotalDialogue_Core_Collections_ITDFList_1_Remove__0_
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Collections.ITDFList`1.Remove(`0)
+    name: Remove
+    href: TotalDialogue.Core.Collections.ITDFList-1.html#TotalDialogue_Core_Collections_ITDFList_1_Remove__0_
+  - name: (
+  - name: T
+  - name: )
+- uid: TotalDialogue.Core.Collections.TDFList`1.RemoveAt*
+  commentId: Overload:TotalDialogue.Core.Collections.TDFList`1.RemoveAt
+  href: TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_RemoveAt_System_Int32_
+  name: RemoveAt
+  nameWithType: TDFList<T>.RemoveAt
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.RemoveAt
+  nameWithType.vb: TDFList(Of T).RemoveAt
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).RemoveAt
+- uid: TotalDialogue.Core.Collections.ITDFList{{T}}.RemoveAt(System.Int32)
+  commentId: M:TotalDialogue.Core.Collections.ITDFList{`0}.RemoveAt(System.Int32)
+  parent: TotalDialogue.Core.Collections.ITDFList{{T}}
+  definition: TotalDialogue.Core.Collections.ITDFList`1.RemoveAt(System.Int32)
+  href: TotalDialogue.Core.Collections.ITDFList-1.html#TotalDialogue_Core_Collections_ITDFList_1_RemoveAt_System_Int32_
+  name: RemoveAt(int)
+  nameWithType: ITDFList<T>.RemoveAt(int)
+  fullName: TotalDialogue.Core.Collections.ITDFList<T>.RemoveAt(int)
+  nameWithType.vb: ITDFList(Of T).RemoveAt(Integer)
+  fullName.vb: TotalDialogue.Core.Collections.ITDFList(Of T).RemoveAt(Integer)
+  name.vb: RemoveAt(Integer)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Collections.ITDFList{`0}.RemoveAt(System.Int32)
+    name: RemoveAt
+    href: TotalDialogue.Core.Collections.ITDFList-1.html#TotalDialogue_Core_Collections_ITDFList_1_RemoveAt_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Collections.ITDFList{`0}.RemoveAt(System.Int32)
+    name: RemoveAt
+    href: TotalDialogue.Core.Collections.ITDFList-1.html#TotalDialogue_Core_Collections_ITDFList_1_RemoveAt_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: TotalDialogue.Core.Collections.ITDFList`1.RemoveAt(System.Int32)
+  commentId: M:TotalDialogue.Core.Collections.ITDFList`1.RemoveAt(System.Int32)
+  isExternal: true
+  href: TotalDialogue.Core.Collections.ITDFList-1.html#TotalDialogue_Core_Collections_ITDFList_1_RemoveAt_System_Int32_
+  name: RemoveAt(int)
+  nameWithType: ITDFList<T>.RemoveAt(int)
+  fullName: TotalDialogue.Core.Collections.ITDFList<T>.RemoveAt(int)
+  nameWithType.vb: ITDFList(Of T).RemoveAt(Integer)
+  fullName.vb: TotalDialogue.Core.Collections.ITDFList(Of T).RemoveAt(Integer)
+  name.vb: RemoveAt(Integer)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Collections.ITDFList`1.RemoveAt(System.Int32)
+    name: RemoveAt
+    href: TotalDialogue.Core.Collections.ITDFList-1.html#TotalDialogue_Core_Collections_ITDFList_1_RemoveAt_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Collections.ITDFList`1.RemoveAt(System.Int32)
+    name: RemoveAt
+    href: TotalDialogue.Core.Collections.ITDFList-1.html#TotalDialogue_Core_Collections_ITDFList_1_RemoveAt_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: TotalDialogue.Core.Collections.TDFList`1.Count*
+  commentId: Overload:TotalDialogue.Core.Collections.TDFList`1.Count
+  href: TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_Count
+  name: Count
+  nameWithType: TDFList<T>.Count
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.Count
+  nameWithType.vb: TDFList(Of T).Count
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).Count
+- uid: TotalDialogue.Core.Collections.ITDFList{{T}}.Count
+  commentId: P:TotalDialogue.Core.Collections.ITDFList{`0}.Count
+  parent: TotalDialogue.Core.Collections.ITDFList{{T}}
+  definition: TotalDialogue.Core.Collections.ITDFList`1.Count
+  href: TotalDialogue.Core.Collections.ITDFList-1.html#TotalDialogue_Core_Collections_ITDFList_1_Count
+  name: Count
+  nameWithType: ITDFList<T>.Count
+  fullName: TotalDialogue.Core.Collections.ITDFList<T>.Count
+  nameWithType.vb: ITDFList(Of T).Count
+  fullName.vb: TotalDialogue.Core.Collections.ITDFList(Of T).Count
+- uid: TotalDialogue.Core.Collections.ITDFList`1.Count
+  commentId: P:TotalDialogue.Core.Collections.ITDFList`1.Count
+  href: TotalDialogue.Core.Collections.ITDFList-1.html#TotalDialogue_Core_Collections_ITDFList_1_Count
+  name: Count
+  nameWithType: ITDFList<T>.Count
+  fullName: TotalDialogue.Core.Collections.ITDFList<T>.Count
+  nameWithType.vb: ITDFList(Of T).Count
+  fullName.vb: TotalDialogue.Core.Collections.ITDFList(Of T).Count
+- uid: TotalDialogue.Core.Collections.TDFList`1.Item*
+  commentId: Overload:TotalDialogue.Core.Collections.TDFList`1.Item
+  href: TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_Item_System_Int32_
+  name: this
+  nameWithType: TDFList<T>.this
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.this
+  nameWithType.vb: TDFList(Of T).this[]
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).this[]
+  name.vb: this[]
+- uid: TotalDialogue.Core.Collections.ITDFList{{T}}.Item(System.Int32)
+  commentId: P:TotalDialogue.Core.Collections.ITDFList{`0}.Item(System.Int32)
+  parent: TotalDialogue.Core.Collections.ITDFList{{T}}
+  definition: TotalDialogue.Core.Collections.ITDFList`1.Item(System.Int32)
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: this[int]
+  nameWithType: ITDFList<T>.this[int]
+  fullName: TotalDialogue.Core.Collections.ITDFList<T>.this[int]
+  nameWithType.vb: ITDFList(Of T).this[](Integer)
+  fullName.vb: TotalDialogue.Core.Collections.ITDFList(Of T).this[](Integer)
+  name.vb: this[](Integer)
+  spec.csharp:
+  - name: this
+  - name: '['
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ']'
+  spec.vb:
+  - uid: TotalDialogue.Core.Collections.ITDFList{`0}.Item(System.Int32)
+    name: this[]
+    href: TotalDialogue.Core.Collections.ITDFList-1.html#TotalDialogue_Core_Collections_ITDFList_1_Item_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: TotalDialogue.Core.Collections.ITDFList`1.Item(System.Int32)
+  commentId: P:TotalDialogue.Core.Collections.ITDFList`1.Item(System.Int32)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: this[int]
+  nameWithType: ITDFList<T>.this[int]
+  fullName: TotalDialogue.Core.Collections.ITDFList<T>.this[int]
+  nameWithType.vb: ITDFList(Of T).this[](Integer)
+  fullName.vb: TotalDialogue.Core.Collections.ITDFList(Of T).this[](Integer)
+  name.vb: this[](Integer)
+  spec.csharp:
+  - name: this
+  - name: '['
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ']'
+  spec.vb:
+  - uid: TotalDialogue.Core.Collections.ITDFList`1.Item(System.Int32)
+    name: this[]
+    href: TotalDialogue.Core.Collections.ITDFList-1.html#TotalDialogue_Core_Collections_ITDFList_1_Item_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: TotalDialogue.Core.Collections.TDFList`1.Clear*
+  commentId: Overload:TotalDialogue.Core.Collections.TDFList`1.Clear
+  href: TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_Clear
+  name: Clear
+  nameWithType: TDFList<T>.Clear
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.Clear
+  nameWithType.vb: TDFList(Of T).Clear
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).Clear
+- uid: TotalDialogue.Core.Collections.TDFList`1.Insert*
+  commentId: Overload:TotalDialogue.Core.Collections.TDFList`1.Insert
+  href: TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_Insert_System_Int32__0_
+  name: Insert
+  nameWithType: TDFList<T>.Insert
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.Insert
+  nameWithType.vb: TDFList(Of T).Insert
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).Insert
+- uid: TotalDialogue.Core.Collections.TDFList`1.AddRange*
+  commentId: Overload:TotalDialogue.Core.Collections.TDFList`1.AddRange
+  href: TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_AddRange_System_Collections_Generic_IEnumerable__0__
+  name: AddRange
+  nameWithType: TDFList<T>.AddRange
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.AddRange
+  nameWithType.vb: TDFList(Of T).AddRange
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).AddRange
+- uid: TotalDialogue.Core.Collections.TDFList`1.RemoveRange*
+  commentId: Overload:TotalDialogue.Core.Collections.TDFList`1.RemoveRange
+  href: TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_RemoveRange_System_Int32_System_Int32_
+  name: RemoveRange
+  nameWithType: TDFList<T>.RemoveRange
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.RemoveRange
+  nameWithType.vb: TDFList(Of T).RemoveRange
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).RemoveRange
+- uid: TotalDialogue.Core.Collections.TDFList`1.Sort*
+  commentId: Overload:TotalDialogue.Core.Collections.TDFList`1.Sort
+  href: TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_Sort_System_Comparison__0__
+  name: Sort
+  nameWithType: TDFList<T>.Sort
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.Sort
+  nameWithType.vb: TDFList(Of T).Sort
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).Sort
+- uid: System.Comparison{{T}}
+  commentId: T:System.Comparison{`0}
+  parent: System
+  definition: System.Comparison`1
+  href: https://learn.microsoft.com/dotnet/api/system.comparison-1
+  name: Comparison<T>
+  nameWithType: Comparison<T>
+  fullName: System.Comparison<T>
+  nameWithType.vb: Comparison(Of T)
+  fullName.vb: System.Comparison(Of T)
+  name.vb: Comparison(Of T)
+  spec.csharp:
+  - uid: System.Comparison`1
+    name: Comparison
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.comparison-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Comparison`1
+    name: Comparison
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.comparison-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Comparison`1
+  commentId: T:System.Comparison`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.comparison-1
+  name: Comparison<T>
+  nameWithType: Comparison<T>
+  fullName: System.Comparison<T>
+  nameWithType.vb: Comparison(Of T)
+  fullName.vb: System.Comparison(Of T)
+  name.vb: Comparison(Of T)
+  spec.csharp:
+  - uid: System.Comparison`1
+    name: Comparison
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.comparison-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Comparison`1
+    name: Comparison
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.comparison-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic.IComparer{{T}}
+  commentId: T:System.Collections.Generic.IComparer{`0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IComparer`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icomparer-1
+  name: IComparer<T>
+  nameWithType: IComparer<T>
+  fullName: System.Collections.Generic.IComparer<T>
+  nameWithType.vb: IComparer(Of T)
+  fullName.vb: System.Collections.Generic.IComparer(Of T)
+  name.vb: IComparer(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IComparer`1
+    name: IComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icomparer-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IComparer`1
+    name: IComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icomparer-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic.IComparer`1
+  commentId: T:System.Collections.Generic.IComparer`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icomparer-1
+  name: IComparer<T>
+  nameWithType: IComparer<T>
+  fullName: System.Collections.Generic.IComparer<T>
+  nameWithType.vb: IComparer(Of T)
+  fullName.vb: System.Collections.Generic.IComparer(Of T)
+  name.vb: IComparer(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IComparer`1
+    name: IComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icomparer-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IComparer`1
+    name: IComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icomparer-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: TotalDialogue.Core.Collections.TDFList`1.Reverse*
+  commentId: Overload:TotalDialogue.Core.Collections.TDFList`1.Reverse
+  href: TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_Reverse
+  name: Reverse
+  nameWithType: TDFList<T>.Reverse
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.Reverse
+  nameWithType.vb: TDFList(Of T).Reverse
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).Reverse
+- uid: TotalDialogue.Core.Collections.TDFList`1.CopyTo*
+  commentId: Overload:TotalDialogue.Core.Collections.TDFList`1.CopyTo
+  href: TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_CopyTo__0___System_Int32_
+  name: CopyTo
+  nameWithType: TDFList<T>.CopyTo
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.CopyTo
+  nameWithType.vb: TDFList(Of T).CopyTo
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).CopyTo
+- uid: '{T}[]'
+  isExternal: true
+  name: T[]
+  nameWithType: T[]
+  fullName: T[]
+  nameWithType.vb: T()
+  fullName.vb: T()
+  name.vb: T()
+  spec.csharp:
+  - name: T
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - name: T
+  - name: (
+  - name: )
+- uid: TotalDialogue.Core.Collections.TDFList`1.ForEach*
+  commentId: Overload:TotalDialogue.Core.Collections.TDFList`1.ForEach
+  href: TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_ForEach_System_Action__0__System_Boolean_
+  name: ForEach
+  nameWithType: TDFList<T>.ForEach
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.ForEach
+  nameWithType.vb: TDFList(Of T).ForEach
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).ForEach
+- uid: System.Action{{T}}
+  commentId: T:System.Action{`0}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: TotalDialogue.Core.Collections.TDFList`1.GetEnumerator*
+  commentId: Overload:TotalDialogue.Core.Collections.TDFList`1.GetEnumerator
+  href: TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_GetEnumerator
+  name: GetEnumerator
+  nameWithType: TDFList<T>.GetEnumerator
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.GetEnumerator
+  nameWithType.vb: TDFList(Of T).GetEnumerator
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).GetEnumerator
+- uid: System.Collections.Generic.List{{T}}.Enumerator
+  commentId: T:System.Collections.Generic.List{`0}.Enumerator
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1.Enumerator
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>.Enumerator
+  nameWithType: List<T>.Enumerator
+  fullName: System.Collections.Generic.List<T>.Enumerator
+  nameWithType.vb: List(Of T).Enumerator
+  fullName.vb: System.Collections.Generic.List(Of T).Enumerator
+  name.vb: List(Of T).Enumerator
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: .
+  - uid: System.Collections.Generic.List{`0}.Enumerator
+    name: Enumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.enumerator
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: .
+  - uid: System.Collections.Generic.List{`0}.Enumerator
+    name: Enumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.enumerator
+- uid: System.Collections.Generic.List`1.Enumerator
+  commentId: T:System.Collections.Generic.List`1.Enumerator
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>.Enumerator
+  nameWithType: List<T>.Enumerator
+  fullName: System.Collections.Generic.List<T>.Enumerator
+  nameWithType.vb: List(Of T).Enumerator
+  fullName.vb: System.Collections.Generic.List(Of T).Enumerator
+  name.vb: List(Of T).Enumerator
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: .
+  - uid: System.Collections.Generic.List`1.Enumerator
+    name: Enumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.enumerator
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: .
+  - uid: System.Collections.Generic.List`1.Enumerator
+    name: Enumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.enumerator
+- uid: TotalDialogue.Core.Collections.TDFList`1.GetRange*
+  commentId: Overload:TotalDialogue.Core.Collections.TDFList`1.GetRange
+  href: TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_GetRange_System_Int32_System_Int32_
+  name: GetRange
+  nameWithType: TDFList<T>.GetRange
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.GetRange
+  nameWithType.vb: TDFList(Of T).GetRange
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).GetRange
+- uid: TotalDialogue.Core.Collections.TDFList`1.IndexOf*
+  commentId: Overload:TotalDialogue.Core.Collections.TDFList`1.IndexOf
+  href: TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_IndexOf__0_
+  name: IndexOf
+  nameWithType: TDFList<T>.IndexOf
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.IndexOf
+  nameWithType.vb: TDFList(Of T).IndexOf
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).IndexOf
+- uid: TotalDialogue.Core.Collections.TDFList`1.LastIndexOf*
+  commentId: Overload:TotalDialogue.Core.Collections.TDFList`1.LastIndexOf
+  href: TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_LastIndexOf__0_
+  name: LastIndexOf
+  nameWithType: TDFList<T>.LastIndexOf
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.LastIndexOf
+  nameWithType.vb: TDFList(Of T).LastIndexOf
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).LastIndexOf
+- uid: TotalDialogue.Core.Collections.TDFList`1.Contains*
+  commentId: Overload:TotalDialogue.Core.Collections.TDFList`1.Contains
+  href: TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_Contains__0_
+  name: Contains
+  nameWithType: TDFList<T>.Contains
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.Contains
+  nameWithType.vb: TDFList(Of T).Contains
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).Contains
+- uid: TotalDialogue.Core.Collections.TDFList`1.Find*
+  commentId: Overload:TotalDialogue.Core.Collections.TDFList`1.Find
+  href: TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_Find_System_Predicate__0__
+  name: Find
+  nameWithType: TDFList<T>.Find
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.Find
+  nameWithType.vb: TDFList(Of T).Find
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).Find
+- uid: System.Predicate{{T}}
+  commentId: T:System.Predicate{`0}
+  parent: System
+  definition: System.Predicate`1
+  href: https://learn.microsoft.com/dotnet/api/system.predicate-1
+  name: Predicate<T>
+  nameWithType: Predicate<T>
+  fullName: System.Predicate<T>
+  nameWithType.vb: Predicate(Of T)
+  fullName.vb: System.Predicate(Of T)
+  name.vb: Predicate(Of T)
+  spec.csharp:
+  - uid: System.Predicate`1
+    name: Predicate
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.predicate-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Predicate`1
+    name: Predicate
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.predicate-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Predicate`1
+  commentId: T:System.Predicate`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.predicate-1
+  name: Predicate<T>
+  nameWithType: Predicate<T>
+  fullName: System.Predicate<T>
+  nameWithType.vb: Predicate(Of T)
+  fullName.vb: System.Predicate(Of T)
+  name.vb: Predicate(Of T)
+  spec.csharp:
+  - uid: System.Predicate`1
+    name: Predicate
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.predicate-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Predicate`1
+    name: Predicate
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.predicate-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: TotalDialogue.Core.Collections.TDFList`1.FindAll*
+  commentId: Overload:TotalDialogue.Core.Collections.TDFList`1.FindAll
+  href: TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_FindAll_System_Predicate__0__
+  name: FindAll
+  nameWithType: TDFList<T>.FindAll
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.FindAll
+  nameWithType.vb: TDFList(Of T).FindAll
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).FindAll
+- uid: TotalDialogue.Core.Collections.TDFList`1.FindIndex*
+  commentId: Overload:TotalDialogue.Core.Collections.TDFList`1.FindIndex
+  href: TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_FindIndex_System_Predicate__0__
+  name: FindIndex
+  nameWithType: TDFList<T>.FindIndex
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.FindIndex
+  nameWithType.vb: TDFList(Of T).FindIndex
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).FindIndex
+- uid: TotalDialogue.Core.Collections.TDFList`1.FindLast*
+  commentId: Overload:TotalDialogue.Core.Collections.TDFList`1.FindLast
+  href: TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_FindLast_System_Predicate__0__
+  name: FindLast
+  nameWithType: TDFList<T>.FindLast
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.FindLast
+  nameWithType.vb: TDFList(Of T).FindLast
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).FindLast
+- uid: TotalDialogue.Core.Collections.TDFList`1.FindLastIndex*
+  commentId: Overload:TotalDialogue.Core.Collections.TDFList`1.FindLastIndex
+  href: TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_FindLastIndex_System_Predicate__0__
+  name: FindLastIndex
+  nameWithType: TDFList<T>.FindLastIndex
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.FindLastIndex
+  nameWithType.vb: TDFList(Of T).FindLastIndex
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).FindLastIndex
+- uid: TotalDialogue.Core.Collections.TDFList`1.RemoveAll*
+  commentId: Overload:TotalDialogue.Core.Collections.TDFList`1.RemoveAll
+  href: TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_RemoveAll_System_Predicate__0__
+  name: RemoveAll
+  nameWithType: TDFList<T>.RemoveAll
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.RemoveAll
+  nameWithType.vb: TDFList(Of T).RemoveAll
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).RemoveAll
+- uid: TotalDialogue.Core.Collections.TDFList`1.ToArray*
+  commentId: Overload:TotalDialogue.Core.Collections.TDFList`1.ToArray
+  href: TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_ToArray
+  name: ToArray
+  nameWithType: TDFList<T>.ToArray
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.ToArray
+  nameWithType.vb: TDFList(Of T).ToArray
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).ToArray
+- uid: TotalDialogue.Core.Collections.TDFList`1.TrimExcess*
+  commentId: Overload:TotalDialogue.Core.Collections.TDFList`1.TrimExcess
+  href: TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_TrimExcess
+  name: TrimExcess
+  nameWithType: TDFList<T>.TrimExcess
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.TrimExcess
+  nameWithType.vb: TDFList(Of T).TrimExcess
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).TrimExcess
+- uid: TotalDialogue.Core.Collections.TDFList`1.TrueForAll*
+  commentId: Overload:TotalDialogue.Core.Collections.TDFList`1.TrueForAll
+  href: TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_TrueForAll_System_Predicate__0__
+  name: TrueForAll
+  nameWithType: TDFList<T>.TrueForAll
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.TrueForAll
+  nameWithType.vb: TDFList(Of T).TrueForAll
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).TrueForAll
+- uid: TotalDialogue.Core.Collections.TDFList`1
+  commentId: T:TotalDialogue.Core.Collections.TDFList`1
+  parent: TotalDialogue.Core.Collections
+  href: TotalDialogue.Core.Collections.TDFList-1.html
+  name: TDFList<T>
+  nameWithType: TDFList<T>
+  fullName: TotalDialogue.Core.Collections.TDFList<T>
+  nameWithType.vb: TDFList(Of T)
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T)
+  name.vb: TDFList(Of T)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Collections.TDFList`1
+    name: TDFList
+    href: TotalDialogue.Core.Collections.TDFList-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: TotalDialogue.Core.Collections.TDFList`1
+    name: TDFList
+    href: TotalDialogue.Core.Collections.TDFList-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: TotalDialogue.Core.Collections.TDFList`1.GetItemType*
+  commentId: Overload:TotalDialogue.Core.Collections.TDFList`1.GetItemType
+  href: TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_GetItemType
+  name: GetItemType
+  nameWithType: TDFList<T>.GetItemType
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.GetItemType
+  nameWithType.vb: TDFList(Of T).GetItemType
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).GetItemType
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: TotalDialogue.Core.Collections.TDFList`1.UpdateDuplicates*
+  commentId: Overload:TotalDialogue.Core.Collections.TDFList`1.UpdateDuplicates
+  href: TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_UpdateDuplicates
+  name: UpdateDuplicates
+  nameWithType: TDFList<T>.UpdateDuplicates
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.UpdateDuplicates
+  nameWithType.vb: TDFList(Of T).UpdateDuplicates
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).UpdateDuplicates
+- uid: TotalDialogue.Core.Collections.TDFList`1.OnBeforeSerialize*
+  commentId: Overload:TotalDialogue.Core.Collections.TDFList`1.OnBeforeSerialize
+  href: TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_OnBeforeSerialize
+  name: OnBeforeSerialize
+  nameWithType: TDFList<T>.OnBeforeSerialize
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.OnBeforeSerialize
+  nameWithType.vb: TDFList(Of T).OnBeforeSerialize
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).OnBeforeSerialize
+- uid: UnityEngine.ISerializationCallbackReceiver.OnBeforeSerialize
+  commentId: M:UnityEngine.ISerializationCallbackReceiver.OnBeforeSerialize
+  parent: UnityEngine.ISerializationCallbackReceiver
+  isExternal: true
+  name: OnBeforeSerialize()
+  nameWithType: ISerializationCallbackReceiver.OnBeforeSerialize()
+  fullName: UnityEngine.ISerializationCallbackReceiver.OnBeforeSerialize()
+  spec.csharp:
+  - uid: UnityEngine.ISerializationCallbackReceiver.OnBeforeSerialize
+    name: OnBeforeSerialize
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.ISerializationCallbackReceiver.OnBeforeSerialize
+    name: OnBeforeSerialize
+    isExternal: true
+  - name: (
+  - name: )
+- uid: TotalDialogue.Core.Collections.TDFList`1.OnAfterDeserialize*
+  commentId: Overload:TotalDialogue.Core.Collections.TDFList`1.OnAfterDeserialize
+  href: TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_OnAfterDeserialize
+  name: OnAfterDeserialize
+  nameWithType: TDFList<T>.OnAfterDeserialize
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.OnAfterDeserialize
+  nameWithType.vb: TDFList(Of T).OnAfterDeserialize
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).OnAfterDeserialize
+- uid: UnityEngine.ISerializationCallbackReceiver.OnAfterDeserialize
+  commentId: M:UnityEngine.ISerializationCallbackReceiver.OnAfterDeserialize
+  parent: UnityEngine.ISerializationCallbackReceiver
+  isExternal: true
+  name: OnAfterDeserialize()
+  nameWithType: ISerializationCallbackReceiver.OnAfterDeserialize()
+  fullName: UnityEngine.ISerializationCallbackReceiver.OnAfterDeserialize()
+  spec.csharp:
+  - uid: UnityEngine.ISerializationCallbackReceiver.OnAfterDeserialize
+    name: OnAfterDeserialize
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.ISerializationCallbackReceiver.OnAfterDeserialize
+    name: OnAfterDeserialize
+    isExternal: true
+  - name: (
+  - name: )
+- uid: TotalDialogue.Core.Collections.TDFList`1.InvokeOnChange*
+  commentId: Overload:TotalDialogue.Core.Collections.TDFList`1.InvokeOnChange
+  href: TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_InvokeOnChange
+  name: InvokeOnChange
+  nameWithType: TDFList<T>.InvokeOnChange
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.InvokeOnChange
+  nameWithType.vb: TDFList(Of T).InvokeOnChange
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).InvokeOnChange
+- uid: TotalDialogue.Core.Collections.TDFList`1.InvokeOnChangeItem*
+  commentId: Overload:TotalDialogue.Core.Collections.TDFList`1.InvokeOnChangeItem
+  href: TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_InvokeOnChangeItem_System_Int32__0_
+  name: InvokeOnChangeItem
+  nameWithType: TDFList<T>.InvokeOnChangeItem
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.InvokeOnChangeItem
+  nameWithType.vb: TDFList(Of T).InvokeOnChangeItem
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).InvokeOnChangeItem
+- uid: TotalDialogue.Core.Collections.TDFList`1.InvokeOnAdd*
+  commentId: Overload:TotalDialogue.Core.Collections.TDFList`1.InvokeOnAdd
+  href: TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_InvokeOnAdd_System_Int32__0_
+  name: InvokeOnAdd
+  nameWithType: TDFList<T>.InvokeOnAdd
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.InvokeOnAdd
+  nameWithType.vb: TDFList(Of T).InvokeOnAdd
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).InvokeOnAdd
+- uid: TotalDialogue.Core.Collections.TDFList`1.InvokeOnRemove*
+  commentId: Overload:TotalDialogue.Core.Collections.TDFList`1.InvokeOnRemove
+  href: TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_InvokeOnRemove_System_Int32__0_
+  name: InvokeOnRemove
+  nameWithType: TDFList<T>.InvokeOnRemove
+  fullName: TotalDialogue.Core.Collections.TDFList<T>.InvokeOnRemove
+  nameWithType.vb: TDFList(Of T).InvokeOnRemove
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).InvokeOnRemove

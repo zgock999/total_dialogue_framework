@@ -1,0 +1,2502 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class TDFList&lt;T&gt; | TDF Manual </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class TDFList&lt;T&gt; | TDF Manual ">
+    
+    <meta name="description" content="TDFListは、スレッドセーフなリストを提供します。 シリアライズとデシリアライズのサポートも含まれています。 リストの内容が変更されたときにイベントを発生させることができます。">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="TDF Manual">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="TotalDialogue.TDFList`1">
+
+
+
+  <h1 id="TotalDialogue_TDFList_1" data-uid="TotalDialogue.TDFList`1" class="text-break">Class TDFList&lt;T&gt;</h1>
+  <div class="markdown level0 summary"><p>TDFListは、スレッドセーフなリストを提供します。
+シリアライズとデシリアライズのサポートも含まれています。
+リストの内容が変更されたときにイベントを発生させることができます。</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">TDFList&lt;T&gt;</span></div>
+      <div class="level2"><a class="xref" href="TotalDialogue.TDFKeyValuePairs-2.html">TDFKeyValuePairs&lt;TKey, TValue&gt;</a></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="TotalDialogue.ITDFList-1.html">ITDFList</a>&lt;T&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a></div>
+    <div><span class="xref">ISerializationCallbackReceiver</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="TotalDialogue.html">TotalDialogue</a></h6>
+  <h6><strong>Assembly</strong>: TDF.dll</h6>
+  <h5 id="TotalDialogue_TDFList_1_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Serializable]
+public class TDFList&lt;T&gt; : ITDFList&lt;T&gt;, IEnumerable&lt;T&gt;, IEnumerable, ISerializationCallbackReceiver</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zgock999/TotalDialogueFramework/new/master/apiSpec/new?filename=TotalDialogue_TDFList_1__ctor.md&amp;value=---%0Auid%3A%20TotalDialogue.TDFList%601.%23ctor%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zgock999/TotalDialogueFramework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs/#L164">View Source</a>
+  </span>
+  <a id="TotalDialogue_TDFList_1__ctor_" data-uid="TotalDialogue.TDFList`1.#ctor*"></a>
+  <h4 id="TotalDialogue_TDFList_1__ctor" data-uid="TotalDialogue.TDFList`1.#ctor">TDFList()</h4>
+  <div class="markdown level1 summary"><p>リストを初期化します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TDFList()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zgock999/TotalDialogueFramework/new/master/apiSpec/new?filename=TotalDialogue_TDFList_1__ctor_System_Collections_Generic_List__0__.md&amp;value=---%0Auid%3A%20TotalDialogue.TDFList%601.%23ctor(System.Collections.Generic.List%7B%600%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zgock999/TotalDialogueFramework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs/#L172">View Source</a>
+  </span>
+  <a id="TotalDialogue_TDFList_1__ctor_" data-uid="TotalDialogue.TDFList`1.#ctor*"></a>
+  <h4 id="TotalDialogue_TDFList_1__ctor_System_Collections_Generic_List__0__" data-uid="TotalDialogue.TDFList`1.#ctor(System.Collections.Generic.List{`0})">TDFList(List&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>リストを初期化します。
+引数1:リスト</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TDFList(List&lt;T&gt; list)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;T&gt;</td>
+        <td><span class="parametername">list</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zgock999/TotalDialogueFramework/new/master/apiSpec/new?filename=TotalDialogue_TDFList_1_isLocked.md&amp;value=---%0Auid%3A%20TotalDialogue.TDFList%601.isLocked%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zgock999/TotalDialogueFramework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs/#L97">View Source</a>
+  </span>
+  <h4 id="TotalDialogue_TDFList_1_isLocked" data-uid="TotalDialogue.TDFList`1.isLocked">isLocked</h4>
+  <div class="markdown level1 summary"><p>リストがロックされているかどうかを示す値。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool isLocked</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zgock999/TotalDialogueFramework/new/master/apiSpec/new?filename=TotalDialogue_TDFList_1_list.md&amp;value=---%0Auid%3A%20TotalDialogue.TDFList%601.list%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zgock999/TotalDialogueFramework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs/#L88">View Source</a>
+  </span>
+  <h4 id="TotalDialogue_TDFList_1_list" data-uid="TotalDialogue.TDFList`1.list">list</h4>
+  <div class="markdown level1 summary"><p>リスト本体、protectedだが、インスペクタによって内容が変更されることがある</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected List&lt;T&gt; list</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zgock999/TotalDialogueFramework/new/master/apiSpec/new?filename=TotalDialogue_TDFList_1_lockObject.md&amp;value=---%0Auid%3A%20TotalDialogue.TDFList%601.lockObject%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zgock999/TotalDialogueFramework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs/#L92">View Source</a>
+  </span>
+  <h4 id="TotalDialogue_TDFList_1_lockObject" data-uid="TotalDialogue.TDFList`1.lockObject">lockObject</h4>
+  <div class="markdown level1 summary"><p>ロックオブジェクト。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly object lockObject</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zgock999/TotalDialogueFramework/new/master/apiSpec/new?filename=TotalDialogue_TDFList_1_lockedThreadId.md&amp;value=---%0Auid%3A%20TotalDialogue.TDFList%601.lockedThreadId%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zgock999/TotalDialogueFramework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs/#L102">View Source</a>
+  </span>
+  <h4 id="TotalDialogue_TDFList_1_lockedThreadId" data-uid="TotalDialogue.TDFList`1.lockedThreadId">lockedThreadId</h4>
+  <div class="markdown level1 summary"><p>ロックを保持しているスレッドのID。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int lockedThreadId</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zgock999/TotalDialogueFramework/new/master/apiSpec/new?filename=TotalDialogue_TDFList_1_m_serializing.md&amp;value=---%0Auid%3A%20TotalDialogue.TDFList%601.m_serializing%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zgock999/TotalDialogueFramework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs/#L107">View Source</a>
+  </span>
+  <h4 id="TotalDialogue_TDFList_1_m_serializing" data-uid="TotalDialogue.TDFList`1.m_serializing">m_serializing</h4>
+  <div class="markdown level1 summary"><p>シリアライズ中かどうかを示す値。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool m_serializing</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zgock999/TotalDialogueFramework/new/master/apiSpec/new?filename=TotalDialogue_TDFList_1_Count.md&amp;value=---%0Auid%3A%20TotalDialogue.TDFList%601.Count%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zgock999/TotalDialogueFramework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs/#L272">View Source</a>
+  </span>
+  <a id="TotalDialogue_TDFList_1_Count_" data-uid="TotalDialogue.TDFList`1.Count*"></a>
+  <h4 id="TotalDialogue_TDFList_1_Count" data-uid="TotalDialogue.TDFList`1.Count">Count</h4>
+  <div class="markdown level1 summary"><p>リスト内のアイテム数を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int Count { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>リスト内のアイテム数</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="TotalDialogue_TDFList_1_Count_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>ロックされている場合、ロックが解除されるまで待機します。</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zgock999/TotalDialogueFramework/new/master/apiSpec/new?filename=TotalDialogue_TDFList_1_Item_System_Int32_.md&amp;value=---%0Auid%3A%20TotalDialogue.TDFList%601.Item(System.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zgock999/TotalDialogueFramework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs/#L298">View Source</a>
+  </span>
+  <a id="TotalDialogue_TDFList_1_Item_" data-uid="TotalDialogue.TDFList`1.Item*"></a>
+  <h4 id="TotalDialogue_TDFList_1_Item_System_Int32_" data-uid="TotalDialogue.TDFList`1.Item(System.Int32)">this[int]</h4>
+  <div class="markdown level1 summary"><p>指定したインデックスのアイテムを取得または設定します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual T this[int index] { get; set; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>アイテムのインデックス</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>指定したインデックスのアイテム</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="TotalDialogue_TDFList_1_Item_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>バリデーションメソッドが設定されている場合、バリデーションメソッドを呼び出してから設定します。
+ロックされている場合、ロックが解除されるまで待機します。
+アイテムが設定されたときにOnChangeItemイベントを発生させます。
+リストが変更されたときにOnChangeイベントを発生させます。
+リストが変更されたときにInvokeOnChangeメソッドを呼び出します。</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zgock999/TotalDialogueFramework/new/master/apiSpec/new?filename=TotalDialogue_TDFList_1_Serializing.md&amp;value=---%0Auid%3A%20TotalDialogue.TDFList%601.Serializing%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zgock999/TotalDialogueFramework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs/#L111">View Source</a>
+  </span>
+  <a id="TotalDialogue_TDFList_1_Serializing_" data-uid="TotalDialogue.TDFList`1.Serializing*"></a>
+  <h4 id="TotalDialogue_TDFList_1_Serializing" data-uid="TotalDialogue.TDFList`1.Serializing">Serializing</h4>
+  <div class="markdown level1 summary"><p>シリアライズ中かどうかを示す値を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Serializing { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zgock999/TotalDialogueFramework/new/master/apiSpec/new?filename=TotalDialogue_TDFList_1_Validate.md&amp;value=---%0Auid%3A%20TotalDialogue.TDFList%601.Validate%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zgock999/TotalDialogueFramework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs/#L160">View Source</a>
+  </span>
+  <a id="TotalDialogue_TDFList_1_Validate_" data-uid="TotalDialogue.TDFList`1.Validate*"></a>
+  <h4 id="TotalDialogue_TDFList_1_Validate" data-uid="TotalDialogue.TDFList`1.Validate">Validate</h4>
+  <div class="markdown level1 summary"><p>アイテムの設定時に呼び出されるバリデーションメソッド。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Func&lt;T, T, T&gt; Validate { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;T, T, T&gt;</td>
+        <td><p>設定を許可する場合は引数1を、許可しない場合はnullを返す</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zgock999/TotalDialogueFramework/new/master/apiSpec/new?filename=TotalDialogue_TDFList_1_Add__0_.md&amp;value=---%0Auid%3A%20TotalDialogue.TDFList%601.Add(%600)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zgock999/TotalDialogueFramework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs/#L187">View Source</a>
+  </span>
+  <a id="TotalDialogue_TDFList_1_Add_" data-uid="TotalDialogue.TDFList`1.Add*"></a>
+  <h4 id="TotalDialogue_TDFList_1_Add__0_" data-uid="TotalDialogue.TDFList`1.Add(`0)">Add(T)</h4>
+  <div class="markdown level1 summary"><p>アイテムをリストに追加します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Add(T item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>追加するアイテム</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="TotalDialogue_TDFList_1_Add__0__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>バリデーションメソッドが設定されている場合、バリデーションメソッドを呼び出してから追加します。
+ロックされている場合、ロックが解除されるまで待機します。
+アイテムが追加されたときにOnAddイベントを発生させます。
+リストが変更されたときにOnChangeイベントを発生させます。
+リストが変更されたときにInvokeOnChangeメソッドを呼び出します。</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zgock999/TotalDialogueFramework/new/master/apiSpec/new?filename=TotalDialogue_TDFList_1_AddRange_System_Collections_Generic_IEnumerable__0__.md&amp;value=---%0Auid%3A%20TotalDialogue.TDFList%601.AddRange(System.Collections.Generic.IEnumerable%7B%600%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zgock999/TotalDialogueFramework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs/#L392">View Source</a>
+  </span>
+  <a id="TotalDialogue_TDFList_1_AddRange_" data-uid="TotalDialogue.TDFList`1.AddRange*"></a>
+  <h4 id="TotalDialogue_TDFList_1_AddRange_System_Collections_Generic_IEnumerable__0__" data-uid="TotalDialogue.TDFList`1.AddRange(System.Collections.Generic.IEnumerable{`0})">AddRange(IEnumerable&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>リストにアイテムを複数挿入します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void AddRange(IEnumerable&lt;T&gt; collection)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</td>
+        <td><span class="parametername">collection</span></td>
+        <td><p>挿入するアイテム(複数)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="TotalDialogue_TDFList_1_AddRange_System_Collections_Generic_IEnumerable__0___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>ロックされている場合、ロックが解除されるまで待機します。
+バリデーションメソッドが設定されている場合、バリデーションメソッドを呼び出してから追加します。
+アイテムが追加されたときにOnAddイベントを発生させます。
+リストが変更されたときにOnChangeイベントを発生させます。
+リストが変更されたときにInvokeOnChangeメソッドを呼び出します。</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zgock999/TotalDialogueFramework/new/master/apiSpec/new?filename=TotalDialogue_TDFList_1_AddRange_TotalDialogue_TDFList__0__.md&amp;value=---%0Auid%3A%20TotalDialogue.TDFList%601.AddRange(TotalDialogue.TDFList%7B%600%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zgock999/TotalDialogueFramework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs/#L993">View Source</a>
+  </span>
+  <a id="TotalDialogue_TDFList_1_AddRange_" data-uid="TotalDialogue.TDFList`1.AddRange*"></a>
+  <h4 id="TotalDialogue_TDFList_1_AddRange_TotalDialogue_TDFList__0__" data-uid="TotalDialogue.TDFList`1.AddRange(TotalDialogue.TDFList{`0})">AddRange(TDFList&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>リストに指定したコレクションの要素を追加します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void AddRange(TDFList&lt;T&gt; collection)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="TotalDialogue.TDFList-1.html">TDFList</a>&lt;T&gt;</td>
+        <td><span class="parametername">collection</span></td>
+        <td><p>追加する要素のコレクション</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="TotalDialogue_TDFList_1_AddRange_TotalDialogue_TDFList__0___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>ロックされている場合、ロックが解除されるまで待機します。</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zgock999/TotalDialogueFramework/new/master/apiSpec/new?filename=TotalDialogue_TDFList_1_BeginLock.md&amp;value=---%0Auid%3A%20TotalDialogue.TDFList%601.BeginLock%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zgock999/TotalDialogueFramework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs/#L115">View Source</a>
+  </span>
+  <a id="TotalDialogue_TDFList_1_BeginLock_" data-uid="TotalDialogue.TDFList`1.BeginLock*"></a>
+  <h4 id="TotalDialogue_TDFList_1_BeginLock" data-uid="TotalDialogue.TDFList`1.BeginLock">BeginLock()</h4>
+  <div class="markdown level1 summary"><p>ロックを開始します。ロックが取得できるまで待機します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BeginLock()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zgock999/TotalDialogueFramework/new/master/apiSpec/new?filename=TotalDialogue_TDFList_1_Clear.md&amp;value=---%0Auid%3A%20TotalDialogue.TDFList%601.Clear%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zgock999/TotalDialogueFramework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs/#L338">View Source</a>
+  </span>
+  <a id="TotalDialogue_TDFList_1_Clear_" data-uid="TotalDialogue.TDFList`1.Clear*"></a>
+  <h4 id="TotalDialogue_TDFList_1_Clear" data-uid="TotalDialogue.TDFList`1.Clear">Clear()</h4>
+  <div class="markdown level1 summary"><p>リストをクリアします。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Clear()</code></pre>
+  </div>
+  <h5 id="TotalDialogue_TDFList_1_Clear_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>ロックされている場合、ロックが解除されるまで待機します。
+リストがクリアされたときにOnChangeイベントを発生させます。
+リストが変更されたときにInvokeOnChangeメソッドを呼び出します。</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zgock999/TotalDialogueFramework/new/master/apiSpec/new?filename=TotalDialogue_TDFList_1_Contains__0_.md&amp;value=---%0Auid%3A%20TotalDialogue.TDFList%601.Contains(%600)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zgock999/TotalDialogueFramework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs/#L676">View Source</a>
+  </span>
+  <a id="TotalDialogue_TDFList_1_Contains_" data-uid="TotalDialogue.TDFList`1.Contains*"></a>
+  <h4 id="TotalDialogue_TDFList_1_Contains__0_" data-uid="TotalDialogue.TDFList`1.Contains(`0)">Contains(T)</h4>
+  <div class="markdown level1 summary"><p>リスト内に指定したアイテムが含まれているかどうかを取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Contains(T item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>検索するアイテム</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>含まれているかどうか</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="TotalDialogue_TDFList_1_Contains__0__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>ロックされている場合、ロックが解除されるまで待機します。</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zgock999/TotalDialogueFramework/new/master/apiSpec/new?filename=TotalDialogue_TDFList_1_CopyTo__0___System_Int32_.md&amp;value=---%0Auid%3A%20TotalDialogue.TDFList%601.CopyTo(%600%5B%5D%2CSystem.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zgock999/TotalDialogueFramework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs/#L553">View Source</a>
+  </span>
+  <a id="TotalDialogue_TDFList_1_CopyTo_" data-uid="TotalDialogue.TDFList`1.CopyTo*"></a>
+  <h4 id="TotalDialogue_TDFList_1_CopyTo__0___System_Int32_" data-uid="TotalDialogue.TDFList`1.CopyTo(`0[],System.Int32)">CopyTo(T[], int)</h4>
+  <div class="markdown level1 summary"><p>リスト内のアイテムをコピーします。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void CopyTo(T[] array, int arrayIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td><span class="parametername">array</span></td>
+        <td><p>コピー先の配列</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">arrayIndex</span></td>
+        <td><p>コピー開始インデックス</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="TotalDialogue_TDFList_1_CopyTo__0___System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>ロックされている場合、ロックが解除されるまで待機します。</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zgock999/TotalDialogueFramework/new/master/apiSpec/new?filename=TotalDialogue_TDFList_1_EndLock.md&amp;value=---%0Auid%3A%20TotalDialogue.TDFList%601.EndLock%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zgock999/TotalDialogueFramework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs/#L127">View Source</a>
+  </span>
+  <a id="TotalDialogue_TDFList_1_EndLock_" data-uid="TotalDialogue.TDFList`1.EndLock*"></a>
+  <h4 id="TotalDialogue_TDFList_1_EndLock" data-uid="TotalDialogue.TDFList`1.EndLock">EndLock()</h4>
+  <div class="markdown level1 summary"><p>ロックを終了します。ロックを保持しているスレッドのIDをリセットし、ロックオブジェクトのロックを解除します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EndLock()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zgock999/TotalDialogueFramework/new/master/apiSpec/new?filename=TotalDialogue_TDFList_1_Find_System_Predicate__0__.md&amp;value=---%0Auid%3A%20TotalDialogue.TDFList%601.Find(System.Predicate%7B%600%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zgock999/TotalDialogueFramework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs/#L695">View Source</a>
+  </span>
+  <a id="TotalDialogue_TDFList_1_Find_" data-uid="TotalDialogue.TDFList`1.Find*"></a>
+  <h4 id="TotalDialogue_TDFList_1_Find_System_Predicate__0__" data-uid="TotalDialogue.TDFList`1.Find(System.Predicate{`0})">Find(Predicate&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>リスト内のアイテムを検索します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T Find(Predicate&lt;T&gt; match)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.predicate-1">Predicate</a>&lt;T&gt;</td>
+        <td><span class="parametername">match</span></td>
+        <td><p>検索条件</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>検索したアイテム</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="TotalDialogue_TDFList_1_Find_System_Predicate__0___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>ロックされている場合、ロックが解除されるまで待機します。</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zgock999/TotalDialogueFramework/new/master/apiSpec/new?filename=TotalDialogue_TDFList_1_FindAll_System_Predicate__0__.md&amp;value=---%0Auid%3A%20TotalDialogue.TDFList%601.FindAll(System.Predicate%7B%600%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zgock999/TotalDialogueFramework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs/#L714">View Source</a>
+  </span>
+  <a id="TotalDialogue_TDFList_1_FindAll_" data-uid="TotalDialogue.TDFList`1.FindAll*"></a>
+  <h4 id="TotalDialogue_TDFList_1_FindAll_System_Predicate__0__" data-uid="TotalDialogue.TDFList`1.FindAll(System.Predicate{`0})">FindAll(Predicate&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>リスト内のアイテムを検索します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;T&gt; FindAll(Predicate&lt;T&gt; match)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.predicate-1">Predicate</a>&lt;T&gt;</td>
+        <td><span class="parametername">match</span></td>
+        <td><p>検索条件</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;T&gt;</td>
+        <td><p>検索したアイテム（複数）</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="TotalDialogue_TDFList_1_FindAll_System_Predicate__0___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>ロックされている場合、ロックが解除されるまで待機します。</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zgock999/TotalDialogueFramework/new/master/apiSpec/new?filename=TotalDialogue_TDFList_1_FindIndex_System_Int32_System_Int32_System_Predicate__0__.md&amp;value=---%0Auid%3A%20TotalDialogue.TDFList%601.FindIndex(System.Int32%2CSystem.Int32%2CSystem.Predicate%7B%600%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zgock999/TotalDialogueFramework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs/#L774">View Source</a>
+  </span>
+  <a id="TotalDialogue_TDFList_1_FindIndex_" data-uid="TotalDialogue.TDFList`1.FindIndex*"></a>
+  <h4 id="TotalDialogue_TDFList_1_FindIndex_System_Int32_System_Int32_System_Predicate__0__" data-uid="TotalDialogue.TDFList`1.FindIndex(System.Int32,System.Int32,System.Predicate{`0})">FindIndex(int, int, Predicate&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>リスト内のアイテムのインデックスを検索します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int FindIndex(int startIndex, int count, Predicate&lt;T&gt; match)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">startIndex</span></td>
+        <td><p>検索開始インデックス</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>検索するアイテム数</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.predicate-1">Predicate</a>&lt;T&gt;</td>
+        <td><span class="parametername">match</span></td>
+        <td><p>検索条件</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>検索したアイテムのインデックス</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="TotalDialogue_TDFList_1_FindIndex_System_Int32_System_Int32_System_Predicate__0___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>ロックされている場合、ロックが解除されるまで待機します。</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zgock999/TotalDialogueFramework/new/master/apiSpec/new?filename=TotalDialogue_TDFList_1_FindIndex_System_Int32_System_Predicate__0__.md&amp;value=---%0Auid%3A%20TotalDialogue.TDFList%601.FindIndex(System.Int32%2CSystem.Predicate%7B%600%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zgock999/TotalDialogueFramework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs/#L753">View Source</a>
+  </span>
+  <a id="TotalDialogue_TDFList_1_FindIndex_" data-uid="TotalDialogue.TDFList`1.FindIndex*"></a>
+  <h4 id="TotalDialogue_TDFList_1_FindIndex_System_Int32_System_Predicate__0__" data-uid="TotalDialogue.TDFList`1.FindIndex(System.Int32,System.Predicate{`0})">FindIndex(int, Predicate&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>リスト内のアイテムのインデックスを検索します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int FindIndex(int startIndex, Predicate&lt;T&gt; match)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">startIndex</span></td>
+        <td><p>検索開始インデックス</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.predicate-1">Predicate</a>&lt;T&gt;</td>
+        <td><span class="parametername">match</span></td>
+        <td><p>検索条件</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>検索したアイテムのインデックス</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="TotalDialogue_TDFList_1_FindIndex_System_Int32_System_Predicate__0___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>ロックされている場合、ロックが解除されるまで待機します。</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zgock999/TotalDialogueFramework/new/master/apiSpec/new?filename=TotalDialogue_TDFList_1_FindIndex_System_Predicate__0__.md&amp;value=---%0Auid%3A%20TotalDialogue.TDFList%601.FindIndex(System.Predicate%7B%600%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zgock999/TotalDialogueFramework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs/#L733">View Source</a>
+  </span>
+  <a id="TotalDialogue_TDFList_1_FindIndex_" data-uid="TotalDialogue.TDFList`1.FindIndex*"></a>
+  <h4 id="TotalDialogue_TDFList_1_FindIndex_System_Predicate__0__" data-uid="TotalDialogue.TDFList`1.FindIndex(System.Predicate{`0})">FindIndex(Predicate&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>リスト内のアイテムのインデックスを検索します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int FindIndex(Predicate&lt;T&gt; match)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.predicate-1">Predicate</a>&lt;T&gt;</td>
+        <td><span class="parametername">match</span></td>
+        <td><p>検索条件</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>検索したアイテムのインデックス</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="TotalDialogue_TDFList_1_FindIndex_System_Predicate__0___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>ロックされている場合、ロックが解除されるまで待機します。</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zgock999/TotalDialogueFramework/new/master/apiSpec/new?filename=TotalDialogue_TDFList_1_FindLast_System_Predicate__0__.md&amp;value=---%0Auid%3A%20TotalDialogue.TDFList%601.FindLast(System.Predicate%7B%600%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zgock999/TotalDialogueFramework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs/#L793">View Source</a>
+  </span>
+  <a id="TotalDialogue_TDFList_1_FindLast_" data-uid="TotalDialogue.TDFList`1.FindLast*"></a>
+  <h4 id="TotalDialogue_TDFList_1_FindLast_System_Predicate__0__" data-uid="TotalDialogue.TDFList`1.FindLast(System.Predicate{`0})">FindLast(Predicate&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>リスト内のアイテムを逆順で検索します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T FindLast(Predicate&lt;T&gt; match)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.predicate-1">Predicate</a>&lt;T&gt;</td>
+        <td><span class="parametername">match</span></td>
+        <td><p>検索条件</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>検索したアイテム</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="TotalDialogue_TDFList_1_FindLast_System_Predicate__0___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>ロックされている場合、ロックが解除されるまで待機します。</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zgock999/TotalDialogueFramework/new/master/apiSpec/new?filename=TotalDialogue_TDFList_1_FindLastIndex_System_Int32_System_Int32_System_Predicate__0__.md&amp;value=---%0Auid%3A%20TotalDialogue.TDFList%601.FindLastIndex(System.Int32%2CSystem.Int32%2CSystem.Predicate%7B%600%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zgock999/TotalDialogueFramework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs/#L853">View Source</a>
+  </span>
+  <a id="TotalDialogue_TDFList_1_FindLastIndex_" data-uid="TotalDialogue.TDFList`1.FindLastIndex*"></a>
+  <h4 id="TotalDialogue_TDFList_1_FindLastIndex_System_Int32_System_Int32_System_Predicate__0__" data-uid="TotalDialogue.TDFList`1.FindLastIndex(System.Int32,System.Int32,System.Predicate{`0})">FindLastIndex(int, int, Predicate&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>リスト内のアイテムのインデックスを逆順で検索します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int FindLastIndex(int startIndex, int count, Predicate&lt;T&gt; match)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">startIndex</span></td>
+        <td><p>検索開始インデックス</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>検索するアイテム数</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.predicate-1">Predicate</a>&lt;T&gt;</td>
+        <td><span class="parametername">match</span></td>
+        <td><p>検索条件</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>検索したアイテムのインデックス</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="TotalDialogue_TDFList_1_FindLastIndex_System_Int32_System_Int32_System_Predicate__0___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>ロックされている場合、ロックが解除されるまで待機します。</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zgock999/TotalDialogueFramework/new/master/apiSpec/new?filename=TotalDialogue_TDFList_1_FindLastIndex_System_Int32_System_Predicate__0__.md&amp;value=---%0Auid%3A%20TotalDialogue.TDFList%601.FindLastIndex(System.Int32%2CSystem.Predicate%7B%600%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zgock999/TotalDialogueFramework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs/#L832">View Source</a>
+  </span>
+  <a id="TotalDialogue_TDFList_1_FindLastIndex_" data-uid="TotalDialogue.TDFList`1.FindLastIndex*"></a>
+  <h4 id="TotalDialogue_TDFList_1_FindLastIndex_System_Int32_System_Predicate__0__" data-uid="TotalDialogue.TDFList`1.FindLastIndex(System.Int32,System.Predicate{`0})">FindLastIndex(int, Predicate&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>リスト内のアイテムのインデックスを逆順で検索します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int FindLastIndex(int startIndex, Predicate&lt;T&gt; match)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">startIndex</span></td>
+        <td><p>検索開始インデックス</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.predicate-1">Predicate</a>&lt;T&gt;</td>
+        <td><span class="parametername">match</span></td>
+        <td><p>検索条件</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>検索したアイテムのインデックス</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="TotalDialogue_TDFList_1_FindLastIndex_System_Int32_System_Predicate__0___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>ロックされている場合、ロックが解除されるまで待機します。</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zgock999/TotalDialogueFramework/new/master/apiSpec/new?filename=TotalDialogue_TDFList_1_FindLastIndex_System_Predicate__0__.md&amp;value=---%0Auid%3A%20TotalDialogue.TDFList%601.FindLastIndex(System.Predicate%7B%600%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zgock999/TotalDialogueFramework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs/#L812">View Source</a>
+  </span>
+  <a id="TotalDialogue_TDFList_1_FindLastIndex_" data-uid="TotalDialogue.TDFList`1.FindLastIndex*"></a>
+  <h4 id="TotalDialogue_TDFList_1_FindLastIndex_System_Predicate__0__" data-uid="TotalDialogue.TDFList`1.FindLastIndex(System.Predicate{`0})">FindLastIndex(Predicate&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>リスト内のアイテムのインデックスを逆順で検索します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int FindLastIndex(Predicate&lt;T&gt; match)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.predicate-1">Predicate</a>&lt;T&gt;</td>
+        <td><span class="parametername">match</span></td>
+        <td><p>検索条件</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>検索したアイテムのインデックス</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="TotalDialogue_TDFList_1_FindLastIndex_System_Predicate__0___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>ロックされている場合、ロックが解除されるまで待機します。</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zgock999/TotalDialogueFramework/new/master/apiSpec/new?filename=TotalDialogue_TDFList_1_ForEach_System_Action__0__System_Boolean_.md&amp;value=---%0Auid%3A%20TotalDialogue.TDFList%601.ForEach(System.Action%7B%600%7D%2CSystem.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zgock999/TotalDialogueFramework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs/#L573">View Source</a>
+  </span>
+  <a id="TotalDialogue_TDFList_1_ForEach_" data-uid="TotalDialogue.TDFList`1.ForEach*"></a>
+  <h4 id="TotalDialogue_TDFList_1_ForEach_System_Action__0__System_Boolean_" data-uid="TotalDialogue.TDFList`1.ForEach(System.Action{`0},System.Boolean)">ForEach(Action&lt;T&gt;, bool)</h4>
+  <div class="markdown level1 summary"><p>リスト内の各要素に対してActionを実行します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void ForEach(Action&lt;T&gt; action, bool invoveOnChange = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;T&gt;</td>
+        <td><span class="parametername">action</span></td>
+        <td><p>実行するAction</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">invoveOnChange</span></td>
+        <td><p>OnChangeイベントを発生させるかどうか (デフォルト: false)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="TotalDialogue_TDFList_1_ForEach_System_Action__0__System_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>ロックされている場合、ロックが解除されるまで待機します。
+処理が完了したときにOnChangeイベントを発生させるかどうかを指定します。</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zgock999/TotalDialogueFramework/new/master/apiSpec/new?filename=TotalDialogue_TDFList_1_GetEnumerator.md&amp;value=---%0Auid%3A%20TotalDialogue.TDFList%601.GetEnumerator%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zgock999/TotalDialogueFramework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs/#L599">View Source</a>
+  </span>
+  <a id="TotalDialogue_TDFList_1_GetEnumerator_" data-uid="TotalDialogue.TDFList`1.GetEnumerator*"></a>
+  <h4 id="TotalDialogue_TDFList_1_GetEnumerator" data-uid="TotalDialogue.TDFList`1.GetEnumerator">GetEnumerator()</h4>
+  <div class="markdown level1 summary"><p>リストのEnumeratorを返します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual List&lt;T&gt;.Enumerator GetEnumerator()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;T&gt;.<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.enumerator">Enumerator</a></td>
+        <td><p>リストのEnumerator</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="TotalDialogue_TDFList_1_GetEnumerator_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>ロックされている場合、ロックが解除されるまで待機します。</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zgock999/TotalDialogueFramework/new/master/apiSpec/new?filename=TotalDialogue_TDFList_1_GetItemType.md&amp;value=---%0Auid%3A%20TotalDialogue.TDFList%601.GetItemType%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zgock999/TotalDialogueFramework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs/#L1033">View Source</a>
+  </span>
+  <a id="TotalDialogue_TDFList_1_GetItemType_" data-uid="TotalDialogue.TDFList`1.GetItemType*"></a>
+  <h4 id="TotalDialogue_TDFList_1_GetItemType" data-uid="TotalDialogue.TDFList`1.GetItemType">GetItemType()</h4>
+  <div class="markdown level1 summary"><p>リストの要素の型を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Type GetItemType()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></td>
+        <td><p>リストの要素の型</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zgock999/TotalDialogueFramework/new/master/apiSpec/new?filename=TotalDialogue_TDFList_1_GetRange_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20TotalDialogue.TDFList%601.GetRange(System.Int32%2CSystem.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zgock999/TotalDialogueFramework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs/#L619">View Source</a>
+  </span>
+  <a id="TotalDialogue_TDFList_1_GetRange_" data-uid="TotalDialogue.TDFList`1.GetRange*"></a>
+  <h4 id="TotalDialogue_TDFList_1_GetRange_System_Int32_System_Int32_" data-uid="TotalDialogue.TDFList`1.GetRange(System.Int32,System.Int32)">GetRange(int, int)</h4>
+  <div class="markdown level1 summary"><p>リスト内のアイテムを範囲指定で取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;T&gt; GetRange(int index, int count)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>取得する開始インデックス</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>取得するアイテム数</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;T&gt;</td>
+        <td><p>取得したアイテム</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="TotalDialogue_TDFList_1_GetRange_System_Int32_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>ロックされている場合、ロックが解除されるまで待機します。</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zgock999/TotalDialogueFramework/new/master/apiSpec/new?filename=TotalDialogue_TDFList_1_IndexOf__0_.md&amp;value=---%0Auid%3A%20TotalDialogue.TDFList%601.IndexOf(%600)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zgock999/TotalDialogueFramework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs/#L638">View Source</a>
+  </span>
+  <a id="TotalDialogue_TDFList_1_IndexOf_" data-uid="TotalDialogue.TDFList`1.IndexOf*"></a>
+  <h4 id="TotalDialogue_TDFList_1_IndexOf__0_" data-uid="TotalDialogue.TDFList`1.IndexOf(`0)">IndexOf(T)</h4>
+  <div class="markdown level1 summary"><p>リスト内のアイテムを検索します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int IndexOf(T item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>検索するアイテム</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>検索したアイテムのインデックス</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="TotalDialogue_TDFList_1_IndexOf__0__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>ロックされている場合、ロックが解除されるまで待機します。</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zgock999/TotalDialogueFramework/new/master/apiSpec/new?filename=TotalDialogue_TDFList_1_Insert_System_Int32__0_.md&amp;value=---%0Auid%3A%20TotalDialogue.TDFList%601.Insert(System.Int32%2C%600)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zgock999/TotalDialogueFramework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs/#L363">View Source</a>
+  </span>
+  <a id="TotalDialogue_TDFList_1_Insert_" data-uid="TotalDialogue.TDFList`1.Insert*"></a>
+  <h4 id="TotalDialogue_TDFList_1_Insert_System_Int32__0_" data-uid="TotalDialogue.TDFList`1.Insert(System.Int32,`0)">Insert(int, T)</h4>
+  <div class="markdown level1 summary"><p>リストにアイテムを挿入します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Insert(int index, T item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>挿入するインデックス</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>挿入するアイテム</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="TotalDialogue_TDFList_1_Insert_System_Int32__0__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>バリデーションメソッドが設定されている場合、バリデーションメソッドを呼び出してから挿入します。
+ロックされている場合、ロックが解除されるまで待機します。
+アイテムが挿入されたときにOnAddイベントを発生させます。
+リストが変更されたときにOnChangeイベントを発生させます。
+リストが変更されたときにInvokeOnChangeメソッドを呼び出します。</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zgock999/TotalDialogueFramework/new/master/apiSpec/new?filename=TotalDialogue_TDFList_1_InvokeOnAdd_System_Int32__0_.md&amp;value=---%0Auid%3A%20TotalDialogue.TDFList%601.InvokeOnAdd(System.Int32%2C%600)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zgock999/TotalDialogueFramework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs/#L1084">View Source</a>
+  </span>
+  <a id="TotalDialogue_TDFList_1_InvokeOnAdd_" data-uid="TotalDialogue.TDFList`1.InvokeOnAdd*"></a>
+  <h4 id="TotalDialogue_TDFList_1_InvokeOnAdd_System_Int32__0_" data-uid="TotalDialogue.TDFList`1.InvokeOnAdd(System.Int32,`0)">InvokeOnAdd(int, T)</h4>
+  <div class="markdown level1 summary"><p>OnAddイベントを発生させます。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void InvokeOnAdd(int index, T item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zgock999/TotalDialogueFramework/new/master/apiSpec/new?filename=TotalDialogue_TDFList_1_InvokeOnChange.md&amp;value=---%0Auid%3A%20TotalDialogue.TDFList%601.InvokeOnChange%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zgock999/TotalDialogueFramework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs/#L1069">View Source</a>
+  </span>
+  <a id="TotalDialogue_TDFList_1_InvokeOnChange_" data-uid="TotalDialogue.TDFList`1.InvokeOnChange*"></a>
+  <h4 id="TotalDialogue_TDFList_1_InvokeOnChange" data-uid="TotalDialogue.TDFList`1.InvokeOnChange">InvokeOnChange()</h4>
+  <div class="markdown level1 summary"><p>OnChangeイベントを発生させます。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InvokeOnChange()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zgock999/TotalDialogueFramework/new/master/apiSpec/new?filename=TotalDialogue_TDFList_1_InvokeOnChangeItem_System_Int32__0_.md&amp;value=---%0Auid%3A%20TotalDialogue.TDFList%601.InvokeOnChangeItem(System.Int32%2C%600)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zgock999/TotalDialogueFramework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs/#L1077">View Source</a>
+  </span>
+  <a id="TotalDialogue_TDFList_1_InvokeOnChangeItem_" data-uid="TotalDialogue.TDFList`1.InvokeOnChangeItem*"></a>
+  <h4 id="TotalDialogue_TDFList_1_InvokeOnChangeItem_System_Int32__0_" data-uid="TotalDialogue.TDFList`1.InvokeOnChangeItem(System.Int32,`0)">InvokeOnChangeItem(int, T)</h4>
+  <div class="markdown level1 summary"><p>OnChangeItemイベントを発生させます。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void InvokeOnChangeItem(int index, T item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zgock999/TotalDialogueFramework/new/master/apiSpec/new?filename=TotalDialogue_TDFList_1_InvokeOnRemove_System_Int32__0_.md&amp;value=---%0Auid%3A%20TotalDialogue.TDFList%601.InvokeOnRemove(System.Int32%2C%600)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zgock999/TotalDialogueFramework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs/#L1091">View Source</a>
+  </span>
+  <a id="TotalDialogue_TDFList_1_InvokeOnRemove_" data-uid="TotalDialogue.TDFList`1.InvokeOnRemove*"></a>
+  <h4 id="TotalDialogue_TDFList_1_InvokeOnRemove_System_Int32__0_" data-uid="TotalDialogue.TDFList`1.InvokeOnRemove(System.Int32,`0)">InvokeOnRemove(int, T)</h4>
+  <div class="markdown level1 summary"><p>OnRemoveイベントを発生させます。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void InvokeOnRemove(int index, T item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zgock999/TotalDialogueFramework/new/master/apiSpec/new?filename=TotalDialogue_TDFList_1_LastIndexOf__0_.md&amp;value=---%0Auid%3A%20TotalDialogue.TDFList%601.LastIndexOf(%600)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zgock999/TotalDialogueFramework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs/#L657">View Source</a>
+  </span>
+  <a id="TotalDialogue_TDFList_1_LastIndexOf_" data-uid="TotalDialogue.TDFList`1.LastIndexOf*"></a>
+  <h4 id="TotalDialogue_TDFList_1_LastIndexOf__0_" data-uid="TotalDialogue.TDFList`1.LastIndexOf(`0)">LastIndexOf(T)</h4>
+  <div class="markdown level1 summary"><p>リスト内のアイテムを逆順に検索します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int LastIndexOf(T item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>検索するアイテム</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>検索したアイテムのインデックス</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="TotalDialogue_TDFList_1_LastIndexOf__0__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>ロックされている場合、ロックが解除されるまで待機します。</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zgock999/TotalDialogueFramework/new/master/apiSpec/new?filename=TotalDialogue_TDFList_1_OnAfterDeserialize.md&amp;value=---%0Auid%3A%20TotalDialogue.TDFList%601.OnAfterDeserialize%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zgock999/TotalDialogueFramework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs/#L1060">View Source</a>
+  </span>
+  <a id="TotalDialogue_TDFList_1_OnAfterDeserialize_" data-uid="TotalDialogue.TDFList`1.OnAfterDeserialize*"></a>
+  <h4 id="TotalDialogue_TDFList_1_OnAfterDeserialize" data-uid="TotalDialogue.TDFList`1.OnAfterDeserialize">OnAfterDeserialize()</h4>
+  <div class="markdown level1 summary"><p>デシリアライズ後の処理を行います。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnAfterDeserialize()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zgock999/TotalDialogueFramework/new/master/apiSpec/new?filename=TotalDialogue_TDFList_1_OnBeforeSerialize.md&amp;value=---%0Auid%3A%20TotalDialogue.TDFList%601.OnBeforeSerialize%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zgock999/TotalDialogueFramework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs/#L1051">View Source</a>
+  </span>
+  <a id="TotalDialogue_TDFList_1_OnBeforeSerialize_" data-uid="TotalDialogue.TDFList`1.OnBeforeSerialize*"></a>
+  <h4 id="TotalDialogue_TDFList_1_OnBeforeSerialize" data-uid="TotalDialogue.TDFList`1.OnBeforeSerialize">OnBeforeSerialize()</h4>
+  <div class="markdown level1 summary"><p>シリアライズ前の処理を行います。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnBeforeSerialize()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zgock999/TotalDialogueFramework/new/master/apiSpec/new?filename=TotalDialogue_TDFList_1_Remove__0_.md&amp;value=---%0Auid%3A%20TotalDialogue.TDFList%601.Remove(%600)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zgock999/TotalDialogueFramework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs/#L216">View Source</a>
+  </span>
+  <a id="TotalDialogue_TDFList_1_Remove_" data-uid="TotalDialogue.TDFList`1.Remove*"></a>
+  <h4 id="TotalDialogue_TDFList_1_Remove__0_" data-uid="TotalDialogue.TDFList`1.Remove(`0)">Remove(T)</h4>
+  <div class="markdown level1 summary"><p>アイテムをリストから削除します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Remove(T item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>削除するアイテム</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="TotalDialogue_TDFList_1_Remove__0__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>ロックされている場合、ロックが解除されるまで待機します。
+アイテムがリストに存在しない場合は削除しません。
+アイテムが削除されたときにOnRemoveイベントを発生させます。
+リストが変更されたときにOnChangeイベントを発生させます。
+リストが変更されたときにInvokeOnChangeメソッドを呼び出します。</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zgock999/TotalDialogueFramework/new/master/apiSpec/new?filename=TotalDialogue_TDFList_1_RemoveAll_System_Predicate__0__.md&amp;value=---%0Auid%3A%20TotalDialogue.TDFList%601.RemoveAll(System.Predicate%7B%600%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zgock999/TotalDialogueFramework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs/#L874">View Source</a>
+  </span>
+  <a id="TotalDialogue_TDFList_1_RemoveAll_" data-uid="TotalDialogue.TDFList`1.RemoveAll*"></a>
+  <h4 id="TotalDialogue_TDFList_1_RemoveAll_System_Predicate__0__" data-uid="TotalDialogue.TDFList`1.RemoveAll(System.Predicate{`0})">RemoveAll(Predicate&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>リストから一致するすべてのアイテムを削除します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int RemoveAll(Predicate&lt;T&gt; match)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.predicate-1">Predicate</a>&lt;T&gt;</td>
+        <td><span class="parametername">match</span></td>
+        <td><p>削除条件</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>削除したアイテム数</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="TotalDialogue_TDFList_1_RemoveAll_System_Predicate__0___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>ロックされている場合、ロックが解除されるまで待機します。
+削除が発生したときにOnChangeイベントを発生させます。
+削除が発生したときにInvokeOnChangeメソッドを呼び出します。</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zgock999/TotalDialogueFramework/new/master/apiSpec/new?filename=TotalDialogue_TDFList_1_RemoveAt_System_Int32_.md&amp;value=---%0Auid%3A%20TotalDialogue.TDFList%601.RemoveAt(System.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zgock999/TotalDialogueFramework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs/#L246">View Source</a>
+  </span>
+  <a id="TotalDialogue_TDFList_1_RemoveAt_" data-uid="TotalDialogue.TDFList`1.RemoveAt*"></a>
+  <h4 id="TotalDialogue_TDFList_1_RemoveAt_System_Int32_" data-uid="TotalDialogue.TDFList`1.RemoveAt(System.Int32)">RemoveAt(int)</h4>
+  <div class="markdown level1 summary"><p>指定したインデックスのアイテムを削除します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void RemoveAt(int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>削除するアイテムのインデックス</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="TotalDialogue_TDFList_1_RemoveAt_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>ロックされている場合、ロックが解除されるまで待機します。
+インデックスが範囲外の場合は削除しません。
+アイテムが削除されたときにOnRemoveイベントを発生させます。
+リストが変更されたときにOnChangeイベントを発生させます。
+リストが変更されたときにInvokeOnChangeメソッドを呼び出します。</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zgock999/TotalDialogueFramework/new/master/apiSpec/new?filename=TotalDialogue_TDFList_1_RemoveRange_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20TotalDialogue.TDFList%601.RemoveRange(System.Int32%2CSystem.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zgock999/TotalDialogueFramework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs/#L420">View Source</a>
+  </span>
+  <a id="TotalDialogue_TDFList_1_RemoveRange_" data-uid="TotalDialogue.TDFList`1.RemoveRange*"></a>
+  <h4 id="TotalDialogue_TDFList_1_RemoveRange_System_Int32_System_Int32_" data-uid="TotalDialogue.TDFList`1.RemoveRange(System.Int32,System.Int32)">RemoveRange(int, int)</h4>
+  <div class="markdown level1 summary"><p>リストから数を指定してアイテムを削除します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void RemoveRange(int index, int count)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>削除するインデックス</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>削除するアイテム数</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="TotalDialogue_TDFList_1_RemoveRange_System_Int32_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>ロックされている場合、ロックが解除されるまで待機します。
+インデックスが範囲外の場合は削除しません。
+アイテムが削除されたときにOnRemoveイベントを発生させます。
+リストが変更されたときにOnChangeイベントを発生させます。
+リストが変更されたときにInvokeOnChangeメソッドを呼び出します。</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zgock999/TotalDialogueFramework/new/master/apiSpec/new?filename=TotalDialogue_TDFList_1_RemoveRange_TotalDialogue_TDFList__0__.md&amp;value=---%0Auid%3A%20TotalDialogue.TDFList%601.RemoveRange(TotalDialogue.TDFList%7B%600%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zgock999/TotalDialogueFramework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs/#L1013">View Source</a>
+  </span>
+  <a id="TotalDialogue_TDFList_1_RemoveRange_" data-uid="TotalDialogue.TDFList`1.RemoveRange*"></a>
+  <h4 id="TotalDialogue_TDFList_1_RemoveRange_TotalDialogue_TDFList__0__" data-uid="TotalDialogue.TDFList`1.RemoveRange(TotalDialogue.TDFList{`0})">RemoveRange(TDFList&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>リストから指定したコレクションの要素をすべて削除します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void RemoveRange(TDFList&lt;T&gt; collection)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="TotalDialogue.TDFList-1.html">TDFList</a>&lt;T&gt;</td>
+        <td><span class="parametername">collection</span></td>
+        <td><p>削除する要素のコレクション</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="TotalDialogue_TDFList_1_RemoveRange_TotalDialogue_TDFList__0___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>ロックされている場合、ロックが解除されるまで待機します。</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zgock999/TotalDialogueFramework/new/master/apiSpec/new?filename=TotalDialogue_TDFList_1_Reverse.md&amp;value=---%0Auid%3A%20TotalDialogue.TDFList%601.Reverse%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zgock999/TotalDialogueFramework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs/#L509">View Source</a>
+  </span>
+  <a id="TotalDialogue_TDFList_1_Reverse_" data-uid="TotalDialogue.TDFList`1.Reverse*"></a>
+  <h4 id="TotalDialogue_TDFList_1_Reverse" data-uid="TotalDialogue.TDFList`1.Reverse">Reverse()</h4>
+  <div class="markdown level1 summary"><p>リスト内のアイテムを逆順にします。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Reverse()</code></pre>
+  </div>
+  <h5 id="TotalDialogue_TDFList_1_Reverse_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>ロックされている場合、ロックが解除されるまで待機します。
+リストが逆順になったときにOnChangeイベントを発生させます。
+リストが逆順になったときにInvokeOnChangeメソッドを呼び出します。</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zgock999/TotalDialogueFramework/new/master/apiSpec/new?filename=TotalDialogue_TDFList_1_Reverse_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20TotalDialogue.TDFList%601.Reverse(System.Int32%2CSystem.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zgock999/TotalDialogueFramework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs/#L532">View Source</a>
+  </span>
+  <a id="TotalDialogue_TDFList_1_Reverse_" data-uid="TotalDialogue.TDFList`1.Reverse*"></a>
+  <h4 id="TotalDialogue_TDFList_1_Reverse_System_Int32_System_Int32_" data-uid="TotalDialogue.TDFList`1.Reverse(System.Int32,System.Int32)">Reverse(int, int)</h4>
+  <div class="markdown level1 summary"><p>リスト内のアイテムを範囲指定で逆順にします。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Reverse(int index, int count)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>逆順にする開始インデックス</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>逆順にするアイテム数</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="TotalDialogue_TDFList_1_Reverse_System_Int32_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>ロックされている場合、ロックが解除されるまで待機します。
+リストが逆順になったときにOnChangeイベントを発生させます。
+リストが逆順になったときにInvokeOnChangeメソッドを呼び出します。</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zgock999/TotalDialogueFramework/new/master/apiSpec/new?filename=TotalDialogue_TDFList_1_Sort_System_Collections_Generic_IComparer__0__.md&amp;value=---%0Auid%3A%20TotalDialogue.TDFList%601.Sort(System.Collections.Generic.IComparer%7B%600%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zgock999/TotalDialogueFramework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs/#L464">View Source</a>
+  </span>
+  <a id="TotalDialogue_TDFList_1_Sort_" data-uid="TotalDialogue.TDFList`1.Sort*"></a>
+  <h4 id="TotalDialogue_TDFList_1_Sort_System_Collections_Generic_IComparer__0__" data-uid="TotalDialogue.TDFList`1.Sort(System.Collections.Generic.IComparer{`0})">Sort(IComparer&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>リスト内のアイテムをソートします。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Sort(IComparer&lt;T&gt; comparer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icomparer-1">IComparer</a>&lt;T&gt;</td>
+        <td><span class="parametername">comparer</span></td>
+        <td><p>比較メソッド</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="TotalDialogue_TDFList_1_Sort_System_Collections_Generic_IComparer__0___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>ロックされている場合、ロックが解除されるまで待機します。
+リストがソートされたときにOnChangeイベントを発生させます。
+リストがソートされたときにInvokeOnChangeメソッドを呼び出します。</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zgock999/TotalDialogueFramework/new/master/apiSpec/new?filename=TotalDialogue_TDFList_1_Sort_System_Comparison__0__.md&amp;value=---%0Auid%3A%20TotalDialogue.TDFList%601.Sort(System.Comparison%7B%600%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zgock999/TotalDialogueFramework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs/#L442">View Source</a>
+  </span>
+  <a id="TotalDialogue_TDFList_1_Sort_" data-uid="TotalDialogue.TDFList`1.Sort*"></a>
+  <h4 id="TotalDialogue_TDFList_1_Sort_System_Comparison__0__" data-uid="TotalDialogue.TDFList`1.Sort(System.Comparison{`0})">Sort(Comparison&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>リスト内のアイテムをソートします。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Sort(Comparison&lt;T&gt; comparison)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.comparison-1">Comparison</a>&lt;T&gt;</td>
+        <td><span class="parametername">comparison</span></td>
+        <td><p>比較メソッド</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="TotalDialogue_TDFList_1_Sort_System_Comparison__0___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>ロックされている場合、ロックが解除されるまで待機します。
+リストがソートされたときにOnChangeイベントを発生させます。
+リストがソートされたときにInvokeOnChangeメソッドを呼び出します。</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zgock999/TotalDialogueFramework/new/master/apiSpec/new?filename=TotalDialogue_TDFList_1_Sort_System_Int32_System_Int32_System_Collections_Generic_IComparer__0__.md&amp;value=---%0Auid%3A%20TotalDialogue.TDFList%601.Sort(System.Int32%2CSystem.Int32%2CSystem.Collections.Generic.IComparer%7B%600%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zgock999/TotalDialogueFramework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs/#L488">View Source</a>
+  </span>
+  <a id="TotalDialogue_TDFList_1_Sort_" data-uid="TotalDialogue.TDFList`1.Sort*"></a>
+  <h4 id="TotalDialogue_TDFList_1_Sort_System_Int32_System_Int32_System_Collections_Generic_IComparer__0__" data-uid="TotalDialogue.TDFList`1.Sort(System.Int32,System.Int32,System.Collections.Generic.IComparer{`0})">Sort(int, int, IComparer&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>リスト内のアイテムを範囲指定でソートします。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Sort(int index, int count, IComparer&lt;T&gt; comparer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>ソートする開始インデックス</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>ソートするアイテム数</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icomparer-1">IComparer</a>&lt;T&gt;</td>
+        <td><span class="parametername">comparer</span></td>
+        <td><p>比較メソッド</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="TotalDialogue_TDFList_1_Sort_System_Int32_System_Int32_System_Collections_Generic_IComparer__0___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>ロックされている場合、ロックが解除されるまで待機します。
+リストがソートされたときにOnChangeイベントを発生させます。
+リストがソートされたときにInvokeOnChangeメソッドを呼び出します。</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zgock999/TotalDialogueFramework/new/master/apiSpec/new?filename=TotalDialogue_TDFList_1_ToArray.md&amp;value=---%0Auid%3A%20TotalDialogue.TDFList%601.ToArray%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zgock999/TotalDialogueFramework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs/#L895">View Source</a>
+  </span>
+  <a id="TotalDialogue_TDFList_1_ToArray_" data-uid="TotalDialogue.TDFList`1.ToArray*"></a>
+  <h4 id="TotalDialogue_TDFList_1_ToArray" data-uid="TotalDialogue.TDFList`1.ToArray">ToArray()</h4>
+  <div class="markdown level1 summary"><p>リストの要素を新しい配列にコピーします。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T[] ToArray()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td><p>新しい配列</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="TotalDialogue_TDFList_1_ToArray_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>ロックされている場合、ロックが解除されるまで待機します。</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zgock999/TotalDialogueFramework/new/master/apiSpec/new?filename=TotalDialogue_TDFList_1_TrimExcess.md&amp;value=---%0Auid%3A%20TotalDialogue.TDFList%601.TrimExcess%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zgock999/TotalDialogueFramework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs/#L915">View Source</a>
+  </span>
+  <a id="TotalDialogue_TDFList_1_TrimExcess_" data-uid="TotalDialogue.TDFList`1.TrimExcess*"></a>
+  <h4 id="TotalDialogue_TDFList_1_TrimExcess" data-uid="TotalDialogue.TDFList`1.TrimExcess">TrimExcess()</h4>
+  <div class="markdown level1 summary"><p>リストの容量を、実際の要素数に合わせて最小限にします。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TrimExcess()</code></pre>
+  </div>
+  <h5 id="TotalDialogue_TDFList_1_TrimExcess_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>ロックされている場合、ロックが解除されるまで待機します。
+Trimによって要素数が変化したときにOnChangeイベントを発生させます。
+Trimによって要素数が変化したときにInvokeOnChangeメソッドを呼び出します。</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zgock999/TotalDialogueFramework/new/master/apiSpec/new?filename=TotalDialogue_TDFList_1_TrueForAll_System_Predicate__0__.md&amp;value=---%0Auid%3A%20TotalDialogue.TDFList%601.TrueForAll(System.Predicate%7B%600%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zgock999/TotalDialogueFramework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs/#L939">View Source</a>
+  </span>
+  <a id="TotalDialogue_TDFList_1_TrueForAll_" data-uid="TotalDialogue.TDFList`1.TrueForAll*"></a>
+  <h4 id="TotalDialogue_TDFList_1_TrueForAll_System_Predicate__0__" data-uid="TotalDialogue.TDFList`1.TrueForAll(System.Predicate{`0})">TrueForAll(Predicate&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>リストのすべての要素が指定した述語によって定義される条件を満たすかどうかを判断します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TrueForAll(Predicate&lt;T&gt; match)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.predicate-1">Predicate</a>&lt;T&gt;</td>
+        <td><span class="parametername">match</span></td>
+        <td><p>判断条件</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>すべての要素が条件を満たす場合は true。それ以外の場合は false。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="TotalDialogue_TDFList_1_TrueForAll_System_Predicate__0___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>ロックされている場合、ロックが解除されるまで待機します。</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zgock999/TotalDialogueFramework/new/master/apiSpec/new?filename=TotalDialogue_TDFList_1_UpdateDuplicates.md&amp;value=---%0Auid%3A%20TotalDialogue.TDFList%601.UpdateDuplicates%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zgock999/TotalDialogueFramework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs/#L1045">View Source</a>
+  </span>
+  <a id="TotalDialogue_TDFList_1_UpdateDuplicates_" data-uid="TotalDialogue.TDFList`1.UpdateDuplicates*"></a>
+  <h4 id="TotalDialogue_TDFList_1_UpdateDuplicates" data-uid="TotalDialogue.TDFList`1.UpdateDuplicates">UpdateDuplicates()</h4>
+  <div class="markdown level1 summary"><p>リスト内の重複要素の処理を行います</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void UpdateDuplicates()</code></pre>
+  </div>
+  <h5 id="TotalDialogue_TDFList_1_UpdateDuplicates_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>サブクラスのためのスタブメソッドであり、オーバーライドして使用します。
+リスト内に重複要素がある場合、重複要素を処理します。
+要素の位置関係が変更されている可能性があるときに呼びだすことを推奨します。</p>
+</div>
+  <h3 id="events">Events
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zgock999/TotalDialogueFramework/new/master/apiSpec/new?filename=TotalDialogue_TDFList_1_OnAdd.md&amp;value=---%0Auid%3A%20TotalDialogue.TDFList%601.OnAdd%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zgock999/TotalDialogueFramework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs/#L143">View Source</a>
+  </span>
+  <h4 id="TotalDialogue_TDFList_1_OnAdd" data-uid="TotalDialogue.TDFList`1.OnAdd">OnAdd</h4>
+  <div class="markdown level1 summary"><p>アイテムが追加されたときに発生するイベント。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;int, T&gt; OnAdd</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zgock999/TotalDialogueFramework/new/master/apiSpec/new?filename=TotalDialogue_TDFList_1_OnChange.md&amp;value=---%0Auid%3A%20TotalDialogue.TDFList%601.OnChange%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zgock999/TotalDialogueFramework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs/#L138">View Source</a>
+  </span>
+  <h4 id="TotalDialogue_TDFList_1_OnChange" data-uid="TotalDialogue.TDFList`1.OnChange">OnChange</h4>
+  <div class="markdown level1 summary"><p>リストが変更されたときに発生するイベント。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action OnChange</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zgock999/TotalDialogueFramework/new/master/apiSpec/new?filename=TotalDialogue_TDFList_1_OnChangeItem.md&amp;value=---%0Auid%3A%20TotalDialogue.TDFList%601.OnChangeItem%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zgock999/TotalDialogueFramework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs/#L153">View Source</a>
+  </span>
+  <h4 id="TotalDialogue_TDFList_1_OnChangeItem" data-uid="TotalDialogue.TDFList`1.OnChangeItem">OnChangeItem</h4>
+  <div class="markdown level1 summary"><p>アイテムが変更されたときに発生するイベント。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;int, T&gt; OnChangeItem</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zgock999/TotalDialogueFramework/new/master/apiSpec/new?filename=TotalDialogue_TDFList_1_OnRemove.md&amp;value=---%0Auid%3A%20TotalDialogue.TDFList%601.OnRemove%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zgock999/TotalDialogueFramework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs/#L148">View Source</a>
+  </span>
+  <h4 id="TotalDialogue_TDFList_1_OnRemove" data-uid="TotalDialogue.TDFList`1.OnRemove">OnRemove</h4>
+  <div class="markdown level1 summary"><p>アイテムが削除されたときに発生するイベント。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;int, T&gt; OnRemove</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="TotalDialogue.ITDFList-1.html">ITDFList&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a>
+  </div>
+  <div>
+      <span class="xref">UnityEngine.ISerializationCallbackReceiver</span>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/zgock999/TotalDialogueFramework/new/master/apiSpec/new?filename=TotalDialogue_TDFList_1.md&amp;value=---%0Auid%3A%20TotalDialogue.TDFList%601%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/zgock999/TotalDialogueFramework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs/#L81" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

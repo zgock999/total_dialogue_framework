@@ -1,0 +1,176 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>TDF - Total Dialoge Framework | TDF Manual </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="TDF - Total Dialoge Framework | TDF Manual ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="TDF Manual">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="tdf---total-dialoge-framework">TDF - Total Dialoge Framework</h1>
+
+<p><a href="../en">English</a></p>
+<h2 id="概要">概要</h2>
+<p>TDF(Total Dialoge Framework)は、Unityアプリケーションに会話シナリオを実装するための会話エンジンアセットです</p>
+<p>基本的な会話機能と、ある程度のアニメーション等を含む非同期処理を簡単なスクリプトもしくはビジュアル環境で記述可能です</p>
+<h2 id="特徴">特徴</h2>
+<p>アセットの主な特徴や利点をリスト形式で記述します。</p>
+<ul>
+<li><p>モジュール構造</p>
+<p>TDFは、会話シーンなどで使われがちな会話ボックス、選択、各種UIをすべてモジュール化しているのが特徴です</p>
+<p>シーン作成者は、Driver(基本的な制御を行うコア部分)と、シーンに必要な部品だけを自由に配置できます</p>
+</li>
+<li><p>非同期処理</p>
+<p>会話シーンでは画面内の要素をアニメーションさせつつ、会話を表示し、場合によっては各種ゲージや画像、3Dオブジェクト等を非同期に動かすことが求められます</p>
+<p>TDFでは、これらの非同期処理を比較的簡単に制御可能です</p>
+</li>
+<li><p>多彩なバインディング環境</p>
+<p>TDFは標準として、Forth言語をベースとしたTDForthという言語と、より会話シーン記述に特化したTDFスクリプトという言語で制御できます</p>
+<p>これ以外にも、BeXide社のビジュアル制御環境「ScenarioBuilder」によるビジュアル環境での制御に対応しています</p>
+<p>もちろん、制御機構をC#スクリプトで制御することも可能です</p>
+<p>まだ計画中ですが、それ以外の言語(Python/Miniscript等)へのバインディングも計画しています</p>
+</li>
+<li><p>ディクショナリ・ドリブン設計</p>
+<p>TDFは、イベント駆動機構を持ったScriptableObject内のDictionaryによるイベント型駆動を基本として動作します</p>
+<p>ScriptableObjectによるListen/Event構造は柔軟ですが、ScriptableObjectがプロジェクト内に散乱してしまうのが欠点です</p>
+<p>TDFではそれを軽減するため、各要素がListen/Fire構造を持ったDictionaryを持ち、それによる統合制御を行います</p>
+</li>
+</ul>
+<h2 id="必要な環境">必要な環境</h2>
+<ul>
+<li><p>Unity 2022.3 LTS以降</p>
+<p>基本機能自体はもう少し前のバージョンでも動くはずですが、拡張機能に2022以降で使用可能なパッケージを使用しています</p>
+</li>
+<li><p><a href="">UniTask</a></p>
+<p>アセットストア/Githubで入手するか、OpenUPMでインストールしてください</p>
+</li>
+<li><p><a href="">DoTween</a></p>
+<p>アセットストアで入手してください</p>
+</li>
+</ul>
+<h2 id="インストール方法">インストール方法</h2>
+<p>アセットのインストール方法を記述します。</p>
+<h2 id="使い方">使い方</h2>
+<p>アセットの基本的な使い方を記述します。可能であれば、スクリーンショットやコードスニペットを含めるとよりわかりやすくなります。</p>
+<h2 id="live-demo">Live Demo</h2>
+<ul>
+<li><a href="live/demo">日本語版WebGLデモ</a>
+基本的なライブデモです</li>
+</ul>
+<h2 id="faq">FAQ</h2>
+<p>よくある質問とその回答をリスト形式で記述します。</p>
+<h2 id="ライセンス">ライセンス</h2>
+<p>アセットのライセンスを記述します。</p>
+<h2 id="連絡先">連絡先</h2>
+<p>問い合わせ先やフィードバックを送るための情報を記述します。</p>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/zgock999/TotalDialogueFramework/blob/master/Docfx/ja/docs/index.md/#L1" class="contribution-link">Edit this page</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

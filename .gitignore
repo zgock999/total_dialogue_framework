@@ -72,11 +72,14 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 
 #TMP
-/[Aa]ssets/[Tt]ext[Mm]sh [Pp]ro/
+/[Aa]ssets/[Tt]ext[Mm]esh [Pp]ro
+/[Aa]ssets/[Tt]ext[Mm]esh [Pp]ro/*
+/[Aa]ssets/[Tt]ext[Mm]esh [Pp]ro.meta
 
 
 .plastic/
 ignore.conf
+hidden_changes.conf
 
 .vscode/
 .vsconfig

@@ -1,0 +1,4 @@
+- name: マニュアル
+  href: docs/
+- name: API(C#)
+  href: api/

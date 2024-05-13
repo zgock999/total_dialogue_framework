@@ -1,0 +1,1041 @@
+### YamlMime:ManagedReference
+items:
+- uid: TotalDialogue.Tests.ObservableListPlayTests
+  commentId: T:TotalDialogue.Tests.ObservableListPlayTests
+  id: ObservableListPlayTests
+  parent: TotalDialogue.Tests
+  children:
+  - TotalDialogue.Tests.ObservableListPlayTests.TestAddIsThreadSafe
+  - TotalDialogue.Tests.ObservableListPlayTests.TestBeginLockBlocksOtherThreads
+  - TotalDialogue.Tests.ObservableListPlayTests.TestDeserialization
+  - TotalDialogue.Tests.ObservableListPlayTests.TestIndexIsThreadSafe
+  - TotalDialogue.Tests.ObservableListPlayTests.TestLockingMechanism
+  - TotalDialogue.Tests.ObservableListPlayTests.TestRemoveIsThreadSafe
+  - TotalDialogue.Tests.ObservableListPlayTests.TestSerialization
+  - TotalDialogue.Tests.ObservableListPlayTests.TestThreadSafety
+  - TotalDialogue.Tests.ObservableListPlayTests.Test_CollectionChangedAction_IsTriggered_Thread_ItemRemove
+  - TotalDialogue.Tests.ObservableListPlayTests.Test_CollectionChangedAction_IsTriggered_When_ItemAdded
+  - TotalDialogue.Tests.ObservableListPlayTests.Test_CollectionChangedAction_IsTriggered_When_ItemChanged
+  - TotalDialogue.Tests.ObservableListPlayTests.Test_CollectionChangedAction_IsTriggered_When_ItemInsert
+  - TotalDialogue.Tests.ObservableListPlayTests.Test_CollectionChangedAction_IsTriggered_When_ItemRemove
+  - TotalDialogue.Tests.ObservableListPlayTests.Test_ItemAdded_IsTriggered_When_ItemAdded_From_Different_Thread
+  - TotalDialogue.Tests.ObservableListPlayTests.Test_ItemChanged_IsTriggered_When_ItemChanged_From_Different_Thread
+  - TotalDialogue.Tests.ObservableListPlayTests.Test_ItemInsert_IsTriggered_When_ItemInsert_From_Different_Thread
+  langs:
+  - csharp
+  - vb
+  name: ObservableListPlayTests
+  nameWithType: ObservableListPlayTests
+  fullName: TotalDialogue.Tests.ObservableListPlayTests
+  type: Class
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Tests/PlayMode/Core/Collections/ObservableListPlayTests.cs
+      branch: master
+      repo: git@github.com:zgock999/TotalDialogueFramework.git
+    id: ObservableListPlayTests
+    path: ../../Assets/Zgock/TDF/Tests/PlayMode/Core/Collections/ObservableListPlayTests.cs
+    startLine: 16
+  assemblies:
+  - TDF.Tests.PlayMode
+  namespace: TotalDialogue.Tests
+  syntax:
+    content: public class ObservableListPlayTests
+    content.vb: Public Class ObservableListPlayTests
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: TotalDialogue.Tests.ObservableListPlayTests.Test_CollectionChangedAction_IsTriggered_When_ItemAdded
+  commentId: M:TotalDialogue.Tests.ObservableListPlayTests.Test_CollectionChangedAction_IsTriggered_When_ItemAdded
+  id: Test_CollectionChangedAction_IsTriggered_When_ItemAdded
+  parent: TotalDialogue.Tests.ObservableListPlayTests
+  langs:
+  - csharp
+  - vb
+  name: Test_CollectionChangedAction_IsTriggered_When_ItemAdded()
+  nameWithType: ObservableListPlayTests.Test_CollectionChangedAction_IsTriggered_When_ItemAdded()
+  fullName: TotalDialogue.Tests.ObservableListPlayTests.Test_CollectionChangedAction_IsTriggered_When_ItemAdded()
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Tests/PlayMode/Core/Collections/ObservableListPlayTests.cs
+      branch: master
+      repo: git@github.com:zgock999/TotalDialogueFramework.git
+    id: Test_CollectionChangedAction_IsTriggered_When_ItemAdded
+    path: ../../Assets/Zgock/TDF/Tests/PlayMode/Core/Collections/ObservableListPlayTests.cs
+    startLine: 18
+  assemblies:
+  - TDF.Tests.PlayMode
+  namespace: TotalDialogue.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void Test_CollectionChangedAction_IsTriggered_When_ItemAdded()
+    content.vb: >-
+      <Test>
+
+      Public Sub Test_CollectionChangedAction_IsTriggered_When_ItemAdded()
+  overload: TotalDialogue.Tests.ObservableListPlayTests.Test_CollectionChangedAction_IsTriggered_When_ItemAdded*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: TotalDialogue.Tests.ObservableListPlayTests.Test_CollectionChangedAction_IsTriggered_When_ItemChanged
+  commentId: M:TotalDialogue.Tests.ObservableListPlayTests.Test_CollectionChangedAction_IsTriggered_When_ItemChanged
+  id: Test_CollectionChangedAction_IsTriggered_When_ItemChanged
+  parent: TotalDialogue.Tests.ObservableListPlayTests
+  langs:
+  - csharp
+  - vb
+  name: Test_CollectionChangedAction_IsTriggered_When_ItemChanged()
+  nameWithType: ObservableListPlayTests.Test_CollectionChangedAction_IsTriggered_When_ItemChanged()
+  fullName: TotalDialogue.Tests.ObservableListPlayTests.Test_CollectionChangedAction_IsTriggered_When_ItemChanged()
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Tests/PlayMode/Core/Collections/ObservableListPlayTests.cs
+      branch: master
+      repo: git@github.com:zgock999/TotalDialogueFramework.git
+    id: Test_CollectionChangedAction_IsTriggered_When_ItemChanged
+    path: ../../Assets/Zgock/TDF/Tests/PlayMode/Core/Collections/ObservableListPlayTests.cs
+    startLine: 41
+  assemblies:
+  - TDF.Tests.PlayMode
+  namespace: TotalDialogue.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void Test_CollectionChangedAction_IsTriggered_When_ItemChanged()
+    content.vb: >-
+      <Test>
+
+      Public Sub Test_CollectionChangedAction_IsTriggered_When_ItemChanged()
+  overload: TotalDialogue.Tests.ObservableListPlayTests.Test_CollectionChangedAction_IsTriggered_When_ItemChanged*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: TotalDialogue.Tests.ObservableListPlayTests.Test_CollectionChangedAction_IsTriggered_When_ItemInsert
+  commentId: M:TotalDialogue.Tests.ObservableListPlayTests.Test_CollectionChangedAction_IsTriggered_When_ItemInsert
+  id: Test_CollectionChangedAction_IsTriggered_When_ItemInsert
+  parent: TotalDialogue.Tests.ObservableListPlayTests
+  langs:
+  - csharp
+  - vb
+  name: Test_CollectionChangedAction_IsTriggered_When_ItemInsert()
+  nameWithType: ObservableListPlayTests.Test_CollectionChangedAction_IsTriggered_When_ItemInsert()
+  fullName: TotalDialogue.Tests.ObservableListPlayTests.Test_CollectionChangedAction_IsTriggered_When_ItemInsert()
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Tests/PlayMode/Core/Collections/ObservableListPlayTests.cs
+      branch: master
+      repo: git@github.com:zgock999/TotalDialogueFramework.git
+    id: Test_CollectionChangedAction_IsTriggered_When_ItemInsert
+    path: ../../Assets/Zgock/TDF/Tests/PlayMode/Core/Collections/ObservableListPlayTests.cs
+    startLine: 76
+  assemblies:
+  - TDF.Tests.PlayMode
+  namespace: TotalDialogue.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void Test_CollectionChangedAction_IsTriggered_When_ItemInsert()
+    content.vb: >-
+      <Test>
+
+      Public Sub Test_CollectionChangedAction_IsTriggered_When_ItemInsert()
+  overload: TotalDialogue.Tests.ObservableListPlayTests.Test_CollectionChangedAction_IsTriggered_When_ItemInsert*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: TotalDialogue.Tests.ObservableListPlayTests.Test_CollectionChangedAction_IsTriggered_When_ItemRemove
+  commentId: M:TotalDialogue.Tests.ObservableListPlayTests.Test_CollectionChangedAction_IsTriggered_When_ItemRemove
+  id: Test_CollectionChangedAction_IsTriggered_When_ItemRemove
+  parent: TotalDialogue.Tests.ObservableListPlayTests
+  langs:
+  - csharp
+  - vb
+  name: Test_CollectionChangedAction_IsTriggered_When_ItemRemove()
+  nameWithType: ObservableListPlayTests.Test_CollectionChangedAction_IsTriggered_When_ItemRemove()
+  fullName: TotalDialogue.Tests.ObservableListPlayTests.Test_CollectionChangedAction_IsTriggered_When_ItemRemove()
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Tests/PlayMode/Core/Collections/ObservableListPlayTests.cs
+      branch: master
+      repo: git@github.com:zgock999/TotalDialogueFramework.git
+    id: Test_CollectionChangedAction_IsTriggered_When_ItemRemove
+    path: ../../Assets/Zgock/TDF/Tests/PlayMode/Core/Collections/ObservableListPlayTests.cs
+    startLine: 93
+  assemblies:
+  - TDF.Tests.PlayMode
+  namespace: TotalDialogue.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void Test_CollectionChangedAction_IsTriggered_When_ItemRemove()
+    content.vb: >-
+      <Test>
+
+      Public Sub Test_CollectionChangedAction_IsTriggered_When_ItemRemove()
+  overload: TotalDialogue.Tests.ObservableListPlayTests.Test_CollectionChangedAction_IsTriggered_When_ItemRemove*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: TotalDialogue.Tests.ObservableListPlayTests.TestSerialization
+  commentId: M:TotalDialogue.Tests.ObservableListPlayTests.TestSerialization
+  id: TestSerialization
+  parent: TotalDialogue.Tests.ObservableListPlayTests
+  langs:
+  - csharp
+  - vb
+  name: TestSerialization()
+  nameWithType: ObservableListPlayTests.TestSerialization()
+  fullName: TotalDialogue.Tests.ObservableListPlayTests.TestSerialization()
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Tests/PlayMode/Core/Collections/ObservableListPlayTests.cs
+      branch: master
+      repo: git@github.com:zgock999/TotalDialogueFramework.git
+    id: TestSerialization
+    path: ../../Assets/Zgock/TDF/Tests/PlayMode/Core/Collections/ObservableListPlayTests.cs
+    startLine: 130
+  assemblies:
+  - TDF.Tests.PlayMode
+  namespace: TotalDialogue.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void TestSerialization()
+    content.vb: >-
+      <Test>
+
+      Public Sub TestSerialization()
+  overload: TotalDialogue.Tests.ObservableListPlayTests.TestSerialization*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: TotalDialogue.Tests.ObservableListPlayTests.TestDeserialization
+  commentId: M:TotalDialogue.Tests.ObservableListPlayTests.TestDeserialization
+  id: TestDeserialization
+  parent: TotalDialogue.Tests.ObservableListPlayTests
+  langs:
+  - csharp
+  - vb
+  name: TestDeserialization()
+  nameWithType: ObservableListPlayTests.TestDeserialization()
+  fullName: TotalDialogue.Tests.ObservableListPlayTests.TestDeserialization()
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Tests/PlayMode/Core/Collections/ObservableListPlayTests.cs
+      branch: master
+      repo: git@github.com:zgock999/TotalDialogueFramework.git
+    id: TestDeserialization
+    path: ../../Assets/Zgock/TDF/Tests/PlayMode/Core/Collections/ObservableListPlayTests.cs
+    startLine: 144
+  assemblies:
+  - TDF.Tests.PlayMode
+  namespace: TotalDialogue.Tests
+  syntax:
+    content: >-
+      [Test]
+
+      public void TestDeserialization()
+    content.vb: >-
+      <Test>
+
+      Public Sub TestDeserialization()
+  overload: TotalDialogue.Tests.ObservableListPlayTests.TestDeserialization*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: TotalDialogue.Tests.ObservableListPlayTests.TestThreadSafety
+  commentId: M:TotalDialogue.Tests.ObservableListPlayTests.TestThreadSafety
+  id: TestThreadSafety
+  parent: TotalDialogue.Tests.ObservableListPlayTests
+  langs:
+  - csharp
+  - vb
+  name: TestThreadSafety()
+  nameWithType: ObservableListPlayTests.TestThreadSafety()
+  fullName: TotalDialogue.Tests.ObservableListPlayTests.TestThreadSafety()
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Tests/PlayMode/Core/Collections/ObservableListPlayTests.cs
+      branch: master
+      repo: git@github.com:zgock999/TotalDialogueFramework.git
+    id: TestThreadSafety
+    path: ../../Assets/Zgock/TDF/Tests/PlayMode/Core/Collections/ObservableListPlayTests.cs
+    startLine: 165
+  assemblies:
+  - TDF.Tests.PlayMode
+  namespace: TotalDialogue.Tests
+  syntax:
+    content: >-
+      [UnityTest]
+
+      public IEnumerator TestThreadSafety()
+    return:
+      type: System.Collections.IEnumerator
+    content.vb: >-
+      <UnityTest>
+
+      Public Function TestThreadSafety() As IEnumerator
+  overload: TotalDialogue.Tests.ObservableListPlayTests.TestThreadSafety*
+  attributes:
+  - type: UnityEngine.TestTools.UnityTestAttribute
+    ctor: UnityEngine.TestTools.UnityTestAttribute.#ctor
+    arguments: []
+- uid: TotalDialogue.Tests.ObservableListPlayTests.TestBeginLockBlocksOtherThreads
+  commentId: M:TotalDialogue.Tests.ObservableListPlayTests.TestBeginLockBlocksOtherThreads
+  id: TestBeginLockBlocksOtherThreads
+  parent: TotalDialogue.Tests.ObservableListPlayTests
+  langs:
+  - csharp
+  - vb
+  name: TestBeginLockBlocksOtherThreads()
+  nameWithType: ObservableListPlayTests.TestBeginLockBlocksOtherThreads()
+  fullName: TotalDialogue.Tests.ObservableListPlayTests.TestBeginLockBlocksOtherThreads()
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Tests/PlayMode/Core/Collections/ObservableListPlayTests.cs
+      branch: master
+      repo: git@github.com:zgock999/TotalDialogueFramework.git
+    id: TestBeginLockBlocksOtherThreads
+    path: ../../Assets/Zgock/TDF/Tests/PlayMode/Core/Collections/ObservableListPlayTests.cs
+    startLine: 204
+  assemblies:
+  - TDF.Tests.PlayMode
+  namespace: TotalDialogue.Tests
+  syntax:
+    content: >-
+      [UnityTest]
+
+      public IEnumerator TestBeginLockBlocksOtherThreads()
+    return:
+      type: System.Collections.IEnumerator
+    content.vb: >-
+      <UnityTest>
+
+      Public Function TestBeginLockBlocksOtherThreads() As IEnumerator
+  overload: TotalDialogue.Tests.ObservableListPlayTests.TestBeginLockBlocksOtherThreads*
+  attributes:
+  - type: UnityEngine.TestTools.UnityTestAttribute
+    ctor: UnityEngine.TestTools.UnityTestAttribute.#ctor
+    arguments: []
+- uid: TotalDialogue.Tests.ObservableListPlayTests.TestAddIsThreadSafe
+  commentId: M:TotalDialogue.Tests.ObservableListPlayTests.TestAddIsThreadSafe
+  id: TestAddIsThreadSafe
+  parent: TotalDialogue.Tests.ObservableListPlayTests
+  langs:
+  - csharp
+  - vb
+  name: TestAddIsThreadSafe()
+  nameWithType: ObservableListPlayTests.TestAddIsThreadSafe()
+  fullName: TotalDialogue.Tests.ObservableListPlayTests.TestAddIsThreadSafe()
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Tests/PlayMode/Core/Collections/ObservableListPlayTests.cs
+      branch: master
+      repo: git@github.com:zgock999/TotalDialogueFramework.git
+    id: TestAddIsThreadSafe
+    path: ../../Assets/Zgock/TDF/Tests/PlayMode/Core/Collections/ObservableListPlayTests.cs
+    startLine: 261
+  assemblies:
+  - TDF.Tests.PlayMode
+  namespace: TotalDialogue.Tests
+  syntax:
+    content: >-
+      [UnityTest]
+
+      public IEnumerator TestAddIsThreadSafe()
+    return:
+      type: System.Collections.IEnumerator
+    content.vb: >-
+      <UnityTest>
+
+      Public Function TestAddIsThreadSafe() As IEnumerator
+  overload: TotalDialogue.Tests.ObservableListPlayTests.TestAddIsThreadSafe*
+  attributes:
+  - type: UnityEngine.TestTools.UnityTestAttribute
+    ctor: UnityEngine.TestTools.UnityTestAttribute.#ctor
+    arguments: []
+- uid: TotalDialogue.Tests.ObservableListPlayTests.TestRemoveIsThreadSafe
+  commentId: M:TotalDialogue.Tests.ObservableListPlayTests.TestRemoveIsThreadSafe
+  id: TestRemoveIsThreadSafe
+  parent: TotalDialogue.Tests.ObservableListPlayTests
+  langs:
+  - csharp
+  - vb
+  name: TestRemoveIsThreadSafe()
+  nameWithType: ObservableListPlayTests.TestRemoveIsThreadSafe()
+  fullName: TotalDialogue.Tests.ObservableListPlayTests.TestRemoveIsThreadSafe()
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Tests/PlayMode/Core/Collections/ObservableListPlayTests.cs
+      branch: master
+      repo: git@github.com:zgock999/TotalDialogueFramework.git
+    id: TestRemoveIsThreadSafe
+    path: ../../Assets/Zgock/TDF/Tests/PlayMode/Core/Collections/ObservableListPlayTests.cs
+    startLine: 288
+  assemblies:
+  - TDF.Tests.PlayMode
+  namespace: TotalDialogue.Tests
+  syntax:
+    content: >-
+      [UnityTest]
+
+      public IEnumerator TestRemoveIsThreadSafe()
+    return:
+      type: System.Collections.IEnumerator
+    content.vb: >-
+      <UnityTest>
+
+      Public Function TestRemoveIsThreadSafe() As IEnumerator
+  overload: TotalDialogue.Tests.ObservableListPlayTests.TestRemoveIsThreadSafe*
+  attributes:
+  - type: UnityEngine.TestTools.UnityTestAttribute
+    ctor: UnityEngine.TestTools.UnityTestAttribute.#ctor
+    arguments: []
+- uid: TotalDialogue.Tests.ObservableListPlayTests.TestIndexIsThreadSafe
+  commentId: M:TotalDialogue.Tests.ObservableListPlayTests.TestIndexIsThreadSafe
+  id: TestIndexIsThreadSafe
+  parent: TotalDialogue.Tests.ObservableListPlayTests
+  langs:
+  - csharp
+  - vb
+  name: TestIndexIsThreadSafe()
+  nameWithType: ObservableListPlayTests.TestIndexIsThreadSafe()
+  fullName: TotalDialogue.Tests.ObservableListPlayTests.TestIndexIsThreadSafe()
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Tests/PlayMode/Core/Collections/ObservableListPlayTests.cs
+      branch: master
+      repo: git@github.com:zgock999/TotalDialogueFramework.git
+    id: TestIndexIsThreadSafe
+    path: ../../Assets/Zgock/TDF/Tests/PlayMode/Core/Collections/ObservableListPlayTests.cs
+    startLine: 324
+  assemblies:
+  - TDF.Tests.PlayMode
+  namespace: TotalDialogue.Tests
+  syntax:
+    content: >-
+      [UnityTest]
+
+      public IEnumerator TestIndexIsThreadSafe()
+    return:
+      type: System.Collections.IEnumerator
+    content.vb: >-
+      <UnityTest>
+
+      Public Function TestIndexIsThreadSafe() As IEnumerator
+  overload: TotalDialogue.Tests.ObservableListPlayTests.TestIndexIsThreadSafe*
+  attributes:
+  - type: UnityEngine.TestTools.UnityTestAttribute
+    ctor: UnityEngine.TestTools.UnityTestAttribute.#ctor
+    arguments: []
+- uid: TotalDialogue.Tests.ObservableListPlayTests.TestLockingMechanism
+  commentId: M:TotalDialogue.Tests.ObservableListPlayTests.TestLockingMechanism
+  id: TestLockingMechanism
+  parent: TotalDialogue.Tests.ObservableListPlayTests
+  langs:
+  - csharp
+  - vb
+  name: TestLockingMechanism()
+  nameWithType: ObservableListPlayTests.TestLockingMechanism()
+  fullName: TotalDialogue.Tests.ObservableListPlayTests.TestLockingMechanism()
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Tests/PlayMode/Core/Collections/ObservableListPlayTests.cs
+      branch: master
+      repo: git@github.com:zgock999/TotalDialogueFramework.git
+    id: TestLockingMechanism
+    path: ../../Assets/Zgock/TDF/Tests/PlayMode/Core/Collections/ObservableListPlayTests.cs
+    startLine: 363
+  assemblies:
+  - TDF.Tests.PlayMode
+  namespace: TotalDialogue.Tests
+  syntax:
+    content: >-
+      [UnityTest]
+
+      public IEnumerator TestLockingMechanism()
+    return:
+      type: System.Collections.IEnumerator
+    content.vb: >-
+      <UnityTest>
+
+      Public Function TestLockingMechanism() As IEnumerator
+  overload: TotalDialogue.Tests.ObservableListPlayTests.TestLockingMechanism*
+  attributes:
+  - type: UnityEngine.TestTools.UnityTestAttribute
+    ctor: UnityEngine.TestTools.UnityTestAttribute.#ctor
+    arguments: []
+- uid: TotalDialogue.Tests.ObservableListPlayTests.Test_CollectionChangedAction_IsTriggered_Thread_ItemRemove
+  commentId: M:TotalDialogue.Tests.ObservableListPlayTests.Test_CollectionChangedAction_IsTriggered_Thread_ItemRemove
+  id: Test_CollectionChangedAction_IsTriggered_Thread_ItemRemove
+  parent: TotalDialogue.Tests.ObservableListPlayTests
+  langs:
+  - csharp
+  - vb
+  name: Test_CollectionChangedAction_IsTriggered_Thread_ItemRemove()
+  nameWithType: ObservableListPlayTests.Test_CollectionChangedAction_IsTriggered_Thread_ItemRemove()
+  fullName: TotalDialogue.Tests.ObservableListPlayTests.Test_CollectionChangedAction_IsTriggered_Thread_ItemRemove()
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Tests/PlayMode/Core/Collections/ObservableListPlayTests.cs
+      branch: master
+      repo: git@github.com:zgock999/TotalDialogueFramework.git
+    id: Test_CollectionChangedAction_IsTriggered_Thread_ItemRemove
+    path: ../../Assets/Zgock/TDF/Tests/PlayMode/Core/Collections/ObservableListPlayTests.cs
+    startLine: 391
+  assemblies:
+  - TDF.Tests.PlayMode
+  namespace: TotalDialogue.Tests
+  syntax:
+    content: >-
+      [UnityTest]
+
+      public IEnumerator Test_CollectionChangedAction_IsTriggered_Thread_ItemRemove()
+    return:
+      type: System.Collections.IEnumerator
+    content.vb: >-
+      <UnityTest>
+
+      Public Function Test_CollectionChangedAction_IsTriggered_Thread_ItemRemove() As IEnumerator
+  overload: TotalDialogue.Tests.ObservableListPlayTests.Test_CollectionChangedAction_IsTriggered_Thread_ItemRemove*
+  attributes:
+  - type: UnityEngine.TestTools.UnityTestAttribute
+    ctor: UnityEngine.TestTools.UnityTestAttribute.#ctor
+    arguments: []
+- uid: TotalDialogue.Tests.ObservableListPlayTests.Test_ItemAdded_IsTriggered_When_ItemAdded_From_Different_Thread
+  commentId: M:TotalDialogue.Tests.ObservableListPlayTests.Test_ItemAdded_IsTriggered_When_ItemAdded_From_Different_Thread
+  id: Test_ItemAdded_IsTriggered_When_ItemAdded_From_Different_Thread
+  parent: TotalDialogue.Tests.ObservableListPlayTests
+  langs:
+  - csharp
+  - vb
+  name: Test_ItemAdded_IsTriggered_When_ItemAdded_From_Different_Thread()
+  nameWithType: ObservableListPlayTests.Test_ItemAdded_IsTriggered_When_ItemAdded_From_Different_Thread()
+  fullName: TotalDialogue.Tests.ObservableListPlayTests.Test_ItemAdded_IsTriggered_When_ItemAdded_From_Different_Thread()
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Tests/PlayMode/Core/Collections/ObservableListPlayTests.cs
+      branch: master
+      repo: git@github.com:zgock999/TotalDialogueFramework.git
+    id: Test_ItemAdded_IsTriggered_When_ItemAdded_From_Different_Thread
+    path: ../../Assets/Zgock/TDF/Tests/PlayMode/Core/Collections/ObservableListPlayTests.cs
+    startLine: 432
+  assemblies:
+  - TDF.Tests.PlayMode
+  namespace: TotalDialogue.Tests
+  syntax:
+    content: >-
+      [UnityTest]
+
+      public IEnumerator Test_ItemAdded_IsTriggered_When_ItemAdded_From_Different_Thread()
+    return:
+      type: System.Collections.IEnumerator
+    content.vb: >-
+      <UnityTest>
+
+      Public Function Test_ItemAdded_IsTriggered_When_ItemAdded_From_Different_Thread() As IEnumerator
+  overload: TotalDialogue.Tests.ObservableListPlayTests.Test_ItemAdded_IsTriggered_When_ItemAdded_From_Different_Thread*
+  attributes:
+  - type: UnityEngine.TestTools.UnityTestAttribute
+    ctor: UnityEngine.TestTools.UnityTestAttribute.#ctor
+    arguments: []
+- uid: TotalDialogue.Tests.ObservableListPlayTests.Test_ItemChanged_IsTriggered_When_ItemChanged_From_Different_Thread
+  commentId: M:TotalDialogue.Tests.ObservableListPlayTests.Test_ItemChanged_IsTriggered_When_ItemChanged_From_Different_Thread
+  id: Test_ItemChanged_IsTriggered_When_ItemChanged_From_Different_Thread
+  parent: TotalDialogue.Tests.ObservableListPlayTests
+  langs:
+  - csharp
+  - vb
+  name: Test_ItemChanged_IsTriggered_When_ItemChanged_From_Different_Thread()
+  nameWithType: ObservableListPlayTests.Test_ItemChanged_IsTriggered_When_ItemChanged_From_Different_Thread()
+  fullName: TotalDialogue.Tests.ObservableListPlayTests.Test_ItemChanged_IsTriggered_When_ItemChanged_From_Different_Thread()
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Tests/PlayMode/Core/Collections/ObservableListPlayTests.cs
+      branch: master
+      repo: git@github.com:zgock999/TotalDialogueFramework.git
+    id: Test_ItemChanged_IsTriggered_When_ItemChanged_From_Different_Thread
+    path: ../../Assets/Zgock/TDF/Tests/PlayMode/Core/Collections/ObservableListPlayTests.cs
+    startLine: 452
+  assemblies:
+  - TDF.Tests.PlayMode
+  namespace: TotalDialogue.Tests
+  syntax:
+    content: >-
+      [UnityTest]
+
+      public IEnumerator Test_ItemChanged_IsTriggered_When_ItemChanged_From_Different_Thread()
+    return:
+      type: System.Collections.IEnumerator
+    content.vb: >-
+      <UnityTest>
+
+      Public Function Test_ItemChanged_IsTriggered_When_ItemChanged_From_Different_Thread() As IEnumerator
+  overload: TotalDialogue.Tests.ObservableListPlayTests.Test_ItemChanged_IsTriggered_When_ItemChanged_From_Different_Thread*
+  attributes:
+  - type: UnityEngine.TestTools.UnityTestAttribute
+    ctor: UnityEngine.TestTools.UnityTestAttribute.#ctor
+    arguments: []
+- uid: TotalDialogue.Tests.ObservableListPlayTests.Test_ItemInsert_IsTriggered_When_ItemInsert_From_Different_Thread
+  commentId: M:TotalDialogue.Tests.ObservableListPlayTests.Test_ItemInsert_IsTriggered_When_ItemInsert_From_Different_Thread
+  id: Test_ItemInsert_IsTriggered_When_ItemInsert_From_Different_Thread
+  parent: TotalDialogue.Tests.ObservableListPlayTests
+  langs:
+  - csharp
+  - vb
+  name: Test_ItemInsert_IsTriggered_When_ItemInsert_From_Different_Thread()
+  nameWithType: ObservableListPlayTests.Test_ItemInsert_IsTriggered_When_ItemInsert_From_Different_Thread()
+  fullName: TotalDialogue.Tests.ObservableListPlayTests.Test_ItemInsert_IsTriggered_When_ItemInsert_From_Different_Thread()
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Tests/PlayMode/Core/Collections/ObservableListPlayTests.cs
+      branch: master
+      repo: git@github.com:zgock999/TotalDialogueFramework.git
+    id: Test_ItemInsert_IsTriggered_When_ItemInsert_From_Different_Thread
+    path: ../../Assets/Zgock/TDF/Tests/PlayMode/Core/Collections/ObservableListPlayTests.cs
+    startLine: 472
+  assemblies:
+  - TDF.Tests.PlayMode
+  namespace: TotalDialogue.Tests
+  syntax:
+    content: >-
+      [UnityTest]
+
+      public IEnumerator Test_ItemInsert_IsTriggered_When_ItemInsert_From_Different_Thread()
+    return:
+      type: System.Collections.IEnumerator
+    content.vb: >-
+      <UnityTest>
+
+      Public Function Test_ItemInsert_IsTriggered_When_ItemInsert_From_Different_Thread() As IEnumerator
+  overload: TotalDialogue.Tests.ObservableListPlayTests.Test_ItemInsert_IsTriggered_When_ItemInsert_From_Different_Thread*
+  attributes:
+  - type: UnityEngine.TestTools.UnityTestAttribute
+    ctor: UnityEngine.TestTools.UnityTestAttribute.#ctor
+    arguments: []
+references:
+- uid: TotalDialogue.Tests
+  commentId: N:TotalDialogue.Tests
+  href: TotalDialogue.html
+  name: TotalDialogue.Tests
+  nameWithType: TotalDialogue.Tests
+  fullName: TotalDialogue.Tests
+  spec.csharp:
+  - uid: TotalDialogue
+    name: TotalDialogue
+    href: TotalDialogue.html
+  - name: .
+  - uid: TotalDialogue.Tests
+    name: Tests
+    href: TotalDialogue.Tests.html
+  spec.vb:
+  - uid: TotalDialogue
+    name: TotalDialogue
+    href: TotalDialogue.html
+  - name: .
+  - uid: TotalDialogue.Tests
+    name: Tests
+    href: TotalDialogue.Tests.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: TotalDialogue.Tests.ObservableListPlayTests.Test_CollectionChangedAction_IsTriggered_When_ItemAdded*
+  commentId: Overload:TotalDialogue.Tests.ObservableListPlayTests.Test_CollectionChangedAction_IsTriggered_When_ItemAdded
+  href: TotalDialogue.Tests.ObservableListPlayTests.html#TotalDialogue_Tests_ObservableListPlayTests_Test_CollectionChangedAction_IsTriggered_When_ItemAdded
+  name: Test_CollectionChangedAction_IsTriggered_When_ItemAdded
+  nameWithType: ObservableListPlayTests.Test_CollectionChangedAction_IsTriggered_When_ItemAdded
+  fullName: TotalDialogue.Tests.ObservableListPlayTests.Test_CollectionChangedAction_IsTriggered_When_ItemAdded
+- uid: TotalDialogue.Tests.ObservableListPlayTests.Test_CollectionChangedAction_IsTriggered_When_ItemChanged*
+  commentId: Overload:TotalDialogue.Tests.ObservableListPlayTests.Test_CollectionChangedAction_IsTriggered_When_ItemChanged
+  href: TotalDialogue.Tests.ObservableListPlayTests.html#TotalDialogue_Tests_ObservableListPlayTests_Test_CollectionChangedAction_IsTriggered_When_ItemChanged
+  name: Test_CollectionChangedAction_IsTriggered_When_ItemChanged
+  nameWithType: ObservableListPlayTests.Test_CollectionChangedAction_IsTriggered_When_ItemChanged
+  fullName: TotalDialogue.Tests.ObservableListPlayTests.Test_CollectionChangedAction_IsTriggered_When_ItemChanged
+- uid: TotalDialogue.Tests.ObservableListPlayTests.Test_CollectionChangedAction_IsTriggered_When_ItemInsert*
+  commentId: Overload:TotalDialogue.Tests.ObservableListPlayTests.Test_CollectionChangedAction_IsTriggered_When_ItemInsert
+  href: TotalDialogue.Tests.ObservableListPlayTests.html#TotalDialogue_Tests_ObservableListPlayTests_Test_CollectionChangedAction_IsTriggered_When_ItemInsert
+  name: Test_CollectionChangedAction_IsTriggered_When_ItemInsert
+  nameWithType: ObservableListPlayTests.Test_CollectionChangedAction_IsTriggered_When_ItemInsert
+  fullName: TotalDialogue.Tests.ObservableListPlayTests.Test_CollectionChangedAction_IsTriggered_When_ItemInsert
+- uid: TotalDialogue.Tests.ObservableListPlayTests.Test_CollectionChangedAction_IsTriggered_When_ItemRemove*
+  commentId: Overload:TotalDialogue.Tests.ObservableListPlayTests.Test_CollectionChangedAction_IsTriggered_When_ItemRemove
+  href: TotalDialogue.Tests.ObservableListPlayTests.html#TotalDialogue_Tests_ObservableListPlayTests_Test_CollectionChangedAction_IsTriggered_When_ItemRemove
+  name: Test_CollectionChangedAction_IsTriggered_When_ItemRemove
+  nameWithType: ObservableListPlayTests.Test_CollectionChangedAction_IsTriggered_When_ItemRemove
+  fullName: TotalDialogue.Tests.ObservableListPlayTests.Test_CollectionChangedAction_IsTriggered_When_ItemRemove
+- uid: TotalDialogue.Tests.ObservableListPlayTests.TestSerialization*
+  commentId: Overload:TotalDialogue.Tests.ObservableListPlayTests.TestSerialization
+  href: TotalDialogue.Tests.ObservableListPlayTests.html#TotalDialogue_Tests_ObservableListPlayTests_TestSerialization
+  name: TestSerialization
+  nameWithType: ObservableListPlayTests.TestSerialization
+  fullName: TotalDialogue.Tests.ObservableListPlayTests.TestSerialization
+- uid: TotalDialogue.Tests.ObservableListPlayTests.TestDeserialization*
+  commentId: Overload:TotalDialogue.Tests.ObservableListPlayTests.TestDeserialization
+  href: TotalDialogue.Tests.ObservableListPlayTests.html#TotalDialogue_Tests_ObservableListPlayTests_TestDeserialization
+  name: TestDeserialization
+  nameWithType: ObservableListPlayTests.TestDeserialization
+  fullName: TotalDialogue.Tests.ObservableListPlayTests.TestDeserialization
+- uid: TotalDialogue.Tests.ObservableListPlayTests.TestThreadSafety*
+  commentId: Overload:TotalDialogue.Tests.ObservableListPlayTests.TestThreadSafety
+  href: TotalDialogue.Tests.ObservableListPlayTests.html#TotalDialogue_Tests_ObservableListPlayTests_TestThreadSafety
+  name: TestThreadSafety
+  nameWithType: ObservableListPlayTests.TestThreadSafety
+  fullName: TotalDialogue.Tests.ObservableListPlayTests.TestThreadSafety
+- uid: System.Collections.IEnumerator
+  commentId: T:System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerator
+  name: IEnumerator
+  nameWithType: IEnumerator
+  fullName: System.Collections.IEnumerator
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+- uid: TotalDialogue.Tests.ObservableListPlayTests.TestBeginLockBlocksOtherThreads*
+  commentId: Overload:TotalDialogue.Tests.ObservableListPlayTests.TestBeginLockBlocksOtherThreads
+  href: TotalDialogue.Tests.ObservableListPlayTests.html#TotalDialogue_Tests_ObservableListPlayTests_TestBeginLockBlocksOtherThreads
+  name: TestBeginLockBlocksOtherThreads
+  nameWithType: ObservableListPlayTests.TestBeginLockBlocksOtherThreads
+  fullName: TotalDialogue.Tests.ObservableListPlayTests.TestBeginLockBlocksOtherThreads
+- uid: TotalDialogue.Tests.ObservableListPlayTests.TestAddIsThreadSafe*
+  commentId: Overload:TotalDialogue.Tests.ObservableListPlayTests.TestAddIsThreadSafe
+  href: TotalDialogue.Tests.ObservableListPlayTests.html#TotalDialogue_Tests_ObservableListPlayTests_TestAddIsThreadSafe
+  name: TestAddIsThreadSafe
+  nameWithType: ObservableListPlayTests.TestAddIsThreadSafe
+  fullName: TotalDialogue.Tests.ObservableListPlayTests.TestAddIsThreadSafe
+- uid: TotalDialogue.Tests.ObservableListPlayTests.TestRemoveIsThreadSafe*
+  commentId: Overload:TotalDialogue.Tests.ObservableListPlayTests.TestRemoveIsThreadSafe
+  href: TotalDialogue.Tests.ObservableListPlayTests.html#TotalDialogue_Tests_ObservableListPlayTests_TestRemoveIsThreadSafe
+  name: TestRemoveIsThreadSafe
+  nameWithType: ObservableListPlayTests.TestRemoveIsThreadSafe
+  fullName: TotalDialogue.Tests.ObservableListPlayTests.TestRemoveIsThreadSafe
+- uid: TotalDialogue.Tests.ObservableListPlayTests.TestIndexIsThreadSafe*
+  commentId: Overload:TotalDialogue.Tests.ObservableListPlayTests.TestIndexIsThreadSafe
+  href: TotalDialogue.Tests.ObservableListPlayTests.html#TotalDialogue_Tests_ObservableListPlayTests_TestIndexIsThreadSafe
+  name: TestIndexIsThreadSafe
+  nameWithType: ObservableListPlayTests.TestIndexIsThreadSafe
+  fullName: TotalDialogue.Tests.ObservableListPlayTests.TestIndexIsThreadSafe
+- uid: TotalDialogue.Tests.ObservableListPlayTests.TestLockingMechanism*
+  commentId: Overload:TotalDialogue.Tests.ObservableListPlayTests.TestLockingMechanism
+  href: TotalDialogue.Tests.ObservableListPlayTests.html#TotalDialogue_Tests_ObservableListPlayTests_TestLockingMechanism
+  name: TestLockingMechanism
+  nameWithType: ObservableListPlayTests.TestLockingMechanism
+  fullName: TotalDialogue.Tests.ObservableListPlayTests.TestLockingMechanism
+- uid: TotalDialogue.Tests.ObservableListPlayTests.Test_CollectionChangedAction_IsTriggered_Thread_ItemRemove*
+  commentId: Overload:TotalDialogue.Tests.ObservableListPlayTests.Test_CollectionChangedAction_IsTriggered_Thread_ItemRemove
+  href: TotalDialogue.Tests.ObservableListPlayTests.html#TotalDialogue_Tests_ObservableListPlayTests_Test_CollectionChangedAction_IsTriggered_Thread_ItemRemove
+  name: Test_CollectionChangedAction_IsTriggered_Thread_ItemRemove
+  nameWithType: ObservableListPlayTests.Test_CollectionChangedAction_IsTriggered_Thread_ItemRemove
+  fullName: TotalDialogue.Tests.ObservableListPlayTests.Test_CollectionChangedAction_IsTriggered_Thread_ItemRemove
+- uid: TotalDialogue.Tests.ObservableListPlayTests.Test_ItemAdded_IsTriggered_When_ItemAdded_From_Different_Thread*
+  commentId: Overload:TotalDialogue.Tests.ObservableListPlayTests.Test_ItemAdded_IsTriggered_When_ItemAdded_From_Different_Thread
+  href: TotalDialogue.Tests.ObservableListPlayTests.html#TotalDialogue_Tests_ObservableListPlayTests_Test_ItemAdded_IsTriggered_When_ItemAdded_From_Different_Thread
+  name: Test_ItemAdded_IsTriggered_When_ItemAdded_From_Different_Thread
+  nameWithType: ObservableListPlayTests.Test_ItemAdded_IsTriggered_When_ItemAdded_From_Different_Thread
+  fullName: TotalDialogue.Tests.ObservableListPlayTests.Test_ItemAdded_IsTriggered_When_ItemAdded_From_Different_Thread
+- uid: TotalDialogue.Tests.ObservableListPlayTests.Test_ItemChanged_IsTriggered_When_ItemChanged_From_Different_Thread*
+  commentId: Overload:TotalDialogue.Tests.ObservableListPlayTests.Test_ItemChanged_IsTriggered_When_ItemChanged_From_Different_Thread
+  href: TotalDialogue.Tests.ObservableListPlayTests.html#TotalDialogue_Tests_ObservableListPlayTests_Test_ItemChanged_IsTriggered_When_ItemChanged_From_Different_Thread
+  name: Test_ItemChanged_IsTriggered_When_ItemChanged_From_Different_Thread
+  nameWithType: ObservableListPlayTests.Test_ItemChanged_IsTriggered_When_ItemChanged_From_Different_Thread
+  fullName: TotalDialogue.Tests.ObservableListPlayTests.Test_ItemChanged_IsTriggered_When_ItemChanged_From_Different_Thread
+- uid: TotalDialogue.Tests.ObservableListPlayTests.Test_ItemInsert_IsTriggered_When_ItemInsert_From_Different_Thread*
+  commentId: Overload:TotalDialogue.Tests.ObservableListPlayTests.Test_ItemInsert_IsTriggered_When_ItemInsert_From_Different_Thread
+  href: TotalDialogue.Tests.ObservableListPlayTests.html#TotalDialogue_Tests_ObservableListPlayTests_Test_ItemInsert_IsTriggered_When_ItemInsert_From_Different_Thread
+  name: Test_ItemInsert_IsTriggered_When_ItemInsert_From_Different_Thread
+  nameWithType: ObservableListPlayTests.Test_ItemInsert_IsTriggered_When_ItemInsert_From_Different_Thread
+  fullName: TotalDialogue.Tests.ObservableListPlayTests.Test_ItemInsert_IsTriggered_When_ItemInsert_From_Different_Thread

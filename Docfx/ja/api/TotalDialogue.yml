@@ -1,0 +1,173 @@
+### YamlMime:ManagedReference
+items:
+- uid: TotalDialogue
+  commentId: N:TotalDialogue
+  id: TotalDialogue
+  children:
+  - TotalDialogue.ITDFList`1
+  - TotalDialogue.TDFDictionary`2
+  - TotalDialogue.TDFKeyValuePair`2
+  - TotalDialogue.TDFKeyValuePairs`2
+  - TotalDialogue.TDFList`1
+  langs:
+  - csharp
+  - vb
+  name: TotalDialogue
+  nameWithType: TotalDialogue
+  fullName: TotalDialogue
+  type: Namespace
+  assemblies:
+  - TDF
+references:
+- uid: TotalDialogue.ITDFList`1
+  commentId: T:TotalDialogue.ITDFList`1
+  href: TotalDialogue.ITDFList-1.html
+  name: ITDFList<T>
+  nameWithType: ITDFList<T>
+  fullName: TotalDialogue.ITDFList<T>
+  nameWithType.vb: ITDFList(Of T)
+  fullName.vb: TotalDialogue.ITDFList(Of T)
+  name.vb: ITDFList(Of T)
+  spec.csharp:
+  - uid: TotalDialogue.ITDFList`1
+    name: ITDFList
+    href: TotalDialogue.ITDFList-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: TotalDialogue.ITDFList`1
+    name: ITDFList
+    href: TotalDialogue.ITDFList-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: TotalDialogue.TDFList`1
+  commentId: T:TotalDialogue.TDFList`1
+  parent: TotalDialogue
+  href: TotalDialogue.TDFList-1.html
+  name: TDFList<T>
+  nameWithType: TDFList<T>
+  fullName: TotalDialogue.TDFList<T>
+  nameWithType.vb: TDFList(Of T)
+  fullName.vb: TotalDialogue.TDFList(Of T)
+  name.vb: TDFList(Of T)
+  spec.csharp:
+  - uid: TotalDialogue.TDFList`1
+    name: TDFList
+    href: TotalDialogue.TDFList-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: TotalDialogue.TDFList`1
+    name: TDFList
+    href: TotalDialogue.TDFList-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: TotalDialogue.TDFDictionary`2
+  commentId: T:TotalDialogue.TDFDictionary`2
+  parent: TotalDialogue
+  href: TotalDialogue.TDFDictionary-2.html
+  name: TDFDictionary<TKey, TValue>
+  nameWithType: TDFDictionary<TKey, TValue>
+  fullName: TotalDialogue.TDFDictionary<TKey, TValue>
+  nameWithType.vb: TDFDictionary(Of TKey, TValue)
+  fullName.vb: TotalDialogue.TDFDictionary(Of TKey, TValue)
+  name.vb: TDFDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: TotalDialogue.TDFDictionary`2
+    name: TDFDictionary
+    href: TotalDialogue.TDFDictionary-2.html
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: TotalDialogue.TDFDictionary`2
+    name: TDFDictionary
+    href: TotalDialogue.TDFDictionary-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: TotalDialogue.TDFKeyValuePairs`2
+  commentId: T:TotalDialogue.TDFKeyValuePairs`2
+  href: TotalDialogue.TDFKeyValuePairs-2.html
+  name: TDFKeyValuePairs<TKey, TValue>
+  nameWithType: TDFKeyValuePairs<TKey, TValue>
+  fullName: TotalDialogue.TDFKeyValuePairs<TKey, TValue>
+  nameWithType.vb: TDFKeyValuePairs(Of TKey, TValue)
+  fullName.vb: TotalDialogue.TDFKeyValuePairs(Of TKey, TValue)
+  name.vb: TDFKeyValuePairs(Of TKey, TValue)
+  spec.csharp:
+  - uid: TotalDialogue.TDFKeyValuePairs`2
+    name: TDFKeyValuePairs
+    href: TotalDialogue.TDFKeyValuePairs-2.html
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: TotalDialogue.TDFKeyValuePairs`2
+    name: TDFKeyValuePairs
+    href: TotalDialogue.TDFKeyValuePairs-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: TotalDialogue.TDFKeyValuePair`2
+  commentId: T:TotalDialogue.TDFKeyValuePair`2
+  parent: TotalDialogue
+  href: TotalDialogue.TDFKeyValuePair-2.html
+  name: TDFKeyValuePair<TKey, TValue>
+  nameWithType: TDFKeyValuePair<TKey, TValue>
+  fullName: TotalDialogue.TDFKeyValuePair<TKey, TValue>
+  nameWithType.vb: TDFKeyValuePair(Of TKey, TValue)
+  fullName.vb: TotalDialogue.TDFKeyValuePair(Of TKey, TValue)
+  name.vb: TDFKeyValuePair(Of TKey, TValue)
+  spec.csharp:
+  - uid: TotalDialogue.TDFKeyValuePair`2
+    name: TDFKeyValuePair
+    href: TotalDialogue.TDFKeyValuePair-2.html
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: TotalDialogue.TDFKeyValuePair`2
+    name: TDFKeyValuePair
+    href: TotalDialogue.TDFKeyValuePair-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: TotalDialogue
+  commentId: N:TotalDialogue
+  href: TotalDialogue.html
+  name: TotalDialogue
+  nameWithType: TotalDialogue
+  fullName: TotalDialogue

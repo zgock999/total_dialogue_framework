@@ -1,0 +1,1581 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class TDFDictionary&lt;TKey, TValue&gt; | TDF Manual </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class TDFDictionary&lt;TKey, TValue&gt; | TDF Manual ">
+    
+    <meta name="description" content="このクラスは、TDFKeyValuePairを継承し、辞書としての機能を提供します。 TDFKeyValuePairのリストを内部に持ち、キーと値のペアを管理します。 このクラスは、System標準のDictionaryと同じように動作しますが、シリアライズ可能です。 TDFListのスレッドセーフ/ロック機能とイベント機能を持ちます。 TDFListの要素数を取得するには、ListCountプロパティを使用してください。">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="TDF Manual">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="TotalDialogue.Core.Collections.TDFDictionary`2">
+
+
+
+  <h1 id="TotalDialogue_Core_Collections_TDFDictionary_2" data-uid="TotalDialogue.Core.Collections.TDFDictionary`2" class="text-break">Class TDFDictionary&lt;TKey, TValue&gt;</h1>
+  <div class="markdown level0 summary"><p>このクラスは、TDFKeyValuePairを継承し、辞書としての機能を提供します。
+TDFKeyValuePairのリストを内部に持ち、キーと値のペアを管理します。
+このクラスは、System標準のDictionaryと同じように動作しますが、シリアライズ可能です。
+TDFListのスレッドセーフ/ロック機能とイベント機能を持ちます。
+TDFListの要素数を取得するには、ListCountプロパティを使用してください。</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html">TDFList</a>&lt;<a class="xref" href="TotalDialogue.Core.Collections.TDFKeyValuePair-2.html">TDFKeyValuePair</a>&lt;TKey, TValue&gt;&gt;</div>
+    <div class="level2"><a class="xref" href="TotalDialogue.Core.Collections.TDFKeyValuePairs-2.html">TDFKeyValuePairs</a>&lt;TKey, TValue&gt;</div>
+    <div class="level3"><span class="xref">TDFDictionary&lt;TKey, TValue&gt;</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="TotalDialogue.Core.Collections.ITDFList-1.html">ITDFList</a>&lt;<a class="xref" href="TotalDialogue.Core.Collections.TDFKeyValuePair-2.html">TDFKeyValuePair</a>&lt;TKey, TValue&gt;&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="TotalDialogue.Core.Collections.TDFKeyValuePair-2.html">TDFKeyValuePair</a>&lt;TKey, TValue&gt;&gt;</div>
+    <div><span class="xref">ISerializationCallbackReceiver</span></div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;TKey, TValue&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2">KeyValuePair</a>&lt;TKey, TValue&gt;&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2">KeyValuePair</a>&lt;TKey, TValue&gt;&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFKeyValuePairs-2.html#TotalDialogue_Core_Collections_TDFKeyValuePairs_2_indexDictionary">TDFKeyValuePairs&lt;TKey, TValue&gt;.indexDictionary</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFKeyValuePairs-2.html#TotalDialogue_Core_Collections_TDFKeyValuePairs_2_Item_System_Int32_">TDFKeyValuePairs&lt;TKey, TValue&gt;.this[int]</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFKeyValuePairs-2.html#TotalDialogue_Core_Collections_TDFKeyValuePairs_2_Add_TotalDialogue_Core_Collections_TDFKeyValuePair__0__1__">TDFKeyValuePairs&lt;TKey, TValue&gt;.Add(TDFKeyValuePair&lt;TKey, TValue&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFKeyValuePairs-2.html#TotalDialogue_Core_Collections_TDFKeyValuePairs_2_Insert_System_Int32_TotalDialogue_Core_Collections_TDFKeyValuePair__0__1__">TDFKeyValuePairs&lt;TKey, TValue&gt;.Insert(int, TDFKeyValuePair&lt;TKey, TValue&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFKeyValuePairs-2.html#TotalDialogue_Core_Collections_TDFKeyValuePairs_2_RemoveAt_System_Int32_">TDFKeyValuePairs&lt;TKey, TValue&gt;.RemoveAt(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFKeyValuePairs-2.html#TotalDialogue_Core_Collections_TDFKeyValuePairs_2_Remove__0_">TDFKeyValuePairs&lt;TKey, TValue&gt;.Remove(TKey)</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFKeyValuePairs-2.html#TotalDialogue_Core_Collections_TDFKeyValuePairs_2_Remove_TotalDialogue_Core_Collections_TDFKeyValuePair__0__1__">TDFKeyValuePairs&lt;TKey, TValue&gt;.Remove(TDFKeyValuePair&lt;TKey, TValue&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFKeyValuePairs-2.html#TotalDialogue_Core_Collections_TDFKeyValuePairs_2_ContainsKey__0_">TDFKeyValuePairs&lt;TKey, TValue&gt;.ContainsKey(TKey)</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFKeyValuePairs-2.html#TotalDialogue_Core_Collections_TDFKeyValuePairs_2_IndexOfKey__0_">TDFKeyValuePairs&lt;TKey, TValue&gt;.IndexOfKey(TKey)</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFKeyValuePairs-2.html#TotalDialogue_Core_Collections_TDFKeyValuePairs_2_IsDuplicate__0_">TDFKeyValuePairs&lt;TKey, TValue&gt;.IsDuplicate(TKey)</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFKeyValuePairs-2.html#TotalDialogue_Core_Collections_TDFKeyValuePairs_2_UpdateDuplicates">TDFKeyValuePairs&lt;TKey, TValue&gt;.UpdateDuplicates()</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFKeyValuePairs-2.html#TotalDialogue_Core_Collections_TDFKeyValuePairs_2_IsDuplicateIndex_System_Int32_">TDFKeyValuePairs&lt;TKey, TValue&gt;.IsDuplicateIndex(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_list">TDFList&lt;TDFKeyValuePair&lt;TKey, TValue&gt;&gt;.list</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_lockObject">TDFList&lt;TDFKeyValuePair&lt;TKey, TValue&gt;&gt;.lockObject</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_isLocked">TDFList&lt;TDFKeyValuePair&lt;TKey, TValue&gt;&gt;.isLocked</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_lockedThreadId">TDFList&lt;TDFKeyValuePair&lt;TKey, TValue&gt;&gt;.lockedThreadId</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_m_serializing">TDFList&lt;TDFKeyValuePair&lt;TKey, TValue&gt;&gt;.m_serializing</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_Serializing">TDFList&lt;TDFKeyValuePair&lt;TKey, TValue&gt;&gt;.Serializing</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_BeginLock">TDFList&lt;TDFKeyValuePair&lt;TKey, TValue&gt;&gt;.BeginLock()</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_EndLock">TDFList&lt;TDFKeyValuePair&lt;TKey, TValue&gt;&gt;.EndLock()</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_OnChange">TDFList&lt;TDFKeyValuePair&lt;TKey, TValue&gt;&gt;.OnChange</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_OnAdd">TDFList&lt;TDFKeyValuePair&lt;TKey, TValue&gt;&gt;.OnAdd</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_OnRemove">TDFList&lt;TDFKeyValuePair&lt;TKey, TValue&gt;&gt;.OnRemove</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_OnChangeItem">TDFList&lt;TDFKeyValuePair&lt;TKey, TValue&gt;&gt;.OnChangeItem</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_Validate">TDFList&lt;TDFKeyValuePair&lt;TKey, TValue&gt;&gt;.Validate</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_Add__0_">TDFList&lt;TDFKeyValuePair&lt;TKey, TValue&gt;&gt;.Add(TDFKeyValuePair&lt;TKey, TValue&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_Remove__0_">TDFList&lt;TDFKeyValuePair&lt;TKey, TValue&gt;&gt;.Remove(TDFKeyValuePair&lt;TKey, TValue&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_RemoveAt_System_Int32_">TDFList&lt;TDFKeyValuePair&lt;TKey, TValue&gt;&gt;.RemoveAt(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_Count">TDFList&lt;TDFKeyValuePair&lt;TKey, TValue&gt;&gt;.Count</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_Item_System_Int32_">TDFList&lt;TDFKeyValuePair&lt;TKey, TValue&gt;&gt;.this[int]</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_Clear">TDFList&lt;TDFKeyValuePair&lt;TKey, TValue&gt;&gt;.Clear()</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_Insert_System_Int32__0_">TDFList&lt;TDFKeyValuePair&lt;TKey, TValue&gt;&gt;.Insert(int, TDFKeyValuePair&lt;TKey, TValue&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_AddRange_System_Collections_Generic_IEnumerable__0__">TDFList&lt;TDFKeyValuePair&lt;TKey, TValue&gt;&gt;.AddRange(IEnumerable&lt;TDFKeyValuePair&lt;TKey, TValue&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_RemoveRange_System_Int32_System_Int32_">TDFList&lt;TDFKeyValuePair&lt;TKey, TValue&gt;&gt;.RemoveRange(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_Sort_System_Comparison__0__">TDFList&lt;TDFKeyValuePair&lt;TKey, TValue&gt;&gt;.Sort(Comparison&lt;TDFKeyValuePair&lt;TKey, TValue&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_Sort_System_Collections_Generic_IComparer__0__">TDFList&lt;TDFKeyValuePair&lt;TKey, TValue&gt;&gt;.Sort(IComparer&lt;TDFKeyValuePair&lt;TKey, TValue&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_Sort_System_Int32_System_Int32_System_Collections_Generic_IComparer__0__">TDFList&lt;TDFKeyValuePair&lt;TKey, TValue&gt;&gt;.Sort(int, int, IComparer&lt;TDFKeyValuePair&lt;TKey, TValue&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_Reverse">TDFList&lt;TDFKeyValuePair&lt;TKey, TValue&gt;&gt;.Reverse()</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_Reverse_System_Int32_System_Int32_">TDFList&lt;TDFKeyValuePair&lt;TKey, TValue&gt;&gt;.Reverse(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_CopyTo__0___System_Int32_">TDFList&lt;TDFKeyValuePair&lt;TKey, TValue&gt;&gt;.CopyTo(TDFKeyValuePair&lt;TKey, TValue&gt;[], int)</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_ForEach_System_Action__0__System_Boolean_">TDFList&lt;TDFKeyValuePair&lt;TKey, TValue&gt;&gt;.ForEach(Action&lt;TDFKeyValuePair&lt;TKey, TValue&gt;&gt;, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_GetEnumerator">TDFList&lt;TDFKeyValuePair&lt;TKey, TValue&gt;&gt;.GetEnumerator()</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_GetRange_System_Int32_System_Int32_">TDFList&lt;TDFKeyValuePair&lt;TKey, TValue&gt;&gt;.GetRange(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_IndexOf__0_">TDFList&lt;TDFKeyValuePair&lt;TKey, TValue&gt;&gt;.IndexOf(TDFKeyValuePair&lt;TKey, TValue&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_LastIndexOf__0_">TDFList&lt;TDFKeyValuePair&lt;TKey, TValue&gt;&gt;.LastIndexOf(TDFKeyValuePair&lt;TKey, TValue&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_Contains__0_">TDFList&lt;TDFKeyValuePair&lt;TKey, TValue&gt;&gt;.Contains(TDFKeyValuePair&lt;TKey, TValue&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_Find_System_Predicate__0__">TDFList&lt;TDFKeyValuePair&lt;TKey, TValue&gt;&gt;.Find(Predicate&lt;TDFKeyValuePair&lt;TKey, TValue&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_FindAll_System_Predicate__0__">TDFList&lt;TDFKeyValuePair&lt;TKey, TValue&gt;&gt;.FindAll(Predicate&lt;TDFKeyValuePair&lt;TKey, TValue&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_FindIndex_System_Predicate__0__">TDFList&lt;TDFKeyValuePair&lt;TKey, TValue&gt;&gt;.FindIndex(Predicate&lt;TDFKeyValuePair&lt;TKey, TValue&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_FindIndex_System_Int32_System_Predicate__0__">TDFList&lt;TDFKeyValuePair&lt;TKey, TValue&gt;&gt;.FindIndex(int, Predicate&lt;TDFKeyValuePair&lt;TKey, TValue&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_FindIndex_System_Int32_System_Int32_System_Predicate__0__">TDFList&lt;TDFKeyValuePair&lt;TKey, TValue&gt;&gt;.FindIndex(int, int, Predicate&lt;TDFKeyValuePair&lt;TKey, TValue&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_FindLast_System_Predicate__0__">TDFList&lt;TDFKeyValuePair&lt;TKey, TValue&gt;&gt;.FindLast(Predicate&lt;TDFKeyValuePair&lt;TKey, TValue&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_FindLastIndex_System_Predicate__0__">TDFList&lt;TDFKeyValuePair&lt;TKey, TValue&gt;&gt;.FindLastIndex(Predicate&lt;TDFKeyValuePair&lt;TKey, TValue&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_FindLastIndex_System_Int32_System_Predicate__0__">TDFList&lt;TDFKeyValuePair&lt;TKey, TValue&gt;&gt;.FindLastIndex(int, Predicate&lt;TDFKeyValuePair&lt;TKey, TValue&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_FindLastIndex_System_Int32_System_Int32_System_Predicate__0__">TDFList&lt;TDFKeyValuePair&lt;TKey, TValue&gt;&gt;.FindLastIndex(int, int, Predicate&lt;TDFKeyValuePair&lt;TKey, TValue&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_RemoveAll_System_Predicate__0__">TDFList&lt;TDFKeyValuePair&lt;TKey, TValue&gt;&gt;.RemoveAll(Predicate&lt;TDFKeyValuePair&lt;TKey, TValue&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_ToArray">TDFList&lt;TDFKeyValuePair&lt;TKey, TValue&gt;&gt;.ToArray()</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_TrimExcess">TDFList&lt;TDFKeyValuePair&lt;TKey, TValue&gt;&gt;.TrimExcess()</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_TrueForAll_System_Predicate__0__">TDFList&lt;TDFKeyValuePair&lt;TKey, TValue&gt;&gt;.TrueForAll(Predicate&lt;TDFKeyValuePair&lt;TKey, TValue&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_AddRange_TotalDialogue_Core_Collections_TDFList__0__">TDFList&lt;TDFKeyValuePair&lt;TKey, TValue&gt;&gt;.AddRange(TDFList&lt;TDFKeyValuePair&lt;TKey, TValue&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_RemoveRange_TotalDialogue_Core_Collections_TDFList__0__">TDFList&lt;TDFKeyValuePair&lt;TKey, TValue&gt;&gt;.RemoveRange(TDFList&lt;TDFKeyValuePair&lt;TKey, TValue&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_GetItemType">TDFList&lt;TDFKeyValuePair&lt;TKey, TValue&gt;&gt;.GetItemType()</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_UpdateDuplicates">TDFList&lt;TDFKeyValuePair&lt;TKey, TValue&gt;&gt;.UpdateDuplicates()</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_OnBeforeSerialize">TDFList&lt;TDFKeyValuePair&lt;TKey, TValue&gt;&gt;.OnBeforeSerialize()</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_OnAfterDeserialize">TDFList&lt;TDFKeyValuePair&lt;TKey, TValue&gt;&gt;.OnAfterDeserialize()</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_InvokeOnChange">TDFList&lt;TDFKeyValuePair&lt;TKey, TValue&gt;&gt;.InvokeOnChange()</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_InvokeOnChangeItem_System_Int32__0_">TDFList&lt;TDFKeyValuePair&lt;TKey, TValue&gt;&gt;.InvokeOnChangeItem(int, TDFKeyValuePair&lt;TKey, TValue&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_InvokeOnAdd_System_Int32__0_">TDFList&lt;TDFKeyValuePair&lt;TKey, TValue&gt;&gt;.InvokeOnAdd(int, TDFKeyValuePair&lt;TKey, TValue&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_InvokeOnRemove_System_Int32__0_">TDFList&lt;TDFKeyValuePair&lt;TKey, TValue&gt;&gt;.InvokeOnRemove(int, TDFKeyValuePair&lt;TKey, TValue&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="TotalDialogue.html">TotalDialogue</a>.<a class="xref" href="TotalDialogue.Core.html">Core</a>.<a class="xref" href="TotalDialogue.Core.Collections.html">Collections</a></h6>
+  <h6><strong>Assembly</strong>: TDF.dll</h6>
+  <h5 id="TotalDialogue_Core_Collections_TDFDictionary_2_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Serializable]
+public class TDFDictionary&lt;TKey, TValue&gt; : TDFKeyValuePairs&lt;TKey, TValue&gt;, ITDFList&lt;TDFKeyValuePair&lt;TKey, TValue&gt;&gt;, IEnumerable&lt;TDFKeyValuePair&lt;TKey, TValue&gt;&gt;, ISerializationCallbackReceiver, IDictionary&lt;TKey, TValue&gt;, ICollection&lt;KeyValuePair&lt;TKey, TValue&gt;&gt;, IEnumerable&lt;KeyValuePair&lt;TKey, TValue&gt;&gt;, IEnumerable</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TKey</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TValue</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zgock999/TotalDialogueFramework/new/master/apiSpec/new?filename=TotalDialogue_Core_Collections_TDFDictionary_2__ctor.md&amp;value=---%0Auid%3A%20TotalDialogue.Core.Collections.TDFDictionary%602.%23ctor%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zgock999/TotalDialogueFramework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs/#L92">View Source</a>
+  </span>
+  <a id="TotalDialogue_Core_Collections_TDFDictionary_2__ctor_" data-uid="TotalDialogue.Core.Collections.TDFDictionary`2.#ctor*"></a>
+  <h4 id="TotalDialogue_Core_Collections_TDFDictionary_2__ctor" data-uid="TotalDialogue.Core.Collections.TDFDictionary`2.#ctor">TDFDictionary()</h4>
+  <div class="markdown level1 summary"><p>TDFDictionaryの新しいインスタンスを初期化します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TDFDictionary()</code></pre>
+  </div>
+  <h5 id="TotalDialogue_Core_Collections_TDFDictionary_2__ctor_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>このコンストラクタは、TDFKeyValuePairのリストを初期化します。</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zgock999/TotalDialogueFramework/new/master/apiSpec/new?filename=TotalDialogue_Core_Collections_TDFDictionary_2__ctor_System_Collections_Generic_Dictionary__0__1__.md&amp;value=---%0Auid%3A%20TotalDialogue.Core.Collections.TDFDictionary%602.%23ctor(System.Collections.Generic.Dictionary%7B%600%2C%601%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zgock999/TotalDialogueFramework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs/#L141">View Source</a>
+  </span>
+  <a id="TotalDialogue_Core_Collections_TDFDictionary_2__ctor_" data-uid="TotalDialogue.Core.Collections.TDFDictionary`2.#ctor*"></a>
+  <h4 id="TotalDialogue_Core_Collections_TDFDictionary_2__ctor_System_Collections_Generic_Dictionary__0__1__" data-uid="TotalDialogue.Core.Collections.TDFDictionary`2.#ctor(System.Collections.Generic.Dictionary{`0,`1})">TDFDictionary(Dictionary&lt;TKey, TValue&gt;)</h4>
+  <div class="markdown level1 summary"><p>Generic DictionaryからTDFKeyValuePairのリストを取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TDFDictionary(Dictionary&lt;TKey, TValue&gt; dictionary)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;TKey, TValue&gt;</td>
+        <td><span class="parametername">dictionary</span></td>
+        <td><p>System標準のDictionary</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zgock999/TotalDialogueFramework/new/master/apiSpec/new?filename=TotalDialogue_Core_Collections_TDFDictionary_2__ctor_System_Collections_Generic_List_System_Collections_Generic_KeyValuePair__0__1___.md&amp;value=---%0Auid%3A%20TotalDialogue.Core.Collections.TDFDictionary%602.%23ctor(System.Collections.Generic.List%7BSystem.Collections.Generic.KeyValuePair%7B%600%2C%601%7D%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zgock999/TotalDialogueFramework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs/#L66">View Source</a>
+  </span>
+  <a id="TotalDialogue_Core_Collections_TDFDictionary_2__ctor_" data-uid="TotalDialogue.Core.Collections.TDFDictionary`2.#ctor*"></a>
+  <h4 id="TotalDialogue_Core_Collections_TDFDictionary_2__ctor_System_Collections_Generic_List_System_Collections_Generic_KeyValuePair__0__1___" data-uid="TotalDialogue.Core.Collections.TDFDictionary`2.#ctor(System.Collections.Generic.List{System.Collections.Generic.KeyValuePair{`0,`1}})">TDFDictionary(List&lt;KeyValuePair&lt;TKey, TValue&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>KeyValuePairのコレクションからTDFDictionaryを初期化します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TDFDictionary(List&lt;KeyValuePair&lt;TKey, TValue&gt;&gt; pairs)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2">KeyValuePair</a>&lt;TKey, TValue&gt;&gt;</td>
+        <td><span class="parametername">pairs</span></td>
+        <td><p>KeyValuePairのコレクション</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="TotalDialogue_Core_Collections_TDFDictionary_2__ctor_System_Collections_Generic_List_System_Collections_Generic_KeyValuePair__0__1____remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>このコンストラクタは、KeyValuePairのコレクションからTDFDictionaryを初期化します。</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zgock999/TotalDialogueFramework/new/master/apiSpec/new?filename=TotalDialogue_Core_Collections_TDFDictionary_2__ctor_System_Collections_Generic_List_TotalDialogue_Core_Collections_TDFKeyValuePair__0__1___.md&amp;value=---%0Auid%3A%20TotalDialogue.Core.Collections.TDFDictionary%602.%23ctor(System.Collections.Generic.List%7BTotalDialogue.Core.Collections.TDFKeyValuePair%7B%600%2C%601%7D%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zgock999/TotalDialogueFramework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs/#L82">View Source</a>
+  </span>
+  <a id="TotalDialogue_Core_Collections_TDFDictionary_2__ctor_" data-uid="TotalDialogue.Core.Collections.TDFDictionary`2.#ctor*"></a>
+  <h4 id="TotalDialogue_Core_Collections_TDFDictionary_2__ctor_System_Collections_Generic_List_TotalDialogue_Core_Collections_TDFKeyValuePair__0__1___" data-uid="TotalDialogue.Core.Collections.TDFDictionary`2.#ctor(System.Collections.Generic.List{TotalDialogue.Core.Collections.TDFKeyValuePair{`0,`1}})">TDFDictionary(List&lt;TDFKeyValuePair&lt;TKey, TValue&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>TDFDictionaryの新しいインスタンスを初期化します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TDFDictionary(List&lt;TDFKeyValuePair&lt;TKey, TValue&gt;&gt; list)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TotalDialogue.Core.Collections.TDFKeyValuePair-2.html">TDFKeyValuePair</a>&lt;TKey, TValue&gt;&gt;</td>
+        <td><span class="parametername">list</span></td>
+        <td><p>TDFKeyValuePairのリスト</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="TotalDialogue_Core_Collections_TDFDictionary_2__ctor_System_Collections_Generic_List_TotalDialogue_Core_Collections_TDFKeyValuePair__0__1____remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>このコンストラクタは、TDFKeyValuePairのリストからTDFDictionaryを初期化します。</p>
+</div>
+  <h5 id="TotalDialogue_Core_Collections_TDFDictionary_2__ctor_System_Collections_Generic_List_TotalDialogue_Core_Collections_TDFKeyValuePair__0__1____seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="TotalDialogue.Core.Collections.TDFKeyValuePair-2.html">TDFKeyValuePair</a>&lt;TKey, TValue&gt;</div>
+  </div>
+  <h3 id="properties">Properties
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zgock999/TotalDialogueFramework/new/master/apiSpec/new?filename=TotalDialogue_Core_Collections_TDFDictionary_2_AsDictionary.md&amp;value=---%0Auid%3A%20TotalDialogue.Core.Collections.TDFDictionary%602.AsDictionary%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zgock999/TotalDialogueFramework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs/#L30">View Source</a>
+  </span>
+  <a id="TotalDialogue_Core_Collections_TDFDictionary_2_AsDictionary_" data-uid="TotalDialogue.Core.Collections.TDFDictionary`2.AsDictionary*"></a>
+  <h4 id="TotalDialogue_Core_Collections_TDFDictionary_2_AsDictionary" data-uid="TotalDialogue.Core.Collections.TDFDictionary`2.AsDictionary">AsDictionary</h4>
+  <div class="markdown level1 summary"><p>辞書を取得してGeneric.Dictionaryとして使用します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;TKey, TValue&gt; AsDictionary { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;TKey, TValue&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zgock999/TotalDialogueFramework/new/master/apiSpec/new?filename=TotalDialogue_Core_Collections_TDFDictionary_2_Count.md&amp;value=---%0Auid%3A%20TotalDialogue.Core.Collections.TDFDictionary%602.Count%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zgock999/TotalDialogueFramework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs/#L48">View Source</a>
+  </span>
+  <a id="TotalDialogue_Core_Collections_TDFDictionary_2_Count_" data-uid="TotalDialogue.Core.Collections.TDFDictionary`2.Count*"></a>
+  <h4 id="TotalDialogue_Core_Collections_TDFDictionary_2_Count" data-uid="TotalDialogue.Core.Collections.TDFDictionary`2.Count">Count</h4>
+  <div class="markdown level1 summary"><p>辞書としての要素数を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int Count { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>要素数</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_Count">TDFList&lt;TDFKeyValuePair&lt;TKey, TValue&gt;&gt;.Count</a></div>
+  <h5 id="TotalDialogue_Core_Collections_TDFDictionary_2_Count_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>このプロパティは、内部の辞書の要素数を返します。
+TDFListの要素数を取得するには、ListCountプロパティを使用してください。</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zgock999/TotalDialogueFramework/new/master/apiSpec/new?filename=TotalDialogue_Core_Collections_TDFDictionary_2_IsReadOnly.md&amp;value=---%0Auid%3A%20TotalDialogue.Core.Collections.TDFDictionary%602.IsReadOnly%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zgock999/TotalDialogueFramework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs/#L116">View Source</a>
+  </span>
+  <a id="TotalDialogue_Core_Collections_TDFDictionary_2_IsReadOnly_" data-uid="TotalDialogue.Core.Collections.TDFDictionary`2.IsReadOnly*"></a>
+  <h4 id="TotalDialogue_Core_Collections_TDFDictionary_2_IsReadOnly" data-uid="TotalDialogue.Core.Collections.TDFDictionary`2.IsReadOnly">IsReadOnly</h4>
+  <div class="markdown level1 summary"><p>辞書が読み取り専用かどうかを取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsReadOnly { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>読み取り専用の場合はtrue、それ以外はfalse</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="TotalDialogue_Core_Collections_TDFDictionary_2_IsReadOnly_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>このプロパティは、辞書が読み取り専用かどうかを取得します。
+このプロパティは常にfalseを返します。(読み取り専用ではありません)</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zgock999/TotalDialogueFramework/new/master/apiSpec/new?filename=TotalDialogue_Core_Collections_TDFDictionary_2_Item__0_.md&amp;value=---%0Auid%3A%20TotalDialogue.Core.Collections.TDFDictionary%602.Item(%600)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zgock999/TotalDialogueFramework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs/#L224">View Source</a>
+  </span>
+  <a id="TotalDialogue_Core_Collections_TDFDictionary_2_Item_" data-uid="TotalDialogue.Core.Collections.TDFDictionary`2.Item*"></a>
+  <h4 id="TotalDialogue_Core_Collections_TDFDictionary_2_Item__0_" data-uid="TotalDialogue.Core.Collections.TDFDictionary`2.Item(`0)">this[TKey]</h4>
+  <div class="markdown level1 summary"><p>キーと値のペアを取得または設定します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TValue this[TKey key] { get; set; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TKey</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>キー</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TValue</span></td>
+        <td><p>値</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="TotalDialogue_Core_Collections_TDFDictionary_2_Item__0__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>このインデクサは、指定されたキーに対応する値を取得または設定します。
+設定時、キーが存在しない場合は新しいキーと値のペアを追加します。
+キーが存在した場合はOnChangeItemイベントを発生させます。
+キーが存在しない場合はOnAddイベントを発生させます。
+共通でOnChangeイベントを発生させます。
+リストがロックされている場合は、待機します。</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zgock999/TotalDialogueFramework/new/master/apiSpec/new?filename=TotalDialogue_Core_Collections_TDFDictionary_2_Keys.md&amp;value=---%0Auid%3A%20TotalDialogue.Core.Collections.TDFDictionary%602.Keys%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zgock999/TotalDialogueFramework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs/#L34">View Source</a>
+  </span>
+  <a id="TotalDialogue_Core_Collections_TDFDictionary_2_Keys_" data-uid="TotalDialogue.Core.Collections.TDFDictionary`2.Keys*"></a>
+  <h4 id="TotalDialogue_Core_Collections_TDFDictionary_2_Keys" data-uid="TotalDialogue.Core.Collections.TDFDictionary`2.Keys">Keys</h4>
+  <div class="markdown level1 summary"><p>キーのコレクションを取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ICollection&lt;TKey&gt; Keys { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;TKey&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zgock999/TotalDialogueFramework/new/master/apiSpec/new?filename=TotalDialogue_Core_Collections_TDFDictionary_2_ListCount.md&amp;value=---%0Auid%3A%20TotalDialogue.Core.Collections.TDFDictionary%602.ListCount%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zgock999/TotalDialogueFramework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs/#L58">View Source</a>
+  </span>
+  <a id="TotalDialogue_Core_Collections_TDFDictionary_2_ListCount_" data-uid="TotalDialogue.Core.Collections.TDFDictionary`2.ListCount*"></a>
+  <h4 id="TotalDialogue_Core_Collections_TDFDictionary_2_ListCount" data-uid="TotalDialogue.Core.Collections.TDFDictionary`2.ListCount">ListCount</h4>
+  <div class="markdown level1 summary"><p>TDFListの要素数を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int ListCount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>要素数</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="TotalDialogue_Core_Collections_TDFDictionary_2_ListCount_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>このプロパティは、TDFListの要素数を返します。
+辞書の要素数を取得するには、Countプロパティを使用してください。</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zgock999/TotalDialogueFramework/new/master/apiSpec/new?filename=TotalDialogue_Core_Collections_TDFDictionary_2_Values.md&amp;value=---%0Auid%3A%20TotalDialogue.Core.Collections.TDFDictionary%602.Values%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zgock999/TotalDialogueFramework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs/#L38">View Source</a>
+  </span>
+  <a id="TotalDialogue_Core_Collections_TDFDictionary_2_Values_" data-uid="TotalDialogue.Core.Collections.TDFDictionary`2.Values*"></a>
+  <h4 id="TotalDialogue_Core_Collections_TDFDictionary_2_Values" data-uid="TotalDialogue.Core.Collections.TDFDictionary`2.Values">Values</h4>
+  <div class="markdown level1 summary"><p>値のコレクションを取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ICollection&lt;TValue&gt; Values { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;TValue&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zgock999/TotalDialogueFramework/new/master/apiSpec/new?filename=TotalDialogue_Core_Collections_TDFDictionary_2_Add_System_Collections_Generic_KeyValuePair__0__1__.md&amp;value=---%0Auid%3A%20TotalDialogue.Core.Collections.TDFDictionary%602.Add(System.Collections.Generic.KeyValuePair%7B%600%2C%601%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zgock999/TotalDialogueFramework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs/#L406">View Source</a>
+  </span>
+  <a id="TotalDialogue_Core_Collections_TDFDictionary_2_Add_" data-uid="TotalDialogue.Core.Collections.TDFDictionary`2.Add*"></a>
+  <h4 id="TotalDialogue_Core_Collections_TDFDictionary_2_Add_System_Collections_Generic_KeyValuePair__0__1__" data-uid="TotalDialogue.Core.Collections.TDFDictionary`2.Add(System.Collections.Generic.KeyValuePair{`0,`1})">Add(KeyValuePair&lt;TKey, TValue&gt;)</h4>
+  <div class="markdown level1 summary"><p>generic KetValuePairから要素を追加します</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Add(KeyValuePair&lt;TKey, TValue&gt; item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2">KeyValuePair</a>&lt;TKey, TValue&gt;</td>
+        <td><span class="parametername">item</span></td>
+        <td><p>追加する要素</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="TotalDialogue_Core_Collections_TDFDictionary_2_Add_System_Collections_Generic_KeyValuePair__0__1___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>このメソッドは、KeyValuePairから要素を追加します。
+リストがロックされている場合は、待機します。</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zgock999/TotalDialogueFramework/new/master/apiSpec/new?filename=TotalDialogue_Core_Collections_TDFDictionary_2_Add_TotalDialogue_Core_Collections_TDFKeyValuePair__0__1__.md&amp;value=---%0Auid%3A%20TotalDialogue.Core.Collections.TDFDictionary%602.Add(TotalDialogue.Core.Collections.TDFKeyValuePair%7B%600%2C%601%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zgock999/TotalDialogueFramework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs/#L288">View Source</a>
+  </span>
+  <a id="TotalDialogue_Core_Collections_TDFDictionary_2_Add_" data-uid="TotalDialogue.Core.Collections.TDFDictionary`2.Add*"></a>
+  <h4 id="TotalDialogue_Core_Collections_TDFDictionary_2_Add_TotalDialogue_Core_Collections_TDFKeyValuePair__0__1__" data-uid="TotalDialogue.Core.Collections.TDFDictionary`2.Add(TotalDialogue.Core.Collections.TDFKeyValuePair{`0,`1})">Add(TDFKeyValuePair&lt;TKey, TValue&gt;)</h4>
+  <div class="markdown level1 summary"><p>指定したアイテムをリストの末尾に追加し、重複情報を更新します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Add(TDFKeyValuePair&lt;TKey, TValue&gt; item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="TotalDialogue.Core.Collections.TDFKeyValuePair-2.html">TDFKeyValuePair</a>&lt;TKey, TValue&gt;</td>
+        <td><span class="parametername">item</span></td>
+        <td><p>追加するアイテム</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="TotalDialogue.Core.Collections.TDFKeyValuePairs-2.html#TotalDialogue_Core_Collections_TDFKeyValuePairs_2_Add_TotalDialogue_Core_Collections_TDFKeyValuePair__0__1__">TDFKeyValuePairs&lt;TKey, TValue&gt;.Add(TDFKeyValuePair&lt;TKey, TValue&gt;)</a></div>
+  <h5 id="TotalDialogue_Core_Collections_TDFDictionary_2_Add_TotalDialogue_Core_Collections_TDFKeyValuePair__0__1___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>追加された場合、OnAdd/OnChangeイベントが発行されます
+リストがロックされている場合、スレッドがロック解除されるまで待機します</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zgock999/TotalDialogueFramework/new/master/apiSpec/new?filename=TotalDialogue_Core_Collections_TDFDictionary_2_Add__0__1_.md&amp;value=---%0Auid%3A%20TotalDialogue.Core.Collections.TDFDictionary%602.Add(%600%2C%601)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zgock999/TotalDialogueFramework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs/#L284">View Source</a>
+  </span>
+  <a id="TotalDialogue_Core_Collections_TDFDictionary_2_Add_" data-uid="TotalDialogue.Core.Collections.TDFDictionary`2.Add*"></a>
+  <h4 id="TotalDialogue_Core_Collections_TDFDictionary_2_Add__0__1_" data-uid="TotalDialogue.Core.Collections.TDFDictionary`2.Add(`0,`1)">Add(TKey, TValue)</h4>
+  <div class="markdown level1 summary"><p>キーと値のペアを追加します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Add(TKey key, TValue value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TKey</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>キー</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TValue</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>値</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="TotalDialogue_Core_Collections_TDFDictionary_2_Add__0__1__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>このメソッドは、指定されたキーと値のペアを追加します。
+追加された結果、重複している場合はそれをマークし、辞書には追加しません。
+OnAdd/OnChangeイベントを発生させます。
+リストがロックされている場合は、待機します。</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zgock999/TotalDialogueFramework/new/master/apiSpec/new?filename=TotalDialogue_Core_Collections_TDFDictionary_2_Contains_System_Collections_Generic_KeyValuePair__0__1__.md&amp;value=---%0Auid%3A%20TotalDialogue.Core.Collections.TDFDictionary%602.Contains(System.Collections.Generic.KeyValuePair%7B%600%2C%601%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zgock999/TotalDialogueFramework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs/#L419">View Source</a>
+  </span>
+  <a id="TotalDialogue_Core_Collections_TDFDictionary_2_Contains_" data-uid="TotalDialogue.Core.Collections.TDFDictionary`2.Contains*"></a>
+  <h4 id="TotalDialogue_Core_Collections_TDFDictionary_2_Contains_System_Collections_Generic_KeyValuePair__0__1__" data-uid="TotalDialogue.Core.Collections.TDFDictionary`2.Contains(System.Collections.Generic.KeyValuePair{`0,`1})">Contains(KeyValuePair&lt;TKey, TValue&gt;)</h4>
+  <div class="markdown level1 summary"><p>キーと値のペアが存在するかどうかを取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Contains(KeyValuePair&lt;TKey, TValue&gt; item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2">KeyValuePair</a>&lt;TKey, TValue&gt;</td>
+        <td><span class="parametername">item</span></td>
+        <td><p>キーと値のペア</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>キーと値のペアが存在する場合はtrue、それ以外はfalse</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="TotalDialogue_Core_Collections_TDFDictionary_2_Contains_System_Collections_Generic_KeyValuePair__0__1___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>このメソッドは、指定されたキーと値のペアが存在するかどうかを取得します。
+リストがロックされている場合は、待機します。</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zgock999/TotalDialogueFramework/new/master/apiSpec/new?filename=TotalDialogue_Core_Collections_TDFDictionary_2_ContainsKey__0_.md&amp;value=---%0Auid%3A%20TotalDialogue.Core.Collections.TDFDictionary%602.ContainsKey(%600)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zgock999/TotalDialogueFramework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs/#L158">View Source</a>
+  </span>
+  <a id="TotalDialogue_Core_Collections_TDFDictionary_2_ContainsKey_" data-uid="TotalDialogue.Core.Collections.TDFDictionary`2.ContainsKey*"></a>
+  <h4 id="TotalDialogue_Core_Collections_TDFDictionary_2_ContainsKey__0_" data-uid="TotalDialogue.Core.Collections.TDFDictionary`2.ContainsKey(`0)">ContainsKey(TKey)</h4>
+  <div class="markdown level1 summary"><p>キーが存在するかどうかを取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool ContainsKey(TKey key)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TKey</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>キー</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>キーが存在する場合はtrue、それ以外はfalse</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="TotalDialogue.Core.Collections.TDFKeyValuePairs-2.html#TotalDialogue_Core_Collections_TDFKeyValuePairs_2_ContainsKey__0_">TDFKeyValuePairs&lt;TKey, TValue&gt;.ContainsKey(TKey)</a></div>
+  <h5 id="TotalDialogue_Core_Collections_TDFDictionary_2_ContainsKey__0__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>このメソッドは、指定されたキーが存在するかどうかを取得します。
+リストがロックされている場合は、待機します。</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zgock999/TotalDialogueFramework/new/master/apiSpec/new?filename=TotalDialogue_Core_Collections_TDFDictionary_2_ContainsValue__1_.md&amp;value=---%0Auid%3A%20TotalDialogue.Core.Collections.TDFDictionary%602.ContainsValue(%601)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zgock999/TotalDialogueFramework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs/#L178">View Source</a>
+  </span>
+  <a id="TotalDialogue_Core_Collections_TDFDictionary_2_ContainsValue_" data-uid="TotalDialogue.Core.Collections.TDFDictionary`2.ContainsValue*"></a>
+  <h4 id="TotalDialogue_Core_Collections_TDFDictionary_2_ContainsValue__1_" data-uid="TotalDialogue.Core.Collections.TDFDictionary`2.ContainsValue(`1)">ContainsValue(TValue)</h4>
+  <div class="markdown level1 summary"><p>値が存在するかどうかを取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ContainsValue(TValue value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TValue</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>値</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>値が存在する場合はtrue、それ以外はfalse</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="TotalDialogue_Core_Collections_TDFDictionary_2_ContainsValue__1__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>このメソッドは、指定された値が存在するかどうかを取得します。
+リストがロックされている場合は、待機します。</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zgock999/TotalDialogueFramework/new/master/apiSpec/new?filename=TotalDialogue_Core_Collections_TDFDictionary_2_CopyTo_System_Collections_Generic_KeyValuePair__0__1____System_Int32_.md&amp;value=---%0Auid%3A%20TotalDialogue.Core.Collections.TDFDictionary%602.CopyTo(System.Collections.Generic.KeyValuePair%7B%600%2C%601%7D%5B%5D%2CSystem.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zgock999/TotalDialogueFramework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs/#L429">View Source</a>
+  </span>
+  <a id="TotalDialogue_Core_Collections_TDFDictionary_2_CopyTo_" data-uid="TotalDialogue.Core.Collections.TDFDictionary`2.CopyTo*"></a>
+  <h4 id="TotalDialogue_Core_Collections_TDFDictionary_2_CopyTo_System_Collections_Generic_KeyValuePair__0__1____System_Int32_" data-uid="TotalDialogue.Core.Collections.TDFDictionary`2.CopyTo(System.Collections.Generic.KeyValuePair{`0,`1}[],System.Int32)">CopyTo(KeyValuePair&lt;TKey, TValue&gt;[], int)</h4>
+  <div class="markdown level1 summary"><p>キーと値のペアを配列にコピーします。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyTo(KeyValuePair&lt;TKey, TValue&gt;[] array, int arrayIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2">KeyValuePair</a>&lt;TKey, TValue&gt;[]</td>
+        <td><span class="parametername">array</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">arrayIndex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zgock999/TotalDialogueFramework/new/master/apiSpec/new?filename=TotalDialogue_Core_Collections_TDFDictionary_2_FromDictionary_System_Collections_Generic_Dictionary__0__1__.md&amp;value=---%0Auid%3A%20TotalDialogue.Core.Collections.TDFDictionary%602.FromDictionary(System.Collections.Generic.Dictionary%7B%600%2C%601%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zgock999/TotalDialogueFramework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs/#L369">View Source</a>
+  </span>
+  <a id="TotalDialogue_Core_Collections_TDFDictionary_2_FromDictionary_" data-uid="TotalDialogue.Core.Collections.TDFDictionary`2.FromDictionary*"></a>
+  <h4 id="TotalDialogue_Core_Collections_TDFDictionary_2_FromDictionary_System_Collections_Generic_Dictionary__0__1__" data-uid="TotalDialogue.Core.Collections.TDFDictionary`2.FromDictionary(System.Collections.Generic.Dictionary{`0,`1})">FromDictionary(Dictionary&lt;TKey, TValue&gt;)</h4>
+  <div class="markdown level1 summary"><p>DictionaryからTDFDictionaryのインスタンスを生成します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TDFDictionary&lt;TKey, TValue&gt; FromDictionary(Dictionary&lt;TKey, TValue&gt; dictionary)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;TKey, TValue&gt;</td>
+        <td><span class="parametername">dictionary</span></td>
+        <td><p>System標準のDictionary</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="TotalDialogue.Core.Collections.TDFDictionary-2.html">TDFDictionary</a>&lt;TKey, TValue&gt;</td>
+        <td><p>TDFDictionaryのインスタンス</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="TotalDialogue_Core_Collections_TDFDictionary_2_FromDictionary_System_Collections_Generic_Dictionary__0__1___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>このメソッドは、System標準のDictionaryからTDFDictionaryのインスタンスを生成します。</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zgock999/TotalDialogueFramework/new/master/apiSpec/new?filename=TotalDialogue_Core_Collections_TDFDictionary_2_FromDictionary_System_Collections_Generic_IDictionary__0__1__.md&amp;value=---%0Auid%3A%20TotalDialogue.Core.Collections.TDFDictionary%602.FromDictionary(System.Collections.Generic.IDictionary%7B%600%2C%601%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zgock999/TotalDialogueFramework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs/#L393">View Source</a>
+  </span>
+  <a id="TotalDialogue_Core_Collections_TDFDictionary_2_FromDictionary_" data-uid="TotalDialogue.Core.Collections.TDFDictionary`2.FromDictionary*"></a>
+  <h4 id="TotalDialogue_Core_Collections_TDFDictionary_2_FromDictionary_System_Collections_Generic_IDictionary__0__1__" data-uid="TotalDialogue.Core.Collections.TDFDictionary`2.FromDictionary(System.Collections.Generic.IDictionary{`0,`1})">FromDictionary(IDictionary&lt;TKey, TValue&gt;)</h4>
+  <div class="markdown level1 summary"><p>DictionaryインターフェースからTDFDictionaryのインスタンスを生成します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TDFDictionary&lt;TKey, TValue&gt; FromDictionary(IDictionary&lt;TKey, TValue&gt; dictionary)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;TKey, TValue&gt;</td>
+        <td><span class="parametername">dictionary</span></td>
+        <td><p>System標準のDictionary</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="TotalDialogue.Core.Collections.TDFDictionary-2.html">TDFDictionary</a>&lt;TKey, TValue&gt;</td>
+        <td><p>TDFDictionaryのインスタンス</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="TotalDialogue_Core_Collections_TDFDictionary_2_FromDictionary_System_Collections_Generic_IDictionary__0__1___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>このメソッドは、System標準のDictionaryからTDFDictionaryのインスタンスを生成します。</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zgock999/TotalDialogueFramework/new/master/apiSpec/new?filename=TotalDialogue_Core_Collections_TDFDictionary_2_GetEnumerator.md&amp;value=---%0Auid%3A%20TotalDialogue.Core.Collections.TDFDictionary%602.GetEnumerator%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zgock999/TotalDialogueFramework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs/#L126">View Source</a>
+  </span>
+  <a id="TotalDialogue_Core_Collections_TDFDictionary_2_GetEnumerator_" data-uid="TotalDialogue.Core.Collections.TDFDictionary`2.GetEnumerator*"></a>
+  <h4 id="TotalDialogue_Core_Collections_TDFDictionary_2_GetEnumerator" data-uid="TotalDialogue.Core.Collections.TDFDictionary`2.GetEnumerator">GetEnumerator()</h4>
+  <div class="markdown level1 summary"><p>標準DictionaryのIEnumerableを取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;TKey, TValue&gt;.Enumerator GetEnumerator()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;TKey, TValue&gt;.<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.enumerator">Enumerator</a></td>
+        <td><p>標準Dictionaryのコレクション</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="TotalDialogue_Core_Collections_TDFDictionary_2_GetEnumerator_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>このプロパティは、標準Dictionaryのコレクションを返します。</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zgock999/TotalDialogueFramework/new/master/apiSpec/new?filename=TotalDialogue_Core_Collections_TDFDictionary_2_Remove_System_Collections_Generic_KeyValuePair__0__1__.md&amp;value=---%0Auid%3A%20TotalDialogue.Core.Collections.TDFDictionary%602.Remove(System.Collections.Generic.KeyValuePair%7B%600%2C%601%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zgock999/TotalDialogueFramework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs/#L445">View Source</a>
+  </span>
+  <a id="TotalDialogue_Core_Collections_TDFDictionary_2_Remove_" data-uid="TotalDialogue.Core.Collections.TDFDictionary`2.Remove*"></a>
+  <h4 id="TotalDialogue_Core_Collections_TDFDictionary_2_Remove_System_Collections_Generic_KeyValuePair__0__1__" data-uid="TotalDialogue.Core.Collections.TDFDictionary`2.Remove(System.Collections.Generic.KeyValuePair{`0,`1})">Remove(KeyValuePair&lt;TKey, TValue&gt;)</h4>
+  <div class="markdown level1 summary"><p>キーと値のペアを削除します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Remove(KeyValuePair&lt;TKey, TValue&gt; item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2">KeyValuePair</a>&lt;TKey, TValue&gt;</td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>ペアが存在して値が削除されたらtrue、存在せず削除が行われなかった場合はfalse</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="TotalDialogue_Core_Collections_TDFDictionary_2_Remove_System_Collections_Generic_KeyValuePair__0__1___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>このメソッドは、指定されたキーと値のペアを削除します。
+リストがロックされている場合は、待機します。</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zgock999/TotalDialogueFramework/new/master/apiSpec/new?filename=TotalDialogue_Core_Collections_TDFDictionary_2_ToDictionary_TotalDialogue_Core_Collections_TDFDictionary__0__1__.md&amp;value=---%0Auid%3A%20TotalDialogue.Core.Collections.TDFDictionary%602.ToDictionary(TotalDialogue.Core.Collections.TDFDictionary%7B%600%2C%601%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zgock999/TotalDialogueFramework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs/#L381">View Source</a>
+  </span>
+  <a id="TotalDialogue_Core_Collections_TDFDictionary_2_ToDictionary_" data-uid="TotalDialogue.Core.Collections.TDFDictionary`2.ToDictionary*"></a>
+  <h4 id="TotalDialogue_Core_Collections_TDFDictionary_2_ToDictionary_TotalDialogue_Core_Collections_TDFDictionary__0__1__" data-uid="TotalDialogue.Core.Collections.TDFDictionary`2.ToDictionary(TotalDialogue.Core.Collections.TDFDictionary{`0,`1})">ToDictionary(TDFDictionary&lt;TKey, TValue&gt;)</h4>
+  <div class="markdown level1 summary"><p>TDFDictionaryからDictionaryのインスタンスを生成します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Dictionary&lt;TKey, TValue&gt; ToDictionary(TDFDictionary&lt;TKey, TValue&gt; pairs)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="TotalDialogue.Core.Collections.TDFDictionary-2.html">TDFDictionary</a>&lt;TKey, TValue&gt;</td>
+        <td><span class="parametername">pairs</span></td>
+        <td><p>TDFDictionary</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;TKey, TValue&gt;</td>
+        <td><p>System標準のDictionary</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="TotalDialogue_Core_Collections_TDFDictionary_2_ToDictionary_TotalDialogue_Core_Collections_TDFDictionary__0__1___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>このメソッドは、TDFDictionaryからSystem標準のDictionaryのインスタンスを生成します。</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zgock999/TotalDialogueFramework/new/master/apiSpec/new?filename=TotalDialogue_Core_Collections_TDFDictionary_2_TryGetValue__0__1__.md&amp;value=---%0Auid%3A%20TotalDialogue.Core.Collections.TDFDictionary%602.TryGetValue(%600%2C%601%40)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zgock999/TotalDialogueFramework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs/#L200">View Source</a>
+  </span>
+  <a id="TotalDialogue_Core_Collections_TDFDictionary_2_TryGetValue_" data-uid="TotalDialogue.Core.Collections.TDFDictionary`2.TryGetValue*"></a>
+  <h4 id="TotalDialogue_Core_Collections_TDFDictionary_2_TryGetValue__0__1__" data-uid="TotalDialogue.Core.Collections.TDFDictionary`2.TryGetValue(`0,`1@)">TryGetValue(TKey, out TValue)</h4>
+  <div class="markdown level1 summary"><p>キーと値のペアが存在するかどうかを取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetValue(TKey key, out TValue value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TKey</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>キー</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TValue</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>値(out)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>キーと値のペアが存在する場合はtrue、それ以外はfalse</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="TotalDialogue_Core_Collections_TDFDictionary_2_TryGetValue__0__1___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>このメソッドは、指定されたキーを持つ値のペアが存在するかどうかを取得します。
+きーと値のペアが存在する場合は、値をoutパラメータで返します。
+リストがロックされている場合は、待機します。</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zgock999/TotalDialogueFramework/new/master/apiSpec/new?filename=TotalDialogue_Core_Collections_TDFDictionary_2_UpdateDuplicates.md&amp;value=---%0Auid%3A%20TotalDialogue.Core.Collections.TDFDictionary%602.UpdateDuplicates%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zgock999/TotalDialogueFramework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs/#L320">View Source</a>
+  </span>
+  <a id="TotalDialogue_Core_Collections_TDFDictionary_2_UpdateDuplicates_" data-uid="TotalDialogue.Core.Collections.TDFDictionary`2.UpdateDuplicates*"></a>
+  <h4 id="TotalDialogue_Core_Collections_TDFDictionary_2_UpdateDuplicates" data-uid="TotalDialogue.Core.Collections.TDFDictionary`2.UpdateDuplicates">UpdateDuplicates()</h4>
+  <div class="markdown level1 summary"><p>重複情報を更新して、辞書を再構築します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void UpdateDuplicates()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="TotalDialogue.Core.Collections.TDFKeyValuePairs-2.html#TotalDialogue_Core_Collections_TDFKeyValuePairs_2_UpdateDuplicates">TDFKeyValuePairs&lt;TKey, TValue&gt;.UpdateDuplicates()</a></div>
+  <h5 id="TotalDialogue_Core_Collections_TDFDictionary_2_UpdateDuplicates_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>このメソッドは、重複情報を更新して、辞書を再構築します。</p>
+</div>
+  <h3 id="operators">Operators
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zgock999/TotalDialogueFramework/new/master/apiSpec/new?filename=TotalDialogue_Core_Collections_TDFDictionary_2_op_Implicit_System_Collections_Generic_Dictionary__0__1___TotalDialogue_Core_Collections_TDFDictionary__0__1_.md&amp;value=---%0Auid%3A%20TotalDialogue.Core.Collections.TDFDictionary%602.op_Implicit(System.Collections.Generic.Dictionary%7B%600%2C%601%7D)~TotalDialogue.Core.Collections.TDFDictionary%7B%600%2C%601%7D%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zgock999/TotalDialogueFramework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs/#L352">View Source</a>
+  </span>
+  <a id="TotalDialogue_Core_Collections_TDFDictionary_2_op_Implicit_" data-uid="TotalDialogue.Core.Collections.TDFDictionary`2.op_Implicit*"></a>
+  <h4 id="TotalDialogue_Core_Collections_TDFDictionary_2_op_Implicit_System_Collections_Generic_Dictionary__0__1___TotalDialogue_Core_Collections_TDFDictionary__0__1_" data-uid="TotalDialogue.Core.Collections.TDFDictionary`2.op_Implicit(System.Collections.Generic.Dictionary{`0,`1})~TotalDialogue.Core.Collections.TDFDictionary{`0,`1}">implicit operator TDFDictionary&lt;TKey, TValue&gt;(Dictionary&lt;TKey, TValue&gt;)</h4>
+  <div class="markdown level1 summary"><p>Generic DictionaryからTDFDictionaryに型変換します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator TDFDictionary&lt;TKey, TValue&gt;(Dictionary&lt;TKey, TValue&gt; dictionary)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;TKey, TValue&gt;</td>
+        <td><span class="parametername">dictionary</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="TotalDialogue.Core.Collections.TDFDictionary-2.html">TDFDictionary</a>&lt;TKey, TValue&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zgock999/TotalDialogueFramework/new/master/apiSpec/new?filename=TotalDialogue_Core_Collections_TDFDictionary_2_op_Implicit_TotalDialogue_Core_Collections_TDFDictionary__0__1___System_Collections_Generic_Dictionary__0__1_.md&amp;value=---%0Auid%3A%20TotalDialogue.Core.Collections.TDFDictionary%602.op_Implicit(TotalDialogue.Core.Collections.TDFDictionary%7B%600%2C%601%7D)~System.Collections.Generic.Dictionary%7B%600%2C%601%7D%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zgock999/TotalDialogueFramework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs/#L340">View Source</a>
+  </span>
+  <a id="TotalDialogue_Core_Collections_TDFDictionary_2_op_Implicit_" data-uid="TotalDialogue.Core.Collections.TDFDictionary`2.op_Implicit*"></a>
+  <h4 id="TotalDialogue_Core_Collections_TDFDictionary_2_op_Implicit_TotalDialogue_Core_Collections_TDFDictionary__0__1___System_Collections_Generic_Dictionary__0__1_" data-uid="TotalDialogue.Core.Collections.TDFDictionary`2.op_Implicit(TotalDialogue.Core.Collections.TDFDictionary{`0,`1})~System.Collections.Generic.Dictionary{`0,`1}">implicit operator Dictionary&lt;TKey, TValue&gt;(TDFDictionary&lt;TKey, TValue&gt;)</h4>
+  <div class="markdown level1 summary"><p>Generic Dictionaryに型変換します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator Dictionary&lt;TKey, TValue&gt;(TDFDictionary&lt;TKey, TValue&gt; pairs)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="TotalDialogue.Core.Collections.TDFDictionary-2.html">TDFDictionary</a>&lt;TKey, TValue&gt;</td>
+        <td><span class="parametername">pairs</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;TKey, TValue&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.ITDFList-1.html">ITDFList&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a>
+  </div>
+  <div>
+      <span class="xref">UnityEngine.ISerializationCallbackReceiver</span>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary&lt;TKey, TValue&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/zgock999/TotalDialogueFramework/new/master/apiSpec/new?filename=TotalDialogue_Core_Collections_TDFDictionary_2.md&amp;value=---%0Auid%3A%20TotalDialogue.Core.Collections.TDFDictionary%602%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/zgock999/TotalDialogueFramework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs/#L15" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

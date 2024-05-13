@@ -1,0 +1,16 @@
+### YamlMime:TableOfContent
+items:
+- uid: TotalDialogue.Core.Collections
+  name: TotalDialogue.Core.Collections
+  items:
+  - uid: TotalDialogue.Core.Collections.ITDFList`1
+    name: ITDFList<T>
+  - uid: TotalDialogue.Core.Collections.TDFDictionary`2
+    name: TDFDictionary<TKey, TValue>
+  - uid: TotalDialogue.Core.Collections.TDFKeyValuePair`2
+    name: TDFKeyValuePair<TKey, TValue>
+  - uid: TotalDialogue.Core.Collections.TDFKeyValuePairs`2
+    name: TDFKeyValuePairs<TKey, TValue>
+  - uid: TotalDialogue.Core.Collections.TDFList`1
+    name: TDFList<T>
+memberLayout: SamePage

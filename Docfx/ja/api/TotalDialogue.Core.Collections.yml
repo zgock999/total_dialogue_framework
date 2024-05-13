@@ -1,0 +1,197 @@
+### YamlMime:ManagedReference
+items:
+- uid: TotalDialogue.Core.Collections
+  commentId: N:TotalDialogue.Core.Collections
+  id: TotalDialogue.Core.Collections
+  children:
+  - TotalDialogue.Core.Collections.ITDFList`1
+  - TotalDialogue.Core.Collections.TDFDictionary`2
+  - TotalDialogue.Core.Collections.TDFKeyValuePair`2
+  - TotalDialogue.Core.Collections.TDFKeyValuePairs`2
+  - TotalDialogue.Core.Collections.TDFList`1
+  langs:
+  - csharp
+  - vb
+  name: TotalDialogue.Core.Collections
+  nameWithType: TotalDialogue.Core.Collections
+  fullName: TotalDialogue.Core.Collections
+  type: Namespace
+  assemblies:
+  - TDF
+references:
+- uid: TotalDialogue.Core.Collections.ITDFList`1
+  commentId: T:TotalDialogue.Core.Collections.ITDFList`1
+  href: TotalDialogue.Core.Collections.ITDFList-1.html
+  name: ITDFList<T>
+  nameWithType: ITDFList<T>
+  fullName: TotalDialogue.Core.Collections.ITDFList<T>
+  nameWithType.vb: ITDFList(Of T)
+  fullName.vb: TotalDialogue.Core.Collections.ITDFList(Of T)
+  name.vb: ITDFList(Of T)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Collections.ITDFList`1
+    name: ITDFList
+    href: TotalDialogue.Core.Collections.ITDFList-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: TotalDialogue.Core.Collections.ITDFList`1
+    name: ITDFList
+    href: TotalDialogue.Core.Collections.ITDFList-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: TotalDialogue.Core.Collections.TDFList`1
+  commentId: T:TotalDialogue.Core.Collections.TDFList`1
+  parent: TotalDialogue.Core.Collections
+  href: TotalDialogue.Core.Collections.TDFList-1.html
+  name: TDFList<T>
+  nameWithType: TDFList<T>
+  fullName: TotalDialogue.Core.Collections.TDFList<T>
+  nameWithType.vb: TDFList(Of T)
+  fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T)
+  name.vb: TDFList(Of T)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Collections.TDFList`1
+    name: TDFList
+    href: TotalDialogue.Core.Collections.TDFList-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: TotalDialogue.Core.Collections.TDFList`1
+    name: TDFList
+    href: TotalDialogue.Core.Collections.TDFList-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: TotalDialogue.Core.Collections.TDFDictionary`2
+  commentId: T:TotalDialogue.Core.Collections.TDFDictionary`2
+  parent: TotalDialogue.Core.Collections
+  href: TotalDialogue.Core.Collections.TDFDictionary-2.html
+  name: TDFDictionary<TKey, TValue>
+  nameWithType: TDFDictionary<TKey, TValue>
+  fullName: TotalDialogue.Core.Collections.TDFDictionary<TKey, TValue>
+  nameWithType.vb: TDFDictionary(Of TKey, TValue)
+  fullName.vb: TotalDialogue.Core.Collections.TDFDictionary(Of TKey, TValue)
+  name.vb: TDFDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Collections.TDFDictionary`2
+    name: TDFDictionary
+    href: TotalDialogue.Core.Collections.TDFDictionary-2.html
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: TotalDialogue.Core.Collections.TDFDictionary`2
+    name: TDFDictionary
+    href: TotalDialogue.Core.Collections.TDFDictionary-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: TotalDialogue.Core.Collections.TDFKeyValuePairs`2
+  commentId: T:TotalDialogue.Core.Collections.TDFKeyValuePairs`2
+  href: TotalDialogue.Core.Collections.TDFKeyValuePairs-2.html
+  name: TDFKeyValuePairs<TKey, TValue>
+  nameWithType: TDFKeyValuePairs<TKey, TValue>
+  fullName: TotalDialogue.Core.Collections.TDFKeyValuePairs<TKey, TValue>
+  nameWithType.vb: TDFKeyValuePairs(Of TKey, TValue)
+  fullName.vb: TotalDialogue.Core.Collections.TDFKeyValuePairs(Of TKey, TValue)
+  name.vb: TDFKeyValuePairs(Of TKey, TValue)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Collections.TDFKeyValuePairs`2
+    name: TDFKeyValuePairs
+    href: TotalDialogue.Core.Collections.TDFKeyValuePairs-2.html
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: TotalDialogue.Core.Collections.TDFKeyValuePairs`2
+    name: TDFKeyValuePairs
+    href: TotalDialogue.Core.Collections.TDFKeyValuePairs-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: TotalDialogue.Core.Collections.TDFKeyValuePair`2
+  commentId: T:TotalDialogue.Core.Collections.TDFKeyValuePair`2
+  parent: TotalDialogue.Core.Collections
+  href: TotalDialogue.Core.Collections.TDFKeyValuePair-2.html
+  name: TDFKeyValuePair<TKey, TValue>
+  nameWithType: TDFKeyValuePair<TKey, TValue>
+  fullName: TotalDialogue.Core.Collections.TDFKeyValuePair<TKey, TValue>
+  nameWithType.vb: TDFKeyValuePair(Of TKey, TValue)
+  fullName.vb: TotalDialogue.Core.Collections.TDFKeyValuePair(Of TKey, TValue)
+  name.vb: TDFKeyValuePair(Of TKey, TValue)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Collections.TDFKeyValuePair`2
+    name: TDFKeyValuePair
+    href: TotalDialogue.Core.Collections.TDFKeyValuePair-2.html
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: TotalDialogue.Core.Collections.TDFKeyValuePair`2
+    name: TDFKeyValuePair
+    href: TotalDialogue.Core.Collections.TDFKeyValuePair-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: TotalDialogue.Core.Collections
+  commentId: N:TotalDialogue.Core.Collections
+  href: TotalDialogue.html
+  name: TotalDialogue.Core.Collections
+  nameWithType: TotalDialogue.Core.Collections
+  fullName: TotalDialogue.Core.Collections
+  spec.csharp:
+  - uid: TotalDialogue
+    name: TotalDialogue
+    href: TotalDialogue.html
+  - name: .
+  - uid: TotalDialogue.Core
+    name: Core
+    href: TotalDialogue.Core.html
+  - name: .
+  - uid: TotalDialogue.Core.Collections
+    name: Collections
+    href: TotalDialogue.Core.Collections.html
+  spec.vb:
+  - uid: TotalDialogue
+    name: TotalDialogue
+    href: TotalDialogue.html
+  - name: .
+  - uid: TotalDialogue.Core
+    name: Core
+    href: TotalDialogue.Core.html
+  - name: .
+  - uid: TotalDialogue.Core.Collections
+    name: Collections
+    href: TotalDialogue.Core.Collections.html

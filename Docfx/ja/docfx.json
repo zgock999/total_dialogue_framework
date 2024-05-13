@@ -1,0 +1,34 @@
+{
+  "metadata": [
+    {
+      "src": [
+        {
+          "src": "../..",
+          "files": ["TDF.csproj"]
+        }
+      ],
+      "dest": "api"
+    }
+  ],
+  "build": {
+    "content": [
+      {
+        "files": ["**/*.{md,yml}", "images/**"],
+        "exclude": ["_site/**"]
+      }
+    ],
+    "resource": [
+      {
+        "files": ["images/**", "images/**"]
+      }
+    ],
+    "output": "../../Docs/ja/",
+    "template": ["default"],
+    "globalMetadata": {
+      "_appName": "TDF Manual",
+      "_appTitle": "TDF Manual",
+      "_enableSearch": true,
+      "pdf": false
+    }
+  }
+}
