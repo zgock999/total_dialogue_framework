@@ -5,10 +5,11 @@ using TotalDialogue.Core.Variables;
 using TMPro;
 using UnityEngine;
 using Codice.Client.BaseCommands;
+using TotalDialogue.Core;
 namespace TotalDialogue
 {
     public abstract class Watcher<TValue,TListener> : TDFView where TListener : VariableListener<TValue> 
-    {
+    {      
         public TMP_Text text;
 
         TListener listener;
@@ -62,6 +63,12 @@ namespace TotalDialogue
         }
         protected virtual void OnDisable()
         {
+            if (listener == null) return;
+            if (Variables == null){
+                listener.OnChanged.RemoveListener(OnChanged);
+                listener = null;
+                return;
+            }
             switch (listener)
             {
                 case BoolListener boolListener:

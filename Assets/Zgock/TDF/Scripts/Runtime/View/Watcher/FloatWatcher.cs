@@ -9,23 +9,11 @@ namespace TotalDialogue
     public class FloatWatcher : Watcher<float,FloatListener>
     {
         [SerializeField]
-        private TDFScriptableVariables _variables;
+        private ViewVariables m_variables = new();
+        protected override ViewVariables ViewVariables { get => m_variables; set => m_variables = value; }
         [SerializeField]
         private bool _fireOnEnable = true;
         protected override bool FireOnEnable { get { return _fireOnEnable; } set { _fireOnEnable = value; } }
-
-        public override IVariables Variables
-        {
-            get { return _variables != null ? _variables : base.Variables; }
-            set {
-                if (value is TDFScriptableVariables)
-                {
-                    _variables = value as TDFScriptableVariables;
-                }
-                base.Variables = value;
-            }
-        }
-
         protected override void OnChanged(float value)
         {
             text.text = value.ToString();

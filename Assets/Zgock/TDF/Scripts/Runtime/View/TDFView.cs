@@ -1,14 +1,27 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TotalDialogue.Core;
 using TotalDialogue.Core.Variables;
 using UnityEngine;
 namespace TotalDialogue
 {
     public abstract class TDFView : MonoBehaviour
     {
-        private IVariables m_variables;
-        public virtual IVariables Variables { get => m_variables; set => m_variables = value; }
+        protected abstract ViewVariables ViewVariables { get; set; }
+        public virtual IVariables Variables
+        {
+            get {
+                if (ViewVariables != null && ViewVariables.Variables != null)
+                {
+                    return ViewVariables.Variables;
+                }
+                return null;
+            }
+            set {
+                ViewVariables.Variables = null;
+            }
+        }
         readonly Dictionary<Type, Func<string, object>> getMethodMapping;
         readonly Dictionary<Type, Action<string, object>> setMethodMapping;
         public TDFView()
