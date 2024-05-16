@@ -5,6 +5,7 @@ using TotalDialogue;
 using UnityEngine;
 using System.Collections.Generic;
 using TotalDialogue.Core.Collections;
+using TotalDialogue.Core.Variables;
 [CreateAssetMenu(fileName = "ObservableScriptable", menuName = "TDF/Test/ObservableScriptable")]
 public class ObservableScriptable : ScriptableObject
 {
@@ -16,12 +17,15 @@ public class ObservableScriptable : ScriptableObject
     public TDFDictionary<GameObject, List<Vector3>> gemeObjects = new();
 
     [System.Serializable]
-    public class MyClass : TDFList<TDFKeyValuePair<int,string>>
+    public class MyValue{
+        public int value;
+        public string name;
+    }
+    public TDFKeyValuePair<string,TDFGameObject> keyValuePair0 = new("key0",new TDFGameObject());
+    public TDFDictionary<string,TDFGameObject> gameObjects = new();
+    [System.Serializable]
+    public class MyClass : TDFList<TDFKeyValuePair<int,MyValue>>
     {
-        public void AddNew()
-        {
-            Add(new TDFKeyValuePair<int,string>(Count, Count.ToString()));
-        }
     }
     public MyClass myClass = new();
 

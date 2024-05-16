@@ -22,9 +22,52 @@ MonoBehaviour:
     list: []
   dictionary:
     list: []
+    folded: 0
   gemeObjects:
     list: []
+    folded: 0
+  keyValuePair0:
+    key: 
+    value:
+      key: 
+      objectType: 3
+      prefab: {fileID: 0}
+      sprite: {fileID: 0}
+      texture: {fileID: 0}
+      audioClip: {fileID: 0}
+    splitRatio: 0.3
+    isDragging: 0
+  gameObjects:
+    list:
+    - key: aaa
+      value:
+        key: 
+        objectType: 0
+        prefab: {fileID: 0}
+        sprite: {fileID: 0}
+        texture: {fileID: 0}
+        audioClip: {fileID: 0}
+      splitRatio: 0.2987106
+      isDragging: 0
+    - key: bbb
+      value:
+        key: 
+        objectType: 0
+        prefab: {fileID: 0}
+        sprite: {fileID: 0}
+        texture: {fileID: 0}
+        audioClip: {fileID: 0}
+      splitRatio: 0.2987106
+      isDragging: 0
+    folded: 0
   myClass:
-    list: []
+    list:
+    - key: 0
+      value:
+        value: 0
+        name: 
+      splitRatio: 0.26435047
+      isDragging: 0
   keyValuePair:
     list: []
+    folded: 0

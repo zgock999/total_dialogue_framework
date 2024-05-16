@@ -33,5 +33,11 @@ namespace TotalDialogue.Core.Variables
         public void Reset();
         public int MaxChoice { get; }
         public int MaxDialogue { get;}
+        public void InitSystemValues();
+        public GameObject GetGameObject(string key);
+        public void SetGameObject(string key, GameObject value);
+        public void SetSprite(string key, Sprite value);
+        public void SetAudioClip(string key, AudioClip value);
+        public void SetTexture(string key, Texture2D value);
     }
 }

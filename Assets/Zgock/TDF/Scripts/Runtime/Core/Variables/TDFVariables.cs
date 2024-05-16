@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using TotalDialogue.Core.Collections;
 using UnityEngine;
 
@@ -26,6 +27,8 @@ namespace TotalDialogue.Core.Variables
         protected VariableList<Vector3,Vector3Var,Vector3Listener> m_vector3Vars = new();
         [SerializeField]
         protected VariableList<Quaternion,QuaternionVar,QuaternionListener> m_quaternionVars = new();
+        [SerializeField]
+        protected TDFGameObjectList m_objects = new();
 
         public bool GetBool(string key)
         {
@@ -191,6 +194,63 @@ namespace TotalDialogue.Core.Variables
             {
                 m_quaternionVars[listener.key].RemoveListener(listener);
             }
+        }
+
+        public void InitSystemValues()
+        {
+            m_boolVars.Keys.ToList().Where(key => key.StartsWith("_")).ToList().ForEach(key => m_boolVars.Remove(key));
+            m_intVars.Keys.ToList().Where(key => key.StartsWith("_")).ToList().ForEach(key => m_intVars.Remove(key));
+            m_floatVars.Keys.ToList().Where(key => key.StartsWith("_")).ToList().ForEach(key => m_floatVars.Remove(key));
+            m_stringVars.Keys.ToList().Where(key => key.StartsWith("_")).ToList().ForEach(key => m_stringVars.Remove(key));
+            m_vector3Vars.Keys.ToList().Where(key => key.StartsWith("_")).ToList().ForEach(key => m_vector3Vars.Remove(key));
+            m_quaternionVars.Keys.ToList().Where(key => key.StartsWith("_")).ToList().ForEach(key => m_quaternionVars.Remove(key));
+
+            m_boolVars.Add(TDFConst.next,new BoolVar());
+            m_boolVars.Add(TDFConst.cancel,new BoolVar());
+            m_boolVars.Add(TDFConst.skip,new BoolVar());
+            
+            for (int i = 0;i < MaxDialogue;i++){
+                m_boolVars.Add(TDFConst.writingKey + i,new BoolVar());
+                m_intVars.Add(TDFConst.windowKey + i,new IntVar());
+                m_boolVars.Add(TDFConst.nextableKey + i,new BoolVar());
+                m_boolVars.Add(TDFConst.cancelableKey + i,new BoolVar());
+                m_boolVars.Add(TDFConst.skippableKey + i,new BoolVar());
+                m_boolVars.Add(TDFConst.asyncKey + i,new BoolVar());
+                m_boolVars.Add(TDFConst.clearKey + i,new BoolVar());
+                m_stringVars.Add(TDFConst.nameKey + i,new StringVar());
+                m_stringVars.Add(TDFConst.textKey + i,new StringVar());
+            }
+            for (int i = 0;i < MaxChoice;i++){
+                m_intVars.Add(TDFConst.choosingKey + i,new IntVar());
+                m_stringVars.Add(TDFConst.chooserKey + i,new StringVar());
+                m_intVars.Add(TDFConst.choiceKey + i,new IntVar());
+                m_boolVars.Add(TDFConst.blockChoiceKey + i,new BoolVar());
+            }
+        }
+
+        public GameObject GetGameObject(string key)
+        {
+            return m_objects[key].GetGameObject();
+        }
+
+        public void SetGameObject(string key, GameObject value)
+        {
+            m_objects[key].SetGameObject(value);
+        }
+
+        public void SetSprite(string key, Sprite value)
+        {
+            m_objects[key].SetSprite(value);
+        }
+
+        public void SetAudioClip(string key, AudioClip value)
+        {
+            m_objects[key].SetAudioClip(value);
+        }
+
+        public void SetTexture(string key, Texture2D value)
+        {
+            m_objects[key].SetTexture(value);
         }
     }
 }

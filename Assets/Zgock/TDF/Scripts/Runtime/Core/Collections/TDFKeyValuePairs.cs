@@ -21,6 +21,10 @@ namespace TotalDialogue.Core.Collections
     public class TDFKeyValuePairs<TKey, TValue> : TDFList<TDFKeyValuePair<TKey, TValue>>
     {
         /// <summary>
+        /// インスペクタ上で折りたたむかどうかを示す値
+        /// </summary>
+        public bool folded = false;
+        /// <summary>
         /// 重複を検出するためのDictionary、キーはTKey、値はインデックスのリストです
         /// </summary>
         [NonSerialized]

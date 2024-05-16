@@ -1,0 +1,331 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3bd41a1de2dbd34e9f22f5179ab176f, type: 3}
+  m_Name: TDF Scriptable Variables
+  m_EditorClassIdentifier: 
+  gameObjects:
+    list: []
+    folded: 0
+  variables:
+    m_maxChoice: 0
+    m_maxDialogue: 2
+    m_boolVars:
+      list:
+      - key: test
+        value:
+          m_key: 
+          OnValueChanged:
+            m_PersistentCalls:
+              m_Calls: []
+          m_value: 0
+          m_defaultValue: 0
+        splitRatio: 0.3
+        isDragging: 0
+      - key: _Next
+        value:
+          m_key: 
+          OnValueChanged:
+            m_PersistentCalls:
+              m_Calls: []
+          m_value: 0
+          m_defaultValue: 0
+        splitRatio: 0.3
+        isDragging: 0
+      - key: _Cancel
+        value:
+          m_key: 
+          OnValueChanged:
+            m_PersistentCalls:
+              m_Calls: []
+          m_value: 0
+          m_defaultValue: 0
+        splitRatio: 0.3
+        isDragging: 0
+      - key: _Skip
+        value:
+          m_key: 
+          OnValueChanged:
+            m_PersistentCalls:
+              m_Calls: []
+          m_value: 0
+          m_defaultValue: 0
+        splitRatio: 0.3
+        isDragging: 0
+      - key: _Writing0
+        value:
+          m_key: 
+          OnValueChanged:
+            m_PersistentCalls:
+              m_Calls: []
+          m_value: 0
+          m_defaultValue: 0
+        splitRatio: 0.3
+        isDragging: 0
+      - key: _Nextable0
+        value:
+          m_key: 
+          OnValueChanged:
+            m_PersistentCalls:
+              m_Calls: []
+          m_value: 1
+          m_defaultValue: 0
+        splitRatio: 0.3
+        isDragging: 0
+      - key: _Cancelable0
+        value:
+          m_key: 
+          OnValueChanged:
+            m_PersistentCalls:
+              m_Calls: []
+          m_value: 1
+          m_defaultValue: 0
+        splitRatio: 0.3
+        isDragging: 0
+      - key: _Skippable0
+        value:
+          m_key: 
+          OnValueChanged:
+            m_PersistentCalls:
+              m_Calls: []
+          m_value: 1
+          m_defaultValue: 0
+        splitRatio: 0.3
+        isDragging: 0
+      - key: _Async0
+        value:
+          m_key: 
+          OnValueChanged:
+            m_PersistentCalls:
+              m_Calls: []
+          m_value: 0
+          m_defaultValue: 0
+        splitRatio: 0.3
+        isDragging: 0
+      - key: _Clear0
+        value:
+          m_key: 
+          OnValueChanged:
+            m_PersistentCalls:
+              m_Calls: []
+          m_value: 1
+          m_defaultValue: 0
+        splitRatio: 0.3
+        isDragging: 0
+      - key: _Writing1
+        value:
+          m_key: 
+          OnValueChanged:
+            m_PersistentCalls:
+              m_Calls: []
+          m_value: 0
+          m_defaultValue: 0
+        splitRatio: 0.3
+        isDragging: 0
+      - key: _Nextable1
+        value:
+          m_key: 
+          OnValueChanged:
+            m_PersistentCalls:
+              m_Calls: []
+          m_value: 0
+          m_defaultValue: 0
+        splitRatio: 0.3
+        isDragging: 0
+      - key: _Cancelable1
+        value:
+          m_key: 
+          OnValueChanged:
+            m_PersistentCalls:
+              m_Calls: []
+          m_value: 0
+          m_defaultValue: 0
+        splitRatio: 0.3
+        isDragging: 0
+      - key: _Skippable1
+        value:
+          m_key: 
+          OnValueChanged:
+            m_PersistentCalls:
+              m_Calls: []
+          m_value: 0
+          m_defaultValue: 0
+        splitRatio: 0.3
+        isDragging: 0
+      - key: _Async1
+        value:
+          m_key: 
+          OnValueChanged:
+            m_PersistentCalls:
+              m_Calls: []
+          m_value: 0
+          m_defaultValue: 0
+        splitRatio: 0.3
+        isDragging: 0
+      - key: _Clear1
+        value:
+          m_key: 
+          OnValueChanged:
+            m_PersistentCalls:
+              m_Calls: []
+          m_value: 0
+          m_defaultValue: 0
+        splitRatio: 0.3
+        isDragging: 0
+      folded: 0
+    m_intVars:
+      list:
+      - key: testInt
+        value:
+          m_key: 
+          OnValueChanged:
+            m_PersistentCalls:
+              m_Calls: []
+          m_value: 0
+          m_defaultValue: 0
+        splitRatio: 0.3
+        isDragging: 0
+      - key: _Window0
+        value:
+          m_key: 
+          OnValueChanged:
+            m_PersistentCalls:
+              m_Calls: []
+          m_value: 2
+          m_defaultValue: 0
+        splitRatio: 0.3
+        isDragging: 0
+      - key: _Window1
+        value:
+          m_key: 
+          OnValueChanged:
+            m_PersistentCalls:
+              m_Calls: []
+          m_value: 0
+          m_defaultValue: 0
+        splitRatio: 0.3
+        isDragging: 0
+      folded: 0
+    m_floatVars:
+      list:
+      - key: testFloat
+        value:
+          m_key: 
+          OnValueChanged:
+            m_PersistentCalls:
+              m_Calls: []
+          m_value: 0
+          m_defaultValue: 0
+        splitRatio: 0.3
+        isDragging: 0
+      folded: 0
+    m_stringVars:
+      list:
+      - key: testString
+        value:
+          m_key: 
+          OnValueChanged:
+            m_PersistentCalls:
+              m_Calls: []
+          m_value: 
+          m_defaultValue: 
+        splitRatio: 0.3
+        isDragging: 0
+      - key: _Name0
+        value:
+          m_key: 
+          OnValueChanged:
+            m_PersistentCalls:
+              m_Calls: []
+          m_value: Name0
+          m_defaultValue: 
+        splitRatio: 0.3
+        isDragging: 0
+      - key: _Text0
+        value:
+          m_key: 
+          OnValueChanged:
+            m_PersistentCalls:
+              m_Calls: []
+          m_value: Hello World
+          m_defaultValue: 
+        splitRatio: 0.3
+        isDragging: 0
+      - key: _Name1
+        value:
+          m_key: 
+          OnValueChanged:
+            m_PersistentCalls:
+              m_Calls: []
+          m_value: 
+          m_defaultValue: 
+        splitRatio: 0.3
+        isDragging: 0
+      - key: _Text1
+        value:
+          m_key: 
+          OnValueChanged:
+            m_PersistentCalls:
+              m_Calls: []
+          m_value: 
+          m_defaultValue: 
+        splitRatio: 0.3
+        isDragging: 0
+      folded: 0
+    m_vector3Vars:
+      list:
+      - key: testVector
+        value:
+          m_key: 
+          OnValueChanged:
+            m_PersistentCalls:
+              m_Calls: []
+          m_value: {x: 0, y: 0, z: 0}
+          m_defaultValue: {x: 0, y: 0, z: 0}
+        splitRatio: 0.3
+        isDragging: 0
+      folded: 0
+    m_quaternionVars:
+      list:
+      - key: testQ
+        value:
+          m_key: 
+          OnValueChanged:
+            m_PersistentCalls:
+              m_Calls: []
+          m_value: {x: 0, y: 0, z: 0, w: 0}
+          m_defaultValue: {x: 0, y: 0, z: 0, w: 0}
+        splitRatio: 0.3
+        isDragging: 0
+      folded: 0
+    m_objects:
+      list:
+      - key: aaa
+        value:
+          key: 
+          objectType: 0
+          prefab: {fileID: 0}
+          sprite: {fileID: 0}
+          texture: {fileID: 0}
+          audioClip: {fileID: 0}
+        splitRatio: 0.3
+        isDragging: 0
+      - key: bbb
+        value:
+          key: 
+          objectType: 0
+          prefab: {fileID: 0}
+          sprite: {fileID: 0}
+          texture: {fileID: 0}
+          audioClip: {fileID: 0}
+        splitRatio: 0.3
+        isDragging: 0
+      folded: 0

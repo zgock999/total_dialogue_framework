@@ -9,6 +9,7 @@ using System.Reflection;
 using TotalDialogue.Core.Collections;
 using TotalDialogue.Core.Variables;
 using Codice.CM.SEIDInfo;
+using System.Collections.Generic;
 
 namespace TotalDialogue.Editor
 {
@@ -131,10 +132,18 @@ namespace TotalDialogue.Editor
         }
         protected virtual void DoDrawHeader(Rect rect, SerializedProperty property)
         {
-            EditorGUI.LabelField(rect, property.displayName);
+            rect.x += 10; // Indent the header to match the foldout
+            bool isExpanded = !property.FindPropertyRelative("folded").boolValue;
+            isExpanded = EditorGUI.Foldout(rect, isExpanded, property.displayName, true);
+            property.FindPropertyRelative("folded").boolValue = !isExpanded;
+            //EditorGUI.LabelField(rect, property.displayName);
+            reorderableList.displayAdd = isExpanded;
+            reorderableList.displayRemove = isExpanded;
+            reorderableList.draggable = isExpanded;
         }
         protected virtual void DoDrawElement(Rect rect, int index, bool isActive, bool isFocused, SerializedProperty property)
         {
+            if (property.FindPropertyRelative("folded").boolValue) return;
             var list = property.FindPropertyRelative("list");
             var element = list.GetArrayElementAtIndex(index);
             rect.y += 2;
@@ -175,6 +184,7 @@ namespace TotalDialogue.Editor
         }
         protected virtual float DoElementHeight(int index, SerializedProperty property)
         {
+            if (property.FindPropertyRelative("folded").boolValue) return 0;
             var list = property.FindPropertyRelative("list");
             var element = list.GetArrayElementAtIndex(index);
             var key = element.FindPropertyRelative("key");

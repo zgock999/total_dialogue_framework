@@ -37,6 +37,7 @@ namespace TotalDialogue.Editor
 
             EditorGUI.PropertyField(keyRect, keyProperty, GUIContent.none);
             EditorGUI.PropertyField(valueRect, valueProperty, GUIContent.none);
+            //EditorGUI.PropertyField(position, valueProperty, GUIContent.none);
 
             // ドラッグによるリサイズをサポートするためのコード
             var dragArea = new Rect(position.x + position.width * splitRatio - 4, position.y, 8, position.height);
@@ -60,6 +61,14 @@ namespace TotalDialogue.Editor
             }
 
             EditorGUI.EndProperty();
+        }
+        public override float GetPropertyHeight(SerializedProperty property, GUIContent label)
+        {
+            var keyProperty = property.FindPropertyRelative("key");
+            var valueProperty = property.FindPropertyRelative("value");
+            float keyHeight = EditorGUI.GetPropertyHeight(keyProperty, label);
+            float valueHeight = EditorGUI.GetPropertyHeight(valueProperty, label);
+            return Mathf.Max(keyHeight, valueHeight);
         }
     }
 }
