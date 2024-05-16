@@ -78,6 +78,9 @@ crashlytics-build.properties
 
 # Plugins
 /[Aa]ssets/[Pp]lugins/
+/[Aa]ssets/[Pp]lugins.meta
+/[Aa]ssets/[Rr]esources/DOTweenSettings.*
+
 
 # UVC
 .plastic/
