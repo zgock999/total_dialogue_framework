@@ -1,0 +1,1820 @@
+### YamlMime:ManagedReference
+items:
+- uid: TotalDialogue.Core.Variables.Vector3Var
+  commentId: T:TotalDialogue.Core.Variables.Vector3Var
+  id: Vector3Var
+  parent: TotalDialogue.Core.Variables
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: Vector3Var
+  nameWithType: Vector3Var
+  fullName: TotalDialogue.Core.Variables.Vector3Var
+  type: Class
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/Vector3Var.cs
+      branch: master
+      repo: git@github.com:zgock999/total_dialogue_framework.git
+    id: Vector3Var
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/Vector3Var.cs
+    startLine: 6
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Variables
+  syntax:
+    content: 'public class Vector3Var : TDFVar<Vector3, Vector3Listener>, ITDFVar<Vector3, Vector3Listener>, IEmptyVar'
+    content.vb: Public Class Vector3Var Inherits TDFVar(Of Vector3, Vector3Listener) Implements ITDFVar(Of Vector3, Vector3Listener), IEmptyVar
+  inheritance:
+  - System.Object
+  - TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}
+  implements:
+  - TotalDialogue.Core.Variables.ITDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}
+  - TotalDialogue.Core.Variables.IEmptyVar
+  inheritedMembers:
+  - TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.m_listeners
+  - TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.m_key
+  - TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.m_value
+  - TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.m_defaultValue
+  - TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.Key
+  - TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.Value
+  - TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.GetValue
+  - TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.SetValue(UnityEngine.Vector3)
+  - TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.Fire(TotalDialogue.Core.Variables.Vector3Listener,UnityEngine.Vector3,UnityEngine.Vector3,System.Boolean)
+  - TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.IsChanged(UnityEngine.Vector3,UnityEngine.Vector3)
+  - TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.IsBecome(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3)
+  - TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.IsCease(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3)
+  - TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.DefaultValue
+  - TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.StoreDefault
+  - TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.RestoreDefault
+  - TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.StringValue
+  - TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.Interface
+  - TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.AddListener(TotalDialogue.Core.Variables.Vector3Listener)
+  - TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.RemoveListener(TotalDialogue.Core.Variables.Vector3Listener)
+  - TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.GetBoolValue
+  - TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.GetIntValue
+  - TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.GetFloatValue
+  - TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.GetStringValue
+  - TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.GetVector3Value
+  - TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.GetQuaternionValue
+  - TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.SetBoolValue(System.Boolean)
+  - TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.SetIntValue(System.Int32)
+  - TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.SetFloatValue(System.Single)
+  - TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.SetStringValue(System.String)
+  - TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.SetVector3Value(UnityEngine.Vector3)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+references:
+- uid: TotalDialogue.Core.Variables
+  commentId: N:TotalDialogue.Core.Variables
+  href: TotalDialogue.html
+  name: TotalDialogue.Core.Variables
+  nameWithType: TotalDialogue.Core.Variables
+  fullName: TotalDialogue.Core.Variables
+  spec.csharp:
+  - uid: TotalDialogue
+    name: TotalDialogue
+    href: TotalDialogue.html
+  - name: .
+  - uid: TotalDialogue.Core
+    name: Core
+    href: TotalDialogue.Core.html
+  - name: .
+  - uid: TotalDialogue.Core.Variables
+    name: Variables
+    href: TotalDialogue.Core.Variables.html
+  spec.vb:
+  - uid: TotalDialogue
+    name: TotalDialogue
+    href: TotalDialogue.html
+  - name: .
+  - uid: TotalDialogue.Core
+    name: Core
+    href: TotalDialogue.Core.html
+  - name: .
+  - uid: TotalDialogue.Core.Variables
+    name: Variables
+    href: TotalDialogue.Core.Variables.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}
+  commentId: T:TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}
+  parent: TotalDialogue.Core.Variables
+  definition: TotalDialogue.Core.Variables.TDFVar`2
+  href: TotalDialogue.Core.Variables.TDFVar-2.html
+  name: TDFVar<Vector3, Vector3Listener>
+  nameWithType: TDFVar<Vector3, Vector3Listener>
+  fullName: TotalDialogue.Core.Variables.TDFVar<UnityEngine.Vector3, TotalDialogue.Core.Variables.Vector3Listener>
+  nameWithType.vb: TDFVar(Of Vector3, Vector3Listener)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of UnityEngine.Vector3, TotalDialogue.Core.Variables.Vector3Listener)
+  name.vb: TDFVar(Of Vector3, Vector3Listener)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2
+    name: TDFVar
+    href: TotalDialogue.Core.Variables.TDFVar-2.html
+  - name: <
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: TotalDialogue.Core.Variables.Vector3Listener
+    name: Vector3Listener
+    href: TotalDialogue.Core.Variables.Vector3Listener.html
+  - name: '>'
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2
+    name: TDFVar
+    href: TotalDialogue.Core.Variables.TDFVar-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: TotalDialogue.Core.Variables.Vector3Listener
+    name: Vector3Listener
+    href: TotalDialogue.Core.Variables.Vector3Listener.html
+  - name: )
+- uid: TotalDialogue.Core.Variables.ITDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}
+  commentId: T:TotalDialogue.Core.Variables.ITDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}
+  parent: TotalDialogue.Core.Variables
+  definition: TotalDialogue.Core.Variables.ITDFVar`2
+  href: TotalDialogue.Core.Variables.ITDFVar-2.html
+  name: ITDFVar<Vector3, Vector3Listener>
+  nameWithType: ITDFVar<Vector3, Vector3Listener>
+  fullName: TotalDialogue.Core.Variables.ITDFVar<UnityEngine.Vector3, TotalDialogue.Core.Variables.Vector3Listener>
+  nameWithType.vb: ITDFVar(Of Vector3, Vector3Listener)
+  fullName.vb: TotalDialogue.Core.Variables.ITDFVar(Of UnityEngine.Vector3, TotalDialogue.Core.Variables.Vector3Listener)
+  name.vb: ITDFVar(Of Vector3, Vector3Listener)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.ITDFVar`2
+    name: ITDFVar
+    href: TotalDialogue.Core.Variables.ITDFVar-2.html
+  - name: <
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: TotalDialogue.Core.Variables.Vector3Listener
+    name: Vector3Listener
+    href: TotalDialogue.Core.Variables.Vector3Listener.html
+  - name: '>'
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.ITDFVar`2
+    name: ITDFVar
+    href: TotalDialogue.Core.Variables.ITDFVar-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: TotalDialogue.Core.Variables.Vector3Listener
+    name: Vector3Listener
+    href: TotalDialogue.Core.Variables.Vector3Listener.html
+  - name: )
+- uid: TotalDialogue.Core.Variables.IEmptyVar
+  commentId: T:TotalDialogue.Core.Variables.IEmptyVar
+  parent: TotalDialogue.Core.Variables
+  href: TotalDialogue.Core.Variables.IEmptyVar.html
+  name: IEmptyVar
+  nameWithType: IEmptyVar
+  fullName: TotalDialogue.Core.Variables.IEmptyVar
+- uid: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.m_listeners
+  commentId: F:TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.m_listeners
+  parent: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}
+  definition: TotalDialogue.Core.Variables.TDFVar`2.m_listeners
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_m_listeners
+  name: m_listeners
+  nameWithType: TDFVar<Vector3, Vector3Listener>.m_listeners
+  fullName: TotalDialogue.Core.Variables.TDFVar<UnityEngine.Vector3, TotalDialogue.Core.Variables.Vector3Listener>.m_listeners
+  nameWithType.vb: TDFVar(Of Vector3, Vector3Listener).m_listeners
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of UnityEngine.Vector3, TotalDialogue.Core.Variables.Vector3Listener).m_listeners
+- uid: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.m_key
+  commentId: F:TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.m_key
+  parent: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}
+  definition: TotalDialogue.Core.Variables.TDFVar`2.m_key
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_m_key
+  name: m_key
+  nameWithType: TDFVar<Vector3, Vector3Listener>.m_key
+  fullName: TotalDialogue.Core.Variables.TDFVar<UnityEngine.Vector3, TotalDialogue.Core.Variables.Vector3Listener>.m_key
+  nameWithType.vb: TDFVar(Of Vector3, Vector3Listener).m_key
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of UnityEngine.Vector3, TotalDialogue.Core.Variables.Vector3Listener).m_key
+- uid: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.m_value
+  commentId: F:TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.m_value
+  parent: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}
+  definition: TotalDialogue.Core.Variables.TDFVar`2.m_value
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_m_value
+  name: m_value
+  nameWithType: TDFVar<Vector3, Vector3Listener>.m_value
+  fullName: TotalDialogue.Core.Variables.TDFVar<UnityEngine.Vector3, TotalDialogue.Core.Variables.Vector3Listener>.m_value
+  nameWithType.vb: TDFVar(Of Vector3, Vector3Listener).m_value
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of UnityEngine.Vector3, TotalDialogue.Core.Variables.Vector3Listener).m_value
+- uid: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.m_defaultValue
+  commentId: F:TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.m_defaultValue
+  parent: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}
+  definition: TotalDialogue.Core.Variables.TDFVar`2.m_defaultValue
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_m_defaultValue
+  name: m_defaultValue
+  nameWithType: TDFVar<Vector3, Vector3Listener>.m_defaultValue
+  fullName: TotalDialogue.Core.Variables.TDFVar<UnityEngine.Vector3, TotalDialogue.Core.Variables.Vector3Listener>.m_defaultValue
+  nameWithType.vb: TDFVar(Of Vector3, Vector3Listener).m_defaultValue
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of UnityEngine.Vector3, TotalDialogue.Core.Variables.Vector3Listener).m_defaultValue
+- uid: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.Key
+  commentId: P:TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.Key
+  parent: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}
+  definition: TotalDialogue.Core.Variables.TDFVar`2.Key
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_Key
+  name: Key
+  nameWithType: TDFVar<Vector3, Vector3Listener>.Key
+  fullName: TotalDialogue.Core.Variables.TDFVar<UnityEngine.Vector3, TotalDialogue.Core.Variables.Vector3Listener>.Key
+  nameWithType.vb: TDFVar(Of Vector3, Vector3Listener).Key
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of UnityEngine.Vector3, TotalDialogue.Core.Variables.Vector3Listener).Key
+- uid: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.Value
+  commentId: P:TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.Value
+  parent: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}
+  definition: TotalDialogue.Core.Variables.TDFVar`2.Value
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_Value
+  name: Value
+  nameWithType: TDFVar<Vector3, Vector3Listener>.Value
+  fullName: TotalDialogue.Core.Variables.TDFVar<UnityEngine.Vector3, TotalDialogue.Core.Variables.Vector3Listener>.Value
+  nameWithType.vb: TDFVar(Of Vector3, Vector3Listener).Value
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of UnityEngine.Vector3, TotalDialogue.Core.Variables.Vector3Listener).Value
+- uid: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.GetValue
+  commentId: M:TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.GetValue
+  parent: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}
+  definition: TotalDialogue.Core.Variables.TDFVar`2.GetValue
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetValue
+  name: GetValue()
+  nameWithType: TDFVar<Vector3, Vector3Listener>.GetValue()
+  fullName: TotalDialogue.Core.Variables.TDFVar<UnityEngine.Vector3, TotalDialogue.Core.Variables.Vector3Listener>.GetValue()
+  nameWithType.vb: TDFVar(Of Vector3, Vector3Listener).GetValue()
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of UnityEngine.Vector3, TotalDialogue.Core.Variables.Vector3Listener).GetValue()
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.GetValue
+    name: GetValue
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetValue
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.GetValue
+    name: GetValue
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetValue
+  - name: (
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.SetValue(UnityEngine.Vector3)
+  commentId: M:TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.SetValue(UnityEngine.Vector3)
+  parent: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}
+  definition: TotalDialogue.Core.Variables.TDFVar`2.SetValue(`0)
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetValue__0_
+  name: SetValue(Vector3)
+  nameWithType: TDFVar<Vector3, Vector3Listener>.SetValue(Vector3)
+  fullName: TotalDialogue.Core.Variables.TDFVar<UnityEngine.Vector3, TotalDialogue.Core.Variables.Vector3Listener>.SetValue(UnityEngine.Vector3)
+  nameWithType.vb: TDFVar(Of Vector3, Vector3Listener).SetValue(Vector3)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of UnityEngine.Vector3, TotalDialogue.Core.Variables.Vector3Listener).SetValue(UnityEngine.Vector3)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.SetValue(UnityEngine.Vector3)
+    name: SetValue
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetValue__0_
+  - name: (
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.SetValue(UnityEngine.Vector3)
+    name: SetValue
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetValue__0_
+  - name: (
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.Fire(TotalDialogue.Core.Variables.Vector3Listener,UnityEngine.Vector3,UnityEngine.Vector3,System.Boolean)
+  commentId: M:TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.Fire(TotalDialogue.Core.Variables.Vector3Listener,UnityEngine.Vector3,UnityEngine.Vector3,System.Boolean)
+  parent: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}
+  definition: TotalDialogue.Core.Variables.TDFVar`2.Fire(`1,`0,`0,System.Boolean)
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_Fire__1__0__0_System_Boolean_
+  name: Fire(Vector3Listener, Vector3, Vector3, bool)
+  nameWithType: TDFVar<Vector3, Vector3Listener>.Fire(Vector3Listener, Vector3, Vector3, bool)
+  fullName: TotalDialogue.Core.Variables.TDFVar<UnityEngine.Vector3, TotalDialogue.Core.Variables.Vector3Listener>.Fire(TotalDialogue.Core.Variables.Vector3Listener, UnityEngine.Vector3, UnityEngine.Vector3, bool)
+  nameWithType.vb: TDFVar(Of Vector3, Vector3Listener).Fire(Vector3Listener, Vector3, Vector3, Boolean)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of UnityEngine.Vector3, TotalDialogue.Core.Variables.Vector3Listener).Fire(TotalDialogue.Core.Variables.Vector3Listener, UnityEngine.Vector3, UnityEngine.Vector3, Boolean)
+  name.vb: Fire(Vector3Listener, Vector3, Vector3, Boolean)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.Fire(TotalDialogue.Core.Variables.Vector3Listener,UnityEngine.Vector3,UnityEngine.Vector3,System.Boolean)
+    name: Fire
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_Fire__1__0__0_System_Boolean_
+  - name: (
+  - uid: TotalDialogue.Core.Variables.Vector3Listener
+    name: Vector3Listener
+    href: TotalDialogue.Core.Variables.Vector3Listener.html
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.Fire(TotalDialogue.Core.Variables.Vector3Listener,UnityEngine.Vector3,UnityEngine.Vector3,System.Boolean)
+    name: Fire
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_Fire__1__0__0_System_Boolean_
+  - name: (
+  - uid: TotalDialogue.Core.Variables.Vector3Listener
+    name: Vector3Listener
+    href: TotalDialogue.Core.Variables.Vector3Listener.html
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.IsChanged(UnityEngine.Vector3,UnityEngine.Vector3)
+  commentId: M:TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.IsChanged(UnityEngine.Vector3,UnityEngine.Vector3)
+  parent: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}
+  definition: TotalDialogue.Core.Variables.TDFVar`2.IsChanged(`0,`0)
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_IsChanged__0__0_
+  name: IsChanged(Vector3, Vector3)
+  nameWithType: TDFVar<Vector3, Vector3Listener>.IsChanged(Vector3, Vector3)
+  fullName: TotalDialogue.Core.Variables.TDFVar<UnityEngine.Vector3, TotalDialogue.Core.Variables.Vector3Listener>.IsChanged(UnityEngine.Vector3, UnityEngine.Vector3)
+  nameWithType.vb: TDFVar(Of Vector3, Vector3Listener).IsChanged(Vector3, Vector3)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of UnityEngine.Vector3, TotalDialogue.Core.Variables.Vector3Listener).IsChanged(UnityEngine.Vector3, UnityEngine.Vector3)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.IsChanged(UnityEngine.Vector3,UnityEngine.Vector3)
+    name: IsChanged
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_IsChanged__0__0_
+  - name: (
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.IsChanged(UnityEngine.Vector3,UnityEngine.Vector3)
+    name: IsChanged
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_IsChanged__0__0_
+  - name: (
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.IsBecome(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3)
+  commentId: M:TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.IsBecome(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3)
+  parent: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}
+  definition: TotalDialogue.Core.Variables.TDFVar`2.IsBecome(`0,`0,`0)
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_IsBecome__0__0__0_
+  name: IsBecome(Vector3, Vector3, Vector3)
+  nameWithType: TDFVar<Vector3, Vector3Listener>.IsBecome(Vector3, Vector3, Vector3)
+  fullName: TotalDialogue.Core.Variables.TDFVar<UnityEngine.Vector3, TotalDialogue.Core.Variables.Vector3Listener>.IsBecome(UnityEngine.Vector3, UnityEngine.Vector3, UnityEngine.Vector3)
+  nameWithType.vb: TDFVar(Of Vector3, Vector3Listener).IsBecome(Vector3, Vector3, Vector3)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of UnityEngine.Vector3, TotalDialogue.Core.Variables.Vector3Listener).IsBecome(UnityEngine.Vector3, UnityEngine.Vector3, UnityEngine.Vector3)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.IsBecome(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3)
+    name: IsBecome
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_IsBecome__0__0__0_
+  - name: (
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.IsBecome(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3)
+    name: IsBecome
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_IsBecome__0__0__0_
+  - name: (
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.IsCease(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3)
+  commentId: M:TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.IsCease(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3)
+  parent: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}
+  definition: TotalDialogue.Core.Variables.TDFVar`2.IsCease(`0,`0,`0)
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_IsCease__0__0__0_
+  name: IsCease(Vector3, Vector3, Vector3)
+  nameWithType: TDFVar<Vector3, Vector3Listener>.IsCease(Vector3, Vector3, Vector3)
+  fullName: TotalDialogue.Core.Variables.TDFVar<UnityEngine.Vector3, TotalDialogue.Core.Variables.Vector3Listener>.IsCease(UnityEngine.Vector3, UnityEngine.Vector3, UnityEngine.Vector3)
+  nameWithType.vb: TDFVar(Of Vector3, Vector3Listener).IsCease(Vector3, Vector3, Vector3)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of UnityEngine.Vector3, TotalDialogue.Core.Variables.Vector3Listener).IsCease(UnityEngine.Vector3, UnityEngine.Vector3, UnityEngine.Vector3)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.IsCease(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3)
+    name: IsCease
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_IsCease__0__0__0_
+  - name: (
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.IsCease(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3)
+    name: IsCease
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_IsCease__0__0__0_
+  - name: (
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.DefaultValue
+  commentId: P:TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.DefaultValue
+  parent: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}
+  definition: TotalDialogue.Core.Variables.TDFVar`2.DefaultValue
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_DefaultValue
+  name: DefaultValue
+  nameWithType: TDFVar<Vector3, Vector3Listener>.DefaultValue
+  fullName: TotalDialogue.Core.Variables.TDFVar<UnityEngine.Vector3, TotalDialogue.Core.Variables.Vector3Listener>.DefaultValue
+  nameWithType.vb: TDFVar(Of Vector3, Vector3Listener).DefaultValue
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of UnityEngine.Vector3, TotalDialogue.Core.Variables.Vector3Listener).DefaultValue
+- uid: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.StoreDefault
+  commentId: M:TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.StoreDefault
+  parent: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}
+  definition: TotalDialogue.Core.Variables.TDFVar`2.StoreDefault
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_StoreDefault
+  name: StoreDefault()
+  nameWithType: TDFVar<Vector3, Vector3Listener>.StoreDefault()
+  fullName: TotalDialogue.Core.Variables.TDFVar<UnityEngine.Vector3, TotalDialogue.Core.Variables.Vector3Listener>.StoreDefault()
+  nameWithType.vb: TDFVar(Of Vector3, Vector3Listener).StoreDefault()
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of UnityEngine.Vector3, TotalDialogue.Core.Variables.Vector3Listener).StoreDefault()
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.StoreDefault
+    name: StoreDefault
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_StoreDefault
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.StoreDefault
+    name: StoreDefault
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_StoreDefault
+  - name: (
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.RestoreDefault
+  commentId: M:TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.RestoreDefault
+  parent: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}
+  definition: TotalDialogue.Core.Variables.TDFVar`2.RestoreDefault
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_RestoreDefault
+  name: RestoreDefault()
+  nameWithType: TDFVar<Vector3, Vector3Listener>.RestoreDefault()
+  fullName: TotalDialogue.Core.Variables.TDFVar<UnityEngine.Vector3, TotalDialogue.Core.Variables.Vector3Listener>.RestoreDefault()
+  nameWithType.vb: TDFVar(Of Vector3, Vector3Listener).RestoreDefault()
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of UnityEngine.Vector3, TotalDialogue.Core.Variables.Vector3Listener).RestoreDefault()
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.RestoreDefault
+    name: RestoreDefault
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_RestoreDefault
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.RestoreDefault
+    name: RestoreDefault
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_RestoreDefault
+  - name: (
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.StringValue
+  commentId: P:TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.StringValue
+  parent: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}
+  definition: TotalDialogue.Core.Variables.TDFVar`2.StringValue
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_StringValue
+  name: StringValue
+  nameWithType: TDFVar<Vector3, Vector3Listener>.StringValue
+  fullName: TotalDialogue.Core.Variables.TDFVar<UnityEngine.Vector3, TotalDialogue.Core.Variables.Vector3Listener>.StringValue
+  nameWithType.vb: TDFVar(Of Vector3, Vector3Listener).StringValue
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of UnityEngine.Vector3, TotalDialogue.Core.Variables.Vector3Listener).StringValue
+- uid: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.Interface
+  commentId: P:TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.Interface
+  parent: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}
+  definition: TotalDialogue.Core.Variables.TDFVar`2.Interface
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_Interface
+  name: Interface
+  nameWithType: TDFVar<Vector3, Vector3Listener>.Interface
+  fullName: TotalDialogue.Core.Variables.TDFVar<UnityEngine.Vector3, TotalDialogue.Core.Variables.Vector3Listener>.Interface
+  nameWithType.vb: TDFVar(Of Vector3, Vector3Listener).Interface
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of UnityEngine.Vector3, TotalDialogue.Core.Variables.Vector3Listener).Interface
+- uid: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.AddListener(TotalDialogue.Core.Variables.Vector3Listener)
+  commentId: M:TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.AddListener(TotalDialogue.Core.Variables.Vector3Listener)
+  parent: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}
+  definition: TotalDialogue.Core.Variables.TDFVar`2.AddListener(`1)
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_AddListener__1_
+  name: AddListener(Vector3Listener)
+  nameWithType: TDFVar<Vector3, Vector3Listener>.AddListener(Vector3Listener)
+  fullName: TotalDialogue.Core.Variables.TDFVar<UnityEngine.Vector3, TotalDialogue.Core.Variables.Vector3Listener>.AddListener(TotalDialogue.Core.Variables.Vector3Listener)
+  nameWithType.vb: TDFVar(Of Vector3, Vector3Listener).AddListener(Vector3Listener)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of UnityEngine.Vector3, TotalDialogue.Core.Variables.Vector3Listener).AddListener(TotalDialogue.Core.Variables.Vector3Listener)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.AddListener(TotalDialogue.Core.Variables.Vector3Listener)
+    name: AddListener
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_AddListener__1_
+  - name: (
+  - uid: TotalDialogue.Core.Variables.Vector3Listener
+    name: Vector3Listener
+    href: TotalDialogue.Core.Variables.Vector3Listener.html
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.AddListener(TotalDialogue.Core.Variables.Vector3Listener)
+    name: AddListener
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_AddListener__1_
+  - name: (
+  - uid: TotalDialogue.Core.Variables.Vector3Listener
+    name: Vector3Listener
+    href: TotalDialogue.Core.Variables.Vector3Listener.html
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.RemoveListener(TotalDialogue.Core.Variables.Vector3Listener)
+  commentId: M:TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.RemoveListener(TotalDialogue.Core.Variables.Vector3Listener)
+  parent: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}
+  definition: TotalDialogue.Core.Variables.TDFVar`2.RemoveListener(`1)
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_RemoveListener__1_
+  name: RemoveListener(Vector3Listener)
+  nameWithType: TDFVar<Vector3, Vector3Listener>.RemoveListener(Vector3Listener)
+  fullName: TotalDialogue.Core.Variables.TDFVar<UnityEngine.Vector3, TotalDialogue.Core.Variables.Vector3Listener>.RemoveListener(TotalDialogue.Core.Variables.Vector3Listener)
+  nameWithType.vb: TDFVar(Of Vector3, Vector3Listener).RemoveListener(Vector3Listener)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of UnityEngine.Vector3, TotalDialogue.Core.Variables.Vector3Listener).RemoveListener(TotalDialogue.Core.Variables.Vector3Listener)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.RemoveListener(TotalDialogue.Core.Variables.Vector3Listener)
+    name: RemoveListener
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_RemoveListener__1_
+  - name: (
+  - uid: TotalDialogue.Core.Variables.Vector3Listener
+    name: Vector3Listener
+    href: TotalDialogue.Core.Variables.Vector3Listener.html
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.RemoveListener(TotalDialogue.Core.Variables.Vector3Listener)
+    name: RemoveListener
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_RemoveListener__1_
+  - name: (
+  - uid: TotalDialogue.Core.Variables.Vector3Listener
+    name: Vector3Listener
+    href: TotalDialogue.Core.Variables.Vector3Listener.html
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.GetBoolValue
+  commentId: M:TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.GetBoolValue
+  parent: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}
+  definition: TotalDialogue.Core.Variables.TDFVar`2.GetBoolValue
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetBoolValue
+  name: GetBoolValue()
+  nameWithType: TDFVar<Vector3, Vector3Listener>.GetBoolValue()
+  fullName: TotalDialogue.Core.Variables.TDFVar<UnityEngine.Vector3, TotalDialogue.Core.Variables.Vector3Listener>.GetBoolValue()
+  nameWithType.vb: TDFVar(Of Vector3, Vector3Listener).GetBoolValue()
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of UnityEngine.Vector3, TotalDialogue.Core.Variables.Vector3Listener).GetBoolValue()
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.GetBoolValue
+    name: GetBoolValue
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetBoolValue
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.GetBoolValue
+    name: GetBoolValue
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetBoolValue
+  - name: (
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.GetIntValue
+  commentId: M:TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.GetIntValue
+  parent: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}
+  definition: TotalDialogue.Core.Variables.TDFVar`2.GetIntValue
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetIntValue
+  name: GetIntValue()
+  nameWithType: TDFVar<Vector3, Vector3Listener>.GetIntValue()
+  fullName: TotalDialogue.Core.Variables.TDFVar<UnityEngine.Vector3, TotalDialogue.Core.Variables.Vector3Listener>.GetIntValue()
+  nameWithType.vb: TDFVar(Of Vector3, Vector3Listener).GetIntValue()
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of UnityEngine.Vector3, TotalDialogue.Core.Variables.Vector3Listener).GetIntValue()
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.GetIntValue
+    name: GetIntValue
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetIntValue
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.GetIntValue
+    name: GetIntValue
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetIntValue
+  - name: (
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.GetFloatValue
+  commentId: M:TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.GetFloatValue
+  parent: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}
+  definition: TotalDialogue.Core.Variables.TDFVar`2.GetFloatValue
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetFloatValue
+  name: GetFloatValue()
+  nameWithType: TDFVar<Vector3, Vector3Listener>.GetFloatValue()
+  fullName: TotalDialogue.Core.Variables.TDFVar<UnityEngine.Vector3, TotalDialogue.Core.Variables.Vector3Listener>.GetFloatValue()
+  nameWithType.vb: TDFVar(Of Vector3, Vector3Listener).GetFloatValue()
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of UnityEngine.Vector3, TotalDialogue.Core.Variables.Vector3Listener).GetFloatValue()
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.GetFloatValue
+    name: GetFloatValue
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetFloatValue
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.GetFloatValue
+    name: GetFloatValue
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetFloatValue
+  - name: (
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.GetStringValue
+  commentId: M:TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.GetStringValue
+  parent: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}
+  definition: TotalDialogue.Core.Variables.TDFVar`2.GetStringValue
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetStringValue
+  name: GetStringValue()
+  nameWithType: TDFVar<Vector3, Vector3Listener>.GetStringValue()
+  fullName: TotalDialogue.Core.Variables.TDFVar<UnityEngine.Vector3, TotalDialogue.Core.Variables.Vector3Listener>.GetStringValue()
+  nameWithType.vb: TDFVar(Of Vector3, Vector3Listener).GetStringValue()
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of UnityEngine.Vector3, TotalDialogue.Core.Variables.Vector3Listener).GetStringValue()
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.GetStringValue
+    name: GetStringValue
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetStringValue
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.GetStringValue
+    name: GetStringValue
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetStringValue
+  - name: (
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.GetVector3Value
+  commentId: M:TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.GetVector3Value
+  parent: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}
+  definition: TotalDialogue.Core.Variables.TDFVar`2.GetVector3Value
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetVector3Value
+  name: GetVector3Value()
+  nameWithType: TDFVar<Vector3, Vector3Listener>.GetVector3Value()
+  fullName: TotalDialogue.Core.Variables.TDFVar<UnityEngine.Vector3, TotalDialogue.Core.Variables.Vector3Listener>.GetVector3Value()
+  nameWithType.vb: TDFVar(Of Vector3, Vector3Listener).GetVector3Value()
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of UnityEngine.Vector3, TotalDialogue.Core.Variables.Vector3Listener).GetVector3Value()
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.GetVector3Value
+    name: GetVector3Value
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetVector3Value
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.GetVector3Value
+    name: GetVector3Value
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetVector3Value
+  - name: (
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.GetQuaternionValue
+  commentId: M:TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.GetQuaternionValue
+  parent: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}
+  definition: TotalDialogue.Core.Variables.TDFVar`2.GetQuaternionValue
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetQuaternionValue
+  name: GetQuaternionValue()
+  nameWithType: TDFVar<Vector3, Vector3Listener>.GetQuaternionValue()
+  fullName: TotalDialogue.Core.Variables.TDFVar<UnityEngine.Vector3, TotalDialogue.Core.Variables.Vector3Listener>.GetQuaternionValue()
+  nameWithType.vb: TDFVar(Of Vector3, Vector3Listener).GetQuaternionValue()
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of UnityEngine.Vector3, TotalDialogue.Core.Variables.Vector3Listener).GetQuaternionValue()
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.GetQuaternionValue
+    name: GetQuaternionValue
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetQuaternionValue
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.GetQuaternionValue
+    name: GetQuaternionValue
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetQuaternionValue
+  - name: (
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.SetBoolValue(System.Boolean)
+  commentId: M:TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.SetBoolValue(System.Boolean)
+  parent: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}
+  definition: TotalDialogue.Core.Variables.TDFVar`2.SetBoolValue(System.Boolean)
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetBoolValue_System_Boolean_
+  name: SetBoolValue(bool)
+  nameWithType: TDFVar<Vector3, Vector3Listener>.SetBoolValue(bool)
+  fullName: TotalDialogue.Core.Variables.TDFVar<UnityEngine.Vector3, TotalDialogue.Core.Variables.Vector3Listener>.SetBoolValue(bool)
+  nameWithType.vb: TDFVar(Of Vector3, Vector3Listener).SetBoolValue(Boolean)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of UnityEngine.Vector3, TotalDialogue.Core.Variables.Vector3Listener).SetBoolValue(Boolean)
+  name.vb: SetBoolValue(Boolean)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.SetBoolValue(System.Boolean)
+    name: SetBoolValue
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetBoolValue_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.SetBoolValue(System.Boolean)
+    name: SetBoolValue
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetBoolValue_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.SetIntValue(System.Int32)
+  commentId: M:TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.SetIntValue(System.Int32)
+  parent: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}
+  definition: TotalDialogue.Core.Variables.TDFVar`2.SetIntValue(System.Int32)
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetIntValue_System_Int32_
+  name: SetIntValue(int)
+  nameWithType: TDFVar<Vector3, Vector3Listener>.SetIntValue(int)
+  fullName: TotalDialogue.Core.Variables.TDFVar<UnityEngine.Vector3, TotalDialogue.Core.Variables.Vector3Listener>.SetIntValue(int)
+  nameWithType.vb: TDFVar(Of Vector3, Vector3Listener).SetIntValue(Integer)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of UnityEngine.Vector3, TotalDialogue.Core.Variables.Vector3Listener).SetIntValue(Integer)
+  name.vb: SetIntValue(Integer)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.SetIntValue(System.Int32)
+    name: SetIntValue
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetIntValue_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.SetIntValue(System.Int32)
+    name: SetIntValue
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetIntValue_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.SetFloatValue(System.Single)
+  commentId: M:TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.SetFloatValue(System.Single)
+  parent: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}
+  definition: TotalDialogue.Core.Variables.TDFVar`2.SetFloatValue(System.Single)
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetFloatValue_System_Single_
+  name: SetFloatValue(float)
+  nameWithType: TDFVar<Vector3, Vector3Listener>.SetFloatValue(float)
+  fullName: TotalDialogue.Core.Variables.TDFVar<UnityEngine.Vector3, TotalDialogue.Core.Variables.Vector3Listener>.SetFloatValue(float)
+  nameWithType.vb: TDFVar(Of Vector3, Vector3Listener).SetFloatValue(Single)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of UnityEngine.Vector3, TotalDialogue.Core.Variables.Vector3Listener).SetFloatValue(Single)
+  name.vb: SetFloatValue(Single)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.SetFloatValue(System.Single)
+    name: SetFloatValue
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetFloatValue_System_Single_
+  - name: (
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.SetFloatValue(System.Single)
+    name: SetFloatValue
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetFloatValue_System_Single_
+  - name: (
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.SetStringValue(System.String)
+  commentId: M:TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.SetStringValue(System.String)
+  parent: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}
+  definition: TotalDialogue.Core.Variables.TDFVar`2.SetStringValue(System.String)
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetStringValue_System_String_
+  name: SetStringValue(string)
+  nameWithType: TDFVar<Vector3, Vector3Listener>.SetStringValue(string)
+  fullName: TotalDialogue.Core.Variables.TDFVar<UnityEngine.Vector3, TotalDialogue.Core.Variables.Vector3Listener>.SetStringValue(string)
+  nameWithType.vb: TDFVar(Of Vector3, Vector3Listener).SetStringValue(String)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of UnityEngine.Vector3, TotalDialogue.Core.Variables.Vector3Listener).SetStringValue(String)
+  name.vb: SetStringValue(String)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.SetStringValue(System.String)
+    name: SetStringValue
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetStringValue_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.SetStringValue(System.String)
+    name: SetStringValue
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetStringValue_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.SetVector3Value(UnityEngine.Vector3)
+  commentId: M:TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.SetVector3Value(UnityEngine.Vector3)
+  parent: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}
+  definition: TotalDialogue.Core.Variables.TDFVar`2.SetVector3Value(UnityEngine.Vector3)
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetVector3Value_UnityEngine_Vector3_
+  name: SetVector3Value(Vector3)
+  nameWithType: TDFVar<Vector3, Vector3Listener>.SetVector3Value(Vector3)
+  fullName: TotalDialogue.Core.Variables.TDFVar<UnityEngine.Vector3, TotalDialogue.Core.Variables.Vector3Listener>.SetVector3Value(UnityEngine.Vector3)
+  nameWithType.vb: TDFVar(Of Vector3, Vector3Listener).SetVector3Value(Vector3)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of UnityEngine.Vector3, TotalDialogue.Core.Variables.Vector3Listener).SetVector3Value(UnityEngine.Vector3)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.SetVector3Value(UnityEngine.Vector3)
+    name: SetVector3Value
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetVector3Value_UnityEngine_Vector3_
+  - name: (
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.TDFVar{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Listener}.SetVector3Value(UnityEngine.Vector3)
+    name: SetVector3Value
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetVector3Value_UnityEngine_Vector3_
+  - name: (
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: TotalDialogue.Core.Variables.TDFVar`2
+  commentId: T:TotalDialogue.Core.Variables.TDFVar`2
+  href: TotalDialogue.Core.Variables.TDFVar-2.html
+  name: TDFVar<T, TListener>
+  nameWithType: TDFVar<T, TListener>
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>
+  nameWithType.vb: TDFVar(Of T, TListener)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener)
+  name.vb: TDFVar(Of T, TListener)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2
+    name: TDFVar
+    href: TotalDialogue.Core.Variables.TDFVar-2.html
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TListener
+  - name: '>'
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2
+    name: TDFVar
+    href: TotalDialogue.Core.Variables.TDFVar-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TListener
+  - name: )
+- uid: TotalDialogue.Core.Variables.ITDFVar`2
+  commentId: T:TotalDialogue.Core.Variables.ITDFVar`2
+  parent: TotalDialogue.Core.Variables
+  href: TotalDialogue.Core.Variables.ITDFVar-2.html
+  name: ITDFVar<T, TListener>
+  nameWithType: ITDFVar<T, TListener>
+  fullName: TotalDialogue.Core.Variables.ITDFVar<T, TListener>
+  nameWithType.vb: ITDFVar(Of T, TListener)
+  fullName.vb: TotalDialogue.Core.Variables.ITDFVar(Of T, TListener)
+  name.vb: ITDFVar(Of T, TListener)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.ITDFVar`2
+    name: ITDFVar
+    href: TotalDialogue.Core.Variables.ITDFVar-2.html
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TListener
+  - name: '>'
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.ITDFVar`2
+    name: ITDFVar
+    href: TotalDialogue.Core.Variables.ITDFVar-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TListener
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVar`2.m_listeners
+  commentId: F:TotalDialogue.Core.Variables.TDFVar`2.m_listeners
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_m_listeners
+  name: m_listeners
+  nameWithType: TDFVar<T, TListener>.m_listeners
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.m_listeners
+  nameWithType.vb: TDFVar(Of T, TListener).m_listeners
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).m_listeners
+- uid: TotalDialogue.Core.Variables.TDFVar`2.m_key
+  commentId: F:TotalDialogue.Core.Variables.TDFVar`2.m_key
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_m_key
+  name: m_key
+  nameWithType: TDFVar<T, TListener>.m_key
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.m_key
+  nameWithType.vb: TDFVar(Of T, TListener).m_key
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).m_key
+- uid: TotalDialogue.Core.Variables.TDFVar`2.m_value
+  commentId: F:TotalDialogue.Core.Variables.TDFVar`2.m_value
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_m_value
+  name: m_value
+  nameWithType: TDFVar<T, TListener>.m_value
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.m_value
+  nameWithType.vb: TDFVar(Of T, TListener).m_value
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).m_value
+- uid: TotalDialogue.Core.Variables.TDFVar`2.m_defaultValue
+  commentId: F:TotalDialogue.Core.Variables.TDFVar`2.m_defaultValue
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_m_defaultValue
+  name: m_defaultValue
+  nameWithType: TDFVar<T, TListener>.m_defaultValue
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.m_defaultValue
+  nameWithType.vb: TDFVar(Of T, TListener).m_defaultValue
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).m_defaultValue
+- uid: TotalDialogue.Core.Variables.TDFVar`2.Key
+  commentId: P:TotalDialogue.Core.Variables.TDFVar`2.Key
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_Key
+  name: Key
+  nameWithType: TDFVar<T, TListener>.Key
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.Key
+  nameWithType.vb: TDFVar(Of T, TListener).Key
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).Key
+- uid: TotalDialogue.Core.Variables.TDFVar`2.Value
+  commentId: P:TotalDialogue.Core.Variables.TDFVar`2.Value
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_Value
+  name: Value
+  nameWithType: TDFVar<T, TListener>.Value
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.Value
+  nameWithType.vb: TDFVar(Of T, TListener).Value
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).Value
+- uid: TotalDialogue.Core.Variables.TDFVar`2.GetValue
+  commentId: M:TotalDialogue.Core.Variables.TDFVar`2.GetValue
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetValue
+  name: GetValue()
+  nameWithType: TDFVar<T, TListener>.GetValue()
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.GetValue()
+  nameWithType.vb: TDFVar(Of T, TListener).GetValue()
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).GetValue()
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2.GetValue
+    name: GetValue
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetValue
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2.GetValue
+    name: GetValue
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetValue
+  - name: (
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVar`2.SetValue(`0)
+  commentId: M:TotalDialogue.Core.Variables.TDFVar`2.SetValue(`0)
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetValue__0_
+  name: SetValue(T)
+  nameWithType: TDFVar<T, TListener>.SetValue(T)
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.SetValue(T)
+  nameWithType.vb: TDFVar(Of T, TListener).SetValue(T)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).SetValue(T)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2.SetValue(`0)
+    name: SetValue
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetValue__0_
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2.SetValue(`0)
+    name: SetValue
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetValue__0_
+  - name: (
+  - name: T
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVar`2.Fire(`1,`0,`0,System.Boolean)
+  commentId: M:TotalDialogue.Core.Variables.TDFVar`2.Fire(`1,`0,`0,System.Boolean)
+  isExternal: true
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_Fire__1__0__0_System_Boolean_
+  name: Fire(TListener, T, T, bool)
+  nameWithType: TDFVar<T, TListener>.Fire(TListener, T, T, bool)
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.Fire(TListener, T, T, bool)
+  nameWithType.vb: TDFVar(Of T, TListener).Fire(TListener, T, T, Boolean)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).Fire(TListener, T, T, Boolean)
+  name.vb: Fire(TListener, T, T, Boolean)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2.Fire(`1,`0,`0,System.Boolean)
+    name: Fire
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_Fire__1__0__0_System_Boolean_
+  - name: (
+  - name: TListener
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2.Fire(`1,`0,`0,System.Boolean)
+    name: Fire
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_Fire__1__0__0_System_Boolean_
+  - name: (
+  - name: TListener
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVar`2.IsChanged(`0,`0)
+  commentId: M:TotalDialogue.Core.Variables.TDFVar`2.IsChanged(`0,`0)
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_IsChanged__0__0_
+  name: IsChanged(T, T)
+  nameWithType: TDFVar<T, TListener>.IsChanged(T, T)
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.IsChanged(T, T)
+  nameWithType.vb: TDFVar(Of T, TListener).IsChanged(T, T)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).IsChanged(T, T)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2.IsChanged(`0,`0)
+    name: IsChanged
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_IsChanged__0__0_
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2.IsChanged(`0,`0)
+    name: IsChanged
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_IsChanged__0__0_
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVar`2.IsBecome(`0,`0,`0)
+  commentId: M:TotalDialogue.Core.Variables.TDFVar`2.IsBecome(`0,`0,`0)
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_IsBecome__0__0__0_
+  name: IsBecome(T, T, T)
+  nameWithType: TDFVar<T, TListener>.IsBecome(T, T, T)
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.IsBecome(T, T, T)
+  nameWithType.vb: TDFVar(Of T, TListener).IsBecome(T, T, T)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).IsBecome(T, T, T)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2.IsBecome(`0,`0,`0)
+    name: IsBecome
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_IsBecome__0__0__0_
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2.IsBecome(`0,`0,`0)
+    name: IsBecome
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_IsBecome__0__0__0_
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVar`2.IsCease(`0,`0,`0)
+  commentId: M:TotalDialogue.Core.Variables.TDFVar`2.IsCease(`0,`0,`0)
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_IsCease__0__0__0_
+  name: IsCease(T, T, T)
+  nameWithType: TDFVar<T, TListener>.IsCease(T, T, T)
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.IsCease(T, T, T)
+  nameWithType.vb: TDFVar(Of T, TListener).IsCease(T, T, T)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).IsCease(T, T, T)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2.IsCease(`0,`0,`0)
+    name: IsCease
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_IsCease__0__0__0_
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2.IsCease(`0,`0,`0)
+    name: IsCease
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_IsCease__0__0__0_
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVar`2.DefaultValue
+  commentId: P:TotalDialogue.Core.Variables.TDFVar`2.DefaultValue
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_DefaultValue
+  name: DefaultValue
+  nameWithType: TDFVar<T, TListener>.DefaultValue
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.DefaultValue
+  nameWithType.vb: TDFVar(Of T, TListener).DefaultValue
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).DefaultValue
+- uid: TotalDialogue.Core.Variables.TDFVar`2.StoreDefault
+  commentId: M:TotalDialogue.Core.Variables.TDFVar`2.StoreDefault
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_StoreDefault
+  name: StoreDefault()
+  nameWithType: TDFVar<T, TListener>.StoreDefault()
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.StoreDefault()
+  nameWithType.vb: TDFVar(Of T, TListener).StoreDefault()
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).StoreDefault()
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2.StoreDefault
+    name: StoreDefault
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_StoreDefault
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2.StoreDefault
+    name: StoreDefault
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_StoreDefault
+  - name: (
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVar`2.RestoreDefault
+  commentId: M:TotalDialogue.Core.Variables.TDFVar`2.RestoreDefault
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_RestoreDefault
+  name: RestoreDefault()
+  nameWithType: TDFVar<T, TListener>.RestoreDefault()
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.RestoreDefault()
+  nameWithType.vb: TDFVar(Of T, TListener).RestoreDefault()
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).RestoreDefault()
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2.RestoreDefault
+    name: RestoreDefault
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_RestoreDefault
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2.RestoreDefault
+    name: RestoreDefault
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_RestoreDefault
+  - name: (
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVar`2.StringValue
+  commentId: P:TotalDialogue.Core.Variables.TDFVar`2.StringValue
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_StringValue
+  name: StringValue
+  nameWithType: TDFVar<T, TListener>.StringValue
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.StringValue
+  nameWithType.vb: TDFVar(Of T, TListener).StringValue
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).StringValue
+- uid: TotalDialogue.Core.Variables.TDFVar`2.Interface
+  commentId: P:TotalDialogue.Core.Variables.TDFVar`2.Interface
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_Interface
+  name: Interface
+  nameWithType: TDFVar<T, TListener>.Interface
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.Interface
+  nameWithType.vb: TDFVar(Of T, TListener).Interface
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).Interface
+- uid: TotalDialogue.Core.Variables.TDFVar`2.AddListener(`1)
+  commentId: M:TotalDialogue.Core.Variables.TDFVar`2.AddListener(`1)
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_AddListener__1_
+  name: AddListener(TListener)
+  nameWithType: TDFVar<T, TListener>.AddListener(TListener)
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.AddListener(TListener)
+  nameWithType.vb: TDFVar(Of T, TListener).AddListener(TListener)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).AddListener(TListener)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2.AddListener(`1)
+    name: AddListener
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_AddListener__1_
+  - name: (
+  - name: TListener
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2.AddListener(`1)
+    name: AddListener
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_AddListener__1_
+  - name: (
+  - name: TListener
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVar`2.RemoveListener(`1)
+  commentId: M:TotalDialogue.Core.Variables.TDFVar`2.RemoveListener(`1)
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_RemoveListener__1_
+  name: RemoveListener(TListener)
+  nameWithType: TDFVar<T, TListener>.RemoveListener(TListener)
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.RemoveListener(TListener)
+  nameWithType.vb: TDFVar(Of T, TListener).RemoveListener(TListener)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).RemoveListener(TListener)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2.RemoveListener(`1)
+    name: RemoveListener
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_RemoveListener__1_
+  - name: (
+  - name: TListener
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2.RemoveListener(`1)
+    name: RemoveListener
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_RemoveListener__1_
+  - name: (
+  - name: TListener
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVar`2.GetBoolValue
+  commentId: M:TotalDialogue.Core.Variables.TDFVar`2.GetBoolValue
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetBoolValue
+  name: GetBoolValue()
+  nameWithType: TDFVar<T, TListener>.GetBoolValue()
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.GetBoolValue()
+  nameWithType.vb: TDFVar(Of T, TListener).GetBoolValue()
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).GetBoolValue()
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2.GetBoolValue
+    name: GetBoolValue
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetBoolValue
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2.GetBoolValue
+    name: GetBoolValue
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetBoolValue
+  - name: (
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVar`2.GetIntValue
+  commentId: M:TotalDialogue.Core.Variables.TDFVar`2.GetIntValue
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetIntValue
+  name: GetIntValue()
+  nameWithType: TDFVar<T, TListener>.GetIntValue()
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.GetIntValue()
+  nameWithType.vb: TDFVar(Of T, TListener).GetIntValue()
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).GetIntValue()
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2.GetIntValue
+    name: GetIntValue
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetIntValue
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2.GetIntValue
+    name: GetIntValue
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetIntValue
+  - name: (
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVar`2.GetFloatValue
+  commentId: M:TotalDialogue.Core.Variables.TDFVar`2.GetFloatValue
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetFloatValue
+  name: GetFloatValue()
+  nameWithType: TDFVar<T, TListener>.GetFloatValue()
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.GetFloatValue()
+  nameWithType.vb: TDFVar(Of T, TListener).GetFloatValue()
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).GetFloatValue()
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2.GetFloatValue
+    name: GetFloatValue
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetFloatValue
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2.GetFloatValue
+    name: GetFloatValue
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetFloatValue
+  - name: (
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVar`2.GetStringValue
+  commentId: M:TotalDialogue.Core.Variables.TDFVar`2.GetStringValue
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetStringValue
+  name: GetStringValue()
+  nameWithType: TDFVar<T, TListener>.GetStringValue()
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.GetStringValue()
+  nameWithType.vb: TDFVar(Of T, TListener).GetStringValue()
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).GetStringValue()
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2.GetStringValue
+    name: GetStringValue
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetStringValue
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2.GetStringValue
+    name: GetStringValue
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetStringValue
+  - name: (
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVar`2.GetVector3Value
+  commentId: M:TotalDialogue.Core.Variables.TDFVar`2.GetVector3Value
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetVector3Value
+  name: GetVector3Value()
+  nameWithType: TDFVar<T, TListener>.GetVector3Value()
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.GetVector3Value()
+  nameWithType.vb: TDFVar(Of T, TListener).GetVector3Value()
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).GetVector3Value()
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2.GetVector3Value
+    name: GetVector3Value
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetVector3Value
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2.GetVector3Value
+    name: GetVector3Value
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetVector3Value
+  - name: (
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVar`2.GetQuaternionValue
+  commentId: M:TotalDialogue.Core.Variables.TDFVar`2.GetQuaternionValue
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetQuaternionValue
+  name: GetQuaternionValue()
+  nameWithType: TDFVar<T, TListener>.GetQuaternionValue()
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.GetQuaternionValue()
+  nameWithType.vb: TDFVar(Of T, TListener).GetQuaternionValue()
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).GetQuaternionValue()
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2.GetQuaternionValue
+    name: GetQuaternionValue
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetQuaternionValue
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2.GetQuaternionValue
+    name: GetQuaternionValue
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetQuaternionValue
+  - name: (
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVar`2.SetBoolValue(System.Boolean)
+  commentId: M:TotalDialogue.Core.Variables.TDFVar`2.SetBoolValue(System.Boolean)
+  isExternal: true
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetBoolValue_System_Boolean_
+  name: SetBoolValue(bool)
+  nameWithType: TDFVar<T, TListener>.SetBoolValue(bool)
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.SetBoolValue(bool)
+  nameWithType.vb: TDFVar(Of T, TListener).SetBoolValue(Boolean)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).SetBoolValue(Boolean)
+  name.vb: SetBoolValue(Boolean)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2.SetBoolValue(System.Boolean)
+    name: SetBoolValue
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetBoolValue_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2.SetBoolValue(System.Boolean)
+    name: SetBoolValue
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetBoolValue_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVar`2.SetIntValue(System.Int32)
+  commentId: M:TotalDialogue.Core.Variables.TDFVar`2.SetIntValue(System.Int32)
+  isExternal: true
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetIntValue_System_Int32_
+  name: SetIntValue(int)
+  nameWithType: TDFVar<T, TListener>.SetIntValue(int)
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.SetIntValue(int)
+  nameWithType.vb: TDFVar(Of T, TListener).SetIntValue(Integer)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).SetIntValue(Integer)
+  name.vb: SetIntValue(Integer)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2.SetIntValue(System.Int32)
+    name: SetIntValue
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetIntValue_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2.SetIntValue(System.Int32)
+    name: SetIntValue
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetIntValue_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVar`2.SetFloatValue(System.Single)
+  commentId: M:TotalDialogue.Core.Variables.TDFVar`2.SetFloatValue(System.Single)
+  isExternal: true
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetFloatValue_System_Single_
+  name: SetFloatValue(float)
+  nameWithType: TDFVar<T, TListener>.SetFloatValue(float)
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.SetFloatValue(float)
+  nameWithType.vb: TDFVar(Of T, TListener).SetFloatValue(Single)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).SetFloatValue(Single)
+  name.vb: SetFloatValue(Single)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2.SetFloatValue(System.Single)
+    name: SetFloatValue
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetFloatValue_System_Single_
+  - name: (
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2.SetFloatValue(System.Single)
+    name: SetFloatValue
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetFloatValue_System_Single_
+  - name: (
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVar`2.SetStringValue(System.String)
+  commentId: M:TotalDialogue.Core.Variables.TDFVar`2.SetStringValue(System.String)
+  isExternal: true
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetStringValue_System_String_
+  name: SetStringValue(string)
+  nameWithType: TDFVar<T, TListener>.SetStringValue(string)
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.SetStringValue(string)
+  nameWithType.vb: TDFVar(Of T, TListener).SetStringValue(String)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).SetStringValue(String)
+  name.vb: SetStringValue(String)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2.SetStringValue(System.String)
+    name: SetStringValue
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetStringValue_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2.SetStringValue(System.String)
+    name: SetStringValue
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetStringValue_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVar`2.SetVector3Value(UnityEngine.Vector3)
+  commentId: M:TotalDialogue.Core.Variables.TDFVar`2.SetVector3Value(UnityEngine.Vector3)
+  isExternal: true
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetVector3Value_UnityEngine_Vector3_
+  name: SetVector3Value(Vector3)
+  nameWithType: TDFVar<T, TListener>.SetVector3Value(Vector3)
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.SetVector3Value(UnityEngine.Vector3)
+  nameWithType.vb: TDFVar(Of T, TListener).SetVector3Value(Vector3)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).SetVector3Value(UnityEngine.Vector3)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2.SetVector3Value(UnityEngine.Vector3)
+    name: SetVector3Value
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetVector3Value_UnityEngine_Vector3_
+  - name: (
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2.SetVector3Value(UnityEngine.Vector3)
+    name: SetVector3Value
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetVector3Value_UnityEngine_Vector3_
+  - name: (
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: )

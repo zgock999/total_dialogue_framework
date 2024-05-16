@@ -1,0 +1,784 @@
+### YamlMime:ManagedReference
+items:
+- uid: TotalDialogue.Core.Variables.IntListener
+  commentId: T:TotalDialogue.Core.Variables.IntListener
+  id: IntListener
+  parent: TotalDialogue.Core.Variables
+  children:
+  - TotalDialogue.Core.Variables.IntListener.GetValue(System.String)
+  - TotalDialogue.Core.Variables.IntListener.SetValue(System.String,System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: IntListener
+  nameWithType: IntListener
+  fullName: TotalDialogue.Core.Variables.IntListener
+  type: Class
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Listener/IntListener.cs
+      branch: master
+      repo: git@github.com:zgock999/total_dialogue_framework.git
+    id: IntListener
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Listener/IntListener.cs
+    startLine: 6
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Variables
+  syntax:
+    content: 'public class IntListener : VariableListener<int>'
+    content.vb: Public Class IntListener Inherits VariableListener(Of Integer)
+  inheritance:
+  - System.Object
+  - TotalDialogue.Core.Variables.VariableListener{System.Int32}
+  inheritedMembers:
+  - TotalDialogue.Core.Variables.VariableListener{System.Int32}.fireOnEnable
+  - TotalDialogue.Core.Variables.VariableListener{System.Int32}.fireOnBecome
+  - TotalDialogue.Core.Variables.VariableListener{System.Int32}.key
+  - TotalDialogue.Core.Variables.VariableListener{System.Int32}.variables
+  - TotalDialogue.Core.Variables.VariableListener{System.Int32}.OnSet
+  - TotalDialogue.Core.Variables.VariableListener{System.Int32}.OnChanged
+  - TotalDialogue.Core.Variables.VariableListener{System.Int32}.OnBecome
+  - TotalDialogue.Core.Variables.VariableListener{System.Int32}.OnCease
+  - TotalDialogue.Core.Variables.VariableListener{System.Int32}.targetValue
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: TotalDialogue.Core.Variables.IntListener.SetValue(System.String,System.Int32)
+  commentId: M:TotalDialogue.Core.Variables.IntListener.SetValue(System.String,System.Int32)
+  id: SetValue(System.String,System.Int32)
+  parent: TotalDialogue.Core.Variables.IntListener
+  langs:
+  - csharp
+  - vb
+  name: SetValue(string, int)
+  nameWithType: IntListener.SetValue(string, int)
+  fullName: TotalDialogue.Core.Variables.IntListener.SetValue(string, int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Listener/IntListener.cs
+      branch: master
+      repo: git@github.com:zgock999/total_dialogue_framework.git
+    id: SetValue
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Listener/IntListener.cs
+    startLine: 8
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Variables
+  example: []
+  syntax:
+    content: public override void SetValue(string key, int value)
+    parameters:
+    - id: key
+      type: System.String
+    - id: value
+      type: System.Int32
+    content.vb: Public Overrides Sub SetValue(key As String, value As Integer)
+  overridden: TotalDialogue.Core.Variables.VariableListener{System.Int32}.SetValue(System.String,System.Int32)
+  overload: TotalDialogue.Core.Variables.IntListener.SetValue*
+  nameWithType.vb: IntListener.SetValue(String, Integer)
+  fullName.vb: TotalDialogue.Core.Variables.IntListener.SetValue(String, Integer)
+  name.vb: SetValue(String, Integer)
+- uid: TotalDialogue.Core.Variables.IntListener.GetValue(System.String)
+  commentId: M:TotalDialogue.Core.Variables.IntListener.GetValue(System.String)
+  id: GetValue(System.String)
+  parent: TotalDialogue.Core.Variables.IntListener
+  langs:
+  - csharp
+  - vb
+  name: GetValue(string)
+  nameWithType: IntListener.GetValue(string)
+  fullName: TotalDialogue.Core.Variables.IntListener.GetValue(string)
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Listener/IntListener.cs
+      branch: master
+      repo: git@github.com:zgock999/total_dialogue_framework.git
+    id: GetValue
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Listener/IntListener.cs
+    startLine: 12
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Variables
+  example: []
+  syntax:
+    content: public override int GetValue(string key)
+    parameters:
+    - id: key
+      type: System.String
+    return:
+      type: System.Int32
+    content.vb: Public Overrides Function GetValue(key As String) As Integer
+  overridden: TotalDialogue.Core.Variables.VariableListener{System.Int32}.GetValue(System.String)
+  overload: TotalDialogue.Core.Variables.IntListener.GetValue*
+  nameWithType.vb: IntListener.GetValue(String)
+  fullName.vb: TotalDialogue.Core.Variables.IntListener.GetValue(String)
+  name.vb: GetValue(String)
+references:
+- uid: TotalDialogue.Core.Variables
+  commentId: N:TotalDialogue.Core.Variables
+  href: TotalDialogue.html
+  name: TotalDialogue.Core.Variables
+  nameWithType: TotalDialogue.Core.Variables
+  fullName: TotalDialogue.Core.Variables
+  spec.csharp:
+  - uid: TotalDialogue
+    name: TotalDialogue
+    href: TotalDialogue.html
+  - name: .
+  - uid: TotalDialogue.Core
+    name: Core
+    href: TotalDialogue.Core.html
+  - name: .
+  - uid: TotalDialogue.Core.Variables
+    name: Variables
+    href: TotalDialogue.Core.Variables.html
+  spec.vb:
+  - uid: TotalDialogue
+    name: TotalDialogue
+    href: TotalDialogue.html
+  - name: .
+  - uid: TotalDialogue.Core
+    name: Core
+    href: TotalDialogue.Core.html
+  - name: .
+  - uid: TotalDialogue.Core.Variables
+    name: Variables
+    href: TotalDialogue.Core.Variables.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: TotalDialogue.Core.Variables.VariableListener{System.Int32}
+  commentId: T:TotalDialogue.Core.Variables.VariableListener{System.Int32}
+  parent: TotalDialogue.Core.Variables
+  definition: TotalDialogue.Core.Variables.VariableListener`1
+  href: TotalDialogue.Core.Variables.VariableListener-1.html
+  name: VariableListener<int>
+  nameWithType: VariableListener<int>
+  fullName: TotalDialogue.Core.Variables.VariableListener<int>
+  nameWithType.vb: VariableListener(Of Integer)
+  fullName.vb: TotalDialogue.Core.Variables.VariableListener(Of Integer)
+  name.vb: VariableListener(Of Integer)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.VariableListener`1
+    name: VariableListener
+    href: TotalDialogue.Core.Variables.VariableListener-1.html
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.VariableListener`1
+    name: VariableListener
+    href: TotalDialogue.Core.Variables.VariableListener-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: TotalDialogue.Core.Variables.VariableListener{System.Int32}.fireOnEnable
+  commentId: F:TotalDialogue.Core.Variables.VariableListener{System.Int32}.fireOnEnable
+  parent: TotalDialogue.Core.Variables.VariableListener{System.Int32}
+  definition: TotalDialogue.Core.Variables.VariableListener`1.fireOnEnable
+  href: TotalDialogue.Core.Variables.VariableListener-1.html#TotalDialogue_Core_Variables_VariableListener_1_fireOnEnable
+  name: fireOnEnable
+  nameWithType: VariableListener<int>.fireOnEnable
+  fullName: TotalDialogue.Core.Variables.VariableListener<int>.fireOnEnable
+  nameWithType.vb: VariableListener(Of Integer).fireOnEnable
+  fullName.vb: TotalDialogue.Core.Variables.VariableListener(Of Integer).fireOnEnable
+- uid: TotalDialogue.Core.Variables.VariableListener{System.Int32}.fireOnBecome
+  commentId: F:TotalDialogue.Core.Variables.VariableListener{System.Int32}.fireOnBecome
+  parent: TotalDialogue.Core.Variables.VariableListener{System.Int32}
+  definition: TotalDialogue.Core.Variables.VariableListener`1.fireOnBecome
+  href: TotalDialogue.Core.Variables.VariableListener-1.html#TotalDialogue_Core_Variables_VariableListener_1_fireOnBecome
+  name: fireOnBecome
+  nameWithType: VariableListener<int>.fireOnBecome
+  fullName: TotalDialogue.Core.Variables.VariableListener<int>.fireOnBecome
+  nameWithType.vb: VariableListener(Of Integer).fireOnBecome
+  fullName.vb: TotalDialogue.Core.Variables.VariableListener(Of Integer).fireOnBecome
+- uid: TotalDialogue.Core.Variables.VariableListener{System.Int32}.key
+  commentId: F:TotalDialogue.Core.Variables.VariableListener{System.Int32}.key
+  parent: TotalDialogue.Core.Variables.VariableListener{System.Int32}
+  definition: TotalDialogue.Core.Variables.VariableListener`1.key
+  href: TotalDialogue.Core.Variables.VariableListener-1.html#TotalDialogue_Core_Variables_VariableListener_1_key
+  name: key
+  nameWithType: VariableListener<int>.key
+  fullName: TotalDialogue.Core.Variables.VariableListener<int>.key
+  nameWithType.vb: VariableListener(Of Integer).key
+  fullName.vb: TotalDialogue.Core.Variables.VariableListener(Of Integer).key
+- uid: TotalDialogue.Core.Variables.VariableListener{System.Int32}.variables
+  commentId: F:TotalDialogue.Core.Variables.VariableListener{System.Int32}.variables
+  parent: TotalDialogue.Core.Variables.VariableListener{System.Int32}
+  definition: TotalDialogue.Core.Variables.VariableListener`1.variables
+  href: TotalDialogue.Core.Variables.VariableListener-1.html#TotalDialogue_Core_Variables_VariableListener_1_variables
+  name: variables
+  nameWithType: VariableListener<int>.variables
+  fullName: TotalDialogue.Core.Variables.VariableListener<int>.variables
+  nameWithType.vb: VariableListener(Of Integer).variables
+  fullName.vb: TotalDialogue.Core.Variables.VariableListener(Of Integer).variables
+- uid: TotalDialogue.Core.Variables.VariableListener{System.Int32}.OnSet
+  commentId: F:TotalDialogue.Core.Variables.VariableListener{System.Int32}.OnSet
+  parent: TotalDialogue.Core.Variables.VariableListener{System.Int32}
+  definition: TotalDialogue.Core.Variables.VariableListener`1.OnSet
+  href: TotalDialogue.Core.Variables.VariableListener-1.html#TotalDialogue_Core_Variables_VariableListener_1_OnSet
+  name: OnSet
+  nameWithType: VariableListener<int>.OnSet
+  fullName: TotalDialogue.Core.Variables.VariableListener<int>.OnSet
+  nameWithType.vb: VariableListener(Of Integer).OnSet
+  fullName.vb: TotalDialogue.Core.Variables.VariableListener(Of Integer).OnSet
+- uid: TotalDialogue.Core.Variables.VariableListener{System.Int32}.OnChanged
+  commentId: F:TotalDialogue.Core.Variables.VariableListener{System.Int32}.OnChanged
+  parent: TotalDialogue.Core.Variables.VariableListener{System.Int32}
+  definition: TotalDialogue.Core.Variables.VariableListener`1.OnChanged
+  href: TotalDialogue.Core.Variables.VariableListener-1.html#TotalDialogue_Core_Variables_VariableListener_1_OnChanged
+  name: OnChanged
+  nameWithType: VariableListener<int>.OnChanged
+  fullName: TotalDialogue.Core.Variables.VariableListener<int>.OnChanged
+  nameWithType.vb: VariableListener(Of Integer).OnChanged
+  fullName.vb: TotalDialogue.Core.Variables.VariableListener(Of Integer).OnChanged
+- uid: TotalDialogue.Core.Variables.VariableListener{System.Int32}.OnBecome
+  commentId: F:TotalDialogue.Core.Variables.VariableListener{System.Int32}.OnBecome
+  parent: TotalDialogue.Core.Variables.VariableListener{System.Int32}
+  definition: TotalDialogue.Core.Variables.VariableListener`1.OnBecome
+  href: TotalDialogue.Core.Variables.VariableListener-1.html#TotalDialogue_Core_Variables_VariableListener_1_OnBecome
+  name: OnBecome
+  nameWithType: VariableListener<int>.OnBecome
+  fullName: TotalDialogue.Core.Variables.VariableListener<int>.OnBecome
+  nameWithType.vb: VariableListener(Of Integer).OnBecome
+  fullName.vb: TotalDialogue.Core.Variables.VariableListener(Of Integer).OnBecome
+- uid: TotalDialogue.Core.Variables.VariableListener{System.Int32}.OnCease
+  commentId: F:TotalDialogue.Core.Variables.VariableListener{System.Int32}.OnCease
+  parent: TotalDialogue.Core.Variables.VariableListener{System.Int32}
+  definition: TotalDialogue.Core.Variables.VariableListener`1.OnCease
+  href: TotalDialogue.Core.Variables.VariableListener-1.html#TotalDialogue_Core_Variables_VariableListener_1_OnCease
+  name: OnCease
+  nameWithType: VariableListener<int>.OnCease
+  fullName: TotalDialogue.Core.Variables.VariableListener<int>.OnCease
+  nameWithType.vb: VariableListener(Of Integer).OnCease
+  fullName.vb: TotalDialogue.Core.Variables.VariableListener(Of Integer).OnCease
+- uid: TotalDialogue.Core.Variables.VariableListener{System.Int32}.targetValue
+  commentId: F:TotalDialogue.Core.Variables.VariableListener{System.Int32}.targetValue
+  parent: TotalDialogue.Core.Variables.VariableListener{System.Int32}
+  definition: TotalDialogue.Core.Variables.VariableListener`1.targetValue
+  href: TotalDialogue.Core.Variables.VariableListener-1.html#TotalDialogue_Core_Variables_VariableListener_1_targetValue
+  name: targetValue
+  nameWithType: VariableListener<int>.targetValue
+  fullName: TotalDialogue.Core.Variables.VariableListener<int>.targetValue
+  nameWithType.vb: VariableListener(Of Integer).targetValue
+  fullName.vb: TotalDialogue.Core.Variables.VariableListener(Of Integer).targetValue
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: TotalDialogue.Core.Variables.VariableListener`1
+  commentId: T:TotalDialogue.Core.Variables.VariableListener`1
+  href: TotalDialogue.Core.Variables.VariableListener-1.html
+  name: VariableListener<T>
+  nameWithType: VariableListener<T>
+  fullName: TotalDialogue.Core.Variables.VariableListener<T>
+  nameWithType.vb: VariableListener(Of T)
+  fullName.vb: TotalDialogue.Core.Variables.VariableListener(Of T)
+  name.vb: VariableListener(Of T)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.VariableListener`1
+    name: VariableListener
+    href: TotalDialogue.Core.Variables.VariableListener-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.VariableListener`1
+    name: VariableListener
+    href: TotalDialogue.Core.Variables.VariableListener-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: TotalDialogue.Core.Variables.VariableListener`1.fireOnEnable
+  commentId: F:TotalDialogue.Core.Variables.VariableListener`1.fireOnEnable
+  href: TotalDialogue.Core.Variables.VariableListener-1.html#TotalDialogue_Core_Variables_VariableListener_1_fireOnEnable
+  name: fireOnEnable
+  nameWithType: VariableListener<T>.fireOnEnable
+  fullName: TotalDialogue.Core.Variables.VariableListener<T>.fireOnEnable
+  nameWithType.vb: VariableListener(Of T).fireOnEnable
+  fullName.vb: TotalDialogue.Core.Variables.VariableListener(Of T).fireOnEnable
+- uid: TotalDialogue.Core.Variables.VariableListener`1.fireOnBecome
+  commentId: F:TotalDialogue.Core.Variables.VariableListener`1.fireOnBecome
+  href: TotalDialogue.Core.Variables.VariableListener-1.html#TotalDialogue_Core_Variables_VariableListener_1_fireOnBecome
+  name: fireOnBecome
+  nameWithType: VariableListener<T>.fireOnBecome
+  fullName: TotalDialogue.Core.Variables.VariableListener<T>.fireOnBecome
+  nameWithType.vb: VariableListener(Of T).fireOnBecome
+  fullName.vb: TotalDialogue.Core.Variables.VariableListener(Of T).fireOnBecome
+- uid: TotalDialogue.Core.Variables.VariableListener`1.key
+  commentId: F:TotalDialogue.Core.Variables.VariableListener`1.key
+  href: TotalDialogue.Core.Variables.VariableListener-1.html#TotalDialogue_Core_Variables_VariableListener_1_key
+  name: key
+  nameWithType: VariableListener<T>.key
+  fullName: TotalDialogue.Core.Variables.VariableListener<T>.key
+  nameWithType.vb: VariableListener(Of T).key
+  fullName.vb: TotalDialogue.Core.Variables.VariableListener(Of T).key
+- uid: TotalDialogue.Core.Variables.VariableListener`1.variables
+  commentId: F:TotalDialogue.Core.Variables.VariableListener`1.variables
+  href: TotalDialogue.Core.Variables.VariableListener-1.html#TotalDialogue_Core_Variables_VariableListener_1_variables
+  name: variables
+  nameWithType: VariableListener<T>.variables
+  fullName: TotalDialogue.Core.Variables.VariableListener<T>.variables
+  nameWithType.vb: VariableListener(Of T).variables
+  fullName.vb: TotalDialogue.Core.Variables.VariableListener(Of T).variables
+- uid: TotalDialogue.Core.Variables.VariableListener`1.OnSet
+  commentId: F:TotalDialogue.Core.Variables.VariableListener`1.OnSet
+  href: TotalDialogue.Core.Variables.VariableListener-1.html#TotalDialogue_Core_Variables_VariableListener_1_OnSet
+  name: OnSet
+  nameWithType: VariableListener<T>.OnSet
+  fullName: TotalDialogue.Core.Variables.VariableListener<T>.OnSet
+  nameWithType.vb: VariableListener(Of T).OnSet
+  fullName.vb: TotalDialogue.Core.Variables.VariableListener(Of T).OnSet
+- uid: TotalDialogue.Core.Variables.VariableListener`1.OnChanged
+  commentId: F:TotalDialogue.Core.Variables.VariableListener`1.OnChanged
+  href: TotalDialogue.Core.Variables.VariableListener-1.html#TotalDialogue_Core_Variables_VariableListener_1_OnChanged
+  name: OnChanged
+  nameWithType: VariableListener<T>.OnChanged
+  fullName: TotalDialogue.Core.Variables.VariableListener<T>.OnChanged
+  nameWithType.vb: VariableListener(Of T).OnChanged
+  fullName.vb: TotalDialogue.Core.Variables.VariableListener(Of T).OnChanged
+- uid: TotalDialogue.Core.Variables.VariableListener`1.OnBecome
+  commentId: F:TotalDialogue.Core.Variables.VariableListener`1.OnBecome
+  href: TotalDialogue.Core.Variables.VariableListener-1.html#TotalDialogue_Core_Variables_VariableListener_1_OnBecome
+  name: OnBecome
+  nameWithType: VariableListener<T>.OnBecome
+  fullName: TotalDialogue.Core.Variables.VariableListener<T>.OnBecome
+  nameWithType.vb: VariableListener(Of T).OnBecome
+  fullName.vb: TotalDialogue.Core.Variables.VariableListener(Of T).OnBecome
+- uid: TotalDialogue.Core.Variables.VariableListener`1.OnCease
+  commentId: F:TotalDialogue.Core.Variables.VariableListener`1.OnCease
+  href: TotalDialogue.Core.Variables.VariableListener-1.html#TotalDialogue_Core_Variables_VariableListener_1_OnCease
+  name: OnCease
+  nameWithType: VariableListener<T>.OnCease
+  fullName: TotalDialogue.Core.Variables.VariableListener<T>.OnCease
+  nameWithType.vb: VariableListener(Of T).OnCease
+  fullName.vb: TotalDialogue.Core.Variables.VariableListener(Of T).OnCease
+- uid: TotalDialogue.Core.Variables.VariableListener`1.targetValue
+  commentId: F:TotalDialogue.Core.Variables.VariableListener`1.targetValue
+  href: TotalDialogue.Core.Variables.VariableListener-1.html#TotalDialogue_Core_Variables_VariableListener_1_targetValue
+  name: targetValue
+  nameWithType: VariableListener<T>.targetValue
+  fullName: TotalDialogue.Core.Variables.VariableListener<T>.targetValue
+  nameWithType.vb: VariableListener(Of T).targetValue
+  fullName.vb: TotalDialogue.Core.Variables.VariableListener(Of T).targetValue
+- uid: TotalDialogue.Core.Variables.VariableListener{System.Int32}.SetValue(System.String,System.Int32)
+  commentId: M:TotalDialogue.Core.Variables.VariableListener{System.Int32}.SetValue(System.String,System.Int32)
+  parent: TotalDialogue.Core.Variables.VariableListener{System.Int32}
+  definition: TotalDialogue.Core.Variables.VariableListener`1.SetValue(System.String,`0)
+  href: TotalDialogue.Core.Variables.VariableListener-1.html#TotalDialogue_Core_Variables_VariableListener_1_SetValue_System_String__0_
+  name: SetValue(string, int)
+  nameWithType: VariableListener<int>.SetValue(string, int)
+  fullName: TotalDialogue.Core.Variables.VariableListener<int>.SetValue(string, int)
+  nameWithType.vb: VariableListener(Of Integer).SetValue(String, Integer)
+  fullName.vb: TotalDialogue.Core.Variables.VariableListener(Of Integer).SetValue(String, Integer)
+  name.vb: SetValue(String, Integer)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.VariableListener{System.Int32}.SetValue(System.String,System.Int32)
+    name: SetValue
+    href: TotalDialogue.Core.Variables.VariableListener-1.html#TotalDialogue_Core_Variables_VariableListener_1_SetValue_System_String__0_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.VariableListener{System.Int32}.SetValue(System.String,System.Int32)
+    name: SetValue
+    href: TotalDialogue.Core.Variables.VariableListener-1.html#TotalDialogue_Core_Variables_VariableListener_1_SetValue_System_String__0_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: TotalDialogue.Core.Variables.IntListener.SetValue*
+  commentId: Overload:TotalDialogue.Core.Variables.IntListener.SetValue
+  href: TotalDialogue.Core.Variables.IntListener.html#TotalDialogue_Core_Variables_IntListener_SetValue_System_String_System_Int32_
+  name: SetValue
+  nameWithType: IntListener.SetValue
+  fullName: TotalDialogue.Core.Variables.IntListener.SetValue
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: TotalDialogue.Core.Variables.VariableListener`1.SetValue(System.String,`0)
+  commentId: M:TotalDialogue.Core.Variables.VariableListener`1.SetValue(System.String,`0)
+  isExternal: true
+  href: TotalDialogue.Core.Variables.VariableListener-1.html#TotalDialogue_Core_Variables_VariableListener_1_SetValue_System_String__0_
+  name: SetValue(string, T)
+  nameWithType: VariableListener<T>.SetValue(string, T)
+  fullName: TotalDialogue.Core.Variables.VariableListener<T>.SetValue(string, T)
+  nameWithType.vb: VariableListener(Of T).SetValue(String, T)
+  fullName.vb: TotalDialogue.Core.Variables.VariableListener(Of T).SetValue(String, T)
+  name.vb: SetValue(String, T)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.VariableListener`1.SetValue(System.String,`0)
+    name: SetValue
+    href: TotalDialogue.Core.Variables.VariableListener-1.html#TotalDialogue_Core_Variables_VariableListener_1_SetValue_System_String__0_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.VariableListener`1.SetValue(System.String,`0)
+    name: SetValue
+    href: TotalDialogue.Core.Variables.VariableListener-1.html#TotalDialogue_Core_Variables_VariableListener_1_SetValue_System_String__0_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: TotalDialogue.Core.Variables.VariableListener{System.Int32}.GetValue(System.String)
+  commentId: M:TotalDialogue.Core.Variables.VariableListener{System.Int32}.GetValue(System.String)
+  parent: TotalDialogue.Core.Variables.VariableListener{System.Int32}
+  definition: TotalDialogue.Core.Variables.VariableListener`1.GetValue(System.String)
+  href: TotalDialogue.Core.Variables.VariableListener-1.html#TotalDialogue_Core_Variables_VariableListener_1_GetValue_System_String_
+  name: GetValue(string)
+  nameWithType: VariableListener<int>.GetValue(string)
+  fullName: TotalDialogue.Core.Variables.VariableListener<int>.GetValue(string)
+  nameWithType.vb: VariableListener(Of Integer).GetValue(String)
+  fullName.vb: TotalDialogue.Core.Variables.VariableListener(Of Integer).GetValue(String)
+  name.vb: GetValue(String)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.VariableListener{System.Int32}.GetValue(System.String)
+    name: GetValue
+    href: TotalDialogue.Core.Variables.VariableListener-1.html#TotalDialogue_Core_Variables_VariableListener_1_GetValue_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.VariableListener{System.Int32}.GetValue(System.String)
+    name: GetValue
+    href: TotalDialogue.Core.Variables.VariableListener-1.html#TotalDialogue_Core_Variables_VariableListener_1_GetValue_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: TotalDialogue.Core.Variables.IntListener.GetValue*
+  commentId: Overload:TotalDialogue.Core.Variables.IntListener.GetValue
+  href: TotalDialogue.Core.Variables.IntListener.html#TotalDialogue_Core_Variables_IntListener_GetValue_System_String_
+  name: GetValue
+  nameWithType: IntListener.GetValue
+  fullName: TotalDialogue.Core.Variables.IntListener.GetValue
+- uid: TotalDialogue.Core.Variables.VariableListener`1.GetValue(System.String)
+  commentId: M:TotalDialogue.Core.Variables.VariableListener`1.GetValue(System.String)
+  isExternal: true
+  href: TotalDialogue.Core.Variables.VariableListener-1.html#TotalDialogue_Core_Variables_VariableListener_1_GetValue_System_String_
+  name: GetValue(string)
+  nameWithType: VariableListener<T>.GetValue(string)
+  fullName: TotalDialogue.Core.Variables.VariableListener<T>.GetValue(string)
+  nameWithType.vb: VariableListener(Of T).GetValue(String)
+  fullName.vb: TotalDialogue.Core.Variables.VariableListener(Of T).GetValue(String)
+  name.vb: GetValue(String)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.VariableListener`1.GetValue(System.String)
+    name: GetValue
+    href: TotalDialogue.Core.Variables.VariableListener-1.html#TotalDialogue_Core_Variables_VariableListener_1_GetValue_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.VariableListener`1.GetValue(System.String)
+    name: GetValue
+    href: TotalDialogue.Core.Variables.VariableListener-1.html#TotalDialogue_Core_Variables_VariableListener_1_GetValue_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )

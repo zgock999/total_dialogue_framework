@@ -10,6 +10,9 @@ namespace TotalDialogue.Editor
     [CustomPropertyDrawer(typeof(TDFKeyValuePair<,>))]
     public class TDFKeyValuePairDrawer : PropertyDrawer
     {
+        private const float SplitRatioMin = 0.1f;
+        private const float SplitRatioMax = 0.9f;
+        private const float SplitRatioDefault = 0.3f;
         public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
         {
             EditorGUI.BeginProperty(position, label, property);
@@ -25,7 +28,7 @@ namespace TotalDialogue.Editor
             // splitRatioが0の場合、0.5にリセット
             if (splitRatio == 0)
             {
-                splitRatio = 0.5f;
+                splitRatio = SplitRatioDefault;
                 property.FindPropertyRelative("splitRatio").floatValue = splitRatio;
             }
 
@@ -46,7 +49,7 @@ namespace TotalDialogue.Editor
             if (isDragging && Event.current.type == EventType.MouseDrag)
             {
                 splitRatio = (Event.current.mousePosition.x - position.x) / position.width;
-                splitRatio = Mathf.Clamp(splitRatio, 0.1f, 0.9f); // 分割比率を10%から90%の範囲に制限
+                splitRatio = Mathf.Clamp(splitRatio, SplitRatioMin, SplitRatioMax); // 分割比率を10%から90%の範囲に制限
                 property.FindPropertyRelative("splitRatio").floatValue = splitRatio; // splitRatioをSerializedPropertyに保存
                 EditorUtility.SetDirty(property.serializedObject.targetObject); // ドラッグ中にエディタを再描画
             }

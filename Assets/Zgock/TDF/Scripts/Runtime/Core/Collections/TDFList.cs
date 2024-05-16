@@ -7,17 +7,39 @@ using System.Linq;
 using System.Threading;
 
 
-#if UNITY_EDITOR
-using UnityEditor;
-#endif
-
 namespace TotalDialogue.Core.Collections
 {
-
     /// <summary>
     /// ITDFListは、アイテムの追加、削除、変更を監視するためのインターフェースです。
+    /// 型に依存しない部分のみを定義しています。
     /// </summary>
-    public interface ITDFList<T>
+    public interface ITDFList
+    {
+        /// <summary>
+        /// リストが変更されたときに発生するイベント。
+        /// </summary>
+        event Action OnChange;
+
+        /// <summary>
+        /// 指定したインデックスのアイテムを削除します。
+        /// </summary>
+        /// <param name="index">削除するアイテムのインデックス。</param>
+        void RemoveAt(int index);
+
+        /// <summary>
+        /// リスト内のアイテム数を取得します。
+        /// </summary>
+        int Count { get; }
+
+        /// <summary>
+        /// シリアライズ中かどうかを示す値を取得します。
+        /// </summary>
+        public bool Serializing{get;}
+    }
+    /// <summary>
+    /// ITDFListGenericは、アイテムの追加、削除、変更を監視するためのインターフェースのうち、型に依存する部分を定義しています。
+    /// </summary>
+    public interface ITDFListGeneric<T>
     {
         /// <summary>
         /// アイテムが追加されたときに発生するイベント。
@@ -35,11 +57,6 @@ namespace TotalDialogue.Core.Collections
         event Action<int, T> OnChangeItem;
 
         /// <summary>
-        /// リストが変更されたときに発生するイベント。
-        /// </summary>
-        event Action OnChange;
-
-        /// <summary>
         /// アイテムをリストに追加します。
         /// </summary>
         /// <param name="item">追加するアイテム。</param>
@@ -52,26 +69,11 @@ namespace TotalDialogue.Core.Collections
         void Remove(T item);
 
         /// <summary>
-        /// 指定したインデックスのアイテムを削除します。
-        /// </summary>
-        /// <param name="index">削除するアイテムのインデックス。</param>
-        void RemoveAt(int index);
-
-        /// <summary>
-        /// リスト内のアイテム数を取得します。
-        /// </summary>
-        int Count { get; }
-
-        /// <summary>
         /// 指定したインデックスのアイテムを取得または設定します。
         /// </summary>
         /// <param name="index">アイテムのインデックス。</param>
         T this[int index] { get; set; }
 
-        /// <summary>
-        /// シリアライズ中かどうかを示す値を取得します。
-        /// </summary>
-        public bool Serializing{get;}
     }
     /// <summary>
     /// TDFListは、スレッドセーフなリストを提供します。
@@ -79,7 +81,7 @@ namespace TotalDialogue.Core.Collections
     /// リストの内容が変更されたときにイベントを発生させることができます。
     /// </summary>
     [Serializable]
-    public class TDFList<T> : ITDFList<T>,IEnumerable<T>,ISerializationCallbackReceiver
+    public class TDFList<T> : ITDFList ,ITDFListGeneric<T>,IEnumerable<T>,ISerializationCallbackReceiver
     {
         /// <summary>
         /// リスト本体、protectedだが、インスペクタによって内容が変更されることがある

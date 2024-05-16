@@ -1,0 +1,250 @@
+### YamlMime:ManagedReference
+items:
+- uid: TotalDialogue.Core.Variables
+  commentId: N:TotalDialogue.Core.Variables
+  id: TotalDialogue.Core.Variables
+  children:
+  - TotalDialogue.Core.Variables.BoolListener
+  - TotalDialogue.Core.Variables.BoolVar
+  - TotalDialogue.Core.Variables.FloatListener
+  - TotalDialogue.Core.Variables.FloatVar
+  - TotalDialogue.Core.Variables.IEmptyVar
+  - TotalDialogue.Core.Variables.ITDFVar`2
+  - TotalDialogue.Core.Variables.IVariables
+  - TotalDialogue.Core.Variables.IntListener
+  - TotalDialogue.Core.Variables.IntVar
+  - TotalDialogue.Core.Variables.QuartanionListener
+  - TotalDialogue.Core.Variables.QuartanionVar
+  - TotalDialogue.Core.Variables.StringListener
+  - TotalDialogue.Core.Variables.StringVar
+  - TotalDialogue.Core.Variables.TDFVar`2
+  - TotalDialogue.Core.Variables.TDFVariables
+  - TotalDialogue.Core.Variables.VariableListener`1
+  - TotalDialogue.Core.Variables.Vector3Listener
+  - TotalDialogue.Core.Variables.Vector3Var
+  langs:
+  - csharp
+  - vb
+  name: TotalDialogue.Core.Variables
+  nameWithType: TotalDialogue.Core.Variables
+  fullName: TotalDialogue.Core.Variables
+  type: Namespace
+  assemblies:
+  - TDF
+references:
+- uid: TotalDialogue.Core.Variables.IntVar
+  commentId: T:TotalDialogue.Core.Variables.IntVar
+  href: TotalDialogue.Core.Variables.IntVar.html
+  name: IntVar
+  nameWithType: IntVar
+  fullName: TotalDialogue.Core.Variables.IntVar
+- uid: TotalDialogue.Core.Variables.BoolListener
+  commentId: T:TotalDialogue.Core.Variables.BoolListener
+  parent: TotalDialogue.Core.Variables
+  href: TotalDialogue.Core.Variables.BoolListener.html
+  name: BoolListener
+  nameWithType: BoolListener
+  fullName: TotalDialogue.Core.Variables.BoolListener
+- uid: TotalDialogue.Core.Variables.QuartanionVar
+  commentId: T:TotalDialogue.Core.Variables.QuartanionVar
+  href: TotalDialogue.Core.Variables.QuartanionVar.html
+  name: QuartanionVar
+  nameWithType: QuartanionVar
+  fullName: TotalDialogue.Core.Variables.QuartanionVar
+- uid: TotalDialogue.Core.Variables.StringListener
+  commentId: T:TotalDialogue.Core.Variables.StringListener
+  parent: TotalDialogue.Core.Variables
+  href: TotalDialogue.Core.Variables.StringListener.html
+  name: StringListener
+  nameWithType: StringListener
+  fullName: TotalDialogue.Core.Variables.StringListener
+- uid: TotalDialogue.Core.Variables.QuartanionListener
+  commentId: T:TotalDialogue.Core.Variables.QuartanionListener
+  parent: TotalDialogue.Core.Variables
+  href: TotalDialogue.Core.Variables.QuartanionListener.html
+  name: QuartanionListener
+  nameWithType: QuartanionListener
+  fullName: TotalDialogue.Core.Variables.QuartanionListener
+- uid: TotalDialogue.Core.Variables.IVariables
+  commentId: T:TotalDialogue.Core.Variables.IVariables
+  parent: TotalDialogue.Core.Variables
+  href: TotalDialogue.Core.Variables.IVariables.html
+  name: IVariables
+  nameWithType: IVariables
+  fullName: TotalDialogue.Core.Variables.IVariables
+- uid: TotalDialogue.Core.Variables.VariableListener`1
+  commentId: T:TotalDialogue.Core.Variables.VariableListener`1
+  href: TotalDialogue.Core.Variables.VariableListener-1.html
+  name: VariableListener<T>
+  nameWithType: VariableListener<T>
+  fullName: TotalDialogue.Core.Variables.VariableListener<T>
+  nameWithType.vb: VariableListener(Of T)
+  fullName.vb: TotalDialogue.Core.Variables.VariableListener(Of T)
+  name.vb: VariableListener(Of T)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.VariableListener`1
+    name: VariableListener
+    href: TotalDialogue.Core.Variables.VariableListener-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.VariableListener`1
+    name: VariableListener
+    href: TotalDialogue.Core.Variables.VariableListener-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: TotalDialogue.Core.Variables.ITDFVar`2
+  commentId: T:TotalDialogue.Core.Variables.ITDFVar`2
+  parent: TotalDialogue.Core.Variables
+  href: TotalDialogue.Core.Variables.ITDFVar-2.html
+  name: ITDFVar<T, TListener>
+  nameWithType: ITDFVar<T, TListener>
+  fullName: TotalDialogue.Core.Variables.ITDFVar<T, TListener>
+  nameWithType.vb: ITDFVar(Of T, TListener)
+  fullName.vb: TotalDialogue.Core.Variables.ITDFVar(Of T, TListener)
+  name.vb: ITDFVar(Of T, TListener)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.ITDFVar`2
+    name: ITDFVar
+    href: TotalDialogue.Core.Variables.ITDFVar-2.html
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TListener
+  - name: '>'
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.ITDFVar`2
+    name: ITDFVar
+    href: TotalDialogue.Core.Variables.ITDFVar-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TListener
+  - name: )
+- uid: TotalDialogue.Core.Variables.Vector3Listener
+  commentId: T:TotalDialogue.Core.Variables.Vector3Listener
+  parent: TotalDialogue.Core.Variables
+  href: TotalDialogue.Core.Variables.Vector3Listener.html
+  name: Vector3Listener
+  nameWithType: Vector3Listener
+  fullName: TotalDialogue.Core.Variables.Vector3Listener
+- uid: TotalDialogue.Core.Variables.Vector3Var
+  commentId: T:TotalDialogue.Core.Variables.Vector3Var
+  href: TotalDialogue.Core.Variables.Vector3Var.html
+  name: Vector3Var
+  nameWithType: Vector3Var
+  fullName: TotalDialogue.Core.Variables.Vector3Var
+- uid: TotalDialogue.Core.Variables.FloatListener
+  commentId: T:TotalDialogue.Core.Variables.FloatListener
+  parent: TotalDialogue.Core.Variables
+  href: TotalDialogue.Core.Variables.FloatListener.html
+  name: FloatListener
+  nameWithType: FloatListener
+  fullName: TotalDialogue.Core.Variables.FloatListener
+- uid: TotalDialogue.Core.Variables.StringVar
+  commentId: T:TotalDialogue.Core.Variables.StringVar
+  href: TotalDialogue.Core.Variables.StringVar.html
+  name: StringVar
+  nameWithType: StringVar
+  fullName: TotalDialogue.Core.Variables.StringVar
+- uid: TotalDialogue.Core.Variables.BoolVar
+  commentId: T:TotalDialogue.Core.Variables.BoolVar
+  href: TotalDialogue.Core.Variables.BoolVar.html
+  name: BoolVar
+  nameWithType: BoolVar
+  fullName: TotalDialogue.Core.Variables.BoolVar
+- uid: TotalDialogue.Core.Variables.IEmptyVar
+  commentId: T:TotalDialogue.Core.Variables.IEmptyVar
+  parent: TotalDialogue.Core.Variables
+  href: TotalDialogue.Core.Variables.IEmptyVar.html
+  name: IEmptyVar
+  nameWithType: IEmptyVar
+  fullName: TotalDialogue.Core.Variables.IEmptyVar
+- uid: TotalDialogue.Core.Variables.TDFVar`2
+  commentId: T:TotalDialogue.Core.Variables.TDFVar`2
+  href: TotalDialogue.Core.Variables.TDFVar-2.html
+  name: TDFVar<T, TListener>
+  nameWithType: TDFVar<T, TListener>
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>
+  nameWithType.vb: TDFVar(Of T, TListener)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener)
+  name.vb: TDFVar(Of T, TListener)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2
+    name: TDFVar
+    href: TotalDialogue.Core.Variables.TDFVar-2.html
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TListener
+  - name: '>'
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2
+    name: TDFVar
+    href: TotalDialogue.Core.Variables.TDFVar-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TListener
+  - name: )
+- uid: TotalDialogue.Core.Variables.IntListener
+  commentId: T:TotalDialogue.Core.Variables.IntListener
+  parent: TotalDialogue.Core.Variables
+  href: TotalDialogue.Core.Variables.IntListener.html
+  name: IntListener
+  nameWithType: IntListener
+  fullName: TotalDialogue.Core.Variables.IntListener
+- uid: TotalDialogue.Core.Variables.TDFVariables
+  commentId: T:TotalDialogue.Core.Variables.TDFVariables
+  href: TotalDialogue.Core.Variables.TDFVariables.html
+  name: TDFVariables
+  nameWithType: TDFVariables
+  fullName: TotalDialogue.Core.Variables.TDFVariables
+- uid: TotalDialogue.Core.Variables.FloatVar
+  commentId: T:TotalDialogue.Core.Variables.FloatVar
+  href: TotalDialogue.Core.Variables.FloatVar.html
+  name: FloatVar
+  nameWithType: FloatVar
+  fullName: TotalDialogue.Core.Variables.FloatVar
+- uid: TotalDialogue.Core.Variables
+  commentId: N:TotalDialogue.Core.Variables
+  href: TotalDialogue.html
+  name: TotalDialogue.Core.Variables
+  nameWithType: TotalDialogue.Core.Variables
+  fullName: TotalDialogue.Core.Variables
+  spec.csharp:
+  - uid: TotalDialogue
+    name: TotalDialogue
+    href: TotalDialogue.html
+  - name: .
+  - uid: TotalDialogue.Core
+    name: Core
+    href: TotalDialogue.Core.html
+  - name: .
+  - uid: TotalDialogue.Core.Variables
+    name: Variables
+    href: TotalDialogue.Core.Variables.html
+  spec.vb:
+  - uid: TotalDialogue
+    name: TotalDialogue
+    href: TotalDialogue.html
+  - name: .
+  - uid: TotalDialogue.Core
+    name: Core
+    href: TotalDialogue.Core.html
+  - name: .
+  - uid: TotalDialogue.Core.Variables
+    name: Variables
+    href: TotalDialogue.Core.Variables.html

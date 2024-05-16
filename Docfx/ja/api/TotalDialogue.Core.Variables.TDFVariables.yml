@@ -1,0 +1,2397 @@
+### YamlMime:ManagedReference
+items:
+- uid: TotalDialogue.Core.Variables.TDFVariables
+  commentId: T:TotalDialogue.Core.Variables.TDFVariables
+  id: TDFVariables
+  parent: TotalDialogue.Core.Variables
+  children:
+  - TotalDialogue.Core.Variables.TDFVariables.AddListener(TotalDialogue.Core.Variables.BoolListener)
+  - TotalDialogue.Core.Variables.TDFVariables.AddListener(TotalDialogue.Core.Variables.FloatListener)
+  - TotalDialogue.Core.Variables.TDFVariables.AddListener(TotalDialogue.Core.Variables.IntListener)
+  - TotalDialogue.Core.Variables.TDFVariables.AddListener(TotalDialogue.Core.Variables.QuartanionListener)
+  - TotalDialogue.Core.Variables.TDFVariables.AddListener(TotalDialogue.Core.Variables.StringListener)
+  - TotalDialogue.Core.Variables.TDFVariables.AddListener(TotalDialogue.Core.Variables.Vector3Listener)
+  - TotalDialogue.Core.Variables.TDFVariables.GetBool(System.String)
+  - TotalDialogue.Core.Variables.TDFVariables.GetFloat(System.String)
+  - TotalDialogue.Core.Variables.TDFVariables.GetInt(System.String)
+  - TotalDialogue.Core.Variables.TDFVariables.GetQuaternion(System.String)
+  - TotalDialogue.Core.Variables.TDFVariables.GetString(System.String)
+  - TotalDialogue.Core.Variables.TDFVariables.GetVector3(System.String)
+  - TotalDialogue.Core.Variables.TDFVariables.MaxChoice
+  - TotalDialogue.Core.Variables.TDFVariables.MaxDialogue
+  - TotalDialogue.Core.Variables.TDFVariables.RemoveListener(TotalDialogue.Core.Variables.BoolListener)
+  - TotalDialogue.Core.Variables.TDFVariables.RemoveListener(TotalDialogue.Core.Variables.FloatListener)
+  - TotalDialogue.Core.Variables.TDFVariables.RemoveListener(TotalDialogue.Core.Variables.IntListener)
+  - TotalDialogue.Core.Variables.TDFVariables.RemoveListener(TotalDialogue.Core.Variables.QuartanionListener)
+  - TotalDialogue.Core.Variables.TDFVariables.RemoveListener(TotalDialogue.Core.Variables.StringListener)
+  - TotalDialogue.Core.Variables.TDFVariables.RemoveListener(TotalDialogue.Core.Variables.Vector3Listener)
+  - TotalDialogue.Core.Variables.TDFVariables.Reset
+  - TotalDialogue.Core.Variables.TDFVariables.SetBool(System.String,System.Boolean)
+  - TotalDialogue.Core.Variables.TDFVariables.SetFloat(System.String,System.Single)
+  - TotalDialogue.Core.Variables.TDFVariables.SetInt(System.String,System.Int32)
+  - TotalDialogue.Core.Variables.TDFVariables.SetQuaternion(System.String,UnityEngine.Quaternion)
+  - TotalDialogue.Core.Variables.TDFVariables.SetString(System.String,System.String)
+  - TotalDialogue.Core.Variables.TDFVariables.SetVector3(System.String,UnityEngine.Vector3)
+  - TotalDialogue.Core.Variables.TDFVariables.m_vars
+  langs:
+  - csharp
+  - vb
+  name: TDFVariables
+  nameWithType: TDFVariables
+  fullName: TotalDialogue.Core.Variables.TDFVariables
+  type: Class
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/TDFVariables.cs
+      branch: master
+      repo: git@github.com:zgock999/total_dialogue_framework.git
+    id: TDFVariables
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/TDFVariables.cs
+    startLine: 7
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Variables
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class TDFVariables : IVariables
+    content.vb: >-
+      <Serializable>
+
+      Public Class TDFVariables Implements IVariables
+  inheritance:
+  - System.Object
+  implements:
+  - TotalDialogue.Core.Variables.IVariables
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: TotalDialogue.Core.Variables.TDFVariables.MaxChoice
+  commentId: P:TotalDialogue.Core.Variables.TDFVariables.MaxChoice
+  id: MaxChoice
+  parent: TotalDialogue.Core.Variables.TDFVariables
+  langs:
+  - csharp
+  - vb
+  name: MaxChoice
+  nameWithType: TDFVariables.MaxChoice
+  fullName: TotalDialogue.Core.Variables.TDFVariables.MaxChoice
+  type: Property
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/TDFVariables.cs
+      branch: master
+      repo: git@github.com:zgock999/total_dialogue_framework.git
+    id: MaxChoice
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/TDFVariables.cs
+    startLine: 12
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Variables
+  example: []
+  syntax:
+    content: public int MaxChoice { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property MaxChoice As Integer
+  overload: TotalDialogue.Core.Variables.TDFVariables.MaxChoice*
+  implements:
+  - TotalDialogue.Core.Variables.IVariables.MaxChoice
+- uid: TotalDialogue.Core.Variables.TDFVariables.MaxDialogue
+  commentId: P:TotalDialogue.Core.Variables.TDFVariables.MaxDialogue
+  id: MaxDialogue
+  parent: TotalDialogue.Core.Variables.TDFVariables
+  langs:
+  - csharp
+  - vb
+  name: MaxDialogue
+  nameWithType: TDFVariables.MaxDialogue
+  fullName: TotalDialogue.Core.Variables.TDFVariables.MaxDialogue
+  type: Property
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/TDFVariables.cs
+      branch: master
+      repo: git@github.com:zgock999/total_dialogue_framework.git
+    id: MaxDialogue
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/TDFVariables.cs
+    startLine: 15
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Variables
+  example: []
+  syntax:
+    content: public int MaxDialogue { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property MaxDialogue As Integer
+  overload: TotalDialogue.Core.Variables.TDFVariables.MaxDialogue*
+  implements:
+  - TotalDialogue.Core.Variables.IVariables.MaxDialogue
+- uid: TotalDialogue.Core.Variables.TDFVariables.m_vars
+  commentId: F:TotalDialogue.Core.Variables.TDFVariables.m_vars
+  id: m_vars
+  parent: TotalDialogue.Core.Variables.TDFVariables
+  langs:
+  - csharp
+  - vb
+  name: m_vars
+  nameWithType: TDFVariables.m_vars
+  fullName: TotalDialogue.Core.Variables.TDFVariables.m_vars
+  type: Field
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/TDFVariables.cs
+      branch: master
+      repo: git@github.com:zgock999/total_dialogue_framework.git
+    id: m_vars
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/TDFVariables.cs
+    startLine: 17
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Variables
+  syntax:
+    content: >-
+      [SerializeField]
+
+      protected TDFDictionary<string, IEmptyVar> m_vars
+    return:
+      type: TotalDialogue.Core.Collections.TDFDictionary{System.String,TotalDialogue.Core.Variables.IEmptyVar}
+    content.vb: >-
+      <SerializeField>
+
+      Protected m_vars As TDFDictionary(Of String, IEmptyVar)
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+- uid: TotalDialogue.Core.Variables.TDFVariables.GetBool(System.String)
+  commentId: M:TotalDialogue.Core.Variables.TDFVariables.GetBool(System.String)
+  id: GetBool(System.String)
+  parent: TotalDialogue.Core.Variables.TDFVariables
+  langs:
+  - csharp
+  - vb
+  name: GetBool(string)
+  nameWithType: TDFVariables.GetBool(string)
+  fullName: TotalDialogue.Core.Variables.TDFVariables.GetBool(string)
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/TDFVariables.cs
+      branch: master
+      repo: git@github.com:zgock999/total_dialogue_framework.git
+    id: GetBool
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/TDFVariables.cs
+    startLine: 19
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Variables
+  example: []
+  syntax:
+    content: public bool GetBool(string key)
+    parameters:
+    - id: key
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Function GetBool(key As String) As Boolean
+  overload: TotalDialogue.Core.Variables.TDFVariables.GetBool*
+  implements:
+  - TotalDialogue.Core.Variables.IVariables.GetBool(System.String)
+  nameWithType.vb: TDFVariables.GetBool(String)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVariables.GetBool(String)
+  name.vb: GetBool(String)
+- uid: TotalDialogue.Core.Variables.TDFVariables.GetFloat(System.String)
+  commentId: M:TotalDialogue.Core.Variables.TDFVariables.GetFloat(System.String)
+  id: GetFloat(System.String)
+  parent: TotalDialogue.Core.Variables.TDFVariables
+  langs:
+  - csharp
+  - vb
+  name: GetFloat(string)
+  nameWithType: TDFVariables.GetFloat(string)
+  fullName: TotalDialogue.Core.Variables.TDFVariables.GetFloat(string)
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/TDFVariables.cs
+      branch: master
+      repo: git@github.com:zgock999/total_dialogue_framework.git
+    id: GetFloat
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/TDFVariables.cs
+    startLine: 24
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Variables
+  example: []
+  syntax:
+    content: public float GetFloat(string key)
+    parameters:
+    - id: key
+      type: System.String
+    return:
+      type: System.Single
+    content.vb: Public Function GetFloat(key As String) As Single
+  overload: TotalDialogue.Core.Variables.TDFVariables.GetFloat*
+  implements:
+  - TotalDialogue.Core.Variables.IVariables.GetFloat(System.String)
+  nameWithType.vb: TDFVariables.GetFloat(String)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVariables.GetFloat(String)
+  name.vb: GetFloat(String)
+- uid: TotalDialogue.Core.Variables.TDFVariables.GetInt(System.String)
+  commentId: M:TotalDialogue.Core.Variables.TDFVariables.GetInt(System.String)
+  id: GetInt(System.String)
+  parent: TotalDialogue.Core.Variables.TDFVariables
+  langs:
+  - csharp
+  - vb
+  name: GetInt(string)
+  nameWithType: TDFVariables.GetInt(string)
+  fullName: TotalDialogue.Core.Variables.TDFVariables.GetInt(string)
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/TDFVariables.cs
+      branch: master
+      repo: git@github.com:zgock999/total_dialogue_framework.git
+    id: GetInt
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/TDFVariables.cs
+    startLine: 29
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Variables
+  example: []
+  syntax:
+    content: public int GetInt(string key)
+    parameters:
+    - id: key
+      type: System.String
+    return:
+      type: System.Int32
+    content.vb: Public Function GetInt(key As String) As Integer
+  overload: TotalDialogue.Core.Variables.TDFVariables.GetInt*
+  implements:
+  - TotalDialogue.Core.Variables.IVariables.GetInt(System.String)
+  nameWithType.vb: TDFVariables.GetInt(String)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVariables.GetInt(String)
+  name.vb: GetInt(String)
+- uid: TotalDialogue.Core.Variables.TDFVariables.GetQuaternion(System.String)
+  commentId: M:TotalDialogue.Core.Variables.TDFVariables.GetQuaternion(System.String)
+  id: GetQuaternion(System.String)
+  parent: TotalDialogue.Core.Variables.TDFVariables
+  langs:
+  - csharp
+  - vb
+  name: GetQuaternion(string)
+  nameWithType: TDFVariables.GetQuaternion(string)
+  fullName: TotalDialogue.Core.Variables.TDFVariables.GetQuaternion(string)
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/TDFVariables.cs
+      branch: master
+      repo: git@github.com:zgock999/total_dialogue_framework.git
+    id: GetQuaternion
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/TDFVariables.cs
+    startLine: 34
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Variables
+  example: []
+  syntax:
+    content: public Quaternion GetQuaternion(string key)
+    parameters:
+    - id: key
+      type: System.String
+    return:
+      type: UnityEngine.Quaternion
+    content.vb: Public Function GetQuaternion(key As String) As Quaternion
+  overload: TotalDialogue.Core.Variables.TDFVariables.GetQuaternion*
+  implements:
+  - TotalDialogue.Core.Variables.IVariables.GetQuaternion(System.String)
+  nameWithType.vb: TDFVariables.GetQuaternion(String)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVariables.GetQuaternion(String)
+  name.vb: GetQuaternion(String)
+- uid: TotalDialogue.Core.Variables.TDFVariables.GetString(System.String)
+  commentId: M:TotalDialogue.Core.Variables.TDFVariables.GetString(System.String)
+  id: GetString(System.String)
+  parent: TotalDialogue.Core.Variables.TDFVariables
+  langs:
+  - csharp
+  - vb
+  name: GetString(string)
+  nameWithType: TDFVariables.GetString(string)
+  fullName: TotalDialogue.Core.Variables.TDFVariables.GetString(string)
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/TDFVariables.cs
+      branch: master
+      repo: git@github.com:zgock999/total_dialogue_framework.git
+    id: GetString
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/TDFVariables.cs
+    startLine: 39
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Variables
+  example: []
+  syntax:
+    content: public string GetString(string key)
+    parameters:
+    - id: key
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Function GetString(key As String) As String
+  overload: TotalDialogue.Core.Variables.TDFVariables.GetString*
+  implements:
+  - TotalDialogue.Core.Variables.IVariables.GetString(System.String)
+  nameWithType.vb: TDFVariables.GetString(String)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVariables.GetString(String)
+  name.vb: GetString(String)
+- uid: TotalDialogue.Core.Variables.TDFVariables.GetVector3(System.String)
+  commentId: M:TotalDialogue.Core.Variables.TDFVariables.GetVector3(System.String)
+  id: GetVector3(System.String)
+  parent: TotalDialogue.Core.Variables.TDFVariables
+  langs:
+  - csharp
+  - vb
+  name: GetVector3(string)
+  nameWithType: TDFVariables.GetVector3(string)
+  fullName: TotalDialogue.Core.Variables.TDFVariables.GetVector3(string)
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/TDFVariables.cs
+      branch: master
+      repo: git@github.com:zgock999/total_dialogue_framework.git
+    id: GetVector3
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/TDFVariables.cs
+    startLine: 44
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Variables
+  example: []
+  syntax:
+    content: public Vector3 GetVector3(string key)
+    parameters:
+    - id: key
+      type: System.String
+    return:
+      type: UnityEngine.Vector3
+    content.vb: Public Function GetVector3(key As String) As Vector3
+  overload: TotalDialogue.Core.Variables.TDFVariables.GetVector3*
+  implements:
+  - TotalDialogue.Core.Variables.IVariables.GetVector3(System.String)
+  nameWithType.vb: TDFVariables.GetVector3(String)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVariables.GetVector3(String)
+  name.vb: GetVector3(String)
+- uid: TotalDialogue.Core.Variables.TDFVariables.Reset
+  commentId: M:TotalDialogue.Core.Variables.TDFVariables.Reset
+  id: Reset
+  parent: TotalDialogue.Core.Variables.TDFVariables
+  langs:
+  - csharp
+  - vb
+  name: Reset()
+  nameWithType: TDFVariables.Reset()
+  fullName: TotalDialogue.Core.Variables.TDFVariables.Reset()
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/TDFVariables.cs
+      branch: master
+      repo: git@github.com:zgock999/total_dialogue_framework.git
+    id: Reset
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/TDFVariables.cs
+    startLine: 49
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Variables
+  example: []
+  syntax:
+    content: public void Reset()
+    content.vb: Public Sub Reset()
+  overload: TotalDialogue.Core.Variables.TDFVariables.Reset*
+  implements:
+  - TotalDialogue.Core.Variables.IVariables.Reset
+- uid: TotalDialogue.Core.Variables.TDFVariables.SetBool(System.String,System.Boolean)
+  commentId: M:TotalDialogue.Core.Variables.TDFVariables.SetBool(System.String,System.Boolean)
+  id: SetBool(System.String,System.Boolean)
+  parent: TotalDialogue.Core.Variables.TDFVariables
+  langs:
+  - csharp
+  - vb
+  name: SetBool(string, bool)
+  nameWithType: TDFVariables.SetBool(string, bool)
+  fullName: TotalDialogue.Core.Variables.TDFVariables.SetBool(string, bool)
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/TDFVariables.cs
+      branch: master
+      repo: git@github.com:zgock999/total_dialogue_framework.git
+    id: SetBool
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/TDFVariables.cs
+    startLine: 57
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Variables
+  example: []
+  syntax:
+    content: public void SetBool(string key, bool value)
+    parameters:
+    - id: key
+      type: System.String
+    - id: value
+      type: System.Boolean
+    content.vb: Public Sub SetBool(key As String, value As Boolean)
+  overload: TotalDialogue.Core.Variables.TDFVariables.SetBool*
+  implements:
+  - TotalDialogue.Core.Variables.IVariables.SetBool(System.String,System.Boolean)
+  nameWithType.vb: TDFVariables.SetBool(String, Boolean)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVariables.SetBool(String, Boolean)
+  name.vb: SetBool(String, Boolean)
+- uid: TotalDialogue.Core.Variables.TDFVariables.SetFloat(System.String,System.Single)
+  commentId: M:TotalDialogue.Core.Variables.TDFVariables.SetFloat(System.String,System.Single)
+  id: SetFloat(System.String,System.Single)
+  parent: TotalDialogue.Core.Variables.TDFVariables
+  langs:
+  - csharp
+  - vb
+  name: SetFloat(string, float)
+  nameWithType: TDFVariables.SetFloat(string, float)
+  fullName: TotalDialogue.Core.Variables.TDFVariables.SetFloat(string, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/TDFVariables.cs
+      branch: master
+      repo: git@github.com:zgock999/total_dialogue_framework.git
+    id: SetFloat
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/TDFVariables.cs
+    startLine: 65
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Variables
+  example: []
+  syntax:
+    content: public void SetFloat(string key, float value)
+    parameters:
+    - id: key
+      type: System.String
+    - id: value
+      type: System.Single
+    content.vb: Public Sub SetFloat(key As String, value As Single)
+  overload: TotalDialogue.Core.Variables.TDFVariables.SetFloat*
+  implements:
+  - TotalDialogue.Core.Variables.IVariables.SetFloat(System.String,System.Single)
+  nameWithType.vb: TDFVariables.SetFloat(String, Single)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVariables.SetFloat(String, Single)
+  name.vb: SetFloat(String, Single)
+- uid: TotalDialogue.Core.Variables.TDFVariables.SetInt(System.String,System.Int32)
+  commentId: M:TotalDialogue.Core.Variables.TDFVariables.SetInt(System.String,System.Int32)
+  id: SetInt(System.String,System.Int32)
+  parent: TotalDialogue.Core.Variables.TDFVariables
+  langs:
+  - csharp
+  - vb
+  name: SetInt(string, int)
+  nameWithType: TDFVariables.SetInt(string, int)
+  fullName: TotalDialogue.Core.Variables.TDFVariables.SetInt(string, int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/TDFVariables.cs
+      branch: master
+      repo: git@github.com:zgock999/total_dialogue_framework.git
+    id: SetInt
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/TDFVariables.cs
+    startLine: 73
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Variables
+  example: []
+  syntax:
+    content: public void SetInt(string key, int value)
+    parameters:
+    - id: key
+      type: System.String
+    - id: value
+      type: System.Int32
+    content.vb: Public Sub SetInt(key As String, value As Integer)
+  overload: TotalDialogue.Core.Variables.TDFVariables.SetInt*
+  implements:
+  - TotalDialogue.Core.Variables.IVariables.SetInt(System.String,System.Int32)
+  nameWithType.vb: TDFVariables.SetInt(String, Integer)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVariables.SetInt(String, Integer)
+  name.vb: SetInt(String, Integer)
+- uid: TotalDialogue.Core.Variables.TDFVariables.SetQuaternion(System.String,UnityEngine.Quaternion)
+  commentId: M:TotalDialogue.Core.Variables.TDFVariables.SetQuaternion(System.String,UnityEngine.Quaternion)
+  id: SetQuaternion(System.String,UnityEngine.Quaternion)
+  parent: TotalDialogue.Core.Variables.TDFVariables
+  langs:
+  - csharp
+  - vb
+  name: SetQuaternion(string, Quaternion)
+  nameWithType: TDFVariables.SetQuaternion(string, Quaternion)
+  fullName: TotalDialogue.Core.Variables.TDFVariables.SetQuaternion(string, UnityEngine.Quaternion)
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/TDFVariables.cs
+      branch: master
+      repo: git@github.com:zgock999/total_dialogue_framework.git
+    id: SetQuaternion
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/TDFVariables.cs
+    startLine: 81
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Variables
+  example: []
+  syntax:
+    content: public void SetQuaternion(string key, Quaternion value)
+    parameters:
+    - id: key
+      type: System.String
+    - id: value
+      type: UnityEngine.Quaternion
+    content.vb: Public Sub SetQuaternion(key As String, value As Quaternion)
+  overload: TotalDialogue.Core.Variables.TDFVariables.SetQuaternion*
+  implements:
+  - TotalDialogue.Core.Variables.IVariables.SetQuaternion(System.String,UnityEngine.Quaternion)
+  nameWithType.vb: TDFVariables.SetQuaternion(String, Quaternion)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVariables.SetQuaternion(String, UnityEngine.Quaternion)
+  name.vb: SetQuaternion(String, Quaternion)
+- uid: TotalDialogue.Core.Variables.TDFVariables.SetString(System.String,System.String)
+  commentId: M:TotalDialogue.Core.Variables.TDFVariables.SetString(System.String,System.String)
+  id: SetString(System.String,System.String)
+  parent: TotalDialogue.Core.Variables.TDFVariables
+  langs:
+  - csharp
+  - vb
+  name: SetString(string, string)
+  nameWithType: TDFVariables.SetString(string, string)
+  fullName: TotalDialogue.Core.Variables.TDFVariables.SetString(string, string)
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/TDFVariables.cs
+      branch: master
+      repo: git@github.com:zgock999/total_dialogue_framework.git
+    id: SetString
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/TDFVariables.cs
+    startLine: 89
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Variables
+  example: []
+  syntax:
+    content: public void SetString(string key, string value)
+    parameters:
+    - id: key
+      type: System.String
+    - id: value
+      type: System.String
+    content.vb: Public Sub SetString(key As String, value As String)
+  overload: TotalDialogue.Core.Variables.TDFVariables.SetString*
+  implements:
+  - TotalDialogue.Core.Variables.IVariables.SetString(System.String,System.String)
+  nameWithType.vb: TDFVariables.SetString(String, String)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVariables.SetString(String, String)
+  name.vb: SetString(String, String)
+- uid: TotalDialogue.Core.Variables.TDFVariables.SetVector3(System.String,UnityEngine.Vector3)
+  commentId: M:TotalDialogue.Core.Variables.TDFVariables.SetVector3(System.String,UnityEngine.Vector3)
+  id: SetVector3(System.String,UnityEngine.Vector3)
+  parent: TotalDialogue.Core.Variables.TDFVariables
+  langs:
+  - csharp
+  - vb
+  name: SetVector3(string, Vector3)
+  nameWithType: TDFVariables.SetVector3(string, Vector3)
+  fullName: TotalDialogue.Core.Variables.TDFVariables.SetVector3(string, UnityEngine.Vector3)
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/TDFVariables.cs
+      branch: master
+      repo: git@github.com:zgock999/total_dialogue_framework.git
+    id: SetVector3
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/TDFVariables.cs
+    startLine: 97
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Variables
+  example: []
+  syntax:
+    content: public void SetVector3(string key, Vector3 value)
+    parameters:
+    - id: key
+      type: System.String
+    - id: value
+      type: UnityEngine.Vector3
+    content.vb: Public Sub SetVector3(key As String, value As Vector3)
+  overload: TotalDialogue.Core.Variables.TDFVariables.SetVector3*
+  implements:
+  - TotalDialogue.Core.Variables.IVariables.SetVector3(System.String,UnityEngine.Vector3)
+  nameWithType.vb: TDFVariables.SetVector3(String, Vector3)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVariables.SetVector3(String, UnityEngine.Vector3)
+  name.vb: SetVector3(String, Vector3)
+- uid: TotalDialogue.Core.Variables.TDFVariables.AddListener(TotalDialogue.Core.Variables.BoolListener)
+  commentId: M:TotalDialogue.Core.Variables.TDFVariables.AddListener(TotalDialogue.Core.Variables.BoolListener)
+  id: AddListener(TotalDialogue.Core.Variables.BoolListener)
+  parent: TotalDialogue.Core.Variables.TDFVariables
+  langs:
+  - csharp
+  - vb
+  name: AddListener(BoolListener)
+  nameWithType: TDFVariables.AddListener(BoolListener)
+  fullName: TotalDialogue.Core.Variables.TDFVariables.AddListener(TotalDialogue.Core.Variables.BoolListener)
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/TDFVariables.cs
+      branch: master
+      repo: git@github.com:zgock999/total_dialogue_framework.git
+    id: AddListener
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/TDFVariables.cs
+    startLine: 105
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Variables
+  example: []
+  syntax:
+    content: public void AddListener(BoolListener listener)
+    parameters:
+    - id: listener
+      type: TotalDialogue.Core.Variables.BoolListener
+    content.vb: Public Sub AddListener(listener As BoolListener)
+  overload: TotalDialogue.Core.Variables.TDFVariables.AddListener*
+  implements:
+  - TotalDialogue.Core.Variables.IVariables.AddListener(TotalDialogue.Core.Variables.BoolListener)
+- uid: TotalDialogue.Core.Variables.TDFVariables.RemoveListener(TotalDialogue.Core.Variables.BoolListener)
+  commentId: M:TotalDialogue.Core.Variables.TDFVariables.RemoveListener(TotalDialogue.Core.Variables.BoolListener)
+  id: RemoveListener(TotalDialogue.Core.Variables.BoolListener)
+  parent: TotalDialogue.Core.Variables.TDFVariables
+  langs:
+  - csharp
+  - vb
+  name: RemoveListener(BoolListener)
+  nameWithType: TDFVariables.RemoveListener(BoolListener)
+  fullName: TotalDialogue.Core.Variables.TDFVariables.RemoveListener(TotalDialogue.Core.Variables.BoolListener)
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/TDFVariables.cs
+      branch: master
+      repo: git@github.com:zgock999/total_dialogue_framework.git
+    id: RemoveListener
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/TDFVariables.cs
+    startLine: 113
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Variables
+  example: []
+  syntax:
+    content: public void RemoveListener(BoolListener listener)
+    parameters:
+    - id: listener
+      type: TotalDialogue.Core.Variables.BoolListener
+    content.vb: Public Sub RemoveListener(listener As BoolListener)
+  overload: TotalDialogue.Core.Variables.TDFVariables.RemoveListener*
+  implements:
+  - TotalDialogue.Core.Variables.IVariables.RemoveListener(TotalDialogue.Core.Variables.BoolListener)
+- uid: TotalDialogue.Core.Variables.TDFVariables.AddListener(TotalDialogue.Core.Variables.IntListener)
+  commentId: M:TotalDialogue.Core.Variables.TDFVariables.AddListener(TotalDialogue.Core.Variables.IntListener)
+  id: AddListener(TotalDialogue.Core.Variables.IntListener)
+  parent: TotalDialogue.Core.Variables.TDFVariables
+  langs:
+  - csharp
+  - vb
+  name: AddListener(IntListener)
+  nameWithType: TDFVariables.AddListener(IntListener)
+  fullName: TotalDialogue.Core.Variables.TDFVariables.AddListener(TotalDialogue.Core.Variables.IntListener)
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/TDFVariables.cs
+      branch: master
+      repo: git@github.com:zgock999/total_dialogue_framework.git
+    id: AddListener
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/TDFVariables.cs
+    startLine: 121
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Variables
+  example: []
+  syntax:
+    content: public void AddListener(IntListener listener)
+    parameters:
+    - id: listener
+      type: TotalDialogue.Core.Variables.IntListener
+    content.vb: Public Sub AddListener(listener As IntListener)
+  overload: TotalDialogue.Core.Variables.TDFVariables.AddListener*
+  implements:
+  - TotalDialogue.Core.Variables.IVariables.AddListener(TotalDialogue.Core.Variables.IntListener)
+- uid: TotalDialogue.Core.Variables.TDFVariables.RemoveListener(TotalDialogue.Core.Variables.IntListener)
+  commentId: M:TotalDialogue.Core.Variables.TDFVariables.RemoveListener(TotalDialogue.Core.Variables.IntListener)
+  id: RemoveListener(TotalDialogue.Core.Variables.IntListener)
+  parent: TotalDialogue.Core.Variables.TDFVariables
+  langs:
+  - csharp
+  - vb
+  name: RemoveListener(IntListener)
+  nameWithType: TDFVariables.RemoveListener(IntListener)
+  fullName: TotalDialogue.Core.Variables.TDFVariables.RemoveListener(TotalDialogue.Core.Variables.IntListener)
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/TDFVariables.cs
+      branch: master
+      repo: git@github.com:zgock999/total_dialogue_framework.git
+    id: RemoveListener
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/TDFVariables.cs
+    startLine: 129
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Variables
+  example: []
+  syntax:
+    content: public void RemoveListener(IntListener listener)
+    parameters:
+    - id: listener
+      type: TotalDialogue.Core.Variables.IntListener
+    content.vb: Public Sub RemoveListener(listener As IntListener)
+  overload: TotalDialogue.Core.Variables.TDFVariables.RemoveListener*
+  implements:
+  - TotalDialogue.Core.Variables.IVariables.RemoveListener(TotalDialogue.Core.Variables.IntListener)
+- uid: TotalDialogue.Core.Variables.TDFVariables.AddListener(TotalDialogue.Core.Variables.FloatListener)
+  commentId: M:TotalDialogue.Core.Variables.TDFVariables.AddListener(TotalDialogue.Core.Variables.FloatListener)
+  id: AddListener(TotalDialogue.Core.Variables.FloatListener)
+  parent: TotalDialogue.Core.Variables.TDFVariables
+  langs:
+  - csharp
+  - vb
+  name: AddListener(FloatListener)
+  nameWithType: TDFVariables.AddListener(FloatListener)
+  fullName: TotalDialogue.Core.Variables.TDFVariables.AddListener(TotalDialogue.Core.Variables.FloatListener)
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/TDFVariables.cs
+      branch: master
+      repo: git@github.com:zgock999/total_dialogue_framework.git
+    id: AddListener
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/TDFVariables.cs
+    startLine: 137
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Variables
+  example: []
+  syntax:
+    content: public void AddListener(FloatListener listener)
+    parameters:
+    - id: listener
+      type: TotalDialogue.Core.Variables.FloatListener
+    content.vb: Public Sub AddListener(listener As FloatListener)
+  overload: TotalDialogue.Core.Variables.TDFVariables.AddListener*
+  implements:
+  - TotalDialogue.Core.Variables.IVariables.AddListener(TotalDialogue.Core.Variables.FloatListener)
+- uid: TotalDialogue.Core.Variables.TDFVariables.RemoveListener(TotalDialogue.Core.Variables.FloatListener)
+  commentId: M:TotalDialogue.Core.Variables.TDFVariables.RemoveListener(TotalDialogue.Core.Variables.FloatListener)
+  id: RemoveListener(TotalDialogue.Core.Variables.FloatListener)
+  parent: TotalDialogue.Core.Variables.TDFVariables
+  langs:
+  - csharp
+  - vb
+  name: RemoveListener(FloatListener)
+  nameWithType: TDFVariables.RemoveListener(FloatListener)
+  fullName: TotalDialogue.Core.Variables.TDFVariables.RemoveListener(TotalDialogue.Core.Variables.FloatListener)
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/TDFVariables.cs
+      branch: master
+      repo: git@github.com:zgock999/total_dialogue_framework.git
+    id: RemoveListener
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/TDFVariables.cs
+    startLine: 145
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Variables
+  example: []
+  syntax:
+    content: public void RemoveListener(FloatListener listener)
+    parameters:
+    - id: listener
+      type: TotalDialogue.Core.Variables.FloatListener
+    content.vb: Public Sub RemoveListener(listener As FloatListener)
+  overload: TotalDialogue.Core.Variables.TDFVariables.RemoveListener*
+  implements:
+  - TotalDialogue.Core.Variables.IVariables.RemoveListener(TotalDialogue.Core.Variables.FloatListener)
+- uid: TotalDialogue.Core.Variables.TDFVariables.AddListener(TotalDialogue.Core.Variables.StringListener)
+  commentId: M:TotalDialogue.Core.Variables.TDFVariables.AddListener(TotalDialogue.Core.Variables.StringListener)
+  id: AddListener(TotalDialogue.Core.Variables.StringListener)
+  parent: TotalDialogue.Core.Variables.TDFVariables
+  langs:
+  - csharp
+  - vb
+  name: AddListener(StringListener)
+  nameWithType: TDFVariables.AddListener(StringListener)
+  fullName: TotalDialogue.Core.Variables.TDFVariables.AddListener(TotalDialogue.Core.Variables.StringListener)
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/TDFVariables.cs
+      branch: master
+      repo: git@github.com:zgock999/total_dialogue_framework.git
+    id: AddListener
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/TDFVariables.cs
+    startLine: 153
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Variables
+  example: []
+  syntax:
+    content: public void AddListener(StringListener listener)
+    parameters:
+    - id: listener
+      type: TotalDialogue.Core.Variables.StringListener
+    content.vb: Public Sub AddListener(listener As StringListener)
+  overload: TotalDialogue.Core.Variables.TDFVariables.AddListener*
+  implements:
+  - TotalDialogue.Core.Variables.IVariables.AddListener(TotalDialogue.Core.Variables.StringListener)
+- uid: TotalDialogue.Core.Variables.TDFVariables.RemoveListener(TotalDialogue.Core.Variables.StringListener)
+  commentId: M:TotalDialogue.Core.Variables.TDFVariables.RemoveListener(TotalDialogue.Core.Variables.StringListener)
+  id: RemoveListener(TotalDialogue.Core.Variables.StringListener)
+  parent: TotalDialogue.Core.Variables.TDFVariables
+  langs:
+  - csharp
+  - vb
+  name: RemoveListener(StringListener)
+  nameWithType: TDFVariables.RemoveListener(StringListener)
+  fullName: TotalDialogue.Core.Variables.TDFVariables.RemoveListener(TotalDialogue.Core.Variables.StringListener)
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/TDFVariables.cs
+      branch: master
+      repo: git@github.com:zgock999/total_dialogue_framework.git
+    id: RemoveListener
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/TDFVariables.cs
+    startLine: 161
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Variables
+  example: []
+  syntax:
+    content: public void RemoveListener(StringListener listener)
+    parameters:
+    - id: listener
+      type: TotalDialogue.Core.Variables.StringListener
+    content.vb: Public Sub RemoveListener(listener As StringListener)
+  overload: TotalDialogue.Core.Variables.TDFVariables.RemoveListener*
+  implements:
+  - TotalDialogue.Core.Variables.IVariables.RemoveListener(TotalDialogue.Core.Variables.StringListener)
+- uid: TotalDialogue.Core.Variables.TDFVariables.AddListener(TotalDialogue.Core.Variables.Vector3Listener)
+  commentId: M:TotalDialogue.Core.Variables.TDFVariables.AddListener(TotalDialogue.Core.Variables.Vector3Listener)
+  id: AddListener(TotalDialogue.Core.Variables.Vector3Listener)
+  parent: TotalDialogue.Core.Variables.TDFVariables
+  langs:
+  - csharp
+  - vb
+  name: AddListener(Vector3Listener)
+  nameWithType: TDFVariables.AddListener(Vector3Listener)
+  fullName: TotalDialogue.Core.Variables.TDFVariables.AddListener(TotalDialogue.Core.Variables.Vector3Listener)
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/TDFVariables.cs
+      branch: master
+      repo: git@github.com:zgock999/total_dialogue_framework.git
+    id: AddListener
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/TDFVariables.cs
+    startLine: 169
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Variables
+  example: []
+  syntax:
+    content: public void AddListener(Vector3Listener listener)
+    parameters:
+    - id: listener
+      type: TotalDialogue.Core.Variables.Vector3Listener
+    content.vb: Public Sub AddListener(listener As Vector3Listener)
+  overload: TotalDialogue.Core.Variables.TDFVariables.AddListener*
+  implements:
+  - TotalDialogue.Core.Variables.IVariables.AddListener(TotalDialogue.Core.Variables.Vector3Listener)
+- uid: TotalDialogue.Core.Variables.TDFVariables.RemoveListener(TotalDialogue.Core.Variables.Vector3Listener)
+  commentId: M:TotalDialogue.Core.Variables.TDFVariables.RemoveListener(TotalDialogue.Core.Variables.Vector3Listener)
+  id: RemoveListener(TotalDialogue.Core.Variables.Vector3Listener)
+  parent: TotalDialogue.Core.Variables.TDFVariables
+  langs:
+  - csharp
+  - vb
+  name: RemoveListener(Vector3Listener)
+  nameWithType: TDFVariables.RemoveListener(Vector3Listener)
+  fullName: TotalDialogue.Core.Variables.TDFVariables.RemoveListener(TotalDialogue.Core.Variables.Vector3Listener)
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/TDFVariables.cs
+      branch: master
+      repo: git@github.com:zgock999/total_dialogue_framework.git
+    id: RemoveListener
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/TDFVariables.cs
+    startLine: 177
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Variables
+  example: []
+  syntax:
+    content: public void RemoveListener(Vector3Listener listener)
+    parameters:
+    - id: listener
+      type: TotalDialogue.Core.Variables.Vector3Listener
+    content.vb: Public Sub RemoveListener(listener As Vector3Listener)
+  overload: TotalDialogue.Core.Variables.TDFVariables.RemoveListener*
+  implements:
+  - TotalDialogue.Core.Variables.IVariables.RemoveListener(TotalDialogue.Core.Variables.Vector3Listener)
+- uid: TotalDialogue.Core.Variables.TDFVariables.AddListener(TotalDialogue.Core.Variables.QuartanionListener)
+  commentId: M:TotalDialogue.Core.Variables.TDFVariables.AddListener(TotalDialogue.Core.Variables.QuartanionListener)
+  id: AddListener(TotalDialogue.Core.Variables.QuartanionListener)
+  parent: TotalDialogue.Core.Variables.TDFVariables
+  langs:
+  - csharp
+  - vb
+  name: AddListener(QuartanionListener)
+  nameWithType: TDFVariables.AddListener(QuartanionListener)
+  fullName: TotalDialogue.Core.Variables.TDFVariables.AddListener(TotalDialogue.Core.Variables.QuartanionListener)
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/TDFVariables.cs
+      branch: master
+      repo: git@github.com:zgock999/total_dialogue_framework.git
+    id: AddListener
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/TDFVariables.cs
+    startLine: 185
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Variables
+  example: []
+  syntax:
+    content: public void AddListener(QuartanionListener listener)
+    parameters:
+    - id: listener
+      type: TotalDialogue.Core.Variables.QuartanionListener
+    content.vb: Public Sub AddListener(listener As QuartanionListener)
+  overload: TotalDialogue.Core.Variables.TDFVariables.AddListener*
+  implements:
+  - TotalDialogue.Core.Variables.IVariables.AddListener(TotalDialogue.Core.Variables.QuartanionListener)
+- uid: TotalDialogue.Core.Variables.TDFVariables.RemoveListener(TotalDialogue.Core.Variables.QuartanionListener)
+  commentId: M:TotalDialogue.Core.Variables.TDFVariables.RemoveListener(TotalDialogue.Core.Variables.QuartanionListener)
+  id: RemoveListener(TotalDialogue.Core.Variables.QuartanionListener)
+  parent: TotalDialogue.Core.Variables.TDFVariables
+  langs:
+  - csharp
+  - vb
+  name: RemoveListener(QuartanionListener)
+  nameWithType: TDFVariables.RemoveListener(QuartanionListener)
+  fullName: TotalDialogue.Core.Variables.TDFVariables.RemoveListener(TotalDialogue.Core.Variables.QuartanionListener)
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/TDFVariables.cs
+      branch: master
+      repo: git@github.com:zgock999/total_dialogue_framework.git
+    id: RemoveListener
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/TDFVariables.cs
+    startLine: 193
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Variables
+  example: []
+  syntax:
+    content: public void RemoveListener(QuartanionListener listener)
+    parameters:
+    - id: listener
+      type: TotalDialogue.Core.Variables.QuartanionListener
+    content.vb: Public Sub RemoveListener(listener As QuartanionListener)
+  overload: TotalDialogue.Core.Variables.TDFVariables.RemoveListener*
+  implements:
+  - TotalDialogue.Core.Variables.IVariables.RemoveListener(TotalDialogue.Core.Variables.QuartanionListener)
+references:
+- uid: TotalDialogue.Core.Variables
+  commentId: N:TotalDialogue.Core.Variables
+  href: TotalDialogue.html
+  name: TotalDialogue.Core.Variables
+  nameWithType: TotalDialogue.Core.Variables
+  fullName: TotalDialogue.Core.Variables
+  spec.csharp:
+  - uid: TotalDialogue
+    name: TotalDialogue
+    href: TotalDialogue.html
+  - name: .
+  - uid: TotalDialogue.Core
+    name: Core
+    href: TotalDialogue.Core.html
+  - name: .
+  - uid: TotalDialogue.Core.Variables
+    name: Variables
+    href: TotalDialogue.Core.Variables.html
+  spec.vb:
+  - uid: TotalDialogue
+    name: TotalDialogue
+    href: TotalDialogue.html
+  - name: .
+  - uid: TotalDialogue.Core
+    name: Core
+    href: TotalDialogue.Core.html
+  - name: .
+  - uid: TotalDialogue.Core.Variables
+    name: Variables
+    href: TotalDialogue.Core.Variables.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: TotalDialogue.Core.Variables.IVariables
+  commentId: T:TotalDialogue.Core.Variables.IVariables
+  parent: TotalDialogue.Core.Variables
+  href: TotalDialogue.Core.Variables.IVariables.html
+  name: IVariables
+  nameWithType: IVariables
+  fullName: TotalDialogue.Core.Variables.IVariables
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: TotalDialogue.Core.Variables.TDFVariables.MaxChoice*
+  commentId: Overload:TotalDialogue.Core.Variables.TDFVariables.MaxChoice
+  href: TotalDialogue.Core.Variables.TDFVariables.html#TotalDialogue_Core_Variables_TDFVariables_MaxChoice
+  name: MaxChoice
+  nameWithType: TDFVariables.MaxChoice
+  fullName: TotalDialogue.Core.Variables.TDFVariables.MaxChoice
+- uid: TotalDialogue.Core.Variables.IVariables.MaxChoice
+  commentId: P:TotalDialogue.Core.Variables.IVariables.MaxChoice
+  parent: TotalDialogue.Core.Variables.IVariables
+  href: TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_MaxChoice
+  name: MaxChoice
+  nameWithType: IVariables.MaxChoice
+  fullName: TotalDialogue.Core.Variables.IVariables.MaxChoice
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: TotalDialogue.Core.Variables.TDFVariables.MaxDialogue*
+  commentId: Overload:TotalDialogue.Core.Variables.TDFVariables.MaxDialogue
+  href: TotalDialogue.Core.Variables.TDFVariables.html#TotalDialogue_Core_Variables_TDFVariables_MaxDialogue
+  name: MaxDialogue
+  nameWithType: TDFVariables.MaxDialogue
+  fullName: TotalDialogue.Core.Variables.TDFVariables.MaxDialogue
+- uid: TotalDialogue.Core.Variables.IVariables.MaxDialogue
+  commentId: P:TotalDialogue.Core.Variables.IVariables.MaxDialogue
+  parent: TotalDialogue.Core.Variables.IVariables
+  href: TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_MaxDialogue
+  name: MaxDialogue
+  nameWithType: IVariables.MaxDialogue
+  fullName: TotalDialogue.Core.Variables.IVariables.MaxDialogue
+- uid: TotalDialogue.Core.Collections.TDFDictionary{System.String,TotalDialogue.Core.Variables.IEmptyVar}
+  commentId: T:TotalDialogue.Core.Collections.TDFDictionary{System.String,TotalDialogue.Core.Variables.IEmptyVar}
+  parent: TotalDialogue.Core.Collections
+  definition: TotalDialogue.Core.Collections.TDFDictionary`2
+  href: TotalDialogue.Core.Collections.TDFDictionary-2.html
+  name: TDFDictionary<string, IEmptyVar>
+  nameWithType: TDFDictionary<string, IEmptyVar>
+  fullName: TotalDialogue.Core.Collections.TDFDictionary<string, TotalDialogue.Core.Variables.IEmptyVar>
+  nameWithType.vb: TDFDictionary(Of String, IEmptyVar)
+  fullName.vb: TotalDialogue.Core.Collections.TDFDictionary(Of String, TotalDialogue.Core.Variables.IEmptyVar)
+  name.vb: TDFDictionary(Of String, IEmptyVar)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Collections.TDFDictionary`2
+    name: TDFDictionary
+    href: TotalDialogue.Core.Collections.TDFDictionary-2.html
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: TotalDialogue.Core.Variables.IEmptyVar
+    name: IEmptyVar
+    href: TotalDialogue.Core.Variables.IEmptyVar.html
+  - name: '>'
+  spec.vb:
+  - uid: TotalDialogue.Core.Collections.TDFDictionary`2
+    name: TDFDictionary
+    href: TotalDialogue.Core.Collections.TDFDictionary-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: TotalDialogue.Core.Variables.IEmptyVar
+    name: IEmptyVar
+    href: TotalDialogue.Core.Variables.IEmptyVar.html
+  - name: )
+- uid: TotalDialogue.Core.Collections.TDFDictionary`2
+  commentId: T:TotalDialogue.Core.Collections.TDFDictionary`2
+  parent: TotalDialogue.Core.Collections
+  href: TotalDialogue.Core.Collections.TDFDictionary-2.html
+  name: TDFDictionary<TKey, TValue>
+  nameWithType: TDFDictionary<TKey, TValue>
+  fullName: TotalDialogue.Core.Collections.TDFDictionary<TKey, TValue>
+  nameWithType.vb: TDFDictionary(Of TKey, TValue)
+  fullName.vb: TotalDialogue.Core.Collections.TDFDictionary(Of TKey, TValue)
+  name.vb: TDFDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Collections.TDFDictionary`2
+    name: TDFDictionary
+    href: TotalDialogue.Core.Collections.TDFDictionary-2.html
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: TotalDialogue.Core.Collections.TDFDictionary`2
+    name: TDFDictionary
+    href: TotalDialogue.Core.Collections.TDFDictionary-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: TotalDialogue.Core.Collections
+  commentId: N:TotalDialogue.Core.Collections
+  href: TotalDialogue.html
+  name: TotalDialogue.Core.Collections
+  nameWithType: TotalDialogue.Core.Collections
+  fullName: TotalDialogue.Core.Collections
+  spec.csharp:
+  - uid: TotalDialogue
+    name: TotalDialogue
+    href: TotalDialogue.html
+  - name: .
+  - uid: TotalDialogue.Core
+    name: Core
+    href: TotalDialogue.Core.html
+  - name: .
+  - uid: TotalDialogue.Core.Collections
+    name: Collections
+    href: TotalDialogue.Core.Collections.html
+  spec.vb:
+  - uid: TotalDialogue
+    name: TotalDialogue
+    href: TotalDialogue.html
+  - name: .
+  - uid: TotalDialogue.Core
+    name: Core
+    href: TotalDialogue.Core.html
+  - name: .
+  - uid: TotalDialogue.Core.Collections
+    name: Collections
+    href: TotalDialogue.Core.Collections.html
+- uid: TotalDialogue.Core.Variables.TDFVariables.GetBool*
+  commentId: Overload:TotalDialogue.Core.Variables.TDFVariables.GetBool
+  href: TotalDialogue.Core.Variables.TDFVariables.html#TotalDialogue_Core_Variables_TDFVariables_GetBool_System_String_
+  name: GetBool
+  nameWithType: TDFVariables.GetBool
+  fullName: TotalDialogue.Core.Variables.TDFVariables.GetBool
+- uid: TotalDialogue.Core.Variables.IVariables.GetBool(System.String)
+  commentId: M:TotalDialogue.Core.Variables.IVariables.GetBool(System.String)
+  parent: TotalDialogue.Core.Variables.IVariables
+  isExternal: true
+  href: TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_GetBool_System_String_
+  name: GetBool(string)
+  nameWithType: IVariables.GetBool(string)
+  fullName: TotalDialogue.Core.Variables.IVariables.GetBool(string)
+  nameWithType.vb: IVariables.GetBool(String)
+  fullName.vb: TotalDialogue.Core.Variables.IVariables.GetBool(String)
+  name.vb: GetBool(String)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.IVariables.GetBool(System.String)
+    name: GetBool
+    href: TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_GetBool_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.IVariables.GetBool(System.String)
+    name: GetBool
+    href: TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_GetBool_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: TotalDialogue.Core.Variables.TDFVariables.GetFloat*
+  commentId: Overload:TotalDialogue.Core.Variables.TDFVariables.GetFloat
+  href: TotalDialogue.Core.Variables.TDFVariables.html#TotalDialogue_Core_Variables_TDFVariables_GetFloat_System_String_
+  name: GetFloat
+  nameWithType: TDFVariables.GetFloat
+  fullName: TotalDialogue.Core.Variables.TDFVariables.GetFloat
+- uid: TotalDialogue.Core.Variables.IVariables.GetFloat(System.String)
+  commentId: M:TotalDialogue.Core.Variables.IVariables.GetFloat(System.String)
+  parent: TotalDialogue.Core.Variables.IVariables
+  isExternal: true
+  href: TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_GetFloat_System_String_
+  name: GetFloat(string)
+  nameWithType: IVariables.GetFloat(string)
+  fullName: TotalDialogue.Core.Variables.IVariables.GetFloat(string)
+  nameWithType.vb: IVariables.GetFloat(String)
+  fullName.vb: TotalDialogue.Core.Variables.IVariables.GetFloat(String)
+  name.vb: GetFloat(String)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.IVariables.GetFloat(System.String)
+    name: GetFloat
+    href: TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_GetFloat_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.IVariables.GetFloat(System.String)
+    name: GetFloat
+    href: TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_GetFloat_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: TotalDialogue.Core.Variables.TDFVariables.GetInt*
+  commentId: Overload:TotalDialogue.Core.Variables.TDFVariables.GetInt
+  href: TotalDialogue.Core.Variables.TDFVariables.html#TotalDialogue_Core_Variables_TDFVariables_GetInt_System_String_
+  name: GetInt
+  nameWithType: TDFVariables.GetInt
+  fullName: TotalDialogue.Core.Variables.TDFVariables.GetInt
+- uid: TotalDialogue.Core.Variables.IVariables.GetInt(System.String)
+  commentId: M:TotalDialogue.Core.Variables.IVariables.GetInt(System.String)
+  parent: TotalDialogue.Core.Variables.IVariables
+  isExternal: true
+  href: TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_GetInt_System_String_
+  name: GetInt(string)
+  nameWithType: IVariables.GetInt(string)
+  fullName: TotalDialogue.Core.Variables.IVariables.GetInt(string)
+  nameWithType.vb: IVariables.GetInt(String)
+  fullName.vb: TotalDialogue.Core.Variables.IVariables.GetInt(String)
+  name.vb: GetInt(String)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.IVariables.GetInt(System.String)
+    name: GetInt
+    href: TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_GetInt_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.IVariables.GetInt(System.String)
+    name: GetInt
+    href: TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_GetInt_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVariables.GetQuaternion*
+  commentId: Overload:TotalDialogue.Core.Variables.TDFVariables.GetQuaternion
+  href: TotalDialogue.Core.Variables.TDFVariables.html#TotalDialogue_Core_Variables_TDFVariables_GetQuaternion_System_String_
+  name: GetQuaternion
+  nameWithType: TDFVariables.GetQuaternion
+  fullName: TotalDialogue.Core.Variables.TDFVariables.GetQuaternion
+- uid: TotalDialogue.Core.Variables.IVariables.GetQuaternion(System.String)
+  commentId: M:TotalDialogue.Core.Variables.IVariables.GetQuaternion(System.String)
+  parent: TotalDialogue.Core.Variables.IVariables
+  isExternal: true
+  href: TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_GetQuaternion_System_String_
+  name: GetQuaternion(string)
+  nameWithType: IVariables.GetQuaternion(string)
+  fullName: TotalDialogue.Core.Variables.IVariables.GetQuaternion(string)
+  nameWithType.vb: IVariables.GetQuaternion(String)
+  fullName.vb: TotalDialogue.Core.Variables.IVariables.GetQuaternion(String)
+  name.vb: GetQuaternion(String)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.IVariables.GetQuaternion(System.String)
+    name: GetQuaternion
+    href: TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_GetQuaternion_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.IVariables.GetQuaternion(System.String)
+    name: GetQuaternion
+    href: TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_GetQuaternion_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: UnityEngine.Quaternion
+  commentId: T:UnityEngine.Quaternion
+  parent: UnityEngine
+  isExternal: true
+  name: Quaternion
+  nameWithType: Quaternion
+  fullName: UnityEngine.Quaternion
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: TotalDialogue.Core.Variables.TDFVariables.GetString*
+  commentId: Overload:TotalDialogue.Core.Variables.TDFVariables.GetString
+  href: TotalDialogue.Core.Variables.TDFVariables.html#TotalDialogue_Core_Variables_TDFVariables_GetString_System_String_
+  name: GetString
+  nameWithType: TDFVariables.GetString
+  fullName: TotalDialogue.Core.Variables.TDFVariables.GetString
+- uid: TotalDialogue.Core.Variables.IVariables.GetString(System.String)
+  commentId: M:TotalDialogue.Core.Variables.IVariables.GetString(System.String)
+  parent: TotalDialogue.Core.Variables.IVariables
+  isExternal: true
+  href: TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_GetString_System_String_
+  name: GetString(string)
+  nameWithType: IVariables.GetString(string)
+  fullName: TotalDialogue.Core.Variables.IVariables.GetString(string)
+  nameWithType.vb: IVariables.GetString(String)
+  fullName.vb: TotalDialogue.Core.Variables.IVariables.GetString(String)
+  name.vb: GetString(String)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.IVariables.GetString(System.String)
+    name: GetString
+    href: TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_GetString_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.IVariables.GetString(System.String)
+    name: GetString
+    href: TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_GetString_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVariables.GetVector3*
+  commentId: Overload:TotalDialogue.Core.Variables.TDFVariables.GetVector3
+  href: TotalDialogue.Core.Variables.TDFVariables.html#TotalDialogue_Core_Variables_TDFVariables_GetVector3_System_String_
+  name: GetVector3
+  nameWithType: TDFVariables.GetVector3
+  fullName: TotalDialogue.Core.Variables.TDFVariables.GetVector3
+- uid: TotalDialogue.Core.Variables.IVariables.GetVector3(System.String)
+  commentId: M:TotalDialogue.Core.Variables.IVariables.GetVector3(System.String)
+  parent: TotalDialogue.Core.Variables.IVariables
+  isExternal: true
+  href: TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_GetVector3_System_String_
+  name: GetVector3(string)
+  nameWithType: IVariables.GetVector3(string)
+  fullName: TotalDialogue.Core.Variables.IVariables.GetVector3(string)
+  nameWithType.vb: IVariables.GetVector3(String)
+  fullName.vb: TotalDialogue.Core.Variables.IVariables.GetVector3(String)
+  name.vb: GetVector3(String)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.IVariables.GetVector3(System.String)
+    name: GetVector3
+    href: TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_GetVector3_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.IVariables.GetVector3(System.String)
+    name: GetVector3
+    href: TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_GetVector3_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: UnityEngine.Vector3
+  commentId: T:UnityEngine.Vector3
+  parent: UnityEngine
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: UnityEngine.Vector3
+- uid: TotalDialogue.Core.Variables.TDFVariables.Reset*
+  commentId: Overload:TotalDialogue.Core.Variables.TDFVariables.Reset
+  href: TotalDialogue.Core.Variables.TDFVariables.html#TotalDialogue_Core_Variables_TDFVariables_Reset
+  name: Reset
+  nameWithType: TDFVariables.Reset
+  fullName: TotalDialogue.Core.Variables.TDFVariables.Reset
+- uid: TotalDialogue.Core.Variables.IVariables.Reset
+  commentId: M:TotalDialogue.Core.Variables.IVariables.Reset
+  parent: TotalDialogue.Core.Variables.IVariables
+  href: TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_Reset
+  name: Reset()
+  nameWithType: IVariables.Reset()
+  fullName: TotalDialogue.Core.Variables.IVariables.Reset()
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.IVariables.Reset
+    name: Reset
+    href: TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_Reset
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.IVariables.Reset
+    name: Reset
+    href: TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_Reset
+  - name: (
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVariables.SetBool*
+  commentId: Overload:TotalDialogue.Core.Variables.TDFVariables.SetBool
+  href: TotalDialogue.Core.Variables.TDFVariables.html#TotalDialogue_Core_Variables_TDFVariables_SetBool_System_String_System_Boolean_
+  name: SetBool
+  nameWithType: TDFVariables.SetBool
+  fullName: TotalDialogue.Core.Variables.TDFVariables.SetBool
+- uid: TotalDialogue.Core.Variables.IVariables.SetBool(System.String,System.Boolean)
+  commentId: M:TotalDialogue.Core.Variables.IVariables.SetBool(System.String,System.Boolean)
+  parent: TotalDialogue.Core.Variables.IVariables
+  isExternal: true
+  href: TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_SetBool_System_String_System_Boolean_
+  name: SetBool(string, bool)
+  nameWithType: IVariables.SetBool(string, bool)
+  fullName: TotalDialogue.Core.Variables.IVariables.SetBool(string, bool)
+  nameWithType.vb: IVariables.SetBool(String, Boolean)
+  fullName.vb: TotalDialogue.Core.Variables.IVariables.SetBool(String, Boolean)
+  name.vb: SetBool(String, Boolean)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.IVariables.SetBool(System.String,System.Boolean)
+    name: SetBool
+    href: TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_SetBool_System_String_System_Boolean_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.IVariables.SetBool(System.String,System.Boolean)
+    name: SetBool
+    href: TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_SetBool_System_String_System_Boolean_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVariables.SetFloat*
+  commentId: Overload:TotalDialogue.Core.Variables.TDFVariables.SetFloat
+  href: TotalDialogue.Core.Variables.TDFVariables.html#TotalDialogue_Core_Variables_TDFVariables_SetFloat_System_String_System_Single_
+  name: SetFloat
+  nameWithType: TDFVariables.SetFloat
+  fullName: TotalDialogue.Core.Variables.TDFVariables.SetFloat
+- uid: TotalDialogue.Core.Variables.IVariables.SetFloat(System.String,System.Single)
+  commentId: M:TotalDialogue.Core.Variables.IVariables.SetFloat(System.String,System.Single)
+  parent: TotalDialogue.Core.Variables.IVariables
+  isExternal: true
+  href: TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_SetFloat_System_String_System_Single_
+  name: SetFloat(string, float)
+  nameWithType: IVariables.SetFloat(string, float)
+  fullName: TotalDialogue.Core.Variables.IVariables.SetFloat(string, float)
+  nameWithType.vb: IVariables.SetFloat(String, Single)
+  fullName.vb: TotalDialogue.Core.Variables.IVariables.SetFloat(String, Single)
+  name.vb: SetFloat(String, Single)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.IVariables.SetFloat(System.String,System.Single)
+    name: SetFloat
+    href: TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_SetFloat_System_String_System_Single_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.IVariables.SetFloat(System.String,System.Single)
+    name: SetFloat
+    href: TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_SetFloat_System_String_System_Single_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVariables.SetInt*
+  commentId: Overload:TotalDialogue.Core.Variables.TDFVariables.SetInt
+  href: TotalDialogue.Core.Variables.TDFVariables.html#TotalDialogue_Core_Variables_TDFVariables_SetInt_System_String_System_Int32_
+  name: SetInt
+  nameWithType: TDFVariables.SetInt
+  fullName: TotalDialogue.Core.Variables.TDFVariables.SetInt
+- uid: TotalDialogue.Core.Variables.IVariables.SetInt(System.String,System.Int32)
+  commentId: M:TotalDialogue.Core.Variables.IVariables.SetInt(System.String,System.Int32)
+  parent: TotalDialogue.Core.Variables.IVariables
+  isExternal: true
+  href: TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_SetInt_System_String_System_Int32_
+  name: SetInt(string, int)
+  nameWithType: IVariables.SetInt(string, int)
+  fullName: TotalDialogue.Core.Variables.IVariables.SetInt(string, int)
+  nameWithType.vb: IVariables.SetInt(String, Integer)
+  fullName.vb: TotalDialogue.Core.Variables.IVariables.SetInt(String, Integer)
+  name.vb: SetInt(String, Integer)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.IVariables.SetInt(System.String,System.Int32)
+    name: SetInt
+    href: TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_SetInt_System_String_System_Int32_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.IVariables.SetInt(System.String,System.Int32)
+    name: SetInt
+    href: TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_SetInt_System_String_System_Int32_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVariables.SetQuaternion*
+  commentId: Overload:TotalDialogue.Core.Variables.TDFVariables.SetQuaternion
+  href: TotalDialogue.Core.Variables.TDFVariables.html#TotalDialogue_Core_Variables_TDFVariables_SetQuaternion_System_String_UnityEngine_Quaternion_
+  name: SetQuaternion
+  nameWithType: TDFVariables.SetQuaternion
+  fullName: TotalDialogue.Core.Variables.TDFVariables.SetQuaternion
+- uid: TotalDialogue.Core.Variables.IVariables.SetQuaternion(System.String,UnityEngine.Quaternion)
+  commentId: M:TotalDialogue.Core.Variables.IVariables.SetQuaternion(System.String,UnityEngine.Quaternion)
+  parent: TotalDialogue.Core.Variables.IVariables
+  isExternal: true
+  href: TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_SetQuaternion_System_String_UnityEngine_Quaternion_
+  name: SetQuaternion(string, Quaternion)
+  nameWithType: IVariables.SetQuaternion(string, Quaternion)
+  fullName: TotalDialogue.Core.Variables.IVariables.SetQuaternion(string, UnityEngine.Quaternion)
+  nameWithType.vb: IVariables.SetQuaternion(String, Quaternion)
+  fullName.vb: TotalDialogue.Core.Variables.IVariables.SetQuaternion(String, UnityEngine.Quaternion)
+  name.vb: SetQuaternion(String, Quaternion)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.IVariables.SetQuaternion(System.String,UnityEngine.Quaternion)
+    name: SetQuaternion
+    href: TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_SetQuaternion_System_String_UnityEngine_Quaternion_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.IVariables.SetQuaternion(System.String,UnityEngine.Quaternion)
+    name: SetQuaternion
+    href: TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_SetQuaternion_System_String_UnityEngine_Quaternion_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    isExternal: true
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVariables.SetString*
+  commentId: Overload:TotalDialogue.Core.Variables.TDFVariables.SetString
+  href: TotalDialogue.Core.Variables.TDFVariables.html#TotalDialogue_Core_Variables_TDFVariables_SetString_System_String_System_String_
+  name: SetString
+  nameWithType: TDFVariables.SetString
+  fullName: TotalDialogue.Core.Variables.TDFVariables.SetString
+- uid: TotalDialogue.Core.Variables.IVariables.SetString(System.String,System.String)
+  commentId: M:TotalDialogue.Core.Variables.IVariables.SetString(System.String,System.String)
+  parent: TotalDialogue.Core.Variables.IVariables
+  isExternal: true
+  href: TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_SetString_System_String_System_String_
+  name: SetString(string, string)
+  nameWithType: IVariables.SetString(string, string)
+  fullName: TotalDialogue.Core.Variables.IVariables.SetString(string, string)
+  nameWithType.vb: IVariables.SetString(String, String)
+  fullName.vb: TotalDialogue.Core.Variables.IVariables.SetString(String, String)
+  name.vb: SetString(String, String)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.IVariables.SetString(System.String,System.String)
+    name: SetString
+    href: TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_SetString_System_String_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.IVariables.SetString(System.String,System.String)
+    name: SetString
+    href: TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_SetString_System_String_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVariables.SetVector3*
+  commentId: Overload:TotalDialogue.Core.Variables.TDFVariables.SetVector3
+  href: TotalDialogue.Core.Variables.TDFVariables.html#TotalDialogue_Core_Variables_TDFVariables_SetVector3_System_String_UnityEngine_Vector3_
+  name: SetVector3
+  nameWithType: TDFVariables.SetVector3
+  fullName: TotalDialogue.Core.Variables.TDFVariables.SetVector3
+- uid: TotalDialogue.Core.Variables.IVariables.SetVector3(System.String,UnityEngine.Vector3)
+  commentId: M:TotalDialogue.Core.Variables.IVariables.SetVector3(System.String,UnityEngine.Vector3)
+  parent: TotalDialogue.Core.Variables.IVariables
+  isExternal: true
+  href: TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_SetVector3_System_String_UnityEngine_Vector3_
+  name: SetVector3(string, Vector3)
+  nameWithType: IVariables.SetVector3(string, Vector3)
+  fullName: TotalDialogue.Core.Variables.IVariables.SetVector3(string, UnityEngine.Vector3)
+  nameWithType.vb: IVariables.SetVector3(String, Vector3)
+  fullName.vb: TotalDialogue.Core.Variables.IVariables.SetVector3(String, UnityEngine.Vector3)
+  name.vb: SetVector3(String, Vector3)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.IVariables.SetVector3(System.String,UnityEngine.Vector3)
+    name: SetVector3
+    href: TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_SetVector3_System_String_UnityEngine_Vector3_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.IVariables.SetVector3(System.String,UnityEngine.Vector3)
+    name: SetVector3
+    href: TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_SetVector3_System_String_UnityEngine_Vector3_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVariables.AddListener*
+  commentId: Overload:TotalDialogue.Core.Variables.TDFVariables.AddListener
+  href: TotalDialogue.Core.Variables.TDFVariables.html#TotalDialogue_Core_Variables_TDFVariables_AddListener_TotalDialogue_Core_Variables_BoolListener_
+  name: AddListener
+  nameWithType: TDFVariables.AddListener
+  fullName: TotalDialogue.Core.Variables.TDFVariables.AddListener
+- uid: TotalDialogue.Core.Variables.IVariables.AddListener(TotalDialogue.Core.Variables.BoolListener)
+  commentId: M:TotalDialogue.Core.Variables.IVariables.AddListener(TotalDialogue.Core.Variables.BoolListener)
+  parent: TotalDialogue.Core.Variables.IVariables
+  href: TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_AddListener_TotalDialogue_Core_Variables_BoolListener_
+  name: AddListener(BoolListener)
+  nameWithType: IVariables.AddListener(BoolListener)
+  fullName: TotalDialogue.Core.Variables.IVariables.AddListener(TotalDialogue.Core.Variables.BoolListener)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.IVariables.AddListener(TotalDialogue.Core.Variables.BoolListener)
+    name: AddListener
+    href: TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_AddListener_TotalDialogue_Core_Variables_BoolListener_
+  - name: (
+  - uid: TotalDialogue.Core.Variables.BoolListener
+    name: BoolListener
+    href: TotalDialogue.Core.Variables.BoolListener.html
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.IVariables.AddListener(TotalDialogue.Core.Variables.BoolListener)
+    name: AddListener
+    href: TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_AddListener_TotalDialogue_Core_Variables_BoolListener_
+  - name: (
+  - uid: TotalDialogue.Core.Variables.BoolListener
+    name: BoolListener
+    href: TotalDialogue.Core.Variables.BoolListener.html
+  - name: )
+- uid: TotalDialogue.Core.Variables.BoolListener
+  commentId: T:TotalDialogue.Core.Variables.BoolListener
+  parent: TotalDialogue.Core.Variables
+  href: TotalDialogue.Core.Variables.BoolListener.html
+  name: BoolListener
+  nameWithType: BoolListener
+  fullName: TotalDialogue.Core.Variables.BoolListener
+- uid: TotalDialogue.Core.Variables.TDFVariables.RemoveListener*
+  commentId: Overload:TotalDialogue.Core.Variables.TDFVariables.RemoveListener
+  href: TotalDialogue.Core.Variables.TDFVariables.html#TotalDialogue_Core_Variables_TDFVariables_RemoveListener_TotalDialogue_Core_Variables_BoolListener_
+  name: RemoveListener
+  nameWithType: TDFVariables.RemoveListener
+  fullName: TotalDialogue.Core.Variables.TDFVariables.RemoveListener
+- uid: TotalDialogue.Core.Variables.IVariables.RemoveListener(TotalDialogue.Core.Variables.BoolListener)
+  commentId: M:TotalDialogue.Core.Variables.IVariables.RemoveListener(TotalDialogue.Core.Variables.BoolListener)
+  parent: TotalDialogue.Core.Variables.IVariables
+  href: TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_RemoveListener_TotalDialogue_Core_Variables_BoolListener_
+  name: RemoveListener(BoolListener)
+  nameWithType: IVariables.RemoveListener(BoolListener)
+  fullName: TotalDialogue.Core.Variables.IVariables.RemoveListener(TotalDialogue.Core.Variables.BoolListener)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.IVariables.RemoveListener(TotalDialogue.Core.Variables.BoolListener)
+    name: RemoveListener
+    href: TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_RemoveListener_TotalDialogue_Core_Variables_BoolListener_
+  - name: (
+  - uid: TotalDialogue.Core.Variables.BoolListener
+    name: BoolListener
+    href: TotalDialogue.Core.Variables.BoolListener.html
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.IVariables.RemoveListener(TotalDialogue.Core.Variables.BoolListener)
+    name: RemoveListener
+    href: TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_RemoveListener_TotalDialogue_Core_Variables_BoolListener_
+  - name: (
+  - uid: TotalDialogue.Core.Variables.BoolListener
+    name: BoolListener
+    href: TotalDialogue.Core.Variables.BoolListener.html
+  - name: )
+- uid: TotalDialogue.Core.Variables.IVariables.AddListener(TotalDialogue.Core.Variables.IntListener)
+  commentId: M:TotalDialogue.Core.Variables.IVariables.AddListener(TotalDialogue.Core.Variables.IntListener)
+  parent: TotalDialogue.Core.Variables.IVariables
+  href: TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_AddListener_TotalDialogue_Core_Variables_IntListener_
+  name: AddListener(IntListener)
+  nameWithType: IVariables.AddListener(IntListener)
+  fullName: TotalDialogue.Core.Variables.IVariables.AddListener(TotalDialogue.Core.Variables.IntListener)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.IVariables.AddListener(TotalDialogue.Core.Variables.IntListener)
+    name: AddListener
+    href: TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_AddListener_TotalDialogue_Core_Variables_IntListener_
+  - name: (
+  - uid: TotalDialogue.Core.Variables.IntListener
+    name: IntListener
+    href: TotalDialogue.Core.Variables.IntListener.html
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.IVariables.AddListener(TotalDialogue.Core.Variables.IntListener)
+    name: AddListener
+    href: TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_AddListener_TotalDialogue_Core_Variables_IntListener_
+  - name: (
+  - uid: TotalDialogue.Core.Variables.IntListener
+    name: IntListener
+    href: TotalDialogue.Core.Variables.IntListener.html
+  - name: )
+- uid: TotalDialogue.Core.Variables.IntListener
+  commentId: T:TotalDialogue.Core.Variables.IntListener
+  parent: TotalDialogue.Core.Variables
+  href: TotalDialogue.Core.Variables.IntListener.html
+  name: IntListener
+  nameWithType: IntListener
+  fullName: TotalDialogue.Core.Variables.IntListener
+- uid: TotalDialogue.Core.Variables.IVariables.RemoveListener(TotalDialogue.Core.Variables.IntListener)
+  commentId: M:TotalDialogue.Core.Variables.IVariables.RemoveListener(TotalDialogue.Core.Variables.IntListener)
+  parent: TotalDialogue.Core.Variables.IVariables
+  href: TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_RemoveListener_TotalDialogue_Core_Variables_IntListener_
+  name: RemoveListener(IntListener)
+  nameWithType: IVariables.RemoveListener(IntListener)
+  fullName: TotalDialogue.Core.Variables.IVariables.RemoveListener(TotalDialogue.Core.Variables.IntListener)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.IVariables.RemoveListener(TotalDialogue.Core.Variables.IntListener)
+    name: RemoveListener
+    href: TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_RemoveListener_TotalDialogue_Core_Variables_IntListener_
+  - name: (
+  - uid: TotalDialogue.Core.Variables.IntListener
+    name: IntListener
+    href: TotalDialogue.Core.Variables.IntListener.html
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.IVariables.RemoveListener(TotalDialogue.Core.Variables.IntListener)
+    name: RemoveListener
+    href: TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_RemoveListener_TotalDialogue_Core_Variables_IntListener_
+  - name: (
+  - uid: TotalDialogue.Core.Variables.IntListener
+    name: IntListener
+    href: TotalDialogue.Core.Variables.IntListener.html
+  - name: )
+- uid: TotalDialogue.Core.Variables.IVariables.AddListener(TotalDialogue.Core.Variables.FloatListener)
+  commentId: M:TotalDialogue.Core.Variables.IVariables.AddListener(TotalDialogue.Core.Variables.FloatListener)
+  parent: TotalDialogue.Core.Variables.IVariables
+  href: TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_AddListener_TotalDialogue_Core_Variables_FloatListener_
+  name: AddListener(FloatListener)
+  nameWithType: IVariables.AddListener(FloatListener)
+  fullName: TotalDialogue.Core.Variables.IVariables.AddListener(TotalDialogue.Core.Variables.FloatListener)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.IVariables.AddListener(TotalDialogue.Core.Variables.FloatListener)
+    name: AddListener
+    href: TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_AddListener_TotalDialogue_Core_Variables_FloatListener_
+  - name: (
+  - uid: TotalDialogue.Core.Variables.FloatListener
+    name: FloatListener
+    href: TotalDialogue.Core.Variables.FloatListener.html
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.IVariables.AddListener(TotalDialogue.Core.Variables.FloatListener)
+    name: AddListener
+    href: TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_AddListener_TotalDialogue_Core_Variables_FloatListener_
+  - name: (
+  - uid: TotalDialogue.Core.Variables.FloatListener
+    name: FloatListener
+    href: TotalDialogue.Core.Variables.FloatListener.html
+  - name: )
+- uid: TotalDialogue.Core.Variables.FloatListener
+  commentId: T:TotalDialogue.Core.Variables.FloatListener
+  parent: TotalDialogue.Core.Variables
+  href: TotalDialogue.Core.Variables.FloatListener.html
+  name: FloatListener
+  nameWithType: FloatListener
+  fullName: TotalDialogue.Core.Variables.FloatListener
+- uid: TotalDialogue.Core.Variables.IVariables.RemoveListener(TotalDialogue.Core.Variables.FloatListener)
+  commentId: M:TotalDialogue.Core.Variables.IVariables.RemoveListener(TotalDialogue.Core.Variables.FloatListener)
+  parent: TotalDialogue.Core.Variables.IVariables
+  href: TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_RemoveListener_TotalDialogue_Core_Variables_FloatListener_
+  name: RemoveListener(FloatListener)
+  nameWithType: IVariables.RemoveListener(FloatListener)
+  fullName: TotalDialogue.Core.Variables.IVariables.RemoveListener(TotalDialogue.Core.Variables.FloatListener)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.IVariables.RemoveListener(TotalDialogue.Core.Variables.FloatListener)
+    name: RemoveListener
+    href: TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_RemoveListener_TotalDialogue_Core_Variables_FloatListener_
+  - name: (
+  - uid: TotalDialogue.Core.Variables.FloatListener
+    name: FloatListener
+    href: TotalDialogue.Core.Variables.FloatListener.html
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.IVariables.RemoveListener(TotalDialogue.Core.Variables.FloatListener)
+    name: RemoveListener
+    href: TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_RemoveListener_TotalDialogue_Core_Variables_FloatListener_
+  - name: (
+  - uid: TotalDialogue.Core.Variables.FloatListener
+    name: FloatListener
+    href: TotalDialogue.Core.Variables.FloatListener.html
+  - name: )
+- uid: TotalDialogue.Core.Variables.IVariables.AddListener(TotalDialogue.Core.Variables.StringListener)
+  commentId: M:TotalDialogue.Core.Variables.IVariables.AddListener(TotalDialogue.Core.Variables.StringListener)
+  parent: TotalDialogue.Core.Variables.IVariables
+  href: TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_AddListener_TotalDialogue_Core_Variables_StringListener_
+  name: AddListener(StringListener)
+  nameWithType: IVariables.AddListener(StringListener)
+  fullName: TotalDialogue.Core.Variables.IVariables.AddListener(TotalDialogue.Core.Variables.StringListener)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.IVariables.AddListener(TotalDialogue.Core.Variables.StringListener)
+    name: AddListener
+    href: TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_AddListener_TotalDialogue_Core_Variables_StringListener_
+  - name: (
+  - uid: TotalDialogue.Core.Variables.StringListener
+    name: StringListener
+    href: TotalDialogue.Core.Variables.StringListener.html
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.IVariables.AddListener(TotalDialogue.Core.Variables.StringListener)
+    name: AddListener
+    href: TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_AddListener_TotalDialogue_Core_Variables_StringListener_
+  - name: (
+  - uid: TotalDialogue.Core.Variables.StringListener
+    name: StringListener
+    href: TotalDialogue.Core.Variables.StringListener.html
+  - name: )
+- uid: TotalDialogue.Core.Variables.StringListener
+  commentId: T:TotalDialogue.Core.Variables.StringListener
+  parent: TotalDialogue.Core.Variables
+  href: TotalDialogue.Core.Variables.StringListener.html
+  name: StringListener
+  nameWithType: StringListener
+  fullName: TotalDialogue.Core.Variables.StringListener
+- uid: TotalDialogue.Core.Variables.IVariables.RemoveListener(TotalDialogue.Core.Variables.StringListener)
+  commentId: M:TotalDialogue.Core.Variables.IVariables.RemoveListener(TotalDialogue.Core.Variables.StringListener)
+  parent: TotalDialogue.Core.Variables.IVariables
+  href: TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_RemoveListener_TotalDialogue_Core_Variables_StringListener_
+  name: RemoveListener(StringListener)
+  nameWithType: IVariables.RemoveListener(StringListener)
+  fullName: TotalDialogue.Core.Variables.IVariables.RemoveListener(TotalDialogue.Core.Variables.StringListener)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.IVariables.RemoveListener(TotalDialogue.Core.Variables.StringListener)
+    name: RemoveListener
+    href: TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_RemoveListener_TotalDialogue_Core_Variables_StringListener_
+  - name: (
+  - uid: TotalDialogue.Core.Variables.StringListener
+    name: StringListener
+    href: TotalDialogue.Core.Variables.StringListener.html
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.IVariables.RemoveListener(TotalDialogue.Core.Variables.StringListener)
+    name: RemoveListener
+    href: TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_RemoveListener_TotalDialogue_Core_Variables_StringListener_
+  - name: (
+  - uid: TotalDialogue.Core.Variables.StringListener
+    name: StringListener
+    href: TotalDialogue.Core.Variables.StringListener.html
+  - name: )
+- uid: TotalDialogue.Core.Variables.IVariables.AddListener(TotalDialogue.Core.Variables.Vector3Listener)
+  commentId: M:TotalDialogue.Core.Variables.IVariables.AddListener(TotalDialogue.Core.Variables.Vector3Listener)
+  parent: TotalDialogue.Core.Variables.IVariables
+  href: TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_AddListener_TotalDialogue_Core_Variables_Vector3Listener_
+  name: AddListener(Vector3Listener)
+  nameWithType: IVariables.AddListener(Vector3Listener)
+  fullName: TotalDialogue.Core.Variables.IVariables.AddListener(TotalDialogue.Core.Variables.Vector3Listener)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.IVariables.AddListener(TotalDialogue.Core.Variables.Vector3Listener)
+    name: AddListener
+    href: TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_AddListener_TotalDialogue_Core_Variables_Vector3Listener_
+  - name: (
+  - uid: TotalDialogue.Core.Variables.Vector3Listener
+    name: Vector3Listener
+    href: TotalDialogue.Core.Variables.Vector3Listener.html
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.IVariables.AddListener(TotalDialogue.Core.Variables.Vector3Listener)
+    name: AddListener
+    href: TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_AddListener_TotalDialogue_Core_Variables_Vector3Listener_
+  - name: (
+  - uid: TotalDialogue.Core.Variables.Vector3Listener
+    name: Vector3Listener
+    href: TotalDialogue.Core.Variables.Vector3Listener.html
+  - name: )
+- uid: TotalDialogue.Core.Variables.Vector3Listener
+  commentId: T:TotalDialogue.Core.Variables.Vector3Listener
+  parent: TotalDialogue.Core.Variables
+  href: TotalDialogue.Core.Variables.Vector3Listener.html
+  name: Vector3Listener
+  nameWithType: Vector3Listener
+  fullName: TotalDialogue.Core.Variables.Vector3Listener
+- uid: TotalDialogue.Core.Variables.IVariables.RemoveListener(TotalDialogue.Core.Variables.Vector3Listener)
+  commentId: M:TotalDialogue.Core.Variables.IVariables.RemoveListener(TotalDialogue.Core.Variables.Vector3Listener)
+  parent: TotalDialogue.Core.Variables.IVariables
+  href: TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_RemoveListener_TotalDialogue_Core_Variables_Vector3Listener_
+  name: RemoveListener(Vector3Listener)
+  nameWithType: IVariables.RemoveListener(Vector3Listener)
+  fullName: TotalDialogue.Core.Variables.IVariables.RemoveListener(TotalDialogue.Core.Variables.Vector3Listener)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.IVariables.RemoveListener(TotalDialogue.Core.Variables.Vector3Listener)
+    name: RemoveListener
+    href: TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_RemoveListener_TotalDialogue_Core_Variables_Vector3Listener_
+  - name: (
+  - uid: TotalDialogue.Core.Variables.Vector3Listener
+    name: Vector3Listener
+    href: TotalDialogue.Core.Variables.Vector3Listener.html
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.IVariables.RemoveListener(TotalDialogue.Core.Variables.Vector3Listener)
+    name: RemoveListener
+    href: TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_RemoveListener_TotalDialogue_Core_Variables_Vector3Listener_
+  - name: (
+  - uid: TotalDialogue.Core.Variables.Vector3Listener
+    name: Vector3Listener
+    href: TotalDialogue.Core.Variables.Vector3Listener.html
+  - name: )
+- uid: TotalDialogue.Core.Variables.IVariables.AddListener(TotalDialogue.Core.Variables.QuartanionListener)
+  commentId: M:TotalDialogue.Core.Variables.IVariables.AddListener(TotalDialogue.Core.Variables.QuartanionListener)
+  parent: TotalDialogue.Core.Variables.IVariables
+  href: TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_AddListener_TotalDialogue_Core_Variables_QuartanionListener_
+  name: AddListener(QuartanionListener)
+  nameWithType: IVariables.AddListener(QuartanionListener)
+  fullName: TotalDialogue.Core.Variables.IVariables.AddListener(TotalDialogue.Core.Variables.QuartanionListener)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.IVariables.AddListener(TotalDialogue.Core.Variables.QuartanionListener)
+    name: AddListener
+    href: TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_AddListener_TotalDialogue_Core_Variables_QuartanionListener_
+  - name: (
+  - uid: TotalDialogue.Core.Variables.QuartanionListener
+    name: QuartanionListener
+    href: TotalDialogue.Core.Variables.QuartanionListener.html
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.IVariables.AddListener(TotalDialogue.Core.Variables.QuartanionListener)
+    name: AddListener
+    href: TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_AddListener_TotalDialogue_Core_Variables_QuartanionListener_
+  - name: (
+  - uid: TotalDialogue.Core.Variables.QuartanionListener
+    name: QuartanionListener
+    href: TotalDialogue.Core.Variables.QuartanionListener.html
+  - name: )
+- uid: TotalDialogue.Core.Variables.QuartanionListener
+  commentId: T:TotalDialogue.Core.Variables.QuartanionListener
+  parent: TotalDialogue.Core.Variables
+  href: TotalDialogue.Core.Variables.QuartanionListener.html
+  name: QuartanionListener
+  nameWithType: QuartanionListener
+  fullName: TotalDialogue.Core.Variables.QuartanionListener
+- uid: TotalDialogue.Core.Variables.IVariables.RemoveListener(TotalDialogue.Core.Variables.QuartanionListener)
+  commentId: M:TotalDialogue.Core.Variables.IVariables.RemoveListener(TotalDialogue.Core.Variables.QuartanionListener)
+  parent: TotalDialogue.Core.Variables.IVariables
+  href: TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_RemoveListener_TotalDialogue_Core_Variables_QuartanionListener_
+  name: RemoveListener(QuartanionListener)
+  nameWithType: IVariables.RemoveListener(QuartanionListener)
+  fullName: TotalDialogue.Core.Variables.IVariables.RemoveListener(TotalDialogue.Core.Variables.QuartanionListener)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.IVariables.RemoveListener(TotalDialogue.Core.Variables.QuartanionListener)
+    name: RemoveListener
+    href: TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_RemoveListener_TotalDialogue_Core_Variables_QuartanionListener_
+  - name: (
+  - uid: TotalDialogue.Core.Variables.QuartanionListener
+    name: QuartanionListener
+    href: TotalDialogue.Core.Variables.QuartanionListener.html
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.IVariables.RemoveListener(TotalDialogue.Core.Variables.QuartanionListener)
+    name: RemoveListener
+    href: TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_RemoveListener_TotalDialogue_Core_Variables_QuartanionListener_
+  - name: (
+  - uid: TotalDialogue.Core.Variables.QuartanionListener
+    name: QuartanionListener
+    href: TotalDialogue.Core.Variables.QuartanionListener.html
+  - name: )

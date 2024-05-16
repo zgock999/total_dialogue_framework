@@ -75,7 +75,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: TDFList
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
     startLine: 80
@@ -139,7 +139,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: list
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
     startLine: 87
@@ -180,7 +180,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: lockObject
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
     startLine: 91
@@ -211,7 +211,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: isLocked
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
     startLine: 96
@@ -242,7 +242,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: lockedThreadId
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
     startLine: 101
@@ -273,7 +273,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: m_serializing
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
     startLine: 106
@@ -304,7 +304,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: Serializing
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
     startLine: 110
@@ -339,7 +339,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: BeginLock
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
     startLine: 114
@@ -369,7 +369,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: EndLock
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
     startLine: 138
@@ -399,7 +399,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: OnChange
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
     startLine: 153
@@ -432,7 +432,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: OnAdd
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
     startLine: 158
@@ -465,7 +465,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: OnRemove
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
     startLine: 163
@@ -498,7 +498,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: OnChangeItem
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
     startLine: 168
@@ -531,7 +531,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: Validate
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
     startLine: 175
@@ -565,7 +565,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: .ctor
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
     startLine: 179
@@ -596,7 +596,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: .ctor
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
     startLine: 187
@@ -632,7 +632,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: Add
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
     startLine: 202
@@ -678,7 +678,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: Remove
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
     startLine: 231
@@ -724,7 +724,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: RemoveAt
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
     startLine: 261
@@ -771,7 +771,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: Count
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
     startLine: 287
@@ -808,7 +808,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: this[]
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
     startLine: 313
@@ -858,7 +858,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: Clear
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
     startLine: 353
@@ -894,7 +894,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: Insert
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
     startLine: 378
@@ -942,7 +942,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: AddRange
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
     startLine: 407
@@ -987,7 +987,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: RemoveRange
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
     startLine: 435
@@ -1035,7 +1035,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: Sort
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
     startLine: 457
@@ -1076,7 +1076,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: Sort
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
     startLine: 479
@@ -1117,7 +1117,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: Sort
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
     startLine: 503
@@ -1164,7 +1164,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: Reverse
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
     startLine: 524
@@ -1200,7 +1200,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: Reverse
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
     startLine: 547
@@ -1244,7 +1244,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: CopyTo
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
     startLine: 568
@@ -1283,7 +1283,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: ForEach
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
     startLine: 588
@@ -1325,7 +1325,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: GetEnumerator
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
     startLine: 614
@@ -1359,7 +1359,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: GetRange
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
     startLine: 634
@@ -1401,7 +1401,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: IndexOf
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
     startLine: 653
@@ -1439,7 +1439,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: LastIndexOf
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
     startLine: 672
@@ -1477,7 +1477,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: Contains
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
     startLine: 691
@@ -1515,7 +1515,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: Find
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
     startLine: 710
@@ -1554,7 +1554,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: FindAll
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
     startLine: 729
@@ -1593,7 +1593,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: FindIndex
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
     startLine: 748
@@ -1632,7 +1632,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: FindIndex
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
     startLine: 768
@@ -1674,7 +1674,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: FindIndex
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
     startLine: 789
@@ -1719,7 +1719,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: FindLast
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
     startLine: 808
@@ -1758,7 +1758,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: FindLastIndex
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
     startLine: 827
@@ -1797,7 +1797,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: FindLastIndex
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
     startLine: 847
@@ -1839,7 +1839,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: FindLastIndex
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
     startLine: 868
@@ -1884,7 +1884,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: RemoveAll
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
     startLine: 889
@@ -1928,7 +1928,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: ToArray
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
     startLine: 910
@@ -1962,7 +1962,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: TrimExcess
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
     startLine: 930
@@ -1998,7 +1998,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: TrueForAll
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
     startLine: 954
@@ -2037,7 +2037,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: AddRange
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
     startLine: 1008
@@ -2073,7 +2073,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: RemoveRange
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
     startLine: 1028
@@ -2109,7 +2109,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: GetItemType
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
     startLine: 1048
@@ -2142,7 +2142,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: UpdateDuplicates
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
     startLine: 1060
@@ -2178,7 +2178,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: OnBeforeSerialize
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
     startLine: 1066
@@ -2210,7 +2210,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: OnAfterDeserialize
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
     startLine: 1075
@@ -2242,7 +2242,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: InvokeOnChange
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
     startLine: 1084
@@ -2272,7 +2272,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: InvokeOnChangeItem
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
     startLine: 1092
@@ -2308,7 +2308,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: InvokeOnAdd
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
     startLine: 1099
@@ -2344,7 +2344,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: InvokeOnRemove
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
     startLine: 1106

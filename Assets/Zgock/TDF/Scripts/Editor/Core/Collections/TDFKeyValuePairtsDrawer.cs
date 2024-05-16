@@ -5,16 +5,18 @@ using UnityEditorInternal;
 using System.Collections;
 using System.Net.WebSockets;
 using System;
+using System.Reflection;
 using TotalDialogue.Core.Collections;
+using TotalDialogue.Core.Variables;
+using Codice.CM.SEIDInfo;
 
 namespace TotalDialogue.Editor
 {
-    [CustomPropertyDrawer(typeof(TDFDictionary<,>))]
-    [CustomPropertyDrawer(typeof(TDFKeyValuePairs<,>))]
-    public class TDFKeyValuePairsDrawer : PropertyDrawer
+    [CustomPropertyDrawer(typeof(TDFKeyValuePairs<,>), true)]
+    public class TDFKeyValuePairsDrawer : TDFDrawer
     {
-        private ReorderableList reorderableList;
-        private UnityEngine.Object targetObject;
+        protected ReorderableList reorderableList;
+        protected UnityEngine.Object targetObject;
 
         public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
         {
@@ -33,10 +35,12 @@ namespace TotalDialogue.Editor
                 reorderableList.onCanAddCallback = (ReorderableList list) => CanAdd(list, property);
                 reorderableList.onCanRemoveCallback = (ReorderableList list) => CanRemove(list, property);
 
-                var target = fieldInfo.GetValue(property.serializedObject.targetObject);
+                //var target = fieldInfo.GetValue(property.serializedObject.targetObject);
+                var target = GetNestedField(property.serializedObject.targetObject, property.propertyPath);
                 targetObject = property.serializedObject.targetObject;
-                var genericMethod = this.GetType().GetMethod("SubscribeOnChange").MakeGenericMethod(fieldInfo.FieldType.GetGenericArguments()[0]);
-                genericMethod.Invoke(this, new object[] { target });
+                MethodInfo method;
+                method = this.GetType().GetMethod("SubscribeOnChangeNonGeneric");
+                method.Invoke(this, new object[] { target });
             }
             PreDoList(reorderableList, property);
             DoBeginLock(property);
@@ -54,6 +58,21 @@ namespace TotalDialogue.Editor
             }
             PostDoList(reorderableList, property);
         }
+        public static object GetNestedField(object target, string propertyPath)
+        {
+            var pathParts = propertyPath.Split('.');
+            foreach (var part in pathParts)
+            {
+                var type = target.GetType();
+                var field = type.GetField(part, BindingFlags.NonPublic | BindingFlags.Public | BindingFlags.Instance);
+                if (field == null)
+                {
+                    return null;
+                }
+                target = field.GetValue(target);
+            }
+            return target;
+        }
         public override float GetPropertyHeight(SerializedProperty property, GUIContent label)
         {
             return reorderableList != null ? reorderableList.GetHeight() : EditorGUI.GetPropertyHeight(property, label);
@@ -61,7 +80,7 @@ namespace TotalDialogue.Editor
 
         public void SubscribeOnChange<T>(object target)
         {
-            var targetList = target as ITDFList<T>;
+            var targetList = target as ITDFList;
             if (targetList == null)
             {
                 return;
@@ -69,20 +88,19 @@ namespace TotalDialogue.Editor
 
             targetList.OnChange += OnListChanged;
         }
-
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        public void SubscribeOnChangeNonGeneric(object target)
+        {
+            if (target is ITDFList targetList)
+            {
+                targetList.OnChange += OnListChanged;
+            }
+        }
         private void OnListChanged()
         {
-            // リストが更新されたときに実行するコード
-            //Debug.Log("List has been updated.");
             EditorUtility.SetDirty(targetObject);
         }
         ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        protected void InvokeMethod(SerializedProperty property, string methodName)
-        {
-            var listObject = fieldInfo.GetValue(property.serializedObject.targetObject);
-            var method = fieldInfo.FieldType.GetMethod(methodName);
-            method.Invoke(listObject, null);
-        }
         protected void DoUpdateDuplicates(SerializedProperty property)
         {
             InvokeMethod(property, "UpdateDuplicates");
@@ -99,7 +117,11 @@ namespace TotalDialogue.Editor
         protected void DoEndLock(SerializedProperty property)
         {
             InvokeMethod(property, "EndLock");
-        }        
+        }
+        protected bool IsDuplicateIndex(SerializedProperty property, int index)
+        {
+            return (bool)InvokeMethodAndReturn(property, "IsDuplicateIndex", new object[] { index });
+        }
         ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         // Customizing(Overridable) Methods
  
@@ -116,14 +138,11 @@ namespace TotalDialogue.Editor
             var list = property.FindPropertyRelative("list");
             var element = list.GetArrayElementAtIndex(index);
             rect.y += 2;
-            var listObject = fieldInfo.GetValue(reorderableList.serializedProperty.serializedObject.targetObject);
-            var isDuplicateIndexMethod = fieldInfo.FieldType.GetMethod("IsDuplicateIndex");
-            var duplicate = (bool)isDuplicateIndexMethod.Invoke(listObject, new object[] { index });
+            var duplicate = IsDuplicateIndex(property, index);
             var color = duplicate ? Color.red : GUI.color;
 
             GUI.color = color;
             EditorGUI.BeginChangeCheck();
-            //EditorGUI.PropertyField(new Rect(rect.x, rect.y, rect.width, EditorGUIUtility.singleLineHeight), element);
             EditorGUI.PropertyField(rect, element);
             if (EditorGUI.EndChangeCheck())
             {

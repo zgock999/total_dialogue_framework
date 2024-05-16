@@ -13,4 +13,43 @@ items:
     name: TDFKeyValuePairs<TKey, TValue>
   - uid: TotalDialogue.Core.Collections.TDFList`1
     name: TDFList<T>
+- uid: TotalDialogue.Core.Variables
+  name: TotalDialogue.Core.Variables
+  items:
+  - uid: TotalDialogue.Core.Variables.BoolListener
+    name: BoolListener
+  - uid: TotalDialogue.Core.Variables.BoolVar
+    name: BoolVar
+  - uid: TotalDialogue.Core.Variables.FloatListener
+    name: FloatListener
+  - uid: TotalDialogue.Core.Variables.FloatVar
+    name: FloatVar
+  - uid: TotalDialogue.Core.Variables.IEmptyVar
+    name: IEmptyVar
+  - uid: TotalDialogue.Core.Variables.ITDFVar`2
+    name: ITDFVar<T, TListener>
+  - uid: TotalDialogue.Core.Variables.IVariables
+    name: IVariables
+  - uid: TotalDialogue.Core.Variables.IntListener
+    name: IntListener
+  - uid: TotalDialogue.Core.Variables.IntVar
+    name: IntVar
+  - uid: TotalDialogue.Core.Variables.QuartanionListener
+    name: QuartanionListener
+  - uid: TotalDialogue.Core.Variables.QuartanionVar
+    name: QuartanionVar
+  - uid: TotalDialogue.Core.Variables.StringListener
+    name: StringListener
+  - uid: TotalDialogue.Core.Variables.StringVar
+    name: StringVar
+  - uid: TotalDialogue.Core.Variables.TDFVar`2
+    name: TDFVar<T, TListener>
+  - uid: TotalDialogue.Core.Variables.TDFVariables
+    name: TDFVariables
+  - uid: TotalDialogue.Core.Variables.VariableListener`1
+    name: VariableListener<T>
+  - uid: TotalDialogue.Core.Variables.Vector3Listener
+    name: Vector3Listener
+  - uid: TotalDialogue.Core.Variables.Vector3Var
+    name: Vector3Var
 memberLayout: SamePage

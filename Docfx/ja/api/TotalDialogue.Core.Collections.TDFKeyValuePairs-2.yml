@@ -31,7 +31,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFKeyValuePairs.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: TDFKeyValuePairs
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFKeyValuePairs.cs
     startLine: 19
@@ -162,7 +162,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFKeyValuePairs.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: indexDictionary
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFKeyValuePairs.cs
     startLine: 26
@@ -203,7 +203,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFKeyValuePairs.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: .ctor
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFKeyValuePairs.cs
     startLine: 30
@@ -234,7 +234,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFKeyValuePairs.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: .ctor
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFKeyValuePairs.cs
     startLine: 37
@@ -269,7 +269,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFKeyValuePairs.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: .ctor
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFKeyValuePairs.cs
     startLine: 45
@@ -304,7 +304,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFKeyValuePairs.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: this[]
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFKeyValuePairs.cs
     startLine: 62
@@ -347,7 +347,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFKeyValuePairs.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: Add
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFKeyValuePairs.cs
     startLine: 99
@@ -387,7 +387,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFKeyValuePairs.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: Insert
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFKeyValuePairs.cs
     startLine: 130
@@ -430,7 +430,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFKeyValuePairs.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: RemoveAt
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFKeyValuePairs.cs
     startLine: 152
@@ -470,7 +470,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFKeyValuePairs.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: Remove
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFKeyValuePairs.cs
     startLine: 179
@@ -512,7 +512,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFKeyValuePairs.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: Remove
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFKeyValuePairs.cs
     startLine: 216
@@ -556,7 +556,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFKeyValuePairs.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: ContainsKey
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFKeyValuePairs.cs
     startLine: 247
@@ -594,7 +594,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFKeyValuePairs.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: IndexOfKey
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFKeyValuePairs.cs
     startLine: 267
@@ -635,7 +635,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFKeyValuePairs.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: IsDuplicate
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFKeyValuePairs.cs
     startLine: 293
@@ -673,7 +673,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFKeyValuePairs.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: UpdateDuplicates
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFKeyValuePairs.cs
     startLine: 310
@@ -705,7 +705,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFKeyValuePairs.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: IsDuplicateIndex
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFKeyValuePairs.cs
     startLine: 335

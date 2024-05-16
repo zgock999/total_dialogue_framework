@@ -1,0 +1,2184 @@
+### YamlMime:ManagedReference
+items:
+- uid: TotalDialogue.Core.Variables.TDFVar`2
+  commentId: T:TotalDialogue.Core.Variables.TDFVar`2
+  id: TDFVar`2
+  parent: TotalDialogue.Core.Variables
+  children:
+  - TotalDialogue.Core.Variables.TDFVar`2.#ctor(System.String,`0)
+  - TotalDialogue.Core.Variables.TDFVar`2.AddListener(`1)
+  - TotalDialogue.Core.Variables.TDFVar`2.DefaultValue
+  - TotalDialogue.Core.Variables.TDFVar`2.Fire(`1,`0,`0,System.Boolean)
+  - TotalDialogue.Core.Variables.TDFVar`2.GetBoolValue
+  - TotalDialogue.Core.Variables.TDFVar`2.GetFloatValue
+  - TotalDialogue.Core.Variables.TDFVar`2.GetIntValue
+  - TotalDialogue.Core.Variables.TDFVar`2.GetQuaternionValue
+  - TotalDialogue.Core.Variables.TDFVar`2.GetStringValue
+  - TotalDialogue.Core.Variables.TDFVar`2.GetValue
+  - TotalDialogue.Core.Variables.TDFVar`2.GetVector3Value
+  - TotalDialogue.Core.Variables.TDFVar`2.Interface
+  - TotalDialogue.Core.Variables.TDFVar`2.IsBecome(`0,`0,`0)
+  - TotalDialogue.Core.Variables.TDFVar`2.IsCease(`0,`0,`0)
+  - TotalDialogue.Core.Variables.TDFVar`2.IsChanged(`0,`0)
+  - TotalDialogue.Core.Variables.TDFVar`2.Key
+  - TotalDialogue.Core.Variables.TDFVar`2.RemoveListener(`1)
+  - TotalDialogue.Core.Variables.TDFVar`2.RestoreDefault
+  - TotalDialogue.Core.Variables.TDFVar`2.SetBoolValue(System.Boolean)
+  - TotalDialogue.Core.Variables.TDFVar`2.SetFloatValue(System.Single)
+  - TotalDialogue.Core.Variables.TDFVar`2.SetIntValue(System.Int32)
+  - TotalDialogue.Core.Variables.TDFVar`2.SetStringValue(System.String)
+  - TotalDialogue.Core.Variables.TDFVar`2.SetValue(`0)
+  - TotalDialogue.Core.Variables.TDFVar`2.SetVector3Value(UnityEngine.Vector3)
+  - TotalDialogue.Core.Variables.TDFVar`2.StoreDefault
+  - TotalDialogue.Core.Variables.TDFVar`2.StringValue
+  - TotalDialogue.Core.Variables.TDFVar`2.Value
+  - TotalDialogue.Core.Variables.TDFVar`2.m_defaultValue
+  - TotalDialogue.Core.Variables.TDFVar`2.m_key
+  - TotalDialogue.Core.Variables.TDFVar`2.m_listeners
+  - TotalDialogue.Core.Variables.TDFVar`2.m_value
+  langs:
+  - csharp
+  - vb
+  name: TDFVar<T, TListener>
+  nameWithType: TDFVar<T, TListener>
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>
+  type: Class
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs
+      branch: master
+      repo: git@github.com:zgock999/total_dialogue_framework.git
+    id: TDFVar
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs
+    startLine: 7
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Variables
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class TDFVar<T, TListener> : ITDFVar<T, TListener>, IEmptyVar where TListener : VariableListener<T>
+    typeParameters:
+    - id: T
+    - id: TListener
+    content.vb: >-
+      <Serializable>
+
+      Public Class TDFVar(Of T, TListener As VariableListener(Of T)) Implements ITDFVar(Of T, TListener), IEmptyVar
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - TotalDialogue.Core.Variables.BoolVar
+  - TotalDialogue.Core.Variables.FloatVar
+  - TotalDialogue.Core.Variables.IntVar
+  - TotalDialogue.Core.Variables.QuartanionVar
+  - TotalDialogue.Core.Variables.StringVar
+  - TotalDialogue.Core.Variables.Vector3Var
+  implements:
+  - TotalDialogue.Core.Variables.ITDFVar{{T},{TListener}}
+  - TotalDialogue.Core.Variables.IEmptyVar
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+  nameWithType.vb: TDFVar(Of T, TListener)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener)
+  name.vb: TDFVar(Of T, TListener)
+- uid: TotalDialogue.Core.Variables.TDFVar`2.m_listeners
+  commentId: F:TotalDialogue.Core.Variables.TDFVar`2.m_listeners
+  id: m_listeners
+  parent: TotalDialogue.Core.Variables.TDFVar`2
+  langs:
+  - csharp
+  - vb
+  name: m_listeners
+  nameWithType: TDFVar<T, TListener>.m_listeners
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.m_listeners
+  type: Field
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs
+      branch: master
+      repo: git@github.com:zgock999/total_dialogue_framework.git
+    id: m_listeners
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs
+    startLine: 11
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Variables
+  syntax:
+    content: >-
+      [NonSerialized]
+
+      protected List<TListener> m_listeners
+    return:
+      type: System.Collections.Generic.List{{TListener}}
+    content.vb: >-
+      <NonSerialized>
+
+      Protected m_listeners As List(Of TListener)
+  attributes:
+  - type: System.NonSerializedAttribute
+    ctor: System.NonSerializedAttribute.#ctor
+    arguments: []
+  nameWithType.vb: TDFVar(Of T, TListener).m_listeners
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).m_listeners
+- uid: TotalDialogue.Core.Variables.TDFVar`2.m_key
+  commentId: F:TotalDialogue.Core.Variables.TDFVar`2.m_key
+  id: m_key
+  parent: TotalDialogue.Core.Variables.TDFVar`2
+  langs:
+  - csharp
+  - vb
+  name: m_key
+  nameWithType: TDFVar<T, TListener>.m_key
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.m_key
+  type: Field
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs
+      branch: master
+      repo: git@github.com:zgock999/total_dialogue_framework.git
+    id: m_key
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs
+    startLine: 14
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Variables
+  syntax:
+    content: >-
+      [SerializeField]
+
+      [HideInInspector]
+
+      protected readonly string m_key
+    return:
+      type: System.String
+    content.vb: >-
+      <SerializeField>
+
+      <HideInInspector>
+
+      Protected ReadOnly m_key As String
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+  - type: UnityEngine.HideInInspector
+    ctor: UnityEngine.HideInInspector.#ctor
+    arguments: []
+  nameWithType.vb: TDFVar(Of T, TListener).m_key
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).m_key
+- uid: TotalDialogue.Core.Variables.TDFVar`2.m_value
+  commentId: F:TotalDialogue.Core.Variables.TDFVar`2.m_value
+  id: m_value
+  parent: TotalDialogue.Core.Variables.TDFVar`2
+  langs:
+  - csharp
+  - vb
+  name: m_value
+  nameWithType: TDFVar<T, TListener>.m_value
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.m_value
+  type: Field
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs
+      branch: master
+      repo: git@github.com:zgock999/total_dialogue_framework.git
+    id: m_value
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs
+    startLine: 16
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Variables
+  syntax:
+    content: >-
+      [SerializeField]
+
+      protected T m_value
+    return:
+      type: '{T}'
+    content.vb: >-
+      <SerializeField>
+
+      Protected m_value As T
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+  nameWithType.vb: TDFVar(Of T, TListener).m_value
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).m_value
+- uid: TotalDialogue.Core.Variables.TDFVar`2.m_defaultValue
+  commentId: F:TotalDialogue.Core.Variables.TDFVar`2.m_defaultValue
+  id: m_defaultValue
+  parent: TotalDialogue.Core.Variables.TDFVar`2
+  langs:
+  - csharp
+  - vb
+  name: m_defaultValue
+  nameWithType: TDFVar<T, TListener>.m_defaultValue
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.m_defaultValue
+  type: Field
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs
+      branch: master
+      repo: git@github.com:zgock999/total_dialogue_framework.git
+    id: m_defaultValue
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs
+    startLine: 18
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Variables
+  syntax:
+    content: >-
+      [SerializeField]
+
+      protected T m_defaultValue
+    return:
+      type: '{T}'
+    content.vb: >-
+      <SerializeField>
+
+      Protected m_defaultValue As T
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+  nameWithType.vb: TDFVar(Of T, TListener).m_defaultValue
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).m_defaultValue
+- uid: TotalDialogue.Core.Variables.TDFVar`2.Key
+  commentId: P:TotalDialogue.Core.Variables.TDFVar`2.Key
+  id: Key
+  parent: TotalDialogue.Core.Variables.TDFVar`2
+  langs:
+  - csharp
+  - vb
+  name: Key
+  nameWithType: TDFVar<T, TListener>.Key
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.Key
+  type: Property
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs
+      branch: master
+      repo: git@github.com:zgock999/total_dialogue_framework.git
+    id: Key
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs
+    startLine: 19
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Variables
+  summary: >-
+    変数のキーを取得します
+
+    KeyValueStoreと必ずセットで使用されるので参照用に生成時に設定されます
+  example: []
+  syntax:
+    content: public string Key { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Key As String
+  overload: TotalDialogue.Core.Variables.TDFVar`2.Key*
+  implements:
+  - TotalDialogue.Core.Variables.ITDFVar{{T},{TListener}}.Key
+  - TotalDialogue.Core.Variables.IEmptyVar.Key
+  nameWithType.vb: TDFVar(Of T, TListener).Key
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).Key
+- uid: TotalDialogue.Core.Variables.TDFVar`2.#ctor(System.String,`0)
+  commentId: M:TotalDialogue.Core.Variables.TDFVar`2.#ctor(System.String,`0)
+  id: '#ctor(System.String,`0)'
+  parent: TotalDialogue.Core.Variables.TDFVar`2
+  langs:
+  - csharp
+  - vb
+  name: TDFVar(string, T)
+  nameWithType: TDFVar<T, TListener>.TDFVar(string, T)
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.TDFVar(string, T)
+  type: Constructor
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs
+      branch: master
+      repo: git@github.com:zgock999/total_dialogue_framework.git
+    id: .ctor
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs
+    startLine: 20
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Variables
+  syntax:
+    content: public TDFVar(string key = "", T defaultValue = default)
+    parameters:
+    - id: key
+      type: System.String
+    - id: defaultValue
+      type: '{T}'
+    content.vb: Public Sub New(key As String = "", defaultValue As T = Nothing)
+  overload: TotalDialogue.Core.Variables.TDFVar`2.#ctor*
+  nameWithType.vb: TDFVar(Of T, TListener).New(String, T)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).New(String, T)
+  name.vb: New(String, T)
+- uid: TotalDialogue.Core.Variables.TDFVar`2.Value
+  commentId: P:TotalDialogue.Core.Variables.TDFVar`2.Value
+  id: Value
+  parent: TotalDialogue.Core.Variables.TDFVar`2
+  langs:
+  - csharp
+  - vb
+  name: Value
+  nameWithType: TDFVar<T, TListener>.Value
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.Value
+  type: Property
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs
+      branch: master
+      repo: git@github.com:zgock999/total_dialogue_framework.git
+    id: Value
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs
+    startLine: 26
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Variables
+  syntax:
+    content: public T Value { get; set; }
+    parameters: []
+    return:
+      type: '{T}'
+    content.vb: Public Property Value As T
+  overload: TotalDialogue.Core.Variables.TDFVar`2.Value*
+  nameWithType.vb: TDFVar(Of T, TListener).Value
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).Value
+- uid: TotalDialogue.Core.Variables.TDFVar`2.GetValue
+  commentId: M:TotalDialogue.Core.Variables.TDFVar`2.GetValue
+  id: GetValue
+  parent: TotalDialogue.Core.Variables.TDFVar`2
+  langs:
+  - csharp
+  - vb
+  name: GetValue()
+  nameWithType: TDFVar<T, TListener>.GetValue()
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.GetValue()
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs
+      branch: master
+      repo: git@github.com:zgock999/total_dialogue_framework.git
+    id: GetValue
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs
+    startLine: 38
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Variables
+  syntax:
+    content: protected T GetValue()
+    return:
+      type: '{T}'
+    content.vb: Protected Function GetValue() As T
+  overload: TotalDialogue.Core.Variables.TDFVar`2.GetValue*
+  nameWithType.vb: TDFVar(Of T, TListener).GetValue()
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).GetValue()
+- uid: TotalDialogue.Core.Variables.TDFVar`2.SetValue(`0)
+  commentId: M:TotalDialogue.Core.Variables.TDFVar`2.SetValue(`0)
+  id: SetValue(`0)
+  parent: TotalDialogue.Core.Variables.TDFVar`2
+  langs:
+  - csharp
+  - vb
+  name: SetValue(T)
+  nameWithType: TDFVar<T, TListener>.SetValue(T)
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.SetValue(T)
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs
+      branch: master
+      repo: git@github.com:zgock999/total_dialogue_framework.git
+    id: SetValue
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs
+    startLine: 43
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Variables
+  syntax:
+    content: protected void SetValue(T value)
+    parameters:
+    - id: value
+      type: '{T}'
+    content.vb: Protected Sub SetValue(value As T)
+  overload: TotalDialogue.Core.Variables.TDFVar`2.SetValue*
+  nameWithType.vb: TDFVar(Of T, TListener).SetValue(T)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).SetValue(T)
+- uid: TotalDialogue.Core.Variables.TDFVar`2.Fire(`1,`0,`0,System.Boolean)
+  commentId: M:TotalDialogue.Core.Variables.TDFVar`2.Fire(`1,`0,`0,System.Boolean)
+  id: Fire(`1,`0,`0,System.Boolean)
+  parent: TotalDialogue.Core.Variables.TDFVar`2
+  langs:
+  - csharp
+  - vb
+  name: Fire(TListener, T, T, bool)
+  nameWithType: TDFVar<T, TListener>.Fire(TListener, T, T, bool)
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.Fire(TListener, T, T, bool)
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs
+      branch: master
+      repo: git@github.com:zgock999/total_dialogue_framework.git
+    id: Fire
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs
+    startLine: 53
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Variables
+  syntax:
+    content: protected virtual void Fire(TListener listener, T oldValue, T newValue, bool changed)
+    parameters:
+    - id: listener
+      type: '{TListener}'
+    - id: oldValue
+      type: '{T}'
+    - id: newValue
+      type: '{T}'
+    - id: changed
+      type: System.Boolean
+    content.vb: Protected Overridable Sub Fire(listener As TListener, oldValue As T, newValue As T, changed As Boolean)
+  overload: TotalDialogue.Core.Variables.TDFVar`2.Fire*
+  nameWithType.vb: TDFVar(Of T, TListener).Fire(TListener, T, T, Boolean)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).Fire(TListener, T, T, Boolean)
+  name.vb: Fire(TListener, T, T, Boolean)
+- uid: TotalDialogue.Core.Variables.TDFVar`2.IsChanged(`0,`0)
+  commentId: M:TotalDialogue.Core.Variables.TDFVar`2.IsChanged(`0,`0)
+  id: IsChanged(`0,`0)
+  parent: TotalDialogue.Core.Variables.TDFVar`2
+  langs:
+  - csharp
+  - vb
+  name: IsChanged(T, T)
+  nameWithType: TDFVar<T, TListener>.IsChanged(T, T)
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.IsChanged(T, T)
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs
+      branch: master
+      repo: git@github.com:zgock999/total_dialogue_framework.git
+    id: IsChanged
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs
+    startLine: 70
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Variables
+  syntax:
+    content: protected virtual bool IsChanged(T oldValue, T newValue)
+    parameters:
+    - id: oldValue
+      type: '{T}'
+    - id: newValue
+      type: '{T}'
+    return:
+      type: System.Boolean
+    content.vb: Protected Overridable Function IsChanged(oldValue As T, newValue As T) As Boolean
+  overload: TotalDialogue.Core.Variables.TDFVar`2.IsChanged*
+  nameWithType.vb: TDFVar(Of T, TListener).IsChanged(T, T)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).IsChanged(T, T)
+- uid: TotalDialogue.Core.Variables.TDFVar`2.IsBecome(`0,`0,`0)
+  commentId: M:TotalDialogue.Core.Variables.TDFVar`2.IsBecome(`0,`0,`0)
+  id: IsBecome(`0,`0,`0)
+  parent: TotalDialogue.Core.Variables.TDFVar`2
+  langs:
+  - csharp
+  - vb
+  name: IsBecome(T, T, T)
+  nameWithType: TDFVar<T, TListener>.IsBecome(T, T, T)
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.IsBecome(T, T, T)
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs
+      branch: master
+      repo: git@github.com:zgock999/total_dialogue_framework.git
+    id: IsBecome
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs
+    startLine: 73
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Variables
+  syntax:
+    content: protected virtual bool IsBecome(T oldValue, T newValue, T targetValue)
+    parameters:
+    - id: oldValue
+      type: '{T}'
+    - id: newValue
+      type: '{T}'
+    - id: targetValue
+      type: '{T}'
+    return:
+      type: System.Boolean
+    content.vb: Protected Overridable Function IsBecome(oldValue As T, newValue As T, targetValue As T) As Boolean
+  overload: TotalDialogue.Core.Variables.TDFVar`2.IsBecome*
+  nameWithType.vb: TDFVar(Of T, TListener).IsBecome(T, T, T)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).IsBecome(T, T, T)
+- uid: TotalDialogue.Core.Variables.TDFVar`2.IsCease(`0,`0,`0)
+  commentId: M:TotalDialogue.Core.Variables.TDFVar`2.IsCease(`0,`0,`0)
+  id: IsCease(`0,`0,`0)
+  parent: TotalDialogue.Core.Variables.TDFVar`2
+  langs:
+  - csharp
+  - vb
+  name: IsCease(T, T, T)
+  nameWithType: TDFVar<T, TListener>.IsCease(T, T, T)
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.IsCease(T, T, T)
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs
+      branch: master
+      repo: git@github.com:zgock999/total_dialogue_framework.git
+    id: IsCease
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs
+    startLine: 76
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Variables
+  syntax:
+    content: protected virtual bool IsCease(T oldValue, T newValue, T targetValue)
+    parameters:
+    - id: oldValue
+      type: '{T}'
+    - id: newValue
+      type: '{T}'
+    - id: targetValue
+      type: '{T}'
+    return:
+      type: System.Boolean
+    content.vb: Protected Overridable Function IsCease(oldValue As T, newValue As T, targetValue As T) As Boolean
+  overload: TotalDialogue.Core.Variables.TDFVar`2.IsCease*
+  nameWithType.vb: TDFVar(Of T, TListener).IsCease(T, T, T)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).IsCease(T, T, T)
+- uid: TotalDialogue.Core.Variables.TDFVar`2.DefaultValue
+  commentId: P:TotalDialogue.Core.Variables.TDFVar`2.DefaultValue
+  id: DefaultValue
+  parent: TotalDialogue.Core.Variables.TDFVar`2
+  langs:
+  - csharp
+  - vb
+  name: DefaultValue
+  nameWithType: TDFVar<T, TListener>.DefaultValue
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.DefaultValue
+  type: Property
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs
+      branch: master
+      repo: git@github.com:zgock999/total_dialogue_framework.git
+    id: DefaultValue
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs
+    startLine: 79
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Variables
+  summary: 変数のデフォルト値を取得します
+  example: []
+  syntax:
+    content: public T DefaultValue { get; set; }
+    parameters: []
+    return:
+      type: '{T}'
+    content.vb: Public Property DefaultValue As T
+  overload: TotalDialogue.Core.Variables.TDFVar`2.DefaultValue*
+  implements:
+  - TotalDialogue.Core.Variables.ITDFVar{{T},{TListener}}.DefaultValue
+  nameWithType.vb: TDFVar(Of T, TListener).DefaultValue
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).DefaultValue
+- uid: TotalDialogue.Core.Variables.TDFVar`2.StoreDefault
+  commentId: M:TotalDialogue.Core.Variables.TDFVar`2.StoreDefault
+  id: StoreDefault
+  parent: TotalDialogue.Core.Variables.TDFVar`2
+  langs:
+  - csharp
+  - vb
+  name: StoreDefault()
+  nameWithType: TDFVar<T, TListener>.StoreDefault()
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.StoreDefault()
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs
+      branch: master
+      repo: git@github.com:zgock999/total_dialogue_framework.git
+    id: StoreDefault
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs
+    startLine: 80
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Variables
+  summary: 変数の値をデフォルト値に保存します
+  example: []
+  syntax:
+    content: public void StoreDefault()
+    content.vb: Public Sub StoreDefault()
+  overload: TotalDialogue.Core.Variables.TDFVar`2.StoreDefault*
+  implements:
+  - TotalDialogue.Core.Variables.ITDFVar{{T},{TListener}}.StoreDefault
+  - TotalDialogue.Core.Variables.IEmptyVar.StoreDefault
+  nameWithType.vb: TDFVar(Of T, TListener).StoreDefault()
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).StoreDefault()
+- uid: TotalDialogue.Core.Variables.TDFVar`2.RestoreDefault
+  commentId: M:TotalDialogue.Core.Variables.TDFVar`2.RestoreDefault
+  id: RestoreDefault
+  parent: TotalDialogue.Core.Variables.TDFVar`2
+  langs:
+  - csharp
+  - vb
+  name: RestoreDefault()
+  nameWithType: TDFVar<T, TListener>.RestoreDefault()
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.RestoreDefault()
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs
+      branch: master
+      repo: git@github.com:zgock999/total_dialogue_framework.git
+    id: RestoreDefault
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs
+    startLine: 83
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Variables
+  summary: 変数の値をデフォルト値に戻します
+  example: []
+  syntax:
+    content: public void RestoreDefault()
+    content.vb: Public Sub RestoreDefault()
+  overload: TotalDialogue.Core.Variables.TDFVar`2.RestoreDefault*
+  implements:
+  - TotalDialogue.Core.Variables.ITDFVar{{T},{TListener}}.RestoreDefault
+  - TotalDialogue.Core.Variables.IEmptyVar.RestoreDefault
+  nameWithType.vb: TDFVar(Of T, TListener).RestoreDefault()
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).RestoreDefault()
+- uid: TotalDialogue.Core.Variables.TDFVar`2.StringValue
+  commentId: P:TotalDialogue.Core.Variables.TDFVar`2.StringValue
+  id: StringValue
+  parent: TotalDialogue.Core.Variables.TDFVar`2
+  langs:
+  - csharp
+  - vb
+  name: StringValue
+  nameWithType: TDFVar<T, TListener>.StringValue
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.StringValue
+  type: Property
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs
+      branch: master
+      repo: git@github.com:zgock999/total_dialogue_framework.git
+    id: StringValue
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs
+    startLine: 86
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Variables
+  summary: 変数の値を文字列で取得します
+  example: []
+  syntax:
+    content: public virtual string StringValue { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overridable ReadOnly Property StringValue As String
+  overload: TotalDialogue.Core.Variables.TDFVar`2.StringValue*
+  implements:
+  - TotalDialogue.Core.Variables.ITDFVar{{T},{TListener}}.StringValue
+  - TotalDialogue.Core.Variables.IEmptyVar.StringValue
+  nameWithType.vb: TDFVar(Of T, TListener).StringValue
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).StringValue
+- uid: TotalDialogue.Core.Variables.TDFVar`2.Interface
+  commentId: P:TotalDialogue.Core.Variables.TDFVar`2.Interface
+  id: Interface
+  parent: TotalDialogue.Core.Variables.TDFVar`2
+  langs:
+  - csharp
+  - vb
+  name: Interface
+  nameWithType: TDFVar<T, TListener>.Interface
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.Interface
+  type: Property
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs
+      branch: master
+      repo: git@github.com:zgock999/total_dialogue_framework.git
+    id: Interface
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs
+    startLine: 87
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Variables
+  summary: 変数のインターフェースを取得します
+  example: []
+  syntax:
+    content: public ITDFVar<T, TListener> Interface { get; }
+    parameters: []
+    return:
+      type: TotalDialogue.Core.Variables.ITDFVar{{T},{TListener}}
+    content.vb: Public Property [Interface] As ITDFVar(Of T, TListener)
+  overload: TotalDialogue.Core.Variables.TDFVar`2.Interface*
+  implements:
+  - TotalDialogue.Core.Variables.ITDFVar{{T},{TListener}}.Interface
+  nameWithType.vb: TDFVar(Of T, TListener).Interface
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).Interface
+- uid: TotalDialogue.Core.Variables.TDFVar`2.AddListener(`1)
+  commentId: M:TotalDialogue.Core.Variables.TDFVar`2.AddListener(`1)
+  id: AddListener(`1)
+  parent: TotalDialogue.Core.Variables.TDFVar`2
+  langs:
+  - csharp
+  - vb
+  name: AddListener(TListener)
+  nameWithType: TDFVar<T, TListener>.AddListener(TListener)
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.AddListener(TListener)
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs
+      branch: master
+      repo: git@github.com:zgock999/total_dialogue_framework.git
+    id: AddListener
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs
+    startLine: 92
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Variables
+  example: []
+  syntax:
+    content: public void AddListener(TListener listener)
+    parameters:
+    - id: listener
+      type: '{TListener}'
+    content.vb: Public Sub AddListener(listener As TListener)
+  overload: TotalDialogue.Core.Variables.TDFVar`2.AddListener*
+  implements:
+  - TotalDialogue.Core.Variables.ITDFVar{{T},{TListener}}.AddListener({TListener})
+  nameWithType.vb: TDFVar(Of T, TListener).AddListener(TListener)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).AddListener(TListener)
+- uid: TotalDialogue.Core.Variables.TDFVar`2.RemoveListener(`1)
+  commentId: M:TotalDialogue.Core.Variables.TDFVar`2.RemoveListener(`1)
+  id: RemoveListener(`1)
+  parent: TotalDialogue.Core.Variables.TDFVar`2
+  langs:
+  - csharp
+  - vb
+  name: RemoveListener(TListener)
+  nameWithType: TDFVar<T, TListener>.RemoveListener(TListener)
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.RemoveListener(TListener)
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs
+      branch: master
+      repo: git@github.com:zgock999/total_dialogue_framework.git
+    id: RemoveListener
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs
+    startLine: 95
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Variables
+  example: []
+  syntax:
+    content: public void RemoveListener(TListener listener)
+    parameters:
+    - id: listener
+      type: '{TListener}'
+    content.vb: Public Sub RemoveListener(listener As TListener)
+  overload: TotalDialogue.Core.Variables.TDFVar`2.RemoveListener*
+  implements:
+  - TotalDialogue.Core.Variables.ITDFVar{{T},{TListener}}.RemoveListener({TListener})
+  nameWithType.vb: TDFVar(Of T, TListener).RemoveListener(TListener)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).RemoveListener(TListener)
+- uid: TotalDialogue.Core.Variables.TDFVar`2.GetBoolValue
+  commentId: M:TotalDialogue.Core.Variables.TDFVar`2.GetBoolValue
+  id: GetBoolValue
+  parent: TotalDialogue.Core.Variables.TDFVar`2
+  langs:
+  - csharp
+  - vb
+  name: GetBoolValue()
+  nameWithType: TDFVar<T, TListener>.GetBoolValue()
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.GetBoolValue()
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs
+      branch: master
+      repo: git@github.com:zgock999/total_dialogue_framework.git
+    id: GetBoolValue
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs
+    startLine: 99
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Variables
+  syntax:
+    content: public bool GetBoolValue()
+    return:
+      type: System.Boolean
+    content.vb: Public Function GetBoolValue() As Boolean
+  overload: TotalDialogue.Core.Variables.TDFVar`2.GetBoolValue*
+  nameWithType.vb: TDFVar(Of T, TListener).GetBoolValue()
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).GetBoolValue()
+- uid: TotalDialogue.Core.Variables.TDFVar`2.GetIntValue
+  commentId: M:TotalDialogue.Core.Variables.TDFVar`2.GetIntValue
+  id: GetIntValue
+  parent: TotalDialogue.Core.Variables.TDFVar`2
+  langs:
+  - csharp
+  - vb
+  name: GetIntValue()
+  nameWithType: TDFVar<T, TListener>.GetIntValue()
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.GetIntValue()
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs
+      branch: master
+      repo: git@github.com:zgock999/total_dialogue_framework.git
+    id: GetIntValue
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs
+    startLine: 104
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Variables
+  syntax:
+    content: public int GetIntValue()
+    return:
+      type: System.Int32
+    content.vb: Public Function GetIntValue() As Integer
+  overload: TotalDialogue.Core.Variables.TDFVar`2.GetIntValue*
+  nameWithType.vb: TDFVar(Of T, TListener).GetIntValue()
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).GetIntValue()
+- uid: TotalDialogue.Core.Variables.TDFVar`2.GetFloatValue
+  commentId: M:TotalDialogue.Core.Variables.TDFVar`2.GetFloatValue
+  id: GetFloatValue
+  parent: TotalDialogue.Core.Variables.TDFVar`2
+  langs:
+  - csharp
+  - vb
+  name: GetFloatValue()
+  nameWithType: TDFVar<T, TListener>.GetFloatValue()
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.GetFloatValue()
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs
+      branch: master
+      repo: git@github.com:zgock999/total_dialogue_framework.git
+    id: GetFloatValue
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs
+    startLine: 109
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Variables
+  syntax:
+    content: public float GetFloatValue()
+    return:
+      type: System.Single
+    content.vb: Public Function GetFloatValue() As Single
+  overload: TotalDialogue.Core.Variables.TDFVar`2.GetFloatValue*
+  nameWithType.vb: TDFVar(Of T, TListener).GetFloatValue()
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).GetFloatValue()
+- uid: TotalDialogue.Core.Variables.TDFVar`2.GetStringValue
+  commentId: M:TotalDialogue.Core.Variables.TDFVar`2.GetStringValue
+  id: GetStringValue
+  parent: TotalDialogue.Core.Variables.TDFVar`2
+  langs:
+  - csharp
+  - vb
+  name: GetStringValue()
+  nameWithType: TDFVar<T, TListener>.GetStringValue()
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.GetStringValue()
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs
+      branch: master
+      repo: git@github.com:zgock999/total_dialogue_framework.git
+    id: GetStringValue
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs
+    startLine: 114
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Variables
+  syntax:
+    content: public string GetStringValue()
+    return:
+      type: System.String
+    content.vb: Public Function GetStringValue() As String
+  overload: TotalDialogue.Core.Variables.TDFVar`2.GetStringValue*
+  nameWithType.vb: TDFVar(Of T, TListener).GetStringValue()
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).GetStringValue()
+- uid: TotalDialogue.Core.Variables.TDFVar`2.GetVector3Value
+  commentId: M:TotalDialogue.Core.Variables.TDFVar`2.GetVector3Value
+  id: GetVector3Value
+  parent: TotalDialogue.Core.Variables.TDFVar`2
+  langs:
+  - csharp
+  - vb
+  name: GetVector3Value()
+  nameWithType: TDFVar<T, TListener>.GetVector3Value()
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.GetVector3Value()
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs
+      branch: master
+      repo: git@github.com:zgock999/total_dialogue_framework.git
+    id: GetVector3Value
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs
+    startLine: 119
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Variables
+  syntax:
+    content: public Vector3 GetVector3Value()
+    return:
+      type: UnityEngine.Vector3
+    content.vb: Public Function GetVector3Value() As Vector3
+  overload: TotalDialogue.Core.Variables.TDFVar`2.GetVector3Value*
+  nameWithType.vb: TDFVar(Of T, TListener).GetVector3Value()
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).GetVector3Value()
+- uid: TotalDialogue.Core.Variables.TDFVar`2.GetQuaternionValue
+  commentId: M:TotalDialogue.Core.Variables.TDFVar`2.GetQuaternionValue
+  id: GetQuaternionValue
+  parent: TotalDialogue.Core.Variables.TDFVar`2
+  langs:
+  - csharp
+  - vb
+  name: GetQuaternionValue()
+  nameWithType: TDFVar<T, TListener>.GetQuaternionValue()
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.GetQuaternionValue()
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs
+      branch: master
+      repo: git@github.com:zgock999/total_dialogue_framework.git
+    id: GetQuaternionValue
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs
+    startLine: 124
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Variables
+  syntax:
+    content: public Quaternion GetQuaternionValue()
+    return:
+      type: UnityEngine.Quaternion
+    content.vb: Public Function GetQuaternionValue() As Quaternion
+  overload: TotalDialogue.Core.Variables.TDFVar`2.GetQuaternionValue*
+  nameWithType.vb: TDFVar(Of T, TListener).GetQuaternionValue()
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).GetQuaternionValue()
+- uid: TotalDialogue.Core.Variables.TDFVar`2.SetBoolValue(System.Boolean)
+  commentId: M:TotalDialogue.Core.Variables.TDFVar`2.SetBoolValue(System.Boolean)
+  id: SetBoolValue(System.Boolean)
+  parent: TotalDialogue.Core.Variables.TDFVar`2
+  langs:
+  - csharp
+  - vb
+  name: SetBoolValue(bool)
+  nameWithType: TDFVar<T, TListener>.SetBoolValue(bool)
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.SetBoolValue(bool)
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs
+      branch: master
+      repo: git@github.com:zgock999/total_dialogue_framework.git
+    id: SetBoolValue
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs
+    startLine: 129
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Variables
+  syntax:
+    content: public void SetBoolValue(bool value)
+    parameters:
+    - id: value
+      type: System.Boolean
+    content.vb: Public Sub SetBoolValue(value As Boolean)
+  overload: TotalDialogue.Core.Variables.TDFVar`2.SetBoolValue*
+  nameWithType.vb: TDFVar(Of T, TListener).SetBoolValue(Boolean)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).SetBoolValue(Boolean)
+  name.vb: SetBoolValue(Boolean)
+- uid: TotalDialogue.Core.Variables.TDFVar`2.SetIntValue(System.Int32)
+  commentId: M:TotalDialogue.Core.Variables.TDFVar`2.SetIntValue(System.Int32)
+  id: SetIntValue(System.Int32)
+  parent: TotalDialogue.Core.Variables.TDFVar`2
+  langs:
+  - csharp
+  - vb
+  name: SetIntValue(int)
+  nameWithType: TDFVar<T, TListener>.SetIntValue(int)
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.SetIntValue(int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs
+      branch: master
+      repo: git@github.com:zgock999/total_dialogue_framework.git
+    id: SetIntValue
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs
+    startLine: 134
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Variables
+  syntax:
+    content: public void SetIntValue(int value)
+    parameters:
+    - id: value
+      type: System.Int32
+    content.vb: Public Sub SetIntValue(value As Integer)
+  overload: TotalDialogue.Core.Variables.TDFVar`2.SetIntValue*
+  nameWithType.vb: TDFVar(Of T, TListener).SetIntValue(Integer)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).SetIntValue(Integer)
+  name.vb: SetIntValue(Integer)
+- uid: TotalDialogue.Core.Variables.TDFVar`2.SetFloatValue(System.Single)
+  commentId: M:TotalDialogue.Core.Variables.TDFVar`2.SetFloatValue(System.Single)
+  id: SetFloatValue(System.Single)
+  parent: TotalDialogue.Core.Variables.TDFVar`2
+  langs:
+  - csharp
+  - vb
+  name: SetFloatValue(float)
+  nameWithType: TDFVar<T, TListener>.SetFloatValue(float)
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.SetFloatValue(float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs
+      branch: master
+      repo: git@github.com:zgock999/total_dialogue_framework.git
+    id: SetFloatValue
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs
+    startLine: 139
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Variables
+  syntax:
+    content: public void SetFloatValue(float value)
+    parameters:
+    - id: value
+      type: System.Single
+    content.vb: Public Sub SetFloatValue(value As Single)
+  overload: TotalDialogue.Core.Variables.TDFVar`2.SetFloatValue*
+  nameWithType.vb: TDFVar(Of T, TListener).SetFloatValue(Single)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).SetFloatValue(Single)
+  name.vb: SetFloatValue(Single)
+- uid: TotalDialogue.Core.Variables.TDFVar`2.SetStringValue(System.String)
+  commentId: M:TotalDialogue.Core.Variables.TDFVar`2.SetStringValue(System.String)
+  id: SetStringValue(System.String)
+  parent: TotalDialogue.Core.Variables.TDFVar`2
+  langs:
+  - csharp
+  - vb
+  name: SetStringValue(string)
+  nameWithType: TDFVar<T, TListener>.SetStringValue(string)
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.SetStringValue(string)
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs
+      branch: master
+      repo: git@github.com:zgock999/total_dialogue_framework.git
+    id: SetStringValue
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs
+    startLine: 144
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Variables
+  syntax:
+    content: public void SetStringValue(string value)
+    parameters:
+    - id: value
+      type: System.String
+    content.vb: Public Sub SetStringValue(value As String)
+  overload: TotalDialogue.Core.Variables.TDFVar`2.SetStringValue*
+  nameWithType.vb: TDFVar(Of T, TListener).SetStringValue(String)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).SetStringValue(String)
+  name.vb: SetStringValue(String)
+- uid: TotalDialogue.Core.Variables.TDFVar`2.SetVector3Value(UnityEngine.Vector3)
+  commentId: M:TotalDialogue.Core.Variables.TDFVar`2.SetVector3Value(UnityEngine.Vector3)
+  id: SetVector3Value(UnityEngine.Vector3)
+  parent: TotalDialogue.Core.Variables.TDFVar`2
+  langs:
+  - csharp
+  - vb
+  name: SetVector3Value(Vector3)
+  nameWithType: TDFVar<T, TListener>.SetVector3Value(Vector3)
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.SetVector3Value(UnityEngine.Vector3)
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs
+      branch: master
+      repo: git@github.com:zgock999/total_dialogue_framework.git
+    id: SetVector3Value
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs
+    startLine: 149
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Variables
+  syntax:
+    content: public void SetVector3Value(Vector3 value)
+    parameters:
+    - id: value
+      type: UnityEngine.Vector3
+    content.vb: Public Sub SetVector3Value(value As Vector3)
+  overload: TotalDialogue.Core.Variables.TDFVar`2.SetVector3Value*
+  nameWithType.vb: TDFVar(Of T, TListener).SetVector3Value(Vector3)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).SetVector3Value(UnityEngine.Vector3)
+references:
+- uid: TotalDialogue.Core.Variables
+  commentId: N:TotalDialogue.Core.Variables
+  href: TotalDialogue.html
+  name: TotalDialogue.Core.Variables
+  nameWithType: TotalDialogue.Core.Variables
+  fullName: TotalDialogue.Core.Variables
+  spec.csharp:
+  - uid: TotalDialogue
+    name: TotalDialogue
+    href: TotalDialogue.html
+  - name: .
+  - uid: TotalDialogue.Core
+    name: Core
+    href: TotalDialogue.Core.html
+  - name: .
+  - uid: TotalDialogue.Core.Variables
+    name: Variables
+    href: TotalDialogue.Core.Variables.html
+  spec.vb:
+  - uid: TotalDialogue
+    name: TotalDialogue
+    href: TotalDialogue.html
+  - name: .
+  - uid: TotalDialogue.Core
+    name: Core
+    href: TotalDialogue.Core.html
+  - name: .
+  - uid: TotalDialogue.Core.Variables
+    name: Variables
+    href: TotalDialogue.Core.Variables.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: TotalDialogue.Core.Variables.ITDFVar{{T},{TListener}}
+  commentId: T:TotalDialogue.Core.Variables.ITDFVar{`0,`1}
+  parent: TotalDialogue.Core.Variables
+  definition: TotalDialogue.Core.Variables.ITDFVar`2
+  href: TotalDialogue.Core.Variables.ITDFVar-2.html
+  name: ITDFVar<T, TListener>
+  nameWithType: ITDFVar<T, TListener>
+  fullName: TotalDialogue.Core.Variables.ITDFVar<T, TListener>
+  nameWithType.vb: ITDFVar(Of T, TListener)
+  fullName.vb: TotalDialogue.Core.Variables.ITDFVar(Of T, TListener)
+  name.vb: ITDFVar(Of T, TListener)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.ITDFVar`2
+    name: ITDFVar
+    href: TotalDialogue.Core.Variables.ITDFVar-2.html
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TListener
+  - name: '>'
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.ITDFVar`2
+    name: ITDFVar
+    href: TotalDialogue.Core.Variables.ITDFVar-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TListener
+  - name: )
+- uid: TotalDialogue.Core.Variables.IEmptyVar
+  commentId: T:TotalDialogue.Core.Variables.IEmptyVar
+  parent: TotalDialogue.Core.Variables
+  href: TotalDialogue.Core.Variables.IEmptyVar.html
+  name: IEmptyVar
+  nameWithType: IEmptyVar
+  fullName: TotalDialogue.Core.Variables.IEmptyVar
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: TotalDialogue.Core.Variables.ITDFVar`2
+  commentId: T:TotalDialogue.Core.Variables.ITDFVar`2
+  parent: TotalDialogue.Core.Variables
+  href: TotalDialogue.Core.Variables.ITDFVar-2.html
+  name: ITDFVar<T, TListener>
+  nameWithType: ITDFVar<T, TListener>
+  fullName: TotalDialogue.Core.Variables.ITDFVar<T, TListener>
+  nameWithType.vb: ITDFVar(Of T, TListener)
+  fullName.vb: TotalDialogue.Core.Variables.ITDFVar(Of T, TListener)
+  name.vb: ITDFVar(Of T, TListener)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.ITDFVar`2
+    name: ITDFVar
+    href: TotalDialogue.Core.Variables.ITDFVar-2.html
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TListener
+  - name: '>'
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.ITDFVar`2
+    name: ITDFVar
+    href: TotalDialogue.Core.Variables.ITDFVar-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TListener
+  - name: )
+- uid: System.Collections.Generic.List{{TListener}}
+  commentId: T:System.Collections.Generic.List{`1}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<TListener>
+  nameWithType: List<TListener>
+  fullName: System.Collections.Generic.List<TListener>
+  nameWithType.vb: List(Of TListener)
+  fullName.vb: System.Collections.Generic.List(Of TListener)
+  name.vb: List(Of TListener)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: TListener
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TListener
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: TotalDialogue.Core.Variables.TDFVar`2.Key*
+  commentId: Overload:TotalDialogue.Core.Variables.TDFVar`2.Key
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_Key
+  name: Key
+  nameWithType: TDFVar<T, TListener>.Key
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.Key
+  nameWithType.vb: TDFVar(Of T, TListener).Key
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).Key
+- uid: TotalDialogue.Core.Variables.ITDFVar{{T},{TListener}}.Key
+  commentId: P:TotalDialogue.Core.Variables.ITDFVar{`0,`1}.Key
+  parent: TotalDialogue.Core.Variables.ITDFVar{{T},{TListener}}
+  definition: TotalDialogue.Core.Variables.ITDFVar`2.Key
+  href: TotalDialogue.Core.Variables.ITDFVar-2.html#TotalDialogue_Core_Variables_ITDFVar_2_Key
+  name: Key
+  nameWithType: ITDFVar<T, TListener>.Key
+  fullName: TotalDialogue.Core.Variables.ITDFVar<T, TListener>.Key
+  nameWithType.vb: ITDFVar(Of T, TListener).Key
+  fullName.vb: TotalDialogue.Core.Variables.ITDFVar(Of T, TListener).Key
+- uid: TotalDialogue.Core.Variables.IEmptyVar.Key
+  commentId: P:TotalDialogue.Core.Variables.IEmptyVar.Key
+  parent: TotalDialogue.Core.Variables.IEmptyVar
+  href: TotalDialogue.Core.Variables.IEmptyVar.html#TotalDialogue_Core_Variables_IEmptyVar_Key
+  name: Key
+  nameWithType: IEmptyVar.Key
+  fullName: TotalDialogue.Core.Variables.IEmptyVar.Key
+- uid: TotalDialogue.Core.Variables.ITDFVar`2.Key
+  commentId: P:TotalDialogue.Core.Variables.ITDFVar`2.Key
+  href: TotalDialogue.Core.Variables.ITDFVar-2.html#TotalDialogue_Core_Variables_ITDFVar_2_Key
+  name: Key
+  nameWithType: ITDFVar<T, TListener>.Key
+  fullName: TotalDialogue.Core.Variables.ITDFVar<T, TListener>.Key
+  nameWithType.vb: ITDFVar(Of T, TListener).Key
+  fullName.vb: TotalDialogue.Core.Variables.ITDFVar(Of T, TListener).Key
+- uid: TotalDialogue.Core.Variables.TDFVar`2.#ctor*
+  commentId: Overload:TotalDialogue.Core.Variables.TDFVar`2.#ctor
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2__ctor_System_String__0_
+  name: TDFVar
+  nameWithType: TDFVar<T, TListener>.TDFVar
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.TDFVar
+  nameWithType.vb: TDFVar(Of T, TListener).New
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).New
+  name.vb: New
+- uid: TotalDialogue.Core.Variables.TDFVar`2.Value*
+  commentId: Overload:TotalDialogue.Core.Variables.TDFVar`2.Value
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_Value
+  name: Value
+  nameWithType: TDFVar<T, TListener>.Value
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.Value
+  nameWithType.vb: TDFVar(Of T, TListener).Value
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).Value
+- uid: TotalDialogue.Core.Variables.TDFVar`2.GetValue*
+  commentId: Overload:TotalDialogue.Core.Variables.TDFVar`2.GetValue
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetValue
+  name: GetValue
+  nameWithType: TDFVar<T, TListener>.GetValue
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.GetValue
+  nameWithType.vb: TDFVar(Of T, TListener).GetValue
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).GetValue
+- uid: TotalDialogue.Core.Variables.TDFVar`2.SetValue*
+  commentId: Overload:TotalDialogue.Core.Variables.TDFVar`2.SetValue
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetValue__0_
+  name: SetValue
+  nameWithType: TDFVar<T, TListener>.SetValue
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.SetValue
+  nameWithType.vb: TDFVar(Of T, TListener).SetValue
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).SetValue
+- uid: TotalDialogue.Core.Variables.TDFVar`2.Fire*
+  commentId: Overload:TotalDialogue.Core.Variables.TDFVar`2.Fire
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_Fire__1__0__0_System_Boolean_
+  name: Fire
+  nameWithType: TDFVar<T, TListener>.Fire
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.Fire
+  nameWithType.vb: TDFVar(Of T, TListener).Fire
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).Fire
+- uid: '{TListener}'
+  commentId: '!:TListener'
+  definition: TListener
+  name: TListener
+  nameWithType: TListener
+  fullName: TListener
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: TListener
+  name: TListener
+  nameWithType: TListener
+  fullName: TListener
+- uid: TotalDialogue.Core.Variables.TDFVar`2.IsChanged*
+  commentId: Overload:TotalDialogue.Core.Variables.TDFVar`2.IsChanged
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_IsChanged__0__0_
+  name: IsChanged
+  nameWithType: TDFVar<T, TListener>.IsChanged
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.IsChanged
+  nameWithType.vb: TDFVar(Of T, TListener).IsChanged
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).IsChanged
+- uid: TotalDialogue.Core.Variables.TDFVar`2.IsBecome*
+  commentId: Overload:TotalDialogue.Core.Variables.TDFVar`2.IsBecome
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_IsBecome__0__0__0_
+  name: IsBecome
+  nameWithType: TDFVar<T, TListener>.IsBecome
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.IsBecome
+  nameWithType.vb: TDFVar(Of T, TListener).IsBecome
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).IsBecome
+- uid: TotalDialogue.Core.Variables.TDFVar`2.IsCease*
+  commentId: Overload:TotalDialogue.Core.Variables.TDFVar`2.IsCease
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_IsCease__0__0__0_
+  name: IsCease
+  nameWithType: TDFVar<T, TListener>.IsCease
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.IsCease
+  nameWithType.vb: TDFVar(Of T, TListener).IsCease
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).IsCease
+- uid: TotalDialogue.Core.Variables.TDFVar`2.DefaultValue*
+  commentId: Overload:TotalDialogue.Core.Variables.TDFVar`2.DefaultValue
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_DefaultValue
+  name: DefaultValue
+  nameWithType: TDFVar<T, TListener>.DefaultValue
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.DefaultValue
+  nameWithType.vb: TDFVar(Of T, TListener).DefaultValue
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).DefaultValue
+- uid: TotalDialogue.Core.Variables.ITDFVar{{T},{TListener}}.DefaultValue
+  commentId: P:TotalDialogue.Core.Variables.ITDFVar{`0,`1}.DefaultValue
+  parent: TotalDialogue.Core.Variables.ITDFVar{{T},{TListener}}
+  definition: TotalDialogue.Core.Variables.ITDFVar`2.DefaultValue
+  href: TotalDialogue.Core.Variables.ITDFVar-2.html#TotalDialogue_Core_Variables_ITDFVar_2_DefaultValue
+  name: DefaultValue
+  nameWithType: ITDFVar<T, TListener>.DefaultValue
+  fullName: TotalDialogue.Core.Variables.ITDFVar<T, TListener>.DefaultValue
+  nameWithType.vb: ITDFVar(Of T, TListener).DefaultValue
+  fullName.vb: TotalDialogue.Core.Variables.ITDFVar(Of T, TListener).DefaultValue
+- uid: TotalDialogue.Core.Variables.ITDFVar`2.DefaultValue
+  commentId: P:TotalDialogue.Core.Variables.ITDFVar`2.DefaultValue
+  href: TotalDialogue.Core.Variables.ITDFVar-2.html#TotalDialogue_Core_Variables_ITDFVar_2_DefaultValue
+  name: DefaultValue
+  nameWithType: ITDFVar<T, TListener>.DefaultValue
+  fullName: TotalDialogue.Core.Variables.ITDFVar<T, TListener>.DefaultValue
+  nameWithType.vb: ITDFVar(Of T, TListener).DefaultValue
+  fullName.vb: TotalDialogue.Core.Variables.ITDFVar(Of T, TListener).DefaultValue
+- uid: TotalDialogue.Core.Variables.TDFVar`2.StoreDefault*
+  commentId: Overload:TotalDialogue.Core.Variables.TDFVar`2.StoreDefault
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_StoreDefault
+  name: StoreDefault
+  nameWithType: TDFVar<T, TListener>.StoreDefault
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.StoreDefault
+  nameWithType.vb: TDFVar(Of T, TListener).StoreDefault
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).StoreDefault
+- uid: TotalDialogue.Core.Variables.ITDFVar{{T},{TListener}}.StoreDefault
+  commentId: M:TotalDialogue.Core.Variables.ITDFVar{`0,`1}.StoreDefault
+  parent: TotalDialogue.Core.Variables.ITDFVar{{T},{TListener}}
+  definition: TotalDialogue.Core.Variables.ITDFVar`2.StoreDefault
+  href: TotalDialogue.Core.Variables.ITDFVar-2.html#TotalDialogue_Core_Variables_ITDFVar_2_StoreDefault
+  name: StoreDefault()
+  nameWithType: ITDFVar<T, TListener>.StoreDefault()
+  fullName: TotalDialogue.Core.Variables.ITDFVar<T, TListener>.StoreDefault()
+  nameWithType.vb: ITDFVar(Of T, TListener).StoreDefault()
+  fullName.vb: TotalDialogue.Core.Variables.ITDFVar(Of T, TListener).StoreDefault()
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.ITDFVar{`0,`1}.StoreDefault
+    name: StoreDefault
+    href: TotalDialogue.Core.Variables.ITDFVar-2.html#TotalDialogue_Core_Variables_ITDFVar_2_StoreDefault
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.ITDFVar{`0,`1}.StoreDefault
+    name: StoreDefault
+    href: TotalDialogue.Core.Variables.ITDFVar-2.html#TotalDialogue_Core_Variables_ITDFVar_2_StoreDefault
+  - name: (
+  - name: )
+- uid: TotalDialogue.Core.Variables.IEmptyVar.StoreDefault
+  commentId: M:TotalDialogue.Core.Variables.IEmptyVar.StoreDefault
+  parent: TotalDialogue.Core.Variables.IEmptyVar
+  href: TotalDialogue.Core.Variables.IEmptyVar.html#TotalDialogue_Core_Variables_IEmptyVar_StoreDefault
+  name: StoreDefault()
+  nameWithType: IEmptyVar.StoreDefault()
+  fullName: TotalDialogue.Core.Variables.IEmptyVar.StoreDefault()
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.IEmptyVar.StoreDefault
+    name: StoreDefault
+    href: TotalDialogue.Core.Variables.IEmptyVar.html#TotalDialogue_Core_Variables_IEmptyVar_StoreDefault
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.IEmptyVar.StoreDefault
+    name: StoreDefault
+    href: TotalDialogue.Core.Variables.IEmptyVar.html#TotalDialogue_Core_Variables_IEmptyVar_StoreDefault
+  - name: (
+  - name: )
+- uid: TotalDialogue.Core.Variables.ITDFVar`2.StoreDefault
+  commentId: M:TotalDialogue.Core.Variables.ITDFVar`2.StoreDefault
+  href: TotalDialogue.Core.Variables.ITDFVar-2.html#TotalDialogue_Core_Variables_ITDFVar_2_StoreDefault
+  name: StoreDefault()
+  nameWithType: ITDFVar<T, TListener>.StoreDefault()
+  fullName: TotalDialogue.Core.Variables.ITDFVar<T, TListener>.StoreDefault()
+  nameWithType.vb: ITDFVar(Of T, TListener).StoreDefault()
+  fullName.vb: TotalDialogue.Core.Variables.ITDFVar(Of T, TListener).StoreDefault()
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.ITDFVar`2.StoreDefault
+    name: StoreDefault
+    href: TotalDialogue.Core.Variables.ITDFVar-2.html#TotalDialogue_Core_Variables_ITDFVar_2_StoreDefault
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.ITDFVar`2.StoreDefault
+    name: StoreDefault
+    href: TotalDialogue.Core.Variables.ITDFVar-2.html#TotalDialogue_Core_Variables_ITDFVar_2_StoreDefault
+  - name: (
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVar`2.RestoreDefault*
+  commentId: Overload:TotalDialogue.Core.Variables.TDFVar`2.RestoreDefault
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_RestoreDefault
+  name: RestoreDefault
+  nameWithType: TDFVar<T, TListener>.RestoreDefault
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.RestoreDefault
+  nameWithType.vb: TDFVar(Of T, TListener).RestoreDefault
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).RestoreDefault
+- uid: TotalDialogue.Core.Variables.ITDFVar{{T},{TListener}}.RestoreDefault
+  commentId: M:TotalDialogue.Core.Variables.ITDFVar{`0,`1}.RestoreDefault
+  parent: TotalDialogue.Core.Variables.ITDFVar{{T},{TListener}}
+  definition: TotalDialogue.Core.Variables.ITDFVar`2.RestoreDefault
+  href: TotalDialogue.Core.Variables.ITDFVar-2.html#TotalDialogue_Core_Variables_ITDFVar_2_RestoreDefault
+  name: RestoreDefault()
+  nameWithType: ITDFVar<T, TListener>.RestoreDefault()
+  fullName: TotalDialogue.Core.Variables.ITDFVar<T, TListener>.RestoreDefault()
+  nameWithType.vb: ITDFVar(Of T, TListener).RestoreDefault()
+  fullName.vb: TotalDialogue.Core.Variables.ITDFVar(Of T, TListener).RestoreDefault()
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.ITDFVar{`0,`1}.RestoreDefault
+    name: RestoreDefault
+    href: TotalDialogue.Core.Variables.ITDFVar-2.html#TotalDialogue_Core_Variables_ITDFVar_2_RestoreDefault
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.ITDFVar{`0,`1}.RestoreDefault
+    name: RestoreDefault
+    href: TotalDialogue.Core.Variables.ITDFVar-2.html#TotalDialogue_Core_Variables_ITDFVar_2_RestoreDefault
+  - name: (
+  - name: )
+- uid: TotalDialogue.Core.Variables.IEmptyVar.RestoreDefault
+  commentId: M:TotalDialogue.Core.Variables.IEmptyVar.RestoreDefault
+  parent: TotalDialogue.Core.Variables.IEmptyVar
+  href: TotalDialogue.Core.Variables.IEmptyVar.html#TotalDialogue_Core_Variables_IEmptyVar_RestoreDefault
+  name: RestoreDefault()
+  nameWithType: IEmptyVar.RestoreDefault()
+  fullName: TotalDialogue.Core.Variables.IEmptyVar.RestoreDefault()
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.IEmptyVar.RestoreDefault
+    name: RestoreDefault
+    href: TotalDialogue.Core.Variables.IEmptyVar.html#TotalDialogue_Core_Variables_IEmptyVar_RestoreDefault
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.IEmptyVar.RestoreDefault
+    name: RestoreDefault
+    href: TotalDialogue.Core.Variables.IEmptyVar.html#TotalDialogue_Core_Variables_IEmptyVar_RestoreDefault
+  - name: (
+  - name: )
+- uid: TotalDialogue.Core.Variables.ITDFVar`2.RestoreDefault
+  commentId: M:TotalDialogue.Core.Variables.ITDFVar`2.RestoreDefault
+  href: TotalDialogue.Core.Variables.ITDFVar-2.html#TotalDialogue_Core_Variables_ITDFVar_2_RestoreDefault
+  name: RestoreDefault()
+  nameWithType: ITDFVar<T, TListener>.RestoreDefault()
+  fullName: TotalDialogue.Core.Variables.ITDFVar<T, TListener>.RestoreDefault()
+  nameWithType.vb: ITDFVar(Of T, TListener).RestoreDefault()
+  fullName.vb: TotalDialogue.Core.Variables.ITDFVar(Of T, TListener).RestoreDefault()
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.ITDFVar`2.RestoreDefault
+    name: RestoreDefault
+    href: TotalDialogue.Core.Variables.ITDFVar-2.html#TotalDialogue_Core_Variables_ITDFVar_2_RestoreDefault
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.ITDFVar`2.RestoreDefault
+    name: RestoreDefault
+    href: TotalDialogue.Core.Variables.ITDFVar-2.html#TotalDialogue_Core_Variables_ITDFVar_2_RestoreDefault
+  - name: (
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVar`2.StringValue*
+  commentId: Overload:TotalDialogue.Core.Variables.TDFVar`2.StringValue
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_StringValue
+  name: StringValue
+  nameWithType: TDFVar<T, TListener>.StringValue
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.StringValue
+  nameWithType.vb: TDFVar(Of T, TListener).StringValue
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).StringValue
+- uid: TotalDialogue.Core.Variables.ITDFVar{{T},{TListener}}.StringValue
+  commentId: P:TotalDialogue.Core.Variables.ITDFVar{`0,`1}.StringValue
+  parent: TotalDialogue.Core.Variables.ITDFVar{{T},{TListener}}
+  definition: TotalDialogue.Core.Variables.ITDFVar`2.StringValue
+  href: TotalDialogue.Core.Variables.ITDFVar-2.html#TotalDialogue_Core_Variables_ITDFVar_2_StringValue
+  name: StringValue
+  nameWithType: ITDFVar<T, TListener>.StringValue
+  fullName: TotalDialogue.Core.Variables.ITDFVar<T, TListener>.StringValue
+  nameWithType.vb: ITDFVar(Of T, TListener).StringValue
+  fullName.vb: TotalDialogue.Core.Variables.ITDFVar(Of T, TListener).StringValue
+- uid: TotalDialogue.Core.Variables.IEmptyVar.StringValue
+  commentId: P:TotalDialogue.Core.Variables.IEmptyVar.StringValue
+  parent: TotalDialogue.Core.Variables.IEmptyVar
+  href: TotalDialogue.Core.Variables.IEmptyVar.html#TotalDialogue_Core_Variables_IEmptyVar_StringValue
+  name: StringValue
+  nameWithType: IEmptyVar.StringValue
+  fullName: TotalDialogue.Core.Variables.IEmptyVar.StringValue
+- uid: TotalDialogue.Core.Variables.ITDFVar`2.StringValue
+  commentId: P:TotalDialogue.Core.Variables.ITDFVar`2.StringValue
+  href: TotalDialogue.Core.Variables.ITDFVar-2.html#TotalDialogue_Core_Variables_ITDFVar_2_StringValue
+  name: StringValue
+  nameWithType: ITDFVar<T, TListener>.StringValue
+  fullName: TotalDialogue.Core.Variables.ITDFVar<T, TListener>.StringValue
+  nameWithType.vb: ITDFVar(Of T, TListener).StringValue
+  fullName.vb: TotalDialogue.Core.Variables.ITDFVar(Of T, TListener).StringValue
+- uid: TotalDialogue.Core.Variables.TDFVar`2.Interface*
+  commentId: Overload:TotalDialogue.Core.Variables.TDFVar`2.Interface
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_Interface
+  name: Interface
+  nameWithType: TDFVar<T, TListener>.Interface
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.Interface
+  nameWithType.vb: TDFVar(Of T, TListener).Interface
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).Interface
+- uid: TotalDialogue.Core.Variables.ITDFVar{{T},{TListener}}.Interface
+  commentId: P:TotalDialogue.Core.Variables.ITDFVar{`0,`1}.Interface
+  parent: TotalDialogue.Core.Variables.ITDFVar{{T},{TListener}}
+  definition: TotalDialogue.Core.Variables.ITDFVar`2.Interface
+  href: TotalDialogue.Core.Variables.ITDFVar-2.html#TotalDialogue_Core_Variables_ITDFVar_2_Interface
+  name: Interface
+  nameWithType: ITDFVar<T, TListener>.Interface
+  fullName: TotalDialogue.Core.Variables.ITDFVar<T, TListener>.Interface
+  nameWithType.vb: ITDFVar(Of T, TListener).Interface
+  fullName.vb: TotalDialogue.Core.Variables.ITDFVar(Of T, TListener).Interface
+- uid: TotalDialogue.Core.Variables.ITDFVar`2.Interface
+  commentId: P:TotalDialogue.Core.Variables.ITDFVar`2.Interface
+  href: TotalDialogue.Core.Variables.ITDFVar-2.html#TotalDialogue_Core_Variables_ITDFVar_2_Interface
+  name: Interface
+  nameWithType: ITDFVar<T, TListener>.Interface
+  fullName: TotalDialogue.Core.Variables.ITDFVar<T, TListener>.Interface
+  nameWithType.vb: ITDFVar(Of T, TListener).Interface
+  fullName.vb: TotalDialogue.Core.Variables.ITDFVar(Of T, TListener).Interface
+- uid: TotalDialogue.Core.Variables.TDFVar`2.AddListener*
+  commentId: Overload:TotalDialogue.Core.Variables.TDFVar`2.AddListener
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_AddListener__1_
+  name: AddListener
+  nameWithType: TDFVar<T, TListener>.AddListener
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.AddListener
+  nameWithType.vb: TDFVar(Of T, TListener).AddListener
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).AddListener
+- uid: TotalDialogue.Core.Variables.ITDFVar{{T},{TListener}}.AddListener({TListener})
+  commentId: M:TotalDialogue.Core.Variables.ITDFVar{`0,`1}.AddListener(`1)
+  parent: TotalDialogue.Core.Variables.ITDFVar{{T},{TListener}}
+  definition: TotalDialogue.Core.Variables.ITDFVar`2.AddListener(`1)
+  href: TotalDialogue.Core.Variables.ITDFVar-2.html#TotalDialogue_Core_Variables_ITDFVar_2_AddListener__1_
+  name: AddListener(TListener)
+  nameWithType: ITDFVar<T, TListener>.AddListener(TListener)
+  fullName: TotalDialogue.Core.Variables.ITDFVar<T, TListener>.AddListener(TListener)
+  nameWithType.vb: ITDFVar(Of T, TListener).AddListener(TListener)
+  fullName.vb: TotalDialogue.Core.Variables.ITDFVar(Of T, TListener).AddListener(TListener)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.ITDFVar{`0,`1}.AddListener(`1)
+    name: AddListener
+    href: TotalDialogue.Core.Variables.ITDFVar-2.html#TotalDialogue_Core_Variables_ITDFVar_2_AddListener__1_
+  - name: (
+  - name: TListener
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.ITDFVar{`0,`1}.AddListener(`1)
+    name: AddListener
+    href: TotalDialogue.Core.Variables.ITDFVar-2.html#TotalDialogue_Core_Variables_ITDFVar_2_AddListener__1_
+  - name: (
+  - name: TListener
+  - name: )
+- uid: TotalDialogue.Core.Variables.ITDFVar`2.AddListener(`1)
+  commentId: M:TotalDialogue.Core.Variables.ITDFVar`2.AddListener(`1)
+  href: TotalDialogue.Core.Variables.ITDFVar-2.html#TotalDialogue_Core_Variables_ITDFVar_2_AddListener__1_
+  name: AddListener(TListener)
+  nameWithType: ITDFVar<T, TListener>.AddListener(TListener)
+  fullName: TotalDialogue.Core.Variables.ITDFVar<T, TListener>.AddListener(TListener)
+  nameWithType.vb: ITDFVar(Of T, TListener).AddListener(TListener)
+  fullName.vb: TotalDialogue.Core.Variables.ITDFVar(Of T, TListener).AddListener(TListener)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.ITDFVar`2.AddListener(`1)
+    name: AddListener
+    href: TotalDialogue.Core.Variables.ITDFVar-2.html#TotalDialogue_Core_Variables_ITDFVar_2_AddListener__1_
+  - name: (
+  - name: TListener
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.ITDFVar`2.AddListener(`1)
+    name: AddListener
+    href: TotalDialogue.Core.Variables.ITDFVar-2.html#TotalDialogue_Core_Variables_ITDFVar_2_AddListener__1_
+  - name: (
+  - name: TListener
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVar`2.RemoveListener*
+  commentId: Overload:TotalDialogue.Core.Variables.TDFVar`2.RemoveListener
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_RemoveListener__1_
+  name: RemoveListener
+  nameWithType: TDFVar<T, TListener>.RemoveListener
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.RemoveListener
+  nameWithType.vb: TDFVar(Of T, TListener).RemoveListener
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).RemoveListener
+- uid: TotalDialogue.Core.Variables.ITDFVar{{T},{TListener}}.RemoveListener({TListener})
+  commentId: M:TotalDialogue.Core.Variables.ITDFVar{`0,`1}.RemoveListener(`1)
+  parent: TotalDialogue.Core.Variables.ITDFVar{{T},{TListener}}
+  definition: TotalDialogue.Core.Variables.ITDFVar`2.RemoveListener(`1)
+  href: TotalDialogue.Core.Variables.ITDFVar-2.html#TotalDialogue_Core_Variables_ITDFVar_2_RemoveListener__1_
+  name: RemoveListener(TListener)
+  nameWithType: ITDFVar<T, TListener>.RemoveListener(TListener)
+  fullName: TotalDialogue.Core.Variables.ITDFVar<T, TListener>.RemoveListener(TListener)
+  nameWithType.vb: ITDFVar(Of T, TListener).RemoveListener(TListener)
+  fullName.vb: TotalDialogue.Core.Variables.ITDFVar(Of T, TListener).RemoveListener(TListener)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.ITDFVar{`0,`1}.RemoveListener(`1)
+    name: RemoveListener
+    href: TotalDialogue.Core.Variables.ITDFVar-2.html#TotalDialogue_Core_Variables_ITDFVar_2_RemoveListener__1_
+  - name: (
+  - name: TListener
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.ITDFVar{`0,`1}.RemoveListener(`1)
+    name: RemoveListener
+    href: TotalDialogue.Core.Variables.ITDFVar-2.html#TotalDialogue_Core_Variables_ITDFVar_2_RemoveListener__1_
+  - name: (
+  - name: TListener
+  - name: )
+- uid: TotalDialogue.Core.Variables.ITDFVar`2.RemoveListener(`1)
+  commentId: M:TotalDialogue.Core.Variables.ITDFVar`2.RemoveListener(`1)
+  href: TotalDialogue.Core.Variables.ITDFVar-2.html#TotalDialogue_Core_Variables_ITDFVar_2_RemoveListener__1_
+  name: RemoveListener(TListener)
+  nameWithType: ITDFVar<T, TListener>.RemoveListener(TListener)
+  fullName: TotalDialogue.Core.Variables.ITDFVar<T, TListener>.RemoveListener(TListener)
+  nameWithType.vb: ITDFVar(Of T, TListener).RemoveListener(TListener)
+  fullName.vb: TotalDialogue.Core.Variables.ITDFVar(Of T, TListener).RemoveListener(TListener)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.ITDFVar`2.RemoveListener(`1)
+    name: RemoveListener
+    href: TotalDialogue.Core.Variables.ITDFVar-2.html#TotalDialogue_Core_Variables_ITDFVar_2_RemoveListener__1_
+  - name: (
+  - name: TListener
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.ITDFVar`2.RemoveListener(`1)
+    name: RemoveListener
+    href: TotalDialogue.Core.Variables.ITDFVar-2.html#TotalDialogue_Core_Variables_ITDFVar_2_RemoveListener__1_
+  - name: (
+  - name: TListener
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVar`2.GetBoolValue*
+  commentId: Overload:TotalDialogue.Core.Variables.TDFVar`2.GetBoolValue
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetBoolValue
+  name: GetBoolValue
+  nameWithType: TDFVar<T, TListener>.GetBoolValue
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.GetBoolValue
+  nameWithType.vb: TDFVar(Of T, TListener).GetBoolValue
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).GetBoolValue
+- uid: TotalDialogue.Core.Variables.TDFVar`2.GetIntValue*
+  commentId: Overload:TotalDialogue.Core.Variables.TDFVar`2.GetIntValue
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetIntValue
+  name: GetIntValue
+  nameWithType: TDFVar<T, TListener>.GetIntValue
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.GetIntValue
+  nameWithType.vb: TDFVar(Of T, TListener).GetIntValue
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).GetIntValue
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: TotalDialogue.Core.Variables.TDFVar`2.GetFloatValue*
+  commentId: Overload:TotalDialogue.Core.Variables.TDFVar`2.GetFloatValue
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetFloatValue
+  name: GetFloatValue
+  nameWithType: TDFVar<T, TListener>.GetFloatValue
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.GetFloatValue
+  nameWithType.vb: TDFVar(Of T, TListener).GetFloatValue
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).GetFloatValue
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: TotalDialogue.Core.Variables.TDFVar`2.GetStringValue*
+  commentId: Overload:TotalDialogue.Core.Variables.TDFVar`2.GetStringValue
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetStringValue
+  name: GetStringValue
+  nameWithType: TDFVar<T, TListener>.GetStringValue
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.GetStringValue
+  nameWithType.vb: TDFVar(Of T, TListener).GetStringValue
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).GetStringValue
+- uid: TotalDialogue.Core.Variables.TDFVar`2.GetVector3Value*
+  commentId: Overload:TotalDialogue.Core.Variables.TDFVar`2.GetVector3Value
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetVector3Value
+  name: GetVector3Value
+  nameWithType: TDFVar<T, TListener>.GetVector3Value
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.GetVector3Value
+  nameWithType.vb: TDFVar(Of T, TListener).GetVector3Value
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).GetVector3Value
+- uid: UnityEngine.Vector3
+  commentId: T:UnityEngine.Vector3
+  parent: UnityEngine
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: UnityEngine.Vector3
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: TotalDialogue.Core.Variables.TDFVar`2.GetQuaternionValue*
+  commentId: Overload:TotalDialogue.Core.Variables.TDFVar`2.GetQuaternionValue
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetQuaternionValue
+  name: GetQuaternionValue
+  nameWithType: TDFVar<T, TListener>.GetQuaternionValue
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.GetQuaternionValue
+  nameWithType.vb: TDFVar(Of T, TListener).GetQuaternionValue
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).GetQuaternionValue
+- uid: UnityEngine.Quaternion
+  commentId: T:UnityEngine.Quaternion
+  parent: UnityEngine
+  isExternal: true
+  name: Quaternion
+  nameWithType: Quaternion
+  fullName: UnityEngine.Quaternion
+- uid: TotalDialogue.Core.Variables.TDFVar`2.SetBoolValue*
+  commentId: Overload:TotalDialogue.Core.Variables.TDFVar`2.SetBoolValue
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetBoolValue_System_Boolean_
+  name: SetBoolValue
+  nameWithType: TDFVar<T, TListener>.SetBoolValue
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.SetBoolValue
+  nameWithType.vb: TDFVar(Of T, TListener).SetBoolValue
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).SetBoolValue
+- uid: TotalDialogue.Core.Variables.TDFVar`2.SetIntValue*
+  commentId: Overload:TotalDialogue.Core.Variables.TDFVar`2.SetIntValue
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetIntValue_System_Int32_
+  name: SetIntValue
+  nameWithType: TDFVar<T, TListener>.SetIntValue
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.SetIntValue
+  nameWithType.vb: TDFVar(Of T, TListener).SetIntValue
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).SetIntValue
+- uid: TotalDialogue.Core.Variables.TDFVar`2.SetFloatValue*
+  commentId: Overload:TotalDialogue.Core.Variables.TDFVar`2.SetFloatValue
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetFloatValue_System_Single_
+  name: SetFloatValue
+  nameWithType: TDFVar<T, TListener>.SetFloatValue
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.SetFloatValue
+  nameWithType.vb: TDFVar(Of T, TListener).SetFloatValue
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).SetFloatValue
+- uid: TotalDialogue.Core.Variables.TDFVar`2.SetStringValue*
+  commentId: Overload:TotalDialogue.Core.Variables.TDFVar`2.SetStringValue
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetStringValue_System_String_
+  name: SetStringValue
+  nameWithType: TDFVar<T, TListener>.SetStringValue
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.SetStringValue
+  nameWithType.vb: TDFVar(Of T, TListener).SetStringValue
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).SetStringValue
+- uid: TotalDialogue.Core.Variables.TDFVar`2.SetVector3Value*
+  commentId: Overload:TotalDialogue.Core.Variables.TDFVar`2.SetVector3Value
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetVector3Value_UnityEngine_Vector3_
+  name: SetVector3Value
+  nameWithType: TDFVar<T, TListener>.SetVector3Value
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.SetVector3Value
+  nameWithType.vb: TDFVar(Of T, TListener).SetVector3Value
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).SetVector3Value

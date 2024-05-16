@@ -1,0 +1,1850 @@
+### YamlMime:ManagedReference
+items:
+- uid: TotalDialogue.Core.Variables.BoolVar
+  commentId: T:TotalDialogue.Core.Variables.BoolVar
+  id: BoolVar
+  parent: TotalDialogue.Core.Variables
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: BoolVar
+  nameWithType: BoolVar
+  fullName: TotalDialogue.Core.Variables.BoolVar
+  type: Class
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/BoolVar.cs
+      branch: master
+      repo: git@github.com:zgock999/total_dialogue_framework.git
+    id: BoolVar
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/BoolVar.cs
+    startLine: 7
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Variables
+  syntax:
+    content: 'public class BoolVar : TDFVar<bool, BoolListener>, ITDFVar<bool, BoolListener>, IEmptyVar'
+    content.vb: Public Class BoolVar Inherits TDFVar(Of Boolean, BoolListener) Implements ITDFVar(Of Boolean, BoolListener), IEmptyVar
+  inheritance:
+  - System.Object
+  - TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}
+  implements:
+  - TotalDialogue.Core.Variables.ITDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}
+  - TotalDialogue.Core.Variables.IEmptyVar
+  inheritedMembers:
+  - TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.m_listeners
+  - TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.m_key
+  - TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.m_value
+  - TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.m_defaultValue
+  - TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.Key
+  - TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.Value
+  - TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.GetValue
+  - TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.SetValue(System.Boolean)
+  - TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.Fire(TotalDialogue.Core.Variables.BoolListener,System.Boolean,System.Boolean,System.Boolean)
+  - TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.IsChanged(System.Boolean,System.Boolean)
+  - TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.IsBecome(System.Boolean,System.Boolean,System.Boolean)
+  - TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.IsCease(System.Boolean,System.Boolean,System.Boolean)
+  - TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.DefaultValue
+  - TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.StoreDefault
+  - TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.RestoreDefault
+  - TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.StringValue
+  - TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.Interface
+  - TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.AddListener(TotalDialogue.Core.Variables.BoolListener)
+  - TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.RemoveListener(TotalDialogue.Core.Variables.BoolListener)
+  - TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.GetBoolValue
+  - TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.GetIntValue
+  - TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.GetFloatValue
+  - TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.GetStringValue
+  - TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.GetVector3Value
+  - TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.GetQuaternionValue
+  - TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.SetBoolValue(System.Boolean)
+  - TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.SetIntValue(System.Int32)
+  - TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.SetFloatValue(System.Single)
+  - TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.SetStringValue(System.String)
+  - TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.SetVector3Value(UnityEngine.Vector3)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+references:
+- uid: TotalDialogue.Core.Variables
+  commentId: N:TotalDialogue.Core.Variables
+  href: TotalDialogue.html
+  name: TotalDialogue.Core.Variables
+  nameWithType: TotalDialogue.Core.Variables
+  fullName: TotalDialogue.Core.Variables
+  spec.csharp:
+  - uid: TotalDialogue
+    name: TotalDialogue
+    href: TotalDialogue.html
+  - name: .
+  - uid: TotalDialogue.Core
+    name: Core
+    href: TotalDialogue.Core.html
+  - name: .
+  - uid: TotalDialogue.Core.Variables
+    name: Variables
+    href: TotalDialogue.Core.Variables.html
+  spec.vb:
+  - uid: TotalDialogue
+    name: TotalDialogue
+    href: TotalDialogue.html
+  - name: .
+  - uid: TotalDialogue.Core
+    name: Core
+    href: TotalDialogue.Core.html
+  - name: .
+  - uid: TotalDialogue.Core.Variables
+    name: Variables
+    href: TotalDialogue.Core.Variables.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}
+  commentId: T:TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}
+  parent: TotalDialogue.Core.Variables
+  definition: TotalDialogue.Core.Variables.TDFVar`2
+  href: TotalDialogue.Core.Variables.TDFVar-2.html
+  name: TDFVar<bool, BoolListener>
+  nameWithType: TDFVar<bool, BoolListener>
+  fullName: TotalDialogue.Core.Variables.TDFVar<bool, TotalDialogue.Core.Variables.BoolListener>
+  nameWithType.vb: TDFVar(Of Boolean, BoolListener)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of Boolean, TotalDialogue.Core.Variables.BoolListener)
+  name.vb: TDFVar(Of Boolean, BoolListener)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2
+    name: TDFVar
+    href: TotalDialogue.Core.Variables.TDFVar-2.html
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: TotalDialogue.Core.Variables.BoolListener
+    name: BoolListener
+    href: TotalDialogue.Core.Variables.BoolListener.html
+  - name: '>'
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2
+    name: TDFVar
+    href: TotalDialogue.Core.Variables.TDFVar-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: TotalDialogue.Core.Variables.BoolListener
+    name: BoolListener
+    href: TotalDialogue.Core.Variables.BoolListener.html
+  - name: )
+- uid: TotalDialogue.Core.Variables.ITDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}
+  commentId: T:TotalDialogue.Core.Variables.ITDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}
+  parent: TotalDialogue.Core.Variables
+  definition: TotalDialogue.Core.Variables.ITDFVar`2
+  href: TotalDialogue.Core.Variables.ITDFVar-2.html
+  name: ITDFVar<bool, BoolListener>
+  nameWithType: ITDFVar<bool, BoolListener>
+  fullName: TotalDialogue.Core.Variables.ITDFVar<bool, TotalDialogue.Core.Variables.BoolListener>
+  nameWithType.vb: ITDFVar(Of Boolean, BoolListener)
+  fullName.vb: TotalDialogue.Core.Variables.ITDFVar(Of Boolean, TotalDialogue.Core.Variables.BoolListener)
+  name.vb: ITDFVar(Of Boolean, BoolListener)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.ITDFVar`2
+    name: ITDFVar
+    href: TotalDialogue.Core.Variables.ITDFVar-2.html
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: TotalDialogue.Core.Variables.BoolListener
+    name: BoolListener
+    href: TotalDialogue.Core.Variables.BoolListener.html
+  - name: '>'
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.ITDFVar`2
+    name: ITDFVar
+    href: TotalDialogue.Core.Variables.ITDFVar-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: TotalDialogue.Core.Variables.BoolListener
+    name: BoolListener
+    href: TotalDialogue.Core.Variables.BoolListener.html
+  - name: )
+- uid: TotalDialogue.Core.Variables.IEmptyVar
+  commentId: T:TotalDialogue.Core.Variables.IEmptyVar
+  parent: TotalDialogue.Core.Variables
+  href: TotalDialogue.Core.Variables.IEmptyVar.html
+  name: IEmptyVar
+  nameWithType: IEmptyVar
+  fullName: TotalDialogue.Core.Variables.IEmptyVar
+- uid: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.m_listeners
+  commentId: F:TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.m_listeners
+  parent: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}
+  definition: TotalDialogue.Core.Variables.TDFVar`2.m_listeners
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_m_listeners
+  name: m_listeners
+  nameWithType: TDFVar<bool, BoolListener>.m_listeners
+  fullName: TotalDialogue.Core.Variables.TDFVar<bool, TotalDialogue.Core.Variables.BoolListener>.m_listeners
+  nameWithType.vb: TDFVar(Of Boolean, BoolListener).m_listeners
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of Boolean, TotalDialogue.Core.Variables.BoolListener).m_listeners
+- uid: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.m_key
+  commentId: F:TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.m_key
+  parent: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}
+  definition: TotalDialogue.Core.Variables.TDFVar`2.m_key
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_m_key
+  name: m_key
+  nameWithType: TDFVar<bool, BoolListener>.m_key
+  fullName: TotalDialogue.Core.Variables.TDFVar<bool, TotalDialogue.Core.Variables.BoolListener>.m_key
+  nameWithType.vb: TDFVar(Of Boolean, BoolListener).m_key
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of Boolean, TotalDialogue.Core.Variables.BoolListener).m_key
+- uid: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.m_value
+  commentId: F:TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.m_value
+  parent: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}
+  definition: TotalDialogue.Core.Variables.TDFVar`2.m_value
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_m_value
+  name: m_value
+  nameWithType: TDFVar<bool, BoolListener>.m_value
+  fullName: TotalDialogue.Core.Variables.TDFVar<bool, TotalDialogue.Core.Variables.BoolListener>.m_value
+  nameWithType.vb: TDFVar(Of Boolean, BoolListener).m_value
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of Boolean, TotalDialogue.Core.Variables.BoolListener).m_value
+- uid: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.m_defaultValue
+  commentId: F:TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.m_defaultValue
+  parent: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}
+  definition: TotalDialogue.Core.Variables.TDFVar`2.m_defaultValue
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_m_defaultValue
+  name: m_defaultValue
+  nameWithType: TDFVar<bool, BoolListener>.m_defaultValue
+  fullName: TotalDialogue.Core.Variables.TDFVar<bool, TotalDialogue.Core.Variables.BoolListener>.m_defaultValue
+  nameWithType.vb: TDFVar(Of Boolean, BoolListener).m_defaultValue
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of Boolean, TotalDialogue.Core.Variables.BoolListener).m_defaultValue
+- uid: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.Key
+  commentId: P:TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.Key
+  parent: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}
+  definition: TotalDialogue.Core.Variables.TDFVar`2.Key
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_Key
+  name: Key
+  nameWithType: TDFVar<bool, BoolListener>.Key
+  fullName: TotalDialogue.Core.Variables.TDFVar<bool, TotalDialogue.Core.Variables.BoolListener>.Key
+  nameWithType.vb: TDFVar(Of Boolean, BoolListener).Key
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of Boolean, TotalDialogue.Core.Variables.BoolListener).Key
+- uid: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.Value
+  commentId: P:TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.Value
+  parent: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}
+  definition: TotalDialogue.Core.Variables.TDFVar`2.Value
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_Value
+  name: Value
+  nameWithType: TDFVar<bool, BoolListener>.Value
+  fullName: TotalDialogue.Core.Variables.TDFVar<bool, TotalDialogue.Core.Variables.BoolListener>.Value
+  nameWithType.vb: TDFVar(Of Boolean, BoolListener).Value
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of Boolean, TotalDialogue.Core.Variables.BoolListener).Value
+- uid: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.GetValue
+  commentId: M:TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.GetValue
+  parent: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}
+  definition: TotalDialogue.Core.Variables.TDFVar`2.GetValue
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetValue
+  name: GetValue()
+  nameWithType: TDFVar<bool, BoolListener>.GetValue()
+  fullName: TotalDialogue.Core.Variables.TDFVar<bool, TotalDialogue.Core.Variables.BoolListener>.GetValue()
+  nameWithType.vb: TDFVar(Of Boolean, BoolListener).GetValue()
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of Boolean, TotalDialogue.Core.Variables.BoolListener).GetValue()
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.GetValue
+    name: GetValue
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetValue
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.GetValue
+    name: GetValue
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetValue
+  - name: (
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.SetValue(System.Boolean)
+  commentId: M:TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.SetValue(System.Boolean)
+  parent: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}
+  definition: TotalDialogue.Core.Variables.TDFVar`2.SetValue(`0)
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetValue__0_
+  name: SetValue(bool)
+  nameWithType: TDFVar<bool, BoolListener>.SetValue(bool)
+  fullName: TotalDialogue.Core.Variables.TDFVar<bool, TotalDialogue.Core.Variables.BoolListener>.SetValue(bool)
+  nameWithType.vb: TDFVar(Of Boolean, BoolListener).SetValue(Boolean)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of Boolean, TotalDialogue.Core.Variables.BoolListener).SetValue(Boolean)
+  name.vb: SetValue(Boolean)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.SetValue(System.Boolean)
+    name: SetValue
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetValue__0_
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.SetValue(System.Boolean)
+    name: SetValue
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetValue__0_
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.Fire(TotalDialogue.Core.Variables.BoolListener,System.Boolean,System.Boolean,System.Boolean)
+  commentId: M:TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.Fire(TotalDialogue.Core.Variables.BoolListener,System.Boolean,System.Boolean,System.Boolean)
+  parent: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}
+  definition: TotalDialogue.Core.Variables.TDFVar`2.Fire(`1,`0,`0,System.Boolean)
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_Fire__1__0__0_System_Boolean_
+  name: Fire(BoolListener, bool, bool, bool)
+  nameWithType: TDFVar<bool, BoolListener>.Fire(BoolListener, bool, bool, bool)
+  fullName: TotalDialogue.Core.Variables.TDFVar<bool, TotalDialogue.Core.Variables.BoolListener>.Fire(TotalDialogue.Core.Variables.BoolListener, bool, bool, bool)
+  nameWithType.vb: TDFVar(Of Boolean, BoolListener).Fire(BoolListener, Boolean, Boolean, Boolean)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of Boolean, TotalDialogue.Core.Variables.BoolListener).Fire(TotalDialogue.Core.Variables.BoolListener, Boolean, Boolean, Boolean)
+  name.vb: Fire(BoolListener, Boolean, Boolean, Boolean)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.Fire(TotalDialogue.Core.Variables.BoolListener,System.Boolean,System.Boolean,System.Boolean)
+    name: Fire
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_Fire__1__0__0_System_Boolean_
+  - name: (
+  - uid: TotalDialogue.Core.Variables.BoolListener
+    name: BoolListener
+    href: TotalDialogue.Core.Variables.BoolListener.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.Fire(TotalDialogue.Core.Variables.BoolListener,System.Boolean,System.Boolean,System.Boolean)
+    name: Fire
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_Fire__1__0__0_System_Boolean_
+  - name: (
+  - uid: TotalDialogue.Core.Variables.BoolListener
+    name: BoolListener
+    href: TotalDialogue.Core.Variables.BoolListener.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.IsChanged(System.Boolean,System.Boolean)
+  commentId: M:TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.IsChanged(System.Boolean,System.Boolean)
+  parent: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}
+  definition: TotalDialogue.Core.Variables.TDFVar`2.IsChanged(`0,`0)
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_IsChanged__0__0_
+  name: IsChanged(bool, bool)
+  nameWithType: TDFVar<bool, BoolListener>.IsChanged(bool, bool)
+  fullName: TotalDialogue.Core.Variables.TDFVar<bool, TotalDialogue.Core.Variables.BoolListener>.IsChanged(bool, bool)
+  nameWithType.vb: TDFVar(Of Boolean, BoolListener).IsChanged(Boolean, Boolean)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of Boolean, TotalDialogue.Core.Variables.BoolListener).IsChanged(Boolean, Boolean)
+  name.vb: IsChanged(Boolean, Boolean)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.IsChanged(System.Boolean,System.Boolean)
+    name: IsChanged
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_IsChanged__0__0_
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.IsChanged(System.Boolean,System.Boolean)
+    name: IsChanged
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_IsChanged__0__0_
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.IsBecome(System.Boolean,System.Boolean,System.Boolean)
+  commentId: M:TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.IsBecome(System.Boolean,System.Boolean,System.Boolean)
+  parent: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}
+  definition: TotalDialogue.Core.Variables.TDFVar`2.IsBecome(`0,`0,`0)
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_IsBecome__0__0__0_
+  name: IsBecome(bool, bool, bool)
+  nameWithType: TDFVar<bool, BoolListener>.IsBecome(bool, bool, bool)
+  fullName: TotalDialogue.Core.Variables.TDFVar<bool, TotalDialogue.Core.Variables.BoolListener>.IsBecome(bool, bool, bool)
+  nameWithType.vb: TDFVar(Of Boolean, BoolListener).IsBecome(Boolean, Boolean, Boolean)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of Boolean, TotalDialogue.Core.Variables.BoolListener).IsBecome(Boolean, Boolean, Boolean)
+  name.vb: IsBecome(Boolean, Boolean, Boolean)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.IsBecome(System.Boolean,System.Boolean,System.Boolean)
+    name: IsBecome
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_IsBecome__0__0__0_
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.IsBecome(System.Boolean,System.Boolean,System.Boolean)
+    name: IsBecome
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_IsBecome__0__0__0_
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.IsCease(System.Boolean,System.Boolean,System.Boolean)
+  commentId: M:TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.IsCease(System.Boolean,System.Boolean,System.Boolean)
+  parent: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}
+  definition: TotalDialogue.Core.Variables.TDFVar`2.IsCease(`0,`0,`0)
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_IsCease__0__0__0_
+  name: IsCease(bool, bool, bool)
+  nameWithType: TDFVar<bool, BoolListener>.IsCease(bool, bool, bool)
+  fullName: TotalDialogue.Core.Variables.TDFVar<bool, TotalDialogue.Core.Variables.BoolListener>.IsCease(bool, bool, bool)
+  nameWithType.vb: TDFVar(Of Boolean, BoolListener).IsCease(Boolean, Boolean, Boolean)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of Boolean, TotalDialogue.Core.Variables.BoolListener).IsCease(Boolean, Boolean, Boolean)
+  name.vb: IsCease(Boolean, Boolean, Boolean)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.IsCease(System.Boolean,System.Boolean,System.Boolean)
+    name: IsCease
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_IsCease__0__0__0_
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.IsCease(System.Boolean,System.Boolean,System.Boolean)
+    name: IsCease
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_IsCease__0__0__0_
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.DefaultValue
+  commentId: P:TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.DefaultValue
+  parent: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}
+  definition: TotalDialogue.Core.Variables.TDFVar`2.DefaultValue
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_DefaultValue
+  name: DefaultValue
+  nameWithType: TDFVar<bool, BoolListener>.DefaultValue
+  fullName: TotalDialogue.Core.Variables.TDFVar<bool, TotalDialogue.Core.Variables.BoolListener>.DefaultValue
+  nameWithType.vb: TDFVar(Of Boolean, BoolListener).DefaultValue
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of Boolean, TotalDialogue.Core.Variables.BoolListener).DefaultValue
+- uid: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.StoreDefault
+  commentId: M:TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.StoreDefault
+  parent: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}
+  definition: TotalDialogue.Core.Variables.TDFVar`2.StoreDefault
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_StoreDefault
+  name: StoreDefault()
+  nameWithType: TDFVar<bool, BoolListener>.StoreDefault()
+  fullName: TotalDialogue.Core.Variables.TDFVar<bool, TotalDialogue.Core.Variables.BoolListener>.StoreDefault()
+  nameWithType.vb: TDFVar(Of Boolean, BoolListener).StoreDefault()
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of Boolean, TotalDialogue.Core.Variables.BoolListener).StoreDefault()
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.StoreDefault
+    name: StoreDefault
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_StoreDefault
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.StoreDefault
+    name: StoreDefault
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_StoreDefault
+  - name: (
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.RestoreDefault
+  commentId: M:TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.RestoreDefault
+  parent: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}
+  definition: TotalDialogue.Core.Variables.TDFVar`2.RestoreDefault
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_RestoreDefault
+  name: RestoreDefault()
+  nameWithType: TDFVar<bool, BoolListener>.RestoreDefault()
+  fullName: TotalDialogue.Core.Variables.TDFVar<bool, TotalDialogue.Core.Variables.BoolListener>.RestoreDefault()
+  nameWithType.vb: TDFVar(Of Boolean, BoolListener).RestoreDefault()
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of Boolean, TotalDialogue.Core.Variables.BoolListener).RestoreDefault()
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.RestoreDefault
+    name: RestoreDefault
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_RestoreDefault
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.RestoreDefault
+    name: RestoreDefault
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_RestoreDefault
+  - name: (
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.StringValue
+  commentId: P:TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.StringValue
+  parent: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}
+  definition: TotalDialogue.Core.Variables.TDFVar`2.StringValue
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_StringValue
+  name: StringValue
+  nameWithType: TDFVar<bool, BoolListener>.StringValue
+  fullName: TotalDialogue.Core.Variables.TDFVar<bool, TotalDialogue.Core.Variables.BoolListener>.StringValue
+  nameWithType.vb: TDFVar(Of Boolean, BoolListener).StringValue
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of Boolean, TotalDialogue.Core.Variables.BoolListener).StringValue
+- uid: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.Interface
+  commentId: P:TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.Interface
+  parent: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}
+  definition: TotalDialogue.Core.Variables.TDFVar`2.Interface
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_Interface
+  name: Interface
+  nameWithType: TDFVar<bool, BoolListener>.Interface
+  fullName: TotalDialogue.Core.Variables.TDFVar<bool, TotalDialogue.Core.Variables.BoolListener>.Interface
+  nameWithType.vb: TDFVar(Of Boolean, BoolListener).Interface
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of Boolean, TotalDialogue.Core.Variables.BoolListener).Interface
+- uid: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.AddListener(TotalDialogue.Core.Variables.BoolListener)
+  commentId: M:TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.AddListener(TotalDialogue.Core.Variables.BoolListener)
+  parent: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}
+  definition: TotalDialogue.Core.Variables.TDFVar`2.AddListener(`1)
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_AddListener__1_
+  name: AddListener(BoolListener)
+  nameWithType: TDFVar<bool, BoolListener>.AddListener(BoolListener)
+  fullName: TotalDialogue.Core.Variables.TDFVar<bool, TotalDialogue.Core.Variables.BoolListener>.AddListener(TotalDialogue.Core.Variables.BoolListener)
+  nameWithType.vb: TDFVar(Of Boolean, BoolListener).AddListener(BoolListener)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of Boolean, TotalDialogue.Core.Variables.BoolListener).AddListener(TotalDialogue.Core.Variables.BoolListener)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.AddListener(TotalDialogue.Core.Variables.BoolListener)
+    name: AddListener
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_AddListener__1_
+  - name: (
+  - uid: TotalDialogue.Core.Variables.BoolListener
+    name: BoolListener
+    href: TotalDialogue.Core.Variables.BoolListener.html
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.AddListener(TotalDialogue.Core.Variables.BoolListener)
+    name: AddListener
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_AddListener__1_
+  - name: (
+  - uid: TotalDialogue.Core.Variables.BoolListener
+    name: BoolListener
+    href: TotalDialogue.Core.Variables.BoolListener.html
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.RemoveListener(TotalDialogue.Core.Variables.BoolListener)
+  commentId: M:TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.RemoveListener(TotalDialogue.Core.Variables.BoolListener)
+  parent: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}
+  definition: TotalDialogue.Core.Variables.TDFVar`2.RemoveListener(`1)
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_RemoveListener__1_
+  name: RemoveListener(BoolListener)
+  nameWithType: TDFVar<bool, BoolListener>.RemoveListener(BoolListener)
+  fullName: TotalDialogue.Core.Variables.TDFVar<bool, TotalDialogue.Core.Variables.BoolListener>.RemoveListener(TotalDialogue.Core.Variables.BoolListener)
+  nameWithType.vb: TDFVar(Of Boolean, BoolListener).RemoveListener(BoolListener)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of Boolean, TotalDialogue.Core.Variables.BoolListener).RemoveListener(TotalDialogue.Core.Variables.BoolListener)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.RemoveListener(TotalDialogue.Core.Variables.BoolListener)
+    name: RemoveListener
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_RemoveListener__1_
+  - name: (
+  - uid: TotalDialogue.Core.Variables.BoolListener
+    name: BoolListener
+    href: TotalDialogue.Core.Variables.BoolListener.html
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.RemoveListener(TotalDialogue.Core.Variables.BoolListener)
+    name: RemoveListener
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_RemoveListener__1_
+  - name: (
+  - uid: TotalDialogue.Core.Variables.BoolListener
+    name: BoolListener
+    href: TotalDialogue.Core.Variables.BoolListener.html
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.GetBoolValue
+  commentId: M:TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.GetBoolValue
+  parent: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}
+  definition: TotalDialogue.Core.Variables.TDFVar`2.GetBoolValue
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetBoolValue
+  name: GetBoolValue()
+  nameWithType: TDFVar<bool, BoolListener>.GetBoolValue()
+  fullName: TotalDialogue.Core.Variables.TDFVar<bool, TotalDialogue.Core.Variables.BoolListener>.GetBoolValue()
+  nameWithType.vb: TDFVar(Of Boolean, BoolListener).GetBoolValue()
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of Boolean, TotalDialogue.Core.Variables.BoolListener).GetBoolValue()
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.GetBoolValue
+    name: GetBoolValue
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetBoolValue
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.GetBoolValue
+    name: GetBoolValue
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetBoolValue
+  - name: (
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.GetIntValue
+  commentId: M:TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.GetIntValue
+  parent: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}
+  definition: TotalDialogue.Core.Variables.TDFVar`2.GetIntValue
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetIntValue
+  name: GetIntValue()
+  nameWithType: TDFVar<bool, BoolListener>.GetIntValue()
+  fullName: TotalDialogue.Core.Variables.TDFVar<bool, TotalDialogue.Core.Variables.BoolListener>.GetIntValue()
+  nameWithType.vb: TDFVar(Of Boolean, BoolListener).GetIntValue()
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of Boolean, TotalDialogue.Core.Variables.BoolListener).GetIntValue()
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.GetIntValue
+    name: GetIntValue
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetIntValue
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.GetIntValue
+    name: GetIntValue
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetIntValue
+  - name: (
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.GetFloatValue
+  commentId: M:TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.GetFloatValue
+  parent: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}
+  definition: TotalDialogue.Core.Variables.TDFVar`2.GetFloatValue
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetFloatValue
+  name: GetFloatValue()
+  nameWithType: TDFVar<bool, BoolListener>.GetFloatValue()
+  fullName: TotalDialogue.Core.Variables.TDFVar<bool, TotalDialogue.Core.Variables.BoolListener>.GetFloatValue()
+  nameWithType.vb: TDFVar(Of Boolean, BoolListener).GetFloatValue()
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of Boolean, TotalDialogue.Core.Variables.BoolListener).GetFloatValue()
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.GetFloatValue
+    name: GetFloatValue
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetFloatValue
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.GetFloatValue
+    name: GetFloatValue
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetFloatValue
+  - name: (
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.GetStringValue
+  commentId: M:TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.GetStringValue
+  parent: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}
+  definition: TotalDialogue.Core.Variables.TDFVar`2.GetStringValue
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetStringValue
+  name: GetStringValue()
+  nameWithType: TDFVar<bool, BoolListener>.GetStringValue()
+  fullName: TotalDialogue.Core.Variables.TDFVar<bool, TotalDialogue.Core.Variables.BoolListener>.GetStringValue()
+  nameWithType.vb: TDFVar(Of Boolean, BoolListener).GetStringValue()
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of Boolean, TotalDialogue.Core.Variables.BoolListener).GetStringValue()
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.GetStringValue
+    name: GetStringValue
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetStringValue
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.GetStringValue
+    name: GetStringValue
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetStringValue
+  - name: (
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.GetVector3Value
+  commentId: M:TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.GetVector3Value
+  parent: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}
+  definition: TotalDialogue.Core.Variables.TDFVar`2.GetVector3Value
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetVector3Value
+  name: GetVector3Value()
+  nameWithType: TDFVar<bool, BoolListener>.GetVector3Value()
+  fullName: TotalDialogue.Core.Variables.TDFVar<bool, TotalDialogue.Core.Variables.BoolListener>.GetVector3Value()
+  nameWithType.vb: TDFVar(Of Boolean, BoolListener).GetVector3Value()
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of Boolean, TotalDialogue.Core.Variables.BoolListener).GetVector3Value()
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.GetVector3Value
+    name: GetVector3Value
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetVector3Value
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.GetVector3Value
+    name: GetVector3Value
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetVector3Value
+  - name: (
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.GetQuaternionValue
+  commentId: M:TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.GetQuaternionValue
+  parent: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}
+  definition: TotalDialogue.Core.Variables.TDFVar`2.GetQuaternionValue
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetQuaternionValue
+  name: GetQuaternionValue()
+  nameWithType: TDFVar<bool, BoolListener>.GetQuaternionValue()
+  fullName: TotalDialogue.Core.Variables.TDFVar<bool, TotalDialogue.Core.Variables.BoolListener>.GetQuaternionValue()
+  nameWithType.vb: TDFVar(Of Boolean, BoolListener).GetQuaternionValue()
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of Boolean, TotalDialogue.Core.Variables.BoolListener).GetQuaternionValue()
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.GetQuaternionValue
+    name: GetQuaternionValue
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetQuaternionValue
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.GetQuaternionValue
+    name: GetQuaternionValue
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetQuaternionValue
+  - name: (
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.SetBoolValue(System.Boolean)
+  commentId: M:TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.SetBoolValue(System.Boolean)
+  parent: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}
+  definition: TotalDialogue.Core.Variables.TDFVar`2.SetBoolValue(System.Boolean)
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetBoolValue_System_Boolean_
+  name: SetBoolValue(bool)
+  nameWithType: TDFVar<bool, BoolListener>.SetBoolValue(bool)
+  fullName: TotalDialogue.Core.Variables.TDFVar<bool, TotalDialogue.Core.Variables.BoolListener>.SetBoolValue(bool)
+  nameWithType.vb: TDFVar(Of Boolean, BoolListener).SetBoolValue(Boolean)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of Boolean, TotalDialogue.Core.Variables.BoolListener).SetBoolValue(Boolean)
+  name.vb: SetBoolValue(Boolean)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.SetBoolValue(System.Boolean)
+    name: SetBoolValue
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetBoolValue_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.SetBoolValue(System.Boolean)
+    name: SetBoolValue
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetBoolValue_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.SetIntValue(System.Int32)
+  commentId: M:TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.SetIntValue(System.Int32)
+  parent: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}
+  definition: TotalDialogue.Core.Variables.TDFVar`2.SetIntValue(System.Int32)
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetIntValue_System_Int32_
+  name: SetIntValue(int)
+  nameWithType: TDFVar<bool, BoolListener>.SetIntValue(int)
+  fullName: TotalDialogue.Core.Variables.TDFVar<bool, TotalDialogue.Core.Variables.BoolListener>.SetIntValue(int)
+  nameWithType.vb: TDFVar(Of Boolean, BoolListener).SetIntValue(Integer)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of Boolean, TotalDialogue.Core.Variables.BoolListener).SetIntValue(Integer)
+  name.vb: SetIntValue(Integer)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.SetIntValue(System.Int32)
+    name: SetIntValue
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetIntValue_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.SetIntValue(System.Int32)
+    name: SetIntValue
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetIntValue_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.SetFloatValue(System.Single)
+  commentId: M:TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.SetFloatValue(System.Single)
+  parent: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}
+  definition: TotalDialogue.Core.Variables.TDFVar`2.SetFloatValue(System.Single)
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetFloatValue_System_Single_
+  name: SetFloatValue(float)
+  nameWithType: TDFVar<bool, BoolListener>.SetFloatValue(float)
+  fullName: TotalDialogue.Core.Variables.TDFVar<bool, TotalDialogue.Core.Variables.BoolListener>.SetFloatValue(float)
+  nameWithType.vb: TDFVar(Of Boolean, BoolListener).SetFloatValue(Single)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of Boolean, TotalDialogue.Core.Variables.BoolListener).SetFloatValue(Single)
+  name.vb: SetFloatValue(Single)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.SetFloatValue(System.Single)
+    name: SetFloatValue
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetFloatValue_System_Single_
+  - name: (
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.SetFloatValue(System.Single)
+    name: SetFloatValue
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetFloatValue_System_Single_
+  - name: (
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.SetStringValue(System.String)
+  commentId: M:TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.SetStringValue(System.String)
+  parent: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}
+  definition: TotalDialogue.Core.Variables.TDFVar`2.SetStringValue(System.String)
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetStringValue_System_String_
+  name: SetStringValue(string)
+  nameWithType: TDFVar<bool, BoolListener>.SetStringValue(string)
+  fullName: TotalDialogue.Core.Variables.TDFVar<bool, TotalDialogue.Core.Variables.BoolListener>.SetStringValue(string)
+  nameWithType.vb: TDFVar(Of Boolean, BoolListener).SetStringValue(String)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of Boolean, TotalDialogue.Core.Variables.BoolListener).SetStringValue(String)
+  name.vb: SetStringValue(String)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.SetStringValue(System.String)
+    name: SetStringValue
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetStringValue_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.SetStringValue(System.String)
+    name: SetStringValue
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetStringValue_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.SetVector3Value(UnityEngine.Vector3)
+  commentId: M:TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.SetVector3Value(UnityEngine.Vector3)
+  parent: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}
+  definition: TotalDialogue.Core.Variables.TDFVar`2.SetVector3Value(UnityEngine.Vector3)
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetVector3Value_UnityEngine_Vector3_
+  name: SetVector3Value(Vector3)
+  nameWithType: TDFVar<bool, BoolListener>.SetVector3Value(Vector3)
+  fullName: TotalDialogue.Core.Variables.TDFVar<bool, TotalDialogue.Core.Variables.BoolListener>.SetVector3Value(UnityEngine.Vector3)
+  nameWithType.vb: TDFVar(Of Boolean, BoolListener).SetVector3Value(Vector3)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of Boolean, TotalDialogue.Core.Variables.BoolListener).SetVector3Value(UnityEngine.Vector3)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.SetVector3Value(UnityEngine.Vector3)
+    name: SetVector3Value
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetVector3Value_UnityEngine_Vector3_
+  - name: (
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.TDFVar{System.Boolean,TotalDialogue.Core.Variables.BoolListener}.SetVector3Value(UnityEngine.Vector3)
+    name: SetVector3Value
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetVector3Value_UnityEngine_Vector3_
+  - name: (
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: TotalDialogue.Core.Variables.TDFVar`2
+  commentId: T:TotalDialogue.Core.Variables.TDFVar`2
+  href: TotalDialogue.Core.Variables.TDFVar-2.html
+  name: TDFVar<T, TListener>
+  nameWithType: TDFVar<T, TListener>
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>
+  nameWithType.vb: TDFVar(Of T, TListener)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener)
+  name.vb: TDFVar(Of T, TListener)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2
+    name: TDFVar
+    href: TotalDialogue.Core.Variables.TDFVar-2.html
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TListener
+  - name: '>'
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2
+    name: TDFVar
+    href: TotalDialogue.Core.Variables.TDFVar-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TListener
+  - name: )
+- uid: TotalDialogue.Core.Variables.ITDFVar`2
+  commentId: T:TotalDialogue.Core.Variables.ITDFVar`2
+  parent: TotalDialogue.Core.Variables
+  href: TotalDialogue.Core.Variables.ITDFVar-2.html
+  name: ITDFVar<T, TListener>
+  nameWithType: ITDFVar<T, TListener>
+  fullName: TotalDialogue.Core.Variables.ITDFVar<T, TListener>
+  nameWithType.vb: ITDFVar(Of T, TListener)
+  fullName.vb: TotalDialogue.Core.Variables.ITDFVar(Of T, TListener)
+  name.vb: ITDFVar(Of T, TListener)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.ITDFVar`2
+    name: ITDFVar
+    href: TotalDialogue.Core.Variables.ITDFVar-2.html
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TListener
+  - name: '>'
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.ITDFVar`2
+    name: ITDFVar
+    href: TotalDialogue.Core.Variables.ITDFVar-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TListener
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVar`2.m_listeners
+  commentId: F:TotalDialogue.Core.Variables.TDFVar`2.m_listeners
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_m_listeners
+  name: m_listeners
+  nameWithType: TDFVar<T, TListener>.m_listeners
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.m_listeners
+  nameWithType.vb: TDFVar(Of T, TListener).m_listeners
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).m_listeners
+- uid: TotalDialogue.Core.Variables.TDFVar`2.m_key
+  commentId: F:TotalDialogue.Core.Variables.TDFVar`2.m_key
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_m_key
+  name: m_key
+  nameWithType: TDFVar<T, TListener>.m_key
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.m_key
+  nameWithType.vb: TDFVar(Of T, TListener).m_key
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).m_key
+- uid: TotalDialogue.Core.Variables.TDFVar`2.m_value
+  commentId: F:TotalDialogue.Core.Variables.TDFVar`2.m_value
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_m_value
+  name: m_value
+  nameWithType: TDFVar<T, TListener>.m_value
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.m_value
+  nameWithType.vb: TDFVar(Of T, TListener).m_value
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).m_value
+- uid: TotalDialogue.Core.Variables.TDFVar`2.m_defaultValue
+  commentId: F:TotalDialogue.Core.Variables.TDFVar`2.m_defaultValue
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_m_defaultValue
+  name: m_defaultValue
+  nameWithType: TDFVar<T, TListener>.m_defaultValue
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.m_defaultValue
+  nameWithType.vb: TDFVar(Of T, TListener).m_defaultValue
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).m_defaultValue
+- uid: TotalDialogue.Core.Variables.TDFVar`2.Key
+  commentId: P:TotalDialogue.Core.Variables.TDFVar`2.Key
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_Key
+  name: Key
+  nameWithType: TDFVar<T, TListener>.Key
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.Key
+  nameWithType.vb: TDFVar(Of T, TListener).Key
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).Key
+- uid: TotalDialogue.Core.Variables.TDFVar`2.Value
+  commentId: P:TotalDialogue.Core.Variables.TDFVar`2.Value
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_Value
+  name: Value
+  nameWithType: TDFVar<T, TListener>.Value
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.Value
+  nameWithType.vb: TDFVar(Of T, TListener).Value
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).Value
+- uid: TotalDialogue.Core.Variables.TDFVar`2.GetValue
+  commentId: M:TotalDialogue.Core.Variables.TDFVar`2.GetValue
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetValue
+  name: GetValue()
+  nameWithType: TDFVar<T, TListener>.GetValue()
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.GetValue()
+  nameWithType.vb: TDFVar(Of T, TListener).GetValue()
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).GetValue()
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2.GetValue
+    name: GetValue
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetValue
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2.GetValue
+    name: GetValue
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetValue
+  - name: (
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVar`2.SetValue(`0)
+  commentId: M:TotalDialogue.Core.Variables.TDFVar`2.SetValue(`0)
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetValue__0_
+  name: SetValue(T)
+  nameWithType: TDFVar<T, TListener>.SetValue(T)
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.SetValue(T)
+  nameWithType.vb: TDFVar(Of T, TListener).SetValue(T)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).SetValue(T)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2.SetValue(`0)
+    name: SetValue
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetValue__0_
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2.SetValue(`0)
+    name: SetValue
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetValue__0_
+  - name: (
+  - name: T
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVar`2.Fire(`1,`0,`0,System.Boolean)
+  commentId: M:TotalDialogue.Core.Variables.TDFVar`2.Fire(`1,`0,`0,System.Boolean)
+  isExternal: true
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_Fire__1__0__0_System_Boolean_
+  name: Fire(TListener, T, T, bool)
+  nameWithType: TDFVar<T, TListener>.Fire(TListener, T, T, bool)
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.Fire(TListener, T, T, bool)
+  nameWithType.vb: TDFVar(Of T, TListener).Fire(TListener, T, T, Boolean)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).Fire(TListener, T, T, Boolean)
+  name.vb: Fire(TListener, T, T, Boolean)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2.Fire(`1,`0,`0,System.Boolean)
+    name: Fire
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_Fire__1__0__0_System_Boolean_
+  - name: (
+  - name: TListener
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2.Fire(`1,`0,`0,System.Boolean)
+    name: Fire
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_Fire__1__0__0_System_Boolean_
+  - name: (
+  - name: TListener
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVar`2.IsChanged(`0,`0)
+  commentId: M:TotalDialogue.Core.Variables.TDFVar`2.IsChanged(`0,`0)
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_IsChanged__0__0_
+  name: IsChanged(T, T)
+  nameWithType: TDFVar<T, TListener>.IsChanged(T, T)
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.IsChanged(T, T)
+  nameWithType.vb: TDFVar(Of T, TListener).IsChanged(T, T)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).IsChanged(T, T)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2.IsChanged(`0,`0)
+    name: IsChanged
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_IsChanged__0__0_
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2.IsChanged(`0,`0)
+    name: IsChanged
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_IsChanged__0__0_
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVar`2.IsBecome(`0,`0,`0)
+  commentId: M:TotalDialogue.Core.Variables.TDFVar`2.IsBecome(`0,`0,`0)
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_IsBecome__0__0__0_
+  name: IsBecome(T, T, T)
+  nameWithType: TDFVar<T, TListener>.IsBecome(T, T, T)
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.IsBecome(T, T, T)
+  nameWithType.vb: TDFVar(Of T, TListener).IsBecome(T, T, T)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).IsBecome(T, T, T)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2.IsBecome(`0,`0,`0)
+    name: IsBecome
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_IsBecome__0__0__0_
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2.IsBecome(`0,`0,`0)
+    name: IsBecome
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_IsBecome__0__0__0_
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVar`2.IsCease(`0,`0,`0)
+  commentId: M:TotalDialogue.Core.Variables.TDFVar`2.IsCease(`0,`0,`0)
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_IsCease__0__0__0_
+  name: IsCease(T, T, T)
+  nameWithType: TDFVar<T, TListener>.IsCease(T, T, T)
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.IsCease(T, T, T)
+  nameWithType.vb: TDFVar(Of T, TListener).IsCease(T, T, T)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).IsCease(T, T, T)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2.IsCease(`0,`0,`0)
+    name: IsCease
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_IsCease__0__0__0_
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2.IsCease(`0,`0,`0)
+    name: IsCease
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_IsCease__0__0__0_
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVar`2.DefaultValue
+  commentId: P:TotalDialogue.Core.Variables.TDFVar`2.DefaultValue
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_DefaultValue
+  name: DefaultValue
+  nameWithType: TDFVar<T, TListener>.DefaultValue
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.DefaultValue
+  nameWithType.vb: TDFVar(Of T, TListener).DefaultValue
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).DefaultValue
+- uid: TotalDialogue.Core.Variables.TDFVar`2.StoreDefault
+  commentId: M:TotalDialogue.Core.Variables.TDFVar`2.StoreDefault
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_StoreDefault
+  name: StoreDefault()
+  nameWithType: TDFVar<T, TListener>.StoreDefault()
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.StoreDefault()
+  nameWithType.vb: TDFVar(Of T, TListener).StoreDefault()
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).StoreDefault()
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2.StoreDefault
+    name: StoreDefault
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_StoreDefault
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2.StoreDefault
+    name: StoreDefault
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_StoreDefault
+  - name: (
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVar`2.RestoreDefault
+  commentId: M:TotalDialogue.Core.Variables.TDFVar`2.RestoreDefault
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_RestoreDefault
+  name: RestoreDefault()
+  nameWithType: TDFVar<T, TListener>.RestoreDefault()
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.RestoreDefault()
+  nameWithType.vb: TDFVar(Of T, TListener).RestoreDefault()
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).RestoreDefault()
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2.RestoreDefault
+    name: RestoreDefault
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_RestoreDefault
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2.RestoreDefault
+    name: RestoreDefault
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_RestoreDefault
+  - name: (
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVar`2.StringValue
+  commentId: P:TotalDialogue.Core.Variables.TDFVar`2.StringValue
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_StringValue
+  name: StringValue
+  nameWithType: TDFVar<T, TListener>.StringValue
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.StringValue
+  nameWithType.vb: TDFVar(Of T, TListener).StringValue
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).StringValue
+- uid: TotalDialogue.Core.Variables.TDFVar`2.Interface
+  commentId: P:TotalDialogue.Core.Variables.TDFVar`2.Interface
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_Interface
+  name: Interface
+  nameWithType: TDFVar<T, TListener>.Interface
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.Interface
+  nameWithType.vb: TDFVar(Of T, TListener).Interface
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).Interface
+- uid: TotalDialogue.Core.Variables.TDFVar`2.AddListener(`1)
+  commentId: M:TotalDialogue.Core.Variables.TDFVar`2.AddListener(`1)
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_AddListener__1_
+  name: AddListener(TListener)
+  nameWithType: TDFVar<T, TListener>.AddListener(TListener)
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.AddListener(TListener)
+  nameWithType.vb: TDFVar(Of T, TListener).AddListener(TListener)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).AddListener(TListener)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2.AddListener(`1)
+    name: AddListener
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_AddListener__1_
+  - name: (
+  - name: TListener
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2.AddListener(`1)
+    name: AddListener
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_AddListener__1_
+  - name: (
+  - name: TListener
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVar`2.RemoveListener(`1)
+  commentId: M:TotalDialogue.Core.Variables.TDFVar`2.RemoveListener(`1)
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_RemoveListener__1_
+  name: RemoveListener(TListener)
+  nameWithType: TDFVar<T, TListener>.RemoveListener(TListener)
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.RemoveListener(TListener)
+  nameWithType.vb: TDFVar(Of T, TListener).RemoveListener(TListener)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).RemoveListener(TListener)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2.RemoveListener(`1)
+    name: RemoveListener
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_RemoveListener__1_
+  - name: (
+  - name: TListener
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2.RemoveListener(`1)
+    name: RemoveListener
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_RemoveListener__1_
+  - name: (
+  - name: TListener
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVar`2.GetBoolValue
+  commentId: M:TotalDialogue.Core.Variables.TDFVar`2.GetBoolValue
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetBoolValue
+  name: GetBoolValue()
+  nameWithType: TDFVar<T, TListener>.GetBoolValue()
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.GetBoolValue()
+  nameWithType.vb: TDFVar(Of T, TListener).GetBoolValue()
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).GetBoolValue()
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2.GetBoolValue
+    name: GetBoolValue
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetBoolValue
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2.GetBoolValue
+    name: GetBoolValue
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetBoolValue
+  - name: (
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVar`2.GetIntValue
+  commentId: M:TotalDialogue.Core.Variables.TDFVar`2.GetIntValue
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetIntValue
+  name: GetIntValue()
+  nameWithType: TDFVar<T, TListener>.GetIntValue()
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.GetIntValue()
+  nameWithType.vb: TDFVar(Of T, TListener).GetIntValue()
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).GetIntValue()
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2.GetIntValue
+    name: GetIntValue
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetIntValue
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2.GetIntValue
+    name: GetIntValue
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetIntValue
+  - name: (
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVar`2.GetFloatValue
+  commentId: M:TotalDialogue.Core.Variables.TDFVar`2.GetFloatValue
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetFloatValue
+  name: GetFloatValue()
+  nameWithType: TDFVar<T, TListener>.GetFloatValue()
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.GetFloatValue()
+  nameWithType.vb: TDFVar(Of T, TListener).GetFloatValue()
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).GetFloatValue()
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2.GetFloatValue
+    name: GetFloatValue
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetFloatValue
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2.GetFloatValue
+    name: GetFloatValue
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetFloatValue
+  - name: (
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVar`2.GetStringValue
+  commentId: M:TotalDialogue.Core.Variables.TDFVar`2.GetStringValue
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetStringValue
+  name: GetStringValue()
+  nameWithType: TDFVar<T, TListener>.GetStringValue()
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.GetStringValue()
+  nameWithType.vb: TDFVar(Of T, TListener).GetStringValue()
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).GetStringValue()
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2.GetStringValue
+    name: GetStringValue
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetStringValue
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2.GetStringValue
+    name: GetStringValue
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetStringValue
+  - name: (
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVar`2.GetVector3Value
+  commentId: M:TotalDialogue.Core.Variables.TDFVar`2.GetVector3Value
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetVector3Value
+  name: GetVector3Value()
+  nameWithType: TDFVar<T, TListener>.GetVector3Value()
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.GetVector3Value()
+  nameWithType.vb: TDFVar(Of T, TListener).GetVector3Value()
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).GetVector3Value()
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2.GetVector3Value
+    name: GetVector3Value
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetVector3Value
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2.GetVector3Value
+    name: GetVector3Value
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetVector3Value
+  - name: (
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVar`2.GetQuaternionValue
+  commentId: M:TotalDialogue.Core.Variables.TDFVar`2.GetQuaternionValue
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetQuaternionValue
+  name: GetQuaternionValue()
+  nameWithType: TDFVar<T, TListener>.GetQuaternionValue()
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.GetQuaternionValue()
+  nameWithType.vb: TDFVar(Of T, TListener).GetQuaternionValue()
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).GetQuaternionValue()
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2.GetQuaternionValue
+    name: GetQuaternionValue
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetQuaternionValue
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2.GetQuaternionValue
+    name: GetQuaternionValue
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetQuaternionValue
+  - name: (
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVar`2.SetBoolValue(System.Boolean)
+  commentId: M:TotalDialogue.Core.Variables.TDFVar`2.SetBoolValue(System.Boolean)
+  isExternal: true
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetBoolValue_System_Boolean_
+  name: SetBoolValue(bool)
+  nameWithType: TDFVar<T, TListener>.SetBoolValue(bool)
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.SetBoolValue(bool)
+  nameWithType.vb: TDFVar(Of T, TListener).SetBoolValue(Boolean)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).SetBoolValue(Boolean)
+  name.vb: SetBoolValue(Boolean)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2.SetBoolValue(System.Boolean)
+    name: SetBoolValue
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetBoolValue_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2.SetBoolValue(System.Boolean)
+    name: SetBoolValue
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetBoolValue_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVar`2.SetIntValue(System.Int32)
+  commentId: M:TotalDialogue.Core.Variables.TDFVar`2.SetIntValue(System.Int32)
+  isExternal: true
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetIntValue_System_Int32_
+  name: SetIntValue(int)
+  nameWithType: TDFVar<T, TListener>.SetIntValue(int)
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.SetIntValue(int)
+  nameWithType.vb: TDFVar(Of T, TListener).SetIntValue(Integer)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).SetIntValue(Integer)
+  name.vb: SetIntValue(Integer)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2.SetIntValue(System.Int32)
+    name: SetIntValue
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetIntValue_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2.SetIntValue(System.Int32)
+    name: SetIntValue
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetIntValue_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVar`2.SetFloatValue(System.Single)
+  commentId: M:TotalDialogue.Core.Variables.TDFVar`2.SetFloatValue(System.Single)
+  isExternal: true
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetFloatValue_System_Single_
+  name: SetFloatValue(float)
+  nameWithType: TDFVar<T, TListener>.SetFloatValue(float)
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.SetFloatValue(float)
+  nameWithType.vb: TDFVar(Of T, TListener).SetFloatValue(Single)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).SetFloatValue(Single)
+  name.vb: SetFloatValue(Single)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2.SetFloatValue(System.Single)
+    name: SetFloatValue
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetFloatValue_System_Single_
+  - name: (
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2.SetFloatValue(System.Single)
+    name: SetFloatValue
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetFloatValue_System_Single_
+  - name: (
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVar`2.SetStringValue(System.String)
+  commentId: M:TotalDialogue.Core.Variables.TDFVar`2.SetStringValue(System.String)
+  isExternal: true
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetStringValue_System_String_
+  name: SetStringValue(string)
+  nameWithType: TDFVar<T, TListener>.SetStringValue(string)
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.SetStringValue(string)
+  nameWithType.vb: TDFVar(Of T, TListener).SetStringValue(String)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).SetStringValue(String)
+  name.vb: SetStringValue(String)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2.SetStringValue(System.String)
+    name: SetStringValue
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetStringValue_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2.SetStringValue(System.String)
+    name: SetStringValue
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetStringValue_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVar`2.SetVector3Value(UnityEngine.Vector3)
+  commentId: M:TotalDialogue.Core.Variables.TDFVar`2.SetVector3Value(UnityEngine.Vector3)
+  isExternal: true
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetVector3Value_UnityEngine_Vector3_
+  name: SetVector3Value(Vector3)
+  nameWithType: TDFVar<T, TListener>.SetVector3Value(Vector3)
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.SetVector3Value(UnityEngine.Vector3)
+  nameWithType.vb: TDFVar(Of T, TListener).SetVector3Value(Vector3)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).SetVector3Value(UnityEngine.Vector3)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2.SetVector3Value(UnityEngine.Vector3)
+    name: SetVector3Value
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetVector3Value_UnityEngine_Vector3_
+  - name: (
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2.SetVector3Value(UnityEngine.Vector3)
+    name: SetVector3Value
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetVector3Value_UnityEngine_Vector3_
+  - name: (
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: )

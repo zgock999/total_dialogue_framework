@@ -1792,6 +1792,1798 @@ references:
   fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).m_serializing
   nameWithType: TDFList<T>.m_serializing
   nameWithType.vb: TDFList(Of T).m_serializing
+- uid: TotalDialogue.Core.Variables
+  name: TotalDialogue.Core.Variables
+  href: api/TotalDialogue.Core.Variables.html
+  commentId: N:TotalDialogue.Core.Variables
+  fullName: TotalDialogue.Core.Variables
+  nameWithType: TotalDialogue.Core.Variables
+- uid: TotalDialogue.Core.Variables.BoolListener
+  name: BoolListener
+  href: api/TotalDialogue.Core.Variables.BoolListener.html
+  commentId: T:TotalDialogue.Core.Variables.BoolListener
+  fullName: TotalDialogue.Core.Variables.BoolListener
+  nameWithType: BoolListener
+- uid: TotalDialogue.Core.Variables.BoolListener.GetValue(System.String)
+  name: GetValue(string)
+  href: api/TotalDialogue.Core.Variables.BoolListener.html#TotalDialogue_Core_Variables_BoolListener_GetValue_System_String_
+  commentId: M:TotalDialogue.Core.Variables.BoolListener.GetValue(System.String)
+  name.vb: GetValue(String)
+  fullName: TotalDialogue.Core.Variables.BoolListener.GetValue(string)
+  fullName.vb: TotalDialogue.Core.Variables.BoolListener.GetValue(String)
+  nameWithType: BoolListener.GetValue(string)
+  nameWithType.vb: BoolListener.GetValue(String)
+- uid: TotalDialogue.Core.Variables.BoolListener.GetValue*
+  name: GetValue
+  href: api/TotalDialogue.Core.Variables.BoolListener.html#TotalDialogue_Core_Variables_BoolListener_GetValue_
+  commentId: Overload:TotalDialogue.Core.Variables.BoolListener.GetValue
+  isSpec: "True"
+  fullName: TotalDialogue.Core.Variables.BoolListener.GetValue
+  nameWithType: BoolListener.GetValue
+- uid: TotalDialogue.Core.Variables.BoolListener.SetValue(System.String,System.Boolean)
+  name: SetValue(string, bool)
+  href: api/TotalDialogue.Core.Variables.BoolListener.html#TotalDialogue_Core_Variables_BoolListener_SetValue_System_String_System_Boolean_
+  commentId: M:TotalDialogue.Core.Variables.BoolListener.SetValue(System.String,System.Boolean)
+  name.vb: SetValue(String, Boolean)
+  fullName: TotalDialogue.Core.Variables.BoolListener.SetValue(string, bool)
+  fullName.vb: TotalDialogue.Core.Variables.BoolListener.SetValue(String, Boolean)
+  nameWithType: BoolListener.SetValue(string, bool)
+  nameWithType.vb: BoolListener.SetValue(String, Boolean)
+- uid: TotalDialogue.Core.Variables.BoolListener.SetValue*
+  name: SetValue
+  href: api/TotalDialogue.Core.Variables.BoolListener.html#TotalDialogue_Core_Variables_BoolListener_SetValue_
+  commentId: Overload:TotalDialogue.Core.Variables.BoolListener.SetValue
+  isSpec: "True"
+  fullName: TotalDialogue.Core.Variables.BoolListener.SetValue
+  nameWithType: BoolListener.SetValue
+- uid: TotalDialogue.Core.Variables.BoolVar
+  name: BoolVar
+  href: api/TotalDialogue.Core.Variables.BoolVar.html
+  commentId: T:TotalDialogue.Core.Variables.BoolVar
+  fullName: TotalDialogue.Core.Variables.BoolVar
+  nameWithType: BoolVar
+- uid: TotalDialogue.Core.Variables.FloatListener
+  name: FloatListener
+  href: api/TotalDialogue.Core.Variables.FloatListener.html
+  commentId: T:TotalDialogue.Core.Variables.FloatListener
+  fullName: TotalDialogue.Core.Variables.FloatListener
+  nameWithType: FloatListener
+- uid: TotalDialogue.Core.Variables.FloatListener.GetValue(System.String)
+  name: GetValue(string)
+  href: api/TotalDialogue.Core.Variables.FloatListener.html#TotalDialogue_Core_Variables_FloatListener_GetValue_System_String_
+  commentId: M:TotalDialogue.Core.Variables.FloatListener.GetValue(System.String)
+  name.vb: GetValue(String)
+  fullName: TotalDialogue.Core.Variables.FloatListener.GetValue(string)
+  fullName.vb: TotalDialogue.Core.Variables.FloatListener.GetValue(String)
+  nameWithType: FloatListener.GetValue(string)
+  nameWithType.vb: FloatListener.GetValue(String)
+- uid: TotalDialogue.Core.Variables.FloatListener.GetValue*
+  name: GetValue
+  href: api/TotalDialogue.Core.Variables.FloatListener.html#TotalDialogue_Core_Variables_FloatListener_GetValue_
+  commentId: Overload:TotalDialogue.Core.Variables.FloatListener.GetValue
+  isSpec: "True"
+  fullName: TotalDialogue.Core.Variables.FloatListener.GetValue
+  nameWithType: FloatListener.GetValue
+- uid: TotalDialogue.Core.Variables.FloatListener.SetValue(System.String,System.Single)
+  name: SetValue(string, float)
+  href: api/TotalDialogue.Core.Variables.FloatListener.html#TotalDialogue_Core_Variables_FloatListener_SetValue_System_String_System_Single_
+  commentId: M:TotalDialogue.Core.Variables.FloatListener.SetValue(System.String,System.Single)
+  name.vb: SetValue(String, Single)
+  fullName: TotalDialogue.Core.Variables.FloatListener.SetValue(string, float)
+  fullName.vb: TotalDialogue.Core.Variables.FloatListener.SetValue(String, Single)
+  nameWithType: FloatListener.SetValue(string, float)
+  nameWithType.vb: FloatListener.SetValue(String, Single)
+- uid: TotalDialogue.Core.Variables.FloatListener.SetValue*
+  name: SetValue
+  href: api/TotalDialogue.Core.Variables.FloatListener.html#TotalDialogue_Core_Variables_FloatListener_SetValue_
+  commentId: Overload:TotalDialogue.Core.Variables.FloatListener.SetValue
+  isSpec: "True"
+  fullName: TotalDialogue.Core.Variables.FloatListener.SetValue
+  nameWithType: FloatListener.SetValue
+- uid: TotalDialogue.Core.Variables.FloatVar
+  name: FloatVar
+  href: api/TotalDialogue.Core.Variables.FloatVar.html
+  commentId: T:TotalDialogue.Core.Variables.FloatVar
+  fullName: TotalDialogue.Core.Variables.FloatVar
+  nameWithType: FloatVar
+- uid: TotalDialogue.Core.Variables.IEmptyVar
+  name: IEmptyVar
+  href: api/TotalDialogue.Core.Variables.IEmptyVar.html
+  commentId: T:TotalDialogue.Core.Variables.IEmptyVar
+  fullName: TotalDialogue.Core.Variables.IEmptyVar
+  nameWithType: IEmptyVar
+- uid: TotalDialogue.Core.Variables.IEmptyVar.DefaultValue
+  name: DefaultValue
+  href: api/TotalDialogue.Core.Variables.IEmptyVar.html#TotalDialogue_Core_Variables_IEmptyVar_DefaultValue
+  commentId: P:TotalDialogue.Core.Variables.IEmptyVar.DefaultValue
+  fullName: TotalDialogue.Core.Variables.IEmptyVar.DefaultValue
+  nameWithType: IEmptyVar.DefaultValue
+- uid: TotalDialogue.Core.Variables.IEmptyVar.DefaultValue*
+  name: DefaultValue
+  href: api/TotalDialogue.Core.Variables.IEmptyVar.html#TotalDialogue_Core_Variables_IEmptyVar_DefaultValue_
+  commentId: Overload:TotalDialogue.Core.Variables.IEmptyVar.DefaultValue
+  isSpec: "True"
+  fullName: TotalDialogue.Core.Variables.IEmptyVar.DefaultValue
+  nameWithType: IEmptyVar.DefaultValue
+- uid: TotalDialogue.Core.Variables.IEmptyVar.Key
+  name: Key
+  href: api/TotalDialogue.Core.Variables.IEmptyVar.html#TotalDialogue_Core_Variables_IEmptyVar_Key
+  commentId: P:TotalDialogue.Core.Variables.IEmptyVar.Key
+  fullName: TotalDialogue.Core.Variables.IEmptyVar.Key
+  nameWithType: IEmptyVar.Key
+- uid: TotalDialogue.Core.Variables.IEmptyVar.Key*
+  name: Key
+  href: api/TotalDialogue.Core.Variables.IEmptyVar.html#TotalDialogue_Core_Variables_IEmptyVar_Key_
+  commentId: Overload:TotalDialogue.Core.Variables.IEmptyVar.Key
+  isSpec: "True"
+  fullName: TotalDialogue.Core.Variables.IEmptyVar.Key
+  nameWithType: IEmptyVar.Key
+- uid: TotalDialogue.Core.Variables.IEmptyVar.RestoreDefault
+  name: RestoreDefault()
+  href: api/TotalDialogue.Core.Variables.IEmptyVar.html#TotalDialogue_Core_Variables_IEmptyVar_RestoreDefault
+  commentId: M:TotalDialogue.Core.Variables.IEmptyVar.RestoreDefault
+  fullName: TotalDialogue.Core.Variables.IEmptyVar.RestoreDefault()
+  nameWithType: IEmptyVar.RestoreDefault()
+- uid: TotalDialogue.Core.Variables.IEmptyVar.RestoreDefault*
+  name: RestoreDefault
+  href: api/TotalDialogue.Core.Variables.IEmptyVar.html#TotalDialogue_Core_Variables_IEmptyVar_RestoreDefault_
+  commentId: Overload:TotalDialogue.Core.Variables.IEmptyVar.RestoreDefault
+  isSpec: "True"
+  fullName: TotalDialogue.Core.Variables.IEmptyVar.RestoreDefault
+  nameWithType: IEmptyVar.RestoreDefault
+- uid: TotalDialogue.Core.Variables.IEmptyVar.StoreDefault
+  name: StoreDefault()
+  href: api/TotalDialogue.Core.Variables.IEmptyVar.html#TotalDialogue_Core_Variables_IEmptyVar_StoreDefault
+  commentId: M:TotalDialogue.Core.Variables.IEmptyVar.StoreDefault
+  fullName: TotalDialogue.Core.Variables.IEmptyVar.StoreDefault()
+  nameWithType: IEmptyVar.StoreDefault()
+- uid: TotalDialogue.Core.Variables.IEmptyVar.StoreDefault*
+  name: StoreDefault
+  href: api/TotalDialogue.Core.Variables.IEmptyVar.html#TotalDialogue_Core_Variables_IEmptyVar_StoreDefault_
+  commentId: Overload:TotalDialogue.Core.Variables.IEmptyVar.StoreDefault
+  isSpec: "True"
+  fullName: TotalDialogue.Core.Variables.IEmptyVar.StoreDefault
+  nameWithType: IEmptyVar.StoreDefault
+- uid: TotalDialogue.Core.Variables.IEmptyVar.StringValue
+  name: StringValue
+  href: api/TotalDialogue.Core.Variables.IEmptyVar.html#TotalDialogue_Core_Variables_IEmptyVar_StringValue
+  commentId: P:TotalDialogue.Core.Variables.IEmptyVar.StringValue
+  fullName: TotalDialogue.Core.Variables.IEmptyVar.StringValue
+  nameWithType: IEmptyVar.StringValue
+- uid: TotalDialogue.Core.Variables.IEmptyVar.StringValue*
+  name: StringValue
+  href: api/TotalDialogue.Core.Variables.IEmptyVar.html#TotalDialogue_Core_Variables_IEmptyVar_StringValue_
+  commentId: Overload:TotalDialogue.Core.Variables.IEmptyVar.StringValue
+  isSpec: "True"
+  fullName: TotalDialogue.Core.Variables.IEmptyVar.StringValue
+  nameWithType: IEmptyVar.StringValue
+- uid: TotalDialogue.Core.Variables.IEmptyVar.Value
+  name: Value
+  href: api/TotalDialogue.Core.Variables.IEmptyVar.html#TotalDialogue_Core_Variables_IEmptyVar_Value
+  commentId: P:TotalDialogue.Core.Variables.IEmptyVar.Value
+  fullName: TotalDialogue.Core.Variables.IEmptyVar.Value
+  nameWithType: IEmptyVar.Value
+- uid: TotalDialogue.Core.Variables.IEmptyVar.Value*
+  name: Value
+  href: api/TotalDialogue.Core.Variables.IEmptyVar.html#TotalDialogue_Core_Variables_IEmptyVar_Value_
+  commentId: Overload:TotalDialogue.Core.Variables.IEmptyVar.Value
+  isSpec: "True"
+  fullName: TotalDialogue.Core.Variables.IEmptyVar.Value
+  nameWithType: IEmptyVar.Value
+- uid: TotalDialogue.Core.Variables.ITDFVar`2
+  name: ITDFVar<T, TListener>
+  href: api/TotalDialogue.Core.Variables.ITDFVar-2.html
+  commentId: T:TotalDialogue.Core.Variables.ITDFVar`2
+  name.vb: ITDFVar(Of T, TListener)
+  fullName: TotalDialogue.Core.Variables.ITDFVar<T, TListener>
+  fullName.vb: TotalDialogue.Core.Variables.ITDFVar(Of T, TListener)
+  nameWithType: ITDFVar<T, TListener>
+  nameWithType.vb: ITDFVar(Of T, TListener)
+- uid: TotalDialogue.Core.Variables.ITDFVar`2.AddListener(`1)
+  name: AddListener(TListener)
+  href: api/TotalDialogue.Core.Variables.ITDFVar-2.html#TotalDialogue_Core_Variables_ITDFVar_2_AddListener__1_
+  commentId: M:TotalDialogue.Core.Variables.ITDFVar`2.AddListener(`1)
+  fullName: TotalDialogue.Core.Variables.ITDFVar<T, TListener>.AddListener(TListener)
+  fullName.vb: TotalDialogue.Core.Variables.ITDFVar(Of T, TListener).AddListener(TListener)
+  nameWithType: ITDFVar<T, TListener>.AddListener(TListener)
+  nameWithType.vb: ITDFVar(Of T, TListener).AddListener(TListener)
+- uid: TotalDialogue.Core.Variables.ITDFVar`2.AddListener*
+  name: AddListener
+  href: api/TotalDialogue.Core.Variables.ITDFVar-2.html#TotalDialogue_Core_Variables_ITDFVar_2_AddListener_
+  commentId: Overload:TotalDialogue.Core.Variables.ITDFVar`2.AddListener
+  isSpec: "True"
+  fullName: TotalDialogue.Core.Variables.ITDFVar<T, TListener>.AddListener
+  fullName.vb: TotalDialogue.Core.Variables.ITDFVar(Of T, TListener).AddListener
+  nameWithType: ITDFVar<T, TListener>.AddListener
+  nameWithType.vb: ITDFVar(Of T, TListener).AddListener
+- uid: TotalDialogue.Core.Variables.ITDFVar`2.DefaultValue
+  name: DefaultValue
+  href: api/TotalDialogue.Core.Variables.ITDFVar-2.html#TotalDialogue_Core_Variables_ITDFVar_2_DefaultValue
+  commentId: P:TotalDialogue.Core.Variables.ITDFVar`2.DefaultValue
+  fullName: TotalDialogue.Core.Variables.ITDFVar<T, TListener>.DefaultValue
+  fullName.vb: TotalDialogue.Core.Variables.ITDFVar(Of T, TListener).DefaultValue
+  nameWithType: ITDFVar<T, TListener>.DefaultValue
+  nameWithType.vb: ITDFVar(Of T, TListener).DefaultValue
+- uid: TotalDialogue.Core.Variables.ITDFVar`2.DefaultValue*
+  name: DefaultValue
+  href: api/TotalDialogue.Core.Variables.ITDFVar-2.html#TotalDialogue_Core_Variables_ITDFVar_2_DefaultValue_
+  commentId: Overload:TotalDialogue.Core.Variables.ITDFVar`2.DefaultValue
+  isSpec: "True"
+  fullName: TotalDialogue.Core.Variables.ITDFVar<T, TListener>.DefaultValue
+  fullName.vb: TotalDialogue.Core.Variables.ITDFVar(Of T, TListener).DefaultValue
+  nameWithType: ITDFVar<T, TListener>.DefaultValue
+  nameWithType.vb: ITDFVar(Of T, TListener).DefaultValue
+- uid: TotalDialogue.Core.Variables.ITDFVar`2.Interface
+  name: Interface
+  href: api/TotalDialogue.Core.Variables.ITDFVar-2.html#TotalDialogue_Core_Variables_ITDFVar_2_Interface
+  commentId: P:TotalDialogue.Core.Variables.ITDFVar`2.Interface
+  fullName: TotalDialogue.Core.Variables.ITDFVar<T, TListener>.Interface
+  fullName.vb: TotalDialogue.Core.Variables.ITDFVar(Of T, TListener).Interface
+  nameWithType: ITDFVar<T, TListener>.Interface
+  nameWithType.vb: ITDFVar(Of T, TListener).Interface
+- uid: TotalDialogue.Core.Variables.ITDFVar`2.Interface*
+  name: Interface
+  href: api/TotalDialogue.Core.Variables.ITDFVar-2.html#TotalDialogue_Core_Variables_ITDFVar_2_Interface_
+  commentId: Overload:TotalDialogue.Core.Variables.ITDFVar`2.Interface
+  isSpec: "True"
+  fullName: TotalDialogue.Core.Variables.ITDFVar<T, TListener>.Interface
+  fullName.vb: TotalDialogue.Core.Variables.ITDFVar(Of T, TListener).Interface
+  nameWithType: ITDFVar<T, TListener>.Interface
+  nameWithType.vb: ITDFVar(Of T, TListener).Interface
+- uid: TotalDialogue.Core.Variables.ITDFVar`2.Key
+  name: Key
+  href: api/TotalDialogue.Core.Variables.ITDFVar-2.html#TotalDialogue_Core_Variables_ITDFVar_2_Key
+  commentId: P:TotalDialogue.Core.Variables.ITDFVar`2.Key
+  fullName: TotalDialogue.Core.Variables.ITDFVar<T, TListener>.Key
+  fullName.vb: TotalDialogue.Core.Variables.ITDFVar(Of T, TListener).Key
+  nameWithType: ITDFVar<T, TListener>.Key
+  nameWithType.vb: ITDFVar(Of T, TListener).Key
+- uid: TotalDialogue.Core.Variables.ITDFVar`2.Key*
+  name: Key
+  href: api/TotalDialogue.Core.Variables.ITDFVar-2.html#TotalDialogue_Core_Variables_ITDFVar_2_Key_
+  commentId: Overload:TotalDialogue.Core.Variables.ITDFVar`2.Key
+  isSpec: "True"
+  fullName: TotalDialogue.Core.Variables.ITDFVar<T, TListener>.Key
+  fullName.vb: TotalDialogue.Core.Variables.ITDFVar(Of T, TListener).Key
+  nameWithType: ITDFVar<T, TListener>.Key
+  nameWithType.vb: ITDFVar(Of T, TListener).Key
+- uid: TotalDialogue.Core.Variables.ITDFVar`2.RemoveListener(`1)
+  name: RemoveListener(TListener)
+  href: api/TotalDialogue.Core.Variables.ITDFVar-2.html#TotalDialogue_Core_Variables_ITDFVar_2_RemoveListener__1_
+  commentId: M:TotalDialogue.Core.Variables.ITDFVar`2.RemoveListener(`1)
+  fullName: TotalDialogue.Core.Variables.ITDFVar<T, TListener>.RemoveListener(TListener)
+  fullName.vb: TotalDialogue.Core.Variables.ITDFVar(Of T, TListener).RemoveListener(TListener)
+  nameWithType: ITDFVar<T, TListener>.RemoveListener(TListener)
+  nameWithType.vb: ITDFVar(Of T, TListener).RemoveListener(TListener)
+- uid: TotalDialogue.Core.Variables.ITDFVar`2.RemoveListener*
+  name: RemoveListener
+  href: api/TotalDialogue.Core.Variables.ITDFVar-2.html#TotalDialogue_Core_Variables_ITDFVar_2_RemoveListener_
+  commentId: Overload:TotalDialogue.Core.Variables.ITDFVar`2.RemoveListener
+  isSpec: "True"
+  fullName: TotalDialogue.Core.Variables.ITDFVar<T, TListener>.RemoveListener
+  fullName.vb: TotalDialogue.Core.Variables.ITDFVar(Of T, TListener).RemoveListener
+  nameWithType: ITDFVar<T, TListener>.RemoveListener
+  nameWithType.vb: ITDFVar(Of T, TListener).RemoveListener
+- uid: TotalDialogue.Core.Variables.ITDFVar`2.RestoreDefault
+  name: RestoreDefault()
+  href: api/TotalDialogue.Core.Variables.ITDFVar-2.html#TotalDialogue_Core_Variables_ITDFVar_2_RestoreDefault
+  commentId: M:TotalDialogue.Core.Variables.ITDFVar`2.RestoreDefault
+  fullName: TotalDialogue.Core.Variables.ITDFVar<T, TListener>.RestoreDefault()
+  fullName.vb: TotalDialogue.Core.Variables.ITDFVar(Of T, TListener).RestoreDefault()
+  nameWithType: ITDFVar<T, TListener>.RestoreDefault()
+  nameWithType.vb: ITDFVar(Of T, TListener).RestoreDefault()
+- uid: TotalDialogue.Core.Variables.ITDFVar`2.RestoreDefault*
+  name: RestoreDefault
+  href: api/TotalDialogue.Core.Variables.ITDFVar-2.html#TotalDialogue_Core_Variables_ITDFVar_2_RestoreDefault_
+  commentId: Overload:TotalDialogue.Core.Variables.ITDFVar`2.RestoreDefault
+  isSpec: "True"
+  fullName: TotalDialogue.Core.Variables.ITDFVar<T, TListener>.RestoreDefault
+  fullName.vb: TotalDialogue.Core.Variables.ITDFVar(Of T, TListener).RestoreDefault
+  nameWithType: ITDFVar<T, TListener>.RestoreDefault
+  nameWithType.vb: ITDFVar(Of T, TListener).RestoreDefault
+- uid: TotalDialogue.Core.Variables.ITDFVar`2.StoreDefault
+  name: StoreDefault()
+  href: api/TotalDialogue.Core.Variables.ITDFVar-2.html#TotalDialogue_Core_Variables_ITDFVar_2_StoreDefault
+  commentId: M:TotalDialogue.Core.Variables.ITDFVar`2.StoreDefault
+  fullName: TotalDialogue.Core.Variables.ITDFVar<T, TListener>.StoreDefault()
+  fullName.vb: TotalDialogue.Core.Variables.ITDFVar(Of T, TListener).StoreDefault()
+  nameWithType: ITDFVar<T, TListener>.StoreDefault()
+  nameWithType.vb: ITDFVar(Of T, TListener).StoreDefault()
+- uid: TotalDialogue.Core.Variables.ITDFVar`2.StoreDefault*
+  name: StoreDefault
+  href: api/TotalDialogue.Core.Variables.ITDFVar-2.html#TotalDialogue_Core_Variables_ITDFVar_2_StoreDefault_
+  commentId: Overload:TotalDialogue.Core.Variables.ITDFVar`2.StoreDefault
+  isSpec: "True"
+  fullName: TotalDialogue.Core.Variables.ITDFVar<T, TListener>.StoreDefault
+  fullName.vb: TotalDialogue.Core.Variables.ITDFVar(Of T, TListener).StoreDefault
+  nameWithType: ITDFVar<T, TListener>.StoreDefault
+  nameWithType.vb: ITDFVar(Of T, TListener).StoreDefault
+- uid: TotalDialogue.Core.Variables.ITDFVar`2.StringValue
+  name: StringValue
+  href: api/TotalDialogue.Core.Variables.ITDFVar-2.html#TotalDialogue_Core_Variables_ITDFVar_2_StringValue
+  commentId: P:TotalDialogue.Core.Variables.ITDFVar`2.StringValue
+  fullName: TotalDialogue.Core.Variables.ITDFVar<T, TListener>.StringValue
+  fullName.vb: TotalDialogue.Core.Variables.ITDFVar(Of T, TListener).StringValue
+  nameWithType: ITDFVar<T, TListener>.StringValue
+  nameWithType.vb: ITDFVar(Of T, TListener).StringValue
+- uid: TotalDialogue.Core.Variables.ITDFVar`2.StringValue*
+  name: StringValue
+  href: api/TotalDialogue.Core.Variables.ITDFVar-2.html#TotalDialogue_Core_Variables_ITDFVar_2_StringValue_
+  commentId: Overload:TotalDialogue.Core.Variables.ITDFVar`2.StringValue
+  isSpec: "True"
+  fullName: TotalDialogue.Core.Variables.ITDFVar<T, TListener>.StringValue
+  fullName.vb: TotalDialogue.Core.Variables.ITDFVar(Of T, TListener).StringValue
+  nameWithType: ITDFVar<T, TListener>.StringValue
+  nameWithType.vb: ITDFVar(Of T, TListener).StringValue
+- uid: TotalDialogue.Core.Variables.ITDFVar`2.Value
+  name: Value
+  href: api/TotalDialogue.Core.Variables.ITDFVar-2.html#TotalDialogue_Core_Variables_ITDFVar_2_Value
+  commentId: P:TotalDialogue.Core.Variables.ITDFVar`2.Value
+  fullName: TotalDialogue.Core.Variables.ITDFVar<T, TListener>.Value
+  fullName.vb: TotalDialogue.Core.Variables.ITDFVar(Of T, TListener).Value
+  nameWithType: ITDFVar<T, TListener>.Value
+  nameWithType.vb: ITDFVar(Of T, TListener).Value
+- uid: TotalDialogue.Core.Variables.ITDFVar`2.Value*
+  name: Value
+  href: api/TotalDialogue.Core.Variables.ITDFVar-2.html#TotalDialogue_Core_Variables_ITDFVar_2_Value_
+  commentId: Overload:TotalDialogue.Core.Variables.ITDFVar`2.Value
+  isSpec: "True"
+  fullName: TotalDialogue.Core.Variables.ITDFVar<T, TListener>.Value
+  fullName.vb: TotalDialogue.Core.Variables.ITDFVar(Of T, TListener).Value
+  nameWithType: ITDFVar<T, TListener>.Value
+  nameWithType.vb: ITDFVar(Of T, TListener).Value
+- uid: TotalDialogue.Core.Variables.IVariables
+  name: IVariables
+  href: api/TotalDialogue.Core.Variables.IVariables.html
+  commentId: T:TotalDialogue.Core.Variables.IVariables
+  fullName: TotalDialogue.Core.Variables.IVariables
+  nameWithType: IVariables
+- uid: TotalDialogue.Core.Variables.IVariables.AddListener(TotalDialogue.Core.Variables.BoolListener)
+  name: AddListener(BoolListener)
+  href: api/TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_AddListener_TotalDialogue_Core_Variables_BoolListener_
+  commentId: M:TotalDialogue.Core.Variables.IVariables.AddListener(TotalDialogue.Core.Variables.BoolListener)
+  fullName: TotalDialogue.Core.Variables.IVariables.AddListener(TotalDialogue.Core.Variables.BoolListener)
+  nameWithType: IVariables.AddListener(BoolListener)
+- uid: TotalDialogue.Core.Variables.IVariables.AddListener(TotalDialogue.Core.Variables.FloatListener)
+  name: AddListener(FloatListener)
+  href: api/TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_AddListener_TotalDialogue_Core_Variables_FloatListener_
+  commentId: M:TotalDialogue.Core.Variables.IVariables.AddListener(TotalDialogue.Core.Variables.FloatListener)
+  fullName: TotalDialogue.Core.Variables.IVariables.AddListener(TotalDialogue.Core.Variables.FloatListener)
+  nameWithType: IVariables.AddListener(FloatListener)
+- uid: TotalDialogue.Core.Variables.IVariables.AddListener(TotalDialogue.Core.Variables.IntListener)
+  name: AddListener(IntListener)
+  href: api/TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_AddListener_TotalDialogue_Core_Variables_IntListener_
+  commentId: M:TotalDialogue.Core.Variables.IVariables.AddListener(TotalDialogue.Core.Variables.IntListener)
+  fullName: TotalDialogue.Core.Variables.IVariables.AddListener(TotalDialogue.Core.Variables.IntListener)
+  nameWithType: IVariables.AddListener(IntListener)
+- uid: TotalDialogue.Core.Variables.IVariables.AddListener(TotalDialogue.Core.Variables.QuartanionListener)
+  name: AddListener(QuartanionListener)
+  href: api/TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_AddListener_TotalDialogue_Core_Variables_QuartanionListener_
+  commentId: M:TotalDialogue.Core.Variables.IVariables.AddListener(TotalDialogue.Core.Variables.QuartanionListener)
+  fullName: TotalDialogue.Core.Variables.IVariables.AddListener(TotalDialogue.Core.Variables.QuartanionListener)
+  nameWithType: IVariables.AddListener(QuartanionListener)
+- uid: TotalDialogue.Core.Variables.IVariables.AddListener(TotalDialogue.Core.Variables.StringListener)
+  name: AddListener(StringListener)
+  href: api/TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_AddListener_TotalDialogue_Core_Variables_StringListener_
+  commentId: M:TotalDialogue.Core.Variables.IVariables.AddListener(TotalDialogue.Core.Variables.StringListener)
+  fullName: TotalDialogue.Core.Variables.IVariables.AddListener(TotalDialogue.Core.Variables.StringListener)
+  nameWithType: IVariables.AddListener(StringListener)
+- uid: TotalDialogue.Core.Variables.IVariables.AddListener(TotalDialogue.Core.Variables.Vector3Listener)
+  name: AddListener(Vector3Listener)
+  href: api/TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_AddListener_TotalDialogue_Core_Variables_Vector3Listener_
+  commentId: M:TotalDialogue.Core.Variables.IVariables.AddListener(TotalDialogue.Core.Variables.Vector3Listener)
+  fullName: TotalDialogue.Core.Variables.IVariables.AddListener(TotalDialogue.Core.Variables.Vector3Listener)
+  nameWithType: IVariables.AddListener(Vector3Listener)
+- uid: TotalDialogue.Core.Variables.IVariables.AddListener*
+  name: AddListener
+  href: api/TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_AddListener_
+  commentId: Overload:TotalDialogue.Core.Variables.IVariables.AddListener
+  isSpec: "True"
+  fullName: TotalDialogue.Core.Variables.IVariables.AddListener
+  nameWithType: IVariables.AddListener
+- uid: TotalDialogue.Core.Variables.IVariables.GetBool(System.String)
+  name: GetBool(string)
+  href: api/TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_GetBool_System_String_
+  commentId: M:TotalDialogue.Core.Variables.IVariables.GetBool(System.String)
+  name.vb: GetBool(String)
+  fullName: TotalDialogue.Core.Variables.IVariables.GetBool(string)
+  fullName.vb: TotalDialogue.Core.Variables.IVariables.GetBool(String)
+  nameWithType: IVariables.GetBool(string)
+  nameWithType.vb: IVariables.GetBool(String)
+- uid: TotalDialogue.Core.Variables.IVariables.GetBool*
+  name: GetBool
+  href: api/TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_GetBool_
+  commentId: Overload:TotalDialogue.Core.Variables.IVariables.GetBool
+  isSpec: "True"
+  fullName: TotalDialogue.Core.Variables.IVariables.GetBool
+  nameWithType: IVariables.GetBool
+- uid: TotalDialogue.Core.Variables.IVariables.GetFloat(System.String)
+  name: GetFloat(string)
+  href: api/TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_GetFloat_System_String_
+  commentId: M:TotalDialogue.Core.Variables.IVariables.GetFloat(System.String)
+  name.vb: GetFloat(String)
+  fullName: TotalDialogue.Core.Variables.IVariables.GetFloat(string)
+  fullName.vb: TotalDialogue.Core.Variables.IVariables.GetFloat(String)
+  nameWithType: IVariables.GetFloat(string)
+  nameWithType.vb: IVariables.GetFloat(String)
+- uid: TotalDialogue.Core.Variables.IVariables.GetFloat*
+  name: GetFloat
+  href: api/TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_GetFloat_
+  commentId: Overload:TotalDialogue.Core.Variables.IVariables.GetFloat
+  isSpec: "True"
+  fullName: TotalDialogue.Core.Variables.IVariables.GetFloat
+  nameWithType: IVariables.GetFloat
+- uid: TotalDialogue.Core.Variables.IVariables.GetInt(System.String)
+  name: GetInt(string)
+  href: api/TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_GetInt_System_String_
+  commentId: M:TotalDialogue.Core.Variables.IVariables.GetInt(System.String)
+  name.vb: GetInt(String)
+  fullName: TotalDialogue.Core.Variables.IVariables.GetInt(string)
+  fullName.vb: TotalDialogue.Core.Variables.IVariables.GetInt(String)
+  nameWithType: IVariables.GetInt(string)
+  nameWithType.vb: IVariables.GetInt(String)
+- uid: TotalDialogue.Core.Variables.IVariables.GetInt*
+  name: GetInt
+  href: api/TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_GetInt_
+  commentId: Overload:TotalDialogue.Core.Variables.IVariables.GetInt
+  isSpec: "True"
+  fullName: TotalDialogue.Core.Variables.IVariables.GetInt
+  nameWithType: IVariables.GetInt
+- uid: TotalDialogue.Core.Variables.IVariables.GetQuaternion(System.String)
+  name: GetQuaternion(string)
+  href: api/TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_GetQuaternion_System_String_
+  commentId: M:TotalDialogue.Core.Variables.IVariables.GetQuaternion(System.String)
+  name.vb: GetQuaternion(String)
+  fullName: TotalDialogue.Core.Variables.IVariables.GetQuaternion(string)
+  fullName.vb: TotalDialogue.Core.Variables.IVariables.GetQuaternion(String)
+  nameWithType: IVariables.GetQuaternion(string)
+  nameWithType.vb: IVariables.GetQuaternion(String)
+- uid: TotalDialogue.Core.Variables.IVariables.GetQuaternion*
+  name: GetQuaternion
+  href: api/TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_GetQuaternion_
+  commentId: Overload:TotalDialogue.Core.Variables.IVariables.GetQuaternion
+  isSpec: "True"
+  fullName: TotalDialogue.Core.Variables.IVariables.GetQuaternion
+  nameWithType: IVariables.GetQuaternion
+- uid: TotalDialogue.Core.Variables.IVariables.GetString(System.String)
+  name: GetString(string)
+  href: api/TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_GetString_System_String_
+  commentId: M:TotalDialogue.Core.Variables.IVariables.GetString(System.String)
+  name.vb: GetString(String)
+  fullName: TotalDialogue.Core.Variables.IVariables.GetString(string)
+  fullName.vb: TotalDialogue.Core.Variables.IVariables.GetString(String)
+  nameWithType: IVariables.GetString(string)
+  nameWithType.vb: IVariables.GetString(String)
+- uid: TotalDialogue.Core.Variables.IVariables.GetString*
+  name: GetString
+  href: api/TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_GetString_
+  commentId: Overload:TotalDialogue.Core.Variables.IVariables.GetString
+  isSpec: "True"
+  fullName: TotalDialogue.Core.Variables.IVariables.GetString
+  nameWithType: IVariables.GetString
+- uid: TotalDialogue.Core.Variables.IVariables.GetVector3(System.String)
+  name: GetVector3(string)
+  href: api/TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_GetVector3_System_String_
+  commentId: M:TotalDialogue.Core.Variables.IVariables.GetVector3(System.String)
+  name.vb: GetVector3(String)
+  fullName: TotalDialogue.Core.Variables.IVariables.GetVector3(string)
+  fullName.vb: TotalDialogue.Core.Variables.IVariables.GetVector3(String)
+  nameWithType: IVariables.GetVector3(string)
+  nameWithType.vb: IVariables.GetVector3(String)
+- uid: TotalDialogue.Core.Variables.IVariables.GetVector3*
+  name: GetVector3
+  href: api/TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_GetVector3_
+  commentId: Overload:TotalDialogue.Core.Variables.IVariables.GetVector3
+  isSpec: "True"
+  fullName: TotalDialogue.Core.Variables.IVariables.GetVector3
+  nameWithType: IVariables.GetVector3
+- uid: TotalDialogue.Core.Variables.IVariables.MaxChoice
+  name: MaxChoice
+  href: api/TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_MaxChoice
+  commentId: P:TotalDialogue.Core.Variables.IVariables.MaxChoice
+  fullName: TotalDialogue.Core.Variables.IVariables.MaxChoice
+  nameWithType: IVariables.MaxChoice
+- uid: TotalDialogue.Core.Variables.IVariables.MaxChoice*
+  name: MaxChoice
+  href: api/TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_MaxChoice_
+  commentId: Overload:TotalDialogue.Core.Variables.IVariables.MaxChoice
+  isSpec: "True"
+  fullName: TotalDialogue.Core.Variables.IVariables.MaxChoice
+  nameWithType: IVariables.MaxChoice
+- uid: TotalDialogue.Core.Variables.IVariables.MaxDialogue
+  name: MaxDialogue
+  href: api/TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_MaxDialogue
+  commentId: P:TotalDialogue.Core.Variables.IVariables.MaxDialogue
+  fullName: TotalDialogue.Core.Variables.IVariables.MaxDialogue
+  nameWithType: IVariables.MaxDialogue
+- uid: TotalDialogue.Core.Variables.IVariables.MaxDialogue*
+  name: MaxDialogue
+  href: api/TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_MaxDialogue_
+  commentId: Overload:TotalDialogue.Core.Variables.IVariables.MaxDialogue
+  isSpec: "True"
+  fullName: TotalDialogue.Core.Variables.IVariables.MaxDialogue
+  nameWithType: IVariables.MaxDialogue
+- uid: TotalDialogue.Core.Variables.IVariables.RemoveListener(TotalDialogue.Core.Variables.BoolListener)
+  name: RemoveListener(BoolListener)
+  href: api/TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_RemoveListener_TotalDialogue_Core_Variables_BoolListener_
+  commentId: M:TotalDialogue.Core.Variables.IVariables.RemoveListener(TotalDialogue.Core.Variables.BoolListener)
+  fullName: TotalDialogue.Core.Variables.IVariables.RemoveListener(TotalDialogue.Core.Variables.BoolListener)
+  nameWithType: IVariables.RemoveListener(BoolListener)
+- uid: TotalDialogue.Core.Variables.IVariables.RemoveListener(TotalDialogue.Core.Variables.FloatListener)
+  name: RemoveListener(FloatListener)
+  href: api/TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_RemoveListener_TotalDialogue_Core_Variables_FloatListener_
+  commentId: M:TotalDialogue.Core.Variables.IVariables.RemoveListener(TotalDialogue.Core.Variables.FloatListener)
+  fullName: TotalDialogue.Core.Variables.IVariables.RemoveListener(TotalDialogue.Core.Variables.FloatListener)
+  nameWithType: IVariables.RemoveListener(FloatListener)
+- uid: TotalDialogue.Core.Variables.IVariables.RemoveListener(TotalDialogue.Core.Variables.IntListener)
+  name: RemoveListener(IntListener)
+  href: api/TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_RemoveListener_TotalDialogue_Core_Variables_IntListener_
+  commentId: M:TotalDialogue.Core.Variables.IVariables.RemoveListener(TotalDialogue.Core.Variables.IntListener)
+  fullName: TotalDialogue.Core.Variables.IVariables.RemoveListener(TotalDialogue.Core.Variables.IntListener)
+  nameWithType: IVariables.RemoveListener(IntListener)
+- uid: TotalDialogue.Core.Variables.IVariables.RemoveListener(TotalDialogue.Core.Variables.QuartanionListener)
+  name: RemoveListener(QuartanionListener)
+  href: api/TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_RemoveListener_TotalDialogue_Core_Variables_QuartanionListener_
+  commentId: M:TotalDialogue.Core.Variables.IVariables.RemoveListener(TotalDialogue.Core.Variables.QuartanionListener)
+  fullName: TotalDialogue.Core.Variables.IVariables.RemoveListener(TotalDialogue.Core.Variables.QuartanionListener)
+  nameWithType: IVariables.RemoveListener(QuartanionListener)
+- uid: TotalDialogue.Core.Variables.IVariables.RemoveListener(TotalDialogue.Core.Variables.StringListener)
+  name: RemoveListener(StringListener)
+  href: api/TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_RemoveListener_TotalDialogue_Core_Variables_StringListener_
+  commentId: M:TotalDialogue.Core.Variables.IVariables.RemoveListener(TotalDialogue.Core.Variables.StringListener)
+  fullName: TotalDialogue.Core.Variables.IVariables.RemoveListener(TotalDialogue.Core.Variables.StringListener)
+  nameWithType: IVariables.RemoveListener(StringListener)
+- uid: TotalDialogue.Core.Variables.IVariables.RemoveListener(TotalDialogue.Core.Variables.Vector3Listener)
+  name: RemoveListener(Vector3Listener)
+  href: api/TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_RemoveListener_TotalDialogue_Core_Variables_Vector3Listener_
+  commentId: M:TotalDialogue.Core.Variables.IVariables.RemoveListener(TotalDialogue.Core.Variables.Vector3Listener)
+  fullName: TotalDialogue.Core.Variables.IVariables.RemoveListener(TotalDialogue.Core.Variables.Vector3Listener)
+  nameWithType: IVariables.RemoveListener(Vector3Listener)
+- uid: TotalDialogue.Core.Variables.IVariables.RemoveListener*
+  name: RemoveListener
+  href: api/TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_RemoveListener_
+  commentId: Overload:TotalDialogue.Core.Variables.IVariables.RemoveListener
+  isSpec: "True"
+  fullName: TotalDialogue.Core.Variables.IVariables.RemoveListener
+  nameWithType: IVariables.RemoveListener
+- uid: TotalDialogue.Core.Variables.IVariables.Reset
+  name: Reset()
+  href: api/TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_Reset
+  commentId: M:TotalDialogue.Core.Variables.IVariables.Reset
+  fullName: TotalDialogue.Core.Variables.IVariables.Reset()
+  nameWithType: IVariables.Reset()
+- uid: TotalDialogue.Core.Variables.IVariables.Reset*
+  name: Reset
+  href: api/TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_Reset_
+  commentId: Overload:TotalDialogue.Core.Variables.IVariables.Reset
+  isSpec: "True"
+  fullName: TotalDialogue.Core.Variables.IVariables.Reset
+  nameWithType: IVariables.Reset
+- uid: TotalDialogue.Core.Variables.IVariables.SetBool(System.String,System.Boolean)
+  name: SetBool(string, bool)
+  href: api/TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_SetBool_System_String_System_Boolean_
+  commentId: M:TotalDialogue.Core.Variables.IVariables.SetBool(System.String,System.Boolean)
+  name.vb: SetBool(String, Boolean)
+  fullName: TotalDialogue.Core.Variables.IVariables.SetBool(string, bool)
+  fullName.vb: TotalDialogue.Core.Variables.IVariables.SetBool(String, Boolean)
+  nameWithType: IVariables.SetBool(string, bool)
+  nameWithType.vb: IVariables.SetBool(String, Boolean)
+- uid: TotalDialogue.Core.Variables.IVariables.SetBool*
+  name: SetBool
+  href: api/TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_SetBool_
+  commentId: Overload:TotalDialogue.Core.Variables.IVariables.SetBool
+  isSpec: "True"
+  fullName: TotalDialogue.Core.Variables.IVariables.SetBool
+  nameWithType: IVariables.SetBool
+- uid: TotalDialogue.Core.Variables.IVariables.SetFloat(System.String,System.Single)
+  name: SetFloat(string, float)
+  href: api/TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_SetFloat_System_String_System_Single_
+  commentId: M:TotalDialogue.Core.Variables.IVariables.SetFloat(System.String,System.Single)
+  name.vb: SetFloat(String, Single)
+  fullName: TotalDialogue.Core.Variables.IVariables.SetFloat(string, float)
+  fullName.vb: TotalDialogue.Core.Variables.IVariables.SetFloat(String, Single)
+  nameWithType: IVariables.SetFloat(string, float)
+  nameWithType.vb: IVariables.SetFloat(String, Single)
+- uid: TotalDialogue.Core.Variables.IVariables.SetFloat*
+  name: SetFloat
+  href: api/TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_SetFloat_
+  commentId: Overload:TotalDialogue.Core.Variables.IVariables.SetFloat
+  isSpec: "True"
+  fullName: TotalDialogue.Core.Variables.IVariables.SetFloat
+  nameWithType: IVariables.SetFloat
+- uid: TotalDialogue.Core.Variables.IVariables.SetInt(System.String,System.Int32)
+  name: SetInt(string, int)
+  href: api/TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_SetInt_System_String_System_Int32_
+  commentId: M:TotalDialogue.Core.Variables.IVariables.SetInt(System.String,System.Int32)
+  name.vb: SetInt(String, Integer)
+  fullName: TotalDialogue.Core.Variables.IVariables.SetInt(string, int)
+  fullName.vb: TotalDialogue.Core.Variables.IVariables.SetInt(String, Integer)
+  nameWithType: IVariables.SetInt(string, int)
+  nameWithType.vb: IVariables.SetInt(String, Integer)
+- uid: TotalDialogue.Core.Variables.IVariables.SetInt*
+  name: SetInt
+  href: api/TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_SetInt_
+  commentId: Overload:TotalDialogue.Core.Variables.IVariables.SetInt
+  isSpec: "True"
+  fullName: TotalDialogue.Core.Variables.IVariables.SetInt
+  nameWithType: IVariables.SetInt
+- uid: TotalDialogue.Core.Variables.IVariables.SetQuaternion(System.String,UnityEngine.Quaternion)
+  name: SetQuaternion(string, Quaternion)
+  href: api/TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_SetQuaternion_System_String_UnityEngine_Quaternion_
+  commentId: M:TotalDialogue.Core.Variables.IVariables.SetQuaternion(System.String,UnityEngine.Quaternion)
+  name.vb: SetQuaternion(String, Quaternion)
+  fullName: TotalDialogue.Core.Variables.IVariables.SetQuaternion(string, UnityEngine.Quaternion)
+  fullName.vb: TotalDialogue.Core.Variables.IVariables.SetQuaternion(String, UnityEngine.Quaternion)
+  nameWithType: IVariables.SetQuaternion(string, Quaternion)
+  nameWithType.vb: IVariables.SetQuaternion(String, Quaternion)
+- uid: TotalDialogue.Core.Variables.IVariables.SetQuaternion*
+  name: SetQuaternion
+  href: api/TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_SetQuaternion_
+  commentId: Overload:TotalDialogue.Core.Variables.IVariables.SetQuaternion
+  isSpec: "True"
+  fullName: TotalDialogue.Core.Variables.IVariables.SetQuaternion
+  nameWithType: IVariables.SetQuaternion
+- uid: TotalDialogue.Core.Variables.IVariables.SetString(System.String,System.String)
+  name: SetString(string, string)
+  href: api/TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_SetString_System_String_System_String_
+  commentId: M:TotalDialogue.Core.Variables.IVariables.SetString(System.String,System.String)
+  name.vb: SetString(String, String)
+  fullName: TotalDialogue.Core.Variables.IVariables.SetString(string, string)
+  fullName.vb: TotalDialogue.Core.Variables.IVariables.SetString(String, String)
+  nameWithType: IVariables.SetString(string, string)
+  nameWithType.vb: IVariables.SetString(String, String)
+- uid: TotalDialogue.Core.Variables.IVariables.SetString*
+  name: SetString
+  href: api/TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_SetString_
+  commentId: Overload:TotalDialogue.Core.Variables.IVariables.SetString
+  isSpec: "True"
+  fullName: TotalDialogue.Core.Variables.IVariables.SetString
+  nameWithType: IVariables.SetString
+- uid: TotalDialogue.Core.Variables.IVariables.SetVector3(System.String,UnityEngine.Vector3)
+  name: SetVector3(string, Vector3)
+  href: api/TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_SetVector3_System_String_UnityEngine_Vector3_
+  commentId: M:TotalDialogue.Core.Variables.IVariables.SetVector3(System.String,UnityEngine.Vector3)
+  name.vb: SetVector3(String, Vector3)
+  fullName: TotalDialogue.Core.Variables.IVariables.SetVector3(string, UnityEngine.Vector3)
+  fullName.vb: TotalDialogue.Core.Variables.IVariables.SetVector3(String, UnityEngine.Vector3)
+  nameWithType: IVariables.SetVector3(string, Vector3)
+  nameWithType.vb: IVariables.SetVector3(String, Vector3)
+- uid: TotalDialogue.Core.Variables.IVariables.SetVector3*
+  name: SetVector3
+  href: api/TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_SetVector3_
+  commentId: Overload:TotalDialogue.Core.Variables.IVariables.SetVector3
+  isSpec: "True"
+  fullName: TotalDialogue.Core.Variables.IVariables.SetVector3
+  nameWithType: IVariables.SetVector3
+- uid: TotalDialogue.Core.Variables.IntListener
+  name: IntListener
+  href: api/TotalDialogue.Core.Variables.IntListener.html
+  commentId: T:TotalDialogue.Core.Variables.IntListener
+  fullName: TotalDialogue.Core.Variables.IntListener
+  nameWithType: IntListener
+- uid: TotalDialogue.Core.Variables.IntListener.GetValue(System.String)
+  name: GetValue(string)
+  href: api/TotalDialogue.Core.Variables.IntListener.html#TotalDialogue_Core_Variables_IntListener_GetValue_System_String_
+  commentId: M:TotalDialogue.Core.Variables.IntListener.GetValue(System.String)
+  name.vb: GetValue(String)
+  fullName: TotalDialogue.Core.Variables.IntListener.GetValue(string)
+  fullName.vb: TotalDialogue.Core.Variables.IntListener.GetValue(String)
+  nameWithType: IntListener.GetValue(string)
+  nameWithType.vb: IntListener.GetValue(String)
+- uid: TotalDialogue.Core.Variables.IntListener.GetValue*
+  name: GetValue
+  href: api/TotalDialogue.Core.Variables.IntListener.html#TotalDialogue_Core_Variables_IntListener_GetValue_
+  commentId: Overload:TotalDialogue.Core.Variables.IntListener.GetValue
+  isSpec: "True"
+  fullName: TotalDialogue.Core.Variables.IntListener.GetValue
+  nameWithType: IntListener.GetValue
+- uid: TotalDialogue.Core.Variables.IntListener.SetValue(System.String,System.Int32)
+  name: SetValue(string, int)
+  href: api/TotalDialogue.Core.Variables.IntListener.html#TotalDialogue_Core_Variables_IntListener_SetValue_System_String_System_Int32_
+  commentId: M:TotalDialogue.Core.Variables.IntListener.SetValue(System.String,System.Int32)
+  name.vb: SetValue(String, Integer)
+  fullName: TotalDialogue.Core.Variables.IntListener.SetValue(string, int)
+  fullName.vb: TotalDialogue.Core.Variables.IntListener.SetValue(String, Integer)
+  nameWithType: IntListener.SetValue(string, int)
+  nameWithType.vb: IntListener.SetValue(String, Integer)
+- uid: TotalDialogue.Core.Variables.IntListener.SetValue*
+  name: SetValue
+  href: api/TotalDialogue.Core.Variables.IntListener.html#TotalDialogue_Core_Variables_IntListener_SetValue_
+  commentId: Overload:TotalDialogue.Core.Variables.IntListener.SetValue
+  isSpec: "True"
+  fullName: TotalDialogue.Core.Variables.IntListener.SetValue
+  nameWithType: IntListener.SetValue
+- uid: TotalDialogue.Core.Variables.IntVar
+  name: IntVar
+  href: api/TotalDialogue.Core.Variables.IntVar.html
+  commentId: T:TotalDialogue.Core.Variables.IntVar
+  fullName: TotalDialogue.Core.Variables.IntVar
+  nameWithType: IntVar
+- uid: TotalDialogue.Core.Variables.QuartanionListener
+  name: QuartanionListener
+  href: api/TotalDialogue.Core.Variables.QuartanionListener.html
+  commentId: T:TotalDialogue.Core.Variables.QuartanionListener
+  fullName: TotalDialogue.Core.Variables.QuartanionListener
+  nameWithType: QuartanionListener
+- uid: TotalDialogue.Core.Variables.QuartanionListener.GetValue(System.String)
+  name: GetValue(string)
+  href: api/TotalDialogue.Core.Variables.QuartanionListener.html#TotalDialogue_Core_Variables_QuartanionListener_GetValue_System_String_
+  commentId: M:TotalDialogue.Core.Variables.QuartanionListener.GetValue(System.String)
+  name.vb: GetValue(String)
+  fullName: TotalDialogue.Core.Variables.QuartanionListener.GetValue(string)
+  fullName.vb: TotalDialogue.Core.Variables.QuartanionListener.GetValue(String)
+  nameWithType: QuartanionListener.GetValue(string)
+  nameWithType.vb: QuartanionListener.GetValue(String)
+- uid: TotalDialogue.Core.Variables.QuartanionListener.GetValue*
+  name: GetValue
+  href: api/TotalDialogue.Core.Variables.QuartanionListener.html#TotalDialogue_Core_Variables_QuartanionListener_GetValue_
+  commentId: Overload:TotalDialogue.Core.Variables.QuartanionListener.GetValue
+  isSpec: "True"
+  fullName: TotalDialogue.Core.Variables.QuartanionListener.GetValue
+  nameWithType: QuartanionListener.GetValue
+- uid: TotalDialogue.Core.Variables.QuartanionListener.SetValue(System.String,UnityEngine.Quaternion)
+  name: SetValue(string, Quaternion)
+  href: api/TotalDialogue.Core.Variables.QuartanionListener.html#TotalDialogue_Core_Variables_QuartanionListener_SetValue_System_String_UnityEngine_Quaternion_
+  commentId: M:TotalDialogue.Core.Variables.QuartanionListener.SetValue(System.String,UnityEngine.Quaternion)
+  name.vb: SetValue(String, Quaternion)
+  fullName: TotalDialogue.Core.Variables.QuartanionListener.SetValue(string, UnityEngine.Quaternion)
+  fullName.vb: TotalDialogue.Core.Variables.QuartanionListener.SetValue(String, UnityEngine.Quaternion)
+  nameWithType: QuartanionListener.SetValue(string, Quaternion)
+  nameWithType.vb: QuartanionListener.SetValue(String, Quaternion)
+- uid: TotalDialogue.Core.Variables.QuartanionListener.SetValue*
+  name: SetValue
+  href: api/TotalDialogue.Core.Variables.QuartanionListener.html#TotalDialogue_Core_Variables_QuartanionListener_SetValue_
+  commentId: Overload:TotalDialogue.Core.Variables.QuartanionListener.SetValue
+  isSpec: "True"
+  fullName: TotalDialogue.Core.Variables.QuartanionListener.SetValue
+  nameWithType: QuartanionListener.SetValue
+- uid: TotalDialogue.Core.Variables.QuartanionVar
+  name: QuartanionVar
+  href: api/TotalDialogue.Core.Variables.QuartanionVar.html
+  commentId: T:TotalDialogue.Core.Variables.QuartanionVar
+  fullName: TotalDialogue.Core.Variables.QuartanionVar
+  nameWithType: QuartanionVar
+- uid: TotalDialogue.Core.Variables.StringListener
+  name: StringListener
+  href: api/TotalDialogue.Core.Variables.StringListener.html
+  commentId: T:TotalDialogue.Core.Variables.StringListener
+  fullName: TotalDialogue.Core.Variables.StringListener
+  nameWithType: StringListener
+- uid: TotalDialogue.Core.Variables.StringListener.GetValue(System.String)
+  name: GetValue(string)
+  href: api/TotalDialogue.Core.Variables.StringListener.html#TotalDialogue_Core_Variables_StringListener_GetValue_System_String_
+  commentId: M:TotalDialogue.Core.Variables.StringListener.GetValue(System.String)
+  name.vb: GetValue(String)
+  fullName: TotalDialogue.Core.Variables.StringListener.GetValue(string)
+  fullName.vb: TotalDialogue.Core.Variables.StringListener.GetValue(String)
+  nameWithType: StringListener.GetValue(string)
+  nameWithType.vb: StringListener.GetValue(String)
+- uid: TotalDialogue.Core.Variables.StringListener.GetValue*
+  name: GetValue
+  href: api/TotalDialogue.Core.Variables.StringListener.html#TotalDialogue_Core_Variables_StringListener_GetValue_
+  commentId: Overload:TotalDialogue.Core.Variables.StringListener.GetValue
+  isSpec: "True"
+  fullName: TotalDialogue.Core.Variables.StringListener.GetValue
+  nameWithType: StringListener.GetValue
+- uid: TotalDialogue.Core.Variables.StringListener.SetValue(System.String,System.String)
+  name: SetValue(string, string)
+  href: api/TotalDialogue.Core.Variables.StringListener.html#TotalDialogue_Core_Variables_StringListener_SetValue_System_String_System_String_
+  commentId: M:TotalDialogue.Core.Variables.StringListener.SetValue(System.String,System.String)
+  name.vb: SetValue(String, String)
+  fullName: TotalDialogue.Core.Variables.StringListener.SetValue(string, string)
+  fullName.vb: TotalDialogue.Core.Variables.StringListener.SetValue(String, String)
+  nameWithType: StringListener.SetValue(string, string)
+  nameWithType.vb: StringListener.SetValue(String, String)
+- uid: TotalDialogue.Core.Variables.StringListener.SetValue*
+  name: SetValue
+  href: api/TotalDialogue.Core.Variables.StringListener.html#TotalDialogue_Core_Variables_StringListener_SetValue_
+  commentId: Overload:TotalDialogue.Core.Variables.StringListener.SetValue
+  isSpec: "True"
+  fullName: TotalDialogue.Core.Variables.StringListener.SetValue
+  nameWithType: StringListener.SetValue
+- uid: TotalDialogue.Core.Variables.StringVar
+  name: StringVar
+  href: api/TotalDialogue.Core.Variables.StringVar.html
+  commentId: T:TotalDialogue.Core.Variables.StringVar
+  fullName: TotalDialogue.Core.Variables.StringVar
+  nameWithType: StringVar
+- uid: TotalDialogue.Core.Variables.TDFVar`2
+  name: TDFVar<T, TListener>
+  href: api/TotalDialogue.Core.Variables.TDFVar-2.html
+  commentId: T:TotalDialogue.Core.Variables.TDFVar`2
+  name.vb: TDFVar(Of T, TListener)
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener)
+  nameWithType: TDFVar<T, TListener>
+  nameWithType.vb: TDFVar(Of T, TListener)
+- uid: TotalDialogue.Core.Variables.TDFVar`2.#ctor(System.String,`0)
+  name: TDFVar(string, T)
+  href: api/TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2__ctor_System_String__0_
+  commentId: M:TotalDialogue.Core.Variables.TDFVar`2.#ctor(System.String,`0)
+  name.vb: New(String, T)
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.TDFVar(string, T)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).New(String, T)
+  nameWithType: TDFVar<T, TListener>.TDFVar(string, T)
+  nameWithType.vb: TDFVar(Of T, TListener).New(String, T)
+- uid: TotalDialogue.Core.Variables.TDFVar`2.#ctor*
+  name: TDFVar
+  href: api/TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2__ctor_
+  commentId: Overload:TotalDialogue.Core.Variables.TDFVar`2.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.TDFVar
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).New
+  nameWithType: TDFVar<T, TListener>.TDFVar
+  nameWithType.vb: TDFVar(Of T, TListener).New
+- uid: TotalDialogue.Core.Variables.TDFVar`2.AddListener(`1)
+  name: AddListener(TListener)
+  href: api/TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_AddListener__1_
+  commentId: M:TotalDialogue.Core.Variables.TDFVar`2.AddListener(`1)
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.AddListener(TListener)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).AddListener(TListener)
+  nameWithType: TDFVar<T, TListener>.AddListener(TListener)
+  nameWithType.vb: TDFVar(Of T, TListener).AddListener(TListener)
+- uid: TotalDialogue.Core.Variables.TDFVar`2.AddListener*
+  name: AddListener
+  href: api/TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_AddListener_
+  commentId: Overload:TotalDialogue.Core.Variables.TDFVar`2.AddListener
+  isSpec: "True"
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.AddListener
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).AddListener
+  nameWithType: TDFVar<T, TListener>.AddListener
+  nameWithType.vb: TDFVar(Of T, TListener).AddListener
+- uid: TotalDialogue.Core.Variables.TDFVar`2.DefaultValue
+  name: DefaultValue
+  href: api/TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_DefaultValue
+  commentId: P:TotalDialogue.Core.Variables.TDFVar`2.DefaultValue
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.DefaultValue
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).DefaultValue
+  nameWithType: TDFVar<T, TListener>.DefaultValue
+  nameWithType.vb: TDFVar(Of T, TListener).DefaultValue
+- uid: TotalDialogue.Core.Variables.TDFVar`2.DefaultValue*
+  name: DefaultValue
+  href: api/TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_DefaultValue_
+  commentId: Overload:TotalDialogue.Core.Variables.TDFVar`2.DefaultValue
+  isSpec: "True"
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.DefaultValue
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).DefaultValue
+  nameWithType: TDFVar<T, TListener>.DefaultValue
+  nameWithType.vb: TDFVar(Of T, TListener).DefaultValue
+- uid: TotalDialogue.Core.Variables.TDFVar`2.Fire(`1,`0,`0,System.Boolean)
+  name: Fire(TListener, T, T, bool)
+  href: api/TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_Fire__1__0__0_System_Boolean_
+  commentId: M:TotalDialogue.Core.Variables.TDFVar`2.Fire(`1,`0,`0,System.Boolean)
+  name.vb: Fire(TListener, T, T, Boolean)
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.Fire(TListener, T, T, bool)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).Fire(TListener, T, T, Boolean)
+  nameWithType: TDFVar<T, TListener>.Fire(TListener, T, T, bool)
+  nameWithType.vb: TDFVar(Of T, TListener).Fire(TListener, T, T, Boolean)
+- uid: TotalDialogue.Core.Variables.TDFVar`2.Fire*
+  name: Fire
+  href: api/TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_Fire_
+  commentId: Overload:TotalDialogue.Core.Variables.TDFVar`2.Fire
+  isSpec: "True"
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.Fire
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).Fire
+  nameWithType: TDFVar<T, TListener>.Fire
+  nameWithType.vb: TDFVar(Of T, TListener).Fire
+- uid: TotalDialogue.Core.Variables.TDFVar`2.GetBoolValue
+  name: GetBoolValue()
+  href: api/TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetBoolValue
+  commentId: M:TotalDialogue.Core.Variables.TDFVar`2.GetBoolValue
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.GetBoolValue()
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).GetBoolValue()
+  nameWithType: TDFVar<T, TListener>.GetBoolValue()
+  nameWithType.vb: TDFVar(Of T, TListener).GetBoolValue()
+- uid: TotalDialogue.Core.Variables.TDFVar`2.GetBoolValue*
+  name: GetBoolValue
+  href: api/TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetBoolValue_
+  commentId: Overload:TotalDialogue.Core.Variables.TDFVar`2.GetBoolValue
+  isSpec: "True"
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.GetBoolValue
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).GetBoolValue
+  nameWithType: TDFVar<T, TListener>.GetBoolValue
+  nameWithType.vb: TDFVar(Of T, TListener).GetBoolValue
+- uid: TotalDialogue.Core.Variables.TDFVar`2.GetFloatValue
+  name: GetFloatValue()
+  href: api/TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetFloatValue
+  commentId: M:TotalDialogue.Core.Variables.TDFVar`2.GetFloatValue
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.GetFloatValue()
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).GetFloatValue()
+  nameWithType: TDFVar<T, TListener>.GetFloatValue()
+  nameWithType.vb: TDFVar(Of T, TListener).GetFloatValue()
+- uid: TotalDialogue.Core.Variables.TDFVar`2.GetFloatValue*
+  name: GetFloatValue
+  href: api/TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetFloatValue_
+  commentId: Overload:TotalDialogue.Core.Variables.TDFVar`2.GetFloatValue
+  isSpec: "True"
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.GetFloatValue
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).GetFloatValue
+  nameWithType: TDFVar<T, TListener>.GetFloatValue
+  nameWithType.vb: TDFVar(Of T, TListener).GetFloatValue
+- uid: TotalDialogue.Core.Variables.TDFVar`2.GetIntValue
+  name: GetIntValue()
+  href: api/TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetIntValue
+  commentId: M:TotalDialogue.Core.Variables.TDFVar`2.GetIntValue
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.GetIntValue()
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).GetIntValue()
+  nameWithType: TDFVar<T, TListener>.GetIntValue()
+  nameWithType.vb: TDFVar(Of T, TListener).GetIntValue()
+- uid: TotalDialogue.Core.Variables.TDFVar`2.GetIntValue*
+  name: GetIntValue
+  href: api/TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetIntValue_
+  commentId: Overload:TotalDialogue.Core.Variables.TDFVar`2.GetIntValue
+  isSpec: "True"
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.GetIntValue
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).GetIntValue
+  nameWithType: TDFVar<T, TListener>.GetIntValue
+  nameWithType.vb: TDFVar(Of T, TListener).GetIntValue
+- uid: TotalDialogue.Core.Variables.TDFVar`2.GetQuaternionValue
+  name: GetQuaternionValue()
+  href: api/TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetQuaternionValue
+  commentId: M:TotalDialogue.Core.Variables.TDFVar`2.GetQuaternionValue
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.GetQuaternionValue()
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).GetQuaternionValue()
+  nameWithType: TDFVar<T, TListener>.GetQuaternionValue()
+  nameWithType.vb: TDFVar(Of T, TListener).GetQuaternionValue()
+- uid: TotalDialogue.Core.Variables.TDFVar`2.GetQuaternionValue*
+  name: GetQuaternionValue
+  href: api/TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetQuaternionValue_
+  commentId: Overload:TotalDialogue.Core.Variables.TDFVar`2.GetQuaternionValue
+  isSpec: "True"
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.GetQuaternionValue
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).GetQuaternionValue
+  nameWithType: TDFVar<T, TListener>.GetQuaternionValue
+  nameWithType.vb: TDFVar(Of T, TListener).GetQuaternionValue
+- uid: TotalDialogue.Core.Variables.TDFVar`2.GetStringValue
+  name: GetStringValue()
+  href: api/TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetStringValue
+  commentId: M:TotalDialogue.Core.Variables.TDFVar`2.GetStringValue
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.GetStringValue()
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).GetStringValue()
+  nameWithType: TDFVar<T, TListener>.GetStringValue()
+  nameWithType.vb: TDFVar(Of T, TListener).GetStringValue()
+- uid: TotalDialogue.Core.Variables.TDFVar`2.GetStringValue*
+  name: GetStringValue
+  href: api/TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetStringValue_
+  commentId: Overload:TotalDialogue.Core.Variables.TDFVar`2.GetStringValue
+  isSpec: "True"
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.GetStringValue
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).GetStringValue
+  nameWithType: TDFVar<T, TListener>.GetStringValue
+  nameWithType.vb: TDFVar(Of T, TListener).GetStringValue
+- uid: TotalDialogue.Core.Variables.TDFVar`2.GetValue
+  name: GetValue()
+  href: api/TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetValue
+  commentId: M:TotalDialogue.Core.Variables.TDFVar`2.GetValue
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.GetValue()
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).GetValue()
+  nameWithType: TDFVar<T, TListener>.GetValue()
+  nameWithType.vb: TDFVar(Of T, TListener).GetValue()
+- uid: TotalDialogue.Core.Variables.TDFVar`2.GetValue*
+  name: GetValue
+  href: api/TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetValue_
+  commentId: Overload:TotalDialogue.Core.Variables.TDFVar`2.GetValue
+  isSpec: "True"
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.GetValue
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).GetValue
+  nameWithType: TDFVar<T, TListener>.GetValue
+  nameWithType.vb: TDFVar(Of T, TListener).GetValue
+- uid: TotalDialogue.Core.Variables.TDFVar`2.GetVector3Value
+  name: GetVector3Value()
+  href: api/TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetVector3Value
+  commentId: M:TotalDialogue.Core.Variables.TDFVar`2.GetVector3Value
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.GetVector3Value()
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).GetVector3Value()
+  nameWithType: TDFVar<T, TListener>.GetVector3Value()
+  nameWithType.vb: TDFVar(Of T, TListener).GetVector3Value()
+- uid: TotalDialogue.Core.Variables.TDFVar`2.GetVector3Value*
+  name: GetVector3Value
+  href: api/TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetVector3Value_
+  commentId: Overload:TotalDialogue.Core.Variables.TDFVar`2.GetVector3Value
+  isSpec: "True"
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.GetVector3Value
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).GetVector3Value
+  nameWithType: TDFVar<T, TListener>.GetVector3Value
+  nameWithType.vb: TDFVar(Of T, TListener).GetVector3Value
+- uid: TotalDialogue.Core.Variables.TDFVar`2.Interface
+  name: Interface
+  href: api/TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_Interface
+  commentId: P:TotalDialogue.Core.Variables.TDFVar`2.Interface
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.Interface
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).Interface
+  nameWithType: TDFVar<T, TListener>.Interface
+  nameWithType.vb: TDFVar(Of T, TListener).Interface
+- uid: TotalDialogue.Core.Variables.TDFVar`2.Interface*
+  name: Interface
+  href: api/TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_Interface_
+  commentId: Overload:TotalDialogue.Core.Variables.TDFVar`2.Interface
+  isSpec: "True"
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.Interface
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).Interface
+  nameWithType: TDFVar<T, TListener>.Interface
+  nameWithType.vb: TDFVar(Of T, TListener).Interface
+- uid: TotalDialogue.Core.Variables.TDFVar`2.IsBecome(`0,`0,`0)
+  name: IsBecome(T, T, T)
+  href: api/TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_IsBecome__0__0__0_
+  commentId: M:TotalDialogue.Core.Variables.TDFVar`2.IsBecome(`0,`0,`0)
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.IsBecome(T, T, T)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).IsBecome(T, T, T)
+  nameWithType: TDFVar<T, TListener>.IsBecome(T, T, T)
+  nameWithType.vb: TDFVar(Of T, TListener).IsBecome(T, T, T)
+- uid: TotalDialogue.Core.Variables.TDFVar`2.IsBecome*
+  name: IsBecome
+  href: api/TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_IsBecome_
+  commentId: Overload:TotalDialogue.Core.Variables.TDFVar`2.IsBecome
+  isSpec: "True"
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.IsBecome
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).IsBecome
+  nameWithType: TDFVar<T, TListener>.IsBecome
+  nameWithType.vb: TDFVar(Of T, TListener).IsBecome
+- uid: TotalDialogue.Core.Variables.TDFVar`2.IsCease(`0,`0,`0)
+  name: IsCease(T, T, T)
+  href: api/TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_IsCease__0__0__0_
+  commentId: M:TotalDialogue.Core.Variables.TDFVar`2.IsCease(`0,`0,`0)
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.IsCease(T, T, T)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).IsCease(T, T, T)
+  nameWithType: TDFVar<T, TListener>.IsCease(T, T, T)
+  nameWithType.vb: TDFVar(Of T, TListener).IsCease(T, T, T)
+- uid: TotalDialogue.Core.Variables.TDFVar`2.IsCease*
+  name: IsCease
+  href: api/TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_IsCease_
+  commentId: Overload:TotalDialogue.Core.Variables.TDFVar`2.IsCease
+  isSpec: "True"
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.IsCease
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).IsCease
+  nameWithType: TDFVar<T, TListener>.IsCease
+  nameWithType.vb: TDFVar(Of T, TListener).IsCease
+- uid: TotalDialogue.Core.Variables.TDFVar`2.IsChanged(`0,`0)
+  name: IsChanged(T, T)
+  href: api/TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_IsChanged__0__0_
+  commentId: M:TotalDialogue.Core.Variables.TDFVar`2.IsChanged(`0,`0)
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.IsChanged(T, T)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).IsChanged(T, T)
+  nameWithType: TDFVar<T, TListener>.IsChanged(T, T)
+  nameWithType.vb: TDFVar(Of T, TListener).IsChanged(T, T)
+- uid: TotalDialogue.Core.Variables.TDFVar`2.IsChanged*
+  name: IsChanged
+  href: api/TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_IsChanged_
+  commentId: Overload:TotalDialogue.Core.Variables.TDFVar`2.IsChanged
+  isSpec: "True"
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.IsChanged
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).IsChanged
+  nameWithType: TDFVar<T, TListener>.IsChanged
+  nameWithType.vb: TDFVar(Of T, TListener).IsChanged
+- uid: TotalDialogue.Core.Variables.TDFVar`2.Key
+  name: Key
+  href: api/TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_Key
+  commentId: P:TotalDialogue.Core.Variables.TDFVar`2.Key
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.Key
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).Key
+  nameWithType: TDFVar<T, TListener>.Key
+  nameWithType.vb: TDFVar(Of T, TListener).Key
+- uid: TotalDialogue.Core.Variables.TDFVar`2.Key*
+  name: Key
+  href: api/TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_Key_
+  commentId: Overload:TotalDialogue.Core.Variables.TDFVar`2.Key
+  isSpec: "True"
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.Key
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).Key
+  nameWithType: TDFVar<T, TListener>.Key
+  nameWithType.vb: TDFVar(Of T, TListener).Key
+- uid: TotalDialogue.Core.Variables.TDFVar`2.RemoveListener(`1)
+  name: RemoveListener(TListener)
+  href: api/TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_RemoveListener__1_
+  commentId: M:TotalDialogue.Core.Variables.TDFVar`2.RemoveListener(`1)
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.RemoveListener(TListener)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).RemoveListener(TListener)
+  nameWithType: TDFVar<T, TListener>.RemoveListener(TListener)
+  nameWithType.vb: TDFVar(Of T, TListener).RemoveListener(TListener)
+- uid: TotalDialogue.Core.Variables.TDFVar`2.RemoveListener*
+  name: RemoveListener
+  href: api/TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_RemoveListener_
+  commentId: Overload:TotalDialogue.Core.Variables.TDFVar`2.RemoveListener
+  isSpec: "True"
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.RemoveListener
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).RemoveListener
+  nameWithType: TDFVar<T, TListener>.RemoveListener
+  nameWithType.vb: TDFVar(Of T, TListener).RemoveListener
+- uid: TotalDialogue.Core.Variables.TDFVar`2.RestoreDefault
+  name: RestoreDefault()
+  href: api/TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_RestoreDefault
+  commentId: M:TotalDialogue.Core.Variables.TDFVar`2.RestoreDefault
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.RestoreDefault()
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).RestoreDefault()
+  nameWithType: TDFVar<T, TListener>.RestoreDefault()
+  nameWithType.vb: TDFVar(Of T, TListener).RestoreDefault()
+- uid: TotalDialogue.Core.Variables.TDFVar`2.RestoreDefault*
+  name: RestoreDefault
+  href: api/TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_RestoreDefault_
+  commentId: Overload:TotalDialogue.Core.Variables.TDFVar`2.RestoreDefault
+  isSpec: "True"
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.RestoreDefault
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).RestoreDefault
+  nameWithType: TDFVar<T, TListener>.RestoreDefault
+  nameWithType.vb: TDFVar(Of T, TListener).RestoreDefault
+- uid: TotalDialogue.Core.Variables.TDFVar`2.SetBoolValue(System.Boolean)
+  name: SetBoolValue(bool)
+  href: api/TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetBoolValue_System_Boolean_
+  commentId: M:TotalDialogue.Core.Variables.TDFVar`2.SetBoolValue(System.Boolean)
+  name.vb: SetBoolValue(Boolean)
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.SetBoolValue(bool)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).SetBoolValue(Boolean)
+  nameWithType: TDFVar<T, TListener>.SetBoolValue(bool)
+  nameWithType.vb: TDFVar(Of T, TListener).SetBoolValue(Boolean)
+- uid: TotalDialogue.Core.Variables.TDFVar`2.SetBoolValue*
+  name: SetBoolValue
+  href: api/TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetBoolValue_
+  commentId: Overload:TotalDialogue.Core.Variables.TDFVar`2.SetBoolValue
+  isSpec: "True"
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.SetBoolValue
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).SetBoolValue
+  nameWithType: TDFVar<T, TListener>.SetBoolValue
+  nameWithType.vb: TDFVar(Of T, TListener).SetBoolValue
+- uid: TotalDialogue.Core.Variables.TDFVar`2.SetFloatValue(System.Single)
+  name: SetFloatValue(float)
+  href: api/TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetFloatValue_System_Single_
+  commentId: M:TotalDialogue.Core.Variables.TDFVar`2.SetFloatValue(System.Single)
+  name.vb: SetFloatValue(Single)
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.SetFloatValue(float)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).SetFloatValue(Single)
+  nameWithType: TDFVar<T, TListener>.SetFloatValue(float)
+  nameWithType.vb: TDFVar(Of T, TListener).SetFloatValue(Single)
+- uid: TotalDialogue.Core.Variables.TDFVar`2.SetFloatValue*
+  name: SetFloatValue
+  href: api/TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetFloatValue_
+  commentId: Overload:TotalDialogue.Core.Variables.TDFVar`2.SetFloatValue
+  isSpec: "True"
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.SetFloatValue
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).SetFloatValue
+  nameWithType: TDFVar<T, TListener>.SetFloatValue
+  nameWithType.vb: TDFVar(Of T, TListener).SetFloatValue
+- uid: TotalDialogue.Core.Variables.TDFVar`2.SetIntValue(System.Int32)
+  name: SetIntValue(int)
+  href: api/TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetIntValue_System_Int32_
+  commentId: M:TotalDialogue.Core.Variables.TDFVar`2.SetIntValue(System.Int32)
+  name.vb: SetIntValue(Integer)
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.SetIntValue(int)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).SetIntValue(Integer)
+  nameWithType: TDFVar<T, TListener>.SetIntValue(int)
+  nameWithType.vb: TDFVar(Of T, TListener).SetIntValue(Integer)
+- uid: TotalDialogue.Core.Variables.TDFVar`2.SetIntValue*
+  name: SetIntValue
+  href: api/TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetIntValue_
+  commentId: Overload:TotalDialogue.Core.Variables.TDFVar`2.SetIntValue
+  isSpec: "True"
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.SetIntValue
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).SetIntValue
+  nameWithType: TDFVar<T, TListener>.SetIntValue
+  nameWithType.vb: TDFVar(Of T, TListener).SetIntValue
+- uid: TotalDialogue.Core.Variables.TDFVar`2.SetStringValue(System.String)
+  name: SetStringValue(string)
+  href: api/TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetStringValue_System_String_
+  commentId: M:TotalDialogue.Core.Variables.TDFVar`2.SetStringValue(System.String)
+  name.vb: SetStringValue(String)
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.SetStringValue(string)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).SetStringValue(String)
+  nameWithType: TDFVar<T, TListener>.SetStringValue(string)
+  nameWithType.vb: TDFVar(Of T, TListener).SetStringValue(String)
+- uid: TotalDialogue.Core.Variables.TDFVar`2.SetStringValue*
+  name: SetStringValue
+  href: api/TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetStringValue_
+  commentId: Overload:TotalDialogue.Core.Variables.TDFVar`2.SetStringValue
+  isSpec: "True"
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.SetStringValue
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).SetStringValue
+  nameWithType: TDFVar<T, TListener>.SetStringValue
+  nameWithType.vb: TDFVar(Of T, TListener).SetStringValue
+- uid: TotalDialogue.Core.Variables.TDFVar`2.SetValue(`0)
+  name: SetValue(T)
+  href: api/TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetValue__0_
+  commentId: M:TotalDialogue.Core.Variables.TDFVar`2.SetValue(`0)
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.SetValue(T)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).SetValue(T)
+  nameWithType: TDFVar<T, TListener>.SetValue(T)
+  nameWithType.vb: TDFVar(Of T, TListener).SetValue(T)
+- uid: TotalDialogue.Core.Variables.TDFVar`2.SetValue*
+  name: SetValue
+  href: api/TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetValue_
+  commentId: Overload:TotalDialogue.Core.Variables.TDFVar`2.SetValue
+  isSpec: "True"
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.SetValue
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).SetValue
+  nameWithType: TDFVar<T, TListener>.SetValue
+  nameWithType.vb: TDFVar(Of T, TListener).SetValue
+- uid: TotalDialogue.Core.Variables.TDFVar`2.SetVector3Value(UnityEngine.Vector3)
+  name: SetVector3Value(Vector3)
+  href: api/TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetVector3Value_UnityEngine_Vector3_
+  commentId: M:TotalDialogue.Core.Variables.TDFVar`2.SetVector3Value(UnityEngine.Vector3)
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.SetVector3Value(UnityEngine.Vector3)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).SetVector3Value(UnityEngine.Vector3)
+  nameWithType: TDFVar<T, TListener>.SetVector3Value(Vector3)
+  nameWithType.vb: TDFVar(Of T, TListener).SetVector3Value(Vector3)
+- uid: TotalDialogue.Core.Variables.TDFVar`2.SetVector3Value*
+  name: SetVector3Value
+  href: api/TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetVector3Value_
+  commentId: Overload:TotalDialogue.Core.Variables.TDFVar`2.SetVector3Value
+  isSpec: "True"
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.SetVector3Value
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).SetVector3Value
+  nameWithType: TDFVar<T, TListener>.SetVector3Value
+  nameWithType.vb: TDFVar(Of T, TListener).SetVector3Value
+- uid: TotalDialogue.Core.Variables.TDFVar`2.StoreDefault
+  name: StoreDefault()
+  href: api/TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_StoreDefault
+  commentId: M:TotalDialogue.Core.Variables.TDFVar`2.StoreDefault
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.StoreDefault()
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).StoreDefault()
+  nameWithType: TDFVar<T, TListener>.StoreDefault()
+  nameWithType.vb: TDFVar(Of T, TListener).StoreDefault()
+- uid: TotalDialogue.Core.Variables.TDFVar`2.StoreDefault*
+  name: StoreDefault
+  href: api/TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_StoreDefault_
+  commentId: Overload:TotalDialogue.Core.Variables.TDFVar`2.StoreDefault
+  isSpec: "True"
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.StoreDefault
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).StoreDefault
+  nameWithType: TDFVar<T, TListener>.StoreDefault
+  nameWithType.vb: TDFVar(Of T, TListener).StoreDefault
+- uid: TotalDialogue.Core.Variables.TDFVar`2.StringValue
+  name: StringValue
+  href: api/TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_StringValue
+  commentId: P:TotalDialogue.Core.Variables.TDFVar`2.StringValue
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.StringValue
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).StringValue
+  nameWithType: TDFVar<T, TListener>.StringValue
+  nameWithType.vb: TDFVar(Of T, TListener).StringValue
+- uid: TotalDialogue.Core.Variables.TDFVar`2.StringValue*
+  name: StringValue
+  href: api/TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_StringValue_
+  commentId: Overload:TotalDialogue.Core.Variables.TDFVar`2.StringValue
+  isSpec: "True"
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.StringValue
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).StringValue
+  nameWithType: TDFVar<T, TListener>.StringValue
+  nameWithType.vb: TDFVar(Of T, TListener).StringValue
+- uid: TotalDialogue.Core.Variables.TDFVar`2.Value
+  name: Value
+  href: api/TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_Value
+  commentId: P:TotalDialogue.Core.Variables.TDFVar`2.Value
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.Value
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).Value
+  nameWithType: TDFVar<T, TListener>.Value
+  nameWithType.vb: TDFVar(Of T, TListener).Value
+- uid: TotalDialogue.Core.Variables.TDFVar`2.Value*
+  name: Value
+  href: api/TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_Value_
+  commentId: Overload:TotalDialogue.Core.Variables.TDFVar`2.Value
+  isSpec: "True"
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.Value
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).Value
+  nameWithType: TDFVar<T, TListener>.Value
+  nameWithType.vb: TDFVar(Of T, TListener).Value
+- uid: TotalDialogue.Core.Variables.TDFVar`2.m_defaultValue
+  name: m_defaultValue
+  href: api/TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_m_defaultValue
+  commentId: F:TotalDialogue.Core.Variables.TDFVar`2.m_defaultValue
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.m_defaultValue
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).m_defaultValue
+  nameWithType: TDFVar<T, TListener>.m_defaultValue
+  nameWithType.vb: TDFVar(Of T, TListener).m_defaultValue
+- uid: TotalDialogue.Core.Variables.TDFVar`2.m_key
+  name: m_key
+  href: api/TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_m_key
+  commentId: F:TotalDialogue.Core.Variables.TDFVar`2.m_key
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.m_key
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).m_key
+  nameWithType: TDFVar<T, TListener>.m_key
+  nameWithType.vb: TDFVar(Of T, TListener).m_key
+- uid: TotalDialogue.Core.Variables.TDFVar`2.m_listeners
+  name: m_listeners
+  href: api/TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_m_listeners
+  commentId: F:TotalDialogue.Core.Variables.TDFVar`2.m_listeners
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.m_listeners
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).m_listeners
+  nameWithType: TDFVar<T, TListener>.m_listeners
+  nameWithType.vb: TDFVar(Of T, TListener).m_listeners
+- uid: TotalDialogue.Core.Variables.TDFVar`2.m_value
+  name: m_value
+  href: api/TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_m_value
+  commentId: F:TotalDialogue.Core.Variables.TDFVar`2.m_value
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.m_value
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).m_value
+  nameWithType: TDFVar<T, TListener>.m_value
+  nameWithType.vb: TDFVar(Of T, TListener).m_value
+- uid: TotalDialogue.Core.Variables.TDFVariables
+  name: TDFVariables
+  href: api/TotalDialogue.Core.Variables.TDFVariables.html
+  commentId: T:TotalDialogue.Core.Variables.TDFVariables
+  fullName: TotalDialogue.Core.Variables.TDFVariables
+  nameWithType: TDFVariables
+- uid: TotalDialogue.Core.Variables.TDFVariables.AddListener(TotalDialogue.Core.Variables.BoolListener)
+  name: AddListener(BoolListener)
+  href: api/TotalDialogue.Core.Variables.TDFVariables.html#TotalDialogue_Core_Variables_TDFVariables_AddListener_TotalDialogue_Core_Variables_BoolListener_
+  commentId: M:TotalDialogue.Core.Variables.TDFVariables.AddListener(TotalDialogue.Core.Variables.BoolListener)
+  fullName: TotalDialogue.Core.Variables.TDFVariables.AddListener(TotalDialogue.Core.Variables.BoolListener)
+  nameWithType: TDFVariables.AddListener(BoolListener)
+- uid: TotalDialogue.Core.Variables.TDFVariables.AddListener(TotalDialogue.Core.Variables.FloatListener)
+  name: AddListener(FloatListener)
+  href: api/TotalDialogue.Core.Variables.TDFVariables.html#TotalDialogue_Core_Variables_TDFVariables_AddListener_TotalDialogue_Core_Variables_FloatListener_
+  commentId: M:TotalDialogue.Core.Variables.TDFVariables.AddListener(TotalDialogue.Core.Variables.FloatListener)
+  fullName: TotalDialogue.Core.Variables.TDFVariables.AddListener(TotalDialogue.Core.Variables.FloatListener)
+  nameWithType: TDFVariables.AddListener(FloatListener)
+- uid: TotalDialogue.Core.Variables.TDFVariables.AddListener(TotalDialogue.Core.Variables.IntListener)
+  name: AddListener(IntListener)
+  href: api/TotalDialogue.Core.Variables.TDFVariables.html#TotalDialogue_Core_Variables_TDFVariables_AddListener_TotalDialogue_Core_Variables_IntListener_
+  commentId: M:TotalDialogue.Core.Variables.TDFVariables.AddListener(TotalDialogue.Core.Variables.IntListener)
+  fullName: TotalDialogue.Core.Variables.TDFVariables.AddListener(TotalDialogue.Core.Variables.IntListener)
+  nameWithType: TDFVariables.AddListener(IntListener)
+- uid: TotalDialogue.Core.Variables.TDFVariables.AddListener(TotalDialogue.Core.Variables.QuartanionListener)
+  name: AddListener(QuartanionListener)
+  href: api/TotalDialogue.Core.Variables.TDFVariables.html#TotalDialogue_Core_Variables_TDFVariables_AddListener_TotalDialogue_Core_Variables_QuartanionListener_
+  commentId: M:TotalDialogue.Core.Variables.TDFVariables.AddListener(TotalDialogue.Core.Variables.QuartanionListener)
+  fullName: TotalDialogue.Core.Variables.TDFVariables.AddListener(TotalDialogue.Core.Variables.QuartanionListener)
+  nameWithType: TDFVariables.AddListener(QuartanionListener)
+- uid: TotalDialogue.Core.Variables.TDFVariables.AddListener(TotalDialogue.Core.Variables.StringListener)
+  name: AddListener(StringListener)
+  href: api/TotalDialogue.Core.Variables.TDFVariables.html#TotalDialogue_Core_Variables_TDFVariables_AddListener_TotalDialogue_Core_Variables_StringListener_
+  commentId: M:TotalDialogue.Core.Variables.TDFVariables.AddListener(TotalDialogue.Core.Variables.StringListener)
+  fullName: TotalDialogue.Core.Variables.TDFVariables.AddListener(TotalDialogue.Core.Variables.StringListener)
+  nameWithType: TDFVariables.AddListener(StringListener)
+- uid: TotalDialogue.Core.Variables.TDFVariables.AddListener(TotalDialogue.Core.Variables.Vector3Listener)
+  name: AddListener(Vector3Listener)
+  href: api/TotalDialogue.Core.Variables.TDFVariables.html#TotalDialogue_Core_Variables_TDFVariables_AddListener_TotalDialogue_Core_Variables_Vector3Listener_
+  commentId: M:TotalDialogue.Core.Variables.TDFVariables.AddListener(TotalDialogue.Core.Variables.Vector3Listener)
+  fullName: TotalDialogue.Core.Variables.TDFVariables.AddListener(TotalDialogue.Core.Variables.Vector3Listener)
+  nameWithType: TDFVariables.AddListener(Vector3Listener)
+- uid: TotalDialogue.Core.Variables.TDFVariables.AddListener*
+  name: AddListener
+  href: api/TotalDialogue.Core.Variables.TDFVariables.html#TotalDialogue_Core_Variables_TDFVariables_AddListener_
+  commentId: Overload:TotalDialogue.Core.Variables.TDFVariables.AddListener
+  isSpec: "True"
+  fullName: TotalDialogue.Core.Variables.TDFVariables.AddListener
+  nameWithType: TDFVariables.AddListener
+- uid: TotalDialogue.Core.Variables.TDFVariables.GetBool(System.String)
+  name: GetBool(string)
+  href: api/TotalDialogue.Core.Variables.TDFVariables.html#TotalDialogue_Core_Variables_TDFVariables_GetBool_System_String_
+  commentId: M:TotalDialogue.Core.Variables.TDFVariables.GetBool(System.String)
+  name.vb: GetBool(String)
+  fullName: TotalDialogue.Core.Variables.TDFVariables.GetBool(string)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVariables.GetBool(String)
+  nameWithType: TDFVariables.GetBool(string)
+  nameWithType.vb: TDFVariables.GetBool(String)
+- uid: TotalDialogue.Core.Variables.TDFVariables.GetBool*
+  name: GetBool
+  href: api/TotalDialogue.Core.Variables.TDFVariables.html#TotalDialogue_Core_Variables_TDFVariables_GetBool_
+  commentId: Overload:TotalDialogue.Core.Variables.TDFVariables.GetBool
+  isSpec: "True"
+  fullName: TotalDialogue.Core.Variables.TDFVariables.GetBool
+  nameWithType: TDFVariables.GetBool
+- uid: TotalDialogue.Core.Variables.TDFVariables.GetFloat(System.String)
+  name: GetFloat(string)
+  href: api/TotalDialogue.Core.Variables.TDFVariables.html#TotalDialogue_Core_Variables_TDFVariables_GetFloat_System_String_
+  commentId: M:TotalDialogue.Core.Variables.TDFVariables.GetFloat(System.String)
+  name.vb: GetFloat(String)
+  fullName: TotalDialogue.Core.Variables.TDFVariables.GetFloat(string)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVariables.GetFloat(String)
+  nameWithType: TDFVariables.GetFloat(string)
+  nameWithType.vb: TDFVariables.GetFloat(String)
+- uid: TotalDialogue.Core.Variables.TDFVariables.GetFloat*
+  name: GetFloat
+  href: api/TotalDialogue.Core.Variables.TDFVariables.html#TotalDialogue_Core_Variables_TDFVariables_GetFloat_
+  commentId: Overload:TotalDialogue.Core.Variables.TDFVariables.GetFloat
+  isSpec: "True"
+  fullName: TotalDialogue.Core.Variables.TDFVariables.GetFloat
+  nameWithType: TDFVariables.GetFloat
+- uid: TotalDialogue.Core.Variables.TDFVariables.GetInt(System.String)
+  name: GetInt(string)
+  href: api/TotalDialogue.Core.Variables.TDFVariables.html#TotalDialogue_Core_Variables_TDFVariables_GetInt_System_String_
+  commentId: M:TotalDialogue.Core.Variables.TDFVariables.GetInt(System.String)
+  name.vb: GetInt(String)
+  fullName: TotalDialogue.Core.Variables.TDFVariables.GetInt(string)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVariables.GetInt(String)
+  nameWithType: TDFVariables.GetInt(string)
+  nameWithType.vb: TDFVariables.GetInt(String)
+- uid: TotalDialogue.Core.Variables.TDFVariables.GetInt*
+  name: GetInt
+  href: api/TotalDialogue.Core.Variables.TDFVariables.html#TotalDialogue_Core_Variables_TDFVariables_GetInt_
+  commentId: Overload:TotalDialogue.Core.Variables.TDFVariables.GetInt
+  isSpec: "True"
+  fullName: TotalDialogue.Core.Variables.TDFVariables.GetInt
+  nameWithType: TDFVariables.GetInt
+- uid: TotalDialogue.Core.Variables.TDFVariables.GetQuaternion(System.String)
+  name: GetQuaternion(string)
+  href: api/TotalDialogue.Core.Variables.TDFVariables.html#TotalDialogue_Core_Variables_TDFVariables_GetQuaternion_System_String_
+  commentId: M:TotalDialogue.Core.Variables.TDFVariables.GetQuaternion(System.String)
+  name.vb: GetQuaternion(String)
+  fullName: TotalDialogue.Core.Variables.TDFVariables.GetQuaternion(string)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVariables.GetQuaternion(String)
+  nameWithType: TDFVariables.GetQuaternion(string)
+  nameWithType.vb: TDFVariables.GetQuaternion(String)
+- uid: TotalDialogue.Core.Variables.TDFVariables.GetQuaternion*
+  name: GetQuaternion
+  href: api/TotalDialogue.Core.Variables.TDFVariables.html#TotalDialogue_Core_Variables_TDFVariables_GetQuaternion_
+  commentId: Overload:TotalDialogue.Core.Variables.TDFVariables.GetQuaternion
+  isSpec: "True"
+  fullName: TotalDialogue.Core.Variables.TDFVariables.GetQuaternion
+  nameWithType: TDFVariables.GetQuaternion
+- uid: TotalDialogue.Core.Variables.TDFVariables.GetString(System.String)
+  name: GetString(string)
+  href: api/TotalDialogue.Core.Variables.TDFVariables.html#TotalDialogue_Core_Variables_TDFVariables_GetString_System_String_
+  commentId: M:TotalDialogue.Core.Variables.TDFVariables.GetString(System.String)
+  name.vb: GetString(String)
+  fullName: TotalDialogue.Core.Variables.TDFVariables.GetString(string)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVariables.GetString(String)
+  nameWithType: TDFVariables.GetString(string)
+  nameWithType.vb: TDFVariables.GetString(String)
+- uid: TotalDialogue.Core.Variables.TDFVariables.GetString*
+  name: GetString
+  href: api/TotalDialogue.Core.Variables.TDFVariables.html#TotalDialogue_Core_Variables_TDFVariables_GetString_
+  commentId: Overload:TotalDialogue.Core.Variables.TDFVariables.GetString
+  isSpec: "True"
+  fullName: TotalDialogue.Core.Variables.TDFVariables.GetString
+  nameWithType: TDFVariables.GetString
+- uid: TotalDialogue.Core.Variables.TDFVariables.GetVector3(System.String)
+  name: GetVector3(string)
+  href: api/TotalDialogue.Core.Variables.TDFVariables.html#TotalDialogue_Core_Variables_TDFVariables_GetVector3_System_String_
+  commentId: M:TotalDialogue.Core.Variables.TDFVariables.GetVector3(System.String)
+  name.vb: GetVector3(String)
+  fullName: TotalDialogue.Core.Variables.TDFVariables.GetVector3(string)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVariables.GetVector3(String)
+  nameWithType: TDFVariables.GetVector3(string)
+  nameWithType.vb: TDFVariables.GetVector3(String)
+- uid: TotalDialogue.Core.Variables.TDFVariables.GetVector3*
+  name: GetVector3
+  href: api/TotalDialogue.Core.Variables.TDFVariables.html#TotalDialogue_Core_Variables_TDFVariables_GetVector3_
+  commentId: Overload:TotalDialogue.Core.Variables.TDFVariables.GetVector3
+  isSpec: "True"
+  fullName: TotalDialogue.Core.Variables.TDFVariables.GetVector3
+  nameWithType: TDFVariables.GetVector3
+- uid: TotalDialogue.Core.Variables.TDFVariables.MaxChoice
+  name: MaxChoice
+  href: api/TotalDialogue.Core.Variables.TDFVariables.html#TotalDialogue_Core_Variables_TDFVariables_MaxChoice
+  commentId: P:TotalDialogue.Core.Variables.TDFVariables.MaxChoice
+  fullName: TotalDialogue.Core.Variables.TDFVariables.MaxChoice
+  nameWithType: TDFVariables.MaxChoice
+- uid: TotalDialogue.Core.Variables.TDFVariables.MaxChoice*
+  name: MaxChoice
+  href: api/TotalDialogue.Core.Variables.TDFVariables.html#TotalDialogue_Core_Variables_TDFVariables_MaxChoice_
+  commentId: Overload:TotalDialogue.Core.Variables.TDFVariables.MaxChoice
+  isSpec: "True"
+  fullName: TotalDialogue.Core.Variables.TDFVariables.MaxChoice
+  nameWithType: TDFVariables.MaxChoice
+- uid: TotalDialogue.Core.Variables.TDFVariables.MaxDialogue
+  name: MaxDialogue
+  href: api/TotalDialogue.Core.Variables.TDFVariables.html#TotalDialogue_Core_Variables_TDFVariables_MaxDialogue
+  commentId: P:TotalDialogue.Core.Variables.TDFVariables.MaxDialogue
+  fullName: TotalDialogue.Core.Variables.TDFVariables.MaxDialogue
+  nameWithType: TDFVariables.MaxDialogue
+- uid: TotalDialogue.Core.Variables.TDFVariables.MaxDialogue*
+  name: MaxDialogue
+  href: api/TotalDialogue.Core.Variables.TDFVariables.html#TotalDialogue_Core_Variables_TDFVariables_MaxDialogue_
+  commentId: Overload:TotalDialogue.Core.Variables.TDFVariables.MaxDialogue
+  isSpec: "True"
+  fullName: TotalDialogue.Core.Variables.TDFVariables.MaxDialogue
+  nameWithType: TDFVariables.MaxDialogue
+- uid: TotalDialogue.Core.Variables.TDFVariables.RemoveListener(TotalDialogue.Core.Variables.BoolListener)
+  name: RemoveListener(BoolListener)
+  href: api/TotalDialogue.Core.Variables.TDFVariables.html#TotalDialogue_Core_Variables_TDFVariables_RemoveListener_TotalDialogue_Core_Variables_BoolListener_
+  commentId: M:TotalDialogue.Core.Variables.TDFVariables.RemoveListener(TotalDialogue.Core.Variables.BoolListener)
+  fullName: TotalDialogue.Core.Variables.TDFVariables.RemoveListener(TotalDialogue.Core.Variables.BoolListener)
+  nameWithType: TDFVariables.RemoveListener(BoolListener)
+- uid: TotalDialogue.Core.Variables.TDFVariables.RemoveListener(TotalDialogue.Core.Variables.FloatListener)
+  name: RemoveListener(FloatListener)
+  href: api/TotalDialogue.Core.Variables.TDFVariables.html#TotalDialogue_Core_Variables_TDFVariables_RemoveListener_TotalDialogue_Core_Variables_FloatListener_
+  commentId: M:TotalDialogue.Core.Variables.TDFVariables.RemoveListener(TotalDialogue.Core.Variables.FloatListener)
+  fullName: TotalDialogue.Core.Variables.TDFVariables.RemoveListener(TotalDialogue.Core.Variables.FloatListener)
+  nameWithType: TDFVariables.RemoveListener(FloatListener)
+- uid: TotalDialogue.Core.Variables.TDFVariables.RemoveListener(TotalDialogue.Core.Variables.IntListener)
+  name: RemoveListener(IntListener)
+  href: api/TotalDialogue.Core.Variables.TDFVariables.html#TotalDialogue_Core_Variables_TDFVariables_RemoveListener_TotalDialogue_Core_Variables_IntListener_
+  commentId: M:TotalDialogue.Core.Variables.TDFVariables.RemoveListener(TotalDialogue.Core.Variables.IntListener)
+  fullName: TotalDialogue.Core.Variables.TDFVariables.RemoveListener(TotalDialogue.Core.Variables.IntListener)
+  nameWithType: TDFVariables.RemoveListener(IntListener)
+- uid: TotalDialogue.Core.Variables.TDFVariables.RemoveListener(TotalDialogue.Core.Variables.QuartanionListener)
+  name: RemoveListener(QuartanionListener)
+  href: api/TotalDialogue.Core.Variables.TDFVariables.html#TotalDialogue_Core_Variables_TDFVariables_RemoveListener_TotalDialogue_Core_Variables_QuartanionListener_
+  commentId: M:TotalDialogue.Core.Variables.TDFVariables.RemoveListener(TotalDialogue.Core.Variables.QuartanionListener)
+  fullName: TotalDialogue.Core.Variables.TDFVariables.RemoveListener(TotalDialogue.Core.Variables.QuartanionListener)
+  nameWithType: TDFVariables.RemoveListener(QuartanionListener)
+- uid: TotalDialogue.Core.Variables.TDFVariables.RemoveListener(TotalDialogue.Core.Variables.StringListener)
+  name: RemoveListener(StringListener)
+  href: api/TotalDialogue.Core.Variables.TDFVariables.html#TotalDialogue_Core_Variables_TDFVariables_RemoveListener_TotalDialogue_Core_Variables_StringListener_
+  commentId: M:TotalDialogue.Core.Variables.TDFVariables.RemoveListener(TotalDialogue.Core.Variables.StringListener)
+  fullName: TotalDialogue.Core.Variables.TDFVariables.RemoveListener(TotalDialogue.Core.Variables.StringListener)
+  nameWithType: TDFVariables.RemoveListener(StringListener)
+- uid: TotalDialogue.Core.Variables.TDFVariables.RemoveListener(TotalDialogue.Core.Variables.Vector3Listener)
+  name: RemoveListener(Vector3Listener)
+  href: api/TotalDialogue.Core.Variables.TDFVariables.html#TotalDialogue_Core_Variables_TDFVariables_RemoveListener_TotalDialogue_Core_Variables_Vector3Listener_
+  commentId: M:TotalDialogue.Core.Variables.TDFVariables.RemoveListener(TotalDialogue.Core.Variables.Vector3Listener)
+  fullName: TotalDialogue.Core.Variables.TDFVariables.RemoveListener(TotalDialogue.Core.Variables.Vector3Listener)
+  nameWithType: TDFVariables.RemoveListener(Vector3Listener)
+- uid: TotalDialogue.Core.Variables.TDFVariables.RemoveListener*
+  name: RemoveListener
+  href: api/TotalDialogue.Core.Variables.TDFVariables.html#TotalDialogue_Core_Variables_TDFVariables_RemoveListener_
+  commentId: Overload:TotalDialogue.Core.Variables.TDFVariables.RemoveListener
+  isSpec: "True"
+  fullName: TotalDialogue.Core.Variables.TDFVariables.RemoveListener
+  nameWithType: TDFVariables.RemoveListener
+- uid: TotalDialogue.Core.Variables.TDFVariables.Reset
+  name: Reset()
+  href: api/TotalDialogue.Core.Variables.TDFVariables.html#TotalDialogue_Core_Variables_TDFVariables_Reset
+  commentId: M:TotalDialogue.Core.Variables.TDFVariables.Reset
+  fullName: TotalDialogue.Core.Variables.TDFVariables.Reset()
+  nameWithType: TDFVariables.Reset()
+- uid: TotalDialogue.Core.Variables.TDFVariables.Reset*
+  name: Reset
+  href: api/TotalDialogue.Core.Variables.TDFVariables.html#TotalDialogue_Core_Variables_TDFVariables_Reset_
+  commentId: Overload:TotalDialogue.Core.Variables.TDFVariables.Reset
+  isSpec: "True"
+  fullName: TotalDialogue.Core.Variables.TDFVariables.Reset
+  nameWithType: TDFVariables.Reset
+- uid: TotalDialogue.Core.Variables.TDFVariables.SetBool(System.String,System.Boolean)
+  name: SetBool(string, bool)
+  href: api/TotalDialogue.Core.Variables.TDFVariables.html#TotalDialogue_Core_Variables_TDFVariables_SetBool_System_String_System_Boolean_
+  commentId: M:TotalDialogue.Core.Variables.TDFVariables.SetBool(System.String,System.Boolean)
+  name.vb: SetBool(String, Boolean)
+  fullName: TotalDialogue.Core.Variables.TDFVariables.SetBool(string, bool)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVariables.SetBool(String, Boolean)
+  nameWithType: TDFVariables.SetBool(string, bool)
+  nameWithType.vb: TDFVariables.SetBool(String, Boolean)
+- uid: TotalDialogue.Core.Variables.TDFVariables.SetBool*
+  name: SetBool
+  href: api/TotalDialogue.Core.Variables.TDFVariables.html#TotalDialogue_Core_Variables_TDFVariables_SetBool_
+  commentId: Overload:TotalDialogue.Core.Variables.TDFVariables.SetBool
+  isSpec: "True"
+  fullName: TotalDialogue.Core.Variables.TDFVariables.SetBool
+  nameWithType: TDFVariables.SetBool
+- uid: TotalDialogue.Core.Variables.TDFVariables.SetFloat(System.String,System.Single)
+  name: SetFloat(string, float)
+  href: api/TotalDialogue.Core.Variables.TDFVariables.html#TotalDialogue_Core_Variables_TDFVariables_SetFloat_System_String_System_Single_
+  commentId: M:TotalDialogue.Core.Variables.TDFVariables.SetFloat(System.String,System.Single)
+  name.vb: SetFloat(String, Single)
+  fullName: TotalDialogue.Core.Variables.TDFVariables.SetFloat(string, float)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVariables.SetFloat(String, Single)
+  nameWithType: TDFVariables.SetFloat(string, float)
+  nameWithType.vb: TDFVariables.SetFloat(String, Single)
+- uid: TotalDialogue.Core.Variables.TDFVariables.SetFloat*
+  name: SetFloat
+  href: api/TotalDialogue.Core.Variables.TDFVariables.html#TotalDialogue_Core_Variables_TDFVariables_SetFloat_
+  commentId: Overload:TotalDialogue.Core.Variables.TDFVariables.SetFloat
+  isSpec: "True"
+  fullName: TotalDialogue.Core.Variables.TDFVariables.SetFloat
+  nameWithType: TDFVariables.SetFloat
+- uid: TotalDialogue.Core.Variables.TDFVariables.SetInt(System.String,System.Int32)
+  name: SetInt(string, int)
+  href: api/TotalDialogue.Core.Variables.TDFVariables.html#TotalDialogue_Core_Variables_TDFVariables_SetInt_System_String_System_Int32_
+  commentId: M:TotalDialogue.Core.Variables.TDFVariables.SetInt(System.String,System.Int32)
+  name.vb: SetInt(String, Integer)
+  fullName: TotalDialogue.Core.Variables.TDFVariables.SetInt(string, int)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVariables.SetInt(String, Integer)
+  nameWithType: TDFVariables.SetInt(string, int)
+  nameWithType.vb: TDFVariables.SetInt(String, Integer)
+- uid: TotalDialogue.Core.Variables.TDFVariables.SetInt*
+  name: SetInt
+  href: api/TotalDialogue.Core.Variables.TDFVariables.html#TotalDialogue_Core_Variables_TDFVariables_SetInt_
+  commentId: Overload:TotalDialogue.Core.Variables.TDFVariables.SetInt
+  isSpec: "True"
+  fullName: TotalDialogue.Core.Variables.TDFVariables.SetInt
+  nameWithType: TDFVariables.SetInt
+- uid: TotalDialogue.Core.Variables.TDFVariables.SetQuaternion(System.String,UnityEngine.Quaternion)
+  name: SetQuaternion(string, Quaternion)
+  href: api/TotalDialogue.Core.Variables.TDFVariables.html#TotalDialogue_Core_Variables_TDFVariables_SetQuaternion_System_String_UnityEngine_Quaternion_
+  commentId: M:TotalDialogue.Core.Variables.TDFVariables.SetQuaternion(System.String,UnityEngine.Quaternion)
+  name.vb: SetQuaternion(String, Quaternion)
+  fullName: TotalDialogue.Core.Variables.TDFVariables.SetQuaternion(string, UnityEngine.Quaternion)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVariables.SetQuaternion(String, UnityEngine.Quaternion)
+  nameWithType: TDFVariables.SetQuaternion(string, Quaternion)
+  nameWithType.vb: TDFVariables.SetQuaternion(String, Quaternion)
+- uid: TotalDialogue.Core.Variables.TDFVariables.SetQuaternion*
+  name: SetQuaternion
+  href: api/TotalDialogue.Core.Variables.TDFVariables.html#TotalDialogue_Core_Variables_TDFVariables_SetQuaternion_
+  commentId: Overload:TotalDialogue.Core.Variables.TDFVariables.SetQuaternion
+  isSpec: "True"
+  fullName: TotalDialogue.Core.Variables.TDFVariables.SetQuaternion
+  nameWithType: TDFVariables.SetQuaternion
+- uid: TotalDialogue.Core.Variables.TDFVariables.SetString(System.String,System.String)
+  name: SetString(string, string)
+  href: api/TotalDialogue.Core.Variables.TDFVariables.html#TotalDialogue_Core_Variables_TDFVariables_SetString_System_String_System_String_
+  commentId: M:TotalDialogue.Core.Variables.TDFVariables.SetString(System.String,System.String)
+  name.vb: SetString(String, String)
+  fullName: TotalDialogue.Core.Variables.TDFVariables.SetString(string, string)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVariables.SetString(String, String)
+  nameWithType: TDFVariables.SetString(string, string)
+  nameWithType.vb: TDFVariables.SetString(String, String)
+- uid: TotalDialogue.Core.Variables.TDFVariables.SetString*
+  name: SetString
+  href: api/TotalDialogue.Core.Variables.TDFVariables.html#TotalDialogue_Core_Variables_TDFVariables_SetString_
+  commentId: Overload:TotalDialogue.Core.Variables.TDFVariables.SetString
+  isSpec: "True"
+  fullName: TotalDialogue.Core.Variables.TDFVariables.SetString
+  nameWithType: TDFVariables.SetString
+- uid: TotalDialogue.Core.Variables.TDFVariables.SetVector3(System.String,UnityEngine.Vector3)
+  name: SetVector3(string, Vector3)
+  href: api/TotalDialogue.Core.Variables.TDFVariables.html#TotalDialogue_Core_Variables_TDFVariables_SetVector3_System_String_UnityEngine_Vector3_
+  commentId: M:TotalDialogue.Core.Variables.TDFVariables.SetVector3(System.String,UnityEngine.Vector3)
+  name.vb: SetVector3(String, Vector3)
+  fullName: TotalDialogue.Core.Variables.TDFVariables.SetVector3(string, UnityEngine.Vector3)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVariables.SetVector3(String, UnityEngine.Vector3)
+  nameWithType: TDFVariables.SetVector3(string, Vector3)
+  nameWithType.vb: TDFVariables.SetVector3(String, Vector3)
+- uid: TotalDialogue.Core.Variables.TDFVariables.SetVector3*
+  name: SetVector3
+  href: api/TotalDialogue.Core.Variables.TDFVariables.html#TotalDialogue_Core_Variables_TDFVariables_SetVector3_
+  commentId: Overload:TotalDialogue.Core.Variables.TDFVariables.SetVector3
+  isSpec: "True"
+  fullName: TotalDialogue.Core.Variables.TDFVariables.SetVector3
+  nameWithType: TDFVariables.SetVector3
+- uid: TotalDialogue.Core.Variables.TDFVariables.m_vars
+  name: m_vars
+  href: api/TotalDialogue.Core.Variables.TDFVariables.html#TotalDialogue_Core_Variables_TDFVariables_m_vars
+  commentId: F:TotalDialogue.Core.Variables.TDFVariables.m_vars
+  fullName: TotalDialogue.Core.Variables.TDFVariables.m_vars
+  nameWithType: TDFVariables.m_vars
+- uid: TotalDialogue.Core.Variables.VariableListener`1
+  name: VariableListener<T>
+  href: api/TotalDialogue.Core.Variables.VariableListener-1.html
+  commentId: T:TotalDialogue.Core.Variables.VariableListener`1
+  name.vb: VariableListener(Of T)
+  fullName: TotalDialogue.Core.Variables.VariableListener<T>
+  fullName.vb: TotalDialogue.Core.Variables.VariableListener(Of T)
+  nameWithType: VariableListener<T>
+  nameWithType.vb: VariableListener(Of T)
+- uid: TotalDialogue.Core.Variables.VariableListener`1.GetValue(System.String)
+  name: GetValue(string)
+  href: api/TotalDialogue.Core.Variables.VariableListener-1.html#TotalDialogue_Core_Variables_VariableListener_1_GetValue_System_String_
+  commentId: M:TotalDialogue.Core.Variables.VariableListener`1.GetValue(System.String)
+  name.vb: GetValue(String)
+  fullName: TotalDialogue.Core.Variables.VariableListener<T>.GetValue(string)
+  fullName.vb: TotalDialogue.Core.Variables.VariableListener(Of T).GetValue(String)
+  nameWithType: VariableListener<T>.GetValue(string)
+  nameWithType.vb: VariableListener(Of T).GetValue(String)
+- uid: TotalDialogue.Core.Variables.VariableListener`1.GetValue*
+  name: GetValue
+  href: api/TotalDialogue.Core.Variables.VariableListener-1.html#TotalDialogue_Core_Variables_VariableListener_1_GetValue_
+  commentId: Overload:TotalDialogue.Core.Variables.VariableListener`1.GetValue
+  isSpec: "True"
+  fullName: TotalDialogue.Core.Variables.VariableListener<T>.GetValue
+  fullName.vb: TotalDialogue.Core.Variables.VariableListener(Of T).GetValue
+  nameWithType: VariableListener<T>.GetValue
+  nameWithType.vb: VariableListener(Of T).GetValue
+- uid: TotalDialogue.Core.Variables.VariableListener`1.OnBecome
+  name: OnBecome
+  href: api/TotalDialogue.Core.Variables.VariableListener-1.html#TotalDialogue_Core_Variables_VariableListener_1_OnBecome
+  commentId: F:TotalDialogue.Core.Variables.VariableListener`1.OnBecome
+  fullName: TotalDialogue.Core.Variables.VariableListener<T>.OnBecome
+  fullName.vb: TotalDialogue.Core.Variables.VariableListener(Of T).OnBecome
+  nameWithType: VariableListener<T>.OnBecome
+  nameWithType.vb: VariableListener(Of T).OnBecome
+- uid: TotalDialogue.Core.Variables.VariableListener`1.OnCease
+  name: OnCease
+  href: api/TotalDialogue.Core.Variables.VariableListener-1.html#TotalDialogue_Core_Variables_VariableListener_1_OnCease
+  commentId: F:TotalDialogue.Core.Variables.VariableListener`1.OnCease
+  fullName: TotalDialogue.Core.Variables.VariableListener<T>.OnCease
+  fullName.vb: TotalDialogue.Core.Variables.VariableListener(Of T).OnCease
+  nameWithType: VariableListener<T>.OnCease
+  nameWithType.vb: VariableListener(Of T).OnCease
+- uid: TotalDialogue.Core.Variables.VariableListener`1.OnChanged
+  name: OnChanged
+  href: api/TotalDialogue.Core.Variables.VariableListener-1.html#TotalDialogue_Core_Variables_VariableListener_1_OnChanged
+  commentId: F:TotalDialogue.Core.Variables.VariableListener`1.OnChanged
+  fullName: TotalDialogue.Core.Variables.VariableListener<T>.OnChanged
+  fullName.vb: TotalDialogue.Core.Variables.VariableListener(Of T).OnChanged
+  nameWithType: VariableListener<T>.OnChanged
+  nameWithType.vb: VariableListener(Of T).OnChanged
+- uid: TotalDialogue.Core.Variables.VariableListener`1.OnSet
+  name: OnSet
+  href: api/TotalDialogue.Core.Variables.VariableListener-1.html#TotalDialogue_Core_Variables_VariableListener_1_OnSet
+  commentId: F:TotalDialogue.Core.Variables.VariableListener`1.OnSet
+  fullName: TotalDialogue.Core.Variables.VariableListener<T>.OnSet
+  fullName.vb: TotalDialogue.Core.Variables.VariableListener(Of T).OnSet
+  nameWithType: VariableListener<T>.OnSet
+  nameWithType.vb: VariableListener(Of T).OnSet
+- uid: TotalDialogue.Core.Variables.VariableListener`1.SetValue(System.String,`0)
+  name: SetValue(string, T)
+  href: api/TotalDialogue.Core.Variables.VariableListener-1.html#TotalDialogue_Core_Variables_VariableListener_1_SetValue_System_String__0_
+  commentId: M:TotalDialogue.Core.Variables.VariableListener`1.SetValue(System.String,`0)
+  name.vb: SetValue(String, T)
+  fullName: TotalDialogue.Core.Variables.VariableListener<T>.SetValue(string, T)
+  fullName.vb: TotalDialogue.Core.Variables.VariableListener(Of T).SetValue(String, T)
+  nameWithType: VariableListener<T>.SetValue(string, T)
+  nameWithType.vb: VariableListener(Of T).SetValue(String, T)
+- uid: TotalDialogue.Core.Variables.VariableListener`1.SetValue*
+  name: SetValue
+  href: api/TotalDialogue.Core.Variables.VariableListener-1.html#TotalDialogue_Core_Variables_VariableListener_1_SetValue_
+  commentId: Overload:TotalDialogue.Core.Variables.VariableListener`1.SetValue
+  isSpec: "True"
+  fullName: TotalDialogue.Core.Variables.VariableListener<T>.SetValue
+  fullName.vb: TotalDialogue.Core.Variables.VariableListener(Of T).SetValue
+  nameWithType: VariableListener<T>.SetValue
+  nameWithType.vb: VariableListener(Of T).SetValue
+- uid: TotalDialogue.Core.Variables.VariableListener`1.fireOnBecome
+  name: fireOnBecome
+  href: api/TotalDialogue.Core.Variables.VariableListener-1.html#TotalDialogue_Core_Variables_VariableListener_1_fireOnBecome
+  commentId: F:TotalDialogue.Core.Variables.VariableListener`1.fireOnBecome
+  fullName: TotalDialogue.Core.Variables.VariableListener<T>.fireOnBecome
+  fullName.vb: TotalDialogue.Core.Variables.VariableListener(Of T).fireOnBecome
+  nameWithType: VariableListener<T>.fireOnBecome
+  nameWithType.vb: VariableListener(Of T).fireOnBecome
+- uid: TotalDialogue.Core.Variables.VariableListener`1.fireOnEnable
+  name: fireOnEnable
+  href: api/TotalDialogue.Core.Variables.VariableListener-1.html#TotalDialogue_Core_Variables_VariableListener_1_fireOnEnable
+  commentId: F:TotalDialogue.Core.Variables.VariableListener`1.fireOnEnable
+  fullName: TotalDialogue.Core.Variables.VariableListener<T>.fireOnEnable
+  fullName.vb: TotalDialogue.Core.Variables.VariableListener(Of T).fireOnEnable
+  nameWithType: VariableListener<T>.fireOnEnable
+  nameWithType.vb: VariableListener(Of T).fireOnEnable
+- uid: TotalDialogue.Core.Variables.VariableListener`1.key
+  name: key
+  href: api/TotalDialogue.Core.Variables.VariableListener-1.html#TotalDialogue_Core_Variables_VariableListener_1_key
+  commentId: F:TotalDialogue.Core.Variables.VariableListener`1.key
+  fullName: TotalDialogue.Core.Variables.VariableListener<T>.key
+  fullName.vb: TotalDialogue.Core.Variables.VariableListener(Of T).key
+  nameWithType: VariableListener<T>.key
+  nameWithType.vb: VariableListener(Of T).key
+- uid: TotalDialogue.Core.Variables.VariableListener`1.targetValue
+  name: targetValue
+  href: api/TotalDialogue.Core.Variables.VariableListener-1.html#TotalDialogue_Core_Variables_VariableListener_1_targetValue
+  commentId: F:TotalDialogue.Core.Variables.VariableListener`1.targetValue
+  fullName: TotalDialogue.Core.Variables.VariableListener<T>.targetValue
+  fullName.vb: TotalDialogue.Core.Variables.VariableListener(Of T).targetValue
+  nameWithType: VariableListener<T>.targetValue
+  nameWithType.vb: VariableListener(Of T).targetValue
+- uid: TotalDialogue.Core.Variables.VariableListener`1.variables
+  name: variables
+  href: api/TotalDialogue.Core.Variables.VariableListener-1.html#TotalDialogue_Core_Variables_VariableListener_1_variables
+  commentId: F:TotalDialogue.Core.Variables.VariableListener`1.variables
+  fullName: TotalDialogue.Core.Variables.VariableListener<T>.variables
+  fullName.vb: TotalDialogue.Core.Variables.VariableListener(Of T).variables
+  nameWithType: VariableListener<T>.variables
+  nameWithType.vb: VariableListener(Of T).variables
+- uid: TotalDialogue.Core.Variables.Vector3Listener
+  name: Vector3Listener
+  href: api/TotalDialogue.Core.Variables.Vector3Listener.html
+  commentId: T:TotalDialogue.Core.Variables.Vector3Listener
+  fullName: TotalDialogue.Core.Variables.Vector3Listener
+  nameWithType: Vector3Listener
+- uid: TotalDialogue.Core.Variables.Vector3Listener.GetValue(System.String)
+  name: GetValue(string)
+  href: api/TotalDialogue.Core.Variables.Vector3Listener.html#TotalDialogue_Core_Variables_Vector3Listener_GetValue_System_String_
+  commentId: M:TotalDialogue.Core.Variables.Vector3Listener.GetValue(System.String)
+  name.vb: GetValue(String)
+  fullName: TotalDialogue.Core.Variables.Vector3Listener.GetValue(string)
+  fullName.vb: TotalDialogue.Core.Variables.Vector3Listener.GetValue(String)
+  nameWithType: Vector3Listener.GetValue(string)
+  nameWithType.vb: Vector3Listener.GetValue(String)
+- uid: TotalDialogue.Core.Variables.Vector3Listener.GetValue*
+  name: GetValue
+  href: api/TotalDialogue.Core.Variables.Vector3Listener.html#TotalDialogue_Core_Variables_Vector3Listener_GetValue_
+  commentId: Overload:TotalDialogue.Core.Variables.Vector3Listener.GetValue
+  isSpec: "True"
+  fullName: TotalDialogue.Core.Variables.Vector3Listener.GetValue
+  nameWithType: Vector3Listener.GetValue
+- uid: TotalDialogue.Core.Variables.Vector3Listener.SetValue(System.String,UnityEngine.Vector3)
+  name: SetValue(string, Vector3)
+  href: api/TotalDialogue.Core.Variables.Vector3Listener.html#TotalDialogue_Core_Variables_Vector3Listener_SetValue_System_String_UnityEngine_Vector3_
+  commentId: M:TotalDialogue.Core.Variables.Vector3Listener.SetValue(System.String,UnityEngine.Vector3)
+  name.vb: SetValue(String, Vector3)
+  fullName: TotalDialogue.Core.Variables.Vector3Listener.SetValue(string, UnityEngine.Vector3)
+  fullName.vb: TotalDialogue.Core.Variables.Vector3Listener.SetValue(String, UnityEngine.Vector3)
+  nameWithType: Vector3Listener.SetValue(string, Vector3)
+  nameWithType.vb: Vector3Listener.SetValue(String, Vector3)
+- uid: TotalDialogue.Core.Variables.Vector3Listener.SetValue*
+  name: SetValue
+  href: api/TotalDialogue.Core.Variables.Vector3Listener.html#TotalDialogue_Core_Variables_Vector3Listener_SetValue_
+  commentId: Overload:TotalDialogue.Core.Variables.Vector3Listener.SetValue
+  isSpec: "True"
+  fullName: TotalDialogue.Core.Variables.Vector3Listener.SetValue
+  nameWithType: Vector3Listener.SetValue
+- uid: TotalDialogue.Core.Variables.Vector3Var
+  name: Vector3Var
+  href: api/TotalDialogue.Core.Variables.Vector3Var.html
+  commentId: T:TotalDialogue.Core.Variables.Vector3Var
+  fullName: TotalDialogue.Core.Variables.Vector3Var
+  nameWithType: Vector3Var
 - uid: TotalDialogue.ITDFList`1
   name: ITDFList<T>
   href: api/TotalDialogue.ITDFList-1.html

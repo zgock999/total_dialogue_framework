@@ -61,7 +61,7 @@ public class TDFListDrawer : PropertyDrawer
 
     public void SubscribeOnChange<T>(object target)
     {
-        var targetList = target as ITDFList<T>;
+        var targetList = target as ITDFList;
         if (targetList == null)
         {
             return;

@@ -72,6 +72,196 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/TotalDialogue.Core.Variables.BoolListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TotalDialogue.Core.Variables.BoolListener.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TotalDialogue.Core.Variables.BoolVar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TotalDialogue.Core.Variables.BoolVar.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TotalDialogue.Core.Variables.FloatListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TotalDialogue.Core.Variables.FloatListener.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TotalDialogue.Core.Variables.FloatVar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TotalDialogue.Core.Variables.FloatVar.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TotalDialogue.Core.Variables.IEmptyVar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TotalDialogue.Core.Variables.IEmptyVar.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TotalDialogue.Core.Variables.ITDFVar-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TotalDialogue.Core.Variables.ITDFVar-2.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TotalDialogue.Core.Variables.IVariables.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TotalDialogue.Core.Variables.IVariables.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TotalDialogue.Core.Variables.IntListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TotalDialogue.Core.Variables.IntListener.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TotalDialogue.Core.Variables.IntVar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TotalDialogue.Core.Variables.IntVar.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TotalDialogue.Core.Variables.QuartanionListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TotalDialogue.Core.Variables.QuartanionListener.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TotalDialogue.Core.Variables.QuartanionVar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TotalDialogue.Core.Variables.QuartanionVar.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TotalDialogue.Core.Variables.StringListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TotalDialogue.Core.Variables.StringListener.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TotalDialogue.Core.Variables.StringVar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TotalDialogue.Core.Variables.StringVar.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TotalDialogue.Core.Variables.TDFVar-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TotalDialogue.Core.Variables.TDFVar-2.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TotalDialogue.Core.Variables.TDFVariables.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TotalDialogue.Core.Variables.TDFVariables.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TotalDialogue.Core.Variables.VariableListener-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TotalDialogue.Core.Variables.VariableListener-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TotalDialogue.Core.Variables.Vector3Listener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TotalDialogue.Core.Variables.Vector3Listener.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TotalDialogue.Core.Variables.Vector3Var.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TotalDialogue.Core.Variables.Vector3Var.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TotalDialogue.Core.Variables.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TotalDialogue.Core.Variables.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/TotalDialogue.ITDFList-1.yml",
       "output": {
         ".html": {

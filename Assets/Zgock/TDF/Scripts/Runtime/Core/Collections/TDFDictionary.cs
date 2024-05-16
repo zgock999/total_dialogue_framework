@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Threading;
+using TotalDialogue.Core.Variables;
 
 namespace TotalDialogue.Core.Collections
 {
@@ -358,6 +359,7 @@ namespace TotalDialogue.Core.Collections
             }
             return pairs;
         }
+
         /// <summary>
         /// DictionaryからTDFDictionaryのインスタンスを生成します。
         /// </summary>
@@ -456,6 +458,10 @@ namespace TotalDialogue.Core.Collections
         IEnumerator<KeyValuePair<TKey, TValue>> IEnumerable<KeyValuePair<TKey, TValue>>.GetEnumerator()
         {
             return internalDictionary.GetEnumerator();
+        }
+        public void AddNew(object key,Type type)
+        {
+            Add(new TDFKeyValuePair<TKey, TValue>((TKey)key, (TValue)Activator.CreateInstance(type)));
         }
     }
 }

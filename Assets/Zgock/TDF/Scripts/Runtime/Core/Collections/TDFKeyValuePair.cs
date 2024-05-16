@@ -27,7 +27,7 @@ namespace TotalDialogue.Core.Collections
         /// </summary>
         [SerializeField]
         [HideInInspector]
-        protected float splitRatio = 0.5f; // 初期の分割比率を50:50に設定
+        protected float splitRatio; // 初期値はDrawerで設定される
         /// <summary>
         /// インスペクタ上でのドラッグ開始フラグ(HideInInspector)
         /// </summary>

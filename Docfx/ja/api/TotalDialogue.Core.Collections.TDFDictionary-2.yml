@@ -43,7 +43,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: TDFDictionary
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs
     startLine: 14
@@ -184,7 +184,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: AsDictionary
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs
     startLine: 29
@@ -217,7 +217,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: Keys
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs
     startLine: 33
@@ -252,7 +252,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: Values
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs
     startLine: 37
@@ -287,7 +287,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: Count
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs
     startLine: 47
@@ -328,7 +328,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: ListCount
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs
     startLine: 57
@@ -366,7 +366,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: .ctor
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs
     startLine: 65
@@ -402,7 +402,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: .ctor
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs
     startLine: 81
@@ -441,7 +441,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: .ctor
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs
     startLine: 91
@@ -473,7 +473,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: IsReadOnly
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs
     startLine: 115
@@ -513,7 +513,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: GetEnumerator
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs
     startLine: 125
@@ -547,7 +547,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: .ctor
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs
     startLine: 140
@@ -582,7 +582,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: ContainsKey
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs
     startLine: 157
@@ -626,7 +626,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: ContainsValue
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs
     startLine: 177
@@ -667,7 +667,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: TryGetValue
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs
     startLine: 199
@@ -716,7 +716,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: this[]
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs
     startLine: 223
@@ -768,7 +768,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: Add
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs
     startLine: 283
@@ -815,7 +815,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: Add
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs
     startLine: 287
@@ -855,7 +855,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: UpdateDuplicates
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs
     startLine: 319
@@ -887,7 +887,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: op_Implicit
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs
     startLine: 339
@@ -923,7 +923,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: op_Implicit
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs
     startLine: 351
@@ -959,7 +959,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: FromDictionary
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs
     startLine: 368
@@ -998,7 +998,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: ToDictionary
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs
     startLine: 380
@@ -1037,7 +1037,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: FromDictionary
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs
     startLine: 392
@@ -1076,7 +1076,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: Add
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs
     startLine: 405
@@ -1117,7 +1117,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: Contains
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs
     startLine: 418
@@ -1161,7 +1161,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: CopyTo
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs
     startLine: 428
@@ -1201,7 +1201,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: Remove
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs
     startLine: 444

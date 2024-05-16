@@ -22,7 +22,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFKeyValuePair.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: TDFKeyValuePair
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFKeyValuePair.cs
     startLine: 11
@@ -80,7 +80,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFKeyValuePair.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: splitRatio
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFKeyValuePair.cs
     startLine: 29
@@ -128,7 +128,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFKeyValuePair.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: isDragging
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFKeyValuePair.cs
     startLine: 35
@@ -176,7 +176,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFKeyValuePair.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: Key
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFKeyValuePair.cs
     startLine: 39
@@ -209,7 +209,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFKeyValuePair.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: Value
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFKeyValuePair.cs
     startLine: 48
@@ -242,7 +242,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFKeyValuePair.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: .ctor
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFKeyValuePair.cs
     startLine: 59
@@ -280,7 +280,7 @@ items:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFKeyValuePair.cs
       branch: master
-      repo: git@github.com:zgock999/TotalDialogueFramework.git
+      repo: git@github.com:zgock999/total_dialogue_framework.git
     id: op_Implicit
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFKeyValuePair.cs
     startLine: 78
