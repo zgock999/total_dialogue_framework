@@ -78,7 +78,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: TDFList
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
-    startLine: 80
+    startLine: 82
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Collections
@@ -93,19 +93,20 @@ items:
     content: >-
       [Serializable]
 
-      public class TDFList<T> : ITDFList<T>, IEnumerable<T>, IEnumerable, ISerializationCallbackReceiver
+      public class TDFList<T> : ITDFList, ITDFListGeneric<T>, IEnumerable<T>, IEnumerable, ISerializationCallbackReceiver
     typeParameters:
     - id: T
     content.vb: >-
       <Serializable>
 
-      Public Class TDFList(Of T) Implements ITDFList(Of T), IEnumerable(Of T), IEnumerable, ISerializationCallbackReceiver
+      Public Class TDFList(Of T) Implements ITDFList, ITDFListGeneric(Of T), IEnumerable(Of T), IEnumerable, ISerializationCallbackReceiver
   inheritance:
   - System.Object
   derivedClasses:
   - TotalDialogue.Core.Collections.TDFKeyValuePairs`2
   implements:
-  - TotalDialogue.Core.Collections.ITDFList{{T}}
+  - TotalDialogue.Core.Collections.ITDFList
+  - TotalDialogue.Core.Collections.ITDFListGeneric{{T}}
   - System.Collections.Generic.IEnumerable{{T}}
   - System.Collections.IEnumerable
   - UnityEngine.ISerializationCallbackReceiver
@@ -142,7 +143,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: list
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
-    startLine: 87
+    startLine: 89
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Collections
@@ -183,7 +184,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: lockObject
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
-    startLine: 91
+    startLine: 93
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Collections
@@ -214,7 +215,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: isLocked
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
-    startLine: 96
+    startLine: 98
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Collections
@@ -245,7 +246,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: lockedThreadId
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
-    startLine: 101
+    startLine: 103
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Collections
@@ -276,7 +277,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: m_serializing
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
-    startLine: 106
+    startLine: 108
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Collections
@@ -307,7 +308,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: Serializing
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
-    startLine: 110
+    startLine: 112
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Collections
@@ -321,7 +322,7 @@ items:
     content.vb: Public ReadOnly Property Serializing As Boolean
   overload: TotalDialogue.Core.Collections.TDFList`1.Serializing*
   implements:
-  - TotalDialogue.Core.Collections.ITDFList{{T}}.Serializing
+  - TotalDialogue.Core.Collections.ITDFList.Serializing
   nameWithType.vb: TDFList(Of T).Serializing
   fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).Serializing
 - uid: TotalDialogue.Core.Collections.TDFList`1.BeginLock
@@ -342,7 +343,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: BeginLock
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
-    startLine: 114
+    startLine: 116
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Collections
@@ -372,7 +373,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: EndLock
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
-    startLine: 138
+    startLine: 140
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Collections
@@ -402,7 +403,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: OnChange
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
-    startLine: 153
+    startLine: 155
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Collections
@@ -414,7 +415,7 @@ items:
       type: System.Action
     content.vb: Public Event OnChange As Action
   implements:
-  - TotalDialogue.Core.Collections.ITDFList{{T}}.OnChange
+  - TotalDialogue.Core.Collections.ITDFList.OnChange
   nameWithType.vb: TDFList(Of T).OnChange
   fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).OnChange
 - uid: TotalDialogue.Core.Collections.TDFList`1.OnAdd
@@ -435,7 +436,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: OnAdd
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
-    startLine: 158
+    startLine: 160
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Collections
@@ -447,7 +448,7 @@ items:
       type: System.Action{System.Int32,{T}}
     content.vb: Public Event OnAdd As Action(Of Integer, T)
   implements:
-  - TotalDialogue.Core.Collections.ITDFList{{T}}.OnAdd
+  - TotalDialogue.Core.Collections.ITDFListGeneric{{T}}.OnAdd
   nameWithType.vb: TDFList(Of T).OnAdd
   fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).OnAdd
 - uid: TotalDialogue.Core.Collections.TDFList`1.OnRemove
@@ -468,7 +469,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: OnRemove
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
-    startLine: 163
+    startLine: 165
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Collections
@@ -480,7 +481,7 @@ items:
       type: System.Action{System.Int32,{T}}
     content.vb: Public Event OnRemove As Action(Of Integer, T)
   implements:
-  - TotalDialogue.Core.Collections.ITDFList{{T}}.OnRemove
+  - TotalDialogue.Core.Collections.ITDFListGeneric{{T}}.OnRemove
   nameWithType.vb: TDFList(Of T).OnRemove
   fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).OnRemove
 - uid: TotalDialogue.Core.Collections.TDFList`1.OnChangeItem
@@ -501,7 +502,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: OnChangeItem
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
-    startLine: 168
+    startLine: 170
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Collections
@@ -513,7 +514,7 @@ items:
       type: System.Action{System.Int32,{T}}
     content.vb: Public Event OnChangeItem As Action(Of Integer, T)
   implements:
-  - TotalDialogue.Core.Collections.ITDFList{{T}}.OnChangeItem
+  - TotalDialogue.Core.Collections.ITDFListGeneric{{T}}.OnChangeItem
   nameWithType.vb: TDFList(Of T).OnChangeItem
   fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).OnChangeItem
 - uid: TotalDialogue.Core.Collections.TDFList`1.Validate
@@ -534,7 +535,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: Validate
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
-    startLine: 175
+    startLine: 177
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Collections
@@ -568,7 +569,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: .ctor
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
-    startLine: 179
+    startLine: 181
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Collections
@@ -599,7 +600,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: .ctor
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
-    startLine: 187
+    startLine: 189
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Collections
@@ -635,7 +636,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: Add
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
-    startLine: 202
+    startLine: 204
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Collections
@@ -660,7 +661,7 @@ items:
     content.vb: Public Overridable Sub Add(item As T)
   overload: TotalDialogue.Core.Collections.TDFList`1.Add*
   implements:
-  - TotalDialogue.Core.Collections.ITDFList{{T}}.Add({T})
+  - TotalDialogue.Core.Collections.ITDFListGeneric{{T}}.Add({T})
   nameWithType.vb: TDFList(Of T).Add(T)
   fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).Add(T)
 - uid: TotalDialogue.Core.Collections.TDFList`1.Remove(`0)
@@ -681,7 +682,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: Remove
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
-    startLine: 231
+    startLine: 233
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Collections
@@ -706,7 +707,7 @@ items:
     content.vb: Public Overridable Sub Remove(item As T)
   overload: TotalDialogue.Core.Collections.TDFList`1.Remove*
   implements:
-  - TotalDialogue.Core.Collections.ITDFList{{T}}.Remove({T})
+  - TotalDialogue.Core.Collections.ITDFListGeneric{{T}}.Remove({T})
   nameWithType.vb: TDFList(Of T).Remove(T)
   fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).Remove(T)
 - uid: TotalDialogue.Core.Collections.TDFList`1.RemoveAt(System.Int32)
@@ -727,7 +728,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: RemoveAt
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
-    startLine: 261
+    startLine: 263
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Collections
@@ -752,7 +753,7 @@ items:
     content.vb: Public Overridable Sub RemoveAt(index As Integer)
   overload: TotalDialogue.Core.Collections.TDFList`1.RemoveAt*
   implements:
-  - TotalDialogue.Core.Collections.ITDFList{{T}}.RemoveAt(System.Int32)
+  - TotalDialogue.Core.Collections.ITDFList.RemoveAt(System.Int32)
   nameWithType.vb: TDFList(Of T).RemoveAt(Integer)
   fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).RemoveAt(Integer)
   name.vb: RemoveAt(Integer)
@@ -774,7 +775,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: Count
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
-    startLine: 287
+    startLine: 289
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Collections
@@ -790,7 +791,7 @@ items:
     content.vb: Public Overridable ReadOnly Property Count As Integer
   overload: TotalDialogue.Core.Collections.TDFList`1.Count*
   implements:
-  - TotalDialogue.Core.Collections.ITDFList{{T}}.Count
+  - TotalDialogue.Core.Collections.ITDFList.Count
   nameWithType.vb: TDFList(Of T).Count
   fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).Count
 - uid: TotalDialogue.Core.Collections.TDFList`1.Item(System.Int32)
@@ -811,7 +812,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: this[]
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
-    startLine: 313
+    startLine: 315
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Collections
@@ -839,7 +840,7 @@ items:
     content.vb: Public Overridable Default Property this[](index As Integer) As T
   overload: TotalDialogue.Core.Collections.TDFList`1.Item*
   implements:
-  - TotalDialogue.Core.Collections.ITDFList{{T}}.Item(System.Int32)
+  - TotalDialogue.Core.Collections.ITDFListGeneric{{T}}.Item(System.Int32)
   nameWithType.vb: TDFList(Of T).this[](Integer)
   fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).this[](Integer)
   name.vb: this[](Integer)
@@ -861,7 +862,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: Clear
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
-    startLine: 353
+    startLine: 355
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Collections
@@ -897,7 +898,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: Insert
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
-    startLine: 378
+    startLine: 380
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Collections
@@ -945,7 +946,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: AddRange
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
-    startLine: 407
+    startLine: 409
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Collections
@@ -990,7 +991,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: RemoveRange
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
-    startLine: 435
+    startLine: 437
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Collections
@@ -1038,7 +1039,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: Sort
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
-    startLine: 457
+    startLine: 459
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Collections
@@ -1079,7 +1080,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: Sort
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
-    startLine: 479
+    startLine: 481
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Collections
@@ -1120,7 +1121,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: Sort
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
-    startLine: 503
+    startLine: 505
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Collections
@@ -1167,7 +1168,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: Reverse
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
-    startLine: 524
+    startLine: 526
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Collections
@@ -1203,7 +1204,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: Reverse
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
-    startLine: 547
+    startLine: 549
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Collections
@@ -1247,7 +1248,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: CopyTo
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
-    startLine: 568
+    startLine: 570
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Collections
@@ -1286,7 +1287,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: ForEach
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
-    startLine: 588
+    startLine: 590
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Collections
@@ -1328,7 +1329,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: GetEnumerator
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
-    startLine: 614
+    startLine: 616
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Collections
@@ -1362,7 +1363,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: GetRange
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
-    startLine: 634
+    startLine: 636
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Collections
@@ -1404,7 +1405,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: IndexOf
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
-    startLine: 653
+    startLine: 655
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Collections
@@ -1442,7 +1443,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: LastIndexOf
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
-    startLine: 672
+    startLine: 674
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Collections
@@ -1480,7 +1481,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: Contains
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
-    startLine: 691
+    startLine: 693
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Collections
@@ -1518,7 +1519,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: Find
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
-    startLine: 710
+    startLine: 712
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Collections
@@ -1557,7 +1558,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: FindAll
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
-    startLine: 729
+    startLine: 731
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Collections
@@ -1596,7 +1597,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: FindIndex
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
-    startLine: 748
+    startLine: 750
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Collections
@@ -1635,7 +1636,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: FindIndex
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
-    startLine: 768
+    startLine: 770
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Collections
@@ -1677,7 +1678,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: FindIndex
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
-    startLine: 789
+    startLine: 791
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Collections
@@ -1722,7 +1723,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: FindLast
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
-    startLine: 808
+    startLine: 810
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Collections
@@ -1761,7 +1762,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: FindLastIndex
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
-    startLine: 827
+    startLine: 829
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Collections
@@ -1800,7 +1801,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: FindLastIndex
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
-    startLine: 847
+    startLine: 849
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Collections
@@ -1842,7 +1843,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: FindLastIndex
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
-    startLine: 868
+    startLine: 870
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Collections
@@ -1887,7 +1888,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: RemoveAll
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
-    startLine: 889
+    startLine: 891
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Collections
@@ -1931,7 +1932,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: ToArray
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
-    startLine: 910
+    startLine: 912
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Collections
@@ -1965,7 +1966,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: TrimExcess
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
-    startLine: 930
+    startLine: 932
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Collections
@@ -2001,7 +2002,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: TrueForAll
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
-    startLine: 954
+    startLine: 956
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Collections
@@ -2040,7 +2041,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: AddRange
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
-    startLine: 1008
+    startLine: 1010
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Collections
@@ -2076,7 +2077,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: RemoveRange
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
-    startLine: 1028
+    startLine: 1030
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Collections
@@ -2112,7 +2113,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: GetItemType
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
-    startLine: 1048
+    startLine: 1050
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Collections
@@ -2145,7 +2146,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: UpdateDuplicates
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
-    startLine: 1060
+    startLine: 1062
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Collections
@@ -2181,7 +2182,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: OnBeforeSerialize
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
-    startLine: 1066
+    startLine: 1068
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Collections
@@ -2213,7 +2214,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: OnAfterDeserialize
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
-    startLine: 1075
+    startLine: 1077
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Collections
@@ -2245,7 +2246,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: InvokeOnChange
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
-    startLine: 1084
+    startLine: 1086
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Collections
@@ -2275,7 +2276,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: InvokeOnChangeItem
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
-    startLine: 1092
+    startLine: 1094
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Collections
@@ -2311,7 +2312,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: InvokeOnAdd
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
-    startLine: 1099
+    startLine: 1101
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Collections
@@ -2347,7 +2348,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: InvokeOnRemove
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
-    startLine: 1106
+    startLine: 1108
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Collections
@@ -2407,28 +2408,35 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
-- uid: TotalDialogue.Core.Collections.ITDFList{{T}}
-  commentId: T:TotalDialogue.Core.Collections.ITDFList{`0}
+- uid: TotalDialogue.Core.Collections.ITDFList
+  commentId: T:TotalDialogue.Core.Collections.ITDFList
   parent: TotalDialogue.Core.Collections
-  definition: TotalDialogue.Core.Collections.ITDFList`1
-  href: TotalDialogue.Core.Collections.ITDFList-1.html
-  name: ITDFList<T>
-  nameWithType: ITDFList<T>
-  fullName: TotalDialogue.Core.Collections.ITDFList<T>
-  nameWithType.vb: ITDFList(Of T)
-  fullName.vb: TotalDialogue.Core.Collections.ITDFList(Of T)
-  name.vb: ITDFList(Of T)
+  href: TotalDialogue.Core.Collections.ITDFList.html
+  name: ITDFList
+  nameWithType: ITDFList
+  fullName: TotalDialogue.Core.Collections.ITDFList
+- uid: TotalDialogue.Core.Collections.ITDFListGeneric{{T}}
+  commentId: T:TotalDialogue.Core.Collections.ITDFListGeneric{`0}
+  parent: TotalDialogue.Core.Collections
+  definition: TotalDialogue.Core.Collections.ITDFListGeneric`1
+  href: TotalDialogue.Core.Collections.ITDFListGeneric-1.html
+  name: ITDFListGeneric<T>
+  nameWithType: ITDFListGeneric<T>
+  fullName: TotalDialogue.Core.Collections.ITDFListGeneric<T>
+  nameWithType.vb: ITDFListGeneric(Of T)
+  fullName.vb: TotalDialogue.Core.Collections.ITDFListGeneric(Of T)
+  name.vb: ITDFListGeneric(Of T)
   spec.csharp:
-  - uid: TotalDialogue.Core.Collections.ITDFList`1
-    name: ITDFList
-    href: TotalDialogue.Core.Collections.ITDFList-1.html
+  - uid: TotalDialogue.Core.Collections.ITDFListGeneric`1
+    name: ITDFListGeneric
+    href: TotalDialogue.Core.Collections.ITDFListGeneric-1.html
   - name: <
   - name: T
   - name: '>'
   spec.vb:
-  - uid: TotalDialogue.Core.Collections.ITDFList`1
-    name: ITDFList
-    href: TotalDialogue.Core.Collections.ITDFList-1.html
+  - uid: TotalDialogue.Core.Collections.ITDFListGeneric`1
+    name: ITDFListGeneric
+    href: TotalDialogue.Core.Collections.ITDFListGeneric-1.html
   - name: (
   - name: Of
   - name: " "
@@ -2704,26 +2712,26 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: TotalDialogue.Core.Collections.ITDFList`1
-  commentId: T:TotalDialogue.Core.Collections.ITDFList`1
-  href: TotalDialogue.Core.Collections.ITDFList-1.html
-  name: ITDFList<T>
-  nameWithType: ITDFList<T>
-  fullName: TotalDialogue.Core.Collections.ITDFList<T>
-  nameWithType.vb: ITDFList(Of T)
-  fullName.vb: TotalDialogue.Core.Collections.ITDFList(Of T)
-  name.vb: ITDFList(Of T)
+- uid: TotalDialogue.Core.Collections.ITDFListGeneric`1
+  commentId: T:TotalDialogue.Core.Collections.ITDFListGeneric`1
+  href: TotalDialogue.Core.Collections.ITDFListGeneric-1.html
+  name: ITDFListGeneric<T>
+  nameWithType: ITDFListGeneric<T>
+  fullName: TotalDialogue.Core.Collections.ITDFListGeneric<T>
+  nameWithType.vb: ITDFListGeneric(Of T)
+  fullName.vb: TotalDialogue.Core.Collections.ITDFListGeneric(Of T)
+  name.vb: ITDFListGeneric(Of T)
   spec.csharp:
-  - uid: TotalDialogue.Core.Collections.ITDFList`1
-    name: ITDFList
-    href: TotalDialogue.Core.Collections.ITDFList-1.html
+  - uid: TotalDialogue.Core.Collections.ITDFListGeneric`1
+    name: ITDFListGeneric
+    href: TotalDialogue.Core.Collections.ITDFListGeneric-1.html
   - name: <
   - name: T
   - name: '>'
   spec.vb:
-  - uid: TotalDialogue.Core.Collections.ITDFList`1
-    name: ITDFList
-    href: TotalDialogue.Core.Collections.ITDFList-1.html
+  - uid: TotalDialogue.Core.Collections.ITDFListGeneric`1
+    name: ITDFListGeneric
+    href: TotalDialogue.Core.Collections.ITDFListGeneric-1.html
   - name: (
   - name: Of
   - name: " "
@@ -2914,24 +2922,13 @@ references:
   fullName: TotalDialogue.Core.Collections.TDFList<T>.Serializing
   nameWithType.vb: TDFList(Of T).Serializing
   fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).Serializing
-- uid: TotalDialogue.Core.Collections.ITDFList{{T}}.Serializing
-  commentId: P:TotalDialogue.Core.Collections.ITDFList{`0}.Serializing
-  parent: TotalDialogue.Core.Collections.ITDFList{{T}}
-  definition: TotalDialogue.Core.Collections.ITDFList`1.Serializing
-  href: TotalDialogue.Core.Collections.ITDFList-1.html#TotalDialogue_Core_Collections_ITDFList_1_Serializing
+- uid: TotalDialogue.Core.Collections.ITDFList.Serializing
+  commentId: P:TotalDialogue.Core.Collections.ITDFList.Serializing
+  parent: TotalDialogue.Core.Collections.ITDFList
+  href: TotalDialogue.Core.Collections.ITDFList.html#TotalDialogue_Core_Collections_ITDFList_Serializing
   name: Serializing
-  nameWithType: ITDFList<T>.Serializing
-  fullName: TotalDialogue.Core.Collections.ITDFList<T>.Serializing
-  nameWithType.vb: ITDFList(Of T).Serializing
-  fullName.vb: TotalDialogue.Core.Collections.ITDFList(Of T).Serializing
-- uid: TotalDialogue.Core.Collections.ITDFList`1.Serializing
-  commentId: P:TotalDialogue.Core.Collections.ITDFList`1.Serializing
-  href: TotalDialogue.Core.Collections.ITDFList-1.html#TotalDialogue_Core_Collections_ITDFList_1_Serializing
-  name: Serializing
-  nameWithType: ITDFList<T>.Serializing
-  fullName: TotalDialogue.Core.Collections.ITDFList<T>.Serializing
-  nameWithType.vb: ITDFList(Of T).Serializing
-  fullName.vb: TotalDialogue.Core.Collections.ITDFList(Of T).Serializing
+  nameWithType: ITDFList.Serializing
+  fullName: TotalDialogue.Core.Collections.ITDFList.Serializing
 - uid: TotalDialogue.Core.Collections.TDFList`1.BeginLock*
   commentId: Overload:TotalDialogue.Core.Collections.TDFList`1.BeginLock
   href: TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_BeginLock
@@ -2948,16 +2945,13 @@ references:
   fullName: TotalDialogue.Core.Collections.TDFList<T>.EndLock
   nameWithType.vb: TDFList(Of T).EndLock
   fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).EndLock
-- uid: TotalDialogue.Core.Collections.ITDFList{{T}}.OnChange
-  commentId: E:TotalDialogue.Core.Collections.ITDFList{`0}.OnChange
-  parent: TotalDialogue.Core.Collections.ITDFList{{T}}
-  definition: TotalDialogue.Core.Collections.ITDFList`1.OnChange
-  href: TotalDialogue.Core.Collections.ITDFList-1.html#TotalDialogue_Core_Collections_ITDFList_1_OnChange
+- uid: TotalDialogue.Core.Collections.ITDFList.OnChange
+  commentId: E:TotalDialogue.Core.Collections.ITDFList.OnChange
+  parent: TotalDialogue.Core.Collections.ITDFList
+  href: TotalDialogue.Core.Collections.ITDFList.html#TotalDialogue_Core_Collections_ITDFList_OnChange
   name: OnChange
-  nameWithType: ITDFList<T>.OnChange
-  fullName: TotalDialogue.Core.Collections.ITDFList<T>.OnChange
-  nameWithType.vb: ITDFList(Of T).OnChange
-  fullName.vb: TotalDialogue.Core.Collections.ITDFList(Of T).OnChange
+  nameWithType: ITDFList.OnChange
+  fullName: TotalDialogue.Core.Collections.ITDFList.OnChange
 - uid: System.Action
   commentId: T:System.Action
   parent: System
@@ -2966,24 +2960,16 @@ references:
   name: Action
   nameWithType: Action
   fullName: System.Action
-- uid: TotalDialogue.Core.Collections.ITDFList`1.OnChange
-  commentId: E:TotalDialogue.Core.Collections.ITDFList`1.OnChange
-  href: TotalDialogue.Core.Collections.ITDFList-1.html#TotalDialogue_Core_Collections_ITDFList_1_OnChange
-  name: OnChange
-  nameWithType: ITDFList<T>.OnChange
-  fullName: TotalDialogue.Core.Collections.ITDFList<T>.OnChange
-  nameWithType.vb: ITDFList(Of T).OnChange
-  fullName.vb: TotalDialogue.Core.Collections.ITDFList(Of T).OnChange
-- uid: TotalDialogue.Core.Collections.ITDFList{{T}}.OnAdd
-  commentId: E:TotalDialogue.Core.Collections.ITDFList{`0}.OnAdd
-  parent: TotalDialogue.Core.Collections.ITDFList{{T}}
-  definition: TotalDialogue.Core.Collections.ITDFList`1.OnAdd
-  href: TotalDialogue.Core.Collections.ITDFList-1.html#TotalDialogue_Core_Collections_ITDFList_1_OnAdd
+- uid: TotalDialogue.Core.Collections.ITDFListGeneric{{T}}.OnAdd
+  commentId: E:TotalDialogue.Core.Collections.ITDFListGeneric{`0}.OnAdd
+  parent: TotalDialogue.Core.Collections.ITDFListGeneric{{T}}
+  definition: TotalDialogue.Core.Collections.ITDFListGeneric`1.OnAdd
+  href: TotalDialogue.Core.Collections.ITDFListGeneric-1.html#TotalDialogue_Core_Collections_ITDFListGeneric_1_OnAdd
   name: OnAdd
-  nameWithType: ITDFList<T>.OnAdd
-  fullName: TotalDialogue.Core.Collections.ITDFList<T>.OnAdd
-  nameWithType.vb: ITDFList(Of T).OnAdd
-  fullName.vb: TotalDialogue.Core.Collections.ITDFList(Of T).OnAdd
+  nameWithType: ITDFListGeneric<T>.OnAdd
+  fullName: TotalDialogue.Core.Collections.ITDFListGeneric<T>.OnAdd
+  nameWithType.vb: ITDFListGeneric(Of T).OnAdd
+  fullName.vb: TotalDialogue.Core.Collections.ITDFListGeneric(Of T).OnAdd
 - uid: System.Action{System.Int32,{T}}
   commentId: T:System.Action{System.Int32,`0}
   parent: System
@@ -3025,14 +3011,14 @@ references:
   - name: " "
   - name: T
   - name: )
-- uid: TotalDialogue.Core.Collections.ITDFList`1.OnAdd
-  commentId: E:TotalDialogue.Core.Collections.ITDFList`1.OnAdd
-  href: TotalDialogue.Core.Collections.ITDFList-1.html#TotalDialogue_Core_Collections_ITDFList_1_OnAdd
+- uid: TotalDialogue.Core.Collections.ITDFListGeneric`1.OnAdd
+  commentId: E:TotalDialogue.Core.Collections.ITDFListGeneric`1.OnAdd
+  href: TotalDialogue.Core.Collections.ITDFListGeneric-1.html#TotalDialogue_Core_Collections_ITDFListGeneric_1_OnAdd
   name: OnAdd
-  nameWithType: ITDFList<T>.OnAdd
-  fullName: TotalDialogue.Core.Collections.ITDFList<T>.OnAdd
-  nameWithType.vb: ITDFList(Of T).OnAdd
-  fullName.vb: TotalDialogue.Core.Collections.ITDFList(Of T).OnAdd
+  nameWithType: ITDFListGeneric<T>.OnAdd
+  fullName: TotalDialogue.Core.Collections.ITDFListGeneric<T>.OnAdd
+  nameWithType.vb: ITDFListGeneric(Of T).OnAdd
+  fullName.vb: TotalDialogue.Core.Collections.ITDFListGeneric(Of T).OnAdd
 - uid: System.Action`2
   commentId: T:System.Action`2
   isExternal: true
@@ -3067,42 +3053,42 @@ references:
   - name: " "
   - name: T2
   - name: )
-- uid: TotalDialogue.Core.Collections.ITDFList{{T}}.OnRemove
-  commentId: E:TotalDialogue.Core.Collections.ITDFList{`0}.OnRemove
-  parent: TotalDialogue.Core.Collections.ITDFList{{T}}
-  definition: TotalDialogue.Core.Collections.ITDFList`1.OnRemove
-  href: TotalDialogue.Core.Collections.ITDFList-1.html#TotalDialogue_Core_Collections_ITDFList_1_OnRemove
+- uid: TotalDialogue.Core.Collections.ITDFListGeneric{{T}}.OnRemove
+  commentId: E:TotalDialogue.Core.Collections.ITDFListGeneric{`0}.OnRemove
+  parent: TotalDialogue.Core.Collections.ITDFListGeneric{{T}}
+  definition: TotalDialogue.Core.Collections.ITDFListGeneric`1.OnRemove
+  href: TotalDialogue.Core.Collections.ITDFListGeneric-1.html#TotalDialogue_Core_Collections_ITDFListGeneric_1_OnRemove
   name: OnRemove
-  nameWithType: ITDFList<T>.OnRemove
-  fullName: TotalDialogue.Core.Collections.ITDFList<T>.OnRemove
-  nameWithType.vb: ITDFList(Of T).OnRemove
-  fullName.vb: TotalDialogue.Core.Collections.ITDFList(Of T).OnRemove
-- uid: TotalDialogue.Core.Collections.ITDFList`1.OnRemove
-  commentId: E:TotalDialogue.Core.Collections.ITDFList`1.OnRemove
-  href: TotalDialogue.Core.Collections.ITDFList-1.html#TotalDialogue_Core_Collections_ITDFList_1_OnRemove
+  nameWithType: ITDFListGeneric<T>.OnRemove
+  fullName: TotalDialogue.Core.Collections.ITDFListGeneric<T>.OnRemove
+  nameWithType.vb: ITDFListGeneric(Of T).OnRemove
+  fullName.vb: TotalDialogue.Core.Collections.ITDFListGeneric(Of T).OnRemove
+- uid: TotalDialogue.Core.Collections.ITDFListGeneric`1.OnRemove
+  commentId: E:TotalDialogue.Core.Collections.ITDFListGeneric`1.OnRemove
+  href: TotalDialogue.Core.Collections.ITDFListGeneric-1.html#TotalDialogue_Core_Collections_ITDFListGeneric_1_OnRemove
   name: OnRemove
-  nameWithType: ITDFList<T>.OnRemove
-  fullName: TotalDialogue.Core.Collections.ITDFList<T>.OnRemove
-  nameWithType.vb: ITDFList(Of T).OnRemove
-  fullName.vb: TotalDialogue.Core.Collections.ITDFList(Of T).OnRemove
-- uid: TotalDialogue.Core.Collections.ITDFList{{T}}.OnChangeItem
-  commentId: E:TotalDialogue.Core.Collections.ITDFList{`0}.OnChangeItem
-  parent: TotalDialogue.Core.Collections.ITDFList{{T}}
-  definition: TotalDialogue.Core.Collections.ITDFList`1.OnChangeItem
-  href: TotalDialogue.Core.Collections.ITDFList-1.html#TotalDialogue_Core_Collections_ITDFList_1_OnChangeItem
+  nameWithType: ITDFListGeneric<T>.OnRemove
+  fullName: TotalDialogue.Core.Collections.ITDFListGeneric<T>.OnRemove
+  nameWithType.vb: ITDFListGeneric(Of T).OnRemove
+  fullName.vb: TotalDialogue.Core.Collections.ITDFListGeneric(Of T).OnRemove
+- uid: TotalDialogue.Core.Collections.ITDFListGeneric{{T}}.OnChangeItem
+  commentId: E:TotalDialogue.Core.Collections.ITDFListGeneric{`0}.OnChangeItem
+  parent: TotalDialogue.Core.Collections.ITDFListGeneric{{T}}
+  definition: TotalDialogue.Core.Collections.ITDFListGeneric`1.OnChangeItem
+  href: TotalDialogue.Core.Collections.ITDFListGeneric-1.html#TotalDialogue_Core_Collections_ITDFListGeneric_1_OnChangeItem
   name: OnChangeItem
-  nameWithType: ITDFList<T>.OnChangeItem
-  fullName: TotalDialogue.Core.Collections.ITDFList<T>.OnChangeItem
-  nameWithType.vb: ITDFList(Of T).OnChangeItem
-  fullName.vb: TotalDialogue.Core.Collections.ITDFList(Of T).OnChangeItem
-- uid: TotalDialogue.Core.Collections.ITDFList`1.OnChangeItem
-  commentId: E:TotalDialogue.Core.Collections.ITDFList`1.OnChangeItem
-  href: TotalDialogue.Core.Collections.ITDFList-1.html#TotalDialogue_Core_Collections_ITDFList_1_OnChangeItem
+  nameWithType: ITDFListGeneric<T>.OnChangeItem
+  fullName: TotalDialogue.Core.Collections.ITDFListGeneric<T>.OnChangeItem
+  nameWithType.vb: ITDFListGeneric(Of T).OnChangeItem
+  fullName.vb: TotalDialogue.Core.Collections.ITDFListGeneric(Of T).OnChangeItem
+- uid: TotalDialogue.Core.Collections.ITDFListGeneric`1.OnChangeItem
+  commentId: E:TotalDialogue.Core.Collections.ITDFListGeneric`1.OnChangeItem
+  href: TotalDialogue.Core.Collections.ITDFListGeneric-1.html#TotalDialogue_Core_Collections_ITDFListGeneric_1_OnChangeItem
   name: OnChangeItem
-  nameWithType: ITDFList<T>.OnChangeItem
-  fullName: TotalDialogue.Core.Collections.ITDFList<T>.OnChangeItem
-  nameWithType.vb: ITDFList(Of T).OnChangeItem
-  fullName.vb: TotalDialogue.Core.Collections.ITDFList(Of T).OnChangeItem
+  nameWithType: ITDFListGeneric<T>.OnChangeItem
+  fullName: TotalDialogue.Core.Collections.ITDFListGeneric<T>.OnChangeItem
+  nameWithType.vb: ITDFListGeneric(Of T).OnChangeItem
+  fullName.vb: TotalDialogue.Core.Collections.ITDFListGeneric(Of T).OnChangeItem
 - uid: TotalDialogue.Core.Collections.TDFList`1.Validate*
   commentId: Overload:TotalDialogue.Core.Collections.TDFList`1.Validate
   href: TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_Validate
@@ -3209,27 +3195,27 @@ references:
   fullName: TotalDialogue.Core.Collections.TDFList<T>.Add
   nameWithType.vb: TDFList(Of T).Add
   fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).Add
-- uid: TotalDialogue.Core.Collections.ITDFList{{T}}.Add({T})
-  commentId: M:TotalDialogue.Core.Collections.ITDFList{`0}.Add(`0)
-  parent: TotalDialogue.Core.Collections.ITDFList{{T}}
-  definition: TotalDialogue.Core.Collections.ITDFList`1.Add(`0)
-  href: TotalDialogue.Core.Collections.ITDFList-1.html#TotalDialogue_Core_Collections_ITDFList_1_Add__0_
+- uid: TotalDialogue.Core.Collections.ITDFListGeneric{{T}}.Add({T})
+  commentId: M:TotalDialogue.Core.Collections.ITDFListGeneric{`0}.Add(`0)
+  parent: TotalDialogue.Core.Collections.ITDFListGeneric{{T}}
+  definition: TotalDialogue.Core.Collections.ITDFListGeneric`1.Add(`0)
+  href: TotalDialogue.Core.Collections.ITDFListGeneric-1.html#TotalDialogue_Core_Collections_ITDFListGeneric_1_Add__0_
   name: Add(T)
-  nameWithType: ITDFList<T>.Add(T)
-  fullName: TotalDialogue.Core.Collections.ITDFList<T>.Add(T)
-  nameWithType.vb: ITDFList(Of T).Add(T)
-  fullName.vb: TotalDialogue.Core.Collections.ITDFList(Of T).Add(T)
+  nameWithType: ITDFListGeneric<T>.Add(T)
+  fullName: TotalDialogue.Core.Collections.ITDFListGeneric<T>.Add(T)
+  nameWithType.vb: ITDFListGeneric(Of T).Add(T)
+  fullName.vb: TotalDialogue.Core.Collections.ITDFListGeneric(Of T).Add(T)
   spec.csharp:
-  - uid: TotalDialogue.Core.Collections.ITDFList{`0}.Add(`0)
+  - uid: TotalDialogue.Core.Collections.ITDFListGeneric{`0}.Add(`0)
     name: Add
-    href: TotalDialogue.Core.Collections.ITDFList-1.html#TotalDialogue_Core_Collections_ITDFList_1_Add__0_
+    href: TotalDialogue.Core.Collections.ITDFListGeneric-1.html#TotalDialogue_Core_Collections_ITDFListGeneric_1_Add__0_
   - name: (
   - name: T
   - name: )
   spec.vb:
-  - uid: TotalDialogue.Core.Collections.ITDFList{`0}.Add(`0)
+  - uid: TotalDialogue.Core.Collections.ITDFListGeneric{`0}.Add(`0)
     name: Add
-    href: TotalDialogue.Core.Collections.ITDFList-1.html#TotalDialogue_Core_Collections_ITDFList_1_Add__0_
+    href: TotalDialogue.Core.Collections.ITDFListGeneric-1.html#TotalDialogue_Core_Collections_ITDFListGeneric_1_Add__0_
   - name: (
   - name: T
   - name: )
@@ -3239,25 +3225,25 @@ references:
   name: T
   nameWithType: T
   fullName: T
-- uid: TotalDialogue.Core.Collections.ITDFList`1.Add(`0)
-  commentId: M:TotalDialogue.Core.Collections.ITDFList`1.Add(`0)
-  href: TotalDialogue.Core.Collections.ITDFList-1.html#TotalDialogue_Core_Collections_ITDFList_1_Add__0_
+- uid: TotalDialogue.Core.Collections.ITDFListGeneric`1.Add(`0)
+  commentId: M:TotalDialogue.Core.Collections.ITDFListGeneric`1.Add(`0)
+  href: TotalDialogue.Core.Collections.ITDFListGeneric-1.html#TotalDialogue_Core_Collections_ITDFListGeneric_1_Add__0_
   name: Add(T)
-  nameWithType: ITDFList<T>.Add(T)
-  fullName: TotalDialogue.Core.Collections.ITDFList<T>.Add(T)
-  nameWithType.vb: ITDFList(Of T).Add(T)
-  fullName.vb: TotalDialogue.Core.Collections.ITDFList(Of T).Add(T)
+  nameWithType: ITDFListGeneric<T>.Add(T)
+  fullName: TotalDialogue.Core.Collections.ITDFListGeneric<T>.Add(T)
+  nameWithType.vb: ITDFListGeneric(Of T).Add(T)
+  fullName.vb: TotalDialogue.Core.Collections.ITDFListGeneric(Of T).Add(T)
   spec.csharp:
-  - uid: TotalDialogue.Core.Collections.ITDFList`1.Add(`0)
+  - uid: TotalDialogue.Core.Collections.ITDFListGeneric`1.Add(`0)
     name: Add
-    href: TotalDialogue.Core.Collections.ITDFList-1.html#TotalDialogue_Core_Collections_ITDFList_1_Add__0_
+    href: TotalDialogue.Core.Collections.ITDFListGeneric-1.html#TotalDialogue_Core_Collections_ITDFListGeneric_1_Add__0_
   - name: (
   - name: T
   - name: )
   spec.vb:
-  - uid: TotalDialogue.Core.Collections.ITDFList`1.Add(`0)
+  - uid: TotalDialogue.Core.Collections.ITDFListGeneric`1.Add(`0)
     name: Add
-    href: TotalDialogue.Core.Collections.ITDFList-1.html#TotalDialogue_Core_Collections_ITDFList_1_Add__0_
+    href: TotalDialogue.Core.Collections.ITDFListGeneric-1.html#TotalDialogue_Core_Collections_ITDFListGeneric_1_Add__0_
   - name: (
   - name: T
   - name: )
@@ -3273,49 +3259,49 @@ references:
   fullName: TotalDialogue.Core.Collections.TDFList<T>.Remove
   nameWithType.vb: TDFList(Of T).Remove
   fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).Remove
-- uid: TotalDialogue.Core.Collections.ITDFList{{T}}.Remove({T})
-  commentId: M:TotalDialogue.Core.Collections.ITDFList{`0}.Remove(`0)
-  parent: TotalDialogue.Core.Collections.ITDFList{{T}}
-  definition: TotalDialogue.Core.Collections.ITDFList`1.Remove(`0)
-  href: TotalDialogue.Core.Collections.ITDFList-1.html#TotalDialogue_Core_Collections_ITDFList_1_Remove__0_
+- uid: TotalDialogue.Core.Collections.ITDFListGeneric{{T}}.Remove({T})
+  commentId: M:TotalDialogue.Core.Collections.ITDFListGeneric{`0}.Remove(`0)
+  parent: TotalDialogue.Core.Collections.ITDFListGeneric{{T}}
+  definition: TotalDialogue.Core.Collections.ITDFListGeneric`1.Remove(`0)
+  href: TotalDialogue.Core.Collections.ITDFListGeneric-1.html#TotalDialogue_Core_Collections_ITDFListGeneric_1_Remove__0_
   name: Remove(T)
-  nameWithType: ITDFList<T>.Remove(T)
-  fullName: TotalDialogue.Core.Collections.ITDFList<T>.Remove(T)
-  nameWithType.vb: ITDFList(Of T).Remove(T)
-  fullName.vb: TotalDialogue.Core.Collections.ITDFList(Of T).Remove(T)
+  nameWithType: ITDFListGeneric<T>.Remove(T)
+  fullName: TotalDialogue.Core.Collections.ITDFListGeneric<T>.Remove(T)
+  nameWithType.vb: ITDFListGeneric(Of T).Remove(T)
+  fullName.vb: TotalDialogue.Core.Collections.ITDFListGeneric(Of T).Remove(T)
   spec.csharp:
-  - uid: TotalDialogue.Core.Collections.ITDFList{`0}.Remove(`0)
+  - uid: TotalDialogue.Core.Collections.ITDFListGeneric{`0}.Remove(`0)
     name: Remove
-    href: TotalDialogue.Core.Collections.ITDFList-1.html#TotalDialogue_Core_Collections_ITDFList_1_Remove__0_
+    href: TotalDialogue.Core.Collections.ITDFListGeneric-1.html#TotalDialogue_Core_Collections_ITDFListGeneric_1_Remove__0_
   - name: (
   - name: T
   - name: )
   spec.vb:
-  - uid: TotalDialogue.Core.Collections.ITDFList{`0}.Remove(`0)
+  - uid: TotalDialogue.Core.Collections.ITDFListGeneric{`0}.Remove(`0)
     name: Remove
-    href: TotalDialogue.Core.Collections.ITDFList-1.html#TotalDialogue_Core_Collections_ITDFList_1_Remove__0_
+    href: TotalDialogue.Core.Collections.ITDFListGeneric-1.html#TotalDialogue_Core_Collections_ITDFListGeneric_1_Remove__0_
   - name: (
   - name: T
   - name: )
-- uid: TotalDialogue.Core.Collections.ITDFList`1.Remove(`0)
-  commentId: M:TotalDialogue.Core.Collections.ITDFList`1.Remove(`0)
-  href: TotalDialogue.Core.Collections.ITDFList-1.html#TotalDialogue_Core_Collections_ITDFList_1_Remove__0_
+- uid: TotalDialogue.Core.Collections.ITDFListGeneric`1.Remove(`0)
+  commentId: M:TotalDialogue.Core.Collections.ITDFListGeneric`1.Remove(`0)
+  href: TotalDialogue.Core.Collections.ITDFListGeneric-1.html#TotalDialogue_Core_Collections_ITDFListGeneric_1_Remove__0_
   name: Remove(T)
-  nameWithType: ITDFList<T>.Remove(T)
-  fullName: TotalDialogue.Core.Collections.ITDFList<T>.Remove(T)
-  nameWithType.vb: ITDFList(Of T).Remove(T)
-  fullName.vb: TotalDialogue.Core.Collections.ITDFList(Of T).Remove(T)
+  nameWithType: ITDFListGeneric<T>.Remove(T)
+  fullName: TotalDialogue.Core.Collections.ITDFListGeneric<T>.Remove(T)
+  nameWithType.vb: ITDFListGeneric(Of T).Remove(T)
+  fullName.vb: TotalDialogue.Core.Collections.ITDFListGeneric(Of T).Remove(T)
   spec.csharp:
-  - uid: TotalDialogue.Core.Collections.ITDFList`1.Remove(`0)
+  - uid: TotalDialogue.Core.Collections.ITDFListGeneric`1.Remove(`0)
     name: Remove
-    href: TotalDialogue.Core.Collections.ITDFList-1.html#TotalDialogue_Core_Collections_ITDFList_1_Remove__0_
+    href: TotalDialogue.Core.Collections.ITDFListGeneric-1.html#TotalDialogue_Core_Collections_ITDFListGeneric_1_Remove__0_
   - name: (
   - name: T
   - name: )
   spec.vb:
-  - uid: TotalDialogue.Core.Collections.ITDFList`1.Remove(`0)
+  - uid: TotalDialogue.Core.Collections.ITDFListGeneric`1.Remove(`0)
     name: Remove
-    href: TotalDialogue.Core.Collections.ITDFList-1.html#TotalDialogue_Core_Collections_ITDFList_1_Remove__0_
+    href: TotalDialogue.Core.Collections.ITDFListGeneric-1.html#TotalDialogue_Core_Collections_ITDFListGeneric_1_Remove__0_
   - name: (
   - name: T
   - name: )
@@ -3327,51 +3313,21 @@ references:
   fullName: TotalDialogue.Core.Collections.TDFList<T>.RemoveAt
   nameWithType.vb: TDFList(Of T).RemoveAt
   fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).RemoveAt
-- uid: TotalDialogue.Core.Collections.ITDFList{{T}}.RemoveAt(System.Int32)
-  commentId: M:TotalDialogue.Core.Collections.ITDFList{`0}.RemoveAt(System.Int32)
-  parent: TotalDialogue.Core.Collections.ITDFList{{T}}
-  definition: TotalDialogue.Core.Collections.ITDFList`1.RemoveAt(System.Int32)
-  href: TotalDialogue.Core.Collections.ITDFList-1.html#TotalDialogue_Core_Collections_ITDFList_1_RemoveAt_System_Int32_
-  name: RemoveAt(int)
-  nameWithType: ITDFList<T>.RemoveAt(int)
-  fullName: TotalDialogue.Core.Collections.ITDFList<T>.RemoveAt(int)
-  nameWithType.vb: ITDFList(Of T).RemoveAt(Integer)
-  fullName.vb: TotalDialogue.Core.Collections.ITDFList(Of T).RemoveAt(Integer)
-  name.vb: RemoveAt(Integer)
-  spec.csharp:
-  - uid: TotalDialogue.Core.Collections.ITDFList{`0}.RemoveAt(System.Int32)
-    name: RemoveAt
-    href: TotalDialogue.Core.Collections.ITDFList-1.html#TotalDialogue_Core_Collections_ITDFList_1_RemoveAt_System_Int32_
-  - name: (
-  - uid: System.Int32
-    name: int
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
-  - name: )
-  spec.vb:
-  - uid: TotalDialogue.Core.Collections.ITDFList{`0}.RemoveAt(System.Int32)
-    name: RemoveAt
-    href: TotalDialogue.Core.Collections.ITDFList-1.html#TotalDialogue_Core_Collections_ITDFList_1_RemoveAt_System_Int32_
-  - name: (
-  - uid: System.Int32
-    name: Integer
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
-  - name: )
-- uid: TotalDialogue.Core.Collections.ITDFList`1.RemoveAt(System.Int32)
-  commentId: M:TotalDialogue.Core.Collections.ITDFList`1.RemoveAt(System.Int32)
+- uid: TotalDialogue.Core.Collections.ITDFList.RemoveAt(System.Int32)
+  commentId: M:TotalDialogue.Core.Collections.ITDFList.RemoveAt(System.Int32)
+  parent: TotalDialogue.Core.Collections.ITDFList
   isExternal: true
-  href: TotalDialogue.Core.Collections.ITDFList-1.html#TotalDialogue_Core_Collections_ITDFList_1_RemoveAt_System_Int32_
+  href: TotalDialogue.Core.Collections.ITDFList.html#TotalDialogue_Core_Collections_ITDFList_RemoveAt_System_Int32_
   name: RemoveAt(int)
-  nameWithType: ITDFList<T>.RemoveAt(int)
-  fullName: TotalDialogue.Core.Collections.ITDFList<T>.RemoveAt(int)
-  nameWithType.vb: ITDFList(Of T).RemoveAt(Integer)
-  fullName.vb: TotalDialogue.Core.Collections.ITDFList(Of T).RemoveAt(Integer)
+  nameWithType: ITDFList.RemoveAt(int)
+  fullName: TotalDialogue.Core.Collections.ITDFList.RemoveAt(int)
+  nameWithType.vb: ITDFList.RemoveAt(Integer)
+  fullName.vb: TotalDialogue.Core.Collections.ITDFList.RemoveAt(Integer)
   name.vb: RemoveAt(Integer)
   spec.csharp:
-  - uid: TotalDialogue.Core.Collections.ITDFList`1.RemoveAt(System.Int32)
+  - uid: TotalDialogue.Core.Collections.ITDFList.RemoveAt(System.Int32)
     name: RemoveAt
-    href: TotalDialogue.Core.Collections.ITDFList-1.html#TotalDialogue_Core_Collections_ITDFList_1_RemoveAt_System_Int32_
+    href: TotalDialogue.Core.Collections.ITDFList.html#TotalDialogue_Core_Collections_ITDFList_RemoveAt_System_Int32_
   - name: (
   - uid: System.Int32
     name: int
@@ -3379,9 +3335,9 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.int32
   - name: )
   spec.vb:
-  - uid: TotalDialogue.Core.Collections.ITDFList`1.RemoveAt(System.Int32)
+  - uid: TotalDialogue.Core.Collections.ITDFList.RemoveAt(System.Int32)
     name: RemoveAt
-    href: TotalDialogue.Core.Collections.ITDFList-1.html#TotalDialogue_Core_Collections_ITDFList_1_RemoveAt_System_Int32_
+    href: TotalDialogue.Core.Collections.ITDFList.html#TotalDialogue_Core_Collections_ITDFList_RemoveAt_System_Int32_
   - name: (
   - uid: System.Int32
     name: Integer
@@ -3396,24 +3352,13 @@ references:
   fullName: TotalDialogue.Core.Collections.TDFList<T>.Count
   nameWithType.vb: TDFList(Of T).Count
   fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).Count
-- uid: TotalDialogue.Core.Collections.ITDFList{{T}}.Count
-  commentId: P:TotalDialogue.Core.Collections.ITDFList{`0}.Count
-  parent: TotalDialogue.Core.Collections.ITDFList{{T}}
-  definition: TotalDialogue.Core.Collections.ITDFList`1.Count
-  href: TotalDialogue.Core.Collections.ITDFList-1.html#TotalDialogue_Core_Collections_ITDFList_1_Count
+- uid: TotalDialogue.Core.Collections.ITDFList.Count
+  commentId: P:TotalDialogue.Core.Collections.ITDFList.Count
+  parent: TotalDialogue.Core.Collections.ITDFList
+  href: TotalDialogue.Core.Collections.ITDFList.html#TotalDialogue_Core_Collections_ITDFList_Count
   name: Count
-  nameWithType: ITDFList<T>.Count
-  fullName: TotalDialogue.Core.Collections.ITDFList<T>.Count
-  nameWithType.vb: ITDFList(Of T).Count
-  fullName.vb: TotalDialogue.Core.Collections.ITDFList(Of T).Count
-- uid: TotalDialogue.Core.Collections.ITDFList`1.Count
-  commentId: P:TotalDialogue.Core.Collections.ITDFList`1.Count
-  href: TotalDialogue.Core.Collections.ITDFList-1.html#TotalDialogue_Core_Collections_ITDFList_1_Count
-  name: Count
-  nameWithType: ITDFList<T>.Count
-  fullName: TotalDialogue.Core.Collections.ITDFList<T>.Count
-  nameWithType.vb: ITDFList(Of T).Count
-  fullName.vb: TotalDialogue.Core.Collections.ITDFList(Of T).Count
+  nameWithType: ITDFList.Count
+  fullName: TotalDialogue.Core.Collections.ITDFList.Count
 - uid: TotalDialogue.Core.Collections.TDFList`1.Item*
   commentId: Overload:TotalDialogue.Core.Collections.TDFList`1.Item
   href: TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_Item_System_Int32_
@@ -3423,16 +3368,16 @@ references:
   nameWithType.vb: TDFList(Of T).this[]
   fullName.vb: TotalDialogue.Core.Collections.TDFList(Of T).this[]
   name.vb: this[]
-- uid: TotalDialogue.Core.Collections.ITDFList{{T}}.Item(System.Int32)
-  commentId: P:TotalDialogue.Core.Collections.ITDFList{`0}.Item(System.Int32)
-  parent: TotalDialogue.Core.Collections.ITDFList{{T}}
-  definition: TotalDialogue.Core.Collections.ITDFList`1.Item(System.Int32)
+- uid: TotalDialogue.Core.Collections.ITDFListGeneric{{T}}.Item(System.Int32)
+  commentId: P:TotalDialogue.Core.Collections.ITDFListGeneric{`0}.Item(System.Int32)
+  parent: TotalDialogue.Core.Collections.ITDFListGeneric{{T}}
+  definition: TotalDialogue.Core.Collections.ITDFListGeneric`1.Item(System.Int32)
   href: https://learn.microsoft.com/dotnet/api/system.int32
   name: this[int]
-  nameWithType: ITDFList<T>.this[int]
-  fullName: TotalDialogue.Core.Collections.ITDFList<T>.this[int]
-  nameWithType.vb: ITDFList(Of T).this[](Integer)
-  fullName.vb: TotalDialogue.Core.Collections.ITDFList(Of T).this[](Integer)
+  nameWithType: ITDFListGeneric<T>.this[int]
+  fullName: TotalDialogue.Core.Collections.ITDFListGeneric<T>.this[int]
+  nameWithType.vb: ITDFListGeneric(Of T).this[](Integer)
+  fullName.vb: TotalDialogue.Core.Collections.ITDFListGeneric(Of T).this[](Integer)
   name.vb: this[](Integer)
   spec.csharp:
   - name: this
@@ -3443,24 +3388,24 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.int32
   - name: ']'
   spec.vb:
-  - uid: TotalDialogue.Core.Collections.ITDFList{`0}.Item(System.Int32)
+  - uid: TotalDialogue.Core.Collections.ITDFListGeneric{`0}.Item(System.Int32)
     name: this[]
-    href: TotalDialogue.Core.Collections.ITDFList-1.html#TotalDialogue_Core_Collections_ITDFList_1_Item_System_Int32_
+    href: TotalDialogue.Core.Collections.ITDFListGeneric-1.html#TotalDialogue_Core_Collections_ITDFListGeneric_1_Item_System_Int32_
   - name: (
   - uid: System.Int32
     name: Integer
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.int32
   - name: )
-- uid: TotalDialogue.Core.Collections.ITDFList`1.Item(System.Int32)
-  commentId: P:TotalDialogue.Core.Collections.ITDFList`1.Item(System.Int32)
+- uid: TotalDialogue.Core.Collections.ITDFListGeneric`1.Item(System.Int32)
+  commentId: P:TotalDialogue.Core.Collections.ITDFListGeneric`1.Item(System.Int32)
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.int32
   name: this[int]
-  nameWithType: ITDFList<T>.this[int]
-  fullName: TotalDialogue.Core.Collections.ITDFList<T>.this[int]
-  nameWithType.vb: ITDFList(Of T).this[](Integer)
-  fullName.vb: TotalDialogue.Core.Collections.ITDFList(Of T).this[](Integer)
+  nameWithType: ITDFListGeneric<T>.this[int]
+  fullName: TotalDialogue.Core.Collections.ITDFListGeneric<T>.this[int]
+  nameWithType.vb: ITDFListGeneric(Of T).this[](Integer)
+  fullName.vb: TotalDialogue.Core.Collections.ITDFListGeneric(Of T).this[](Integer)
   name.vb: this[](Integer)
   spec.csharp:
   - name: this
@@ -3471,9 +3416,9 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.int32
   - name: ']'
   spec.vb:
-  - uid: TotalDialogue.Core.Collections.ITDFList`1.Item(System.Int32)
+  - uid: TotalDialogue.Core.Collections.ITDFListGeneric`1.Item(System.Int32)
     name: this[]
-    href: TotalDialogue.Core.Collections.ITDFList-1.html#TotalDialogue_Core_Collections_ITDFList_1_Item_System_Int32_
+    href: TotalDialogue.Core.Collections.ITDFListGeneric-1.html#TotalDialogue_Core_Collections_ITDFListGeneric_1_Item_System_Int32_
   - name: (
   - uid: System.Int32
     name: Integer

@@ -1,0 +1,398 @@
+### YamlMime:ManagedReference
+items:
+- uid: TotalDialogue.Core.Collections.ITDFListGeneric`1
+  commentId: T:TotalDialogue.Core.Collections.ITDFListGeneric`1
+  id: ITDFListGeneric`1
+  parent: TotalDialogue.Core.Collections
+  children:
+  - TotalDialogue.Core.Collections.ITDFListGeneric`1.Add(`0)
+  - TotalDialogue.Core.Collections.ITDFListGeneric`1.Item(System.Int32)
+  - TotalDialogue.Core.Collections.ITDFListGeneric`1.OnAdd
+  - TotalDialogue.Core.Collections.ITDFListGeneric`1.OnChangeItem
+  - TotalDialogue.Core.Collections.ITDFListGeneric`1.OnRemove
+  - TotalDialogue.Core.Collections.ITDFListGeneric`1.Remove(`0)
+  langs:
+  - csharp
+  - vb
+  name: ITDFListGeneric<T>
+  nameWithType: ITDFListGeneric<T>
+  fullName: TotalDialogue.Core.Collections.ITDFListGeneric<T>
+  type: Interface
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+      branch: master
+      repo: git@github.com:zgock999/total_dialogue_framework.git
+    id: ITDFListGeneric
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+    startLine: 41
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Collections
+  summary: ITDFListGenericは、アイテムの追加、削除、変更を監視するためのインターフェースのうち、型に依存する部分を定義しています。
+  example: []
+  syntax:
+    content: public interface ITDFListGeneric<T>
+    typeParameters:
+    - id: T
+    content.vb: Public Interface ITDFListGeneric(Of T)
+  nameWithType.vb: ITDFListGeneric(Of T)
+  fullName.vb: TotalDialogue.Core.Collections.ITDFListGeneric(Of T)
+  name.vb: ITDFListGeneric(Of T)
+- uid: TotalDialogue.Core.Collections.ITDFListGeneric`1.OnAdd
+  commentId: E:TotalDialogue.Core.Collections.ITDFListGeneric`1.OnAdd
+  id: OnAdd
+  parent: TotalDialogue.Core.Collections.ITDFListGeneric`1
+  langs:
+  - csharp
+  - vb
+  name: OnAdd
+  nameWithType: ITDFListGeneric<T>.OnAdd
+  fullName: TotalDialogue.Core.Collections.ITDFListGeneric<T>.OnAdd
+  type: Event
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+      branch: master
+      repo: git@github.com:zgock999/total_dialogue_framework.git
+    id: OnAdd
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+    startLine: 46
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Collections
+  summary: アイテムが追加されたときに発生するイベント。
+  example: []
+  syntax:
+    content: event Action<int, T> OnAdd
+    return:
+      type: System.Action{System.Int32,{T}}
+    content.vb: Event OnAdd As Action(Of Integer, T)
+  nameWithType.vb: ITDFListGeneric(Of T).OnAdd
+  fullName.vb: TotalDialogue.Core.Collections.ITDFListGeneric(Of T).OnAdd
+- uid: TotalDialogue.Core.Collections.ITDFListGeneric`1.OnRemove
+  commentId: E:TotalDialogue.Core.Collections.ITDFListGeneric`1.OnRemove
+  id: OnRemove
+  parent: TotalDialogue.Core.Collections.ITDFListGeneric`1
+  langs:
+  - csharp
+  - vb
+  name: OnRemove
+  nameWithType: ITDFListGeneric<T>.OnRemove
+  fullName: TotalDialogue.Core.Collections.ITDFListGeneric<T>.OnRemove
+  type: Event
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+      branch: master
+      repo: git@github.com:zgock999/total_dialogue_framework.git
+    id: OnRemove
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+    startLine: 51
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Collections
+  summary: アイテムが削除されたときに発生するイベント。
+  example: []
+  syntax:
+    content: event Action<int, T> OnRemove
+    return:
+      type: System.Action{System.Int32,{T}}
+    content.vb: Event OnRemove As Action(Of Integer, T)
+  nameWithType.vb: ITDFListGeneric(Of T).OnRemove
+  fullName.vb: TotalDialogue.Core.Collections.ITDFListGeneric(Of T).OnRemove
+- uid: TotalDialogue.Core.Collections.ITDFListGeneric`1.OnChangeItem
+  commentId: E:TotalDialogue.Core.Collections.ITDFListGeneric`1.OnChangeItem
+  id: OnChangeItem
+  parent: TotalDialogue.Core.Collections.ITDFListGeneric`1
+  langs:
+  - csharp
+  - vb
+  name: OnChangeItem
+  nameWithType: ITDFListGeneric<T>.OnChangeItem
+  fullName: TotalDialogue.Core.Collections.ITDFListGeneric<T>.OnChangeItem
+  type: Event
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+      branch: master
+      repo: git@github.com:zgock999/total_dialogue_framework.git
+    id: OnChangeItem
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+    startLine: 56
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Collections
+  summary: アイテムが変更されたときに発生するイベント。
+  example: []
+  syntax:
+    content: event Action<int, T> OnChangeItem
+    return:
+      type: System.Action{System.Int32,{T}}
+    content.vb: Event OnChangeItem As Action(Of Integer, T)
+  nameWithType.vb: ITDFListGeneric(Of T).OnChangeItem
+  fullName.vb: TotalDialogue.Core.Collections.ITDFListGeneric(Of T).OnChangeItem
+- uid: TotalDialogue.Core.Collections.ITDFListGeneric`1.Add(`0)
+  commentId: M:TotalDialogue.Core.Collections.ITDFListGeneric`1.Add(`0)
+  id: Add(`0)
+  parent: TotalDialogue.Core.Collections.ITDFListGeneric`1
+  langs:
+  - csharp
+  - vb
+  name: Add(T)
+  nameWithType: ITDFListGeneric<T>.Add(T)
+  fullName: TotalDialogue.Core.Collections.ITDFListGeneric<T>.Add(T)
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+      branch: master
+      repo: git@github.com:zgock999/total_dialogue_framework.git
+    id: Add
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+    startLine: 62
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Collections
+  summary: アイテムをリストに追加します。
+  example: []
+  syntax:
+    content: void Add(T item)
+    parameters:
+    - id: item
+      type: '{T}'
+      description: 追加するアイテム。
+    content.vb: Sub Add(item As T)
+  overload: TotalDialogue.Core.Collections.ITDFListGeneric`1.Add*
+  nameWithType.vb: ITDFListGeneric(Of T).Add(T)
+  fullName.vb: TotalDialogue.Core.Collections.ITDFListGeneric(Of T).Add(T)
+- uid: TotalDialogue.Core.Collections.ITDFListGeneric`1.Remove(`0)
+  commentId: M:TotalDialogue.Core.Collections.ITDFListGeneric`1.Remove(`0)
+  id: Remove(`0)
+  parent: TotalDialogue.Core.Collections.ITDFListGeneric`1
+  langs:
+  - csharp
+  - vb
+  name: Remove(T)
+  nameWithType: ITDFListGeneric<T>.Remove(T)
+  fullName: TotalDialogue.Core.Collections.ITDFListGeneric<T>.Remove(T)
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+      branch: master
+      repo: git@github.com:zgock999/total_dialogue_framework.git
+    id: Remove
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+    startLine: 68
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Collections
+  summary: アイテムをリストから削除します。
+  example: []
+  syntax:
+    content: void Remove(T item)
+    parameters:
+    - id: item
+      type: '{T}'
+      description: 削除するアイテム。
+    content.vb: Sub Remove(item As T)
+  overload: TotalDialogue.Core.Collections.ITDFListGeneric`1.Remove*
+  nameWithType.vb: ITDFListGeneric(Of T).Remove(T)
+  fullName.vb: TotalDialogue.Core.Collections.ITDFListGeneric(Of T).Remove(T)
+- uid: TotalDialogue.Core.Collections.ITDFListGeneric`1.Item(System.Int32)
+  commentId: P:TotalDialogue.Core.Collections.ITDFListGeneric`1.Item(System.Int32)
+  id: Item(System.Int32)
+  parent: TotalDialogue.Core.Collections.ITDFListGeneric`1
+  langs:
+  - csharp
+  - vb
+  name: this[int]
+  nameWithType: ITDFListGeneric<T>.this[int]
+  fullName: TotalDialogue.Core.Collections.ITDFListGeneric<T>.this[int]
+  type: Property
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+      branch: master
+      repo: git@github.com:zgock999/total_dialogue_framework.git
+    id: this[]
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+    startLine: 74
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Collections
+  summary: 指定したインデックスのアイテムを取得または設定します。
+  example: []
+  syntax:
+    content: T this[int index] { get; set; }
+    parameters:
+    - id: index
+      type: System.Int32
+      description: アイテムのインデックス。
+    return:
+      type: '{T}'
+    content.vb: Default Property this[](index As Integer) As T
+  overload: TotalDialogue.Core.Collections.ITDFListGeneric`1.Item*
+  nameWithType.vb: ITDFListGeneric(Of T).this[](Integer)
+  fullName.vb: TotalDialogue.Core.Collections.ITDFListGeneric(Of T).this[](Integer)
+  name.vb: this[](Integer)
+references:
+- uid: TotalDialogue.Core.Collections
+  commentId: N:TotalDialogue.Core.Collections
+  href: TotalDialogue.html
+  name: TotalDialogue.Core.Collections
+  nameWithType: TotalDialogue.Core.Collections
+  fullName: TotalDialogue.Core.Collections
+  spec.csharp:
+  - uid: TotalDialogue
+    name: TotalDialogue
+    href: TotalDialogue.html
+  - name: .
+  - uid: TotalDialogue.Core
+    name: Core
+    href: TotalDialogue.Core.html
+  - name: .
+  - uid: TotalDialogue.Core.Collections
+    name: Collections
+    href: TotalDialogue.Core.Collections.html
+  spec.vb:
+  - uid: TotalDialogue
+    name: TotalDialogue
+    href: TotalDialogue.html
+  - name: .
+  - uid: TotalDialogue.Core
+    name: Core
+    href: TotalDialogue.Core.html
+  - name: .
+  - uid: TotalDialogue.Core.Collections
+    name: Collections
+    href: TotalDialogue.Core.Collections.html
+- uid: System.Action{System.Int32,{T}}
+  commentId: T:System.Action{System.Int32,`0}
+  parent: System
+  definition: System.Action`2
+  href: https://learn.microsoft.com/dotnet/api/system.action-2
+  name: Action<int, T>
+  nameWithType: Action<int, T>
+  fullName: System.Action<int, T>
+  nameWithType.vb: Action(Of Integer, T)
+  fullName.vb: System.Action(Of Integer, T)
+  name.vb: Action(Of Integer, T)
+  spec.csharp:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Action`2
+  commentId: T:System.Action`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-2
+  name: Action<T1, T2>
+  nameWithType: Action<T1, T2>
+  fullName: System.Action<T1, T2>
+  nameWithType.vb: Action(Of T1, T2)
+  fullName.vb: System.Action(Of T1, T2)
+  name.vb: Action(Of T1, T2)
+  spec.csharp:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: TotalDialogue.Core.Collections.ITDFListGeneric`1.Add*
+  commentId: Overload:TotalDialogue.Core.Collections.ITDFListGeneric`1.Add
+  href: TotalDialogue.Core.Collections.ITDFListGeneric-1.html#TotalDialogue_Core_Collections_ITDFListGeneric_1_Add__0_
+  name: Add
+  nameWithType: ITDFListGeneric<T>.Add
+  fullName: TotalDialogue.Core.Collections.ITDFListGeneric<T>.Add
+  nameWithType.vb: ITDFListGeneric(Of T).Add
+  fullName.vb: TotalDialogue.Core.Collections.ITDFListGeneric(Of T).Add
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: TotalDialogue.Core.Collections.ITDFListGeneric`1.Remove*
+  commentId: Overload:TotalDialogue.Core.Collections.ITDFListGeneric`1.Remove
+  href: TotalDialogue.Core.Collections.ITDFListGeneric-1.html#TotalDialogue_Core_Collections_ITDFListGeneric_1_Remove__0_
+  name: Remove
+  nameWithType: ITDFListGeneric<T>.Remove
+  fullName: TotalDialogue.Core.Collections.ITDFListGeneric<T>.Remove
+  nameWithType.vb: ITDFListGeneric(Of T).Remove
+  fullName.vb: TotalDialogue.Core.Collections.ITDFListGeneric(Of T).Remove
+- uid: TotalDialogue.Core.Collections.ITDFListGeneric`1.Item*
+  commentId: Overload:TotalDialogue.Core.Collections.ITDFListGeneric`1.Item
+  href: TotalDialogue.Core.Collections.ITDFListGeneric-1.html#TotalDialogue_Core_Collections_ITDFListGeneric_1_Item_System_Int32_
+  name: this
+  nameWithType: ITDFListGeneric<T>.this
+  fullName: TotalDialogue.Core.Collections.ITDFListGeneric<T>.this
+  nameWithType.vb: ITDFListGeneric(Of T).this[]
+  fullName.vb: TotalDialogue.Core.Collections.ITDFListGeneric(Of T).this[]
+  name.vb: this[]
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer

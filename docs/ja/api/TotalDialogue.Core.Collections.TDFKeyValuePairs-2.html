@@ -98,7 +98,8 @@ TDFListと同様に、インデックスを使用して要素を取得できま�
   </div>
   <div class="implements">
     <h5>Implements</h5>
-    <div><a class="xref" href="TotalDialogue.Core.Collections.ITDFList-1.html">ITDFList</a>&lt;<a class="xref" href="TotalDialogue.Core.Collections.TDFKeyValuePair-2.html">TDFKeyValuePair</a>&lt;TKey, TValue&gt;&gt;</div>
+    <div><a class="xref" href="TotalDialogue.Core.Collections.ITDFList.html">ITDFList</a></div>
+    <div><a class="xref" href="TotalDialogue.Core.Collections.ITDFListGeneric-1.html">ITDFListGeneric</a>&lt;<a class="xref" href="TotalDialogue.Core.Collections.TDFKeyValuePair-2.html">TDFKeyValuePair</a>&lt;TKey, TValue&gt;&gt;</div>
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="TotalDialogue.Core.Collections.TDFKeyValuePair-2.html">TDFKeyValuePair</a>&lt;TKey, TValue&gt;&gt;</div>
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a></div>
     <div><span class="xref">ISerializationCallbackReceiver</span></div>
@@ -303,7 +304,7 @@ TDFListと同様に、インデックスを使用して要素を取得できま�
   <h5 id="TotalDialogue_Core_Collections_TDFKeyValuePairs_2_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Serializable]
-public class TDFKeyValuePairs&lt;TKey, TValue&gt; : TDFList&lt;TDFKeyValuePair&lt;TKey, TValue&gt;&gt;, ITDFList&lt;TDFKeyValuePair&lt;TKey, TValue&gt;&gt;, IEnumerable&lt;TDFKeyValuePair&lt;TKey, TValue&gt;&gt;, IEnumerable, ISerializationCallbackReceiver</code></pre>
+public class TDFKeyValuePairs&lt;TKey, TValue&gt; : TDFList&lt;TDFKeyValuePair&lt;TKey, TValue&gt;&gt;, ITDFList, ITDFListGeneric&lt;TDFKeyValuePair&lt;TKey, TValue&gt;&gt;, IEnumerable&lt;TDFKeyValuePair&lt;TKey, TValue&gt;&gt;, IEnumerable, ISerializationCallbackReceiver</code></pre>
   </div>
   <h5 class="typeParameters">Type Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -963,7 +964,10 @@ protected readonly Dictionary&lt;TKey, List&lt;int&gt;&gt; indexDictionary</code
 </div>
   <h3 id="implements">Implements</h3>
   <div>
-      <a class="xref" href="TotalDialogue.Core.Collections.ITDFList-1.html">ITDFList&lt;T&gt;</a>
+      <a class="xref" href="TotalDialogue.Core.Collections.ITDFList.html">ITDFList</a>
+  </div>
+  <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.ITDFListGeneric-1.html">ITDFListGeneric&lt;T&gt;</a>
   </div>
   <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a>

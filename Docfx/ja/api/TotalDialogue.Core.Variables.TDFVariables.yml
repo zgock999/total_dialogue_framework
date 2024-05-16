@@ -8,7 +8,7 @@ items:
   - TotalDialogue.Core.Variables.TDFVariables.AddListener(TotalDialogue.Core.Variables.BoolListener)
   - TotalDialogue.Core.Variables.TDFVariables.AddListener(TotalDialogue.Core.Variables.FloatListener)
   - TotalDialogue.Core.Variables.TDFVariables.AddListener(TotalDialogue.Core.Variables.IntListener)
-  - TotalDialogue.Core.Variables.TDFVariables.AddListener(TotalDialogue.Core.Variables.QuartanionListener)
+  - TotalDialogue.Core.Variables.TDFVariables.AddListener(TotalDialogue.Core.Variables.QuaternionListener)
   - TotalDialogue.Core.Variables.TDFVariables.AddListener(TotalDialogue.Core.Variables.StringListener)
   - TotalDialogue.Core.Variables.TDFVariables.AddListener(TotalDialogue.Core.Variables.Vector3Listener)
   - TotalDialogue.Core.Variables.TDFVariables.GetBool(System.String)
@@ -22,7 +22,7 @@ items:
   - TotalDialogue.Core.Variables.TDFVariables.RemoveListener(TotalDialogue.Core.Variables.BoolListener)
   - TotalDialogue.Core.Variables.TDFVariables.RemoveListener(TotalDialogue.Core.Variables.FloatListener)
   - TotalDialogue.Core.Variables.TDFVariables.RemoveListener(TotalDialogue.Core.Variables.IntListener)
-  - TotalDialogue.Core.Variables.TDFVariables.RemoveListener(TotalDialogue.Core.Variables.QuartanionListener)
+  - TotalDialogue.Core.Variables.TDFVariables.RemoveListener(TotalDialogue.Core.Variables.QuaternionListener)
   - TotalDialogue.Core.Variables.TDFVariables.RemoveListener(TotalDialogue.Core.Variables.StringListener)
   - TotalDialogue.Core.Variables.TDFVariables.RemoveListener(TotalDialogue.Core.Variables.Vector3Listener)
   - TotalDialogue.Core.Variables.TDFVariables.Reset
@@ -32,7 +32,12 @@ items:
   - TotalDialogue.Core.Variables.TDFVariables.SetQuaternion(System.String,UnityEngine.Quaternion)
   - TotalDialogue.Core.Variables.TDFVariables.SetString(System.String,System.String)
   - TotalDialogue.Core.Variables.TDFVariables.SetVector3(System.String,UnityEngine.Vector3)
-  - TotalDialogue.Core.Variables.TDFVariables.m_vars
+  - TotalDialogue.Core.Variables.TDFVariables.m_boolVars
+  - TotalDialogue.Core.Variables.TDFVariables.m_floatVars
+  - TotalDialogue.Core.Variables.TDFVariables.m_intVars
+  - TotalDialogue.Core.Variables.TDFVariables.m_quaternionVars
+  - TotalDialogue.Core.Variables.TDFVariables.m_stringVars
+  - TotalDialogue.Core.Variables.TDFVariables.m_vector3Vars
   langs:
   - csharp
   - vb
@@ -140,23 +145,23 @@ items:
   overload: TotalDialogue.Core.Variables.TDFVariables.MaxDialogue*
   implements:
   - TotalDialogue.Core.Variables.IVariables.MaxDialogue
-- uid: TotalDialogue.Core.Variables.TDFVariables.m_vars
-  commentId: F:TotalDialogue.Core.Variables.TDFVariables.m_vars
-  id: m_vars
+- uid: TotalDialogue.Core.Variables.TDFVariables.m_boolVars
+  commentId: F:TotalDialogue.Core.Variables.TDFVariables.m_boolVars
+  id: m_boolVars
   parent: TotalDialogue.Core.Variables.TDFVariables
   langs:
   - csharp
   - vb
-  name: m_vars
-  nameWithType: TDFVariables.m_vars
-  fullName: TotalDialogue.Core.Variables.TDFVariables.m_vars
+  name: m_boolVars
+  nameWithType: TDFVariables.m_boolVars
+  fullName: TotalDialogue.Core.Variables.TDFVariables.m_boolVars
   type: Field
   source:
     remote:
       path: Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/TDFVariables.cs
       branch: master
       repo: git@github.com:zgock999/total_dialogue_framework.git
-    id: m_vars
+    id: m_boolVars
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/TDFVariables.cs
     startLine: 17
   assemblies:
@@ -166,13 +171,198 @@ items:
     content: >-
       [SerializeField]
 
-      protected TDFDictionary<string, IEmptyVar> m_vars
+      protected VariableList<bool, BoolVar, BoolListener> m_boolVars
     return:
-      type: TotalDialogue.Core.Collections.TDFDictionary{System.String,TotalDialogue.Core.Variables.IEmptyVar}
+      type: TotalDialogue.Core.Variables.VariableList{System.Boolean,TotalDialogue.Core.Variables.BoolVar,TotalDialogue.Core.Variables.BoolListener}
     content.vb: >-
       <SerializeField>
 
-      Protected m_vars As TDFDictionary(Of String, IEmptyVar)
+      Protected m_boolVars As VariableList(Of Boolean, BoolVar, BoolListener)
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+- uid: TotalDialogue.Core.Variables.TDFVariables.m_intVars
+  commentId: F:TotalDialogue.Core.Variables.TDFVariables.m_intVars
+  id: m_intVars
+  parent: TotalDialogue.Core.Variables.TDFVariables
+  langs:
+  - csharp
+  - vb
+  name: m_intVars
+  nameWithType: TDFVariables.m_intVars
+  fullName: TotalDialogue.Core.Variables.TDFVariables.m_intVars
+  type: Field
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/TDFVariables.cs
+      branch: master
+      repo: git@github.com:zgock999/total_dialogue_framework.git
+    id: m_intVars
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/TDFVariables.cs
+    startLine: 19
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Variables
+  syntax:
+    content: >-
+      [SerializeField]
+
+      protected VariableList<int, IntVar, IntListener> m_intVars
+    return:
+      type: TotalDialogue.Core.Variables.VariableList{System.Int32,TotalDialogue.Core.Variables.IntVar,TotalDialogue.Core.Variables.IntListener}
+    content.vb: >-
+      <SerializeField>
+
+      Protected m_intVars As VariableList(Of Integer, IntVar, IntListener)
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+- uid: TotalDialogue.Core.Variables.TDFVariables.m_floatVars
+  commentId: F:TotalDialogue.Core.Variables.TDFVariables.m_floatVars
+  id: m_floatVars
+  parent: TotalDialogue.Core.Variables.TDFVariables
+  langs:
+  - csharp
+  - vb
+  name: m_floatVars
+  nameWithType: TDFVariables.m_floatVars
+  fullName: TotalDialogue.Core.Variables.TDFVariables.m_floatVars
+  type: Field
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/TDFVariables.cs
+      branch: master
+      repo: git@github.com:zgock999/total_dialogue_framework.git
+    id: m_floatVars
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/TDFVariables.cs
+    startLine: 21
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Variables
+  syntax:
+    content: >-
+      [SerializeField]
+
+      protected VariableList<float, FloatVar, FloatListener> m_floatVars
+    return:
+      type: TotalDialogue.Core.Variables.VariableList{System.Single,TotalDialogue.Core.Variables.FloatVar,TotalDialogue.Core.Variables.FloatListener}
+    content.vb: >-
+      <SerializeField>
+
+      Protected m_floatVars As VariableList(Of Single, FloatVar, FloatListener)
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+- uid: TotalDialogue.Core.Variables.TDFVariables.m_stringVars
+  commentId: F:TotalDialogue.Core.Variables.TDFVariables.m_stringVars
+  id: m_stringVars
+  parent: TotalDialogue.Core.Variables.TDFVariables
+  langs:
+  - csharp
+  - vb
+  name: m_stringVars
+  nameWithType: TDFVariables.m_stringVars
+  fullName: TotalDialogue.Core.Variables.TDFVariables.m_stringVars
+  type: Field
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/TDFVariables.cs
+      branch: master
+      repo: git@github.com:zgock999/total_dialogue_framework.git
+    id: m_stringVars
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/TDFVariables.cs
+    startLine: 23
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Variables
+  syntax:
+    content: >-
+      [SerializeField]
+
+      protected VariableList<string, StringVar, StringListener> m_stringVars
+    return:
+      type: TotalDialogue.Core.Variables.VariableList{System.String,TotalDialogue.Core.Variables.StringVar,TotalDialogue.Core.Variables.StringListener}
+    content.vb: >-
+      <SerializeField>
+
+      Protected m_stringVars As VariableList(Of String, StringVar, StringListener)
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+- uid: TotalDialogue.Core.Variables.TDFVariables.m_vector3Vars
+  commentId: F:TotalDialogue.Core.Variables.TDFVariables.m_vector3Vars
+  id: m_vector3Vars
+  parent: TotalDialogue.Core.Variables.TDFVariables
+  langs:
+  - csharp
+  - vb
+  name: m_vector3Vars
+  nameWithType: TDFVariables.m_vector3Vars
+  fullName: TotalDialogue.Core.Variables.TDFVariables.m_vector3Vars
+  type: Field
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/TDFVariables.cs
+      branch: master
+      repo: git@github.com:zgock999/total_dialogue_framework.git
+    id: m_vector3Vars
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/TDFVariables.cs
+    startLine: 25
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Variables
+  syntax:
+    content: >-
+      [SerializeField]
+
+      protected VariableList<Vector3, Vector3Var, Vector3Listener> m_vector3Vars
+    return:
+      type: TotalDialogue.Core.Variables.VariableList{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Var,TotalDialogue.Core.Variables.Vector3Listener}
+    content.vb: >-
+      <SerializeField>
+
+      Protected m_vector3Vars As VariableList(Of Vector3, Vector3Var, Vector3Listener)
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+- uid: TotalDialogue.Core.Variables.TDFVariables.m_quaternionVars
+  commentId: F:TotalDialogue.Core.Variables.TDFVariables.m_quaternionVars
+  id: m_quaternionVars
+  parent: TotalDialogue.Core.Variables.TDFVariables
+  langs:
+  - csharp
+  - vb
+  name: m_quaternionVars
+  nameWithType: TDFVariables.m_quaternionVars
+  fullName: TotalDialogue.Core.Variables.TDFVariables.m_quaternionVars
+  type: Field
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/TDFVariables.cs
+      branch: master
+      repo: git@github.com:zgock999/total_dialogue_framework.git
+    id: m_quaternionVars
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/TDFVariables.cs
+    startLine: 27
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Variables
+  syntax:
+    content: >-
+      [SerializeField]
+
+      protected VariableList<Quaternion, QuaternionVar, QuaternionListener> m_quaternionVars
+    return:
+      type: TotalDialogue.Core.Variables.VariableList{UnityEngine.Quaternion,TotalDialogue.Core.Variables.QuaternionVar,TotalDialogue.Core.Variables.QuaternionListener}
+    content.vb: >-
+      <SerializeField>
+
+      Protected m_quaternionVars As VariableList(Of Quaternion, QuaternionVar, QuaternionListener)
   attributes:
   - type: UnityEngine.SerializeField
     ctor: UnityEngine.SerializeField.#ctor
@@ -195,7 +385,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: GetBool
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/TDFVariables.cs
-    startLine: 19
+    startLine: 29
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Variables
@@ -232,7 +422,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: GetFloat
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/TDFVariables.cs
-    startLine: 24
+    startLine: 34
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Variables
@@ -269,7 +459,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: GetInt
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/TDFVariables.cs
-    startLine: 29
+    startLine: 39
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Variables
@@ -306,7 +496,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: GetQuaternion
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/TDFVariables.cs
-    startLine: 34
+    startLine: 44
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Variables
@@ -343,7 +533,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: GetString
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/TDFVariables.cs
-    startLine: 39
+    startLine: 49
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Variables
@@ -380,7 +570,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: GetVector3
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/TDFVariables.cs
-    startLine: 44
+    startLine: 54
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Variables
@@ -417,7 +607,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: Reset
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/TDFVariables.cs
-    startLine: 49
+    startLine: 59
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Variables
@@ -446,7 +636,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: SetBool
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/TDFVariables.cs
-    startLine: 57
+    startLine: 69
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Variables
@@ -483,7 +673,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: SetFloat
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/TDFVariables.cs
-    startLine: 65
+    startLine: 74
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Variables
@@ -520,7 +710,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: SetInt
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/TDFVariables.cs
-    startLine: 73
+    startLine: 79
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Variables
@@ -557,7 +747,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: SetQuaternion
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/TDFVariables.cs
-    startLine: 81
+    startLine: 84
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Variables
@@ -631,7 +821,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: SetVector3
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/TDFVariables.cs
-    startLine: 97
+    startLine: 94
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Variables
@@ -668,7 +858,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: AddListener
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/TDFVariables.cs
-    startLine: 105
+    startLine: 99
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Variables
@@ -700,7 +890,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: RemoveListener
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/TDFVariables.cs
-    startLine: 113
+    startLine: 107
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Variables
@@ -732,7 +922,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: AddListener
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/TDFVariables.cs
-    startLine: 121
+    startLine: 115
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Variables
@@ -764,7 +954,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: RemoveListener
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/TDFVariables.cs
-    startLine: 129
+    startLine: 123
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Variables
@@ -796,7 +986,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: AddListener
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/TDFVariables.cs
-    startLine: 137
+    startLine: 131
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Variables
@@ -828,7 +1018,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: RemoveListener
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/TDFVariables.cs
-    startLine: 145
+    startLine: 139
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Variables
@@ -860,7 +1050,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: AddListener
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/TDFVariables.cs
-    startLine: 153
+    startLine: 147
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Variables
@@ -892,7 +1082,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: RemoveListener
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/TDFVariables.cs
-    startLine: 161
+    startLine: 155
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Variables
@@ -924,7 +1114,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: AddListener
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/TDFVariables.cs
-    startLine: 169
+    startLine: 163
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Variables
@@ -956,7 +1146,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: RemoveListener
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/TDFVariables.cs
-    startLine: 177
+    startLine: 171
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Variables
@@ -970,16 +1160,16 @@ items:
   overload: TotalDialogue.Core.Variables.TDFVariables.RemoveListener*
   implements:
   - TotalDialogue.Core.Variables.IVariables.RemoveListener(TotalDialogue.Core.Variables.Vector3Listener)
-- uid: TotalDialogue.Core.Variables.TDFVariables.AddListener(TotalDialogue.Core.Variables.QuartanionListener)
-  commentId: M:TotalDialogue.Core.Variables.TDFVariables.AddListener(TotalDialogue.Core.Variables.QuartanionListener)
-  id: AddListener(TotalDialogue.Core.Variables.QuartanionListener)
+- uid: TotalDialogue.Core.Variables.TDFVariables.AddListener(TotalDialogue.Core.Variables.QuaternionListener)
+  commentId: M:TotalDialogue.Core.Variables.TDFVariables.AddListener(TotalDialogue.Core.Variables.QuaternionListener)
+  id: AddListener(TotalDialogue.Core.Variables.QuaternionListener)
   parent: TotalDialogue.Core.Variables.TDFVariables
   langs:
   - csharp
   - vb
-  name: AddListener(QuartanionListener)
-  nameWithType: TDFVariables.AddListener(QuartanionListener)
-  fullName: TotalDialogue.Core.Variables.TDFVariables.AddListener(TotalDialogue.Core.Variables.QuartanionListener)
+  name: AddListener(QuaternionListener)
+  nameWithType: TDFVariables.AddListener(QuaternionListener)
+  fullName: TotalDialogue.Core.Variables.TDFVariables.AddListener(TotalDialogue.Core.Variables.QuaternionListener)
   type: Method
   source:
     remote:
@@ -988,30 +1178,30 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: AddListener
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/TDFVariables.cs
-    startLine: 185
+    startLine: 179
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Variables
   example: []
   syntax:
-    content: public void AddListener(QuartanionListener listener)
+    content: public void AddListener(QuaternionListener listener)
     parameters:
     - id: listener
-      type: TotalDialogue.Core.Variables.QuartanionListener
-    content.vb: Public Sub AddListener(listener As QuartanionListener)
+      type: TotalDialogue.Core.Variables.QuaternionListener
+    content.vb: Public Sub AddListener(listener As QuaternionListener)
   overload: TotalDialogue.Core.Variables.TDFVariables.AddListener*
   implements:
-  - TotalDialogue.Core.Variables.IVariables.AddListener(TotalDialogue.Core.Variables.QuartanionListener)
-- uid: TotalDialogue.Core.Variables.TDFVariables.RemoveListener(TotalDialogue.Core.Variables.QuartanionListener)
-  commentId: M:TotalDialogue.Core.Variables.TDFVariables.RemoveListener(TotalDialogue.Core.Variables.QuartanionListener)
-  id: RemoveListener(TotalDialogue.Core.Variables.QuartanionListener)
+  - TotalDialogue.Core.Variables.IVariables.AddListener(TotalDialogue.Core.Variables.QuaternionListener)
+- uid: TotalDialogue.Core.Variables.TDFVariables.RemoveListener(TotalDialogue.Core.Variables.QuaternionListener)
+  commentId: M:TotalDialogue.Core.Variables.TDFVariables.RemoveListener(TotalDialogue.Core.Variables.QuaternionListener)
+  id: RemoveListener(TotalDialogue.Core.Variables.QuaternionListener)
   parent: TotalDialogue.Core.Variables.TDFVariables
   langs:
   - csharp
   - vb
-  name: RemoveListener(QuartanionListener)
-  nameWithType: TDFVariables.RemoveListener(QuartanionListener)
-  fullName: TotalDialogue.Core.Variables.TDFVariables.RemoveListener(TotalDialogue.Core.Variables.QuartanionListener)
+  name: RemoveListener(QuaternionListener)
+  nameWithType: TDFVariables.RemoveListener(QuaternionListener)
+  fullName: TotalDialogue.Core.Variables.TDFVariables.RemoveListener(TotalDialogue.Core.Variables.QuaternionListener)
   type: Method
   source:
     remote:
@@ -1020,20 +1210,20 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: RemoveListener
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/TDFVariables.cs
-    startLine: 193
+    startLine: 187
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Variables
   example: []
   syntax:
-    content: public void RemoveListener(QuartanionListener listener)
+    content: public void RemoveListener(QuaternionListener listener)
     parameters:
     - id: listener
-      type: TotalDialogue.Core.Variables.QuartanionListener
-    content.vb: Public Sub RemoveListener(listener As QuartanionListener)
+      type: TotalDialogue.Core.Variables.QuaternionListener
+    content.vb: Public Sub RemoveListener(listener As QuaternionListener)
   overload: TotalDialogue.Core.Variables.TDFVariables.RemoveListener*
   implements:
-  - TotalDialogue.Core.Variables.IVariables.RemoveListener(TotalDialogue.Core.Variables.QuartanionListener)
+  - TotalDialogue.Core.Variables.IVariables.RemoveListener(TotalDialogue.Core.Variables.QuaternionListener)
 references:
 - uid: TotalDialogue.Core.Variables
   commentId: N:TotalDialogue.Core.Variables
@@ -1346,21 +1536,217 @@ references:
   name: MaxDialogue
   nameWithType: IVariables.MaxDialogue
   fullName: TotalDialogue.Core.Variables.IVariables.MaxDialogue
-- uid: TotalDialogue.Core.Collections.TDFDictionary{System.String,TotalDialogue.Core.Variables.IEmptyVar}
-  commentId: T:TotalDialogue.Core.Collections.TDFDictionary{System.String,TotalDialogue.Core.Variables.IEmptyVar}
-  parent: TotalDialogue.Core.Collections
-  definition: TotalDialogue.Core.Collections.TDFDictionary`2
-  href: TotalDialogue.Core.Collections.TDFDictionary-2.html
-  name: TDFDictionary<string, IEmptyVar>
-  nameWithType: TDFDictionary<string, IEmptyVar>
-  fullName: TotalDialogue.Core.Collections.TDFDictionary<string, TotalDialogue.Core.Variables.IEmptyVar>
-  nameWithType.vb: TDFDictionary(Of String, IEmptyVar)
-  fullName.vb: TotalDialogue.Core.Collections.TDFDictionary(Of String, TotalDialogue.Core.Variables.IEmptyVar)
-  name.vb: TDFDictionary(Of String, IEmptyVar)
+- uid: TotalDialogue.Core.Variables.VariableList{System.Boolean,TotalDialogue.Core.Variables.BoolVar,TotalDialogue.Core.Variables.BoolListener}
+  commentId: T:TotalDialogue.Core.Variables.VariableList{System.Boolean,TotalDialogue.Core.Variables.BoolVar,TotalDialogue.Core.Variables.BoolListener}
+  parent: TotalDialogue.Core.Variables
+  definition: TotalDialogue.Core.Variables.VariableList`3
+  href: TotalDialogue.Core.Variables.VariableList-3.html
+  name: VariableList<bool, BoolVar, BoolListener>
+  nameWithType: VariableList<bool, BoolVar, BoolListener>
+  fullName: TotalDialogue.Core.Variables.VariableList<bool, TotalDialogue.Core.Variables.BoolVar, TotalDialogue.Core.Variables.BoolListener>
+  nameWithType.vb: VariableList(Of Boolean, BoolVar, BoolListener)
+  fullName.vb: TotalDialogue.Core.Variables.VariableList(Of Boolean, TotalDialogue.Core.Variables.BoolVar, TotalDialogue.Core.Variables.BoolListener)
+  name.vb: VariableList(Of Boolean, BoolVar, BoolListener)
   spec.csharp:
-  - uid: TotalDialogue.Core.Collections.TDFDictionary`2
-    name: TDFDictionary
-    href: TotalDialogue.Core.Collections.TDFDictionary-2.html
+  - uid: TotalDialogue.Core.Variables.VariableList`3
+    name: VariableList
+    href: TotalDialogue.Core.Variables.VariableList-3.html
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: TotalDialogue.Core.Variables.BoolVar
+    name: BoolVar
+    href: TotalDialogue.Core.Variables.BoolVar.html
+  - name: ','
+  - name: " "
+  - uid: TotalDialogue.Core.Variables.BoolListener
+    name: BoolListener
+    href: TotalDialogue.Core.Variables.BoolListener.html
+  - name: '>'
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.VariableList`3
+    name: VariableList
+    href: TotalDialogue.Core.Variables.VariableList-3.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: TotalDialogue.Core.Variables.BoolVar
+    name: BoolVar
+    href: TotalDialogue.Core.Variables.BoolVar.html
+  - name: ','
+  - name: " "
+  - uid: TotalDialogue.Core.Variables.BoolListener
+    name: BoolListener
+    href: TotalDialogue.Core.Variables.BoolListener.html
+  - name: )
+- uid: TotalDialogue.Core.Variables.VariableList`3
+  commentId: T:TotalDialogue.Core.Variables.VariableList`3
+  href: TotalDialogue.Core.Variables.VariableList-3.html
+  name: VariableList<T, TVar, TListener>
+  nameWithType: VariableList<T, TVar, TListener>
+  fullName: TotalDialogue.Core.Variables.VariableList<T, TVar, TListener>
+  nameWithType.vb: VariableList(Of T, TVar, TListener)
+  fullName.vb: TotalDialogue.Core.Variables.VariableList(Of T, TVar, TListener)
+  name.vb: VariableList(Of T, TVar, TListener)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.VariableList`3
+    name: VariableList
+    href: TotalDialogue.Core.Variables.VariableList-3.html
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TVar
+  - name: ','
+  - name: " "
+  - name: TListener
+  - name: '>'
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.VariableList`3
+    name: VariableList
+    href: TotalDialogue.Core.Variables.VariableList-3.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TVar
+  - name: ','
+  - name: " "
+  - name: TListener
+  - name: )
+- uid: TotalDialogue.Core.Variables.VariableList{System.Int32,TotalDialogue.Core.Variables.IntVar,TotalDialogue.Core.Variables.IntListener}
+  commentId: T:TotalDialogue.Core.Variables.VariableList{System.Int32,TotalDialogue.Core.Variables.IntVar,TotalDialogue.Core.Variables.IntListener}
+  parent: TotalDialogue.Core.Variables
+  definition: TotalDialogue.Core.Variables.VariableList`3
+  href: TotalDialogue.Core.Variables.VariableList-3.html
+  name: VariableList<int, IntVar, IntListener>
+  nameWithType: VariableList<int, IntVar, IntListener>
+  fullName: TotalDialogue.Core.Variables.VariableList<int, TotalDialogue.Core.Variables.IntVar, TotalDialogue.Core.Variables.IntListener>
+  nameWithType.vb: VariableList(Of Integer, IntVar, IntListener)
+  fullName.vb: TotalDialogue.Core.Variables.VariableList(Of Integer, TotalDialogue.Core.Variables.IntVar, TotalDialogue.Core.Variables.IntListener)
+  name.vb: VariableList(Of Integer, IntVar, IntListener)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.VariableList`3
+    name: VariableList
+    href: TotalDialogue.Core.Variables.VariableList-3.html
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: TotalDialogue.Core.Variables.IntVar
+    name: IntVar
+    href: TotalDialogue.Core.Variables.IntVar.html
+  - name: ','
+  - name: " "
+  - uid: TotalDialogue.Core.Variables.IntListener
+    name: IntListener
+    href: TotalDialogue.Core.Variables.IntListener.html
+  - name: '>'
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.VariableList`3
+    name: VariableList
+    href: TotalDialogue.Core.Variables.VariableList-3.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: TotalDialogue.Core.Variables.IntVar
+    name: IntVar
+    href: TotalDialogue.Core.Variables.IntVar.html
+  - name: ','
+  - name: " "
+  - uid: TotalDialogue.Core.Variables.IntListener
+    name: IntListener
+    href: TotalDialogue.Core.Variables.IntListener.html
+  - name: )
+- uid: TotalDialogue.Core.Variables.VariableList{System.Single,TotalDialogue.Core.Variables.FloatVar,TotalDialogue.Core.Variables.FloatListener}
+  commentId: T:TotalDialogue.Core.Variables.VariableList{System.Single,TotalDialogue.Core.Variables.FloatVar,TotalDialogue.Core.Variables.FloatListener}
+  parent: TotalDialogue.Core.Variables
+  definition: TotalDialogue.Core.Variables.VariableList`3
+  href: TotalDialogue.Core.Variables.VariableList-3.html
+  name: VariableList<float, FloatVar, FloatListener>
+  nameWithType: VariableList<float, FloatVar, FloatListener>
+  fullName: TotalDialogue.Core.Variables.VariableList<float, TotalDialogue.Core.Variables.FloatVar, TotalDialogue.Core.Variables.FloatListener>
+  nameWithType.vb: VariableList(Of Single, FloatVar, FloatListener)
+  fullName.vb: TotalDialogue.Core.Variables.VariableList(Of Single, TotalDialogue.Core.Variables.FloatVar, TotalDialogue.Core.Variables.FloatListener)
+  name.vb: VariableList(Of Single, FloatVar, FloatListener)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.VariableList`3
+    name: VariableList
+    href: TotalDialogue.Core.Variables.VariableList-3.html
+  - name: <
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: TotalDialogue.Core.Variables.FloatVar
+    name: FloatVar
+    href: TotalDialogue.Core.Variables.FloatVar.html
+  - name: ','
+  - name: " "
+  - uid: TotalDialogue.Core.Variables.FloatListener
+    name: FloatListener
+    href: TotalDialogue.Core.Variables.FloatListener.html
+  - name: '>'
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.VariableList`3
+    name: VariableList
+    href: TotalDialogue.Core.Variables.VariableList-3.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: TotalDialogue.Core.Variables.FloatVar
+    name: FloatVar
+    href: TotalDialogue.Core.Variables.FloatVar.html
+  - name: ','
+  - name: " "
+  - uid: TotalDialogue.Core.Variables.FloatListener
+    name: FloatListener
+    href: TotalDialogue.Core.Variables.FloatListener.html
+  - name: )
+- uid: TotalDialogue.Core.Variables.VariableList{System.String,TotalDialogue.Core.Variables.StringVar,TotalDialogue.Core.Variables.StringListener}
+  commentId: T:TotalDialogue.Core.Variables.VariableList{System.String,TotalDialogue.Core.Variables.StringVar,TotalDialogue.Core.Variables.StringListener}
+  parent: TotalDialogue.Core.Variables
+  definition: TotalDialogue.Core.Variables.VariableList`3
+  href: TotalDialogue.Core.Variables.VariableList-3.html
+  name: VariableList<string, StringVar, StringListener>
+  nameWithType: VariableList<string, StringVar, StringListener>
+  fullName: TotalDialogue.Core.Variables.VariableList<string, TotalDialogue.Core.Variables.StringVar, TotalDialogue.Core.Variables.StringListener>
+  nameWithType.vb: VariableList(Of String, StringVar, StringListener)
+  fullName.vb: TotalDialogue.Core.Variables.VariableList(Of String, TotalDialogue.Core.Variables.StringVar, TotalDialogue.Core.Variables.StringListener)
+  name.vb: VariableList(Of String, StringVar, StringListener)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.VariableList`3
+    name: VariableList
+    href: TotalDialogue.Core.Variables.VariableList-3.html
   - name: <
   - uid: System.String
     name: string
@@ -1368,14 +1754,19 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: ','
   - name: " "
-  - uid: TotalDialogue.Core.Variables.IEmptyVar
-    name: IEmptyVar
-    href: TotalDialogue.Core.Variables.IEmptyVar.html
+  - uid: TotalDialogue.Core.Variables.StringVar
+    name: StringVar
+    href: TotalDialogue.Core.Variables.StringVar.html
+  - name: ','
+  - name: " "
+  - uid: TotalDialogue.Core.Variables.StringListener
+    name: StringListener
+    href: TotalDialogue.Core.Variables.StringListener.html
   - name: '>'
   spec.vb:
-  - uid: TotalDialogue.Core.Collections.TDFDictionary`2
-    name: TDFDictionary
-    href: TotalDialogue.Core.Collections.TDFDictionary-2.html
+  - uid: TotalDialogue.Core.Variables.VariableList`3
+    name: VariableList
+    href: TotalDialogue.Core.Variables.VariableList-3.html
   - name: (
   - name: Of
   - name: " "
@@ -1385,72 +1776,117 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: ','
   - name: " "
-  - uid: TotalDialogue.Core.Variables.IEmptyVar
-    name: IEmptyVar
-    href: TotalDialogue.Core.Variables.IEmptyVar.html
-  - name: )
-- uid: TotalDialogue.Core.Collections.TDFDictionary`2
-  commentId: T:TotalDialogue.Core.Collections.TDFDictionary`2
-  parent: TotalDialogue.Core.Collections
-  href: TotalDialogue.Core.Collections.TDFDictionary-2.html
-  name: TDFDictionary<TKey, TValue>
-  nameWithType: TDFDictionary<TKey, TValue>
-  fullName: TotalDialogue.Core.Collections.TDFDictionary<TKey, TValue>
-  nameWithType.vb: TDFDictionary(Of TKey, TValue)
-  fullName.vb: TotalDialogue.Core.Collections.TDFDictionary(Of TKey, TValue)
-  name.vb: TDFDictionary(Of TKey, TValue)
-  spec.csharp:
-  - uid: TotalDialogue.Core.Collections.TDFDictionary`2
-    name: TDFDictionary
-    href: TotalDialogue.Core.Collections.TDFDictionary-2.html
-  - name: <
-  - name: TKey
+  - uid: TotalDialogue.Core.Variables.StringVar
+    name: StringVar
+    href: TotalDialogue.Core.Variables.StringVar.html
   - name: ','
   - name: " "
-  - name: TValue
+  - uid: TotalDialogue.Core.Variables.StringListener
+    name: StringListener
+    href: TotalDialogue.Core.Variables.StringListener.html
+  - name: )
+- uid: TotalDialogue.Core.Variables.VariableList{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Var,TotalDialogue.Core.Variables.Vector3Listener}
+  commentId: T:TotalDialogue.Core.Variables.VariableList{UnityEngine.Vector3,TotalDialogue.Core.Variables.Vector3Var,TotalDialogue.Core.Variables.Vector3Listener}
+  parent: TotalDialogue.Core.Variables
+  definition: TotalDialogue.Core.Variables.VariableList`3
+  href: TotalDialogue.Core.Variables.VariableList-3.html
+  name: VariableList<Vector3, Vector3Var, Vector3Listener>
+  nameWithType: VariableList<Vector3, Vector3Var, Vector3Listener>
+  fullName: TotalDialogue.Core.Variables.VariableList<UnityEngine.Vector3, TotalDialogue.Core.Variables.Vector3Var, TotalDialogue.Core.Variables.Vector3Listener>
+  nameWithType.vb: VariableList(Of Vector3, Vector3Var, Vector3Listener)
+  fullName.vb: TotalDialogue.Core.Variables.VariableList(Of UnityEngine.Vector3, TotalDialogue.Core.Variables.Vector3Var, TotalDialogue.Core.Variables.Vector3Listener)
+  name.vb: VariableList(Of Vector3, Vector3Var, Vector3Listener)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.VariableList`3
+    name: VariableList
+    href: TotalDialogue.Core.Variables.VariableList-3.html
+  - name: <
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: TotalDialogue.Core.Variables.Vector3Var
+    name: Vector3Var
+    href: TotalDialogue.Core.Variables.Vector3Var.html
+  - name: ','
+  - name: " "
+  - uid: TotalDialogue.Core.Variables.Vector3Listener
+    name: Vector3Listener
+    href: TotalDialogue.Core.Variables.Vector3Listener.html
   - name: '>'
   spec.vb:
-  - uid: TotalDialogue.Core.Collections.TDFDictionary`2
-    name: TDFDictionary
-    href: TotalDialogue.Core.Collections.TDFDictionary-2.html
+  - uid: TotalDialogue.Core.Variables.VariableList`3
+    name: VariableList
+    href: TotalDialogue.Core.Variables.VariableList-3.html
   - name: (
   - name: Of
   - name: " "
-  - name: TKey
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
   - name: ','
   - name: " "
-  - name: TValue
+  - uid: TotalDialogue.Core.Variables.Vector3Var
+    name: Vector3Var
+    href: TotalDialogue.Core.Variables.Vector3Var.html
+  - name: ','
+  - name: " "
+  - uid: TotalDialogue.Core.Variables.Vector3Listener
+    name: Vector3Listener
+    href: TotalDialogue.Core.Variables.Vector3Listener.html
   - name: )
-- uid: TotalDialogue.Core.Collections
-  commentId: N:TotalDialogue.Core.Collections
-  href: TotalDialogue.html
-  name: TotalDialogue.Core.Collections
-  nameWithType: TotalDialogue.Core.Collections
-  fullName: TotalDialogue.Core.Collections
+- uid: TotalDialogue.Core.Variables.VariableList{UnityEngine.Quaternion,TotalDialogue.Core.Variables.QuaternionVar,TotalDialogue.Core.Variables.QuaternionListener}
+  commentId: T:TotalDialogue.Core.Variables.VariableList{UnityEngine.Quaternion,TotalDialogue.Core.Variables.QuaternionVar,TotalDialogue.Core.Variables.QuaternionListener}
+  parent: TotalDialogue.Core.Variables
+  definition: TotalDialogue.Core.Variables.VariableList`3
+  href: TotalDialogue.Core.Variables.VariableList-3.html
+  name: VariableList<Quaternion, QuaternionVar, QuaternionListener>
+  nameWithType: VariableList<Quaternion, QuaternionVar, QuaternionListener>
+  fullName: TotalDialogue.Core.Variables.VariableList<UnityEngine.Quaternion, TotalDialogue.Core.Variables.QuaternionVar, TotalDialogue.Core.Variables.QuaternionListener>
+  nameWithType.vb: VariableList(Of Quaternion, QuaternionVar, QuaternionListener)
+  fullName.vb: TotalDialogue.Core.Variables.VariableList(Of UnityEngine.Quaternion, TotalDialogue.Core.Variables.QuaternionVar, TotalDialogue.Core.Variables.QuaternionListener)
+  name.vb: VariableList(Of Quaternion, QuaternionVar, QuaternionListener)
   spec.csharp:
-  - uid: TotalDialogue
-    name: TotalDialogue
-    href: TotalDialogue.html
-  - name: .
-  - uid: TotalDialogue.Core
-    name: Core
-    href: TotalDialogue.Core.html
-  - name: .
-  - uid: TotalDialogue.Core.Collections
-    name: Collections
-    href: TotalDialogue.Core.Collections.html
+  - uid: TotalDialogue.Core.Variables.VariableList`3
+    name: VariableList
+    href: TotalDialogue.Core.Variables.VariableList-3.html
+  - name: <
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: TotalDialogue.Core.Variables.QuaternionVar
+    name: QuaternionVar
+    href: TotalDialogue.Core.Variables.QuaternionVar.html
+  - name: ','
+  - name: " "
+  - uid: TotalDialogue.Core.Variables.QuaternionListener
+    name: QuaternionListener
+    href: TotalDialogue.Core.Variables.QuaternionListener.html
+  - name: '>'
   spec.vb:
-  - uid: TotalDialogue
-    name: TotalDialogue
-    href: TotalDialogue.html
-  - name: .
-  - uid: TotalDialogue.Core
-    name: Core
-    href: TotalDialogue.Core.html
-  - name: .
-  - uid: TotalDialogue.Core.Collections
-    name: Collections
-    href: TotalDialogue.Core.Collections.html
+  - uid: TotalDialogue.Core.Variables.VariableList`3
+    name: VariableList
+    href: TotalDialogue.Core.Variables.VariableList-3.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: TotalDialogue.Core.Variables.QuaternionVar
+    name: QuaternionVar
+    href: TotalDialogue.Core.Variables.QuaternionVar.html
+  - name: ','
+  - name: " "
+  - uid: TotalDialogue.Core.Variables.QuaternionListener
+    name: QuaternionListener
+    href: TotalDialogue.Core.Variables.QuaternionListener.html
+  - name: )
 - uid: TotalDialogue.Core.Variables.TDFVariables.GetBool*
   commentId: Overload:TotalDialogue.Core.Variables.TDFVariables.GetBool
   href: TotalDialogue.Core.Variables.TDFVariables.html#TotalDialogue_Core_Variables_TDFVariables_GetBool_System_String_
@@ -2338,60 +2774,60 @@ references:
     name: Vector3Listener
     href: TotalDialogue.Core.Variables.Vector3Listener.html
   - name: )
-- uid: TotalDialogue.Core.Variables.IVariables.AddListener(TotalDialogue.Core.Variables.QuartanionListener)
-  commentId: M:TotalDialogue.Core.Variables.IVariables.AddListener(TotalDialogue.Core.Variables.QuartanionListener)
+- uid: TotalDialogue.Core.Variables.IVariables.AddListener(TotalDialogue.Core.Variables.QuaternionListener)
+  commentId: M:TotalDialogue.Core.Variables.IVariables.AddListener(TotalDialogue.Core.Variables.QuaternionListener)
   parent: TotalDialogue.Core.Variables.IVariables
-  href: TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_AddListener_TotalDialogue_Core_Variables_QuartanionListener_
-  name: AddListener(QuartanionListener)
-  nameWithType: IVariables.AddListener(QuartanionListener)
-  fullName: TotalDialogue.Core.Variables.IVariables.AddListener(TotalDialogue.Core.Variables.QuartanionListener)
+  href: TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_AddListener_TotalDialogue_Core_Variables_QuaternionListener_
+  name: AddListener(QuaternionListener)
+  nameWithType: IVariables.AddListener(QuaternionListener)
+  fullName: TotalDialogue.Core.Variables.IVariables.AddListener(TotalDialogue.Core.Variables.QuaternionListener)
   spec.csharp:
-  - uid: TotalDialogue.Core.Variables.IVariables.AddListener(TotalDialogue.Core.Variables.QuartanionListener)
+  - uid: TotalDialogue.Core.Variables.IVariables.AddListener(TotalDialogue.Core.Variables.QuaternionListener)
     name: AddListener
-    href: TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_AddListener_TotalDialogue_Core_Variables_QuartanionListener_
+    href: TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_AddListener_TotalDialogue_Core_Variables_QuaternionListener_
   - name: (
-  - uid: TotalDialogue.Core.Variables.QuartanionListener
-    name: QuartanionListener
-    href: TotalDialogue.Core.Variables.QuartanionListener.html
+  - uid: TotalDialogue.Core.Variables.QuaternionListener
+    name: QuaternionListener
+    href: TotalDialogue.Core.Variables.QuaternionListener.html
   - name: )
   spec.vb:
-  - uid: TotalDialogue.Core.Variables.IVariables.AddListener(TotalDialogue.Core.Variables.QuartanionListener)
+  - uid: TotalDialogue.Core.Variables.IVariables.AddListener(TotalDialogue.Core.Variables.QuaternionListener)
     name: AddListener
-    href: TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_AddListener_TotalDialogue_Core_Variables_QuartanionListener_
+    href: TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_AddListener_TotalDialogue_Core_Variables_QuaternionListener_
   - name: (
-  - uid: TotalDialogue.Core.Variables.QuartanionListener
-    name: QuartanionListener
-    href: TotalDialogue.Core.Variables.QuartanionListener.html
+  - uid: TotalDialogue.Core.Variables.QuaternionListener
+    name: QuaternionListener
+    href: TotalDialogue.Core.Variables.QuaternionListener.html
   - name: )
-- uid: TotalDialogue.Core.Variables.QuartanionListener
-  commentId: T:TotalDialogue.Core.Variables.QuartanionListener
+- uid: TotalDialogue.Core.Variables.QuaternionListener
+  commentId: T:TotalDialogue.Core.Variables.QuaternionListener
   parent: TotalDialogue.Core.Variables
-  href: TotalDialogue.Core.Variables.QuartanionListener.html
-  name: QuartanionListener
-  nameWithType: QuartanionListener
-  fullName: TotalDialogue.Core.Variables.QuartanionListener
-- uid: TotalDialogue.Core.Variables.IVariables.RemoveListener(TotalDialogue.Core.Variables.QuartanionListener)
-  commentId: M:TotalDialogue.Core.Variables.IVariables.RemoveListener(TotalDialogue.Core.Variables.QuartanionListener)
+  href: TotalDialogue.Core.Variables.QuaternionListener.html
+  name: QuaternionListener
+  nameWithType: QuaternionListener
+  fullName: TotalDialogue.Core.Variables.QuaternionListener
+- uid: TotalDialogue.Core.Variables.IVariables.RemoveListener(TotalDialogue.Core.Variables.QuaternionListener)
+  commentId: M:TotalDialogue.Core.Variables.IVariables.RemoveListener(TotalDialogue.Core.Variables.QuaternionListener)
   parent: TotalDialogue.Core.Variables.IVariables
-  href: TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_RemoveListener_TotalDialogue_Core_Variables_QuartanionListener_
-  name: RemoveListener(QuartanionListener)
-  nameWithType: IVariables.RemoveListener(QuartanionListener)
-  fullName: TotalDialogue.Core.Variables.IVariables.RemoveListener(TotalDialogue.Core.Variables.QuartanionListener)
+  href: TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_RemoveListener_TotalDialogue_Core_Variables_QuaternionListener_
+  name: RemoveListener(QuaternionListener)
+  nameWithType: IVariables.RemoveListener(QuaternionListener)
+  fullName: TotalDialogue.Core.Variables.IVariables.RemoveListener(TotalDialogue.Core.Variables.QuaternionListener)
   spec.csharp:
-  - uid: TotalDialogue.Core.Variables.IVariables.RemoveListener(TotalDialogue.Core.Variables.QuartanionListener)
+  - uid: TotalDialogue.Core.Variables.IVariables.RemoveListener(TotalDialogue.Core.Variables.QuaternionListener)
     name: RemoveListener
-    href: TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_RemoveListener_TotalDialogue_Core_Variables_QuartanionListener_
+    href: TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_RemoveListener_TotalDialogue_Core_Variables_QuaternionListener_
   - name: (
-  - uid: TotalDialogue.Core.Variables.QuartanionListener
-    name: QuartanionListener
-    href: TotalDialogue.Core.Variables.QuartanionListener.html
+  - uid: TotalDialogue.Core.Variables.QuaternionListener
+    name: QuaternionListener
+    href: TotalDialogue.Core.Variables.QuaternionListener.html
   - name: )
   spec.vb:
-  - uid: TotalDialogue.Core.Variables.IVariables.RemoveListener(TotalDialogue.Core.Variables.QuartanionListener)
+  - uid: TotalDialogue.Core.Variables.IVariables.RemoveListener(TotalDialogue.Core.Variables.QuaternionListener)
     name: RemoveListener
-    href: TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_RemoveListener_TotalDialogue_Core_Variables_QuartanionListener_
+    href: TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_RemoveListener_TotalDialogue_Core_Variables_QuaternionListener_
   - name: (
-  - uid: TotalDialogue.Core.Variables.QuartanionListener
-    name: QuartanionListener
-    href: TotalDialogue.Core.Variables.QuartanionListener.html
+  - uid: TotalDialogue.Core.Variables.QuaternionListener
+    name: QuaternionListener
+    href: TotalDialogue.Core.Variables.QuaternionListener.html
   - name: )

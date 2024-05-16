@@ -55,7 +55,7 @@ items:
     content: >-
       [Serializable]
 
-      public class TDFKeyValuePairs<TKey, TValue> : TDFList<TDFKeyValuePair<TKey, TValue>>, ITDFList<TDFKeyValuePair<TKey, TValue>>, IEnumerable<TDFKeyValuePair<TKey, TValue>>, IEnumerable, ISerializationCallbackReceiver
+      public class TDFKeyValuePairs<TKey, TValue> : TDFList<TDFKeyValuePair<TKey, TValue>>, ITDFList, ITDFListGeneric<TDFKeyValuePair<TKey, TValue>>, IEnumerable<TDFKeyValuePair<TKey, TValue>>, IEnumerable, ISerializationCallbackReceiver
     typeParameters:
     - id: TKey
       description: キーの型
@@ -64,14 +64,15 @@ items:
     content.vb: >-
       <Serializable>
 
-      Public Class TDFKeyValuePairs(Of TKey, TValue) Inherits TDFList(Of TDFKeyValuePair(Of TKey, TValue)) Implements ITDFList(Of TDFKeyValuePair(Of TKey, TValue)), IEnumerable(Of TDFKeyValuePair(Of TKey, TValue)), IEnumerable, ISerializationCallbackReceiver
+      Public Class TDFKeyValuePairs(Of TKey, TValue) Inherits TDFList(Of TDFKeyValuePair(Of TKey, TValue)) Implements ITDFList, ITDFListGeneric(Of TDFKeyValuePair(Of TKey, TValue)), IEnumerable(Of TDFKeyValuePair(Of TKey, TValue)), IEnumerable, ISerializationCallbackReceiver
   inheritance:
   - System.Object
   - TotalDialogue.Core.Collections.TDFList{TotalDialogue.Core.Collections.TDFKeyValuePair{{TKey},{TValue}}}
   derivedClasses:
   - TotalDialogue.Core.Collections.TDFDictionary`2
   implements:
-  - TotalDialogue.Core.Collections.ITDFList{TotalDialogue.Core.Collections.TDFKeyValuePair{{TKey},{TValue}}}
+  - TotalDialogue.Core.Collections.ITDFList
+  - TotalDialogue.Core.Collections.ITDFListGeneric{TotalDialogue.Core.Collections.TDFKeyValuePair{{TKey},{TValue}}}
   - System.Collections.Generic.IEnumerable{TotalDialogue.Core.Collections.TDFKeyValuePair{{TKey},{TValue}}}
   - System.Collections.IEnumerable
   - UnityEngine.ISerializationCallbackReceiver
@@ -819,21 +820,28 @@ references:
   - name: TValue
   - name: )
   - name: )
-- uid: TotalDialogue.Core.Collections.ITDFList{TotalDialogue.Core.Collections.TDFKeyValuePair{{TKey},{TValue}}}
-  commentId: T:TotalDialogue.Core.Collections.ITDFList{TotalDialogue.Core.Collections.TDFKeyValuePair{`0,`1}}
+- uid: TotalDialogue.Core.Collections.ITDFList
+  commentId: T:TotalDialogue.Core.Collections.ITDFList
   parent: TotalDialogue.Core.Collections
-  definition: TotalDialogue.Core.Collections.ITDFList`1
-  href: TotalDialogue.Core.Collections.ITDFList-1.html
-  name: ITDFList<TDFKeyValuePair<TKey, TValue>>
-  nameWithType: ITDFList<TDFKeyValuePair<TKey, TValue>>
-  fullName: TotalDialogue.Core.Collections.ITDFList<TotalDialogue.Core.Collections.TDFKeyValuePair<TKey, TValue>>
-  nameWithType.vb: ITDFList(Of TDFKeyValuePair(Of TKey, TValue))
-  fullName.vb: TotalDialogue.Core.Collections.ITDFList(Of TotalDialogue.Core.Collections.TDFKeyValuePair(Of TKey, TValue))
-  name.vb: ITDFList(Of TDFKeyValuePair(Of TKey, TValue))
+  href: TotalDialogue.Core.Collections.ITDFList.html
+  name: ITDFList
+  nameWithType: ITDFList
+  fullName: TotalDialogue.Core.Collections.ITDFList
+- uid: TotalDialogue.Core.Collections.ITDFListGeneric{TotalDialogue.Core.Collections.TDFKeyValuePair{{TKey},{TValue}}}
+  commentId: T:TotalDialogue.Core.Collections.ITDFListGeneric{TotalDialogue.Core.Collections.TDFKeyValuePair{`0,`1}}
+  parent: TotalDialogue.Core.Collections
+  definition: TotalDialogue.Core.Collections.ITDFListGeneric`1
+  href: TotalDialogue.Core.Collections.ITDFListGeneric-1.html
+  name: ITDFListGeneric<TDFKeyValuePair<TKey, TValue>>
+  nameWithType: ITDFListGeneric<TDFKeyValuePair<TKey, TValue>>
+  fullName: TotalDialogue.Core.Collections.ITDFListGeneric<TotalDialogue.Core.Collections.TDFKeyValuePair<TKey, TValue>>
+  nameWithType.vb: ITDFListGeneric(Of TDFKeyValuePair(Of TKey, TValue))
+  fullName.vb: TotalDialogue.Core.Collections.ITDFListGeneric(Of TotalDialogue.Core.Collections.TDFKeyValuePair(Of TKey, TValue))
+  name.vb: ITDFListGeneric(Of TDFKeyValuePair(Of TKey, TValue))
   spec.csharp:
-  - uid: TotalDialogue.Core.Collections.ITDFList`1
-    name: ITDFList
-    href: TotalDialogue.Core.Collections.ITDFList-1.html
+  - uid: TotalDialogue.Core.Collections.ITDFListGeneric`1
+    name: ITDFListGeneric
+    href: TotalDialogue.Core.Collections.ITDFListGeneric-1.html
   - name: <
   - uid: TotalDialogue.Core.Collections.TDFKeyValuePair`2
     name: TDFKeyValuePair
@@ -846,9 +854,9 @@ references:
   - name: '>'
   - name: '>'
   spec.vb:
-  - uid: TotalDialogue.Core.Collections.ITDFList`1
-    name: ITDFList
-    href: TotalDialogue.Core.Collections.ITDFList-1.html
+  - uid: TotalDialogue.Core.Collections.ITDFListGeneric`1
+    name: ITDFListGeneric
+    href: TotalDialogue.Core.Collections.ITDFListGeneric-1.html
   - name: (
   - name: Of
   - name: " "
@@ -3375,26 +3383,26 @@ references:
   - name: " "
   - name: T
   - name: )
-- uid: TotalDialogue.Core.Collections.ITDFList`1
-  commentId: T:TotalDialogue.Core.Collections.ITDFList`1
-  href: TotalDialogue.Core.Collections.ITDFList-1.html
-  name: ITDFList<T>
-  nameWithType: ITDFList<T>
-  fullName: TotalDialogue.Core.Collections.ITDFList<T>
-  nameWithType.vb: ITDFList(Of T)
-  fullName.vb: TotalDialogue.Core.Collections.ITDFList(Of T)
-  name.vb: ITDFList(Of T)
+- uid: TotalDialogue.Core.Collections.ITDFListGeneric`1
+  commentId: T:TotalDialogue.Core.Collections.ITDFListGeneric`1
+  href: TotalDialogue.Core.Collections.ITDFListGeneric-1.html
+  name: ITDFListGeneric<T>
+  nameWithType: ITDFListGeneric<T>
+  fullName: TotalDialogue.Core.Collections.ITDFListGeneric<T>
+  nameWithType.vb: ITDFListGeneric(Of T)
+  fullName.vb: TotalDialogue.Core.Collections.ITDFListGeneric(Of T)
+  name.vb: ITDFListGeneric(Of T)
   spec.csharp:
-  - uid: TotalDialogue.Core.Collections.ITDFList`1
-    name: ITDFList
-    href: TotalDialogue.Core.Collections.ITDFList-1.html
+  - uid: TotalDialogue.Core.Collections.ITDFListGeneric`1
+    name: ITDFListGeneric
+    href: TotalDialogue.Core.Collections.ITDFListGeneric-1.html
   - name: <
   - name: T
   - name: '>'
   spec.vb:
-  - uid: TotalDialogue.Core.Collections.ITDFList`1
-    name: ITDFList
-    href: TotalDialogue.Core.Collections.ITDFList-1.html
+  - uid: TotalDialogue.Core.Collections.ITDFListGeneric`1
+    name: ITDFListGeneric
+    href: TotalDialogue.Core.Collections.ITDFListGeneric-1.html
   - name: (
   - name: Of
   - name: " "

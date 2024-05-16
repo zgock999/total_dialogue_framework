@@ -86,13 +86,14 @@
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-    <div class="level1"><a class="xref" href="TotalDialogue.Core.Variables.TDFVar-2.html">TDFVar</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="TotalDialogue.Core.Variables.IntListener.html">IntListener</a>&gt;</div>
-    <div class="level2"><span class="xref">IntVar</span></div>
+    <div class="level1"><a class="xref" href="TotalDialogue.Core.Variables.BaseVar.html">BaseVar</a></div>
+    <div class="level2"><a class="xref" href="TotalDialogue.Core.Variables.TDFVar-2.html">TDFVar</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="TotalDialogue.Core.Variables.IntListener.html">IntListener</a>&gt;</div>
+    <div class="level3"><span class="xref">IntVar</span></div>
   </div>
   <div class="implements">
     <h5>Implements</h5>
+    <div><a class="xref" href="TotalDialogue.Core.Variables.ITDFVar.html">ITDFVar</a></div>
     <div><a class="xref" href="TotalDialogue.Core.Variables.ITDFVar-2.html">ITDFVar</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="TotalDialogue.Core.Variables.IntListener.html">IntListener</a>&gt;</div>
-    <div><a class="xref" href="TotalDialogue.Core.Variables.IEmptyVar.html">IEmptyVar</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -100,16 +101,10 @@
       <a class="xref" href="TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_m_listeners">TDFVar&lt;int, IntListener&gt;.m_listeners</a>
     </div>
     <div>
-      <a class="xref" href="TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_m_key">TDFVar&lt;int, IntListener&gt;.m_key</a>
-    </div>
-    <div>
       <a class="xref" href="TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_m_value">TDFVar&lt;int, IntListener&gt;.m_value</a>
     </div>
     <div>
       <a class="xref" href="TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_m_defaultValue">TDFVar&lt;int, IntListener&gt;.m_defaultValue</a>
-    </div>
-    <div>
-      <a class="xref" href="TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_Key">TDFVar&lt;int, IntListener&gt;.Key</a>
     </div>
     <div>
       <a class="xref" href="TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_Value">TDFVar&lt;int, IntListener&gt;.Value</a>
@@ -119,6 +114,9 @@
     </div>
     <div>
       <a class="xref" href="TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetValue__0_">TDFVar&lt;int, IntListener&gt;.SetValue(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_FireOnChanged__0__0_">TDFVar&lt;int, IntListener&gt;.FireOnChanged(int, int)</a>
     </div>
     <div>
       <a class="xref" href="TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_Fire__1__0__0_System_Boolean_">TDFVar&lt;int, IntListener&gt;.Fire(IntListener, int, int, bool)</a>
@@ -145,7 +143,10 @@
       <a class="xref" href="TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_StringValue">TDFVar&lt;int, IntListener&gt;.StringValue</a>
     </div>
     <div>
-      <a class="xref" href="TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_Interface">TDFVar&lt;int, IntListener&gt;.Interface</a>
+      <a class="xref" href="TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GenericInterFace">TDFVar&lt;int, IntListener&gt;.GenericInterFace</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GenericInterface">TDFVar&lt;int, IntListener&gt;.GenericInterface</a>
     </div>
     <div>
       <a class="xref" href="TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_AddListener__1_">TDFVar&lt;int, IntListener&gt;.AddListener(IntListener)</a>
@@ -187,6 +188,36 @@
       <a class="xref" href="TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetVector3Value_UnityEngine_Vector3_">TDFVar&lt;int, IntListener&gt;.SetVector3Value(Vector3)</a>
     </div>
     <div>
+      <a class="xref" href="TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetSelf_TotalDialogue_Core_Variables_BaseVar_">TDFVar&lt;int, IntListener&gt;.SetSelf(BaseVar)</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetSekf">TDFVar&lt;int, IntListener&gt;.GetSekf()</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Variables.BaseVar.html#TotalDialogue_Core_Variables_BaseVar_m_key">BaseVar.m_key</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Variables.BaseVar.html#TotalDialogue_Core_Variables_BaseVar_Key">BaseVar.Key</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Variables.BaseVar.html#TotalDialogue_Core_Variables_BaseVar_StringValue">BaseVar.StringValue</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Variables.BaseVar.html#TotalDialogue_Core_Variables_BaseVar_Interface">BaseVar.Interface</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Variables.BaseVar.html#TotalDialogue_Core_Variables_BaseVar_RestoreDefault">BaseVar.RestoreDefault()</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Variables.BaseVar.html#TotalDialogue_Core_Variables_BaseVar_StoreDefault">BaseVar.StoreDefault()</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Variables.BaseVar.html#TotalDialogue_Core_Variables_BaseVar_OnValueChanged">BaseVar.OnValueChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Variables.BaseVar.html#TotalDialogue_Core_Variables_BaseVar_SetSelf_TotalDialogue_Core_Variables_BaseVar_">BaseVar.SetSelf(BaseVar)</a>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
     </div>
     <div>
@@ -212,14 +243,49 @@
   <h6><strong>Assembly</strong>: TDF.dll</h6>
   <h5 id="TotalDialogue_Core_Variables_IntVar_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class IntVar : TDFVar&lt;int, IntListener&gt;, ITDFVar&lt;int, IntListener&gt;, IEmptyVar</code></pre>
+    <pre><code class="lang-csharp hljs">[Serializable]
+public class IntVar : TDFVar&lt;int, IntListener&gt;, ITDFVar, ITDFVar&lt;int, IntListener&gt;</code></pre>
   </div>
+  <h3 id="properties">Properties
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zgock999/total_dialogue_framework/new/master/apiSpec/new?filename=TotalDialogue_Core_Variables_IntVar_TypeName.md&amp;value=---%0Auid%3A%20TotalDialogue.Core.Variables.IntVar.TypeName%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zgock999/total_dialogue_framework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/IntVar.cs/#L10">View Source</a>
+  </span>
+  <a id="TotalDialogue_Core_Variables_IntVar_TypeName_" data-uid="TotalDialogue.Core.Variables.IntVar.TypeName*"></a>
+  <h4 id="TotalDialogue_Core_Variables_IntVar_TypeName" data-uid="TotalDialogue.Core.Variables.IntVar.TypeName">TypeName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string TypeName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="TotalDialogue.Core.Variables.BaseVar.html#TotalDialogue_Core_Variables_BaseVar_TypeName">BaseVar.TypeName</a></div>
   <h3 id="implements">Implements</h3>
   <div>
-      <a class="xref" href="TotalDialogue.Core.Variables.ITDFVar-2.html">ITDFVar&lt;T, TListener&gt;</a>
+      <a class="xref" href="TotalDialogue.Core.Variables.ITDFVar.html">ITDFVar</a>
   </div>
   <div>
-      <a class="xref" href="TotalDialogue.Core.Variables.IEmptyVar.html">IEmptyVar</a>
+      <a class="xref" href="TotalDialogue.Core.Variables.ITDFVar-2.html">ITDFVar&lt;T, TListener&gt;</a>
   </div>
 
 </article>

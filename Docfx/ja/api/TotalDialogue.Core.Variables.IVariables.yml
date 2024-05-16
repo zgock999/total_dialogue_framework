@@ -8,7 +8,7 @@ items:
   - TotalDialogue.Core.Variables.IVariables.AddListener(TotalDialogue.Core.Variables.BoolListener)
   - TotalDialogue.Core.Variables.IVariables.AddListener(TotalDialogue.Core.Variables.FloatListener)
   - TotalDialogue.Core.Variables.IVariables.AddListener(TotalDialogue.Core.Variables.IntListener)
-  - TotalDialogue.Core.Variables.IVariables.AddListener(TotalDialogue.Core.Variables.QuartanionListener)
+  - TotalDialogue.Core.Variables.IVariables.AddListener(TotalDialogue.Core.Variables.QuaternionListener)
   - TotalDialogue.Core.Variables.IVariables.AddListener(TotalDialogue.Core.Variables.StringListener)
   - TotalDialogue.Core.Variables.IVariables.AddListener(TotalDialogue.Core.Variables.Vector3Listener)
   - TotalDialogue.Core.Variables.IVariables.GetBool(System.String)
@@ -22,7 +22,7 @@ items:
   - TotalDialogue.Core.Variables.IVariables.RemoveListener(TotalDialogue.Core.Variables.BoolListener)
   - TotalDialogue.Core.Variables.IVariables.RemoveListener(TotalDialogue.Core.Variables.FloatListener)
   - TotalDialogue.Core.Variables.IVariables.RemoveListener(TotalDialogue.Core.Variables.IntListener)
-  - TotalDialogue.Core.Variables.IVariables.RemoveListener(TotalDialogue.Core.Variables.QuartanionListener)
+  - TotalDialogue.Core.Variables.IVariables.RemoveListener(TotalDialogue.Core.Variables.QuaternionListener)
   - TotalDialogue.Core.Variables.IVariables.RemoveListener(TotalDialogue.Core.Variables.StringListener)
   - TotalDialogue.Core.Variables.IVariables.RemoveListener(TotalDialogue.Core.Variables.Vector3Listener)
   - TotalDialogue.Core.Variables.IVariables.Reset
@@ -751,16 +751,16 @@ items:
       type: TotalDialogue.Core.Variables.Vector3Listener
     content.vb: Sub RemoveListener(listener As Vector3Listener)
   overload: TotalDialogue.Core.Variables.IVariables.RemoveListener*
-- uid: TotalDialogue.Core.Variables.IVariables.AddListener(TotalDialogue.Core.Variables.QuartanionListener)
-  commentId: M:TotalDialogue.Core.Variables.IVariables.AddListener(TotalDialogue.Core.Variables.QuartanionListener)
-  id: AddListener(TotalDialogue.Core.Variables.QuartanionListener)
+- uid: TotalDialogue.Core.Variables.IVariables.AddListener(TotalDialogue.Core.Variables.QuaternionListener)
+  commentId: M:TotalDialogue.Core.Variables.IVariables.AddListener(TotalDialogue.Core.Variables.QuaternionListener)
+  id: AddListener(TotalDialogue.Core.Variables.QuaternionListener)
   parent: TotalDialogue.Core.Variables.IVariables
   langs:
   - csharp
   - vb
-  name: AddListener(QuartanionListener)
-  nameWithType: IVariables.AddListener(QuartanionListener)
-  fullName: TotalDialogue.Core.Variables.IVariables.AddListener(TotalDialogue.Core.Variables.QuartanionListener)
+  name: AddListener(QuaternionListener)
+  nameWithType: IVariables.AddListener(QuaternionListener)
+  fullName: TotalDialogue.Core.Variables.IVariables.AddListener(TotalDialogue.Core.Variables.QuaternionListener)
   type: Method
   source:
     remote:
@@ -774,22 +774,22 @@ items:
   - TDF
   namespace: TotalDialogue.Core.Variables
   syntax:
-    content: void AddListener(QuartanionListener listener)
+    content: void AddListener(QuaternionListener listener)
     parameters:
     - id: listener
-      type: TotalDialogue.Core.Variables.QuartanionListener
-    content.vb: Sub AddListener(listener As QuartanionListener)
+      type: TotalDialogue.Core.Variables.QuaternionListener
+    content.vb: Sub AddListener(listener As QuaternionListener)
   overload: TotalDialogue.Core.Variables.IVariables.AddListener*
-- uid: TotalDialogue.Core.Variables.IVariables.RemoveListener(TotalDialogue.Core.Variables.QuartanionListener)
-  commentId: M:TotalDialogue.Core.Variables.IVariables.RemoveListener(TotalDialogue.Core.Variables.QuartanionListener)
-  id: RemoveListener(TotalDialogue.Core.Variables.QuartanionListener)
+- uid: TotalDialogue.Core.Variables.IVariables.RemoveListener(TotalDialogue.Core.Variables.QuaternionListener)
+  commentId: M:TotalDialogue.Core.Variables.IVariables.RemoveListener(TotalDialogue.Core.Variables.QuaternionListener)
+  id: RemoveListener(TotalDialogue.Core.Variables.QuaternionListener)
   parent: TotalDialogue.Core.Variables.IVariables
   langs:
   - csharp
   - vb
-  name: RemoveListener(QuartanionListener)
-  nameWithType: IVariables.RemoveListener(QuartanionListener)
-  fullName: TotalDialogue.Core.Variables.IVariables.RemoveListener(TotalDialogue.Core.Variables.QuartanionListener)
+  name: RemoveListener(QuaternionListener)
+  nameWithType: IVariables.RemoveListener(QuaternionListener)
+  fullName: TotalDialogue.Core.Variables.IVariables.RemoveListener(TotalDialogue.Core.Variables.QuaternionListener)
   type: Method
   source:
     remote:
@@ -803,11 +803,11 @@ items:
   - TDF
   namespace: TotalDialogue.Core.Variables
   syntax:
-    content: void RemoveListener(QuartanionListener listener)
+    content: void RemoveListener(QuaternionListener listener)
     parameters:
     - id: listener
-      type: TotalDialogue.Core.Variables.QuartanionListener
-    content.vb: Sub RemoveListener(listener As QuartanionListener)
+      type: TotalDialogue.Core.Variables.QuaternionListener
+    content.vb: Sub RemoveListener(listener As QuaternionListener)
   overload: TotalDialogue.Core.Variables.IVariables.RemoveListener*
 - uid: TotalDialogue.Core.Variables.IVariables.Reset
   commentId: M:TotalDialogue.Core.Variables.IVariables.Reset
@@ -1114,13 +1114,13 @@ references:
   name: Vector3Listener
   nameWithType: Vector3Listener
   fullName: TotalDialogue.Core.Variables.Vector3Listener
-- uid: TotalDialogue.Core.Variables.QuartanionListener
-  commentId: T:TotalDialogue.Core.Variables.QuartanionListener
+- uid: TotalDialogue.Core.Variables.QuaternionListener
+  commentId: T:TotalDialogue.Core.Variables.QuaternionListener
   parent: TotalDialogue.Core.Variables
-  href: TotalDialogue.Core.Variables.QuartanionListener.html
-  name: QuartanionListener
-  nameWithType: QuartanionListener
-  fullName: TotalDialogue.Core.Variables.QuartanionListener
+  href: TotalDialogue.Core.Variables.QuaternionListener.html
+  name: QuaternionListener
+  nameWithType: QuaternionListener
+  fullName: TotalDialogue.Core.Variables.QuaternionListener
 - uid: TotalDialogue.Core.Variables.IVariables.Reset*
   commentId: Overload:TotalDialogue.Core.Variables.IVariables.Reset
   href: TotalDialogue.Core.Variables.IVariables.html#TotalDialogue_Core_Variables_IVariables_Reset

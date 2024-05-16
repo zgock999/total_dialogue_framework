@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: TotalDialogue.Core
+  commentId: N:TotalDialogue.Core
+  id: TotalDialogue.Core
+  children:
+  - TotalDialogue.Core.TDFComponentVariables
+  - TotalDialogue.Core.TDFScriptableVariables
+  langs:
+  - csharp
+  - vb
+  name: TotalDialogue.Core
+  nameWithType: TotalDialogue.Core
+  fullName: TotalDialogue.Core
+  type: Namespace
+  assemblies:
+  - TDF
+references:
+- uid: TotalDialogue.Core.TDFComponentVariables
+  commentId: T:TotalDialogue.Core.TDFComponentVariables
+  href: TotalDialogue.Core.TDFComponentVariables.html
+  name: TDFComponentVariables
+  nameWithType: TDFComponentVariables
+  fullName: TotalDialogue.Core.TDFComponentVariables
+- uid: TotalDialogue.Core.TDFScriptableVariables
+  commentId: T:TotalDialogue.Core.TDFScriptableVariables
+  href: TotalDialogue.Core.TDFScriptableVariables.html
+  name: TDFScriptableVariables
+  nameWithType: TDFScriptableVariables
+  fullName: TotalDialogue.Core.TDFScriptableVariables

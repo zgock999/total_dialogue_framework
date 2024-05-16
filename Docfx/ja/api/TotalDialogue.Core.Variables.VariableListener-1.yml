@@ -35,17 +35,24 @@ items:
   - TDF
   namespace: TotalDialogue.Core.Variables
   syntax:
-    content: public class VariableListener<T>
+    content: >-
+      [Serializable]
+
+      public class VariableListener<T>
     typeParameters:
     - id: T
-    content.vb: Public Class VariableListener(Of T)
+    content.vb: >-
+      <Serializable>
+
+      Public Class VariableListener(Of T)
   inheritance:
   - System.Object
   derivedClasses:
   - TotalDialogue.Core.Variables.BoolListener
   - TotalDialogue.Core.Variables.FloatListener
   - TotalDialogue.Core.Variables.IntListener
-  - TotalDialogue.Core.Variables.QuartanionListener
+  - TotalDialogue.Core.Variables.ObjectListener
+  - TotalDialogue.Core.Variables.QuaternionListener
   - TotalDialogue.Core.Variables.StringListener
   - TotalDialogue.Core.Variables.Vector3Listener
   inheritedMembers:
@@ -56,6 +63,10 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
   nameWithType.vb: VariableListener(Of T)
   fullName.vb: TotalDialogue.Core.Variables.VariableListener(Of T)
   name.vb: VariableListener(Of T)
@@ -77,7 +88,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: fireOnEnable
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Listener/VariableListener.cs
-    startLine: 10
+    startLine: 11
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Variables
@@ -106,7 +117,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: fireOnBecome
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Listener/VariableListener.cs
-    startLine: 11
+    startLine: 12
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Variables
@@ -135,7 +146,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: key
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Listener/VariableListener.cs
-    startLine: 12
+    startLine: 13
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Variables
@@ -164,15 +175,25 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: variables
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Listener/VariableListener.cs
-    startLine: 13
+    startLine: 15
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Variables
   syntax:
-    content: public IVariables variables
+    content: >-
+      [NonSerialized]
+
+      public IVariables variables
     return:
       type: TotalDialogue.Core.Variables.IVariables
-    content.vb: Public variables As IVariables
+    content.vb: >-
+      <NonSerialized>
+
+      Public variables As IVariables
+  attributes:
+  - type: System.NonSerializedAttribute
+    ctor: System.NonSerializedAttribute.#ctor
+    arguments: []
   nameWithType.vb: VariableListener(Of T).variables
   fullName.vb: TotalDialogue.Core.Variables.VariableListener(Of T).variables
 - uid: TotalDialogue.Core.Variables.VariableListener`1.OnSet
@@ -193,15 +214,25 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: OnSet
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Listener/VariableListener.cs
-    startLine: 14
+    startLine: 17
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Variables
   syntax:
-    content: public UnityEvent<T> OnSet
+    content: >-
+      [NonSerialized]
+
+      public UnityEvent<T> OnSet
     return:
       type: UnityEngine.Events.UnityEvent{{T}}
-    content.vb: Public OnSet As UnityEvent(Of T)
+    content.vb: >-
+      <NonSerialized>
+
+      Public OnSet As UnityEvent(Of T)
+  attributes:
+  - type: System.NonSerializedAttribute
+    ctor: System.NonSerializedAttribute.#ctor
+    arguments: []
   nameWithType.vb: VariableListener(Of T).OnSet
   fullName.vb: TotalDialogue.Core.Variables.VariableListener(Of T).OnSet
 - uid: TotalDialogue.Core.Variables.VariableListener`1.OnChanged
@@ -222,15 +253,25 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: OnChanged
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Listener/VariableListener.cs
-    startLine: 15
+    startLine: 19
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Variables
   syntax:
-    content: public UnityEvent<T> OnChanged
+    content: >-
+      [NonSerialized]
+
+      public UnityEvent<T> OnChanged
     return:
       type: UnityEngine.Events.UnityEvent{{T}}
-    content.vb: Public OnChanged As UnityEvent(Of T)
+    content.vb: >-
+      <NonSerialized>
+
+      Public OnChanged As UnityEvent(Of T)
+  attributes:
+  - type: System.NonSerializedAttribute
+    ctor: System.NonSerializedAttribute.#ctor
+    arguments: []
   nameWithType.vb: VariableListener(Of T).OnChanged
   fullName.vb: TotalDialogue.Core.Variables.VariableListener(Of T).OnChanged
 - uid: TotalDialogue.Core.Variables.VariableListener`1.OnBecome
@@ -251,15 +292,25 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: OnBecome
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Listener/VariableListener.cs
-    startLine: 16
+    startLine: 21
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Variables
   syntax:
-    content: public UnityEvent OnBecome
+    content: >-
+      [NonSerialized]
+
+      public UnityEvent OnBecome
     return:
       type: UnityEngine.Events.UnityEvent
-    content.vb: Public OnBecome As UnityEvent
+    content.vb: >-
+      <NonSerialized>
+
+      Public OnBecome As UnityEvent
+  attributes:
+  - type: System.NonSerializedAttribute
+    ctor: System.NonSerializedAttribute.#ctor
+    arguments: []
   nameWithType.vb: VariableListener(Of T).OnBecome
   fullName.vb: TotalDialogue.Core.Variables.VariableListener(Of T).OnBecome
 - uid: TotalDialogue.Core.Variables.VariableListener`1.OnCease
@@ -280,15 +331,25 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: OnCease
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Listener/VariableListener.cs
-    startLine: 17
+    startLine: 23
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Variables
   syntax:
-    content: public UnityEvent OnCease
+    content: >-
+      [NonSerialized]
+
+      public UnityEvent OnCease
     return:
       type: UnityEngine.Events.UnityEvent
-    content.vb: Public OnCease As UnityEvent
+    content.vb: >-
+      <NonSerialized>
+
+      Public OnCease As UnityEvent
+  attributes:
+  - type: System.NonSerializedAttribute
+    ctor: System.NonSerializedAttribute.#ctor
+    arguments: []
   nameWithType.vb: VariableListener(Of T).OnCease
   fullName.vb: TotalDialogue.Core.Variables.VariableListener(Of T).OnCease
 - uid: TotalDialogue.Core.Variables.VariableListener`1.targetValue
@@ -309,7 +370,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: targetValue
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Listener/VariableListener.cs
-    startLine: 18
+    startLine: 24
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Variables
@@ -338,7 +399,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: SetValue
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Listener/VariableListener.cs
-    startLine: 19
+    startLine: 25
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Variables
@@ -372,7 +433,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: GetValue
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Listener/VariableListener.cs
-    startLine: 22
+    startLine: 28
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Variables

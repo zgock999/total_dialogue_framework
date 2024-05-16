@@ -21,7 +21,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: BoolListener
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Listener/BoolListener.cs
-    startLine: 7
+    startLine: 8
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Variables
@@ -66,7 +66,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: SetValue
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Listener/BoolListener.cs
-    startLine: 9
+    startLine: 10
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Variables
@@ -102,7 +102,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: GetValue
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Listener/BoolListener.cs
-    startLine: 13
+    startLine: 14
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Variables

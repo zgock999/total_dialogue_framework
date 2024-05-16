@@ -4,7 +4,8 @@ items:
   commentId: T:TotalDialogue.Core.Variables.IntVar
   id: IntVar
   parent: TotalDialogue.Core.Variables
-  children: []
+  children:
+  - TotalDialogue.Core.Variables.IntVar.TypeName
   langs:
   - csharp
   - vb
@@ -24,23 +25,29 @@ items:
   - TDF
   namespace: TotalDialogue.Core.Variables
   syntax:
-    content: 'public class IntVar : TDFVar<int, IntListener>, ITDFVar<int, IntListener>, IEmptyVar'
-    content.vb: Public Class IntVar Inherits TDFVar(Of Integer, IntListener) Implements ITDFVar(Of Integer, IntListener), IEmptyVar
+    content: >-
+      [Serializable]
+
+      public class IntVar : TDFVar<int, IntListener>, ITDFVar, ITDFVar<int, IntListener>
+    content.vb: >-
+      <Serializable>
+
+      Public Class IntVar Inherits TDFVar(Of Integer, IntListener) Implements ITDFVar, ITDFVar(Of Integer, IntListener)
   inheritance:
   - System.Object
+  - TotalDialogue.Core.Variables.BaseVar
   - TotalDialogue.Core.Variables.TDFVar{System.Int32,TotalDialogue.Core.Variables.IntListener}
   implements:
+  - TotalDialogue.Core.Variables.ITDFVar
   - TotalDialogue.Core.Variables.ITDFVar{System.Int32,TotalDialogue.Core.Variables.IntListener}
-  - TotalDialogue.Core.Variables.IEmptyVar
   inheritedMembers:
   - TotalDialogue.Core.Variables.TDFVar{System.Int32,TotalDialogue.Core.Variables.IntListener}.m_listeners
-  - TotalDialogue.Core.Variables.TDFVar{System.Int32,TotalDialogue.Core.Variables.IntListener}.m_key
   - TotalDialogue.Core.Variables.TDFVar{System.Int32,TotalDialogue.Core.Variables.IntListener}.m_value
   - TotalDialogue.Core.Variables.TDFVar{System.Int32,TotalDialogue.Core.Variables.IntListener}.m_defaultValue
-  - TotalDialogue.Core.Variables.TDFVar{System.Int32,TotalDialogue.Core.Variables.IntListener}.Key
   - TotalDialogue.Core.Variables.TDFVar{System.Int32,TotalDialogue.Core.Variables.IntListener}.Value
   - TotalDialogue.Core.Variables.TDFVar{System.Int32,TotalDialogue.Core.Variables.IntListener}.GetValue
   - TotalDialogue.Core.Variables.TDFVar{System.Int32,TotalDialogue.Core.Variables.IntListener}.SetValue(System.Int32)
+  - TotalDialogue.Core.Variables.TDFVar{System.Int32,TotalDialogue.Core.Variables.IntListener}.FireOnChanged(System.Int32,System.Int32)
   - TotalDialogue.Core.Variables.TDFVar{System.Int32,TotalDialogue.Core.Variables.IntListener}.Fire(TotalDialogue.Core.Variables.IntListener,System.Int32,System.Int32,System.Boolean)
   - TotalDialogue.Core.Variables.TDFVar{System.Int32,TotalDialogue.Core.Variables.IntListener}.IsChanged(System.Int32,System.Int32)
   - TotalDialogue.Core.Variables.TDFVar{System.Int32,TotalDialogue.Core.Variables.IntListener}.IsBecome(System.Int32,System.Int32,System.Int32)
@@ -49,7 +56,8 @@ items:
   - TotalDialogue.Core.Variables.TDFVar{System.Int32,TotalDialogue.Core.Variables.IntListener}.StoreDefault
   - TotalDialogue.Core.Variables.TDFVar{System.Int32,TotalDialogue.Core.Variables.IntListener}.RestoreDefault
   - TotalDialogue.Core.Variables.TDFVar{System.Int32,TotalDialogue.Core.Variables.IntListener}.StringValue
-  - TotalDialogue.Core.Variables.TDFVar{System.Int32,TotalDialogue.Core.Variables.IntListener}.Interface
+  - TotalDialogue.Core.Variables.TDFVar{System.Int32,TotalDialogue.Core.Variables.IntListener}.GenericInterFace
+  - TotalDialogue.Core.Variables.TDFVar{System.Int32,TotalDialogue.Core.Variables.IntListener}.GenericInterface
   - TotalDialogue.Core.Variables.TDFVar{System.Int32,TotalDialogue.Core.Variables.IntListener}.AddListener(TotalDialogue.Core.Variables.IntListener)
   - TotalDialogue.Core.Variables.TDFVar{System.Int32,TotalDialogue.Core.Variables.IntListener}.RemoveListener(TotalDialogue.Core.Variables.IntListener)
   - TotalDialogue.Core.Variables.TDFVar{System.Int32,TotalDialogue.Core.Variables.IntListener}.GetBoolValue
@@ -63,6 +71,16 @@ items:
   - TotalDialogue.Core.Variables.TDFVar{System.Int32,TotalDialogue.Core.Variables.IntListener}.SetFloatValue(System.Single)
   - TotalDialogue.Core.Variables.TDFVar{System.Int32,TotalDialogue.Core.Variables.IntListener}.SetStringValue(System.String)
   - TotalDialogue.Core.Variables.TDFVar{System.Int32,TotalDialogue.Core.Variables.IntListener}.SetVector3Value(UnityEngine.Vector3)
+  - TotalDialogue.Core.Variables.TDFVar{System.Int32,TotalDialogue.Core.Variables.IntListener}.SetSelf(TotalDialogue.Core.Variables.BaseVar)
+  - TotalDialogue.Core.Variables.TDFVar{System.Int32,TotalDialogue.Core.Variables.IntListener}.GetSekf
+  - TotalDialogue.Core.Variables.BaseVar.m_key
+  - TotalDialogue.Core.Variables.BaseVar.Key
+  - TotalDialogue.Core.Variables.BaseVar.StringValue
+  - TotalDialogue.Core.Variables.BaseVar.Interface
+  - TotalDialogue.Core.Variables.BaseVar.RestoreDefault
+  - TotalDialogue.Core.Variables.BaseVar.StoreDefault
+  - TotalDialogue.Core.Variables.BaseVar.OnValueChanged
+  - TotalDialogue.Core.Variables.BaseVar.SetSelf(TotalDialogue.Core.Variables.BaseVar)
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.GetHashCode
@@ -70,6 +88,41 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: TotalDialogue.Core.Variables.IntVar.TypeName
+  commentId: P:TotalDialogue.Core.Variables.IntVar.TypeName
+  id: TypeName
+  parent: TotalDialogue.Core.Variables.IntVar
+  langs:
+  - csharp
+  - vb
+  name: TypeName
+  nameWithType: IntVar.TypeName
+  fullName: TotalDialogue.Core.Variables.IntVar.TypeName
+  type: Property
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/IntVar.cs
+      branch: master
+      repo: git@github.com:zgock999/total_dialogue_framework.git
+    id: TypeName
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/IntVar.cs
+    startLine: 9
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Variables
+  example: []
+  syntax:
+    content: public override string TypeName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overrides ReadOnly Property TypeName As String
+  overridden: TotalDialogue.Core.Variables.BaseVar.TypeName
+  overload: TotalDialogue.Core.Variables.IntVar.TypeName*
 references:
 - uid: TotalDialogue.Core.Variables
   commentId: N:TotalDialogue.Core.Variables
@@ -112,6 +165,13 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
+- uid: TotalDialogue.Core.Variables.BaseVar
+  commentId: T:TotalDialogue.Core.Variables.BaseVar
+  parent: TotalDialogue.Core.Variables
+  href: TotalDialogue.Core.Variables.BaseVar.html
+  name: BaseVar
+  nameWithType: BaseVar
+  fullName: TotalDialogue.Core.Variables.BaseVar
 - uid: TotalDialogue.Core.Variables.TDFVar{System.Int32,TotalDialogue.Core.Variables.IntListener}
   commentId: T:TotalDialogue.Core.Variables.TDFVar{System.Int32,TotalDialogue.Core.Variables.IntListener}
   parent: TotalDialogue.Core.Variables
@@ -155,6 +215,13 @@ references:
     name: IntListener
     href: TotalDialogue.Core.Variables.IntListener.html
   - name: )
+- uid: TotalDialogue.Core.Variables.ITDFVar
+  commentId: T:TotalDialogue.Core.Variables.ITDFVar
+  parent: TotalDialogue.Core.Variables
+  href: TotalDialogue.Core.Variables.ITDFVar.html
+  name: ITDFVar
+  nameWithType: ITDFVar
+  fullName: TotalDialogue.Core.Variables.ITDFVar
 - uid: TotalDialogue.Core.Variables.ITDFVar{System.Int32,TotalDialogue.Core.Variables.IntListener}
   commentId: T:TotalDialogue.Core.Variables.ITDFVar{System.Int32,TotalDialogue.Core.Variables.IntListener}
   parent: TotalDialogue.Core.Variables
@@ -198,13 +265,6 @@ references:
     name: IntListener
     href: TotalDialogue.Core.Variables.IntListener.html
   - name: )
-- uid: TotalDialogue.Core.Variables.IEmptyVar
-  commentId: T:TotalDialogue.Core.Variables.IEmptyVar
-  parent: TotalDialogue.Core.Variables
-  href: TotalDialogue.Core.Variables.IEmptyVar.html
-  name: IEmptyVar
-  nameWithType: IEmptyVar
-  fullName: TotalDialogue.Core.Variables.IEmptyVar
 - uid: TotalDialogue.Core.Variables.TDFVar{System.Int32,TotalDialogue.Core.Variables.IntListener}.m_listeners
   commentId: F:TotalDialogue.Core.Variables.TDFVar{System.Int32,TotalDialogue.Core.Variables.IntListener}.m_listeners
   parent: TotalDialogue.Core.Variables.TDFVar{System.Int32,TotalDialogue.Core.Variables.IntListener}
@@ -215,16 +275,6 @@ references:
   fullName: TotalDialogue.Core.Variables.TDFVar<int, TotalDialogue.Core.Variables.IntListener>.m_listeners
   nameWithType.vb: TDFVar(Of Integer, IntListener).m_listeners
   fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of Integer, TotalDialogue.Core.Variables.IntListener).m_listeners
-- uid: TotalDialogue.Core.Variables.TDFVar{System.Int32,TotalDialogue.Core.Variables.IntListener}.m_key
-  commentId: F:TotalDialogue.Core.Variables.TDFVar{System.Int32,TotalDialogue.Core.Variables.IntListener}.m_key
-  parent: TotalDialogue.Core.Variables.TDFVar{System.Int32,TotalDialogue.Core.Variables.IntListener}
-  definition: TotalDialogue.Core.Variables.TDFVar`2.m_key
-  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_m_key
-  name: m_key
-  nameWithType: TDFVar<int, IntListener>.m_key
-  fullName: TotalDialogue.Core.Variables.TDFVar<int, TotalDialogue.Core.Variables.IntListener>.m_key
-  nameWithType.vb: TDFVar(Of Integer, IntListener).m_key
-  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of Integer, TotalDialogue.Core.Variables.IntListener).m_key
 - uid: TotalDialogue.Core.Variables.TDFVar{System.Int32,TotalDialogue.Core.Variables.IntListener}.m_value
   commentId: F:TotalDialogue.Core.Variables.TDFVar{System.Int32,TotalDialogue.Core.Variables.IntListener}.m_value
   parent: TotalDialogue.Core.Variables.TDFVar{System.Int32,TotalDialogue.Core.Variables.IntListener}
@@ -245,16 +295,6 @@ references:
   fullName: TotalDialogue.Core.Variables.TDFVar<int, TotalDialogue.Core.Variables.IntListener>.m_defaultValue
   nameWithType.vb: TDFVar(Of Integer, IntListener).m_defaultValue
   fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of Integer, TotalDialogue.Core.Variables.IntListener).m_defaultValue
-- uid: TotalDialogue.Core.Variables.TDFVar{System.Int32,TotalDialogue.Core.Variables.IntListener}.Key
-  commentId: P:TotalDialogue.Core.Variables.TDFVar{System.Int32,TotalDialogue.Core.Variables.IntListener}.Key
-  parent: TotalDialogue.Core.Variables.TDFVar{System.Int32,TotalDialogue.Core.Variables.IntListener}
-  definition: TotalDialogue.Core.Variables.TDFVar`2.Key
-  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_Key
-  name: Key
-  nameWithType: TDFVar<int, IntListener>.Key
-  fullName: TotalDialogue.Core.Variables.TDFVar<int, TotalDialogue.Core.Variables.IntListener>.Key
-  nameWithType.vb: TDFVar(Of Integer, IntListener).Key
-  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of Integer, TotalDialogue.Core.Variables.IntListener).Key
 - uid: TotalDialogue.Core.Variables.TDFVar{System.Int32,TotalDialogue.Core.Variables.IntListener}.Value
   commentId: P:TotalDialogue.Core.Variables.TDFVar{System.Int32,TotalDialogue.Core.Variables.IntListener}.Value
   parent: TotalDialogue.Core.Variables.TDFVar{System.Int32,TotalDialogue.Core.Variables.IntListener}
@@ -313,6 +353,49 @@ references:
     name: SetValue
     href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetValue__0_
   - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVar{System.Int32,TotalDialogue.Core.Variables.IntListener}.FireOnChanged(System.Int32,System.Int32)
+  commentId: M:TotalDialogue.Core.Variables.TDFVar{System.Int32,TotalDialogue.Core.Variables.IntListener}.FireOnChanged(System.Int32,System.Int32)
+  parent: TotalDialogue.Core.Variables.TDFVar{System.Int32,TotalDialogue.Core.Variables.IntListener}
+  definition: TotalDialogue.Core.Variables.TDFVar`2.FireOnChanged(`0,`0)
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_FireOnChanged__0__0_
+  name: FireOnChanged(int, int)
+  nameWithType: TDFVar<int, IntListener>.FireOnChanged(int, int)
+  fullName: TotalDialogue.Core.Variables.TDFVar<int, TotalDialogue.Core.Variables.IntListener>.FireOnChanged(int, int)
+  nameWithType.vb: TDFVar(Of Integer, IntListener).FireOnChanged(Integer, Integer)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of Integer, TotalDialogue.Core.Variables.IntListener).FireOnChanged(Integer, Integer)
+  name.vb: FireOnChanged(Integer, Integer)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.TDFVar{System.Int32,TotalDialogue.Core.Variables.IntListener}.FireOnChanged(System.Int32,System.Int32)
+    name: FireOnChanged
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_FireOnChanged__0__0_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.TDFVar{System.Int32,TotalDialogue.Core.Variables.IntListener}.FireOnChanged(System.Int32,System.Int32)
+    name: FireOnChanged
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_FireOnChanged__0__0_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
   - uid: System.Int32
     name: Integer
     isExternal: true
@@ -600,16 +683,26 @@ references:
   fullName: TotalDialogue.Core.Variables.TDFVar<int, TotalDialogue.Core.Variables.IntListener>.StringValue
   nameWithType.vb: TDFVar(Of Integer, IntListener).StringValue
   fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of Integer, TotalDialogue.Core.Variables.IntListener).StringValue
-- uid: TotalDialogue.Core.Variables.TDFVar{System.Int32,TotalDialogue.Core.Variables.IntListener}.Interface
-  commentId: P:TotalDialogue.Core.Variables.TDFVar{System.Int32,TotalDialogue.Core.Variables.IntListener}.Interface
+- uid: TotalDialogue.Core.Variables.TDFVar{System.Int32,TotalDialogue.Core.Variables.IntListener}.GenericInterFace
+  commentId: P:TotalDialogue.Core.Variables.TDFVar{System.Int32,TotalDialogue.Core.Variables.IntListener}.GenericInterFace
   parent: TotalDialogue.Core.Variables.TDFVar{System.Int32,TotalDialogue.Core.Variables.IntListener}
-  definition: TotalDialogue.Core.Variables.TDFVar`2.Interface
-  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_Interface
-  name: Interface
-  nameWithType: TDFVar<int, IntListener>.Interface
-  fullName: TotalDialogue.Core.Variables.TDFVar<int, TotalDialogue.Core.Variables.IntListener>.Interface
-  nameWithType.vb: TDFVar(Of Integer, IntListener).Interface
-  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of Integer, TotalDialogue.Core.Variables.IntListener).Interface
+  definition: TotalDialogue.Core.Variables.TDFVar`2.GenericInterFace
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GenericInterFace
+  name: GenericInterFace
+  nameWithType: TDFVar<int, IntListener>.GenericInterFace
+  fullName: TotalDialogue.Core.Variables.TDFVar<int, TotalDialogue.Core.Variables.IntListener>.GenericInterFace
+  nameWithType.vb: TDFVar(Of Integer, IntListener).GenericInterFace
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of Integer, TotalDialogue.Core.Variables.IntListener).GenericInterFace
+- uid: TotalDialogue.Core.Variables.TDFVar{System.Int32,TotalDialogue.Core.Variables.IntListener}.GenericInterface
+  commentId: P:TotalDialogue.Core.Variables.TDFVar{System.Int32,TotalDialogue.Core.Variables.IntListener}.GenericInterface
+  parent: TotalDialogue.Core.Variables.TDFVar{System.Int32,TotalDialogue.Core.Variables.IntListener}
+  definition: TotalDialogue.Core.Variables.TDFVar`2.GenericInterface
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GenericInterface
+  name: GenericInterface
+  nameWithType: TDFVar<int, IntListener>.GenericInterface
+  fullName: TotalDialogue.Core.Variables.TDFVar<int, TotalDialogue.Core.Variables.IntListener>.GenericInterface
+  nameWithType.vb: TDFVar(Of Integer, IntListener).GenericInterface
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of Integer, TotalDialogue.Core.Variables.IntListener).GenericInterface
 - uid: TotalDialogue.Core.Variables.TDFVar{System.Int32,TotalDialogue.Core.Variables.IntListener}.AddListener(TotalDialogue.Core.Variables.IntListener)
   commentId: M:TotalDialogue.Core.Variables.TDFVar{System.Int32,TotalDialogue.Core.Variables.IntListener}.AddListener(TotalDialogue.Core.Variables.IntListener)
   parent: TotalDialogue.Core.Variables.TDFVar{System.Int32,TotalDialogue.Core.Variables.IntListener}
@@ -950,6 +1043,154 @@ references:
     name: Vector3
     isExternal: true
   - name: )
+- uid: TotalDialogue.Core.Variables.TDFVar{System.Int32,TotalDialogue.Core.Variables.IntListener}.SetSelf(TotalDialogue.Core.Variables.BaseVar)
+  commentId: M:TotalDialogue.Core.Variables.TDFVar{System.Int32,TotalDialogue.Core.Variables.IntListener}.SetSelf(TotalDialogue.Core.Variables.BaseVar)
+  parent: TotalDialogue.Core.Variables.TDFVar{System.Int32,TotalDialogue.Core.Variables.IntListener}
+  definition: TotalDialogue.Core.Variables.TDFVar`2.SetSelf(TotalDialogue.Core.Variables.BaseVar)
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetSelf_TotalDialogue_Core_Variables_BaseVar_
+  name: SetSelf(BaseVar)
+  nameWithType: TDFVar<int, IntListener>.SetSelf(BaseVar)
+  fullName: TotalDialogue.Core.Variables.TDFVar<int, TotalDialogue.Core.Variables.IntListener>.SetSelf(TotalDialogue.Core.Variables.BaseVar)
+  nameWithType.vb: TDFVar(Of Integer, IntListener).SetSelf(BaseVar)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of Integer, TotalDialogue.Core.Variables.IntListener).SetSelf(TotalDialogue.Core.Variables.BaseVar)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.TDFVar{System.Int32,TotalDialogue.Core.Variables.IntListener}.SetSelf(TotalDialogue.Core.Variables.BaseVar)
+    name: SetSelf
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetSelf_TotalDialogue_Core_Variables_BaseVar_
+  - name: (
+  - uid: TotalDialogue.Core.Variables.BaseVar
+    name: BaseVar
+    href: TotalDialogue.Core.Variables.BaseVar.html
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.TDFVar{System.Int32,TotalDialogue.Core.Variables.IntListener}.SetSelf(TotalDialogue.Core.Variables.BaseVar)
+    name: SetSelf
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetSelf_TotalDialogue_Core_Variables_BaseVar_
+  - name: (
+  - uid: TotalDialogue.Core.Variables.BaseVar
+    name: BaseVar
+    href: TotalDialogue.Core.Variables.BaseVar.html
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVar{System.Int32,TotalDialogue.Core.Variables.IntListener}.GetSekf
+  commentId: M:TotalDialogue.Core.Variables.TDFVar{System.Int32,TotalDialogue.Core.Variables.IntListener}.GetSekf
+  parent: TotalDialogue.Core.Variables.TDFVar{System.Int32,TotalDialogue.Core.Variables.IntListener}
+  definition: TotalDialogue.Core.Variables.TDFVar`2.GetSekf
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetSekf
+  name: GetSekf()
+  nameWithType: TDFVar<int, IntListener>.GetSekf()
+  fullName: TotalDialogue.Core.Variables.TDFVar<int, TotalDialogue.Core.Variables.IntListener>.GetSekf()
+  nameWithType.vb: TDFVar(Of Integer, IntListener).GetSekf()
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of Integer, TotalDialogue.Core.Variables.IntListener).GetSekf()
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.TDFVar{System.Int32,TotalDialogue.Core.Variables.IntListener}.GetSekf
+    name: GetSekf
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetSekf
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.TDFVar{System.Int32,TotalDialogue.Core.Variables.IntListener}.GetSekf
+    name: GetSekf
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetSekf
+  - name: (
+  - name: )
+- uid: TotalDialogue.Core.Variables.BaseVar.m_key
+  commentId: F:TotalDialogue.Core.Variables.BaseVar.m_key
+  parent: TotalDialogue.Core.Variables.BaseVar
+  href: TotalDialogue.Core.Variables.BaseVar.html#TotalDialogue_Core_Variables_BaseVar_m_key
+  name: m_key
+  nameWithType: BaseVar.m_key
+  fullName: TotalDialogue.Core.Variables.BaseVar.m_key
+- uid: TotalDialogue.Core.Variables.BaseVar.Key
+  commentId: P:TotalDialogue.Core.Variables.BaseVar.Key
+  parent: TotalDialogue.Core.Variables.BaseVar
+  href: TotalDialogue.Core.Variables.BaseVar.html#TotalDialogue_Core_Variables_BaseVar_Key
+  name: Key
+  nameWithType: BaseVar.Key
+  fullName: TotalDialogue.Core.Variables.BaseVar.Key
+- uid: TotalDialogue.Core.Variables.BaseVar.StringValue
+  commentId: P:TotalDialogue.Core.Variables.BaseVar.StringValue
+  parent: TotalDialogue.Core.Variables.BaseVar
+  href: TotalDialogue.Core.Variables.BaseVar.html#TotalDialogue_Core_Variables_BaseVar_StringValue
+  name: StringValue
+  nameWithType: BaseVar.StringValue
+  fullName: TotalDialogue.Core.Variables.BaseVar.StringValue
+- uid: TotalDialogue.Core.Variables.BaseVar.Interface
+  commentId: P:TotalDialogue.Core.Variables.BaseVar.Interface
+  parent: TotalDialogue.Core.Variables.BaseVar
+  href: TotalDialogue.Core.Variables.BaseVar.html#TotalDialogue_Core_Variables_BaseVar_Interface
+  name: Interface
+  nameWithType: BaseVar.Interface
+  fullName: TotalDialogue.Core.Variables.BaseVar.Interface
+- uid: TotalDialogue.Core.Variables.BaseVar.RestoreDefault
+  commentId: M:TotalDialogue.Core.Variables.BaseVar.RestoreDefault
+  parent: TotalDialogue.Core.Variables.BaseVar
+  href: TotalDialogue.Core.Variables.BaseVar.html#TotalDialogue_Core_Variables_BaseVar_RestoreDefault
+  name: RestoreDefault()
+  nameWithType: BaseVar.RestoreDefault()
+  fullName: TotalDialogue.Core.Variables.BaseVar.RestoreDefault()
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.BaseVar.RestoreDefault
+    name: RestoreDefault
+    href: TotalDialogue.Core.Variables.BaseVar.html#TotalDialogue_Core_Variables_BaseVar_RestoreDefault
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.BaseVar.RestoreDefault
+    name: RestoreDefault
+    href: TotalDialogue.Core.Variables.BaseVar.html#TotalDialogue_Core_Variables_BaseVar_RestoreDefault
+  - name: (
+  - name: )
+- uid: TotalDialogue.Core.Variables.BaseVar.StoreDefault
+  commentId: M:TotalDialogue.Core.Variables.BaseVar.StoreDefault
+  parent: TotalDialogue.Core.Variables.BaseVar
+  href: TotalDialogue.Core.Variables.BaseVar.html#TotalDialogue_Core_Variables_BaseVar_StoreDefault
+  name: StoreDefault()
+  nameWithType: BaseVar.StoreDefault()
+  fullName: TotalDialogue.Core.Variables.BaseVar.StoreDefault()
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.BaseVar.StoreDefault
+    name: StoreDefault
+    href: TotalDialogue.Core.Variables.BaseVar.html#TotalDialogue_Core_Variables_BaseVar_StoreDefault
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.BaseVar.StoreDefault
+    name: StoreDefault
+    href: TotalDialogue.Core.Variables.BaseVar.html#TotalDialogue_Core_Variables_BaseVar_StoreDefault
+  - name: (
+  - name: )
+- uid: TotalDialogue.Core.Variables.BaseVar.OnValueChanged
+  commentId: F:TotalDialogue.Core.Variables.BaseVar.OnValueChanged
+  parent: TotalDialogue.Core.Variables.BaseVar
+  href: TotalDialogue.Core.Variables.BaseVar.html#TotalDialogue_Core_Variables_BaseVar_OnValueChanged
+  name: OnValueChanged
+  nameWithType: BaseVar.OnValueChanged
+  fullName: TotalDialogue.Core.Variables.BaseVar.OnValueChanged
+- uid: TotalDialogue.Core.Variables.BaseVar.SetSelf(TotalDialogue.Core.Variables.BaseVar)
+  commentId: M:TotalDialogue.Core.Variables.BaseVar.SetSelf(TotalDialogue.Core.Variables.BaseVar)
+  parent: TotalDialogue.Core.Variables.BaseVar
+  href: TotalDialogue.Core.Variables.BaseVar.html#TotalDialogue_Core_Variables_BaseVar_SetSelf_TotalDialogue_Core_Variables_BaseVar_
+  name: SetSelf(BaseVar)
+  nameWithType: BaseVar.SetSelf(BaseVar)
+  fullName: TotalDialogue.Core.Variables.BaseVar.SetSelf(TotalDialogue.Core.Variables.BaseVar)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.BaseVar.SetSelf(TotalDialogue.Core.Variables.BaseVar)
+    name: SetSelf
+    href: TotalDialogue.Core.Variables.BaseVar.html#TotalDialogue_Core_Variables_BaseVar_SetSelf_TotalDialogue_Core_Variables_BaseVar_
+  - name: (
+  - uid: TotalDialogue.Core.Variables.BaseVar
+    name: BaseVar
+    href: TotalDialogue.Core.Variables.BaseVar.html
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.BaseVar.SetSelf(TotalDialogue.Core.Variables.BaseVar)
+    name: SetSelf
+    href: TotalDialogue.Core.Variables.BaseVar.html#TotalDialogue_Core_Variables_BaseVar_SetSelf_TotalDialogue_Core_Variables_BaseVar_
+  - name: (
+  - uid: TotalDialogue.Core.Variables.BaseVar
+    name: BaseVar
+    href: TotalDialogue.Core.Variables.BaseVar.html
+  - name: )
 - uid: System.Object.Equals(System.Object)
   commentId: M:System.Object.Equals(System.Object)
   parent: System.Object
@@ -1178,6 +1419,7 @@ references:
   fullName: System
 - uid: TotalDialogue.Core.Variables.TDFVar`2
   commentId: T:TotalDialogue.Core.Variables.TDFVar`2
+  parent: TotalDialogue.Core.Variables
   href: TotalDialogue.Core.Variables.TDFVar-2.html
   name: TDFVar<T, TListener>
   nameWithType: TDFVar<T, TListener>
@@ -1247,14 +1489,6 @@ references:
   fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.m_listeners
   nameWithType.vb: TDFVar(Of T, TListener).m_listeners
   fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).m_listeners
-- uid: TotalDialogue.Core.Variables.TDFVar`2.m_key
-  commentId: F:TotalDialogue.Core.Variables.TDFVar`2.m_key
-  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_m_key
-  name: m_key
-  nameWithType: TDFVar<T, TListener>.m_key
-  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.m_key
-  nameWithType.vb: TDFVar(Of T, TListener).m_key
-  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).m_key
 - uid: TotalDialogue.Core.Variables.TDFVar`2.m_value
   commentId: F:TotalDialogue.Core.Variables.TDFVar`2.m_value
   href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_m_value
@@ -1271,14 +1505,6 @@ references:
   fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.m_defaultValue
   nameWithType.vb: TDFVar(Of T, TListener).m_defaultValue
   fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).m_defaultValue
-- uid: TotalDialogue.Core.Variables.TDFVar`2.Key
-  commentId: P:TotalDialogue.Core.Variables.TDFVar`2.Key
-  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_Key
-  name: Key
-  nameWithType: TDFVar<T, TListener>.Key
-  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.Key
-  nameWithType.vb: TDFVar(Of T, TListener).Key
-  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).Key
 - uid: TotalDialogue.Core.Variables.TDFVar`2.Value
   commentId: P:TotalDialogue.Core.Variables.TDFVar`2.Value
   href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_Value
@@ -1327,6 +1553,34 @@ references:
     name: SetValue
     href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetValue__0_
   - name: (
+  - name: T
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVar`2.FireOnChanged(`0,`0)
+  commentId: M:TotalDialogue.Core.Variables.TDFVar`2.FireOnChanged(`0,`0)
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_FireOnChanged__0__0_
+  name: FireOnChanged(T, T)
+  nameWithType: TDFVar<T, TListener>.FireOnChanged(T, T)
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.FireOnChanged(T, T)
+  nameWithType.vb: TDFVar(Of T, TListener).FireOnChanged(T, T)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).FireOnChanged(T, T)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2.FireOnChanged(`0,`0)
+    name: FireOnChanged
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_FireOnChanged__0__0_
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2.FireOnChanged(`0,`0)
+    name: FireOnChanged
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_FireOnChanged__0__0_
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
   - name: T
   - name: )
 - uid: TotalDialogue.Core.Variables.TDFVar`2.Fire(`1,`0,`0,System.Boolean)
@@ -1529,14 +1783,22 @@ references:
   fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.StringValue
   nameWithType.vb: TDFVar(Of T, TListener).StringValue
   fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).StringValue
-- uid: TotalDialogue.Core.Variables.TDFVar`2.Interface
-  commentId: P:TotalDialogue.Core.Variables.TDFVar`2.Interface
-  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_Interface
-  name: Interface
-  nameWithType: TDFVar<T, TListener>.Interface
-  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.Interface
-  nameWithType.vb: TDFVar(Of T, TListener).Interface
-  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).Interface
+- uid: TotalDialogue.Core.Variables.TDFVar`2.GenericInterFace
+  commentId: P:TotalDialogue.Core.Variables.TDFVar`2.GenericInterFace
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GenericInterFace
+  name: GenericInterFace
+  nameWithType: TDFVar<T, TListener>.GenericInterFace
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.GenericInterFace
+  nameWithType.vb: TDFVar(Of T, TListener).GenericInterFace
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).GenericInterFace
+- uid: TotalDialogue.Core.Variables.TDFVar`2.GenericInterface
+  commentId: P:TotalDialogue.Core.Variables.TDFVar`2.GenericInterface
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GenericInterface
+  name: GenericInterface
+  nameWithType: TDFVar<T, TListener>.GenericInterface
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.GenericInterface
+  nameWithType.vb: TDFVar(Of T, TListener).GenericInterface
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).GenericInterface
 - uid: TotalDialogue.Core.Variables.TDFVar`2.AddListener(`1)
   commentId: M:TotalDialogue.Core.Variables.TDFVar`2.AddListener(`1)
   href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_AddListener__1_
@@ -1848,3 +2110,73 @@ references:
     name: Vector3
     isExternal: true
   - name: )
+- uid: TotalDialogue.Core.Variables.TDFVar`2.SetSelf(TotalDialogue.Core.Variables.BaseVar)
+  commentId: M:TotalDialogue.Core.Variables.TDFVar`2.SetSelf(TotalDialogue.Core.Variables.BaseVar)
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetSelf_TotalDialogue_Core_Variables_BaseVar_
+  name: SetSelf(BaseVar)
+  nameWithType: TDFVar<T, TListener>.SetSelf(BaseVar)
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.SetSelf(TotalDialogue.Core.Variables.BaseVar)
+  nameWithType.vb: TDFVar(Of T, TListener).SetSelf(BaseVar)
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).SetSelf(TotalDialogue.Core.Variables.BaseVar)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2.SetSelf(TotalDialogue.Core.Variables.BaseVar)
+    name: SetSelf
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetSelf_TotalDialogue_Core_Variables_BaseVar_
+  - name: (
+  - uid: TotalDialogue.Core.Variables.BaseVar
+    name: BaseVar
+    href: TotalDialogue.Core.Variables.BaseVar.html
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2.SetSelf(TotalDialogue.Core.Variables.BaseVar)
+    name: SetSelf
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_SetSelf_TotalDialogue_Core_Variables_BaseVar_
+  - name: (
+  - uid: TotalDialogue.Core.Variables.BaseVar
+    name: BaseVar
+    href: TotalDialogue.Core.Variables.BaseVar.html
+  - name: )
+- uid: TotalDialogue.Core.Variables.TDFVar`2.GetSekf
+  commentId: M:TotalDialogue.Core.Variables.TDFVar`2.GetSekf
+  href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetSekf
+  name: GetSekf()
+  nameWithType: TDFVar<T, TListener>.GetSekf()
+  fullName: TotalDialogue.Core.Variables.TDFVar<T, TListener>.GetSekf()
+  nameWithType.vb: TDFVar(Of T, TListener).GetSekf()
+  fullName.vb: TotalDialogue.Core.Variables.TDFVar(Of T, TListener).GetSekf()
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2.GetSekf
+    name: GetSekf
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetSekf
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.TDFVar`2.GetSekf
+    name: GetSekf
+    href: TotalDialogue.Core.Variables.TDFVar-2.html#TotalDialogue_Core_Variables_TDFVar_2_GetSekf
+  - name: (
+  - name: )
+- uid: TotalDialogue.Core.Variables.BaseVar.TypeName
+  commentId: P:TotalDialogue.Core.Variables.BaseVar.TypeName
+  parent: TotalDialogue.Core.Variables.BaseVar
+  href: TotalDialogue.Core.Variables.BaseVar.html#TotalDialogue_Core_Variables_BaseVar_TypeName
+  name: TypeName
+  nameWithType: BaseVar.TypeName
+  fullName: TotalDialogue.Core.Variables.BaseVar.TypeName
+- uid: TotalDialogue.Core.Variables.IntVar.TypeName*
+  commentId: Overload:TotalDialogue.Core.Variables.IntVar.TypeName
+  href: TotalDialogue.Core.Variables.IntVar.html#TotalDialogue_Core_Variables_IntVar_TypeName
+  name: TypeName
+  nameWithType: IntVar.TypeName
+  fullName: TotalDialogue.Core.Variables.IntVar.TypeName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

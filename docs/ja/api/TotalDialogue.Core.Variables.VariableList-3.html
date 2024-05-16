@@ -1,0 +1,540 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class VariableList&lt;T, TVar, TListener&gt; | TDF Manual </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class VariableList&lt;T, TVar, TListener&gt; | TDF Manual ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="TDF Manual">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="TotalDialogue.Core.Variables.VariableList`3">
+
+
+
+  <h1 id="TotalDialogue_Core_Variables_VariableList_3" data-uid="TotalDialogue.Core.Variables.VariableList`3" class="text-break">Class VariableList&lt;T, TVar, TListener&gt;</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html">TDFList</a>&lt;<a class="xref" href="TotalDialogue.Core.Collections.TDFKeyValuePair-2.html">TDFKeyValuePair</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, TVar&gt;&gt;</div>
+    <div class="level2"><a class="xref" href="TotalDialogue.Core.Collections.TDFKeyValuePairs-2.html">TDFKeyValuePairs</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, TVar&gt;</div>
+    <div class="level3"><a class="xref" href="TotalDialogue.Core.Collections.TDFDictionary-2.html">TDFDictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, TVar&gt;</div>
+    <div class="level4"><span class="xref">VariableList&lt;T, TVar, TListener&gt;</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="TotalDialogue.Core.Collections.ITDFList.html">ITDFList</a></div>
+    <div><a class="xref" href="TotalDialogue.Core.Collections.ITDFListGeneric-1.html">ITDFListGeneric</a>&lt;<a class="xref" href="TotalDialogue.Core.Collections.TDFKeyValuePair-2.html">TDFKeyValuePair</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, TVar&gt;&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="TotalDialogue.Core.Collections.TDFKeyValuePair-2.html">TDFKeyValuePair</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, TVar&gt;&gt;</div>
+    <div><span class="xref">ISerializationCallbackReceiver</span></div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, TVar&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2">KeyValuePair</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, TVar&gt;&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2">KeyValuePair</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, TVar&gt;&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFDictionary-2.html#TotalDialogue_Core_Collections_TDFDictionary_2_AsDictionary">TDFDictionary&lt;string, TVar&gt;.AsDictionary</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFDictionary-2.html#TotalDialogue_Core_Collections_TDFDictionary_2_Keys">TDFDictionary&lt;string, TVar&gt;.Keys</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFDictionary-2.html#TotalDialogue_Core_Collections_TDFDictionary_2_Values">TDFDictionary&lt;string, TVar&gt;.Values</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFDictionary-2.html#TotalDialogue_Core_Collections_TDFDictionary_2_Count">TDFDictionary&lt;string, TVar&gt;.Count</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFDictionary-2.html#TotalDialogue_Core_Collections_TDFDictionary_2_ListCount">TDFDictionary&lt;string, TVar&gt;.ListCount</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFDictionary-2.html#TotalDialogue_Core_Collections_TDFDictionary_2_IsReadOnly">TDFDictionary&lt;string, TVar&gt;.IsReadOnly</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFDictionary-2.html#TotalDialogue_Core_Collections_TDFDictionary_2_GetEnumerator">TDFDictionary&lt;string, TVar&gt;.GetEnumerator()</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFDictionary-2.html#TotalDialogue_Core_Collections_TDFDictionary_2_ContainsKey__0_">TDFDictionary&lt;string, TVar&gt;.ContainsKey(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFDictionary-2.html#TotalDialogue_Core_Collections_TDFDictionary_2_ContainsValue__1_">TDFDictionary&lt;string, TVar&gt;.ContainsValue(TVar)</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFDictionary-2.html#TotalDialogue_Core_Collections_TDFDictionary_2_TryGetValue__0__1__">TDFDictionary&lt;string, TVar&gt;.TryGetValue(string, out TVar)</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFDictionary-2.html#TotalDialogue_Core_Collections_TDFDictionary_2_Item__0_">TDFDictionary&lt;string, TVar&gt;.this[string]</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFDictionary-2.html#TotalDialogue_Core_Collections_TDFDictionary_2_Add__0__1_">TDFDictionary&lt;string, TVar&gt;.Add(string, TVar)</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFDictionary-2.html#TotalDialogue_Core_Collections_TDFDictionary_2_Add_TotalDialogue_Core_Collections_TDFKeyValuePair__0__1__">TDFDictionary&lt;string, TVar&gt;.Add(TDFKeyValuePair&lt;string, TVar&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFDictionary-2.html#TotalDialogue_Core_Collections_TDFDictionary_2_UpdateDuplicates">TDFDictionary&lt;string, TVar&gt;.UpdateDuplicates()</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFDictionary-2.html#TotalDialogue_Core_Collections_TDFDictionary_2_FromDictionary_System_Collections_Generic_Dictionary__0__1__">TDFDictionary&lt;string, TVar&gt;.FromDictionary(Dictionary&lt;string, TVar&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFDictionary-2.html#TotalDialogue_Core_Collections_TDFDictionary_2_ToDictionary_TotalDialogue_Core_Collections_TDFDictionary__0__1__">TDFDictionary&lt;string, TVar&gt;.ToDictionary(TDFDictionary&lt;string, TVar&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFDictionary-2.html#TotalDialogue_Core_Collections_TDFDictionary_2_FromDictionary_System_Collections_Generic_IDictionary__0__1__">TDFDictionary&lt;string, TVar&gt;.FromDictionary(IDictionary&lt;string, TVar&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFDictionary-2.html#TotalDialogue_Core_Collections_TDFDictionary_2_Add_System_Collections_Generic_KeyValuePair__0__1__">TDFDictionary&lt;string, TVar&gt;.Add(KeyValuePair&lt;string, TVar&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFDictionary-2.html#TotalDialogue_Core_Collections_TDFDictionary_2_Contains_System_Collections_Generic_KeyValuePair__0__1__">TDFDictionary&lt;string, TVar&gt;.Contains(KeyValuePair&lt;string, TVar&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFDictionary-2.html#TotalDialogue_Core_Collections_TDFDictionary_2_CopyTo_System_Collections_Generic_KeyValuePair__0__1____System_Int32_">TDFDictionary&lt;string, TVar&gt;.CopyTo(KeyValuePair&lt;string, TVar&gt;[], int)</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFDictionary-2.html#TotalDialogue_Core_Collections_TDFDictionary_2_Remove_System_Collections_Generic_KeyValuePair__0__1__">TDFDictionary&lt;string, TVar&gt;.Remove(KeyValuePair&lt;string, TVar&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFDictionary-2.html#TotalDialogue_Core_Collections_TDFDictionary_2_AddNew_System_Object_System_Type_">TDFDictionary&lt;string, TVar&gt;.AddNew(object, Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFKeyValuePairs-2.html#TotalDialogue_Core_Collections_TDFKeyValuePairs_2_indexDictionary">TDFKeyValuePairs&lt;string, TVar&gt;.indexDictionary</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFKeyValuePairs-2.html#TotalDialogue_Core_Collections_TDFKeyValuePairs_2_Item_System_Int32_">TDFKeyValuePairs&lt;string, TVar&gt;.this[int]</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFKeyValuePairs-2.html#TotalDialogue_Core_Collections_TDFKeyValuePairs_2_Insert_System_Int32_TotalDialogue_Core_Collections_TDFKeyValuePair__0__1__">TDFKeyValuePairs&lt;string, TVar&gt;.Insert(int, TDFKeyValuePair&lt;string, TVar&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFKeyValuePairs-2.html#TotalDialogue_Core_Collections_TDFKeyValuePairs_2_RemoveAt_System_Int32_">TDFKeyValuePairs&lt;string, TVar&gt;.RemoveAt(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFKeyValuePairs-2.html#TotalDialogue_Core_Collections_TDFKeyValuePairs_2_Remove__0_">TDFKeyValuePairs&lt;string, TVar&gt;.Remove(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFKeyValuePairs-2.html#TotalDialogue_Core_Collections_TDFKeyValuePairs_2_Remove_TotalDialogue_Core_Collections_TDFKeyValuePair__0__1__">TDFKeyValuePairs&lt;string, TVar&gt;.Remove(TDFKeyValuePair&lt;string, TVar&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFKeyValuePairs-2.html#TotalDialogue_Core_Collections_TDFKeyValuePairs_2_IndexOfKey__0_">TDFKeyValuePairs&lt;string, TVar&gt;.IndexOfKey(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFKeyValuePairs-2.html#TotalDialogue_Core_Collections_TDFKeyValuePairs_2_IsDuplicate__0_">TDFKeyValuePairs&lt;string, TVar&gt;.IsDuplicate(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFKeyValuePairs-2.html#TotalDialogue_Core_Collections_TDFKeyValuePairs_2_IsDuplicateIndex_System_Int32_">TDFKeyValuePairs&lt;string, TVar&gt;.IsDuplicateIndex(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_list">TDFList&lt;TDFKeyValuePair&lt;string, TVar&gt;&gt;.list</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_lockObject">TDFList&lt;TDFKeyValuePair&lt;string, TVar&gt;&gt;.lockObject</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_isLocked">TDFList&lt;TDFKeyValuePair&lt;string, TVar&gt;&gt;.isLocked</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_lockedThreadId">TDFList&lt;TDFKeyValuePair&lt;string, TVar&gt;&gt;.lockedThreadId</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_m_serializing">TDFList&lt;TDFKeyValuePair&lt;string, TVar&gt;&gt;.m_serializing</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_Serializing">TDFList&lt;TDFKeyValuePair&lt;string, TVar&gt;&gt;.Serializing</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_BeginLock">TDFList&lt;TDFKeyValuePair&lt;string, TVar&gt;&gt;.BeginLock()</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_EndLock">TDFList&lt;TDFKeyValuePair&lt;string, TVar&gt;&gt;.EndLock()</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_OnChange">TDFList&lt;TDFKeyValuePair&lt;string, TVar&gt;&gt;.OnChange</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_OnAdd">TDFList&lt;TDFKeyValuePair&lt;string, TVar&gt;&gt;.OnAdd</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_OnRemove">TDFList&lt;TDFKeyValuePair&lt;string, TVar&gt;&gt;.OnRemove</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_OnChangeItem">TDFList&lt;TDFKeyValuePair&lt;string, TVar&gt;&gt;.OnChangeItem</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_Validate">TDFList&lt;TDFKeyValuePair&lt;string, TVar&gt;&gt;.Validate</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_Add__0_">TDFList&lt;TDFKeyValuePair&lt;string, TVar&gt;&gt;.Add(TDFKeyValuePair&lt;string, TVar&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_Remove__0_">TDFList&lt;TDFKeyValuePair&lt;string, TVar&gt;&gt;.Remove(TDFKeyValuePair&lt;string, TVar&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_RemoveAt_System_Int32_">TDFList&lt;TDFKeyValuePair&lt;string, TVar&gt;&gt;.RemoveAt(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_Count">TDFList&lt;TDFKeyValuePair&lt;string, TVar&gt;&gt;.Count</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_Item_System_Int32_">TDFList&lt;TDFKeyValuePair&lt;string, TVar&gt;&gt;.this[int]</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_Clear">TDFList&lt;TDFKeyValuePair&lt;string, TVar&gt;&gt;.Clear()</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_Insert_System_Int32__0_">TDFList&lt;TDFKeyValuePair&lt;string, TVar&gt;&gt;.Insert(int, TDFKeyValuePair&lt;string, TVar&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_AddRange_System_Collections_Generic_IEnumerable__0__">TDFList&lt;TDFKeyValuePair&lt;string, TVar&gt;&gt;.AddRange(IEnumerable&lt;TDFKeyValuePair&lt;string, TVar&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_RemoveRange_System_Int32_System_Int32_">TDFList&lt;TDFKeyValuePair&lt;string, TVar&gt;&gt;.RemoveRange(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_Sort_System_Comparison__0__">TDFList&lt;TDFKeyValuePair&lt;string, TVar&gt;&gt;.Sort(Comparison&lt;TDFKeyValuePair&lt;string, TVar&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_Sort_System_Collections_Generic_IComparer__0__">TDFList&lt;TDFKeyValuePair&lt;string, TVar&gt;&gt;.Sort(IComparer&lt;TDFKeyValuePair&lt;string, TVar&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_Sort_System_Int32_System_Int32_System_Collections_Generic_IComparer__0__">TDFList&lt;TDFKeyValuePair&lt;string, TVar&gt;&gt;.Sort(int, int, IComparer&lt;TDFKeyValuePair&lt;string, TVar&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_Reverse">TDFList&lt;TDFKeyValuePair&lt;string, TVar&gt;&gt;.Reverse()</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_Reverse_System_Int32_System_Int32_">TDFList&lt;TDFKeyValuePair&lt;string, TVar&gt;&gt;.Reverse(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_CopyTo__0___System_Int32_">TDFList&lt;TDFKeyValuePair&lt;string, TVar&gt;&gt;.CopyTo(TDFKeyValuePair&lt;string, TVar&gt;[], int)</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_ForEach_System_Action__0__System_Boolean_">TDFList&lt;TDFKeyValuePair&lt;string, TVar&gt;&gt;.ForEach(Action&lt;TDFKeyValuePair&lt;string, TVar&gt;&gt;, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_GetEnumerator">TDFList&lt;TDFKeyValuePair&lt;string, TVar&gt;&gt;.GetEnumerator()</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_GetRange_System_Int32_System_Int32_">TDFList&lt;TDFKeyValuePair&lt;string, TVar&gt;&gt;.GetRange(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_IndexOf__0_">TDFList&lt;TDFKeyValuePair&lt;string, TVar&gt;&gt;.IndexOf(TDFKeyValuePair&lt;string, TVar&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_LastIndexOf__0_">TDFList&lt;TDFKeyValuePair&lt;string, TVar&gt;&gt;.LastIndexOf(TDFKeyValuePair&lt;string, TVar&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_Contains__0_">TDFList&lt;TDFKeyValuePair&lt;string, TVar&gt;&gt;.Contains(TDFKeyValuePair&lt;string, TVar&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_Find_System_Predicate__0__">TDFList&lt;TDFKeyValuePair&lt;string, TVar&gt;&gt;.Find(Predicate&lt;TDFKeyValuePair&lt;string, TVar&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_FindAll_System_Predicate__0__">TDFList&lt;TDFKeyValuePair&lt;string, TVar&gt;&gt;.FindAll(Predicate&lt;TDFKeyValuePair&lt;string, TVar&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_FindIndex_System_Predicate__0__">TDFList&lt;TDFKeyValuePair&lt;string, TVar&gt;&gt;.FindIndex(Predicate&lt;TDFKeyValuePair&lt;string, TVar&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_FindIndex_System_Int32_System_Predicate__0__">TDFList&lt;TDFKeyValuePair&lt;string, TVar&gt;&gt;.FindIndex(int, Predicate&lt;TDFKeyValuePair&lt;string, TVar&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_FindIndex_System_Int32_System_Int32_System_Predicate__0__">TDFList&lt;TDFKeyValuePair&lt;string, TVar&gt;&gt;.FindIndex(int, int, Predicate&lt;TDFKeyValuePair&lt;string, TVar&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_FindLast_System_Predicate__0__">TDFList&lt;TDFKeyValuePair&lt;string, TVar&gt;&gt;.FindLast(Predicate&lt;TDFKeyValuePair&lt;string, TVar&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_FindLastIndex_System_Predicate__0__">TDFList&lt;TDFKeyValuePair&lt;string, TVar&gt;&gt;.FindLastIndex(Predicate&lt;TDFKeyValuePair&lt;string, TVar&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_FindLastIndex_System_Int32_System_Predicate__0__">TDFList&lt;TDFKeyValuePair&lt;string, TVar&gt;&gt;.FindLastIndex(int, Predicate&lt;TDFKeyValuePair&lt;string, TVar&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_FindLastIndex_System_Int32_System_Int32_System_Predicate__0__">TDFList&lt;TDFKeyValuePair&lt;string, TVar&gt;&gt;.FindLastIndex(int, int, Predicate&lt;TDFKeyValuePair&lt;string, TVar&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_RemoveAll_System_Predicate__0__">TDFList&lt;TDFKeyValuePair&lt;string, TVar&gt;&gt;.RemoveAll(Predicate&lt;TDFKeyValuePair&lt;string, TVar&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_ToArray">TDFList&lt;TDFKeyValuePair&lt;string, TVar&gt;&gt;.ToArray()</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_TrimExcess">TDFList&lt;TDFKeyValuePair&lt;string, TVar&gt;&gt;.TrimExcess()</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_TrueForAll_System_Predicate__0__">TDFList&lt;TDFKeyValuePair&lt;string, TVar&gt;&gt;.TrueForAll(Predicate&lt;TDFKeyValuePair&lt;string, TVar&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_AddRange_TotalDialogue_Core_Collections_TDFList__0__">TDFList&lt;TDFKeyValuePair&lt;string, TVar&gt;&gt;.AddRange(TDFList&lt;TDFKeyValuePair&lt;string, TVar&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_RemoveRange_TotalDialogue_Core_Collections_TDFList__0__">TDFList&lt;TDFKeyValuePair&lt;string, TVar&gt;&gt;.RemoveRange(TDFList&lt;TDFKeyValuePair&lt;string, TVar&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_GetItemType">TDFList&lt;TDFKeyValuePair&lt;string, TVar&gt;&gt;.GetItemType()</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_UpdateDuplicates">TDFList&lt;TDFKeyValuePair&lt;string, TVar&gt;&gt;.UpdateDuplicates()</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_OnBeforeSerialize">TDFList&lt;TDFKeyValuePair&lt;string, TVar&gt;&gt;.OnBeforeSerialize()</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_OnAfterDeserialize">TDFList&lt;TDFKeyValuePair&lt;string, TVar&gt;&gt;.OnAfterDeserialize()</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_InvokeOnChange">TDFList&lt;TDFKeyValuePair&lt;string, TVar&gt;&gt;.InvokeOnChange()</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_InvokeOnChangeItem_System_Int32__0_">TDFList&lt;TDFKeyValuePair&lt;string, TVar&gt;&gt;.InvokeOnChangeItem(int, TDFKeyValuePair&lt;string, TVar&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_InvokeOnAdd_System_Int32__0_">TDFList&lt;TDFKeyValuePair&lt;string, TVar&gt;&gt;.InvokeOnAdd(int, TDFKeyValuePair&lt;string, TVar&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.TDFList-1.html#TotalDialogue_Core_Collections_TDFList_1_InvokeOnRemove_System_Int32__0_">TDFList&lt;TDFKeyValuePair&lt;string, TVar&gt;&gt;.InvokeOnRemove(int, TDFKeyValuePair&lt;string, TVar&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="TotalDialogue.html">TotalDialogue</a>.<a class="xref" href="TotalDialogue.Core.html">Core</a>.<a class="xref" href="TotalDialogue.Core.Variables.html">Variables</a></h6>
+  <h6><strong>Assembly</strong>: TDF.dll</h6>
+  <h5 id="TotalDialogue_Core_Variables_VariableList_3_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Serializable]
+public class VariableList&lt;T, TVar, TListener&gt; : TDFDictionary&lt;string, TVar&gt;, ITDFList, ITDFListGeneric&lt;TDFKeyValuePair&lt;string, TVar&gt;&gt;, IEnumerable&lt;TDFKeyValuePair&lt;string, TVar&gt;&gt;, ISerializationCallbackReceiver, IDictionary&lt;string, TVar&gt;, ICollection&lt;KeyValuePair&lt;string, TVar&gt;&gt;, IEnumerable&lt;KeyValuePair&lt;string, TVar&gt;&gt;, IEnumerable where TVar : TDFVar&lt;T, TListener&gt; where TListener : VariableListener&lt;T&gt;</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TVar</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TListener</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zgock999/total_dialogue_framework/new/master/apiSpec/new?filename=TotalDialogue_Core_Variables_VariableList_3__ctor.md&amp;value=---%0Auid%3A%20TotalDialogue.Core.Variables.VariableList%603.%23ctor%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zgock999/total_dialogue_framework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/VariableList.cs/#L14">View Source</a>
+  </span>
+  <a id="TotalDialogue_Core_Variables_VariableList_3__ctor_" data-uid="TotalDialogue.Core.Variables.VariableList`3.#ctor*"></a>
+  <h4 id="TotalDialogue_Core_Variables_VariableList_3__ctor" data-uid="TotalDialogue.Core.Variables.VariableList`3.#ctor">VariableList()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VariableList()</code></pre>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zgock999/total_dialogue_framework/new/master/apiSpec/new?filename=TotalDialogue_Core_Variables_VariableList_3_RestoreDefault.md&amp;value=---%0Auid%3A%20TotalDialogue.Core.Variables.VariableList%603.RestoreDefault%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zgock999/total_dialogue_framework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/VariableList.cs/#L30">View Source</a>
+  </span>
+  <a id="TotalDialogue_Core_Variables_VariableList_3_RestoreDefault_" data-uid="TotalDialogue.Core.Variables.VariableList`3.RestoreDefault*"></a>
+  <h4 id="TotalDialogue_Core_Variables_VariableList_3_RestoreDefault" data-uid="TotalDialogue.Core.Variables.VariableList`3.RestoreDefault">RestoreDefault()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RestoreDefault()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/zgock999/total_dialogue_framework/new/master/apiSpec/new?filename=TotalDialogue_Core_Variables_VariableList_3_StoreDefault.md&amp;value=---%0Auid%3A%20TotalDialogue.Core.Variables.VariableList%603.StoreDefault%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zgock999/total_dialogue_framework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/VariableList.cs/#L23">View Source</a>
+  </span>
+  <a id="TotalDialogue_Core_Variables_VariableList_3_StoreDefault_" data-uid="TotalDialogue.Core.Variables.VariableList`3.StoreDefault*"></a>
+  <h4 id="TotalDialogue_Core_Variables_VariableList_3_StoreDefault" data-uid="TotalDialogue.Core.Variables.VariableList`3.StoreDefault">StoreDefault()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StoreDefault()</code></pre>
+  </div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.ITDFList.html">ITDFList</a>
+  </div>
+  <div>
+      <a class="xref" href="TotalDialogue.Core.Collections.ITDFListGeneric-1.html">ITDFListGeneric&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a>
+  </div>
+  <div>
+      <span class="xref">UnityEngine.ISerializationCallbackReceiver</span>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary&lt;TKey, TValue&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/zgock999/total_dialogue_framework/new/master/apiSpec/new?filename=TotalDialogue_Core_Variables_VariableList_3.md&amp;value=---%0Auid%3A%20TotalDialogue.Core.Variables.VariableList%603%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/zgock999/total_dialogue_framework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/VariableList.cs/#L9" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,782 @@
+### YamlMime:ManagedReference
+items:
+- uid: TotalDialogue.Core.Variables.QuaternionListener
+  commentId: T:TotalDialogue.Core.Variables.QuaternionListener
+  id: QuaternionListener
+  parent: TotalDialogue.Core.Variables
+  children:
+  - TotalDialogue.Core.Variables.QuaternionListener.GetValue(System.String)
+  - TotalDialogue.Core.Variables.QuaternionListener.SetValue(System.String,UnityEngine.Quaternion)
+  langs:
+  - csharp
+  - vb
+  name: QuaternionListener
+  nameWithType: QuaternionListener
+  fullName: TotalDialogue.Core.Variables.QuaternionListener
+  type: Class
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Listener/QuaternionListener.cs
+      branch: master
+      repo: git@github.com:zgock999/total_dialogue_framework.git
+    id: QuaternionListener
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Listener/QuaternionListener.cs
+    startLine: 6
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Variables
+  syntax:
+    content: 'public class QuaternionListener : VariableListener<Quaternion>'
+    content.vb: Public Class QuaternionListener Inherits VariableListener(Of Quaternion)
+  inheritance:
+  - System.Object
+  - TotalDialogue.Core.Variables.VariableListener{UnityEngine.Quaternion}
+  inheritedMembers:
+  - TotalDialogue.Core.Variables.VariableListener{UnityEngine.Quaternion}.fireOnEnable
+  - TotalDialogue.Core.Variables.VariableListener{UnityEngine.Quaternion}.fireOnBecome
+  - TotalDialogue.Core.Variables.VariableListener{UnityEngine.Quaternion}.key
+  - TotalDialogue.Core.Variables.VariableListener{UnityEngine.Quaternion}.variables
+  - TotalDialogue.Core.Variables.VariableListener{UnityEngine.Quaternion}.OnSet
+  - TotalDialogue.Core.Variables.VariableListener{UnityEngine.Quaternion}.OnChanged
+  - TotalDialogue.Core.Variables.VariableListener{UnityEngine.Quaternion}.OnBecome
+  - TotalDialogue.Core.Variables.VariableListener{UnityEngine.Quaternion}.OnCease
+  - TotalDialogue.Core.Variables.VariableListener{UnityEngine.Quaternion}.targetValue
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: TotalDialogue.Core.Variables.QuaternionListener.GetValue(System.String)
+  commentId: M:TotalDialogue.Core.Variables.QuaternionListener.GetValue(System.String)
+  id: GetValue(System.String)
+  parent: TotalDialogue.Core.Variables.QuaternionListener
+  langs:
+  - csharp
+  - vb
+  name: GetValue(string)
+  nameWithType: QuaternionListener.GetValue(string)
+  fullName: TotalDialogue.Core.Variables.QuaternionListener.GetValue(string)
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Listener/QuaternionListener.cs
+      branch: master
+      repo: git@github.com:zgock999/total_dialogue_framework.git
+    id: GetValue
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Listener/QuaternionListener.cs
+    startLine: 8
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Variables
+  example: []
+  syntax:
+    content: public override Quaternion GetValue(string key)
+    parameters:
+    - id: key
+      type: System.String
+    return:
+      type: UnityEngine.Quaternion
+    content.vb: Public Overrides Function GetValue(key As String) As Quaternion
+  overridden: TotalDialogue.Core.Variables.VariableListener{UnityEngine.Quaternion}.GetValue(System.String)
+  overload: TotalDialogue.Core.Variables.QuaternionListener.GetValue*
+  nameWithType.vb: QuaternionListener.GetValue(String)
+  fullName.vb: TotalDialogue.Core.Variables.QuaternionListener.GetValue(String)
+  name.vb: GetValue(String)
+- uid: TotalDialogue.Core.Variables.QuaternionListener.SetValue(System.String,UnityEngine.Quaternion)
+  commentId: M:TotalDialogue.Core.Variables.QuaternionListener.SetValue(System.String,UnityEngine.Quaternion)
+  id: SetValue(System.String,UnityEngine.Quaternion)
+  parent: TotalDialogue.Core.Variables.QuaternionListener
+  langs:
+  - csharp
+  - vb
+  name: SetValue(string, Quaternion)
+  nameWithType: QuaternionListener.SetValue(string, Quaternion)
+  fullName: TotalDialogue.Core.Variables.QuaternionListener.SetValue(string, UnityEngine.Quaternion)
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Listener/QuaternionListener.cs
+      branch: master
+      repo: git@github.com:zgock999/total_dialogue_framework.git
+    id: SetValue
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Listener/QuaternionListener.cs
+    startLine: 13
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Variables
+  example: []
+  syntax:
+    content: public override void SetValue(string key, Quaternion value)
+    parameters:
+    - id: key
+      type: System.String
+    - id: value
+      type: UnityEngine.Quaternion
+    content.vb: Public Overrides Sub SetValue(key As String, value As Quaternion)
+  overridden: TotalDialogue.Core.Variables.VariableListener{UnityEngine.Quaternion}.SetValue(System.String,UnityEngine.Quaternion)
+  overload: TotalDialogue.Core.Variables.QuaternionListener.SetValue*
+  nameWithType.vb: QuaternionListener.SetValue(String, Quaternion)
+  fullName.vb: TotalDialogue.Core.Variables.QuaternionListener.SetValue(String, UnityEngine.Quaternion)
+  name.vb: SetValue(String, Quaternion)
+references:
+- uid: TotalDialogue.Core.Variables
+  commentId: N:TotalDialogue.Core.Variables
+  href: TotalDialogue.html
+  name: TotalDialogue.Core.Variables
+  nameWithType: TotalDialogue.Core.Variables
+  fullName: TotalDialogue.Core.Variables
+  spec.csharp:
+  - uid: TotalDialogue
+    name: TotalDialogue
+    href: TotalDialogue.html
+  - name: .
+  - uid: TotalDialogue.Core
+    name: Core
+    href: TotalDialogue.Core.html
+  - name: .
+  - uid: TotalDialogue.Core.Variables
+    name: Variables
+    href: TotalDialogue.Core.Variables.html
+  spec.vb:
+  - uid: TotalDialogue
+    name: TotalDialogue
+    href: TotalDialogue.html
+  - name: .
+  - uid: TotalDialogue.Core
+    name: Core
+    href: TotalDialogue.Core.html
+  - name: .
+  - uid: TotalDialogue.Core.Variables
+    name: Variables
+    href: TotalDialogue.Core.Variables.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: TotalDialogue.Core.Variables.VariableListener{UnityEngine.Quaternion}
+  commentId: T:TotalDialogue.Core.Variables.VariableListener{UnityEngine.Quaternion}
+  parent: TotalDialogue.Core.Variables
+  definition: TotalDialogue.Core.Variables.VariableListener`1
+  href: TotalDialogue.Core.Variables.VariableListener-1.html
+  name: VariableListener<Quaternion>
+  nameWithType: VariableListener<Quaternion>
+  fullName: TotalDialogue.Core.Variables.VariableListener<UnityEngine.Quaternion>
+  nameWithType.vb: VariableListener(Of Quaternion)
+  fullName.vb: TotalDialogue.Core.Variables.VariableListener(Of UnityEngine.Quaternion)
+  name.vb: VariableListener(Of Quaternion)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.VariableListener`1
+    name: VariableListener
+    href: TotalDialogue.Core.Variables.VariableListener-1.html
+  - name: <
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.VariableListener`1
+    name: VariableListener
+    href: TotalDialogue.Core.Variables.VariableListener-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    isExternal: true
+  - name: )
+- uid: TotalDialogue.Core.Variables.VariableListener{UnityEngine.Quaternion}.fireOnEnable
+  commentId: F:TotalDialogue.Core.Variables.VariableListener{UnityEngine.Quaternion}.fireOnEnable
+  parent: TotalDialogue.Core.Variables.VariableListener{UnityEngine.Quaternion}
+  definition: TotalDialogue.Core.Variables.VariableListener`1.fireOnEnable
+  href: TotalDialogue.Core.Variables.VariableListener-1.html#TotalDialogue_Core_Variables_VariableListener_1_fireOnEnable
+  name: fireOnEnable
+  nameWithType: VariableListener<Quaternion>.fireOnEnable
+  fullName: TotalDialogue.Core.Variables.VariableListener<UnityEngine.Quaternion>.fireOnEnable
+  nameWithType.vb: VariableListener(Of Quaternion).fireOnEnable
+  fullName.vb: TotalDialogue.Core.Variables.VariableListener(Of UnityEngine.Quaternion).fireOnEnable
+- uid: TotalDialogue.Core.Variables.VariableListener{UnityEngine.Quaternion}.fireOnBecome
+  commentId: F:TotalDialogue.Core.Variables.VariableListener{UnityEngine.Quaternion}.fireOnBecome
+  parent: TotalDialogue.Core.Variables.VariableListener{UnityEngine.Quaternion}
+  definition: TotalDialogue.Core.Variables.VariableListener`1.fireOnBecome
+  href: TotalDialogue.Core.Variables.VariableListener-1.html#TotalDialogue_Core_Variables_VariableListener_1_fireOnBecome
+  name: fireOnBecome
+  nameWithType: VariableListener<Quaternion>.fireOnBecome
+  fullName: TotalDialogue.Core.Variables.VariableListener<UnityEngine.Quaternion>.fireOnBecome
+  nameWithType.vb: VariableListener(Of Quaternion).fireOnBecome
+  fullName.vb: TotalDialogue.Core.Variables.VariableListener(Of UnityEngine.Quaternion).fireOnBecome
+- uid: TotalDialogue.Core.Variables.VariableListener{UnityEngine.Quaternion}.key
+  commentId: F:TotalDialogue.Core.Variables.VariableListener{UnityEngine.Quaternion}.key
+  parent: TotalDialogue.Core.Variables.VariableListener{UnityEngine.Quaternion}
+  definition: TotalDialogue.Core.Variables.VariableListener`1.key
+  href: TotalDialogue.Core.Variables.VariableListener-1.html#TotalDialogue_Core_Variables_VariableListener_1_key
+  name: key
+  nameWithType: VariableListener<Quaternion>.key
+  fullName: TotalDialogue.Core.Variables.VariableListener<UnityEngine.Quaternion>.key
+  nameWithType.vb: VariableListener(Of Quaternion).key
+  fullName.vb: TotalDialogue.Core.Variables.VariableListener(Of UnityEngine.Quaternion).key
+- uid: TotalDialogue.Core.Variables.VariableListener{UnityEngine.Quaternion}.variables
+  commentId: F:TotalDialogue.Core.Variables.VariableListener{UnityEngine.Quaternion}.variables
+  parent: TotalDialogue.Core.Variables.VariableListener{UnityEngine.Quaternion}
+  definition: TotalDialogue.Core.Variables.VariableListener`1.variables
+  href: TotalDialogue.Core.Variables.VariableListener-1.html#TotalDialogue_Core_Variables_VariableListener_1_variables
+  name: variables
+  nameWithType: VariableListener<Quaternion>.variables
+  fullName: TotalDialogue.Core.Variables.VariableListener<UnityEngine.Quaternion>.variables
+  nameWithType.vb: VariableListener(Of Quaternion).variables
+  fullName.vb: TotalDialogue.Core.Variables.VariableListener(Of UnityEngine.Quaternion).variables
+- uid: TotalDialogue.Core.Variables.VariableListener{UnityEngine.Quaternion}.OnSet
+  commentId: F:TotalDialogue.Core.Variables.VariableListener{UnityEngine.Quaternion}.OnSet
+  parent: TotalDialogue.Core.Variables.VariableListener{UnityEngine.Quaternion}
+  definition: TotalDialogue.Core.Variables.VariableListener`1.OnSet
+  href: TotalDialogue.Core.Variables.VariableListener-1.html#TotalDialogue_Core_Variables_VariableListener_1_OnSet
+  name: OnSet
+  nameWithType: VariableListener<Quaternion>.OnSet
+  fullName: TotalDialogue.Core.Variables.VariableListener<UnityEngine.Quaternion>.OnSet
+  nameWithType.vb: VariableListener(Of Quaternion).OnSet
+  fullName.vb: TotalDialogue.Core.Variables.VariableListener(Of UnityEngine.Quaternion).OnSet
+- uid: TotalDialogue.Core.Variables.VariableListener{UnityEngine.Quaternion}.OnChanged
+  commentId: F:TotalDialogue.Core.Variables.VariableListener{UnityEngine.Quaternion}.OnChanged
+  parent: TotalDialogue.Core.Variables.VariableListener{UnityEngine.Quaternion}
+  definition: TotalDialogue.Core.Variables.VariableListener`1.OnChanged
+  href: TotalDialogue.Core.Variables.VariableListener-1.html#TotalDialogue_Core_Variables_VariableListener_1_OnChanged
+  name: OnChanged
+  nameWithType: VariableListener<Quaternion>.OnChanged
+  fullName: TotalDialogue.Core.Variables.VariableListener<UnityEngine.Quaternion>.OnChanged
+  nameWithType.vb: VariableListener(Of Quaternion).OnChanged
+  fullName.vb: TotalDialogue.Core.Variables.VariableListener(Of UnityEngine.Quaternion).OnChanged
+- uid: TotalDialogue.Core.Variables.VariableListener{UnityEngine.Quaternion}.OnBecome
+  commentId: F:TotalDialogue.Core.Variables.VariableListener{UnityEngine.Quaternion}.OnBecome
+  parent: TotalDialogue.Core.Variables.VariableListener{UnityEngine.Quaternion}
+  definition: TotalDialogue.Core.Variables.VariableListener`1.OnBecome
+  href: TotalDialogue.Core.Variables.VariableListener-1.html#TotalDialogue_Core_Variables_VariableListener_1_OnBecome
+  name: OnBecome
+  nameWithType: VariableListener<Quaternion>.OnBecome
+  fullName: TotalDialogue.Core.Variables.VariableListener<UnityEngine.Quaternion>.OnBecome
+  nameWithType.vb: VariableListener(Of Quaternion).OnBecome
+  fullName.vb: TotalDialogue.Core.Variables.VariableListener(Of UnityEngine.Quaternion).OnBecome
+- uid: TotalDialogue.Core.Variables.VariableListener{UnityEngine.Quaternion}.OnCease
+  commentId: F:TotalDialogue.Core.Variables.VariableListener{UnityEngine.Quaternion}.OnCease
+  parent: TotalDialogue.Core.Variables.VariableListener{UnityEngine.Quaternion}
+  definition: TotalDialogue.Core.Variables.VariableListener`1.OnCease
+  href: TotalDialogue.Core.Variables.VariableListener-1.html#TotalDialogue_Core_Variables_VariableListener_1_OnCease
+  name: OnCease
+  nameWithType: VariableListener<Quaternion>.OnCease
+  fullName: TotalDialogue.Core.Variables.VariableListener<UnityEngine.Quaternion>.OnCease
+  nameWithType.vb: VariableListener(Of Quaternion).OnCease
+  fullName.vb: TotalDialogue.Core.Variables.VariableListener(Of UnityEngine.Quaternion).OnCease
+- uid: TotalDialogue.Core.Variables.VariableListener{UnityEngine.Quaternion}.targetValue
+  commentId: F:TotalDialogue.Core.Variables.VariableListener{UnityEngine.Quaternion}.targetValue
+  parent: TotalDialogue.Core.Variables.VariableListener{UnityEngine.Quaternion}
+  definition: TotalDialogue.Core.Variables.VariableListener`1.targetValue
+  href: TotalDialogue.Core.Variables.VariableListener-1.html#TotalDialogue_Core_Variables_VariableListener_1_targetValue
+  name: targetValue
+  nameWithType: VariableListener<Quaternion>.targetValue
+  fullName: TotalDialogue.Core.Variables.VariableListener<UnityEngine.Quaternion>.targetValue
+  nameWithType.vb: VariableListener(Of Quaternion).targetValue
+  fullName.vb: TotalDialogue.Core.Variables.VariableListener(Of UnityEngine.Quaternion).targetValue
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: TotalDialogue.Core.Variables.VariableListener`1
+  commentId: T:TotalDialogue.Core.Variables.VariableListener`1
+  href: TotalDialogue.Core.Variables.VariableListener-1.html
+  name: VariableListener<T>
+  nameWithType: VariableListener<T>
+  fullName: TotalDialogue.Core.Variables.VariableListener<T>
+  nameWithType.vb: VariableListener(Of T)
+  fullName.vb: TotalDialogue.Core.Variables.VariableListener(Of T)
+  name.vb: VariableListener(Of T)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.VariableListener`1
+    name: VariableListener
+    href: TotalDialogue.Core.Variables.VariableListener-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.VariableListener`1
+    name: VariableListener
+    href: TotalDialogue.Core.Variables.VariableListener-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: TotalDialogue.Core.Variables.VariableListener`1.fireOnEnable
+  commentId: F:TotalDialogue.Core.Variables.VariableListener`1.fireOnEnable
+  href: TotalDialogue.Core.Variables.VariableListener-1.html#TotalDialogue_Core_Variables_VariableListener_1_fireOnEnable
+  name: fireOnEnable
+  nameWithType: VariableListener<T>.fireOnEnable
+  fullName: TotalDialogue.Core.Variables.VariableListener<T>.fireOnEnable
+  nameWithType.vb: VariableListener(Of T).fireOnEnable
+  fullName.vb: TotalDialogue.Core.Variables.VariableListener(Of T).fireOnEnable
+- uid: TotalDialogue.Core.Variables.VariableListener`1.fireOnBecome
+  commentId: F:TotalDialogue.Core.Variables.VariableListener`1.fireOnBecome
+  href: TotalDialogue.Core.Variables.VariableListener-1.html#TotalDialogue_Core_Variables_VariableListener_1_fireOnBecome
+  name: fireOnBecome
+  nameWithType: VariableListener<T>.fireOnBecome
+  fullName: TotalDialogue.Core.Variables.VariableListener<T>.fireOnBecome
+  nameWithType.vb: VariableListener(Of T).fireOnBecome
+  fullName.vb: TotalDialogue.Core.Variables.VariableListener(Of T).fireOnBecome
+- uid: TotalDialogue.Core.Variables.VariableListener`1.key
+  commentId: F:TotalDialogue.Core.Variables.VariableListener`1.key
+  href: TotalDialogue.Core.Variables.VariableListener-1.html#TotalDialogue_Core_Variables_VariableListener_1_key
+  name: key
+  nameWithType: VariableListener<T>.key
+  fullName: TotalDialogue.Core.Variables.VariableListener<T>.key
+  nameWithType.vb: VariableListener(Of T).key
+  fullName.vb: TotalDialogue.Core.Variables.VariableListener(Of T).key
+- uid: TotalDialogue.Core.Variables.VariableListener`1.variables
+  commentId: F:TotalDialogue.Core.Variables.VariableListener`1.variables
+  href: TotalDialogue.Core.Variables.VariableListener-1.html#TotalDialogue_Core_Variables_VariableListener_1_variables
+  name: variables
+  nameWithType: VariableListener<T>.variables
+  fullName: TotalDialogue.Core.Variables.VariableListener<T>.variables
+  nameWithType.vb: VariableListener(Of T).variables
+  fullName.vb: TotalDialogue.Core.Variables.VariableListener(Of T).variables
+- uid: TotalDialogue.Core.Variables.VariableListener`1.OnSet
+  commentId: F:TotalDialogue.Core.Variables.VariableListener`1.OnSet
+  href: TotalDialogue.Core.Variables.VariableListener-1.html#TotalDialogue_Core_Variables_VariableListener_1_OnSet
+  name: OnSet
+  nameWithType: VariableListener<T>.OnSet
+  fullName: TotalDialogue.Core.Variables.VariableListener<T>.OnSet
+  nameWithType.vb: VariableListener(Of T).OnSet
+  fullName.vb: TotalDialogue.Core.Variables.VariableListener(Of T).OnSet
+- uid: TotalDialogue.Core.Variables.VariableListener`1.OnChanged
+  commentId: F:TotalDialogue.Core.Variables.VariableListener`1.OnChanged
+  href: TotalDialogue.Core.Variables.VariableListener-1.html#TotalDialogue_Core_Variables_VariableListener_1_OnChanged
+  name: OnChanged
+  nameWithType: VariableListener<T>.OnChanged
+  fullName: TotalDialogue.Core.Variables.VariableListener<T>.OnChanged
+  nameWithType.vb: VariableListener(Of T).OnChanged
+  fullName.vb: TotalDialogue.Core.Variables.VariableListener(Of T).OnChanged
+- uid: TotalDialogue.Core.Variables.VariableListener`1.OnBecome
+  commentId: F:TotalDialogue.Core.Variables.VariableListener`1.OnBecome
+  href: TotalDialogue.Core.Variables.VariableListener-1.html#TotalDialogue_Core_Variables_VariableListener_1_OnBecome
+  name: OnBecome
+  nameWithType: VariableListener<T>.OnBecome
+  fullName: TotalDialogue.Core.Variables.VariableListener<T>.OnBecome
+  nameWithType.vb: VariableListener(Of T).OnBecome
+  fullName.vb: TotalDialogue.Core.Variables.VariableListener(Of T).OnBecome
+- uid: TotalDialogue.Core.Variables.VariableListener`1.OnCease
+  commentId: F:TotalDialogue.Core.Variables.VariableListener`1.OnCease
+  href: TotalDialogue.Core.Variables.VariableListener-1.html#TotalDialogue_Core_Variables_VariableListener_1_OnCease
+  name: OnCease
+  nameWithType: VariableListener<T>.OnCease
+  fullName: TotalDialogue.Core.Variables.VariableListener<T>.OnCease
+  nameWithType.vb: VariableListener(Of T).OnCease
+  fullName.vb: TotalDialogue.Core.Variables.VariableListener(Of T).OnCease
+- uid: TotalDialogue.Core.Variables.VariableListener`1.targetValue
+  commentId: F:TotalDialogue.Core.Variables.VariableListener`1.targetValue
+  href: TotalDialogue.Core.Variables.VariableListener-1.html#TotalDialogue_Core_Variables_VariableListener_1_targetValue
+  name: targetValue
+  nameWithType: VariableListener<T>.targetValue
+  fullName: TotalDialogue.Core.Variables.VariableListener<T>.targetValue
+  nameWithType.vb: VariableListener(Of T).targetValue
+  fullName.vb: TotalDialogue.Core.Variables.VariableListener(Of T).targetValue
+- uid: TotalDialogue.Core.Variables.VariableListener{UnityEngine.Quaternion}.GetValue(System.String)
+  commentId: M:TotalDialogue.Core.Variables.VariableListener{UnityEngine.Quaternion}.GetValue(System.String)
+  parent: TotalDialogue.Core.Variables.VariableListener{UnityEngine.Quaternion}
+  definition: TotalDialogue.Core.Variables.VariableListener`1.GetValue(System.String)
+  href: TotalDialogue.Core.Variables.VariableListener-1.html#TotalDialogue_Core_Variables_VariableListener_1_GetValue_System_String_
+  name: GetValue(string)
+  nameWithType: VariableListener<Quaternion>.GetValue(string)
+  fullName: TotalDialogue.Core.Variables.VariableListener<UnityEngine.Quaternion>.GetValue(string)
+  nameWithType.vb: VariableListener(Of Quaternion).GetValue(String)
+  fullName.vb: TotalDialogue.Core.Variables.VariableListener(Of UnityEngine.Quaternion).GetValue(String)
+  name.vb: GetValue(String)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.VariableListener{UnityEngine.Quaternion}.GetValue(System.String)
+    name: GetValue
+    href: TotalDialogue.Core.Variables.VariableListener-1.html#TotalDialogue_Core_Variables_VariableListener_1_GetValue_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.VariableListener{UnityEngine.Quaternion}.GetValue(System.String)
+    name: GetValue
+    href: TotalDialogue.Core.Variables.VariableListener-1.html#TotalDialogue_Core_Variables_VariableListener_1_GetValue_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: TotalDialogue.Core.Variables.QuaternionListener.GetValue*
+  commentId: Overload:TotalDialogue.Core.Variables.QuaternionListener.GetValue
+  href: TotalDialogue.Core.Variables.QuaternionListener.html#TotalDialogue_Core_Variables_QuaternionListener_GetValue_System_String_
+  name: GetValue
+  nameWithType: QuaternionListener.GetValue
+  fullName: TotalDialogue.Core.Variables.QuaternionListener.GetValue
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: UnityEngine.Quaternion
+  commentId: T:UnityEngine.Quaternion
+  parent: UnityEngine
+  isExternal: true
+  name: Quaternion
+  nameWithType: Quaternion
+  fullName: UnityEngine.Quaternion
+- uid: TotalDialogue.Core.Variables.VariableListener`1.GetValue(System.String)
+  commentId: M:TotalDialogue.Core.Variables.VariableListener`1.GetValue(System.String)
+  isExternal: true
+  href: TotalDialogue.Core.Variables.VariableListener-1.html#TotalDialogue_Core_Variables_VariableListener_1_GetValue_System_String_
+  name: GetValue(string)
+  nameWithType: VariableListener<T>.GetValue(string)
+  fullName: TotalDialogue.Core.Variables.VariableListener<T>.GetValue(string)
+  nameWithType.vb: VariableListener(Of T).GetValue(String)
+  fullName.vb: TotalDialogue.Core.Variables.VariableListener(Of T).GetValue(String)
+  name.vb: GetValue(String)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.VariableListener`1.GetValue(System.String)
+    name: GetValue
+    href: TotalDialogue.Core.Variables.VariableListener-1.html#TotalDialogue_Core_Variables_VariableListener_1_GetValue_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.VariableListener`1.GetValue(System.String)
+    name: GetValue
+    href: TotalDialogue.Core.Variables.VariableListener-1.html#TotalDialogue_Core_Variables_VariableListener_1_GetValue_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: TotalDialogue.Core.Variables.VariableListener{UnityEngine.Quaternion}.SetValue(System.String,UnityEngine.Quaternion)
+  commentId: M:TotalDialogue.Core.Variables.VariableListener{UnityEngine.Quaternion}.SetValue(System.String,UnityEngine.Quaternion)
+  parent: TotalDialogue.Core.Variables.VariableListener{UnityEngine.Quaternion}
+  definition: TotalDialogue.Core.Variables.VariableListener`1.SetValue(System.String,`0)
+  href: TotalDialogue.Core.Variables.VariableListener-1.html#TotalDialogue_Core_Variables_VariableListener_1_SetValue_System_String__0_
+  name: SetValue(string, Quaternion)
+  nameWithType: VariableListener<Quaternion>.SetValue(string, Quaternion)
+  fullName: TotalDialogue.Core.Variables.VariableListener<UnityEngine.Quaternion>.SetValue(string, UnityEngine.Quaternion)
+  nameWithType.vb: VariableListener(Of Quaternion).SetValue(String, Quaternion)
+  fullName.vb: TotalDialogue.Core.Variables.VariableListener(Of UnityEngine.Quaternion).SetValue(String, UnityEngine.Quaternion)
+  name.vb: SetValue(String, Quaternion)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.VariableListener{UnityEngine.Quaternion}.SetValue(System.String,UnityEngine.Quaternion)
+    name: SetValue
+    href: TotalDialogue.Core.Variables.VariableListener-1.html#TotalDialogue_Core_Variables_VariableListener_1_SetValue_System_String__0_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.VariableListener{UnityEngine.Quaternion}.SetValue(System.String,UnityEngine.Quaternion)
+    name: SetValue
+    href: TotalDialogue.Core.Variables.VariableListener-1.html#TotalDialogue_Core_Variables_VariableListener_1_SetValue_System_String__0_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    isExternal: true
+  - name: )
+- uid: TotalDialogue.Core.Variables.QuaternionListener.SetValue*
+  commentId: Overload:TotalDialogue.Core.Variables.QuaternionListener.SetValue
+  href: TotalDialogue.Core.Variables.QuaternionListener.html#TotalDialogue_Core_Variables_QuaternionListener_SetValue_System_String_UnityEngine_Quaternion_
+  name: SetValue
+  nameWithType: QuaternionListener.SetValue
+  fullName: TotalDialogue.Core.Variables.QuaternionListener.SetValue
+- uid: TotalDialogue.Core.Variables.VariableListener`1.SetValue(System.String,`0)
+  commentId: M:TotalDialogue.Core.Variables.VariableListener`1.SetValue(System.String,`0)
+  isExternal: true
+  href: TotalDialogue.Core.Variables.VariableListener-1.html#TotalDialogue_Core_Variables_VariableListener_1_SetValue_System_String__0_
+  name: SetValue(string, T)
+  nameWithType: VariableListener<T>.SetValue(string, T)
+  fullName: TotalDialogue.Core.Variables.VariableListener<T>.SetValue(string, T)
+  nameWithType.vb: VariableListener(Of T).SetValue(String, T)
+  fullName.vb: TotalDialogue.Core.Variables.VariableListener(Of T).SetValue(String, T)
+  name.vb: SetValue(String, T)
+  spec.csharp:
+  - uid: TotalDialogue.Core.Variables.VariableListener`1.SetValue(System.String,`0)
+    name: SetValue
+    href: TotalDialogue.Core.Variables.VariableListener-1.html#TotalDialogue_Core_Variables_VariableListener_1_SetValue_System_String__0_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: TotalDialogue.Core.Variables.VariableListener`1.SetValue(System.String,`0)
+    name: SetValue
+    href: TotalDialogue.Core.Variables.VariableListener-1.html#TotalDialogue_Core_Variables_VariableListener_1_SetValue_System_String__0_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )

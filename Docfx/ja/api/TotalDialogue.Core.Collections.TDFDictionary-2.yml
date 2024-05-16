@@ -12,6 +12,7 @@ items:
   - TotalDialogue.Core.Collections.TDFDictionary`2.Add(System.Collections.Generic.KeyValuePair{`0,`1})
   - TotalDialogue.Core.Collections.TDFDictionary`2.Add(TotalDialogue.Core.Collections.TDFKeyValuePair{`0,`1})
   - TotalDialogue.Core.Collections.TDFDictionary`2.Add(`0,`1)
+  - TotalDialogue.Core.Collections.TDFDictionary`2.AddNew(System.Object,System.Type)
   - TotalDialogue.Core.Collections.TDFDictionary`2.AsDictionary
   - TotalDialogue.Core.Collections.TDFDictionary`2.Contains(System.Collections.Generic.KeyValuePair{`0,`1})
   - TotalDialogue.Core.Collections.TDFDictionary`2.ContainsKey(`0)
@@ -46,7 +47,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: TDFDictionary
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs
-    startLine: 14
+    startLine: 15
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Collections
@@ -65,20 +66,23 @@ items:
     content: >-
       [Serializable]
 
-      public class TDFDictionary<TKey, TValue> : TDFKeyValuePairs<TKey, TValue>, ITDFList<TDFKeyValuePair<TKey, TValue>>, IEnumerable<TDFKeyValuePair<TKey, TValue>>, ISerializationCallbackReceiver, IDictionary<TKey, TValue>, ICollection<KeyValuePair<TKey, TValue>>, IEnumerable<KeyValuePair<TKey, TValue>>, IEnumerable
+      public class TDFDictionary<TKey, TValue> : TDFKeyValuePairs<TKey, TValue>, ITDFList, ITDFListGeneric<TDFKeyValuePair<TKey, TValue>>, IEnumerable<TDFKeyValuePair<TKey, TValue>>, ISerializationCallbackReceiver, IDictionary<TKey, TValue>, ICollection<KeyValuePair<TKey, TValue>>, IEnumerable<KeyValuePair<TKey, TValue>>, IEnumerable
     typeParameters:
     - id: TKey
     - id: TValue
     content.vb: >-
       <Serializable>
 
-      Public Class TDFDictionary(Of TKey, TValue) Inherits TDFKeyValuePairs(Of TKey, TValue) Implements ITDFList(Of TDFKeyValuePair(Of TKey, TValue)), IEnumerable(Of TDFKeyValuePair(Of TKey, TValue)), ISerializationCallbackReceiver, IDictionary(Of TKey, TValue), ICollection(Of KeyValuePair(Of TKey, TValue)), IEnumerable(Of KeyValuePair(Of TKey, TValue)), IEnumerable
+      Public Class TDFDictionary(Of TKey, TValue) Inherits TDFKeyValuePairs(Of TKey, TValue) Implements ITDFList, ITDFListGeneric(Of TDFKeyValuePair(Of TKey, TValue)), IEnumerable(Of TDFKeyValuePair(Of TKey, TValue)), ISerializationCallbackReceiver, IDictionary(Of TKey, TValue), ICollection(Of KeyValuePair(Of TKey, TValue)), IEnumerable(Of KeyValuePair(Of TKey, TValue)), IEnumerable
   inheritance:
   - System.Object
   - TotalDialogue.Core.Collections.TDFList{TotalDialogue.Core.Collections.TDFKeyValuePair{{TKey},{TValue}}}
   - TotalDialogue.Core.Collections.TDFKeyValuePairs{{TKey},{TValue}}
+  derivedClasses:
+  - TotalDialogue.Core.Variables.VariableList`3
   implements:
-  - TotalDialogue.Core.Collections.ITDFList{TotalDialogue.Core.Collections.TDFKeyValuePair{{TKey},{TValue}}}
+  - TotalDialogue.Core.Collections.ITDFList
+  - TotalDialogue.Core.Collections.ITDFListGeneric{TotalDialogue.Core.Collections.TDFKeyValuePair{{TKey},{TValue}}}
   - System.Collections.Generic.IEnumerable{TotalDialogue.Core.Collections.TDFKeyValuePair{{TKey},{TValue}}}
   - UnityEngine.ISerializationCallbackReceiver
   - System.Collections.Generic.IDictionary{{TKey},{TValue}}
@@ -187,7 +191,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: AsDictionary
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs
-    startLine: 29
+    startLine: 30
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Collections
@@ -220,7 +224,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: Keys
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs
-    startLine: 33
+    startLine: 34
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Collections
@@ -255,7 +259,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: Values
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs
-    startLine: 37
+    startLine: 38
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Collections
@@ -290,7 +294,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: Count
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs
-    startLine: 47
+    startLine: 48
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Collections
@@ -331,7 +335,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: ListCount
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs
-    startLine: 57
+    startLine: 58
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Collections
@@ -369,7 +373,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: .ctor
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs
-    startLine: 65
+    startLine: 66
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Collections
@@ -405,7 +409,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: .ctor
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs
-    startLine: 81
+    startLine: 82
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Collections
@@ -444,7 +448,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: .ctor
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs
-    startLine: 91
+    startLine: 92
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Collections
@@ -476,7 +480,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: IsReadOnly
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs
-    startLine: 115
+    startLine: 116
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Collections
@@ -516,7 +520,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: GetEnumerator
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs
-    startLine: 125
+    startLine: 126
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Collections
@@ -550,7 +554,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: .ctor
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs
-    startLine: 140
+    startLine: 141
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Collections
@@ -585,7 +589,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: ContainsKey
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs
-    startLine: 157
+    startLine: 158
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Collections
@@ -629,7 +633,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: ContainsValue
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs
-    startLine: 177
+    startLine: 178
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Collections
@@ -670,7 +674,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: TryGetValue
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs
-    startLine: 199
+    startLine: 200
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Collections
@@ -719,7 +723,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: this[]
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs
-    startLine: 223
+    startLine: 224
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Collections
@@ -771,7 +775,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: Add
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs
-    startLine: 283
+    startLine: 284
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Collections
@@ -818,7 +822,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: Add
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs
-    startLine: 287
+    startLine: 288
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Collections
@@ -858,7 +862,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: UpdateDuplicates
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs
-    startLine: 319
+    startLine: 320
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Collections
@@ -890,7 +894,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: op_Implicit
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs
-    startLine: 339
+    startLine: 340
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Collections
@@ -926,7 +930,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: op_Implicit
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs
-    startLine: 351
+    startLine: 352
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Collections
@@ -962,7 +966,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: FromDictionary
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs
-    startLine: 368
+    startLine: 370
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Collections
@@ -1001,7 +1005,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: ToDictionary
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs
-    startLine: 380
+    startLine: 382
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Collections
@@ -1040,7 +1044,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: FromDictionary
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs
-    startLine: 392
+    startLine: 394
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Collections
@@ -1079,7 +1083,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: Add
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs
-    startLine: 405
+    startLine: 407
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Collections
@@ -1120,7 +1124,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: Contains
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs
-    startLine: 418
+    startLine: 420
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Collections
@@ -1164,7 +1168,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: CopyTo
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs
-    startLine: 428
+    startLine: 430
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Collections
@@ -1204,7 +1208,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: Remove
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs
-    startLine: 444
+    startLine: 446
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Collections
@@ -1230,6 +1234,40 @@ items:
   nameWithType.vb: TDFDictionary(Of TKey, TValue).Remove(KeyValuePair(Of TKey, TValue))
   fullName.vb: TotalDialogue.Core.Collections.TDFDictionary(Of TKey, TValue).Remove(System.Collections.Generic.KeyValuePair(Of TKey, TValue))
   name.vb: Remove(KeyValuePair(Of TKey, TValue))
+- uid: TotalDialogue.Core.Collections.TDFDictionary`2.AddNew(System.Object,System.Type)
+  commentId: M:TotalDialogue.Core.Collections.TDFDictionary`2.AddNew(System.Object,System.Type)
+  id: AddNew(System.Object,System.Type)
+  parent: TotalDialogue.Core.Collections.TDFDictionary`2
+  langs:
+  - csharp
+  - vb
+  name: AddNew(object, Type)
+  nameWithType: TDFDictionary<TKey, TValue>.AddNew(object, Type)
+  fullName: TotalDialogue.Core.Collections.TDFDictionary<TKey, TValue>.AddNew(object, System.Type)
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs
+      branch: master
+      repo: git@github.com:zgock999/total_dialogue_framework.git
+    id: AddNew
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFDictionary.cs
+    startLine: 461
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Collections
+  syntax:
+    content: public void AddNew(object key, Type type)
+    parameters:
+    - id: key
+      type: System.Object
+    - id: type
+      type: System.Type
+    content.vb: Public Sub AddNew(key As Object, type As Type)
+  overload: TotalDialogue.Core.Collections.TDFDictionary`2.AddNew*
+  nameWithType.vb: TDFDictionary(Of TKey, TValue).AddNew(Object, Type)
+  fullName.vb: TotalDialogue.Core.Collections.TDFDictionary(Of TKey, TValue).AddNew(Object, System.Type)
+  name.vb: AddNew(Object, Type)
 references:
 - uid: TotalDialogue.Core.Collections
   commentId: N:TotalDialogue.Core.Collections
@@ -1350,21 +1388,28 @@ references:
   - name: " "
   - name: TValue
   - name: )
-- uid: TotalDialogue.Core.Collections.ITDFList{TotalDialogue.Core.Collections.TDFKeyValuePair{{TKey},{TValue}}}
-  commentId: T:TotalDialogue.Core.Collections.ITDFList{TotalDialogue.Core.Collections.TDFKeyValuePair{`0,`1}}
+- uid: TotalDialogue.Core.Collections.ITDFList
+  commentId: T:TotalDialogue.Core.Collections.ITDFList
   parent: TotalDialogue.Core.Collections
-  definition: TotalDialogue.Core.Collections.ITDFList`1
-  href: TotalDialogue.Core.Collections.ITDFList-1.html
-  name: ITDFList<TDFKeyValuePair<TKey, TValue>>
-  nameWithType: ITDFList<TDFKeyValuePair<TKey, TValue>>
-  fullName: TotalDialogue.Core.Collections.ITDFList<TotalDialogue.Core.Collections.TDFKeyValuePair<TKey, TValue>>
-  nameWithType.vb: ITDFList(Of TDFKeyValuePair(Of TKey, TValue))
-  fullName.vb: TotalDialogue.Core.Collections.ITDFList(Of TotalDialogue.Core.Collections.TDFKeyValuePair(Of TKey, TValue))
-  name.vb: ITDFList(Of TDFKeyValuePair(Of TKey, TValue))
+  href: TotalDialogue.Core.Collections.ITDFList.html
+  name: ITDFList
+  nameWithType: ITDFList
+  fullName: TotalDialogue.Core.Collections.ITDFList
+- uid: TotalDialogue.Core.Collections.ITDFListGeneric{TotalDialogue.Core.Collections.TDFKeyValuePair{{TKey},{TValue}}}
+  commentId: T:TotalDialogue.Core.Collections.ITDFListGeneric{TotalDialogue.Core.Collections.TDFKeyValuePair{`0,`1}}
+  parent: TotalDialogue.Core.Collections
+  definition: TotalDialogue.Core.Collections.ITDFListGeneric`1
+  href: TotalDialogue.Core.Collections.ITDFListGeneric-1.html
+  name: ITDFListGeneric<TDFKeyValuePair<TKey, TValue>>
+  nameWithType: ITDFListGeneric<TDFKeyValuePair<TKey, TValue>>
+  fullName: TotalDialogue.Core.Collections.ITDFListGeneric<TotalDialogue.Core.Collections.TDFKeyValuePair<TKey, TValue>>
+  nameWithType.vb: ITDFListGeneric(Of TDFKeyValuePair(Of TKey, TValue))
+  fullName.vb: TotalDialogue.Core.Collections.ITDFListGeneric(Of TotalDialogue.Core.Collections.TDFKeyValuePair(Of TKey, TValue))
+  name.vb: ITDFListGeneric(Of TDFKeyValuePair(Of TKey, TValue))
   spec.csharp:
-  - uid: TotalDialogue.Core.Collections.ITDFList`1
-    name: ITDFList
-    href: TotalDialogue.Core.Collections.ITDFList-1.html
+  - uid: TotalDialogue.Core.Collections.ITDFListGeneric`1
+    name: ITDFListGeneric
+    href: TotalDialogue.Core.Collections.ITDFListGeneric-1.html
   - name: <
   - uid: TotalDialogue.Core.Collections.TDFKeyValuePair`2
     name: TDFKeyValuePair
@@ -1377,9 +1422,9 @@ references:
   - name: '>'
   - name: '>'
   spec.vb:
-  - uid: TotalDialogue.Core.Collections.ITDFList`1
-    name: ITDFList
-    href: TotalDialogue.Core.Collections.ITDFList-1.html
+  - uid: TotalDialogue.Core.Collections.ITDFListGeneric`1
+    name: ITDFListGeneric
+    href: TotalDialogue.Core.Collections.ITDFListGeneric-1.html
   - name: (
   - name: Of
   - name: " "
@@ -4430,26 +4475,26 @@ references:
   - name: " "
   - name: TValue
   - name: )
-- uid: TotalDialogue.Core.Collections.ITDFList`1
-  commentId: T:TotalDialogue.Core.Collections.ITDFList`1
-  href: TotalDialogue.Core.Collections.ITDFList-1.html
-  name: ITDFList<T>
-  nameWithType: ITDFList<T>
-  fullName: TotalDialogue.Core.Collections.ITDFList<T>
-  nameWithType.vb: ITDFList(Of T)
-  fullName.vb: TotalDialogue.Core.Collections.ITDFList(Of T)
-  name.vb: ITDFList(Of T)
+- uid: TotalDialogue.Core.Collections.ITDFListGeneric`1
+  commentId: T:TotalDialogue.Core.Collections.ITDFListGeneric`1
+  href: TotalDialogue.Core.Collections.ITDFListGeneric-1.html
+  name: ITDFListGeneric<T>
+  nameWithType: ITDFListGeneric<T>
+  fullName: TotalDialogue.Core.Collections.ITDFListGeneric<T>
+  nameWithType.vb: ITDFListGeneric(Of T)
+  fullName.vb: TotalDialogue.Core.Collections.ITDFListGeneric(Of T)
+  name.vb: ITDFListGeneric(Of T)
   spec.csharp:
-  - uid: TotalDialogue.Core.Collections.ITDFList`1
-    name: ITDFList
-    href: TotalDialogue.Core.Collections.ITDFList-1.html
+  - uid: TotalDialogue.Core.Collections.ITDFListGeneric`1
+    name: ITDFListGeneric
+    href: TotalDialogue.Core.Collections.ITDFListGeneric-1.html
   - name: <
   - name: T
   - name: '>'
   spec.vb:
-  - uid: TotalDialogue.Core.Collections.ITDFList`1
-    name: ITDFList
-    href: TotalDialogue.Core.Collections.ITDFList-1.html
+  - uid: TotalDialogue.Core.Collections.ITDFListGeneric`1
+    name: ITDFListGeneric
+    href: TotalDialogue.Core.Collections.ITDFListGeneric-1.html
   - name: (
   - name: Of
   - name: " "
@@ -7933,3 +7978,19 @@ references:
   - name: (
   - name: T
   - name: )
+- uid: TotalDialogue.Core.Collections.TDFDictionary`2.AddNew*
+  commentId: Overload:TotalDialogue.Core.Collections.TDFDictionary`2.AddNew
+  href: TotalDialogue.Core.Collections.TDFDictionary-2.html#TotalDialogue_Core_Collections_TDFDictionary_2_AddNew_System_Object_System_Type_
+  name: AddNew
+  nameWithType: TDFDictionary<TKey, TValue>.AddNew
+  fullName: TotalDialogue.Core.Collections.TDFDictionary<TKey, TValue>.AddNew
+  nameWithType.vb: TDFDictionary(Of TKey, TValue).AddNew
+  fullName.vb: TotalDialogue.Core.Collections.TDFDictionary(Of TKey, TValue).AddNew
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type

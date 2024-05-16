@@ -1,0 +1,249 @@
+### YamlMime:ManagedReference
+items:
+- uid: TotalDialogue.Core.Collections.ITDFList
+  commentId: T:TotalDialogue.Core.Collections.ITDFList
+  id: ITDFList
+  parent: TotalDialogue.Core.Collections
+  children:
+  - TotalDialogue.Core.Collections.ITDFList.Count
+  - TotalDialogue.Core.Collections.ITDFList.OnChange
+  - TotalDialogue.Core.Collections.ITDFList.RemoveAt(System.Int32)
+  - TotalDialogue.Core.Collections.ITDFList.Serializing
+  langs:
+  - csharp
+  - vb
+  name: ITDFList
+  nameWithType: ITDFList
+  fullName: TotalDialogue.Core.Collections.ITDFList
+  type: Interface
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+      branch: master
+      repo: git@github.com:zgock999/total_dialogue_framework.git
+    id: ITDFList
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+    startLine: 15
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Collections
+  summary: >-
+    ITDFListは、アイテムの追加、削除、変更を監視するためのインターフェースです。
+
+    型に依存しない部分のみを定義しています。
+  example: []
+  syntax:
+    content: public interface ITDFList
+    content.vb: Public Interface ITDFList
+- uid: TotalDialogue.Core.Collections.ITDFList.OnChange
+  commentId: E:TotalDialogue.Core.Collections.ITDFList.OnChange
+  id: OnChange
+  parent: TotalDialogue.Core.Collections.ITDFList
+  langs:
+  - csharp
+  - vb
+  name: OnChange
+  nameWithType: ITDFList.OnChange
+  fullName: TotalDialogue.Core.Collections.ITDFList.OnChange
+  type: Event
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+      branch: master
+      repo: git@github.com:zgock999/total_dialogue_framework.git
+    id: OnChange
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+    startLine: 20
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Collections
+  summary: リストが変更されたときに発生するイベント。
+  example: []
+  syntax:
+    content: event Action OnChange
+    return:
+      type: System.Action
+    content.vb: Event OnChange As Action
+- uid: TotalDialogue.Core.Collections.ITDFList.RemoveAt(System.Int32)
+  commentId: M:TotalDialogue.Core.Collections.ITDFList.RemoveAt(System.Int32)
+  id: RemoveAt(System.Int32)
+  parent: TotalDialogue.Core.Collections.ITDFList
+  langs:
+  - csharp
+  - vb
+  name: RemoveAt(int)
+  nameWithType: ITDFList.RemoveAt(int)
+  fullName: TotalDialogue.Core.Collections.ITDFList.RemoveAt(int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+      branch: master
+      repo: git@github.com:zgock999/total_dialogue_framework.git
+    id: RemoveAt
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+    startLine: 26
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Collections
+  summary: 指定したインデックスのアイテムを削除します。
+  example: []
+  syntax:
+    content: void RemoveAt(int index)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: 削除するアイテムのインデックス。
+    content.vb: Sub RemoveAt(index As Integer)
+  overload: TotalDialogue.Core.Collections.ITDFList.RemoveAt*
+  nameWithType.vb: ITDFList.RemoveAt(Integer)
+  fullName.vb: TotalDialogue.Core.Collections.ITDFList.RemoveAt(Integer)
+  name.vb: RemoveAt(Integer)
+- uid: TotalDialogue.Core.Collections.ITDFList.Count
+  commentId: P:TotalDialogue.Core.Collections.ITDFList.Count
+  id: Count
+  parent: TotalDialogue.Core.Collections.ITDFList
+  langs:
+  - csharp
+  - vb
+  name: Count
+  nameWithType: ITDFList.Count
+  fullName: TotalDialogue.Core.Collections.ITDFList.Count
+  type: Property
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+      branch: master
+      repo: git@github.com:zgock999/total_dialogue_framework.git
+    id: Count
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+    startLine: 31
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Collections
+  summary: リスト内のアイテム数を取得します。
+  example: []
+  syntax:
+    content: int Count { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property Count As Integer
+  overload: TotalDialogue.Core.Collections.ITDFList.Count*
+- uid: TotalDialogue.Core.Collections.ITDFList.Serializing
+  commentId: P:TotalDialogue.Core.Collections.ITDFList.Serializing
+  id: Serializing
+  parent: TotalDialogue.Core.Collections.ITDFList
+  langs:
+  - csharp
+  - vb
+  name: Serializing
+  nameWithType: ITDFList.Serializing
+  fullName: TotalDialogue.Core.Collections.ITDFList.Serializing
+  type: Property
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+      branch: master
+      repo: git@github.com:zgock999/total_dialogue_framework.git
+    id: Serializing
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Collections/TDFList.cs
+    startLine: 36
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Collections
+  summary: シリアライズ中かどうかを示す値を取得します。
+  example: []
+  syntax:
+    content: bool Serializing { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property Serializing As Boolean
+  overload: TotalDialogue.Core.Collections.ITDFList.Serializing*
+references:
+- uid: TotalDialogue.Core.Collections
+  commentId: N:TotalDialogue.Core.Collections
+  href: TotalDialogue.html
+  name: TotalDialogue.Core.Collections
+  nameWithType: TotalDialogue.Core.Collections
+  fullName: TotalDialogue.Core.Collections
+  spec.csharp:
+  - uid: TotalDialogue
+    name: TotalDialogue
+    href: TotalDialogue.html
+  - name: .
+  - uid: TotalDialogue.Core
+    name: Core
+    href: TotalDialogue.Core.html
+  - name: .
+  - uid: TotalDialogue.Core.Collections
+    name: Collections
+    href: TotalDialogue.Core.Collections.html
+  spec.vb:
+  - uid: TotalDialogue
+    name: TotalDialogue
+    href: TotalDialogue.html
+  - name: .
+  - uid: TotalDialogue.Core
+    name: Core
+    href: TotalDialogue.Core.html
+  - name: .
+  - uid: TotalDialogue.Core.Collections
+    name: Collections
+    href: TotalDialogue.Core.Collections.html
+- uid: System.Action
+  commentId: T:System.Action
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action
+  name: Action
+  nameWithType: Action
+  fullName: System.Action
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: TotalDialogue.Core.Collections.ITDFList.RemoveAt*
+  commentId: Overload:TotalDialogue.Core.Collections.ITDFList.RemoveAt
+  href: TotalDialogue.Core.Collections.ITDFList.html#TotalDialogue_Core_Collections_ITDFList_RemoveAt_System_Int32_
+  name: RemoveAt
+  nameWithType: ITDFList.RemoveAt
+  fullName: TotalDialogue.Core.Collections.ITDFList.RemoveAt
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: TotalDialogue.Core.Collections.ITDFList.Count*
+  commentId: Overload:TotalDialogue.Core.Collections.ITDFList.Count
+  href: TotalDialogue.Core.Collections.ITDFList.html#TotalDialogue_Core_Collections_ITDFList_Count
+  name: Count
+  nameWithType: ITDFList.Count
+  fullName: TotalDialogue.Core.Collections.ITDFList.Count
+- uid: TotalDialogue.Core.Collections.ITDFList.Serializing*
+  commentId: Overload:TotalDialogue.Core.Collections.ITDFList.Serializing
+  href: TotalDialogue.Core.Collections.ITDFList.html#TotalDialogue_Core_Collections_ITDFList_Serializing
+  name: Serializing
+  nameWithType: ITDFList.Serializing
+  fullName: TotalDialogue.Core.Collections.ITDFList.Serializing
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean

@@ -5,12 +5,10 @@ items:
   id: IEmptyVar
   parent: TotalDialogue.Core.Variables
   children:
-  - TotalDialogue.Core.Variables.IEmptyVar.DefaultValue
   - TotalDialogue.Core.Variables.IEmptyVar.Key
   - TotalDialogue.Core.Variables.IEmptyVar.RestoreDefault
   - TotalDialogue.Core.Variables.IEmptyVar.StoreDefault
   - TotalDialogue.Core.Variables.IEmptyVar.StringValue
-  - TotalDialogue.Core.Variables.IEmptyVar.Value
   langs:
   - csharp
   - vb
@@ -61,64 +59,6 @@ items:
       type: System.String
     content.vb: ReadOnly Property Key As String
   overload: TotalDialogue.Core.Variables.IEmptyVar.Key*
-- uid: TotalDialogue.Core.Variables.IEmptyVar.Value
-  commentId: P:TotalDialogue.Core.Variables.IEmptyVar.Value
-  id: Value
-  parent: TotalDialogue.Core.Variables.IEmptyVar
-  langs:
-  - csharp
-  - vb
-  name: Value
-  nameWithType: IEmptyVar.Value
-  fullName: TotalDialogue.Core.Variables.IEmptyVar.Value
-  type: Property
-  source:
-    remote:
-      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/IEmptyVar.cs
-      branch: master
-      repo: git@github.com:zgock999/total_dialogue_framework.git
-    id: Value
-    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/IEmptyVar.cs
-    startLine: 9
-  assemblies:
-  - TDF
-  namespace: TotalDialogue.Core.Variables
-  syntax:
-    content: object Value { get; set; }
-    parameters: []
-    return:
-      type: System.Object
-    content.vb: Property Value As Object
-  overload: TotalDialogue.Core.Variables.IEmptyVar.Value*
-- uid: TotalDialogue.Core.Variables.IEmptyVar.DefaultValue
-  commentId: P:TotalDialogue.Core.Variables.IEmptyVar.DefaultValue
-  id: DefaultValue
-  parent: TotalDialogue.Core.Variables.IEmptyVar
-  langs:
-  - csharp
-  - vb
-  name: DefaultValue
-  nameWithType: IEmptyVar.DefaultValue
-  fullName: TotalDialogue.Core.Variables.IEmptyVar.DefaultValue
-  type: Property
-  source:
-    remote:
-      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/IEmptyVar.cs
-      branch: master
-      repo: git@github.com:zgock999/total_dialogue_framework.git
-    id: DefaultValue
-    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/IEmptyVar.cs
-    startLine: 10
-  assemblies:
-  - TDF
-  namespace: TotalDialogue.Core.Variables
-  syntax:
-    content: object DefaultValue { get; set; }
-    parameters: []
-    return:
-      type: System.Object
-    content.vb: Property DefaultValue As Object
-  overload: TotalDialogue.Core.Variables.IEmptyVar.DefaultValue*
 - uid: TotalDialogue.Core.Variables.IEmptyVar.StoreDefault
   commentId: M:TotalDialogue.Core.Variables.IEmptyVar.StoreDefault
   id: StoreDefault
@@ -137,7 +77,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: StoreDefault
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/IEmptyVar.cs
-    startLine: 11
+    startLine: 9
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Variables
@@ -163,7 +103,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: RestoreDefault
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/IEmptyVar.cs
-    startLine: 12
+    startLine: 10
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Variables
@@ -189,7 +129,7 @@ items:
       repo: git@github.com:zgock999/total_dialogue_framework.git
     id: StringValue
     path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/IEmptyVar.cs
-    startLine: 13
+    startLine: 11
   assemblies:
   - TDF
   namespace: TotalDialogue.Core.Variables
@@ -255,29 +195,6 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: TotalDialogue.Core.Variables.IEmptyVar.Value*
-  commentId: Overload:TotalDialogue.Core.Variables.IEmptyVar.Value
-  href: TotalDialogue.Core.Variables.IEmptyVar.html#TotalDialogue_Core_Variables_IEmptyVar_Value
-  name: Value
-  nameWithType: IEmptyVar.Value
-  fullName: TotalDialogue.Core.Variables.IEmptyVar.Value
-- uid: System.Object
-  commentId: T:System.Object
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object
-  name: object
-  nameWithType: object
-  fullName: object
-  nameWithType.vb: Object
-  fullName.vb: Object
-  name.vb: Object
-- uid: TotalDialogue.Core.Variables.IEmptyVar.DefaultValue*
-  commentId: Overload:TotalDialogue.Core.Variables.IEmptyVar.DefaultValue
-  href: TotalDialogue.Core.Variables.IEmptyVar.html#TotalDialogue_Core_Variables_IEmptyVar_DefaultValue
-  name: DefaultValue
-  nameWithType: IEmptyVar.DefaultValue
-  fullName: TotalDialogue.Core.Variables.IEmptyVar.DefaultValue
 - uid: TotalDialogue.Core.Variables.IEmptyVar.StoreDefault*
   commentId: Overload:TotalDialogue.Core.Variables.IEmptyVar.StoreDefault
   href: TotalDialogue.Core.Variables.IEmptyVar.html#TotalDialogue_Core_Variables_IEmptyVar_StoreDefault

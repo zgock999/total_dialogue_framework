@@ -1,0 +1,312 @@
+### YamlMime:ManagedReference
+items:
+- uid: TotalDialogue.Core.Variables.ITDFVar
+  commentId: T:TotalDialogue.Core.Variables.ITDFVar
+  id: ITDFVar
+  parent: TotalDialogue.Core.Variables
+  children:
+  - TotalDialogue.Core.Variables.ITDFVar.Interface
+  - TotalDialogue.Core.Variables.ITDFVar.Key
+  - TotalDialogue.Core.Variables.ITDFVar.RestoreDefault
+  - TotalDialogue.Core.Variables.ITDFVar.StoreDefault
+  - TotalDialogue.Core.Variables.ITDFVar.StringValue
+  - TotalDialogue.Core.Variables.ITDFVar.TypeName
+  langs:
+  - csharp
+  - vb
+  name: ITDFVar
+  nameWithType: ITDFVar
+  fullName: TotalDialogue.Core.Variables.ITDFVar
+  type: Interface
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/ITDFVar.cs
+      branch: master
+      repo: git@github.com:zgock999/total_dialogue_framework.git
+    id: ITDFVar
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/ITDFVar.cs
+    startLine: 11
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Variables
+  summary: >-
+    Variableの基本となる抽象クラス
+
+    型に依存しない部分を定義します
+  example: []
+  syntax:
+    content: public interface ITDFVar
+    content.vb: Public Interface ITDFVar
+- uid: TotalDialogue.Core.Variables.ITDFVar.TypeName
+  commentId: P:TotalDialogue.Core.Variables.ITDFVar.TypeName
+  id: TypeName
+  parent: TotalDialogue.Core.Variables.ITDFVar
+  langs:
+  - csharp
+  - vb
+  name: TypeName
+  nameWithType: ITDFVar.TypeName
+  fullName: TotalDialogue.Core.Variables.ITDFVar.TypeName
+  type: Property
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/ITDFVar.cs
+      branch: master
+      repo: git@github.com:zgock999/total_dialogue_framework.git
+    id: TypeName
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/ITDFVar.cs
+    startLine: 13
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Variables
+  syntax:
+    content: string TypeName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property TypeName As String
+  overload: TotalDialogue.Core.Variables.ITDFVar.TypeName*
+- uid: TotalDialogue.Core.Variables.ITDFVar.Key
+  commentId: P:TotalDialogue.Core.Variables.ITDFVar.Key
+  id: Key
+  parent: TotalDialogue.Core.Variables.ITDFVar
+  langs:
+  - csharp
+  - vb
+  name: Key
+  nameWithType: ITDFVar.Key
+  fullName: TotalDialogue.Core.Variables.ITDFVar.Key
+  type: Property
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/ITDFVar.cs
+      branch: master
+      repo: git@github.com:zgock999/total_dialogue_framework.git
+    id: Key
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/ITDFVar.cs
+    startLine: 18
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Variables
+  summary: >-
+    変数のキーを取得します
+
+    KeyValueStoreと必ずセットで使用されるので参照用に生成時に設定されます
+  example: []
+  syntax:
+    content: string Key { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property Key As String
+  overload: TotalDialogue.Core.Variables.ITDFVar.Key*
+- uid: TotalDialogue.Core.Variables.ITDFVar.StoreDefault
+  commentId: M:TotalDialogue.Core.Variables.ITDFVar.StoreDefault
+  id: StoreDefault
+  parent: TotalDialogue.Core.Variables.ITDFVar
+  langs:
+  - csharp
+  - vb
+  name: StoreDefault()
+  nameWithType: ITDFVar.StoreDefault()
+  fullName: TotalDialogue.Core.Variables.ITDFVar.StoreDefault()
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/ITDFVar.cs
+      branch: master
+      repo: git@github.com:zgock999/total_dialogue_framework.git
+    id: StoreDefault
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/ITDFVar.cs
+    startLine: 22
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Variables
+  summary: 変数の値をデフォルト値に保存します
+  example: []
+  syntax:
+    content: void StoreDefault()
+    content.vb: Sub StoreDefault()
+  overload: TotalDialogue.Core.Variables.ITDFVar.StoreDefault*
+- uid: TotalDialogue.Core.Variables.ITDFVar.RestoreDefault
+  commentId: M:TotalDialogue.Core.Variables.ITDFVar.RestoreDefault
+  id: RestoreDefault
+  parent: TotalDialogue.Core.Variables.ITDFVar
+  langs:
+  - csharp
+  - vb
+  name: RestoreDefault()
+  nameWithType: ITDFVar.RestoreDefault()
+  fullName: TotalDialogue.Core.Variables.ITDFVar.RestoreDefault()
+  type: Method
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/ITDFVar.cs
+      branch: master
+      repo: git@github.com:zgock999/total_dialogue_framework.git
+    id: RestoreDefault
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/ITDFVar.cs
+    startLine: 26
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Variables
+  summary: 変数の値をデフォルト値に戻します
+  example: []
+  syntax:
+    content: void RestoreDefault()
+    content.vb: Sub RestoreDefault()
+  overload: TotalDialogue.Core.Variables.ITDFVar.RestoreDefault*
+- uid: TotalDialogue.Core.Variables.ITDFVar.StringValue
+  commentId: P:TotalDialogue.Core.Variables.ITDFVar.StringValue
+  id: StringValue
+  parent: TotalDialogue.Core.Variables.ITDFVar
+  langs:
+  - csharp
+  - vb
+  name: StringValue
+  nameWithType: ITDFVar.StringValue
+  fullName: TotalDialogue.Core.Variables.ITDFVar.StringValue
+  type: Property
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/ITDFVar.cs
+      branch: master
+      repo: git@github.com:zgock999/total_dialogue_framework.git
+    id: StringValue
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/ITDFVar.cs
+    startLine: 30
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Variables
+  summary: 変数の値を文字列で取得します
+  example: []
+  syntax:
+    content: string StringValue { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property StringValue As String
+  overload: TotalDialogue.Core.Variables.ITDFVar.StringValue*
+- uid: TotalDialogue.Core.Variables.ITDFVar.Interface
+  commentId: P:TotalDialogue.Core.Variables.ITDFVar.Interface
+  id: Interface
+  parent: TotalDialogue.Core.Variables.ITDFVar
+  langs:
+  - csharp
+  - vb
+  name: Interface
+  nameWithType: ITDFVar.Interface
+  fullName: TotalDialogue.Core.Variables.ITDFVar.Interface
+  type: Property
+  source:
+    remote:
+      path: Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/ITDFVar.cs
+      branch: master
+      repo: git@github.com:zgock999/total_dialogue_framework.git
+    id: Interface
+    path: ../../Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/ITDFVar.cs
+    startLine: 34
+  assemblies:
+  - TDF
+  namespace: TotalDialogue.Core.Variables
+  summary: 変数のインターフェースを取得します
+  example: []
+  syntax:
+    content: ITDFVar Interface { get; }
+    parameters: []
+    return:
+      type: TotalDialogue.Core.Variables.ITDFVar
+    content.vb: ReadOnly Property [Interface] As ITDFVar
+  overload: TotalDialogue.Core.Variables.ITDFVar.Interface*
+references:
+- uid: TotalDialogue.Core.Variables
+  commentId: N:TotalDialogue.Core.Variables
+  href: TotalDialogue.html
+  name: TotalDialogue.Core.Variables
+  nameWithType: TotalDialogue.Core.Variables
+  fullName: TotalDialogue.Core.Variables
+  spec.csharp:
+  - uid: TotalDialogue
+    name: TotalDialogue
+    href: TotalDialogue.html
+  - name: .
+  - uid: TotalDialogue.Core
+    name: Core
+    href: TotalDialogue.Core.html
+  - name: .
+  - uid: TotalDialogue.Core.Variables
+    name: Variables
+    href: TotalDialogue.Core.Variables.html
+  spec.vb:
+  - uid: TotalDialogue
+    name: TotalDialogue
+    href: TotalDialogue.html
+  - name: .
+  - uid: TotalDialogue.Core
+    name: Core
+    href: TotalDialogue.Core.html
+  - name: .
+  - uid: TotalDialogue.Core.Variables
+    name: Variables
+    href: TotalDialogue.Core.Variables.html
+- uid: TotalDialogue.Core.Variables.ITDFVar.TypeName*
+  commentId: Overload:TotalDialogue.Core.Variables.ITDFVar.TypeName
+  href: TotalDialogue.Core.Variables.ITDFVar.html#TotalDialogue_Core_Variables_ITDFVar_TypeName
+  name: TypeName
+  nameWithType: ITDFVar.TypeName
+  fullName: TotalDialogue.Core.Variables.ITDFVar.TypeName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: TotalDialogue.Core.Variables.ITDFVar.Key*
+  commentId: Overload:TotalDialogue.Core.Variables.ITDFVar.Key
+  href: TotalDialogue.Core.Variables.ITDFVar.html#TotalDialogue_Core_Variables_ITDFVar_Key
+  name: Key
+  nameWithType: ITDFVar.Key
+  fullName: TotalDialogue.Core.Variables.ITDFVar.Key
+- uid: TotalDialogue.Core.Variables.ITDFVar.StoreDefault*
+  commentId: Overload:TotalDialogue.Core.Variables.ITDFVar.StoreDefault
+  href: TotalDialogue.Core.Variables.ITDFVar.html#TotalDialogue_Core_Variables_ITDFVar_StoreDefault
+  name: StoreDefault
+  nameWithType: ITDFVar.StoreDefault
+  fullName: TotalDialogue.Core.Variables.ITDFVar.StoreDefault
+- uid: TotalDialogue.Core.Variables.ITDFVar.RestoreDefault*
+  commentId: Overload:TotalDialogue.Core.Variables.ITDFVar.RestoreDefault
+  href: TotalDialogue.Core.Variables.ITDFVar.html#TotalDialogue_Core_Variables_ITDFVar_RestoreDefault
+  name: RestoreDefault
+  nameWithType: ITDFVar.RestoreDefault
+  fullName: TotalDialogue.Core.Variables.ITDFVar.RestoreDefault
+- uid: TotalDialogue.Core.Variables.ITDFVar.StringValue*
+  commentId: Overload:TotalDialogue.Core.Variables.ITDFVar.StringValue
+  href: TotalDialogue.Core.Variables.ITDFVar.html#TotalDialogue_Core_Variables_ITDFVar_StringValue
+  name: StringValue
+  nameWithType: ITDFVar.StringValue
+  fullName: TotalDialogue.Core.Variables.ITDFVar.StringValue
+- uid: TotalDialogue.Core.Variables.ITDFVar.Interface*
+  commentId: Overload:TotalDialogue.Core.Variables.ITDFVar.Interface
+  href: TotalDialogue.Core.Variables.ITDFVar.html#TotalDialogue_Core_Variables_ITDFVar_Interface
+  name: Interface
+  nameWithType: ITDFVar.Interface
+  fullName: TotalDialogue.Core.Variables.ITDFVar.Interface
+- uid: TotalDialogue.Core.Variables.ITDFVar
+  commentId: T:TotalDialogue.Core.Variables.ITDFVar
+  parent: TotalDialogue.Core.Variables
+  href: TotalDialogue.Core.Variables.ITDFVar.html
+  name: ITDFVar
+  nameWithType: ITDFVar
+  fullName: TotalDialogue.Core.Variables.ITDFVar

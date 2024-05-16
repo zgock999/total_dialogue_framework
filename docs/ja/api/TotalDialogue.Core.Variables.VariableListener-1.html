@@ -90,7 +90,8 @@
       <div class="level2"><a class="xref" href="TotalDialogue.Core.Variables.BoolListener.html">BoolListener</a></div>
       <div class="level2"><a class="xref" href="TotalDialogue.Core.Variables.FloatListener.html">FloatListener</a></div>
       <div class="level2"><a class="xref" href="TotalDialogue.Core.Variables.IntListener.html">IntListener</a></div>
-      <div class="level2"><a class="xref" href="TotalDialogue.Core.Variables.QuartanionListener.html">QuartanionListener</a></div>
+      <div class="level2"><a class="xref" href="TotalDialogue.Core.Variables.ObjectListener.html">ObjectListener</a></div>
+      <div class="level2"><a class="xref" href="TotalDialogue.Core.Variables.QuaternionListener.html">QuaternionListener</a></div>
       <div class="level2"><a class="xref" href="TotalDialogue.Core.Variables.StringListener.html">StringListener</a></div>
       <div class="level2"><a class="xref" href="TotalDialogue.Core.Variables.Vector3Listener.html">Vector3Listener</a></div>
   </div>
@@ -122,7 +123,8 @@
   <h6><strong>Assembly</strong>: TDF.dll</h6>
   <h5 id="TotalDialogue_Core_Variables_VariableListener_1_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class VariableListener&lt;T&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">[Serializable]
+public class VariableListener&lt;T&gt;</code></pre>
   </div>
   <h5 class="typeParameters">Type Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -146,14 +148,15 @@
     <a href="https://github.com/zgock999/total_dialogue_framework/new/master/apiSpec/new?filename=TotalDialogue_Core_Variables_VariableListener_1_OnBecome.md&amp;value=---%0Auid%3A%20TotalDialogue.Core.Variables.VariableListener%601.OnBecome%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zgock999/total_dialogue_framework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Listener/VariableListener.cs/#L17">View Source</a>
+    <a href="https://github.com/zgock999/total_dialogue_framework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Listener/VariableListener.cs/#L22">View Source</a>
   </span>
   <h4 id="TotalDialogue_Core_Variables_VariableListener_1_OnBecome" data-uid="TotalDialogue.Core.Variables.VariableListener`1.OnBecome">OnBecome</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public UnityEvent OnBecome</code></pre>
+    <pre><code class="lang-csharp hljs">[NonSerialized]
+public UnityEvent OnBecome</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-condensed">
@@ -175,14 +178,15 @@
     <a href="https://github.com/zgock999/total_dialogue_framework/new/master/apiSpec/new?filename=TotalDialogue_Core_Variables_VariableListener_1_OnCease.md&amp;value=---%0Auid%3A%20TotalDialogue.Core.Variables.VariableListener%601.OnCease%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zgock999/total_dialogue_framework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Listener/VariableListener.cs/#L18">View Source</a>
+    <a href="https://github.com/zgock999/total_dialogue_framework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Listener/VariableListener.cs/#L24">View Source</a>
   </span>
   <h4 id="TotalDialogue_Core_Variables_VariableListener_1_OnCease" data-uid="TotalDialogue.Core.Variables.VariableListener`1.OnCease">OnCease</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public UnityEvent OnCease</code></pre>
+    <pre><code class="lang-csharp hljs">[NonSerialized]
+public UnityEvent OnCease</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-condensed">
@@ -204,14 +208,15 @@
     <a href="https://github.com/zgock999/total_dialogue_framework/new/master/apiSpec/new?filename=TotalDialogue_Core_Variables_VariableListener_1_OnChanged.md&amp;value=---%0Auid%3A%20TotalDialogue.Core.Variables.VariableListener%601.OnChanged%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zgock999/total_dialogue_framework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Listener/VariableListener.cs/#L16">View Source</a>
+    <a href="https://github.com/zgock999/total_dialogue_framework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Listener/VariableListener.cs/#L20">View Source</a>
   </span>
   <h4 id="TotalDialogue_Core_Variables_VariableListener_1_OnChanged" data-uid="TotalDialogue.Core.Variables.VariableListener`1.OnChanged">OnChanged</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public UnityEvent&lt;T&gt; OnChanged</code></pre>
+    <pre><code class="lang-csharp hljs">[NonSerialized]
+public UnityEvent&lt;T&gt; OnChanged</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-condensed">
@@ -233,14 +238,15 @@
     <a href="https://github.com/zgock999/total_dialogue_framework/new/master/apiSpec/new?filename=TotalDialogue_Core_Variables_VariableListener_1_OnSet.md&amp;value=---%0Auid%3A%20TotalDialogue.Core.Variables.VariableListener%601.OnSet%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zgock999/total_dialogue_framework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Listener/VariableListener.cs/#L15">View Source</a>
+    <a href="https://github.com/zgock999/total_dialogue_framework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Listener/VariableListener.cs/#L18">View Source</a>
   </span>
   <h4 id="TotalDialogue_Core_Variables_VariableListener_1_OnSet" data-uid="TotalDialogue.Core.Variables.VariableListener`1.OnSet">OnSet</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public UnityEvent&lt;T&gt; OnSet</code></pre>
+    <pre><code class="lang-csharp hljs">[NonSerialized]
+public UnityEvent&lt;T&gt; OnSet</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-condensed">
@@ -262,7 +268,7 @@
     <a href="https://github.com/zgock999/total_dialogue_framework/new/master/apiSpec/new?filename=TotalDialogue_Core_Variables_VariableListener_1_fireOnBecome.md&amp;value=---%0Auid%3A%20TotalDialogue.Core.Variables.VariableListener%601.fireOnBecome%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zgock999/total_dialogue_framework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Listener/VariableListener.cs/#L12">View Source</a>
+    <a href="https://github.com/zgock999/total_dialogue_framework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Listener/VariableListener.cs/#L13">View Source</a>
   </span>
   <h4 id="TotalDialogue_Core_Variables_VariableListener_1_fireOnBecome" data-uid="TotalDialogue.Core.Variables.VariableListener`1.fireOnBecome">fireOnBecome</h4>
   <div class="markdown level1 summary"></div>
@@ -291,7 +297,7 @@
     <a href="https://github.com/zgock999/total_dialogue_framework/new/master/apiSpec/new?filename=TotalDialogue_Core_Variables_VariableListener_1_fireOnEnable.md&amp;value=---%0Auid%3A%20TotalDialogue.Core.Variables.VariableListener%601.fireOnEnable%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zgock999/total_dialogue_framework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Listener/VariableListener.cs/#L11">View Source</a>
+    <a href="https://github.com/zgock999/total_dialogue_framework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Listener/VariableListener.cs/#L12">View Source</a>
   </span>
   <h4 id="TotalDialogue_Core_Variables_VariableListener_1_fireOnEnable" data-uid="TotalDialogue.Core.Variables.VariableListener`1.fireOnEnable">fireOnEnable</h4>
   <div class="markdown level1 summary"></div>
@@ -320,7 +326,7 @@
     <a href="https://github.com/zgock999/total_dialogue_framework/new/master/apiSpec/new?filename=TotalDialogue_Core_Variables_VariableListener_1_key.md&amp;value=---%0Auid%3A%20TotalDialogue.Core.Variables.VariableListener%601.key%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zgock999/total_dialogue_framework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Listener/VariableListener.cs/#L13">View Source</a>
+    <a href="https://github.com/zgock999/total_dialogue_framework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Listener/VariableListener.cs/#L14">View Source</a>
   </span>
   <h4 id="TotalDialogue_Core_Variables_VariableListener_1_key" data-uid="TotalDialogue.Core.Variables.VariableListener`1.key">key</h4>
   <div class="markdown level1 summary"></div>
@@ -349,7 +355,7 @@
     <a href="https://github.com/zgock999/total_dialogue_framework/new/master/apiSpec/new?filename=TotalDialogue_Core_Variables_VariableListener_1_targetValue.md&amp;value=---%0Auid%3A%20TotalDialogue.Core.Variables.VariableListener%601.targetValue%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zgock999/total_dialogue_framework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Listener/VariableListener.cs/#L19">View Source</a>
+    <a href="https://github.com/zgock999/total_dialogue_framework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Listener/VariableListener.cs/#L25">View Source</a>
   </span>
   <h4 id="TotalDialogue_Core_Variables_VariableListener_1_targetValue" data-uid="TotalDialogue.Core.Variables.VariableListener`1.targetValue">targetValue</h4>
   <div class="markdown level1 summary"></div>
@@ -378,14 +384,15 @@
     <a href="https://github.com/zgock999/total_dialogue_framework/new/master/apiSpec/new?filename=TotalDialogue_Core_Variables_VariableListener_1_variables.md&amp;value=---%0Auid%3A%20TotalDialogue.Core.Variables.VariableListener%601.variables%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zgock999/total_dialogue_framework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Listener/VariableListener.cs/#L14">View Source</a>
+    <a href="https://github.com/zgock999/total_dialogue_framework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Listener/VariableListener.cs/#L16">View Source</a>
   </span>
   <h4 id="TotalDialogue_Core_Variables_VariableListener_1_variables" data-uid="TotalDialogue.Core.Variables.VariableListener`1.variables">variables</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IVariables variables</code></pre>
+    <pre><code class="lang-csharp hljs">[NonSerialized]
+public IVariables variables</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-condensed">
@@ -409,7 +416,7 @@
     <a href="https://github.com/zgock999/total_dialogue_framework/new/master/apiSpec/new?filename=TotalDialogue_Core_Variables_VariableListener_1_GetValue_System_String_.md&amp;value=---%0Auid%3A%20TotalDialogue.Core.Variables.VariableListener%601.GetValue(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zgock999/total_dialogue_framework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Listener/VariableListener.cs/#L23">View Source</a>
+    <a href="https://github.com/zgock999/total_dialogue_framework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Listener/VariableListener.cs/#L29">View Source</a>
   </span>
   <a id="TotalDialogue_Core_Variables_VariableListener_1_GetValue_" data-uid="TotalDialogue.Core.Variables.VariableListener`1.GetValue*"></a>
   <h4 id="TotalDialogue_Core_Variables_VariableListener_1_GetValue_System_String_" data-uid="TotalDialogue.Core.Variables.VariableListener`1.GetValue(System.String)">GetValue(string)</h4>
@@ -456,7 +463,7 @@
     <a href="https://github.com/zgock999/total_dialogue_framework/new/master/apiSpec/new?filename=TotalDialogue_Core_Variables_VariableListener_1_SetValue_System_String__0_.md&amp;value=---%0Auid%3A%20TotalDialogue.Core.Variables.VariableListener%601.SetValue(System.String%2C%600)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zgock999/total_dialogue_framework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Listener/VariableListener.cs/#L20">View Source</a>
+    <a href="https://github.com/zgock999/total_dialogue_framework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Listener/VariableListener.cs/#L26">View Source</a>
   </span>
   <a id="TotalDialogue_Core_Variables_VariableListener_1_SetValue_" data-uid="TotalDialogue.Core.Variables.VariableListener`1.SetValue*"></a>
   <h4 id="TotalDialogue_Core_Variables_VariableListener_1_SetValue_System_String__0_" data-uid="TotalDialogue.Core.Variables.VariableListener`1.SetValue(System.String,`0)">SetValue(string, T)</h4>

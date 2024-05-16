@@ -86,21 +86,38 @@
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-    <div class="level1"><span class="xref">TDFVar&lt;T, TListener&gt;</span></div>
-      <div class="level2"><a class="xref" href="TotalDialogue.Core.Variables.BoolVar.html">BoolVar</a></div>
-      <div class="level2"><a class="xref" href="TotalDialogue.Core.Variables.FloatVar.html">FloatVar</a></div>
-      <div class="level2"><a class="xref" href="TotalDialogue.Core.Variables.IntVar.html">IntVar</a></div>
-      <div class="level2"><a class="xref" href="TotalDialogue.Core.Variables.QuartanionVar.html">QuartanionVar</a></div>
-      <div class="level2"><a class="xref" href="TotalDialogue.Core.Variables.StringVar.html">StringVar</a></div>
-      <div class="level2"><a class="xref" href="TotalDialogue.Core.Variables.Vector3Var.html">Vector3Var</a></div>
+    <div class="level1"><a class="xref" href="TotalDialogue.Core.Variables.BaseVar.html">BaseVar</a></div>
+    <div class="level2"><span class="xref">TDFVar&lt;T, TListener&gt;</span></div>
+      <div class="level3"><a class="xref" href="TotalDialogue.Core.Variables.BoolVar.html">BoolVar</a></div>
+      <div class="level3"><a class="xref" href="TotalDialogue.Core.Variables.FloatVar.html">FloatVar</a></div>
+      <div class="level3"><a class="xref" href="TotalDialogue.Core.Variables.IntVar.html">IntVar</a></div>
+      <div class="level3"><a class="xref" href="TotalDialogue.Core.Variables.ObjectVar.html">ObjectVar</a></div>
+      <div class="level3"><a class="xref" href="TotalDialogue.Core.Variables.QuaternionVar.html">QuaternionVar</a></div>
+      <div class="level3"><a class="xref" href="TotalDialogue.Core.Variables.StringVar.html">StringVar</a></div>
+      <div class="level3"><a class="xref" href="TotalDialogue.Core.Variables.Vector3Var.html">Vector3Var</a></div>
   </div>
   <div class="implements">
     <h5>Implements</h5>
+    <div><a class="xref" href="TotalDialogue.Core.Variables.ITDFVar.html">ITDFVar</a></div>
     <div><a class="xref" href="TotalDialogue.Core.Variables.ITDFVar-2.html">ITDFVar</a>&lt;T, TListener&gt;</div>
-    <div><a class="xref" href="TotalDialogue.Core.Variables.IEmptyVar.html">IEmptyVar</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Variables.BaseVar.html#TotalDialogue_Core_Variables_BaseVar_TypeName">BaseVar.TypeName</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Variables.BaseVar.html#TotalDialogue_Core_Variables_BaseVar_m_key">BaseVar.m_key</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Variables.BaseVar.html#TotalDialogue_Core_Variables_BaseVar_Key">BaseVar.Key</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Variables.BaseVar.html#TotalDialogue_Core_Variables_BaseVar_Interface">BaseVar.Interface</a>
+    </div>
+    <div>
+      <a class="xref" href="TotalDialogue.Core.Variables.BaseVar.html#TotalDialogue_Core_Variables_BaseVar_OnValueChanged">BaseVar.OnValueChanged</a>
+    </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
     </div>
@@ -128,7 +145,7 @@
   <h5 id="TotalDialogue_Core_Variables_TDFVar_2_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Serializable]
-public class TDFVar&lt;T, TListener&gt; : ITDFVar&lt;T, TListener&gt;, IEmptyVar where TListener : VariableListener&lt;T&gt;</code></pre>
+public class TDFVar&lt;T, TListener&gt; : BaseVar, ITDFVar, ITDFVar&lt;T, TListener&gt; where TListener : VariableListener&lt;T&gt;</code></pre>
   </div>
   <h5 class="typeParameters">Type Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -156,7 +173,7 @@ public class TDFVar&lt;T, TListener&gt; : ITDFVar&lt;T, TListener&gt;, IEmptyVar
     <a href="https://github.com/zgock999/total_dialogue_framework/new/master/apiSpec/new?filename=TotalDialogue_Core_Variables_TDFVar_2__ctor_System_String__0_.md&amp;value=---%0Auid%3A%20TotalDialogue.Core.Variables.TDFVar%602.%23ctor(System.String%2C%600)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zgock999/total_dialogue_framework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs/#L21">View Source</a>
+    <a href="https://github.com/zgock999/total_dialogue_framework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs/#L18">View Source</a>
   </span>
   <a id="TotalDialogue_Core_Variables_TDFVar_2__ctor_" data-uid="TotalDialogue.Core.Variables.TDFVar`2.#ctor*"></a>
   <h4 id="TotalDialogue_Core_Variables_TDFVar_2__ctor_System_String__0_" data-uid="TotalDialogue.Core.Variables.TDFVar`2.#ctor(System.String,`0)">TDFVar(string, T)</h4>
@@ -195,7 +212,7 @@ public class TDFVar&lt;T, TListener&gt; : ITDFVar&lt;T, TListener&gt;, IEmptyVar
     <a href="https://github.com/zgock999/total_dialogue_framework/new/master/apiSpec/new?filename=TotalDialogue_Core_Variables_TDFVar_2_m_defaultValue.md&amp;value=---%0Auid%3A%20TotalDialogue.Core.Variables.TDFVar%602.m_defaultValue%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zgock999/total_dialogue_framework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs/#L19">View Source</a>
+    <a href="https://github.com/zgock999/total_dialogue_framework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs/#L17">View Source</a>
   </span>
   <h4 id="TotalDialogue_Core_Variables_TDFVar_2_m_defaultValue" data-uid="TotalDialogue.Core.Variables.TDFVar`2.m_defaultValue">m_defaultValue</h4>
   <div class="markdown level1 summary"></div>
@@ -222,41 +239,10 @@ protected T m_defaultValue</code></pre>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/zgock999/total_dialogue_framework/new/master/apiSpec/new?filename=TotalDialogue_Core_Variables_TDFVar_2_m_key.md&amp;value=---%0Auid%3A%20TotalDialogue.Core.Variables.TDFVar%602.m_key%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zgock999/total_dialogue_framework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs/#L15">View Source</a>
-  </span>
-  <h4 id="TotalDialogue_Core_Variables_TDFVar_2_m_key" data-uid="TotalDialogue.Core.Variables.TDFVar`2.m_key">m_key</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[SerializeField]
-[HideInInspector]
-protected readonly string m_key</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
     <a href="https://github.com/zgock999/total_dialogue_framework/new/master/apiSpec/new?filename=TotalDialogue_Core_Variables_TDFVar_2_m_listeners.md&amp;value=---%0Auid%3A%20TotalDialogue.Core.Variables.TDFVar%602.m_listeners%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zgock999/total_dialogue_framework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs/#L12">View Source</a>
+    <a href="https://github.com/zgock999/total_dialogue_framework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs/#L13">View Source</a>
   </span>
   <h4 id="TotalDialogue_Core_Variables_TDFVar_2_m_listeners" data-uid="TotalDialogue.Core.Variables.TDFVar`2.m_listeners">m_listeners</h4>
   <div class="markdown level1 summary"></div>
@@ -286,7 +272,7 @@ protected List&lt;TListener&gt; m_listeners</code></pre>
     <a href="https://github.com/zgock999/total_dialogue_framework/new/master/apiSpec/new?filename=TotalDialogue_Core_Variables_TDFVar_2_m_value.md&amp;value=---%0Auid%3A%20TotalDialogue.Core.Variables.TDFVar%602.m_value%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zgock999/total_dialogue_framework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs/#L17">View Source</a>
+    <a href="https://github.com/zgock999/total_dialogue_framework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs/#L15">View Source</a>
   </span>
   <h4 id="TotalDialogue_Core_Variables_TDFVar_2_m_value" data-uid="TotalDialogue.Core.Variables.TDFVar`2.m_value">m_value</h4>
   <div class="markdown level1 summary"></div>
@@ -318,7 +304,7 @@ protected T m_value</code></pre>
     <a href="https://github.com/zgock999/total_dialogue_framework/new/master/apiSpec/new?filename=TotalDialogue_Core_Variables_TDFVar_2_DefaultValue.md&amp;value=---%0Auid%3A%20TotalDialogue.Core.Variables.TDFVar%602.DefaultValue%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zgock999/total_dialogue_framework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs/#L80">View Source</a>
+    <a href="https://github.com/zgock999/total_dialogue_framework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs/#L89">View Source</a>
   </span>
   <a id="TotalDialogue_Core_Variables_TDFVar_2_DefaultValue_" data-uid="TotalDialogue.Core.Variables.TDFVar`2.DefaultValue*"></a>
   <h4 id="TotalDialogue_Core_Variables_TDFVar_2_DefaultValue" data-uid="TotalDialogue.Core.Variables.TDFVar`2.DefaultValue">DefaultValue</h4>
@@ -346,19 +332,18 @@ protected T m_value</code></pre>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/zgock999/total_dialogue_framework/new/master/apiSpec/new?filename=TotalDialogue_Core_Variables_TDFVar_2_Interface.md&amp;value=---%0Auid%3A%20TotalDialogue.Core.Variables.TDFVar%602.Interface%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/zgock999/total_dialogue_framework/new/master/apiSpec/new?filename=TotalDialogue_Core_Variables_TDFVar_2_GenericInterFace.md&amp;value=---%0Auid%3A%20TotalDialogue.Core.Variables.TDFVar%602.GenericInterFace%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zgock999/total_dialogue_framework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs/#L88">View Source</a>
+    <a href="https://github.com/zgock999/total_dialogue_framework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs/#L97">View Source</a>
   </span>
-  <a id="TotalDialogue_Core_Variables_TDFVar_2_Interface_" data-uid="TotalDialogue.Core.Variables.TDFVar`2.Interface*"></a>
-  <h4 id="TotalDialogue_Core_Variables_TDFVar_2_Interface" data-uid="TotalDialogue.Core.Variables.TDFVar`2.Interface">Interface</h4>
-  <div class="markdown level1 summary"><p>変数のインターフェースを取得します</p>
-</div>
+  <a id="TotalDialogue_Core_Variables_TDFVar_2_GenericInterFace_" data-uid="TotalDialogue.Core.Variables.TDFVar`2.GenericInterFace*"></a>
+  <h4 id="TotalDialogue_Core_Variables_TDFVar_2_GenericInterFace" data-uid="TotalDialogue.Core.Variables.TDFVar`2.GenericInterFace">GenericInterFace</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ITDFVar&lt;T, TListener&gt; Interface { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public ITDFVar&lt;T, TListener&gt; GenericInterFace { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -377,20 +362,19 @@ protected T m_value</code></pre>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/zgock999/total_dialogue_framework/new/master/apiSpec/new?filename=TotalDialogue_Core_Variables_TDFVar_2_Key.md&amp;value=---%0Auid%3A%20TotalDialogue.Core.Variables.TDFVar%602.Key%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/zgock999/total_dialogue_framework/new/master/apiSpec/new?filename=TotalDialogue_Core_Variables_TDFVar_2_GenericInterface.md&amp;value=---%0Auid%3A%20TotalDialogue.Core.Variables.TDFVar%602.GenericInterface%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zgock999/total_dialogue_framework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs/#L20">View Source</a>
+    <a href="https://github.com/zgock999/total_dialogue_framework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs/#L100">View Source</a>
   </span>
-  <a id="TotalDialogue_Core_Variables_TDFVar_2_Key_" data-uid="TotalDialogue.Core.Variables.TDFVar`2.Key*"></a>
-  <h4 id="TotalDialogue_Core_Variables_TDFVar_2_Key" data-uid="TotalDialogue.Core.Variables.TDFVar`2.Key">Key</h4>
-  <div class="markdown level1 summary"><p>変数のキーを取得します
-KeyValueStoreと必ずセットで使用されるので参照用に生成時に設定されます</p>
+  <a id="TotalDialogue_Core_Variables_TDFVar_2_GenericInterface_" data-uid="TotalDialogue.Core.Variables.TDFVar`2.GenericInterface*"></a>
+  <h4 id="TotalDialogue_Core_Variables_TDFVar_2_GenericInterface" data-uid="TotalDialogue.Core.Variables.TDFVar`2.GenericInterface">GenericInterface</h4>
+  <div class="markdown level1 summary"><p>変数のインターフェースを取得します</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Key { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public ITDFVar&lt;T, TListener&gt; GenericInterface { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -402,7 +386,7 @@ KeyValueStoreと必ずセットで使用されるので参照用に生成時に�
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><a class="xref" href="TotalDialogue.Core.Variables.ITDFVar-2.html">ITDFVar</a>&lt;T, TListener&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -412,7 +396,7 @@ KeyValueStoreと必ずセットで使用されるので参照用に生成時に�
     <a href="https://github.com/zgock999/total_dialogue_framework/new/master/apiSpec/new?filename=TotalDialogue_Core_Variables_TDFVar_2_StringValue.md&amp;value=---%0Auid%3A%20TotalDialogue.Core.Variables.TDFVar%602.StringValue%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zgock999/total_dialogue_framework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs/#L87">View Source</a>
+    <a href="https://github.com/zgock999/total_dialogue_framework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs/#L96">View Source</a>
   </span>
   <a id="TotalDialogue_Core_Variables_TDFVar_2_StringValue_" data-uid="TotalDialogue.Core.Variables.TDFVar`2.StringValue*"></a>
   <h4 id="TotalDialogue_Core_Variables_TDFVar_2_StringValue" data-uid="TotalDialogue.Core.Variables.TDFVar`2.StringValue">StringValue</h4>
@@ -421,7 +405,7 @@ KeyValueStoreと必ずセットで使用されるので参照用に生成時に�
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual string StringValue { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public override string StringValue { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -438,12 +422,14 @@ KeyValueStoreと必ずセットで使用されるので参照用に生成時に�
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="TotalDialogue.Core.Variables.BaseVar.html#TotalDialogue_Core_Variables_BaseVar_StringValue">BaseVar.StringValue</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/zgock999/total_dialogue_framework/new/master/apiSpec/new?filename=TotalDialogue_Core_Variables_TDFVar_2_Value.md&amp;value=---%0Auid%3A%20TotalDialogue.Core.Variables.TDFVar%602.Value%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zgock999/total_dialogue_framework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs/#L27">View Source</a>
+    <a href="https://github.com/zgock999/total_dialogue_framework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs/#L23">View Source</a>
   </span>
   <a id="TotalDialogue_Core_Variables_TDFVar_2_Value_" data-uid="TotalDialogue.Core.Variables.TDFVar`2.Value*"></a>
   <h4 id="TotalDialogue_Core_Variables_TDFVar_2_Value" data-uid="TotalDialogue.Core.Variables.TDFVar`2.Value">Value</h4>
@@ -475,11 +461,12 @@ KeyValueStoreと必ずセットで使用されるので参照用に生成時に�
     <a href="https://github.com/zgock999/total_dialogue_framework/new/master/apiSpec/new?filename=TotalDialogue_Core_Variables_TDFVar_2_AddListener__1_.md&amp;value=---%0Auid%3A%20TotalDialogue.Core.Variables.TDFVar%602.AddListener(%601)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zgock999/total_dialogue_framework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs/#L93">View Source</a>
+    <a href="https://github.com/zgock999/total_dialogue_framework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs/#L102">View Source</a>
   </span>
   <a id="TotalDialogue_Core_Variables_TDFVar_2_AddListener_" data-uid="TotalDialogue.Core.Variables.TDFVar`2.AddListener*"></a>
   <h4 id="TotalDialogue_Core_Variables_TDFVar_2_AddListener__1_" data-uid="TotalDialogue.Core.Variables.TDFVar`2.AddListener(`1)">AddListener(TListener)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>変数のリスナーを追加します</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -507,7 +494,7 @@ KeyValueStoreと必ずセットで使用されるので参照用に生成時に�
     <a href="https://github.com/zgock999/total_dialogue_framework/new/master/apiSpec/new?filename=TotalDialogue_Core_Variables_TDFVar_2_Fire__1__0__0_System_Boolean_.md&amp;value=---%0Auid%3A%20TotalDialogue.Core.Variables.TDFVar%602.Fire(%601%2C%600%2C%600%2CSystem.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zgock999/total_dialogue_framework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs/#L54">View Source</a>
+    <a href="https://github.com/zgock999/total_dialogue_framework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs/#L57">View Source</a>
   </span>
   <a id="TotalDialogue_Core_Variables_TDFVar_2_Fire_" data-uid="TotalDialogue.Core.Variables.TDFVar`2.Fire*"></a>
   <h4 id="TotalDialogue_Core_Variables_TDFVar_2_Fire__1__0__0_System_Boolean_" data-uid="TotalDialogue.Core.Variables.TDFVar`2.Fire(`1,`0,`0,System.Boolean)">Fire(TListener, T, T, bool)</h4>
@@ -551,10 +538,47 @@ KeyValueStoreと必ずセットで使用されるので参照用に生成時に�
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/zgock999/total_dialogue_framework/new/master/apiSpec/new?filename=TotalDialogue_Core_Variables_TDFVar_2_FireOnChanged__0__0_.md&amp;value=---%0Auid%3A%20TotalDialogue.Core.Variables.TDFVar%602.FireOnChanged(%600%2C%600)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zgock999/total_dialogue_framework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs/#L51">View Source</a>
+  </span>
+  <a id="TotalDialogue_Core_Variables_TDFVar_2_FireOnChanged_" data-uid="TotalDialogue.Core.Variables.TDFVar`2.FireOnChanged*"></a>
+  <h4 id="TotalDialogue_Core_Variables_TDFVar_2_FireOnChanged__0__0_" data-uid="TotalDialogue.Core.Variables.TDFVar`2.FireOnChanged(`0,`0)">FireOnChanged(T, T)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FireOnChanged(T oldValue, T newValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">oldValue</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">newValue</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/zgock999/total_dialogue_framework/new/master/apiSpec/new?filename=TotalDialogue_Core_Variables_TDFVar_2_GetBoolValue.md&amp;value=---%0Auid%3A%20TotalDialogue.Core.Variables.TDFVar%602.GetBoolValue%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zgock999/total_dialogue_framework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs/#L100">View Source</a>
+    <a href="https://github.com/zgock999/total_dialogue_framework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs/#L109">View Source</a>
   </span>
   <a id="TotalDialogue_Core_Variables_TDFVar_2_GetBoolValue_" data-uid="TotalDialogue.Core.Variables.TDFVar`2.GetBoolValue*"></a>
   <h4 id="TotalDialogue_Core_Variables_TDFVar_2_GetBoolValue" data-uid="TotalDialogue.Core.Variables.TDFVar`2.GetBoolValue">GetBoolValue()</h4>
@@ -584,7 +608,7 @@ KeyValueStoreと必ずセットで使用されるので参照用に生成時に�
     <a href="https://github.com/zgock999/total_dialogue_framework/new/master/apiSpec/new?filename=TotalDialogue_Core_Variables_TDFVar_2_GetFloatValue.md&amp;value=---%0Auid%3A%20TotalDialogue.Core.Variables.TDFVar%602.GetFloatValue%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zgock999/total_dialogue_framework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs/#L110">View Source</a>
+    <a href="https://github.com/zgock999/total_dialogue_framework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs/#L119">View Source</a>
   </span>
   <a id="TotalDialogue_Core_Variables_TDFVar_2_GetFloatValue_" data-uid="TotalDialogue.Core.Variables.TDFVar`2.GetFloatValue*"></a>
   <h4 id="TotalDialogue_Core_Variables_TDFVar_2_GetFloatValue" data-uid="TotalDialogue.Core.Variables.TDFVar`2.GetFloatValue">GetFloatValue()</h4>
@@ -614,7 +638,7 @@ KeyValueStoreと必ずセットで使用されるので参照用に生成時に�
     <a href="https://github.com/zgock999/total_dialogue_framework/new/master/apiSpec/new?filename=TotalDialogue_Core_Variables_TDFVar_2_GetIntValue.md&amp;value=---%0Auid%3A%20TotalDialogue.Core.Variables.TDFVar%602.GetIntValue%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zgock999/total_dialogue_framework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs/#L105">View Source</a>
+    <a href="https://github.com/zgock999/total_dialogue_framework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs/#L114">View Source</a>
   </span>
   <a id="TotalDialogue_Core_Variables_TDFVar_2_GetIntValue_" data-uid="TotalDialogue.Core.Variables.TDFVar`2.GetIntValue*"></a>
   <h4 id="TotalDialogue_Core_Variables_TDFVar_2_GetIntValue" data-uid="TotalDialogue.Core.Variables.TDFVar`2.GetIntValue">GetIntValue()</h4>
@@ -644,7 +668,7 @@ KeyValueStoreと必ずセットで使用されるので参照用に生成時に�
     <a href="https://github.com/zgock999/total_dialogue_framework/new/master/apiSpec/new?filename=TotalDialogue_Core_Variables_TDFVar_2_GetQuaternionValue.md&amp;value=---%0Auid%3A%20TotalDialogue.Core.Variables.TDFVar%602.GetQuaternionValue%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zgock999/total_dialogue_framework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs/#L125">View Source</a>
+    <a href="https://github.com/zgock999/total_dialogue_framework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs/#L134">View Source</a>
   </span>
   <a id="TotalDialogue_Core_Variables_TDFVar_2_GetQuaternionValue_" data-uid="TotalDialogue.Core.Variables.TDFVar`2.GetQuaternionValue*"></a>
   <h4 id="TotalDialogue_Core_Variables_TDFVar_2_GetQuaternionValue" data-uid="TotalDialogue.Core.Variables.TDFVar`2.GetQuaternionValue">GetQuaternionValue()</h4>
@@ -671,10 +695,40 @@ KeyValueStoreと必ずセットで使用されるので参照用に生成時に�
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/zgock999/total_dialogue_framework/new/master/apiSpec/new?filename=TotalDialogue_Core_Variables_TDFVar_2_GetSekf.md&amp;value=---%0Auid%3A%20TotalDialogue.Core.Variables.TDFVar%602.GetSekf%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zgock999/total_dialogue_framework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs/#L167">View Source</a>
+  </span>
+  <a id="TotalDialogue_Core_Variables_TDFVar_2_GetSekf_" data-uid="TotalDialogue.Core.Variables.TDFVar`2.GetSekf*"></a>
+  <h4 id="TotalDialogue_Core_Variables_TDFVar_2_GetSekf" data-uid="TotalDialogue.Core.Variables.TDFVar`2.GetSekf">GetSekf()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual TDFVar&lt;T, TListener&gt; GetSekf()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="TotalDialogue.Core.Variables.TDFVar-2.html">TDFVar</a>&lt;T, TListener&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/zgock999/total_dialogue_framework/new/master/apiSpec/new?filename=TotalDialogue_Core_Variables_TDFVar_2_GetStringValue.md&amp;value=---%0Auid%3A%20TotalDialogue.Core.Variables.TDFVar%602.GetStringValue%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zgock999/total_dialogue_framework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs/#L115">View Source</a>
+    <a href="https://github.com/zgock999/total_dialogue_framework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs/#L124">View Source</a>
   </span>
   <a id="TotalDialogue_Core_Variables_TDFVar_2_GetStringValue_" data-uid="TotalDialogue.Core.Variables.TDFVar`2.GetStringValue*"></a>
   <h4 id="TotalDialogue_Core_Variables_TDFVar_2_GetStringValue" data-uid="TotalDialogue.Core.Variables.TDFVar`2.GetStringValue">GetStringValue()</h4>
@@ -704,7 +758,7 @@ KeyValueStoreと必ずセットで使用されるので参照用に生成時に�
     <a href="https://github.com/zgock999/total_dialogue_framework/new/master/apiSpec/new?filename=TotalDialogue_Core_Variables_TDFVar_2_GetValue.md&amp;value=---%0Auid%3A%20TotalDialogue.Core.Variables.TDFVar%602.GetValue%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zgock999/total_dialogue_framework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs/#L39">View Source</a>
+    <a href="https://github.com/zgock999/total_dialogue_framework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs/#L35">View Source</a>
   </span>
   <a id="TotalDialogue_Core_Variables_TDFVar_2_GetValue_" data-uid="TotalDialogue.Core.Variables.TDFVar`2.GetValue*"></a>
   <h4 id="TotalDialogue_Core_Variables_TDFVar_2_GetValue" data-uid="TotalDialogue.Core.Variables.TDFVar`2.GetValue">GetValue()</h4>
@@ -734,7 +788,7 @@ KeyValueStoreと必ずセットで使用されるので参照用に生成時に�
     <a href="https://github.com/zgock999/total_dialogue_framework/new/master/apiSpec/new?filename=TotalDialogue_Core_Variables_TDFVar_2_GetVector3Value.md&amp;value=---%0Auid%3A%20TotalDialogue.Core.Variables.TDFVar%602.GetVector3Value%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zgock999/total_dialogue_framework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs/#L120">View Source</a>
+    <a href="https://github.com/zgock999/total_dialogue_framework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs/#L129">View Source</a>
   </span>
   <a id="TotalDialogue_Core_Variables_TDFVar_2_GetVector3Value_" data-uid="TotalDialogue.Core.Variables.TDFVar`2.GetVector3Value*"></a>
   <h4 id="TotalDialogue_Core_Variables_TDFVar_2_GetVector3Value" data-uid="TotalDialogue.Core.Variables.TDFVar`2.GetVector3Value">GetVector3Value()</h4>
@@ -764,7 +818,7 @@ KeyValueStoreと必ずセットで使用されるので参照用に生成時に�
     <a href="https://github.com/zgock999/total_dialogue_framework/new/master/apiSpec/new?filename=TotalDialogue_Core_Variables_TDFVar_2_IsBecome__0__0__0_.md&amp;value=---%0Auid%3A%20TotalDialogue.Core.Variables.TDFVar%602.IsBecome(%600%2C%600%2C%600)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zgock999/total_dialogue_framework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs/#L74">View Source</a>
+    <a href="https://github.com/zgock999/total_dialogue_framework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs/#L77">View Source</a>
   </span>
   <a id="TotalDialogue_Core_Variables_TDFVar_2_IsBecome_" data-uid="TotalDialogue.Core.Variables.TDFVar`2.IsBecome*"></a>
   <h4 id="TotalDialogue_Core_Variables_TDFVar_2_IsBecome__0__0__0_" data-uid="TotalDialogue.Core.Variables.TDFVar`2.IsBecome(`0,`0,`0)">IsBecome(T, T, T)</h4>
@@ -821,7 +875,7 @@ KeyValueStoreと必ずセットで使用されるので参照用に生成時に�
     <a href="https://github.com/zgock999/total_dialogue_framework/new/master/apiSpec/new?filename=TotalDialogue_Core_Variables_TDFVar_2_IsCease__0__0__0_.md&amp;value=---%0Auid%3A%20TotalDialogue.Core.Variables.TDFVar%602.IsCease(%600%2C%600%2C%600)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zgock999/total_dialogue_framework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs/#L77">View Source</a>
+    <a href="https://github.com/zgock999/total_dialogue_framework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs/#L83">View Source</a>
   </span>
   <a id="TotalDialogue_Core_Variables_TDFVar_2_IsCease_" data-uid="TotalDialogue.Core.Variables.TDFVar`2.IsCease*"></a>
   <h4 id="TotalDialogue_Core_Variables_TDFVar_2_IsCease__0__0__0_" data-uid="TotalDialogue.Core.Variables.TDFVar`2.IsCease(`0,`0,`0)">IsCease(T, T, T)</h4>
@@ -878,7 +932,7 @@ KeyValueStoreと必ずセットで使用されるので参照用に生成時に�
     <a href="https://github.com/zgock999/total_dialogue_framework/new/master/apiSpec/new?filename=TotalDialogue_Core_Variables_TDFVar_2_IsChanged__0__0_.md&amp;value=---%0Auid%3A%20TotalDialogue.Core.Variables.TDFVar%602.IsChanged(%600%2C%600)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zgock999/total_dialogue_framework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs/#L71">View Source</a>
+    <a href="https://github.com/zgock999/total_dialogue_framework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs/#L74">View Source</a>
   </span>
   <a id="TotalDialogue_Core_Variables_TDFVar_2_IsChanged_" data-uid="TotalDialogue.Core.Variables.TDFVar`2.IsChanged*"></a>
   <h4 id="TotalDialogue_Core_Variables_TDFVar_2_IsChanged__0__0_" data-uid="TotalDialogue.Core.Variables.TDFVar`2.IsChanged(`0,`0)">IsChanged(T, T)</h4>
@@ -930,11 +984,12 @@ KeyValueStoreと必ずセットで使用されるので参照用に生成時に�
     <a href="https://github.com/zgock999/total_dialogue_framework/new/master/apiSpec/new?filename=TotalDialogue_Core_Variables_TDFVar_2_RemoveListener__1_.md&amp;value=---%0Auid%3A%20TotalDialogue.Core.Variables.TDFVar%602.RemoveListener(%601)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zgock999/total_dialogue_framework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs/#L96">View Source</a>
+    <a href="https://github.com/zgock999/total_dialogue_framework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs/#L105">View Source</a>
   </span>
   <a id="TotalDialogue_Core_Variables_TDFVar_2_RemoveListener_" data-uid="TotalDialogue.Core.Variables.TDFVar`2.RemoveListener*"></a>
   <h4 id="TotalDialogue_Core_Variables_TDFVar_2_RemoveListener__1_" data-uid="TotalDialogue.Core.Variables.TDFVar`2.RemoveListener(`1)">RemoveListener(TListener)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>変数のリスナーを削除します</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -962,7 +1017,7 @@ KeyValueStoreと必ずセットで使用されるので参照用に生成時に�
     <a href="https://github.com/zgock999/total_dialogue_framework/new/master/apiSpec/new?filename=TotalDialogue_Core_Variables_TDFVar_2_RestoreDefault.md&amp;value=---%0Auid%3A%20TotalDialogue.Core.Variables.TDFVar%602.RestoreDefault%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zgock999/total_dialogue_framework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs/#L84">View Source</a>
+    <a href="https://github.com/zgock999/total_dialogue_framework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs/#L93">View Source</a>
   </span>
   <a id="TotalDialogue_Core_Variables_TDFVar_2_RestoreDefault_" data-uid="TotalDialogue.Core.Variables.TDFVar`2.RestoreDefault*"></a>
   <h4 id="TotalDialogue_Core_Variables_TDFVar_2_RestoreDefault" data-uid="TotalDialogue.Core.Variables.TDFVar`2.RestoreDefault">RestoreDefault()</h4>
@@ -971,14 +1026,16 @@ KeyValueStoreと必ずセットで使用されるので参照用に生成時に�
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void RestoreDefault()</code></pre>
+    <pre><code class="lang-csharp hljs">public override void RestoreDefault()</code></pre>
   </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="TotalDialogue.Core.Variables.BaseVar.html#TotalDialogue_Core_Variables_BaseVar_RestoreDefault">BaseVar.RestoreDefault()</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/zgock999/total_dialogue_framework/new/master/apiSpec/new?filename=TotalDialogue_Core_Variables_TDFVar_2_SetBoolValue_System_Boolean_.md&amp;value=---%0Auid%3A%20TotalDialogue.Core.Variables.TDFVar%602.SetBoolValue(System.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zgock999/total_dialogue_framework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs/#L130">View Source</a>
+    <a href="https://github.com/zgock999/total_dialogue_framework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs/#L139">View Source</a>
   </span>
   <a id="TotalDialogue_Core_Variables_TDFVar_2_SetBoolValue_" data-uid="TotalDialogue.Core.Variables.TDFVar`2.SetBoolValue*"></a>
   <h4 id="TotalDialogue_Core_Variables_TDFVar_2_SetBoolValue_System_Boolean_" data-uid="TotalDialogue.Core.Variables.TDFVar`2.SetBoolValue(System.Boolean)">SetBoolValue(bool)</h4>
@@ -1010,7 +1067,7 @@ KeyValueStoreと必ずセットで使用されるので参照用に生成時に�
     <a href="https://github.com/zgock999/total_dialogue_framework/new/master/apiSpec/new?filename=TotalDialogue_Core_Variables_TDFVar_2_SetFloatValue_System_Single_.md&amp;value=---%0Auid%3A%20TotalDialogue.Core.Variables.TDFVar%602.SetFloatValue(System.Single)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zgock999/total_dialogue_framework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs/#L140">View Source</a>
+    <a href="https://github.com/zgock999/total_dialogue_framework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs/#L149">View Source</a>
   </span>
   <a id="TotalDialogue_Core_Variables_TDFVar_2_SetFloatValue_" data-uid="TotalDialogue.Core.Variables.TDFVar`2.SetFloatValue*"></a>
   <h4 id="TotalDialogue_Core_Variables_TDFVar_2_SetFloatValue_System_Single_" data-uid="TotalDialogue.Core.Variables.TDFVar`2.SetFloatValue(System.Single)">SetFloatValue(float)</h4>
@@ -1042,7 +1099,7 @@ KeyValueStoreと必ずセットで使用されるので参照用に生成時に�
     <a href="https://github.com/zgock999/total_dialogue_framework/new/master/apiSpec/new?filename=TotalDialogue_Core_Variables_TDFVar_2_SetIntValue_System_Int32_.md&amp;value=---%0Auid%3A%20TotalDialogue.Core.Variables.TDFVar%602.SetIntValue(System.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zgock999/total_dialogue_framework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs/#L135">View Source</a>
+    <a href="https://github.com/zgock999/total_dialogue_framework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs/#L144">View Source</a>
   </span>
   <a id="TotalDialogue_Core_Variables_TDFVar_2_SetIntValue_" data-uid="TotalDialogue.Core.Variables.TDFVar`2.SetIntValue*"></a>
   <h4 id="TotalDialogue_Core_Variables_TDFVar_2_SetIntValue_System_Int32_" data-uid="TotalDialogue.Core.Variables.TDFVar`2.SetIntValue(System.Int32)">SetIntValue(int)</h4>
@@ -1071,10 +1128,44 @@ KeyValueStoreと必ずセットで使用されるので参照用に生成時に�
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/zgock999/total_dialogue_framework/new/master/apiSpec/new?filename=TotalDialogue_Core_Variables_TDFVar_2_SetSelf_TotalDialogue_Core_Variables_BaseVar_.md&amp;value=---%0Auid%3A%20TotalDialogue.Core.Variables.TDFVar%602.SetSelf(TotalDialogue.Core.Variables.BaseVar)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/zgock999/total_dialogue_framework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs/#L163">View Source</a>
+  </span>
+  <a id="TotalDialogue_Core_Variables_TDFVar_2_SetSelf_" data-uid="TotalDialogue.Core.Variables.TDFVar`2.SetSelf*"></a>
+  <h4 id="TotalDialogue_Core_Variables_TDFVar_2_SetSelf_TotalDialogue_Core_Variables_BaseVar_" data-uid="TotalDialogue.Core.Variables.TDFVar`2.SetSelf(TotalDialogue.Core.Variables.BaseVar)">SetSelf(BaseVar)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void SetSelf(BaseVar self)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="TotalDialogue.Core.Variables.BaseVar.html">BaseVar</a></td>
+        <td><span class="parametername">self</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="TotalDialogue.Core.Variables.BaseVar.html#TotalDialogue_Core_Variables_BaseVar_SetSelf_TotalDialogue_Core_Variables_BaseVar_">BaseVar.SetSelf(BaseVar)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/zgock999/total_dialogue_framework/new/master/apiSpec/new?filename=TotalDialogue_Core_Variables_TDFVar_2_SetStringValue_System_String_.md&amp;value=---%0Auid%3A%20TotalDialogue.Core.Variables.TDFVar%602.SetStringValue(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zgock999/total_dialogue_framework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs/#L145">View Source</a>
+    <a href="https://github.com/zgock999/total_dialogue_framework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs/#L154">View Source</a>
   </span>
   <a id="TotalDialogue_Core_Variables_TDFVar_2_SetStringValue_" data-uid="TotalDialogue.Core.Variables.TDFVar`2.SetStringValue*"></a>
   <h4 id="TotalDialogue_Core_Variables_TDFVar_2_SetStringValue_System_String_" data-uid="TotalDialogue.Core.Variables.TDFVar`2.SetStringValue(System.String)">SetStringValue(string)</h4>
@@ -1106,7 +1197,7 @@ KeyValueStoreと必ずセットで使用されるので参照用に生成時に�
     <a href="https://github.com/zgock999/total_dialogue_framework/new/master/apiSpec/new?filename=TotalDialogue_Core_Variables_TDFVar_2_SetValue__0_.md&amp;value=---%0Auid%3A%20TotalDialogue.Core.Variables.TDFVar%602.SetValue(%600)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zgock999/total_dialogue_framework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs/#L44">View Source</a>
+    <a href="https://github.com/zgock999/total_dialogue_framework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs/#L40">View Source</a>
   </span>
   <a id="TotalDialogue_Core_Variables_TDFVar_2_SetValue_" data-uid="TotalDialogue.Core.Variables.TDFVar`2.SetValue*"></a>
   <h4 id="TotalDialogue_Core_Variables_TDFVar_2_SetValue__0_" data-uid="TotalDialogue.Core.Variables.TDFVar`2.SetValue(`0)">SetValue(T)</h4>
@@ -1138,7 +1229,7 @@ KeyValueStoreと必ずセットで使用されるので参照用に生成時に�
     <a href="https://github.com/zgock999/total_dialogue_framework/new/master/apiSpec/new?filename=TotalDialogue_Core_Variables_TDFVar_2_SetVector3Value_UnityEngine_Vector3_.md&amp;value=---%0Auid%3A%20TotalDialogue.Core.Variables.TDFVar%602.SetVector3Value(UnityEngine.Vector3)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zgock999/total_dialogue_framework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs/#L150">View Source</a>
+    <a href="https://github.com/zgock999/total_dialogue_framework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs/#L159">View Source</a>
   </span>
   <a id="TotalDialogue_Core_Variables_TDFVar_2_SetVector3Value_" data-uid="TotalDialogue.Core.Variables.TDFVar`2.SetVector3Value*"></a>
   <h4 id="TotalDialogue_Core_Variables_TDFVar_2_SetVector3Value_UnityEngine_Vector3_" data-uid="TotalDialogue.Core.Variables.TDFVar`2.SetVector3Value(UnityEngine.Vector3)">SetVector3Value(Vector3)</h4>
@@ -1170,7 +1261,7 @@ KeyValueStoreと必ずセットで使用されるので参照用に生成時に�
     <a href="https://github.com/zgock999/total_dialogue_framework/new/master/apiSpec/new?filename=TotalDialogue_Core_Variables_TDFVar_2_StoreDefault.md&amp;value=---%0Auid%3A%20TotalDialogue.Core.Variables.TDFVar%602.StoreDefault%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/zgock999/total_dialogue_framework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs/#L81">View Source</a>
+    <a href="https://github.com/zgock999/total_dialogue_framework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs/#L90">View Source</a>
   </span>
   <a id="TotalDialogue_Core_Variables_TDFVar_2_StoreDefault_" data-uid="TotalDialogue.Core.Variables.TDFVar`2.StoreDefault*"></a>
   <h4 id="TotalDialogue_Core_Variables_TDFVar_2_StoreDefault" data-uid="TotalDialogue.Core.Variables.TDFVar`2.StoreDefault">StoreDefault()</h4>
@@ -1179,14 +1270,16 @@ KeyValueStoreと必ずセットで使用されるので参照用に生成時に�
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void StoreDefault()</code></pre>
+    <pre><code class="lang-csharp hljs">public override void StoreDefault()</code></pre>
   </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="TotalDialogue.Core.Variables.BaseVar.html#TotalDialogue_Core_Variables_BaseVar_StoreDefault">BaseVar.StoreDefault()</a></div>
   <h3 id="implements">Implements</h3>
   <div>
-      <a class="xref" href="TotalDialogue.Core.Variables.ITDFVar-2.html">ITDFVar&lt;T, TListener&gt;</a>
+      <a class="xref" href="TotalDialogue.Core.Variables.ITDFVar.html">ITDFVar</a>
   </div>
   <div>
-      <a class="xref" href="TotalDialogue.Core.Variables.IEmptyVar.html">IEmptyVar</a>
+      <a class="xref" href="TotalDialogue.Core.Variables.ITDFVar-2.html">ITDFVar&lt;T, TListener&gt;</a>
   </div>
 
 </article>
@@ -1200,7 +1293,7 @@ KeyValueStoreと必ずセットで使用されるので参照用に生成時に�
                     <a href="https://github.com/zgock999/total_dialogue_framework/new/master/apiSpec/new?filename=TotalDialogue_Core_Variables_TDFVar_2.md&amp;value=---%0Auid%3A%20TotalDialogue.Core.Variables.TDFVar%602%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
                   </li>
                   <li>
-                    <a href="https://github.com/zgock999/total_dialogue_framework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs/#L8" class="contribution-link">View Source</a>
+                    <a href="https://github.com/zgock999/total_dialogue_framework/blob/master/Assets/Zgock/TDF/Scripts/Runtime/Core/Variables/Variable/TDFVar.cs/#L9" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

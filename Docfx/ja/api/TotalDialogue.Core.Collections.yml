@@ -4,7 +4,8 @@ items:
   commentId: N:TotalDialogue.Core.Collections
   id: TotalDialogue.Core.Collections
   children:
-  - TotalDialogue.Core.Collections.ITDFList`1
+  - TotalDialogue.Core.Collections.ITDFList
+  - TotalDialogue.Core.Collections.ITDFListGeneric`1
   - TotalDialogue.Core.Collections.TDFDictionary`2
   - TotalDialogue.Core.Collections.TDFKeyValuePair`2
   - TotalDialogue.Core.Collections.TDFKeyValuePairs`2
@@ -19,26 +20,33 @@ items:
   assemblies:
   - TDF
 references:
-- uid: TotalDialogue.Core.Collections.ITDFList`1
-  commentId: T:TotalDialogue.Core.Collections.ITDFList`1
-  href: TotalDialogue.Core.Collections.ITDFList-1.html
-  name: ITDFList<T>
-  nameWithType: ITDFList<T>
-  fullName: TotalDialogue.Core.Collections.ITDFList<T>
-  nameWithType.vb: ITDFList(Of T)
-  fullName.vb: TotalDialogue.Core.Collections.ITDFList(Of T)
-  name.vb: ITDFList(Of T)
+- uid: TotalDialogue.Core.Collections.ITDFList
+  commentId: T:TotalDialogue.Core.Collections.ITDFList
+  parent: TotalDialogue.Core.Collections
+  href: TotalDialogue.Core.Collections.ITDFList.html
+  name: ITDFList
+  nameWithType: ITDFList
+  fullName: TotalDialogue.Core.Collections.ITDFList
+- uid: TotalDialogue.Core.Collections.ITDFListGeneric`1
+  commentId: T:TotalDialogue.Core.Collections.ITDFListGeneric`1
+  href: TotalDialogue.Core.Collections.ITDFListGeneric-1.html
+  name: ITDFListGeneric<T>
+  nameWithType: ITDFListGeneric<T>
+  fullName: TotalDialogue.Core.Collections.ITDFListGeneric<T>
+  nameWithType.vb: ITDFListGeneric(Of T)
+  fullName.vb: TotalDialogue.Core.Collections.ITDFListGeneric(Of T)
+  name.vb: ITDFListGeneric(Of T)
   spec.csharp:
-  - uid: TotalDialogue.Core.Collections.ITDFList`1
-    name: ITDFList
-    href: TotalDialogue.Core.Collections.ITDFList-1.html
+  - uid: TotalDialogue.Core.Collections.ITDFListGeneric`1
+    name: ITDFListGeneric
+    href: TotalDialogue.Core.Collections.ITDFListGeneric-1.html
   - name: <
   - name: T
   - name: '>'
   spec.vb:
-  - uid: TotalDialogue.Core.Collections.ITDFList`1
-    name: ITDFList
-    href: TotalDialogue.Core.Collections.ITDFList-1.html
+  - uid: TotalDialogue.Core.Collections.ITDFListGeneric`1
+    name: ITDFListGeneric
+    href: TotalDialogue.Core.Collections.ITDFListGeneric-1.html
   - name: (
   - name: Of
   - name: " "
