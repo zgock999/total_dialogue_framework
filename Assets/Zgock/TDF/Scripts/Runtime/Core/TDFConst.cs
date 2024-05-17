@@ -13,6 +13,7 @@ public static class TDFConst
     public const string nextableKey = "_Nextable";
     public const string cancelableKey = "_Cancelable";
     public const string skippableKey = "_Skippable";
+    public const string acceptKey = "_Accept";
     public const string nameKey = "_Name";
     public const string textKey = "_Text";
     public const string asyncKey = "_Async";

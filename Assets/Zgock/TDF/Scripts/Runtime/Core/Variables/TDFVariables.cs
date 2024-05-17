@@ -215,6 +215,7 @@ namespace TotalDialogue.Core.Variables
                 m_boolVars.Add(TDFConst.nextableKey + i,new BoolVar());
                 m_boolVars.Add(TDFConst.cancelableKey + i,new BoolVar());
                 m_boolVars.Add(TDFConst.skippableKey + i,new BoolVar());
+                m_boolVars.Add(TDFConst.acceptKey + i,new BoolVar());
                 m_boolVars.Add(TDFConst.asyncKey + i,new BoolVar());
                 m_boolVars.Add(TDFConst.clearKey + i,new BoolVar());
                 m_stringVars.Add(TDFConst.nameKey + i,new StringVar());

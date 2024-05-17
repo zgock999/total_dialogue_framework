@@ -100,6 +100,16 @@ MonoBehaviour:
           m_defaultValue: 0
         splitRatio: 0.3
         isDragging: 0
+      - key: _Accept0
+        value:
+          m_key: 
+          OnValueChanged:
+            m_PersistentCalls:
+              m_Calls: []
+          m_value: 0
+          m_defaultValue: 0
+        splitRatio: 0.3
+        isDragging: 0
       - key: _Async0
         value:
           m_key: 
@@ -151,6 +161,16 @@ MonoBehaviour:
         splitRatio: 0.3
         isDragging: 0
       - key: _Skippable1
+        value:
+          m_key: 
+          OnValueChanged:
+            m_PersistentCalls:
+              m_Calls: []
+          m_value: 0
+          m_defaultValue: 0
+        splitRatio: 0.3
+        isDragging: 0
+      - key: _Accept1
         value:
           m_key: 
           OnValueChanged:

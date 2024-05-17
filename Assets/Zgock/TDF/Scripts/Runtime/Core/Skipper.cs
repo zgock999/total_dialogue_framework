@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
+using System.Data.Common;
 using System.Threading;
 using Cysharp.Threading.Tasks;
 using TotalDialogue.Core.Variables;
@@ -175,12 +176,21 @@ namespace TotalDialogue
 
         private readonly ConcurrentDictionary<string,SkipSource> sources = new();
 
+        private bool isAccepting(){
+            for (int i = 0; i< Variables.MaxDialogue; i++){
+                if (Variables.GetBool(TDFConst.acceptKey + i)){
+                    return true;
+                }
+            }
+            return false;
+        }
+
         private async UniTaskVoid CheckSkip(CancellationToken token){
             try{
                 for(;;){
                     List<SkipSource> toRemove = new();
                     foreach(SkipSource source in sources.Values){
-                        if(source.next && Variables.GetBool(nextBool)){
+                        if(source.next && Variables.GetBool(nextBool) && isAccepting()){
                             source.Cancel();
                             toRemove.Add(source);
                             ///Debug.Log(source.guid + " Nexted");
@@ -212,7 +222,7 @@ namespace TotalDialogue
                 sources.Clear();
             }
         }
-        protected SkipSource GetSkipSource(bool canNext = true,bool canCancel = true,bool canSkip = true){
+        protected SkipSource GetSkipSource(bool canNext,bool canCancel,bool canSkip){
             SkipSource source = new()
             {
                 guid = Guid.NewGuid().ToString("N"),

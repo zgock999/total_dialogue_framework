@@ -22,17 +22,18 @@ public class DriverTest : MonoBehaviour
             Debug.Log("Test Started");
             await UniTask.WaitForSeconds(0.5f);
             Debug.Log("Enter Window Open");
-            await driver.OpenWindow(id:0);
+            await driver.OpenWindow(id:id);
             Debug.Log("Enter Write Dialogue");
-            await driver.WriteDialogue("Name0", "Hello World", true, true, true, false,id:0);
+            await driver.WriteDialogue("Name0", "Hello World", true, true, true, false,id:id);
             Debug.Log("Enter Window Close");
-            await driver.CloseWindow(id:0);
+            await driver.CloseWindow(id:id);
             Debug.Log("Finish");
         }
     }
     // Update is called once per frame
     void Update()
     {
+        /*
         if (Input.GetKeyDown(KeyCode.Space))
         {
             driver.Variables.SetBool(TDFConst.next,true);
@@ -45,5 +46,6 @@ public class DriverTest : MonoBehaviour
         {
             driver.Variables.SetBool(TDFConst.cancel,true);
         }
+        */
     }
 }

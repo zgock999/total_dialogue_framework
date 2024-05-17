@@ -27,21 +27,26 @@ namespace TotalDialogue.View
         protected string m_windowKey = TDFConst.windowKey;
         protected string m_writingKey = TDFConst.writingKey;
         protected string m_clearKey = TDFConst.clearKey;
-        protected string m_nextKey = TDFConst.nextableKey;
-        protected string m_cancelKey = TDFConst.cancelableKey;
-        protected string m_skipKey = TDFConst.skippableKey;
+        protected string m_nextableKey = TDFConst.nextableKey;
+        protected string m_cancelableKey = TDFConst.cancelableKey;
+        protected string m_skipableKey = TDFConst.skippableKey;
         protected string m_nameKey = TDFConst.nameKey;
         protected string m_textKey = TDFConst.textKey;
+        protected string m_acceptKey = TDFConst.acceptKey;
+
 
         protected string WritingKey => m_writingKey + Id;
         protected string WindowKey => m_windowKey + Id;
         protected string ClearKey => m_clearKey + Id;
         protected string NameKey => m_nameKey + Id;
         protected string TextKey => m_textKey + Id;
-
-        protected string NextKey => m_nextKey + Id;
-        protected string CancelKey => m_cancelKey + Id;
-        protected string SkipKey => m_skipKey + Id;
+        protected string AcceptKey => m_acceptKey + Id;
+        protected string NextableKey => m_nextableKey + Id;
+        protected string CancelableKey => m_cancelableKey + Id;
+        protected string SkipableKey => m_skipableKey + Id;
+        protected string NextKey => TDFConst.next;
+        protected string CancelKey => TDFConst.cancel;
+        protected string SkipKey => TDFConst.skip;
         public float windowOpenDuration = 0.3f;
         public float characterDuration = 0.3f;
         public float characterInterval = 0.05f;
@@ -129,6 +134,18 @@ namespace TotalDialogue.View
                     FadeCharacter(info,i,originalAlpha[i],source.Token).Forget();
                     if (await UniTask.Delay(TimeSpan.FromSeconds(characterInterval), cancellationToken: source.Token).SuppressCancellationThrow())
                     {
+                        for (int j = i + 1;j < info.characterCount;j++){
+                            TMP_CharacterInfo cj = info.characterInfo[j];
+                            int materialIndex = cj.materialReferenceIndex;
+                            int vertexIndex = cj.vertexIndex;
+                            if (cj.character != ' ' && cj.character != '\n'){
+                                info.meshInfo[materialIndex].colors32[vertexIndex].a = originalAlpha[j];
+                                info.meshInfo[materialIndex].colors32[vertexIndex + 1].a = originalAlpha[j];
+                                info.meshInfo[materialIndex].colors32[vertexIndex + 2].a = originalAlpha[j];
+                                info.meshInfo[materialIndex].colors32[vertexIndex + 3].a = originalAlpha[j];
+                            }
+                        }
+                        dialogueLineText.UpdateVertexData(TMP_VertexDataUpdateFlags.Colors32);
                         break;
 
                     }
@@ -136,7 +153,10 @@ namespace TotalDialogue.View
                 //dialogueLineText.maxVisibleCharacters = info.characterCount + 1;
                 if (next){
                     nextSymbol.SetActive(true);
+                    Variables.SetBool(NextKey, false);
+                    Variables.SetBool(AcceptKey, true);
                     await UniTask.WaitWhile(() => Variables.GetBool(WritingKey), cancellationToken: source2.Token).SuppressCancellationThrow();
+                    Variables.SetBool(AcceptKey, false);
                     nextSymbol.SetActive(false);
                 }
             }
@@ -174,8 +194,8 @@ namespace TotalDialogue.View
                     targetAlpha,
                     characterDuration).SetEase(characterEase)
                     .OnUpdate(() => dialogueLineText.UpdateVertexData(TMP_VertexDataUpdateFlags.Colors32))
-                    .ToUniTask(cancellationToken: token)
-                    .SuppressCancellationThrow();
+                    .ToUniTask(cancellationToken: token);
+
             }
             finally
             {
@@ -220,9 +240,9 @@ namespace TotalDialogue.View
         }
 
         protected async UniTask StartWriteAsync(){
-            bool next = Variables.GetBool(NextKey);
-            bool cancel = Variables.GetBool(CancelKey);
-            bool skip = Variables.GetBool(SkipKey);
+            bool next = Variables.GetBool(NextableKey);
+            bool cancel = Variables.GetBool(CancelableKey);
+            bool skip = Variables.GetBool(SkipableKey);
             bool clear = Variables.GetBool(ClearKey);
             string line = Variables.GetString(TextKey);
             string name = Variables.GetString(NameKey);
