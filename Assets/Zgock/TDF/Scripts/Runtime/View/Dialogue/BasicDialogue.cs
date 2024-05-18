@@ -172,7 +172,7 @@ namespace TotalDialogue.View
                                 info.meshInfo[materialIndex].colors32[vertexIndex + 3].a = originalAlpha[j];
                             }
                         }
-                        dialogueLineText.UpdateVertexData(TMP_VertexDataUpdateFlags.Colors32);
+                        if (dialogueLineText != null) dialogueLineText.UpdateVertexData(TMP_VertexDataUpdateFlags.Colors32);
                         break;
 
                     }
@@ -223,18 +223,21 @@ namespace TotalDialogue.View
                     colors32[vertexIndex + 1] = newColor;
                     colors32[vertexIndex + 2] = newColor;
                     colors32[vertexIndex + 3] = newColor;
-                    dialogueLineText.UpdateVertexData(TMP_VertexDataUpdateFlags.Colors32);
+                    if (dialogueLineText != null) dialogueLineText.UpdateVertexData(TMP_VertexDataUpdateFlags.Colors32);
 
                     await UniTask.Yield(PlayerLoopTiming.Update, token);
                 }
             }
             finally
             {
-                colors32[vertexIndex].a = original;
-                colors32[vertexIndex + 1].a = original;
-                colors32[vertexIndex + 2].a = original;
-                colors32[vertexIndex + 3].a = original;
-                dialogueLineText.UpdateVertexData(TMP_VertexDataUpdateFlags.Colors32);
+                if (dialogueLineText != null && colors32 != null && colors32.Length > vertexIndex + 3)
+                {
+                    colors32[vertexIndex].a = original;
+                    colors32[vertexIndex + 1].a = original;
+                    colors32[vertexIndex + 2].a = original;
+                    colors32[vertexIndex + 3].a = original;
+                    dialogueLineText.UpdateVertexData(TMP_VertexDataUpdateFlags.Colors32);
+                }
             }
         }
         protected virtual async UniTask Wait(bool next = true,bool cancel = false,bool skip = true){
@@ -253,10 +256,12 @@ namespace TotalDialogue.View
         protected async UniTask ChangeStateAsync(int state){
             switch(state){
                 case 1:
+                    await UniTask.SwitchToMainThread();
                     await OpenDialogue(Variables.GetBool(ClearKey));
                     Variables.SetInt(WindowKey,2);
                     break;
                 case 3:
+                    await UniTask.SwitchToMainThread();
                     await CloseDialogue(Variables.GetBool(ClearKey));
                     Variables.SetInt(WindowKey,0);
                     break;

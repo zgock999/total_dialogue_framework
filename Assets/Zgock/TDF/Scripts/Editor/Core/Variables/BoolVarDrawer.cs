@@ -1,3 +1,4 @@
+#if UNITY_EDITOR
 using System.Collections;
 using System.Collections.Generic;
 using TotalDialogue.Core.Variables;
@@ -8,7 +9,7 @@ namespace TotalDialogue.Editor
     [CustomPropertyDrawer(typeof(BoolVar), true)]
     public class BoolVarDrawer : TDFVarDrawer
     {
-　      protected override bool IsDefault(object var)
+        protected override bool IsDefault(object var)
         {
             BoolVar boolVar = (BoolVar)var;
             return boolVar.Value == boolVar.DefaultValue;
@@ -24,3 +25,4 @@ namespace TotalDialogue.Editor
         }
     }
 }
+#endif

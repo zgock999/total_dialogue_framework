@@ -50,11 +50,12 @@ namespace TotalDialogue
         }        protected string nextBool = TDFConst.next;
         protected string cancelBool = TDFConst.cancel;
         protected string skipBool = TDFConst.skip;
-
         [SerializeField]
         private int m_id;
 
         public int Id => m_id;
+
+        CancellationTokenSource skipperCts = new();
 
         public void AddTask(UniTask task){
             batchStack.Peek().tasks.Add(task);
@@ -240,7 +241,18 @@ namespace TotalDialogue
         }
         protected virtual void Awake()
         {
-            CheckSkip(this.GetCancellationTokenOnDestroy()).Forget();
+            skipperCts = new CancellationTokenSource();
+            CheckSkip(skipperCts.Token).Forget();
+        }
+        protected virtual void OnDestroy()
+        {
+            skipperCts.Cancel();
+        }
+
+        protected void CancelSkipper(){
+            skipperCts.Cancel();
+            skipperCts = new CancellationTokenSource();
+            CheckSkip(skipperCts.Token).Forget();
         }
         protected void SetupListener(BoolListener listener,string key,UnityAction action){
             listener.variables = Variables;

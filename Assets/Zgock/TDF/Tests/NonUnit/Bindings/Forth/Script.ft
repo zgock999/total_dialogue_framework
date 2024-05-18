@@ -1,0 +1,151 @@
+(--- ワード定義 ---)
+: ~. 0 waitable . ;
+: UnityChan
+1 async "UnityChan" -140 0.5 YoyoY2D 0 async
+"ユニティちゃん" name . 0.1 wait
+;
+: Misaki 
+1 async "Misaki" -140 0.5 YoyoY2D 0 async
+"ミサキ" name .
+;
+: TDFについて
+"それじゃミサキちゃんよろしく～" UnityChan
+1 async 1 waitable "UnityChan" dup -600 0.5 MoveToX2D 0.0 0.5 alpha2D 0 async
+"オッケー。それでは私から簡単に説明しますね" Misaki
+"先にも言いましたが。TDF(Total Dialogue Framework)は主に会話シナリオの組み込みを主目的としたUnityアセットです" Misaki
+"ソースコードはMITライセンスで公開されており、Githubで入手できます" Misaki
+"GitHubのReleaseに、unitypackageがありますので、使いたい方はそれを使うのを推奨です" Misaki
+1 async 1 waitable "UnityChan" dup 400 0.5 MoveToX2D 1.0 0.5 alpha2D 0 async 0.5 delay
+"リポジトリは開発用に、作りかけのソースとかも入ってるからね～" UnityChan
+"自分では使わない部分や、持ってないかもしれない商用アセット用のインテグレーションとかも入ってる可能性があるので、release内のunitypackageのうち、必要なものを入れるのがお勧めかな？" Misaki
+"そうだね～。それじゃミサキちゃん引き続きよろしく～" UnityChan
+1 async 1 waitable "UnityChan" dup -600 0.5 MoveToX2D 0.0 0.5 alpha2D 0 async
+"基本機能として、こういった会話ダイアログを出す機能と、選択肢を出す機能が備わっています" Misaki
+"また、今実際に行っている簡単なアニメージョン制御などもUniTaskとDoTweenを内部的に使用して非同期制御が簡単に書けます" Misaki
+"Shot0" dup 0 spawn2D 1 async 1.0 0.3 alpha2D 0 async
+"これらの制御は、C#スクリプトから直接制御も可能ですが、BeXide社様がOSSで公開されているScenarioBuilderによるビジュアル環境や、" Misaki
+"Shot0" dispose
+"Shot1" dup 0 spawn2D 1 async 1.0 0.3 alpha2D 0 async
+0 clear "今実際にこのデモを制御している「TDFForth」というForth言語などで制御できます" Misaki
+"Shot1" dispose
+"任意の言語へのバインディングを比較的簡単に書けるのも特徴です" Misaki
+1 async 1 waitable "UnityChan" dup 400 0.5 MoveToX2D 1.0 0.5 alpha2D 0 async 0.5 delay
+"はーい。ミサキちゃんお疲れ様！" UnityChan
+;
+: くいっく★すた～と！
+"それじゃあ私がTDFの基本的な使い方を説明するね" UnityChan
+"それじゃあユニティちゃんよろしく！" Misaki
+0.2 wait
+1 async 1 waitable
+"UnityChan" 1400 0.5 MoveToX2D
+"Misaki" dup 2400 0.5 MoveToX2D drop (0.0 0.5 alpha2D) 0 async
+"まずは、一番単純な方法から！" UnityChan
+"Projectパネルの任意のフォルダの中を右クリックで、Create>TotalDialoge>TDFVariablsを選択します" UnityChan
+"そうすると、「New TDFVariables」というScriptableObjectが作られます" UnityChan
+"「New TDFVariables」のコンテキストメニューから、「Init System Values」を選んで、システムで使用する変数を登録します" UnityChan
+"続いて、空のシーンを用意し、Assets/Zgock/TDF/Prefabs/Basicの中の「Basic Driver」をシーンに配置します" UnityChan
+"「Basic Driver」のインスペクターの中、「TDF Driver」コンポーネントの「Variables」に先ほど作ったScriptableObjectを設定します" UnityChan
+"さらに、Assets/Zgock/TDF/Prefabs/Basicから、「Basic Canvas with Dialogue」を配置します" UnityChan
+"「Basic Canvas with Dialogue」の中、「Basic Dialoge」のVariablesにも、先ほど作ったScriptableObjectを設定します" UnityChan
+"これで実行のための準備はおしまいです！" UnityChan
+"Basic Driverのインスペクター、「Forth Executor」コンポーネントの「Run On Start」に以下の文字列を入れてください" UnityChan
+'open "Hello World!" . close<BR>(各単語の間にはスペースを入れてくださいね。"."の前後にもスペースが必要だから要注意！)' UnityChan
+"これでOK！Playボタンを押して実行してください" UnityChan
+"会話ダイアログが開いて「Hello World!」と表示されたら成功です！" UnityChan
+0.2 wait
+1 async 1 waitable
+"UnityChan" 400 0.5 MoveToX2D
+"Misaki" dup 1400 0.5 MoveToX2D 1.0 0.5 alpha2D 0 async
+0 async
+"うまくいきましたか？" Misaki
+"今回は一番簡単な方法で試したので、より高度な設定についてはGithubのマニュアルを参照してくださいね！" UnityChan
+;
+: いんすと～る！
+"TDFのインストール方法について説明します" Misaki
+"いくつか前提アセットがあるんだよね？" UnityChan
+"はい。ただしAsset Storeの無料アセットか、OSSで公開されているものばかりなのでご安心を" Misaki
+"まずはUniTask。Unity上で非同期処理を簡単に扱うためのライブラリです" Misaki
+"定番だよね～。" UnityChan
+"Asset Storeで入手してもいいですし、OpenUPMからパッケージで入れても問題ないです" Misaki
+"続いてDoTween。スクリプト上から非同期アニメーションを行うためのアセットですね" Misaki
+"これも定番。有料のPro版と無料版があるけど、無料版でいいんだよね？" UnityChan
+"はい、無料版でOKです" Misaki
+"最後に、これら２つと比べると知名度はあまりないですが、「Serialized Dictionary」。インスペクタ上で表示、編集可能だったり、ScriptableObjectの中で使用できるDictionaryのAssetです" Misaki
+"似たような名前で似たようなのがいっぱいあるけど、一応いろいろテストした結果無料Assetとしてはこれが一番安定しているからというのが選定基準みたい" UnityChan
+"似たアセットがいっぱいあって紛らわしいですが、ayellowpaperさんの作品なので間違えないようにインストールしてくださいね" Misaki
+"あとは、OSSのライブラリもいくつか使ってるんだっけ？" UnityChan
+"はい。BeXide社さんがMITで公開されている、「ScenarioBuilder」のソースを取り込んでいます" Misaki
+"足りなかった機能をいくつかパッチを当てて追加しているので、ライセンスに基づいてシステムに取り込ませてもらっています！" UnityChan
+"流行りのノード型ではないですが、タイルを並べてロジックを組み立てるタイプのビジュアルプログラミング環境です" Misaki
+"その他にも、UniVRMと組み合わせてVRMモデルの制御なんかもできますが、このへんはオプションとなるので詳しくはGithubのマニュアルをご覧ください。" UnityChan
+;
+: RunTest
+0 dialogue
+open
+"名前１" name
+[
+##### tftモードではこれがコメント
+tftモードで表示しています[.]
+    tftモードでは行頭の空白は無視*
+    ３＋５の結果は [.. 3 5 + ..]です*
+    [4 1 do]
+    カウントダウン[.. i .. ]回目いきま～す！*
+3..[.. 1 wait ]2..[.. 1 wait ]1..[.. 1 wait]  Fire!*
+    [loop]
+]
+"へろ～わ～るど" .
+0 waitable "入力を待たないメッセージ" . (1 wait)
+'シングルクォーテーションなメッセージ' .
+close
+;
+(--- ワード定義おわり ---)
+: Tour
+0.5 wait
+"UnityChan" 0 spawn2D
+"Misaki" 0 spawn2D 
+1 async
+"UnityChan" dup 400 0.5 MoveToX2D 1.0 0.5 alpha2D
+"Misaki" dup 1400 0.5 MoveToX2D 1.0 0.5 alpha2D
+open
+0 async
+0.5 delay
+"やっほ～！ユニティちゃんだよ～！" UnityChan
+"こんにちは！ミサキです！" Misaki
+"TDFの世界へようこそ！" UnityChan
+"TDF(Total Dialoge Framework)はUnityに会話機能を組み込むためのアセットです" Misaki
+"これからTDFについて説明していくね？" UnityChan
+begin
+    "UnityChan" 400 -80 0 MoveTo2D
+    1 waitable
+    1 async "UnityChan" -140 0.5 YoyoY2D 0 async
+    "ユニティちゃん" name
+    0 waitable
+    "どれを見る？？" .
+    "TDFって何？,くいっく★すた～と！,いんすと～る！,おしまい" choice
+    dup 0 == if TDFについて then
+    dup 1 == if くいっく★すた～と！ then
+    dup 2 == if いんすと～る！ then
+    3 < while
+repeat
+"さて、ここまで偉そうに言ってきましたが・・・" UnityChan
+"実はまだ公開していません！" Misaki
+"GW中になんとかしようと思ってたけど、ドキュメントが間に合わなかったみたいだねぇ" UnityChan
+"一応根幹になるDictionary Driven SystemとForthインタプリタは出来上がって、この程度のデモは行えるまでにはしたんですが" Misaki
+"ドキュメントが書きあがったらGithubに上げるつもりらしいよ！" UnityChan
+"そう遠くないうちに上げられると思うので、今しばらくお待ちください！" Misaki
+"まあ、そういうわけで" UnityChan
+1 dialogue open
+1 async 0 waitable "お付き合いありがとうございました！" Misaki 0 async
+0 dialogue
+"お付き合いありがとうございました！" UnityChan
+1 async 1 waitable "UnityChan" dup -600 0.5 MoveToX2D 0.0 0.5 alpha2D
+"Misaki" dup 2400 0.5 MoveToX2D 0.0 0.5 alpha2D 0 async
+1 async 1 waitable
+1 dialogue 1 async 0 waitable "またお会いしましょう！" Misaki 0 async
+0 dialogue "まったね～！" UnityChan
+"Misaki" dispose
+"UnityChan" dispose
+1 async 1 dialogue close
+0 dialogue close
+
+;

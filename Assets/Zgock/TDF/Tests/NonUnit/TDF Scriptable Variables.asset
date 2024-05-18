@@ -236,7 +236,7 @@ MonoBehaviour:
           OnValueChanged:
             m_PersistentCalls:
               m_Calls: []
-          m_value: 1
+          m_value: 0
           m_defaultValue: 0
         splitRatio: 0.3
         isDragging: 0
@@ -246,7 +246,7 @@ MonoBehaviour:
           OnValueChanged:
             m_PersistentCalls:
               m_Calls: []
-          m_value: 1
+          m_value: 0
           m_defaultValue: 0
         splitRatio: 0.3
         isDragging: 0
@@ -349,7 +349,7 @@ MonoBehaviour:
           OnValueChanged:
             m_PersistentCalls:
               m_Calls: []
-          m_value: 1
+          m_value: 0
           m_defaultValue: 0
         splitRatio: 0.3
         isDragging: 0
@@ -369,7 +369,7 @@ MonoBehaviour:
           OnValueChanged:
             m_PersistentCalls:
               m_Calls: []
-          m_value: 2
+          m_value: 0
           m_defaultValue: 0
         splitRatio: 0.3
         isDragging: 0
@@ -425,7 +425,7 @@ MonoBehaviour:
           OnValueChanged:
             m_PersistentCalls:
               m_Calls: []
-          m_value: Name0
+          m_value: "\u30E6\u30CB\u30C6\u30A3\u3061\u3083\u3093"
           m_defaultValue: 
         splitRatio: 0.3
         isDragging: 0
@@ -435,7 +435,7 @@ MonoBehaviour:
           OnValueChanged:
             m_PersistentCalls:
               m_Calls: []
-          m_value: Which do you choice?
+          m_value: "\u3069\u308C\u3092\u898B\u308B\uFF1F\uFF1F"
           m_defaultValue: 
         splitRatio: 0.3
         isDragging: 0
@@ -465,7 +465,7 @@ MonoBehaviour:
           OnValueChanged:
             m_PersistentCalls:
               m_Calls: []
-          m_value: aaaa,bbbb,cccc
+          m_value: "TDF\u3063\u3066\u4F55\uFF1F,\u304F\u3044\u3063\u304F\u2605\u3059\u305F\uFF5E\u3068\uFF01,\u3044\u3093\u3059\u3068\uFF5E\u308B\uFF01,\u304A\u3057\u307E\u3044"
           m_defaultValue: 
         splitRatio: 0.3
         isDragging: 0
@@ -475,7 +475,7 @@ MonoBehaviour:
           OnValueChanged:
             m_PersistentCalls:
               m_Calls: []
-          m_value: aaaa,bbbb,cccc
+          m_value: 
           m_defaultValue: 
         splitRatio: 0.3
         isDragging: 0
@@ -485,7 +485,7 @@ MonoBehaviour:
           OnValueChanged:
             m_PersistentCalls:
               m_Calls: []
-          m_value: dddd,eeee,ffff
+          m_value: 
           m_defaultValue: 
         splitRatio: 0.3
         isDragging: 0
@@ -495,7 +495,7 @@ MonoBehaviour:
           OnValueChanged:
             m_PersistentCalls:
               m_Calls: []
-          m_value: ggggg,hhhhh,iiiii
+          m_value: 
           m_defaultValue: 
         splitRatio: 0.3
         isDragging: 0
@@ -528,21 +528,41 @@ MonoBehaviour:
       folded: 0
     m_objects:
       list:
-      - key: aaa
+      - key: UnityChan
         value:
           key: 
           objectType: 0
-          prefab: {fileID: 0}
+          prefab: {fileID: 847103909566622724, guid: 8129bb05245fe7b47a28fd22ad983c2d, type: 3}
           sprite: {fileID: 0}
           texture: {fileID: 0}
           audioClip: {fileID: 0}
         splitRatio: 0.3
         isDragging: 0
-      - key: bbb
+      - key: Misaki
         value:
           key: 
           objectType: 0
-          prefab: {fileID: 0}
+          prefab: {fileID: 847103909566622724, guid: 8b02eb67d0a78d44699af9f1cc47db50, type: 3}
+          sprite: {fileID: 0}
+          texture: {fileID: 0}
+          audioClip: {fileID: 0}
+        splitRatio: 0.3
+        isDragging: 0
+      - key: Shot0
+        value:
+          key: 
+          objectType: 0
+          prefab: {fileID: 1328672355990763680, guid: 0177f098c2a6b71428e4676140edf82f, type: 3}
+          sprite: {fileID: 0}
+          texture: {fileID: 0}
+          audioClip: {fileID: 0}
+        splitRatio: 0.3
+        isDragging: 0
+      - key: Shot1
+        value:
+          key: 
+          objectType: 0
+          prefab: {fileID: 8173574788221927798, guid: 871d55be5496ece4583651273b7f4d33, type: 3}
           sprite: {fileID: 0}
           texture: {fileID: 0}
           audioClip: {fileID: 0}

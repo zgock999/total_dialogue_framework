@@ -8,15 +8,24 @@ using UnityEngine;
 
 namespace TotalDialogue
 {
+    [DefaultExecutionOrder(-1000)]
     public partial class TDFDriver : Skipper
     {
         [SerializeField]
         private ViewVariables m_variables = new();
         protected override ViewVariables ViewVariables { get => m_variables; set => m_variables = value; }
+        private bool m_ready = false;
+        public bool Ready { get => m_ready; }
         protected override void Awake()
         {
+            m_ready = false;
             base.Awake();
             Variables.Reset();
+            m_ready = true;
+        }
+        public async UniTask WaitUntilReady()
+        {
+            await UniTask.WaitUntil(() => m_ready);
         }
 
         protected void SetCancellation(int id,bool next, bool cancel, bool skip,bool async){
@@ -69,6 +78,8 @@ namespace TotalDialogue
             if (!async){
                 await UniTask.WaitUntil(() => Variables.GetInt(TDFConst.choosingKey + id) == 0);
             }
+            CancelSkipper();
+            await UniTask.Delay(200);
         }
     }
 }

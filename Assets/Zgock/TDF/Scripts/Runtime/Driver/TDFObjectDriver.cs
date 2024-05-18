@@ -140,7 +140,7 @@ namespace TotalDialogue
                 trn.anchoredPosition = new Vector2(x,y);
             }
         }
-         public async UniTask YoyoX2D(string objectVar,float target,float duration,bool async = true,float delay = 0){
+        public async UniTask YoyoX2D(string objectVar,float target,float duration,bool async = true,float delay = 0){
             if (duration <= 0) return;
             if (async){
                 YoyoX2DAsync(objectVar,target,duration,delay).Forget();
@@ -192,7 +192,21 @@ namespace TotalDialogue
                 trn.anchoredPosition = new Vector2(x,y);
             }
         }
-        public async UniTask Alpha2D(string objectVar,float alpha,float duration,bool next = false, bool cancel = true, bool skip = true, bool async = true,float delay = 0){
+         public async UniTask Alpha2D(string objectVar, float alpha, float duration, bool next, bool cancel, bool skip, bool async = false, float delay = 0){
+            if (duration <= 0) {
+                GameObject go = GetInstance(objectVar);
+                if (go == null) return;
+                Image[] images = go.GetComponentsInChildren<Image>();
+                RawImage[] rawImages = go.GetComponentsInChildren<RawImage>();
+                foreach (var image in images)
+                {
+                    image.color = new Color(image.color.r, image.color.g, image.color.b, alpha);
+                }
+                foreach (RawImage image in rawImages)
+                {
+                    image.color = new Color(image.color.r, image.color.g, image.color.b, alpha);
+                }
+            };
             if (async){
                 Alpha2DAsync(objectVar,alpha,duration,next,cancel,skip,delay).Forget();
             } else {
