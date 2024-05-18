@@ -208,6 +208,10 @@ namespace TotalDialogue.Core.Variables
             m_boolVars.Add(TDFConst.next,new BoolVar());
             m_boolVars.Add(TDFConst.cancel,new BoolVar());
             m_boolVars.Add(TDFConst.skip,new BoolVar());
+            m_boolVars.Add(TDFConst.choiceCancel,new BoolVar());
+            m_intVars.Add(TDFConst.choiceStartKey,new IntVar());
+            m_intVars.Add(TDFConst.choiceDepthKey,new IntVar());
+            m_intVars.Add(TDFConst.currentChoiceKey,new IntVar());
             
             for (int i = 0;i < MaxDialogue;i++){
                 m_boolVars.Add(TDFConst.writingKey + i,new BoolVar());
@@ -225,7 +229,7 @@ namespace TotalDialogue.Core.Variables
                 m_intVars.Add(TDFConst.choosingKey + i,new IntVar());
                 m_stringVars.Add(TDFConst.chooserKey + i,new StringVar());
                 m_intVars.Add(TDFConst.choiceKey + i,new IntVar());
-                m_boolVars.Add(TDFConst.blockChoiceKey + i,new BoolVar());
+                m_boolVars.Add(TDFConst.choiceCancelableKey + i,new BoolVar());
             }
         }
 

@@ -5,7 +5,6 @@ using UnityEngine;
 using System.Linq;
 using System.Threading;
 using TMPro;
-using DG.Tweening;
 using System;
 using System.Runtime.CompilerServices;
 using UnityEngine.Events;
@@ -50,41 +49,70 @@ namespace TotalDialogue.View
         public float windowOpenDuration = 0.3f;
         public float characterDuration = 0.3f;
         public float characterInterval = 0.05f;
-        public Ease characterEase = Ease.Linear;
 
         protected BoolListener writingListener = new();
         protected IntListener windowListener = new();
-        
-       
-        protected virtual async UniTask OpenDialogue(bool clear = true,bool next = false,bool cancel = false,bool skip = true){
+        protected virtual async UniTask OpenDialogue(bool clear = true, bool next = false, bool cancel = false, bool skip = true)
+        {
             SkipSource source = GetSkipSource(next, cancel, skip);
-            if (clear) {
+            if (clear)
+            {
                 characterNameText.text = string.Empty;
                 dialogueLineText.text = string.Empty;
             }
             window.localScale = Vector3.zero;
             nextSymbol.SetActive(false);
             window.gameObject.SetActive(true);
+        
             try
             {
-                await window.DOScale(Vector3.one, windowOpenDuration).ToUniTask(cancellationToken: source.Token).SuppressCancellationThrow();
+                float elapsedTime = 0f;
+                while (elapsedTime < windowOpenDuration)
+                {
+                    if (source.Token.IsCancellationRequested)
+                    {
+                        source.Token.ThrowIfCancellationRequested();
+                    }
+        
+                    elapsedTime += Time.deltaTime;
+                    float scale = elapsedTime / windowOpenDuration;
+                    window.localScale = new Vector3(scale, scale, scale);
+        
+                    await UniTask.Yield(PlayerLoopTiming.Update, source.Token);
+                }
             }
             finally
             {
                 window.localScale = Vector3.one;
                 RemoveSource(source);
             }
-        }
-        protected virtual async UniTask  CloseDialogue(bool clear = true,bool next = false,bool cancel = false,bool skip = true){
+        }    
+        protected virtual async UniTask CloseDialogue(bool clear = true, bool next = false, bool cancel = false, bool skip = true)
+        {
             SkipSource source = GetSkipSource(next, cancel, skip);
-            if (clear) {
+            if (clear)
+            {
                 characterNameText.text = string.Empty;
                 dialogueLineText.text = string.Empty;
             }
             nextSymbol.SetActive(false);
+
             try
             {
-                await window.DOScale(Vector3.zero, windowOpenDuration).ToUniTask(cancellationToken: source.Token).SuppressCancellationThrow();
+                float elapsedTime = 0f;
+                while (elapsedTime < windowOpenDuration)
+                {
+                    if (source.Token.IsCancellationRequested)
+                    {
+                        source.Token.ThrowIfCancellationRequested();
+                    }
+
+                    elapsedTime += Time.deltaTime;
+                    float scale = 1f - (elapsedTime / windowOpenDuration);
+                    window.localScale = new Vector3(scale, scale, scale);
+
+                    await UniTask.Yield(PlayerLoopTiming.Update, source.Token);
+                }
             }
             finally
             {
@@ -93,7 +121,6 @@ namespace TotalDialogue.View
                 RemoveSource(source);
             }
         }
-        
         protected virtual async UniTask  WriteDialogue(string name,string line,bool next = false,bool cancel = true,bool skip = true,bool clear = true){
             //Debug.Log("Writing Start.");
             SkipSource source = GetSkipSource(false, cancel, skip);
@@ -168,7 +195,7 @@ namespace TotalDialogue.View
                 RemoveSource(source2);
             }
         }
-        protected virtual async UniTask FadeCharacter(TMP_TextInfo info, int index,byte original, CancellationToken token)
+        protected virtual async UniTask FadeCharacter(TMP_TextInfo info, int index, byte original, CancellationToken token)
         {
             TMP_CharacterInfo ci = info.characterInfo[index];
             int materialIndex = ci.materialReferenceIndex;
@@ -178,28 +205,31 @@ namespace TotalDialogue.View
             Color color = originalColor;
             float targetAlpha = original / 255.0f;
             color.a = 0;
-        
+
             try
             {
-                await DOTween.ToAlpha(
-                    () => color,
-                    alphaColor =>
+                float elapsedTime = 0f;
+                while (elapsedTime < characterDuration)
+                {
+                    if (token.IsCancellationRequested)
                     {
-                        Color32 newColor = alphaColor;
-                        colors32[vertexIndex] = newColor;
-                        colors32[vertexIndex + 1] = newColor;
-                        colors32[vertexIndex + 2] = newColor;
-                        colors32[vertexIndex + 3] = newColor;
-                    },
-                    targetAlpha,
-                    characterDuration).SetEase(characterEase)
-                    .OnUpdate(() => dialogueLineText.UpdateVertexData(TMP_VertexDataUpdateFlags.Colors32))
-                    .ToUniTask(cancellationToken: token);
+                        token.ThrowIfCancellationRequested();
+                    }
 
+                    elapsedTime += Time.deltaTime;
+                    float alpha = Mathf.Lerp(0, targetAlpha, elapsedTime / characterDuration);
+                    Color32 newColor = new Color32(originalColor.r, originalColor.g, originalColor.b, (byte)(alpha * 255));
+                    colors32[vertexIndex] = newColor;
+                    colors32[vertexIndex + 1] = newColor;
+                    colors32[vertexIndex + 2] = newColor;
+                    colors32[vertexIndex + 3] = newColor;
+                    dialogueLineText.UpdateVertexData(TMP_VertexDataUpdateFlags.Colors32);
+
+                    await UniTask.Yield(PlayerLoopTiming.Update, token);
+                }
             }
             finally
             {
-                //originalColor.a = original;
                 colors32[vertexIndex].a = original;
                 colors32[vertexIndex + 1].a = original;
                 colors32[vertexIndex + 2].a = original;
@@ -207,7 +237,6 @@ namespace TotalDialogue.View
                 dialogueLineText.UpdateVertexData(TMP_VertexDataUpdateFlags.Colors32);
             }
         }
-
         protected virtual async UniTask Wait(bool next = true,bool cancel = false,bool skip = true){
             SkipSource source = GetSkipSource(next, cancel, skip);
             await UniTask.WaitUntilCanceled(source.Token).SuppressCancellationThrow();

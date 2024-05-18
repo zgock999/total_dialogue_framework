@@ -54,11 +54,18 @@ namespace TotalDialogue
                 await UniTask.WaitUntil(() => Variables.GetInt(TDFConst.windowKey + id) == 0);
             }
         }
-        public virtual async UniTask Choice(string chooser, bool next = false, bool cancel = false, bool skip = false, bool async = false,int id = 0){
-            SetCancellation(id, next, cancel, skip, async);
+        public virtual async UniTask Choice(string chooser, bool next = false, bool cancel = false, bool skip = false, bool async = false,int id = 0,int depth = 0,bool cancelable = false){
+            SetCancellation(id, false, cancel, skip, async);
             Variables.SetString(TDFConst.chooserKey + id, chooser);
-            Variables.SetInt(TDFConst.choiceKey + id, -1);
+            Variables.SetInt(TDFConst.currentChoiceKey, -1);
+            for (int i = 0; i <= depth; i++)
+            {
+                Variables.SetInt(TDFConst.choiceKey + (id + i), -1);
+            }
             Variables.SetInt(TDFConst.choosingKey + id, 1);
+            Variables.SetInt(TDFConst.choiceStartKey, id);
+            Variables.SetInt(TDFConst.choiceDepthKey, depth);
+            Variables.SetBool(TDFConst.choiceCancelableKey + id, cancelable);
             if (!async){
                 await UniTask.WaitUntil(() => Variables.GetInt(TDFConst.choosingKey + id) == 0);
             }

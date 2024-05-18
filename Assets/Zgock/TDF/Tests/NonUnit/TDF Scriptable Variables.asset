@@ -16,7 +16,7 @@ MonoBehaviour:
     list: []
     folded: 0
   variables:
-    m_maxChoice: 0
+    m_maxChoice: 4
     m_maxDialogue: 2
     m_boolVars:
       list:
@@ -60,6 +60,16 @@ MonoBehaviour:
           m_defaultValue: 0
         splitRatio: 0.3
         isDragging: 0
+      - key: _ChoiceCancel
+        value:
+          m_key: 
+          OnValueChanged:
+            m_PersistentCalls:
+              m_Calls: []
+          m_value: 0
+          m_defaultValue: 0
+        splitRatio: 0.3
+        isDragging: 0
       - key: _Writing0
         value:
           m_key: 
@@ -76,7 +86,7 @@ MonoBehaviour:
           OnValueChanged:
             m_PersistentCalls:
               m_Calls: []
-          m_value: 1
+          m_value: 0
           m_defaultValue: 0
         splitRatio: 0.3
         isDragging: 0
@@ -86,7 +96,7 @@ MonoBehaviour:
           OnValueChanged:
             m_PersistentCalls:
               m_Calls: []
-          m_value: 1
+          m_value: 0
           m_defaultValue: 0
         splitRatio: 0.3
         isDragging: 0
@@ -96,7 +106,7 @@ MonoBehaviour:
           OnValueChanged:
             m_PersistentCalls:
               m_Calls: []
-          m_value: 1
+          m_value: 0
           m_defaultValue: 0
         splitRatio: 0.3
         isDragging: 0
@@ -200,10 +210,80 @@ MonoBehaviour:
           m_defaultValue: 0
         splitRatio: 0.3
         isDragging: 0
+      - key: _ChoiceCancelable0
+        value:
+          m_key: 
+          OnValueChanged:
+            m_PersistentCalls:
+              m_Calls: []
+          m_value: 0
+          m_defaultValue: 0
+        splitRatio: 0.3
+        isDragging: 0
+      - key: _ChoiceCancelable1
+        value:
+          m_key: 
+          OnValueChanged:
+            m_PersistentCalls:
+              m_Calls: []
+          m_value: 0
+          m_defaultValue: 0
+        splitRatio: 0.3
+        isDragging: 0
+      - key: _ChoiceCancelable2
+        value:
+          m_key: 
+          OnValueChanged:
+            m_PersistentCalls:
+              m_Calls: []
+          m_value: 1
+          m_defaultValue: 0
+        splitRatio: 0.3
+        isDragging: 0
+      - key: _ChoiceCancelable3
+        value:
+          m_key: 
+          OnValueChanged:
+            m_PersistentCalls:
+              m_Calls: []
+          m_value: 1
+          m_defaultValue: 0
+        splitRatio: 0.3
+        isDragging: 0
       folded: 0
     m_intVars:
       list:
       - key: testInt
+        value:
+          m_key: 
+          OnValueChanged:
+            m_PersistentCalls:
+              m_Calls: []
+          m_value: 0
+          m_defaultValue: 0
+        splitRatio: 0.3
+        isDragging: 0
+      - key: _ChoiceStart
+        value:
+          m_key: 
+          OnValueChanged:
+            m_PersistentCalls:
+              m_Calls: []
+          m_value: 0
+          m_defaultValue: 0
+        splitRatio: 0.3
+        isDragging: 0
+      - key: _ChoiceDepth
+        value:
+          m_key: 
+          OnValueChanged:
+            m_PersistentCalls:
+              m_Calls: []
+          m_value: 0
+          m_defaultValue: 0
+        splitRatio: 0.3
+        isDragging: 0
+      - key: _CurrentChoice
         value:
           m_key: 
           OnValueChanged:
@@ -224,6 +304,86 @@ MonoBehaviour:
         splitRatio: 0.3
         isDragging: 0
       - key: _Window1
+        value:
+          m_key: 
+          OnValueChanged:
+            m_PersistentCalls:
+              m_Calls: []
+          m_value: 0
+          m_defaultValue: 0
+        splitRatio: 0.3
+        isDragging: 0
+      - key: _Choosing0
+        value:
+          m_key: 
+          OnValueChanged:
+            m_PersistentCalls:
+              m_Calls: []
+          m_value: 2
+          m_defaultValue: 0
+        splitRatio: 0.3
+        isDragging: 0
+      - key: _Choice0
+        value:
+          m_key: 
+          OnValueChanged:
+            m_PersistentCalls:
+              m_Calls: []
+          m_value: -1
+          m_defaultValue: 0
+        splitRatio: 0.3
+        isDragging: 0
+      - key: _Choosing1
+        value:
+          m_key: 
+          OnValueChanged:
+            m_PersistentCalls:
+              m_Calls: []
+          m_value: 0
+          m_defaultValue: 0
+        splitRatio: 0.3
+        isDragging: 0
+      - key: _Choice1
+        value:
+          m_key: 
+          OnValueChanged:
+            m_PersistentCalls:
+              m_Calls: []
+          m_value: 1
+          m_defaultValue: 0
+        splitRatio: 0.3
+        isDragging: 0
+      - key: _Choosing2
+        value:
+          m_key: 
+          OnValueChanged:
+            m_PersistentCalls:
+              m_Calls: []
+          m_value: 0
+          m_defaultValue: 0
+        splitRatio: 0.3
+        isDragging: 0
+      - key: _Choice2
+        value:
+          m_key: 
+          OnValueChanged:
+            m_PersistentCalls:
+              m_Calls: []
+          m_value: 2
+          m_defaultValue: 0
+        splitRatio: 0.3
+        isDragging: 0
+      - key: _Choosing3
+        value:
+          m_key: 
+          OnValueChanged:
+            m_PersistentCalls:
+              m_Calls: []
+          m_value: 0
+          m_defaultValue: 0
+        splitRatio: 0.3
+        isDragging: 0
+      - key: _Choice3
         value:
           m_key: 
           OnValueChanged:
@@ -275,7 +435,7 @@ MonoBehaviour:
           OnValueChanged:
             m_PersistentCalls:
               m_Calls: []
-          m_value: Hello World
+          m_value: Which do you choice?
           m_defaultValue: 
         splitRatio: 0.3
         isDragging: 0
@@ -296,6 +456,46 @@ MonoBehaviour:
             m_PersistentCalls:
               m_Calls: []
           m_value: 
+          m_defaultValue: 
+        splitRatio: 0.3
+        isDragging: 0
+      - key: _Chooser0
+        value:
+          m_key: 
+          OnValueChanged:
+            m_PersistentCalls:
+              m_Calls: []
+          m_value: aaaa,bbbb,cccc
+          m_defaultValue: 
+        splitRatio: 0.3
+        isDragging: 0
+      - key: _Chooser1
+        value:
+          m_key: 
+          OnValueChanged:
+            m_PersistentCalls:
+              m_Calls: []
+          m_value: aaaa,bbbb,cccc
+          m_defaultValue: 
+        splitRatio: 0.3
+        isDragging: 0
+      - key: _Chooser2
+        value:
+          m_key: 
+          OnValueChanged:
+            m_PersistentCalls:
+              m_Calls: []
+          m_value: dddd,eeee,ffff
+          m_defaultValue: 
+        splitRatio: 0.3
+        isDragging: 0
+      - key: _Chooser3
+        value:
+          m_key: 
+          OnValueChanged:
+            m_PersistentCalls:
+              m_Calls: []
+          m_value: ggggg,hhhhh,iiiii
           m_defaultValue: 
         splitRatio: 0.3
         isDragging: 0

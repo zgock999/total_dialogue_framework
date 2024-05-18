@@ -7,6 +7,7 @@ public static class TDFConst
     public const string next = "_Next";
     public const string cancel = "_Cancel";
     public const string skip = "_Skip";
+    public const string choiceCancel = "_ChoiceCancel";
     public const string windowKey = "_Window";
     public const string writingKey = "_Writing";
     public const string clearKey = "_Clear";
@@ -20,5 +21,8 @@ public static class TDFConst
     public const string choiceKey = "_Choice";
     public const string choosingKey = "_Choosing";
     public const string chooserKey = "_Chooser";
-    public const string blockChoiceKey = "_BlockChoice";
+    public const string choiceStartKey = "_ChoiceStart";
+    public const string choiceDepthKey = "_ChoiceDepth";
+    public const string choiceCancelableKey = "_ChoiceCancelable";
+    public const string currentChoiceKey = "_CurrentChoice";
 }

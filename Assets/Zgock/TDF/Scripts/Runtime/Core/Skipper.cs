@@ -268,6 +268,10 @@ namespace TotalDialogue
             Variables.RemoveListener(listener);
             listener.OnBecome.RemoveListener(action);
         }
+        protected void ShutDownListener(BoolListener listener,UnityAction<bool> action){
+            Variables.RemoveListener(listener);
+            listener.OnChanged.RemoveListener(action);
+        }
         protected void ShutDownListener(IntListener listener,UnityAction<int> action){
             Variables.RemoveListener(listener);
             listener.OnChanged.RemoveListener(action);
