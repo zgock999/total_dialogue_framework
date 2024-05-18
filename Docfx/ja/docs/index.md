@@ -66,7 +66,7 @@ TDF(Total Dialoge Framework)は、Unity アプリケーションに会話シナ�
 
 ## Live Demo
 
-<a href="../live/tour_ja/" target="_blank">日本語版 Live Demo</a>
+<a href="../../live/tour_ja/" target="_blank">日本語版 Live Demo</a>
 基本的なライブデモです
 
 ## FAQ
